@@ -63,10 +63,10 @@ datasets:
     prompt_field: prompt
     id_field: item_id
     max_prompt_length: 0
-    # All 293 WVS questions sent every wave — fixed so longitudinal comparisons
+    # All 352 WVS questions sent every wave — fixed so longitudinal comparisons
     # are always on the same items, no daily sampling rotation.
     sampling_strategy: fixed
-    sample_n: 293
+    sample_n: 352
 
   - name: persona_prompts
     type: local_json

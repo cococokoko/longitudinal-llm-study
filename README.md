@@ -8,7 +8,7 @@ Tracks how LLM responses change over time by running the same prompt sets agains
 
 | Dataset | File | Items per wave | Strategy |
 |---|---|---|---|
-| `global_opinion_qa` | `globalopinionqa_wvs.json` | 293 | Fixed (all WVS questions, every wave) |
+| `global_opinion_qa` | `globalopinionqa_wvs.json` | 352 | Fixed (all WVS questions, every wave) |
 | `persona_prompts` | `persona_prompts.json` | 300 | Fixed (100 prompts × 3 conditions: baseline / high\_ses / low\_ses) |
 
 ## Models
