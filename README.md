@@ -27,32 +27,32 @@ Experiment models (e.g. Gemini 2.0 Flash Lite) run separately with `--experiment
 
 ## Setup
 
-**1. Create the conda environment**
+**1. Create and activate a virtual environment**
 
 ```bash
-conda env create -f environment.yml
-conda activate longitudinal
+python3 -m venv --copies .venv
+source .venv/bin/activate
 ```
 
-Or with pip into an existing environment:
+**2. Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**2. Register the kernel for Jupyter**
+**3. Register the kernel for Jupyter**
 
 ```bash
 python -m ipykernel install --user --name longitudinal --display-name "Python (longitudinal)"
 ```
 
-**3. Create `.env`**
+**4. Create `.env`**
 
 ```
 OPENROUTER_API_KEY=sk-or-v1-...
 ```
 
-**4. Verify setup**
+**5. Verify setup**
 
 ```bash
 python test_run.py          # sends 10 prompts to console, no DB writes
