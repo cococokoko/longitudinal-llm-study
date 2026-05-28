@@ -56,7 +56,9 @@ def build_goqa(path: Path) -> pd.DataFrame:
     for it in items:
         rows.append({
             "item_id":           it["item_id"],
-            "topic_cluster":     it.get("topic_cluster", ""),
+            "source":            it.get("source", "WVS"),
+            "entropy":           round(it.get("entropy", 0.0), 4),
+            "is_binary":         it.get("is_binary", False),
             "original_question": it["question"],
             "prompt_sent":       it["prompt"],
         })
@@ -110,7 +112,7 @@ def write_excel(goqa_df: pd.DataFrame, persona_df: pd.DataFrame, out: Path) -> N
         # ── Tab 1 ──────────────────────────────────────────────────────────────
         goqa_df.to_excel(writer, sheet_name="global_opinion_qa", index=False)
         ws1 = writer.sheets["global_opinion_qa"]
-        _style_sheet(ws1, col_widths=[22, 16, 60, 80])
+        _style_sheet(ws1, col_widths=[22, 10, 10, 10, 60, 80])
 
         # ── Tab 2 ──────────────────────────────────────────────────────────────
         persona_df.to_excel(writer, sheet_name="persona_prompts", index=False)
@@ -137,7 +139,7 @@ def write_excel(goqa_df: pd.DataFrame, persona_df: pd.DataFrame, out: Path) -> N
 
 def main() -> None:
     p = argparse.ArgumentParser()
-    p.add_argument("--goqa",    default="globalopinionqa_subset_100.json")
+    p.add_argument("--goqa",    default="globalopinionqa_wvs.json")
     p.add_argument("--persona", default="persona_prompts.json")
     p.add_argument("--out",     default="results/prompts_overview.xlsx")
     args = p.parse_args()
