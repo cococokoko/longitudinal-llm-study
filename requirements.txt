@@ -20,6 +20,9 @@ seaborn>=0.13
 scipy>=1.11
 openai>=1.0         # OpenRouter-compatible client used in notebooks
 vaderSentiment>=3.3
+detoxify>=0.3               # analysis_wave1.ipynb → toxicity scoring
+tqdm>=4.0                   # analysis_wave1.ipynb → progress bars
+ipywidgets>=8.0             # analysis_wave1.ipynb → tqdm_notebook display
 
 # ── Jupyter ───────────────────────────────────────────────────────────────────
 jupyterlab>=4.0
