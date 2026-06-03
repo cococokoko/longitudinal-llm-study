@@ -52,36 +52,6 @@ The pipeline auto-checks OpenRouter for newer releases in each family at the sta
 
 ---
 
-## Setup
-
-**1. Create and activate a virtual environment**
-
-```bash
-python3 -m venv --copies .venv
-source .venv/bin/activate
-```
-
-**2. Install dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
-**3. Create `.env`**
-
-```
-OPENROUTER_API_KEY=sk-or-v1-...
-
-# Email notifications (optional — used by notify.py)
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your_gmail@gmail.com
-SMTP_PASSWORD=your_app_password
-NOTIFY_EMAIL=recipient@example.com
-```
-
----
-
 ## Running a wave
 
 ```bash
