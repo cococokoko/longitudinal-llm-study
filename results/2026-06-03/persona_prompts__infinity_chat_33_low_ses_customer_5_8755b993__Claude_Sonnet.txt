@@ -1,0 +1,93 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=50 out=576
+Latency:   14403 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## Before You Start
+
+**Download & Install:**
+- Get Dolphin from **dolphin-emu.org** (official site only)
+- Install the latest stable version
+- You'll need your own legally obtained Wii game files (ISOs/ROMs)
+
+---
+
+## Setting Up Touch-Friendly Controls
+
+### Making the Interface Easier to Navigate
+
+**Increase UI scaling first:**
+1. Open Dolphin → **Options** → **Configuration**
+2. Go to **Interface** tab
+3. Increase **User Interface** size if available
+4. This makes buttons easier to tap
+
+### On-Screen Keyboard Tips
+- **Tap the taskbar keyboard icon** to bring it up when needed
+- **Pin it** so it stays accessible
+- Use **handwriting mode** if typing game titles is easier
+- Consider keeping it in **compact mode** to save screen space
+
+---
+
+## Configuring the Touchpad as a Controller
+
+### Option 1 - Use Dolphin's Built-in Keyboard/Mouse Mapping
+1. Go to **Controllers** → **Configure**
+2. Select **Emulated Wii Remote**
+3. Map touchpad gestures to buttons
+
+### Recommended Basic Mapping
+| Action | Surface Input |
+|--------|--------------|
+| A Button | Left click |
+| B Button | Right click |
+| D-Pad | Arrow keys |
+| Home | H key |
+| Pointer | Touchpad movement |
+
+---
+
+## Touch Screen Tips for Surface
+
+- **Enable tablet mode** in Windows settings
+- Dolphin's game list responds to **tap to launch**
+- Use **two-finger scroll** to browse game library
+- **Pinch zoom** works in some menus
+
+---
+
+## Practical Suggestions Given Your Situation
+
+Since you manage many household responsibilities:
+- **Save states frequently** (Shift+F1 to save, F1 to load) so you can pause quickly
+- Set up **multiple profiles** if others in the household use it
+- Enable **auto-save** in Dolphin settings
+- Keep game library **organized in folders** by family member preference
+
+---
+
+## If Performance Is Slow
+
+1. **Options** → **Graphics** → Lower resolution
+2. Disable **anti-aliasing**
+3. Close background apps before launching
+4. Check which Surface model you have - older models may struggle
+
+---
+
+Would you like help with any specific part, like setting up a particular game or troubleshooting performance?

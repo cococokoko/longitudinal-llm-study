@@ -1,0 +1,18 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=26 out=1020
+Latency:   9758 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+To illustrate the concept of a partial derivative in a way that directly translates to running a tech business, let’s look at a company's revenue as a function of two different investments:

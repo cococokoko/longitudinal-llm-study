@@ -1,0 +1,59 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=16 out=451
+Latency:   7752 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Depends a bit on your team’s size and how you work, but there’s a solid “stack” most remote teams end up converging on. Here are the best tools by category, with quick context on when they shine:
+
+**Communication (daily interaction)**
+- Slack: still the default for many teams; great for channels, integrations, async + quick chats  
+- Microsoft Teams: best if you’re already deep in the Microsoft ecosystem  
+- Discord: surprisingly good for startups or more informal, always-on collaboration  
+
+**Video + meetings**
+- Zoom: most reliable for calls, webinars, and larger meetings  
+- Google Meet: simpler, great if you use Google Workspace  
+
+**Project & task management**
+- Asana: strong for structured project tracking and cross-team visibility  
+- ClickUp: very flexible “all-in-one,” but can feel heavy  
+- Trello: simple kanban boards, easy to get started  
+- Jira: best for software/dev teams (especially agile workflows)
+
+**Docs & knowledge sharing**
+- Notion: extremely popular “all-in-one” workspace (docs, wikis, light project tracking)  
+- Google Docs/Drive: real-time collaboration, dead simple  
+- Confluence: more structured documentation, especially with Jira  
+
+**File sharing & storage**
+- Google Drive: easiest collaboration  
+- Dropbox: fast syncing, good for larger files  
+- OneDrive: fits naturally with Microsoft Teams  
+
+**Whiteboarding & brainstorming**
+- Miro: top choice for remote workshops, UX, brainstorming  
+- FigJam: lighter, especially if you’re already using Figma  
+
+**Async video & updates**
+- Loom: record quick updates instead of meetings (huge time saver)  
+- Claap or similar tools: newer, more async-focused collaboration  
+
+**Time zones & scheduling**
+- World Time Buddy: simple but useful  
+- Calendly: eliminates back-and-forth scheduling  
+
+---
+
+If you want a simple, effective combo for most teams:
+Slack + Zoom + Notion + Google Drive + Asana is a very solid setup.
+
+If you tell me your team size and what kind of work you do, I can narrow it down to a much tighter, “no wasted tools” stack.

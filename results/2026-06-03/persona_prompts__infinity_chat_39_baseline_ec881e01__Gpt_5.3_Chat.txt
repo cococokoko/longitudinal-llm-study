@@ -1,0 +1,65 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=20 out=548
+Latency:   9089 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Short answer: don’t chase specific tools—learn the layers that *don’t* go out of date quickly, and then add whatever tools are currently dominant.
+
+Here’s how to think about it.
+
+First, the fundamentals (these age very slowly):
+- Data structures and algorithms: not for interviews, but for thinking clearly about performance and tradeoffs.
+- Networking basics: how the internet actually works (HTTP, TCP/IP, latency, DNS).
+- Operating systems: processes, threads, memory, file systems.
+- Databases: relational modeling, indexing, transactions, and when to use NoSQL.
+- System design: how to build something that scales and doesn’t fall over.
+
+If you have these, you can pick up almost any stack later.
+
+Second, AI is no longer optional:
+- You don’t need to be a researcher, but you should understand how to *use* AI well.
+- Learn how to integrate LLM APIs, prompt effectively, and build AI-powered features.
+- Understand basic ML concepts (training vs inference, embeddings, vector search).
+- Know the limitations: hallucinations, cost, latency, privacy.
+
+Developers who can *apply* AI will outpace those who ignore it.
+
+Third, pick a solid core stack (don’t spread too thin):
+- One backend language: Python, TypeScript (Node), Go, or Java.
+- One frontend approach: React is still dominant, but the key is understanding component-based UI.
+- APIs: REST and a bit of GraphQL.
+- Version control: Git (really well, not just basics).
+
+You don’t need to learn everything—depth beats dabbling.
+
+Fourth, learn how software actually gets shipped:
+- Cloud basics (AWS/GCP/Azure): compute, storage, networking.
+- Containers (Docker) and maybe Kubernetes (at least conceptually).
+- CI/CD pipelines.
+- Observability: logging, monitoring, debugging in production.
+
+A lot of “developers” stall here—this is where you become valuable.
+
+Fifth, security and reliability:
+- Authentication, authorization, common vulnerabilities (OWASP stuff).
+- Writing code that fails gracefully and can be debugged.
+
+Finally, meta-skills that matter more over time:
+- Reading other people’s code quickly.
+- Breaking down messy problems into steps.
+- Communicating clearly with non-engineers.
+- Learning new tools fast without getting attached to them.
+
+If you want a simple path:
+Start with Python or JavaScript → build real projects → learn databases + APIs → deploy something → then layer in AI features and cloud.
+
+If you tell me your current level (beginner, some experience, etc.), I can map this into a concrete 3–6 month plan.

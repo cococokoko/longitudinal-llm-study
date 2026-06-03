@@ -1,0 +1,20 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_73_low_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=32 out=85
+Latency:   2507 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a metaphor involving time.
+
+── Response ────────────────────────────────────────────────────────
+:::writing
+Time is a quiet river that carries everything—leaves, cities, and the shape of who we are—forward whether we swim or stand still, its current never asking permission, only offering the choice of how we move within it.
+:::

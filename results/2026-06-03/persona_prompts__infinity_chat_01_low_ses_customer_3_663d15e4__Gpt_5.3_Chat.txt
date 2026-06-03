@@ -1,0 +1,28 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_01_low_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=99
+Latency:   2289 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Compose a short poem about the feeling of watching a sunset.
+
+── Response ────────────────────────────────────────────────────────
+:::writing
+The sun slips softly out of sight,  
+A quiet hush replaces light.  
+Gold melts into shades of blue,  
+Day exhales and night comes through.
+
+Clouds catch fire, then fade to gray,  
+Like thoughts that drift and fall away.  
+In that pause, the world feels still—  
+A fleeting peace you cannot will.
+:::

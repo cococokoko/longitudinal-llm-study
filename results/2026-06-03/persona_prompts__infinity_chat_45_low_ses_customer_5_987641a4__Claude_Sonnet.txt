@@ -1,0 +1,26 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_45_low_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=87
+Latency:   3151 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a sentence using a minimum of 2 R-colored vowels.
+
+── Response ────────────────────────────────────────────────────────
+Here is a sentence using R-colored vowels:
+
+"Her father worked hard to support their family."
+
+This sentence contains several R-colored vowels:
+- **Her** (the "er" sound)
+- **father** (the "er" sound at the end)
+- **worked** (the "er" sound)
+- **support** (the "or" sound)

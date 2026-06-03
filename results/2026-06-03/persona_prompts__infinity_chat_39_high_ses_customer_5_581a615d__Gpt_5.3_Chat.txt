@@ -1,0 +1,45 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=490
+Latency:   9166 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If you want to stay relevant, think less in terms of specific tools and more in terms of leverage—what lets you build, adapt, and reason quickly as the stack keeps shifting.
+
+Start with the fundamentals that don’t expire. Strong mental models around data structures, algorithms, distributed systems, networking, and how computers actually execute code still matter. Not because you’ll implement red-black trees daily, but because these concepts let you understand performance, tradeoffs, and failure modes when systems get complex.
+
+Then layer in systems thinking. Modern software is no longer “an app,” it’s a set of interconnected services, APIs, and data pipelines. Understanding how to design, scale, and observe systems—things like event-driven architecture, consistency models, fault tolerance, and latency tradeoffs—is increasingly valuable, especially at scale.
+
+AI literacy is no longer optional. You don’t need to be a research scientist, but you should know how to:
+- Use LLMs and AI tools to accelerate development (code generation, debugging, testing)
+- Integrate AI into products via APIs
+- Understand basic concepts like embeddings, fine-tuning, evaluation, and limitations (hallucination, bias, cost)
+Engineers who can “compose” AI into systems will outpace those who just consume frameworks.
+
+Data fluency is another differentiator. Being comfortable working with data pipelines, SQL, streaming systems, and basic analytics lets you build products that learn and adapt. Even product-oriented engineers benefit from understanding how data flows and how to extract signal from it.
+
+Security and privacy awareness are becoming table stakes. Not deep cryptography necessarily, but a working understanding of secure design, auth models, and regulatory considerations.
+
+On the practical side, a few areas are compounding in importance:
+- Cloud-native development (containers, orchestration, serverless)
+- APIs and integration (everything is becoming composable)
+- Observability (logs, metrics, tracing)
+- Developer productivity tooling (CI/CD, testing automation)
+
+Finally, meta-skills matter more than any stack:
+- The ability to learn new tools quickly
+- Clear thinking and communication, especially across technical and non-technical stakeholders
+- Taste: knowing what not to build, and how to keep systems simple
+
+If I had to compress it: build deep fundamentals, learn how systems behave at scale, get fluent with AI as a building block, and optimize for adaptability over mastery of any single framework.

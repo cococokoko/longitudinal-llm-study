@@ -1,0 +1,60 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=581
+Latency:   12059 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+You’ve got a ton of options, but the “best” really depends on how structured you want to be and how much effort you’re willing to put in. At your level (busy, high-cognitive load job), the real differentiator is *low friction + useful feedback*, not just features.
+
+Here are the strongest apps right now, grouped by what they do best:
+
+**All-in-one fitness + nutrition (most practical)**
+- **MyFitnessPal** – Still the default for nutrition tracking. Huge food database, fast logging. Best if you want something reliable and flexible without overthinking.
+- **Cronometer** – More precise and data-rich than MyFitnessPal (micronutrients, better accuracy). Slightly more effort, but better if you care about quality tracking.
+- **Carbon Diet Coach** – Strong if you want guidance, not just tracking. It adjusts calories/macros based on your progress. Feels more “coach-like.”
+
+**Fitness tracking (workouts + performance)**
+- **Strong** – Clean, fast gym logging. Great if you lift and want zero friction.
+- **Fitbod** – Auto-generates workouts based on your history and recovery. Good when you don’t want to think.
+- **TrainHeroic** – More advanced programming; useful if you follow structured plans or a coach.
+
+**Passive tracking / health data (minimal effort)**
+- **Apple Health + Apple Watch** (or **Whoop / Oura**)  
+  - **Whoop** – Best for recovery, strain, sleep insights. No screen, very “executive-friendly.”  
+  - **Oura Ring** – Great sleep + readiness tracking, less fitness detail.  
+  - **Apple Watch** – Most versatile, especially if you want workouts + notifications in one place.
+
+**Nutrition-specific (if diet is the main lever)**
+- **MacroFactor** – Probably the smartest nutrition app right now. Uses your actual weight trends to adjust calories dynamically. Very low guesswork.
+- **Lifesum** – More lifestyle-oriented, easier UX, less analytical.
+
+---
+
+**What I’d recommend for someone in your position:**
+
+If you want *maximum ROI with minimal time*:
+- Oura or Whoop (passive recovery + sleep)
+- MacroFactor (nutrition with minimal mental load)
+- Strong or just Apple Watch workouts (simple logging)
+
+If you want *simple and familiar*:
+- MyFitnessPal + Apple Watch
+
+If you want *data-driven optimization*:
+- MacroFactor + Whoop
+
+---
+
+The real trap to avoid: picking something overly complex and dropping it after 2 weeks. Consistency beats the “perfect” stack.
+
+If you want, tell me your goal (fat loss, muscle, general health, performance), and I can narrow this down to a very tight setup that actually fits your schedule.

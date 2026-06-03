@@ -1,0 +1,159 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=1024
+Latency:   12229 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+# Building an Online Forum with LAMP Stack
+
+Here's a practical guide to building a forum using **Linux, Apache, MySQL, and PHP**.
+
+---
+
+## Project Structure
+
+```
+/var/www/html/forum/
+├── index.php
+├── config.php
+├── db.php
+├── login.php
+├── register.php
+├── post.php
+├── thread.php
+├── /css/
+└── /includes/
+```
+
+---
+
+## 1. Database Setup (MySQL)
+
+```sql
+CREATE DATABASE forum_db;
+USE forum_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    role ENUM('user', 'moderator', 'admin') DEFAULT 'user'
+);
+
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT,
+    user_id INT,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT,
+    user_id INT,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+---
+
+## 2. Database Connection (config.php / db.php)
+
+```php
+<?php
+// config.php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'forum_user');
+define('DB_PASS', 'your_password');
+define('DB_NAME', 'forum_db');
+
+// db.php
+function getDB() {
+    static $pdo = null;
+    if ($pdo === null) {
+        try {
+            $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
+            $pdo = new PDO($dsn, DB_USER, DB_PASS, [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                PDO::ATTR_EMULATE_PREPARES => false
+            ]);
+        } catch (PDOException $e) {
+            die("Connection failed: " . $e->getMessage());
+        }
+    }
+    return $pdo;
+}
+?>
+```
+
+---
+
+## 3. User Registration & Login
+
+```php
+<?php
+// register.php
+require 'config.php';
+require 'db.php';
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username']);
+    $email    = trim($_POST['email']);
+    $password = $_POST['password'];
+
+    // Basic validation
+    if (empty($username) || empty($email) || empty($password)) {
+        $error = "All fields are required.";
+    } else {
+        $hashed = password_hash($password, PASSWORD_BCRYPT);
+        $db = getDB();
+
+        try {
+            $stmt = $db->prepare(
+                "INSERT INTO users (username, email, password) VALUES (?, ?, ?)"
+            );
+            $stmt->execute([$username, $email, $hashed]);
+            header("Location: login.php");
+            exit;
+        } catch (PDOException $e) {
+            $error = "Username or email already exists.";
+        }
+    }
+}
+?>
+
+<!-- login.php -->
+<?php
+session_start();
+require 'config.php';
+require 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username

@@ -1,0 +1,19 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_80_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=38 out=87
+Latency:   4078 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Write a tweet about: This is a video from this morning's crazy sunrise at the beach.
+
+── Response ────────────────────────────────────────────────────────
+Here's a tweet:
+
+"Taking a quick break from the lab to soak in this morning's stunning sunrise at the beach 🌅 Nature never fails to remind me why we do what we do — fueling curiosity, wonder, and the drive to make a difference. Back to the bench! #ScienceLife #Sunrise #BeachMorning #WorkLifeBalance"

@@ -1,0 +1,47 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=289
+Latency:   8458 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens
+
+## Suggestion: **Fall Detection with Neurological Baseline Monitoring**
+
+Given your background, you might find this particularly relevant:
+
+### Core Feature
+**Continuous Gait & Movement Pattern Analysis** that establishes a personalized baseline and flags subtle deviations that may indicate:
+
+- Early balance deterioration
+- Tremor onset or progression
+- Changes in movement symmetry
+
+### Why This Matters Clinically
+- Many neurological changes **precede obvious symptoms** by months
+- Passive, continuous monitoring captures what **clinic visits miss**
+- Could provide objective data for conditions like early Parkinson's, normal pressure hydrocephalus, or post-surgical recovery tracking
+
+### Practical Components
+- Accelerometer/gyroscope data analyzed against **personal baseline** (not population averages)
+- Trend reports shareable directly with a physician
+- Fall detection that distinguishes **stumble vs. collapse** to reduce false alarms
+- Integration with EHR systems
+
+### Added Value for Your Context
+As a teaching hospital neurosurgeon, this could potentially serve as a **post-operative monitoring tool** for patients discharged after procedures affecting motor function.
+
+---
+
+Would you like me to explore the clinical validation challenges, patient compliance considerations, or technical specifications in more detail?

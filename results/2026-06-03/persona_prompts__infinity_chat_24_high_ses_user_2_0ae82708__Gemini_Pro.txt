@@ -1,0 +1,26 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_high_ses_user_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=1020
+Latency:   11957 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+Here are three options, ranging from a warm approach for a close contact to a more formal approach for a newer or highly busy partner. 
+
+### Option 1: Warm & Casual (For a partner you know well)
+**Subject:** Catching up / [Your Firm Name] & [Their Firm/Company Name]
+
+Hi [Name],
+
+I hope you’ve been well and that you’re having a great [week/season/start to the year]. 
+
+It’s been a little while since we last connected, so I wanted to reach out and see if you might have time for a quick catch-up in the coming weeks. I’d love to hear how things are going over at

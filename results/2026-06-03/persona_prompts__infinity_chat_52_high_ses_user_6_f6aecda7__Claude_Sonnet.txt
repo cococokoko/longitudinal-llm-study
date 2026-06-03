@@ -1,0 +1,19 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_52_high_ses_user_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=45
+Latency:   4017 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+Write a sentence where the last word is 'apple'.
+
+── Response ────────────────────────────────────────────────────────
+Here is a sentence where the last word is "apple":
+
+"After a long day of client presentations and strategy meetings, all I wanted was to sit quietly and enjoy a crisp, refreshing apple."

@@ -1,0 +1,18 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_45_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=37 out=127
+Latency:   4055 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a sentence using a minimum of 2 R-colored vowels.
+
+── Response ────────────────────────────────────────────────────────
+The early bird prefers warm coffee.

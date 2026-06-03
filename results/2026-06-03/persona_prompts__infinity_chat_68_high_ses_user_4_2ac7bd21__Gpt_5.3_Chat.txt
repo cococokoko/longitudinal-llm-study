@@ -1,0 +1,23 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=181
+Latency:   3911 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+Create “decision clarity” for your team.
+
+In research groups, friction often comes from people not knowing who owns what or how decisions actually get made. Even very capable scientists stall or duplicate effort when this is fuzzy. A simple fix is to explicitly define, for each project: who is responsible for driving it, who needs to be consulted, and who has final say when there’s disagreement.
+
+You don’t need a heavy framework—just make it visible. At the start of a project or meeting, state something like: “Alex is leading this analysis; Priya and I are advisors; I’ll make the final call if we’re split.” That one sentence can prevent weeks of drift or quiet tension.
+
+It also frees your trainees: they know when they can move fast and when they need input, which is especially valuable in a setting where hierarchy and uncertainty can otherwise slow everything down.

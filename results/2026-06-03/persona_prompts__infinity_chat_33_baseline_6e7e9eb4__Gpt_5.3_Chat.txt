@@ -1,0 +1,69 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=26 out=531
+Latency:   9132 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You *can* do it, but Dolphin isn’t really designed with touch-first controls in mind, so it takes a bit of setup. Here’s a practical way to make it usable on a Surface with just the touchpad + on-screen keyboard.
+
+First, set up basic navigation  
+- Open Dolphin → Controllers  
+- For “Wii Remote 1” click “Configure”  
+- Set “Emulated Wii Remote” (not real Wii Remote)
+
+Now map Wii controls to things you can actually trigger:
+
+Core buttons (easy part)  
+In the config window, click each field and press a key on the on-screen keyboard:  
+- A → Space (easy to hit)  
+- B → Left Ctrl  
+- 1 / 2 → number keys (1, 2)  
+- Plus / Minus → Enter / Backspace  
+- Home → Esc  
+
+D-Pad  
+- Map to arrow keys (↑ ↓ ← →). These work fine with touchpad + keyboard.
+
+Pointer (this is the tricky part)  
+The Wii pointer normally uses a mouse. Your touchpad can act like one:
+
+- In the “Point” section:  
+  - Up → Cursor Y-  
+  - Down → Cursor Y+  
+  - Left → Cursor X-  
+  - Right → Cursor X+  
+
+This lets your touchpad move the Wii pointer like a mouse.
+
+Motion controls (you don’t really have them)  
+You’ll need to fake motion using keys:
+
+- Tilt / Swing → map to keys like WASD or IJKL  
+- Shake → assign to something like Shift or a key you can tap quickly  
+
+It won’t feel perfect, but it works for many games.
+
+Make the touchpad easier to use  
+- In Windows Settings → Touchpad: increase sensitivity  
+- Turn on “tap to click” if it’s off  
+- Use two-finger tap as right-click if needed
+
+Optional: enable “Relative Input”  
+In Dolphin’s controller settings, enable relative input for pointer if movement feels weird. This makes the cursor behave more like a trackpad instead of snapping.
+
+On-screen keyboard tips  
+- Use the “floating” keyboard mode so it doesn’t block the screen  
+- Pin it to a corner so you can quickly tap buttons mid-game
+
+Reality check  
+This setup works best for slower-paced games or menus (like Wii Sports menus, Mario Galaxy menu navigation, etc.). Fast motion-heavy games will feel clunky without a real controller or mouse.
+
+If you tell me which Wii game you’re trying to play, I can suggest a control layout that fits it way better.

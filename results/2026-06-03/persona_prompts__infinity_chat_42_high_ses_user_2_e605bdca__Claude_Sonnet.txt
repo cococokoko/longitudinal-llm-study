@@ -1,0 +1,17 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_high_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=48 out=24
+Latency:   2355 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
+
+── Response ────────────────────────────────────────────────────────
+**"Best Strategies for Winning High-Stakes Cases in a Competitive Legal Landscape"**

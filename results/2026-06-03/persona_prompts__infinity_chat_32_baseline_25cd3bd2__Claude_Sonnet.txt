@@ -1,0 +1,207 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=1024
+Latency:   18485 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a step-by-step guide to building a basic zombie survivor game!
+
+---
+
+## 🎮 Game Overview
+- Player moves around and shoots zombies
+- Zombies chase the player
+- Player has health/lives
+- Score increases per zombie killed
+
+---
+
+## 📋 Step 1: Set Up Your Project
+
+**Sprites you'll need:**
+- Player (survivor)
+- Zombie
+- Bullet
+- Health bar or hearts
+
+**Backdrops:**
+- Game screen (dark/apocalyptic background)
+- Game Over screen
+
+---
+
+## 🧍 Step 2: Player Sprite & Movement
+
+```scratch
+When [Green Flag] clicked
+Set x to (0) Set y to (0)
+Forever
+  If <key [W] pressed> then
+    Change y by (5)
+  End
+  If <key [S] pressed> then
+    Change y by (-5)
+  End
+  If <key [A] pressed> then
+    Change x by (-5)
+  End
+  If <key [D] pressed> then
+    Change x by (5)
+  End
+  Point towards (mouse pointer)
+End
+```
+
+---
+
+## 🔫 Step 3: Shooting Bullets
+
+**On the Player sprite:**
+```scratch
+When [Space] pressed
+Create clone of (Bullet)
+```
+
+**On the Bullet sprite:**
+```scratch
+When I start as a clone
+Go to (Player sprite)
+Point towards (mouse pointer)
+Show
+Forever
+  Move (15) steps
+  If <touching (edge)> then
+    Delete this clone
+  End
+  If <touching (Zombie)> then
+    Broadcast [hit zombie]
+    Delete this clone
+  End
+End
+```
+
+---
+
+## 🧟 Step 4: Zombie Sprite
+
+**Set up variables first:**
+- `Score`
+- `Health`
+- `ZombieSpeed`
+
+```scratch
+When [Green Flag] clicked
+Hide
+Forever
+  Wait (2) seconds
+  Create clone of (Zombie)
+End
+```
+
+```scratch
+When I start as a clone
+Go to (random position)
+Show
+Forever
+  Point towards (Player)
+  Move (ZombieSpeed) steps
+  If <touching (Player)> then
+    Change [Health] by (-1)
+    Delete this clone
+  End
+End
+```
+
+```scratch
+When I receive [hit zombie]
+Change [Score] by (1)
+Delete this clone
+```
+
+---
+
+## ❤️ Step 5: Health System
+
+```scratch
+When [Green Flag] clicked
+Set [Health] to (5)
+Set [Score] to (0)
+Forever
+  If <(Health) < (1)> then
+    Broadcast [Game Over]
+    Stop all
+  End
+End
+```
+
+---
+
+## 💀 Step 6: Game Over Screen
+
+**On backdrop:**
+```scratch
+When I receive [Game Over]
+Switch backdrop to (Game Over)
+```
+
+**Add a restart button sprite:**
+```scratch
+When this sprite clicked
+Broadcast [Restart]
+Switch backdrop to (Game Screen)
+```
+
+---
+
+## ⚡ Step 7: Increase Difficulty
+
+```scratch
+When [Green Flag] clicked
+Set [ZombieSpeed] to (2)
+Forever
+  Wait (15) seconds
+  Change [ZombieSpeed] by (0.5)
+End
+```
+
+---
+
+## 🎨 Step 8: Polish & Extras
+
+| Feature | How to Add |
+|---|---|
+| Sound effects | Add gunshot/zombie sounds |
+| Animations | Multiple costumes for walking |
+| Power-ups | New sprite that boosts health/speed |
+| Wave system | Count zombies per wave |
+| Leaderboard | Use cloud variables |
+
+---
+
+## 💡 Pro Tips
+
+- **Use clones** for zombies and bullets (don't make separate sprites)
+- **Keep variables organized** with clear names
+- **Test frequently** after each new feature
+- **Use broadcasts** to communicate between sprites
+- **Add a start screen** before the game begins
+
+---
+
+## 🚀 Getting Started Quickly
+
+1. Go to **scratch.mit.edu**
+2. Click **Create**
+3. Delete the cat sprite
+4. Add your player sprite
+5. Follow the steps above one at a time

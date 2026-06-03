@@ -1,0 +1,32 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=33 out=415
+Latency:   8696 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+You’ve basically got three levers: placement, hardware, and interference. Most home Wi‑Fi problems come from one of those.
+
+Start with placement, because it’s free and surprisingly impactful. Put the router as central as possible, elevated (a shelf, not the floor), and out in the open. Avoid corners, metal cabinets, and being tucked behind a TV. If your house has multiple floors, aim for a mid‑level location so signal spreads vertically. Even moving it a few feet can make a noticeable difference.
+
+Next, hardware. If you’re using a single older router and your place isn’t tiny, that’s often the bottleneck. A modern mesh system (eero, Orbi, Deco, etc.) is usually the simplest upgrade—multiple nodes spread coverage evenly and handle handoff automatically. If you prefer a more “clinical” setup: a wired access point (or two) connected via Ethernet backhaul will outperform mesh, especially for high, consistent throughput.
+
+Then interference and settings. Use 5 GHz (or 6 GHz if you have Wi‑Fi 6E/7 gear) for speed; 2.4 GHz only for range or older devices. Make sure your router isn’t stuck on a crowded channel—most modern ones auto-select, but manual tuning can help in dense areas. Keep it away from microwaves, cordless phone bases, and large metal objects.
+
+A few targeted upgrades that often pay off:
+- Run Ethernet to high-demand devices (desktop, TV, console) to offload Wi‑Fi.
+- If your internet plan is fast but Wi‑Fi is slow, your router is likely the limiting factor.
+- Update firmware—quietly fixes performance issues more often than people expect.
+- If you have thick walls (plaster, concrete), you’ll need more access points, not a stronger single router.
+
+If you want, tell me your home layout, current router model, and what’s “bad” (dead zones vs slow speeds), and I can suggest a more tailored setup.

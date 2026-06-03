@@ -1,0 +1,49 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=32 out=318
+Latency:   7867 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Here are some effective ways to improve your home WiFi:
+
+## Router Placement
+- Place it in a **central location** in your home
+- Keep it **elevated** and in the open
+- Avoid walls, appliances, and metal objects nearby
+
+## Hardware Upgrades
+- **Update your router** if it's more than 3-4 years old
+- Consider a **mesh network system** (Eero, Google Nest, Orbi) for larger homes
+- Add a **WiFi extender or access point** for dead zones
+
+## Settings Optimization
+- Use the **5GHz band** for faster speeds (shorter range)
+- Use **2.4GHz** for better range and older devices
+- **Change your WiFi channel** to avoid neighbor interference
+- Keep **router firmware updated**
+
+## Reduce Interference
+- Move away from microwaves, cordless phones, baby monitors
+- Separate IoT devices onto a guest network
+
+## Connection Tips
+- Use **ethernet cables** for stationary devices (computers, TVs, gaming)
+- Limit bandwidth-heavy background apps
+- **Restart your router** periodically
+
+## Check Your Internet Plan
+- Make sure your plan speed matches your household needs
+- Test your actual speeds at **fast.com** or **speedtest.net**
+
+Would you like more detail on any of these? For example, mesh systems are often the best solution for larger homes.

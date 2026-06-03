@@ -1,0 +1,48 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=45 out=231
+Latency:   6637 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+## Analysis vs. Design
+
+**Analysis** answers *"What does the system need to do?"* — understanding requirements, problems, and constraints.
+
+**Design** answers *"How will the system do it?"* — defining architecture, components, and solutions.
+
+---
+
+## Can You Design Without Analysis?
+
+**Technically yes, practically no.**
+
+Skipping analysis means you're designing based on **assumptions rather than validated requirements**. This leads to:
+
+- Building the **wrong thing** correctly
+- Costly rework when reality contradicts assumptions
+- Solutions optimized for the **wrong problem**
+
+---
+
+## The Executive Reality
+
+In fast-moving tech environments, teams often **compress or parallelize** analysis and design — which is acceptable when:
+
+- The domain is well-understood
+- Rapid iteration/feedback loops exist (Agile)
+- Prototyping is cheap
+
+But even then, *some* analysis is always happening — it's just informal or implicit.
+
+**The risk isn't skipping analysis; it's not knowing you skipped it.**

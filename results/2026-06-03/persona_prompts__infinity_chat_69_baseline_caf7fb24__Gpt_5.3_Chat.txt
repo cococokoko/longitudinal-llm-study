@@ -1,0 +1,20 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=28 out=103
+Latency:   2103 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+**Difference:**
+- **Analysis** is about understanding the problem: requirements, constraints, users, and goals (the “what” and “why”).
+- **Design** is about creating a solution: architecture, components, and behavior (the “how”).
+
+**Can design begin without analysis?**
+Not effectively. You might sketch ideas, but without analysis you risk solving the wrong problem, missing requirements, or building something unusable. Even minimal design benefits from at least some upfront analysis.

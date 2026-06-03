@@ -1,0 +1,22 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_45_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=846
+Latency:   19148 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a sentence using a minimum of 2 R-colored vowels.
+
+── Response ────────────────────────────────────────────────────────
+Here is a sentence that uses several R-colored vowels:
+
+"The th**ir**sty b**ir**d drank the cold wat**er**."
+
+**R-colored vowels used:**
+*   th**ir**sty (/ɝ/)
+*   b**ir**d (/ɝ/)
+*   wat**er** (/ɚ/)

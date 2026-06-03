@@ -1,0 +1,64 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35 out=504
+Latency:   10200 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## The Business Scenario
+
+Suppose your company's **quarterly revenue** (in millions) depends on two variables:
+
+- **x** = marketing spend (millions $)
+- **y** = engineering headcount (hundreds of engineers)
+
+$$R(x, y) = 3x^2 + 2xy + 5y^2$$
+
+---
+
+## Setting Up the Example
+
+Let's evaluate at a **specific operating point**: **x = 4** ($4M marketing), **y = 3** (300 engineers)
+
+$$R(4, 3) = 3(16) + 2(4)(3) + 5(9) = 48 + 24 + 45 = \$117M$$
+
+---
+
+## Computing the Partial Derivatives
+
+**∂R/∂x** — *How much does revenue change per additional $1M in marketing, holding headcount fixed?*
+
+$$\frac{\partial R}{\partial x} = 6x + 2y \quad \Rightarrow \quad 6(4) + 2(3) = \mathbf{30}$$
+
+> Adding $1M in marketing yields ~**$30M more revenue** at this operating point
+
+**∂R/∂y** — *How much does revenue change per 100 additional engineers, holding marketing fixed?*
+
+$$\frac{\partial R}{\partial y} = 2x + 10y \quad \Rightarrow \quad 2(4) + 10(3) = \mathbf{38}$$
+
+> Adding 100 engineers yields ~**$38M more revenue** at this operating point
+
+---
+
+## The Key Insight
+
+| Decision | Marginal Return |
+|----------|----------------|
+| +$1M Marketing | +$30M revenue |
+| +100 Engineers | +38M revenue |
+
+**The partial derivative isolates the impact of one variable while treating everything else as constant** — exactly what you need when making resource allocation decisions with multiple levers.
+
+> ⚠️ These are *local* estimates. The returns change as x and y change, which is why the operating point matters.

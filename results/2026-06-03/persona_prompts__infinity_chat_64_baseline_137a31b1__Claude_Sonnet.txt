@@ -1,0 +1,30 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=30 out=323
+Latency:   8253 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+# TOEFL vs. IELTS: A Consultant's Perspective
+
+Here is a draft paragraph you can use or adapt:
+
+---
+
+**Draft Paragraph:**
+
+"When advising international students on English proficiency testing, the choice between TOEFL and IELTS often comes down to destination, learning style, and institutional requirements. The **TOEFL iBT** is predominantly preferred by universities in the **United States and Canada**, and it assesses academic English through an entirely computer-based format, making it an ideal fit for students who are comfortable with typed responses and integrated tasks that combine reading, listening, and writing simultaneously. The **IELTS**, on the other hand, enjoys broader global acceptance — particularly in the **UK, Australia, New Zealand, and Canada** — and offers both Academic and General Training versions, with the notable distinction of including a **face-to-face speaking component**, which many students find more natural and less intimidating than TOEFL's microphone-recorded responses. From a strategic standpoint, I generally recommend that students consider their target country first, then evaluate their personal strengths — those who excel in conversational settings may perform better on IELTS, while strong academic writers often find TOEFL more aligned with their abilities."
+
+---
+
+**Would you like me to:**
+- Adjust the tone (more formal or conversational)?
+- Add scoring details?
+- Tailor it for a specific audience (parents, students, institutions)?

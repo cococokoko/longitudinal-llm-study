@@ -1,0 +1,18 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_25_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=26 out=1020
+Latency:   13842 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I decorate my apartment on a minimalist budget?
+
+── Response ────────────────────────────────────────────────────────
+Given your demanding schedule as a neurosurgeon and your responsibilities at a teaching hospital, your apartment needs to be two things: a restorative sanctuary away from the high-stress environment of the OR, and incredibly

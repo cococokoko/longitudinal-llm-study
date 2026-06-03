@@ -1,0 +1,40 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=424
+Latency:   7005 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+It depends a bit on how deep you want to go (casual tracking vs. really dialed-in data), but here are some of the strongest options right now, broken down by style:
+
+If you want simple, all-in-one tracking:
+- MyFitnessPal — still the easiest food logger with a huge database. Good for beginners, but many features are now behind a paywall.
+- Lose It! — similar to MyFitnessPal, slightly cleaner and often cheaper. Great balance of simplicity and useful insights.
+
+If you care about detailed nutrition (macros, micronutrients):
+- Cronometer — probably the best for accuracy. Tracks vitamins, minerals, and even things like amino acids. Ideal if you’re serious about nutrition quality.
+- MacroFactor — very smart app that adjusts your calorie targets based on your actual progress. Great if you’re trying to lose or gain weight efficiently.
+
+If you want strong fitness/workout tracking:
+- Strong — excellent for logging gym workouts (sets, reps, weights). Simple and fast.
+- Hevy — similar to Strong but more modern, with a social/community angle.
+- Fitbod — generates workouts for you based on your goals and recovery. Good if you don’t want to plan.
+
+If you want everything connected (health ecosystem):
+- Apple Fitness + Apple Health — great if you’re in the Apple ecosystem; integrates steps, workouts, heart rate, etc.
+- Google Fit — solid basic tracker for Android users.
+- WHOOP — more advanced wearable + app combo focused on recovery, sleep, and strain.
+- Garmin Connect — excellent if you have a Garmin device; very detailed performance data.
+
+If your goal is fat loss or body recomposition:
+- MacroFactor or Cronometer (nutrition) + Strong or Hevy (workouts) is a really solid combo.
+- If you want minimal effort: Lose It! + basic step tracking works surprisingly well.
+
+If you tell me your goal (lose weight, build muscle, just stay active, etc.), I can narrow it down to 1–2 apps that fit you best instead of overwhelming you.

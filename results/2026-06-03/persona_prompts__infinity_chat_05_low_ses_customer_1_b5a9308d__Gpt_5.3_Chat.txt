@@ -1,0 +1,24 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=40 out=207
+Latency:   4051 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A really impactful feature would be a “routine-aware safety check” system.
+
+Instead of just tracking steps or heart rate, the watch quietly learns the wearer’s typical daily patterns—when they usually wake up, move around, leave home, eat, and go to bed. If something unusual happens (like no movement in the morning, an unusually long period of inactivity during the day, or skipping a regular outing), the watch gently checks in with a simple prompt like “Are you okay?”
+
+If there’s no response after a short window, it can automatically alert a trusted contact with context, not just a vague alert—something like: “No activity detected this morning, which is unusual.”
+
+This goes beyond emergency buttons (which require action) and helps catch situations where the person can’t actively call for help. It’s especially useful for seniors living alone, while still being low-effort and non-intrusive.

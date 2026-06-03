@@ -1,0 +1,27 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_low_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=871
+Latency:   8448 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+**Analysis** focuses on *what* needs to be done (understanding the problem and gathering requirements). 
+**Design** focuses on *how* to do it (planning the actual solution).
+
+Think of it like managing your household and extended family: **Analysis** is figuring out everyone's schedules, budget, and dietary restrictions. **Design** is creating the actual weekly meal plan and chore chart based on that information.
+
+**Can you begin design without analysis?** 
+Technically yes, but it is highly discouraged. 
+
+**Why?** 
+If you just start cooking a massive dinner (design) without checking who is coming or if anyone has allergies (analysis), you might make a meal half the family can't eat. In any project, skipping analysis leads to solving the wrong problem, wasted time, and costly rework.

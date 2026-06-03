@@ -1,0 +1,26 @@
+Wave:      2026-06-03
+Dataset:   global_opinion_qa
+Item ID:   goqa_e58db83948d9
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=124 out=664
+Latency:   7812 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How have your perceptions of migration changed from the experience of Hurricane Maria?
+
+Options:
+A. A lot
+B. Fairly
+C. Little
+D. Nothing
+E. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.8, "E": 0.2}

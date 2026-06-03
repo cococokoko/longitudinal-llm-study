@@ -1,0 +1,39 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=436
+Latency:   7124 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi is usually about fixing a few common weak points: placement, interference, and hardware limits. Here’s a straightforward way to get better performance without overcomplicating it:
+
+Start with your router’s location. Put it somewhere central, elevated (like on a shelf), and out in the open. Avoid corners, basements, or hiding it inside cabinets—walls and furniture weaken the signal more than people expect.
+
+Check your frequency bands. Most routers offer 2.4 GHz and 5 GHz (and sometimes 6 GHz).  
+- 2.4 GHz goes farther but is slower and more crowded  
+- 5 GHz is faster but shorter range  
+Use 5 GHz when you’re near the router and 2.4 GHz for distant rooms.
+
+Reduce interference. Keep the router away from things like microwaves, cordless phones, Bluetooth hubs, and thick walls. Even large TVs or aquariums can block signal.
+
+Update your router settings and firmware. Log into your router and:
+- Install firmware updates  
+- Change the Wi‑Fi channel (auto is often fine, but manual can help in crowded areas)  
+- Enable modern standards like Wi‑Fi 5/6 if available
+
+Upgrade if needed. If your router is 4–5+ years old, it might just be the bottleneck. Newer routers (Wi‑Fi 6/6E) handle more devices and deliver better speeds.
+
+Consider a mesh system for larger homes. If you have dead zones, a mesh setup (like Google Nest, Eero, or Orbi) is usually much better than a single router or basic extender.
+
+Limit device overload. Too many connected devices can slow things down. Disconnect unused devices and consider enabling Quality of Service (QoS) to prioritize things like video calls or gaming.
+
+Use wired connections where possible. For TVs, gaming consoles, or desktops, Ethernet is faster and more stable than Wi‑Fi.
+
+If you want, tell me your home size, router model, and what problems you’re seeing (slow speeds, dropouts, certain rooms), and I can suggest a more tailored setup.

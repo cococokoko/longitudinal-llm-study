@@ -1,0 +1,136 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_low_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=776
+Latency:   12386 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+Nice, classic stack. A LAMP forum is very doable, but it’s not a tiny weekend project—so I’ll give you a practical path that fits around a busy, unpredictable schedule.
+
+First, the big picture: a forum needs users, threads, posts, and basic moderation. On LAMP, that means:
+- Linux (your server)
+- Apache (serves your PHP files)
+- MySQL (stores users/posts/etc.)
+- PHP (your backend logic)
+
+Step 1: Set up your environment  
+If you don’t already have one, spin up a simple dev environment:
+- Easiest: use XAMPP or MAMP locally  
+- Or a small VPS (Ubuntu + Apache + MySQL + PHP)
+
+Make sure you can:
+- Visit localhost in your browser
+- Run a simple PHP file like: <?php echo "hi"; ?>
+
+Step 2: Design your database  
+Start simple. You can always expand later.
+
+Core tables:
+
+users
+- id (INT, PK)
+- username (VARCHAR, unique)
+- password_hash (VARCHAR)
+- created_at
+
+threads
+- id
+- title
+- user_id (who created it)
+- created_at
+
+posts
+- id
+- thread_id
+- user_id
+- content (TEXT)
+- created_at
+
+That’s enough for a basic forum.
+
+Step 3: Basic PHP structure  
+Don’t overcomplicate this at first. A simple structure:
+
+- index.php → list threads  
+- thread.php?id= → show posts in a thread  
+- new_thread.php → create thread  
+- reply.php → add post  
+- login.php / register.php  
+
+Use PDO for database access (important for security).
+
+Example connection:
+
+```
+$pdo = new PDO("mysql:host=localhost;dbname=forum", "user", "pass");
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+```
+
+Step 4: User authentication  
+- Use password_hash() and password_verify()  
+- Store user_id in $_SESSION after login  
+
+Example:
+
+```
+$passwordHash = password_hash($password, PASSWORD_DEFAULT);
+```
+
+And on login:
+
+```
+if (password_verify($inputPassword, $storedHash)) {
+    $_SESSION['user_id'] = $user['id'];
+}
+```
+
+Step 5: Core features  
+Build in this order so you always have something working:
+
+1. Show all threads (index.php)
+2. View a thread + its posts
+3. Create a thread (only if logged in)
+4. Reply to a thread
+5. Register + login
+
+Don’t worry about styling yet—get functionality working first.
+
+Step 6: Security basics (don’t skip this)
+- Use prepared statements (PDO does this)
+- Escape output with htmlspecialchars() to prevent XSS:
+  ```
+  echo htmlspecialchars($post['content']);
+  ```
+- Validate input (don’t trust forms)
+- Use sessions safely (session_start())
+
+Step 7: Simple UI
+Once it works:
+- Add basic CSS or Bootstrap
+- Show usernames, timestamps
+- Add pagination later if threads grow
+
+Step 8: Deployment
+When you’re ready:
+- Get a cheap VPS (DigitalOcean, Linode, etc.)
+- Install LAMP stack
+- Upload files
+- Import your database
+
+Real talk: consider not building from scratch  
+If your goal is “I want a forum,” using something like phpBB or Flarum will save you *a ton* of time. Building one from scratch is best if your goal is learning or customizing heavily.
+
+If you want, I can:
+- sketch a minimal file structure
+- give you a working starter project
+- or walk you through one feature at a time based on your schedule (like 30–60 min chunks)

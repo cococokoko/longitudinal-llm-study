@@ -1,0 +1,17 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_low_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=49 out=21
+Latency:   2494 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
+
+── Response ────────────────────────────────────────────────────────
+"best Tips for Single Parents Balancing Childcare and Work Like a Pro"

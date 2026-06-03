@@ -1,0 +1,51 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=44 out=286
+Latency:   8468 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens
+
+## Suggested Feature: **Smart Medication & Schedule Assistant**
+
+### Core Functionality
+A simplified medication reminder system that accounts for **unpredictable daily schedules** and cognitive needs common among seniors.
+
+### Key Components
+
+**Adaptive Reminders**
+- Gentle vibration alerts with large, clear text displays
+- Reminders that **reschedule automatically** if a dose is missed, rather than just alarming repeatedly
+- Simple one-tap confirmation ("I took it")
+
+**Easy Interface**
+- Extra-large buttons and high-contrast display
+- Voice confirmation option for those with vision difficulties
+- Minimal steps to interact
+
+**Safety Integration**
+- Alerts a family member or caregiver if medications are consistently missed
+- Connects to a simple phone app that loved ones can monitor
+
+### Why This Matters for Seniors with Busy/Variable Schedules
+- Works around **shift-based or irregular routines**
+- Reduces anxiety about missing doses
+- Doesn't require tech expertise to operate
+
+---
+
+### Additional Benefit
+The watch could include a **fall detection feature** that automatically contacts emergency services, which is particularly valuable for seniors working physical jobs in environments like food service.
+
+Would you like me to expand on any specific aspect of this feature?

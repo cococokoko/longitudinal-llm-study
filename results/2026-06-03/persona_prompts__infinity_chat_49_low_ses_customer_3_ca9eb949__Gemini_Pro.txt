@@ -1,0 +1,18 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_49_low_ses_customer_3
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=1020
+Latency:   12315 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+In three sentences, describe a girl wandering around in Vietnam.
+
+── Response ────────────────────────────────────────────────────────
+As you navigate the uncertain but exciting probationary period of your new job, imagine a girl weaving through the chaotic, vibrant streets of Hanoi, taking in the intoxicating scent of simmering pho and rain-washed asphalt

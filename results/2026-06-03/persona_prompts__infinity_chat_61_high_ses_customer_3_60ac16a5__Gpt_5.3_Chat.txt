@@ -1,0 +1,24 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_61_high_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=237
+Latency:   5028 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Make an analogy of the relationship between US and China.
+
+── Response ────────────────────────────────────────────────────────
+Think of the U.S. and China as two dominant operating systems that ended up sharing the same global “computer.”
+
+For a long time, one system (the U.S.) set most of the standards—file formats, security protocols, user expectations. Then another system (China) grew rapidly, building its own architecture, optimizing for different priorities, and gaining a massive user base. Now both are powerful, widely used, and deeply embedded in the same machine.
+
+They depend on each other more than they’d like: many “applications” (global supply chains, financial markets, climate efforts) only run smoothly if both systems can interoperate at least partially. But they’re also constantly competing—trying to attract developers (allies), set standards, and avoid vulnerabilities that the other could exploit.
+
+Sometimes they cooperate quietly—agreeing on basic protocols so the whole system doesn’t crash. Other times they compete aggressively, trying to out-innovate or constrain the other’s influence. And there’s always the underlying tension: if incompatibility goes too far, the shared machine risks fragmentation or failure, but full integration would require compromises neither side fully trusts the other to make.

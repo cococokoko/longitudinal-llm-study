@@ -1,0 +1,17 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_user_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=24 out=1020
+Latency:   12548 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+As a partner at a major consulting firm, your most constrained resource is time, and your primary lens is ROI. You aren't learning to code to become a full-time software engineer; you

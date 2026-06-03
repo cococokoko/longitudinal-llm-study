@@ -1,0 +1,78 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=36 out=640
+Latency:   10380 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## Setup: Family Household Budget
+
+Let's say your **monthly household expenses** depend on two variables:
+
+- **x** = number of people in the household
+- **y** = price of groceries per person (in dollars)
+
+The total monthly cost function is:
+
+$$f(x, y) = 3x^2 + 2xy + 50y$$
+
+---
+
+## Evaluating at a Specific Point
+
+Suppose currently:
+- **x = 6** people (you, your spouse, kids, and extended family members)
+- **y = 80** dollars per person
+
+$$f(6, 80) = 3(36) + 2(6)(80) + 50(80) = 108 + 960 + 4000 = \$5,068/month$$
+
+---
+
+## Partial Derivative with Respect to x (holding y constant)
+
+$$\frac{\partial f}{\partial x} = 6x + 2y$$
+
+At (6, 80):
+
+$$\frac{\partial f}{\partial x} = 6(6) + 2(80) = 36 + 160 = \mathbf{196}$$
+
+> **Meaning:** If **one more person** joins the household (x goes from 6 to 7), monthly costs increase by approximately **$196**, assuming grocery prices stay the same.
+
+---
+
+## Partial Derivative with Respect to y (holding x constant)
+
+$$\frac{\partial f}{\partial y} = 2x + 50$$
+
+At (6, 80):
+
+$$\frac{\partial f}{\partial y} = 2(6) + 50 = 12 + 50 = \mathbf{62}$$
+
+> **Meaning:** If grocery prices rise by **$1 per person** (y goes from 80 to 81), monthly costs increase by approximately **$62**, assuming household size stays the same.
+
+---
+
+## Verification
+
+| Change | Approximate increase | Actual new cost |
+|--------|---------------------|-----------------|
+| x: 6 → 7 (one more person) | +$196 | f(7,80) = $5,267 → difference = **$199** ✓ |
+| y: 80 → 81 (price up $1) | +$62 | f(6,81) = $5,130 → difference = **$62** ✓ |
+
+---
+
+## Key Concept
+
+A **partial derivative** measures how sensitive your outcome is to **one variable at a time**, while keeping all other variables **frozen** — just like analyzing whether to take in another family member vs. worrying about rising food prices, **separately**.

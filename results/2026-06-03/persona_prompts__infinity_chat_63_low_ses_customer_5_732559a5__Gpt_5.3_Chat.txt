@@ -1,0 +1,45 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=296
+Latency:   4117 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+Think of a situation where a result depends on more than one variable. For example, suppose a household’s monthly electricity bill depends on two things:
+
+- x = number of units of electricity used  
+- y = fixed service fee
+
+Let’s define a simple function:  
+B(x, y) = 5x + y
+
+Here, 5x is the usage cost (5 per unit), and y is the fixed fee.
+
+Now, partial derivatives ask: “how does the bill change if we vary one thing while keeping the other fixed?”
+
+Partial derivative with respect to x (usage):
+∂B/∂x = 5  
+This means: for every additional unit of electricity used, the bill increases by 5, assuming the fixed fee y stays the same.
+
+Partial derivative with respect to y (fixed fee):
+∂B/∂y = 1  
+This means: if the fixed fee increases by 1, the total bill increases by 1, regardless of usage.
+
+Numerical example:
+Let x = 100 units and y = 50.  
+Then B = 5(100) + 50 = 550.
+
+- If x increases to 101 (y still 50), new bill = 555 → change = +5  
+- If y increases to 51 (x still 100), new bill = 551 → change = +1  
+
+That’s exactly what the partial derivatives told us.

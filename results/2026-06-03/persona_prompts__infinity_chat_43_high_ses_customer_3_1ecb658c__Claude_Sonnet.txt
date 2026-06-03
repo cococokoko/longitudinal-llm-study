@@ -1,0 +1,30 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_43_high_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=48 out=131
+Latency:   4341 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Paraphrase this: We're checking if the domain 'aspris.ae' is included in our scope.
+
+── Response ────────────────────────────────────────────────────────
+Here are a few paraphrase options:
+
+**Formal:**
+"We are verifying whether the domain 'aspris.ae' falls within our defined scope."
+
+**Concise:**
+"We're determining if 'aspris.ae' is within scope."
+
+**Technical:**
+"We are assessing whether the domain 'aspris.ae' qualifies as an in-scope target."
+
+**Academic/Professional (suited for a tenured professor):**
+"We are currently evaluating whether the domain 'aspris.ae' falls within the established parameters of our scope."

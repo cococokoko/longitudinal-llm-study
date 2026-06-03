@@ -1,0 +1,16 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1020
+Latency:   13471 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+Zombie getting shot: Inside the Zombie's clone loop: `if touching [Bullet]? then delete this clone`. (Add score here later).
+        *   Player getting bitten: Inside Player loop

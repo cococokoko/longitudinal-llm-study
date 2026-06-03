@@ -1,0 +1,38 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=492
+Latency:   9239 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+If you’re thinking in terms of risk management rather than “safe vs unsafe,” the goal is to reduce exposure at each stage of the trip: transit, time at destination, and return.
+
+Air travel can be reasonably controlled if you’re deliberate. Nonstop flights are generally lower risk than connections because they reduce time in crowded terminals. Modern aircraft have strong air filtration (HEPA), but the higher-risk moments are boarding, deplaning, and time spent in the airport. A well-fitted respirator-style mask (e.g., N95/FFP2) meaningfully reduces risk in those settings. Sitting near a window and limiting movement during the flight helps a bit as well.
+
+Driving is typically lower exposure than flying, especially if you’re alone or with your household. The tradeoff is time and potential stops—risk rises with frequent indoor stops (rest areas, restaurants), so minimizing those or choosing less crowded options matters.
+
+Trains and buses fall somewhere in between; they can involve prolonged indoor proximity with less consistent ventilation than planes. If you use them, off-peak travel and masking make a difference.
+
+Where you stay matters as much as how you get there. Private accommodations (like a standalone rental) reduce contact compared to large hotels, but reputable hotels with good ventilation and contactless check-in can also be managed safely. Elevators, lobbies, and dining areas are typical pinch points.
+
+Behavior at the destination is often the biggest driver of overall risk. Outdoor activities, smaller gatherings, and well-ventilated spaces are much safer than crowded indoor venues. If you’re attending meetings, rooms with good air circulation (open windows, upgraded HVAC, or portable HEPA filters) are preferable.
+
+A few practical layers that consistently help:
+- Stay up to date with relevant vaccinations/boosters if applicable.
+- Use high-quality masks in crowded indoor settings.
+- Pay attention to ventilation (outdoor > indoor; moving air > stagnant).
+- Wash or sanitize hands, especially before eating or touching your face.
+- Avoid traveling if you’re symptomatic, and have a plan if you become ill mid-trip.
+
+Finally, timing and destination matter. Traveling when case levels are lower, and to places with less crowding or better public health infrastructure, reduces baseline risk before you even factor in your own precautions.
+
+If you want, I can tailor this to a specific type of trip (e.g., international conference vs. family visit).

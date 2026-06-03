@@ -1,0 +1,48 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=339
+Latency:   4541 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+Sure! Let’s take a simple function of two variables:
+
+f(x, y) = x²y + 3y
+
+Now we’ll look at partial derivatives, which means we change one variable while keeping the other fixed.
+
+First, the partial derivative with respect to x (treat y as constant):
+
+∂f/∂x = derivative of (x²y + 3y) with respect to x  
+= 2x·y + 0  
+= 2xy
+
+Now plug in some numbers, say x = 2 and y = 3:
+
+∂f/∂x at (2, 3) = 2 × 2 × 3 = 12
+
+This means: if we slightly increase x while keeping y = 3 fixed, the function increases at a rate of 12.
+
+Now the partial derivative with respect to y (treat x as constant):
+
+∂f/∂y = derivative of (x²y + 3y) with respect to y  
+= x² + 3
+
+Plug in x = 2:
+
+∂f/∂y at (2, 3) = 2² + 3 = 4 + 3 = 7
+
+This means: if we slightly increase y while keeping x = 2 fixed, the function increases at a rate of 7.
+
+So at the point (2, 3):
+- changing x affects the function at rate 12  
+- changing y affects the function at rate 7  
+
+That’s the core idea of partial derivatives: how the function changes in one direction while freezing the other variables.

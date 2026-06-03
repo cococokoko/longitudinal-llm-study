@@ -1,0 +1,20 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_23_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=27 out=1020
+Latency:   12633 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Is there such a thing as a paradox of free speech?
+
+── Response ────────────────────────────────────────────────────────
+Yes, there is, and it is most famously articulated through the philosopher Karl Popper’s **"Paradox of Tolerance,"** which applies directly to the concept of absolute free speech. 
+
+In his 1945 book *The Open Society and Its Enemies*, Popper stated that if a society is tolerant without limit, its ability to be tolerant will eventually be seized or

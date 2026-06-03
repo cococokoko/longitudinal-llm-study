@@ -1,0 +1,44 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=286
+Latency:   9060 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+# Tip: Create Structured but Brief Regular Check-ins
+
+Consider implementing **short, consistent one-on-one meetings** with each team member (even 15-20 minutes biweekly).
+
+## Why this works well in research settings:
+
+- Catches problems **early** before they derail experiments or timelines
+- Gives trainees/staff dedicated time without feeling like they're interrupting you
+- Separates routine updates from **deeper mentorship conversations**
+- Helps you distinguish between someone who is *stuck* vs. *struggling*
+
+## A simple structure to try:
+
+1. **What's going well?**
+2. **What obstacles exist?**
+3. **What do you need from me?**
+
+---
+
+## Particularly relevant for physician-scientists:
+
+Your clinical time creates **predictable gaps in availability**, which can leave team members uncertain when to reach you. Scheduled check-ins compensate for this by giving people a reliable touchpoint, reducing the anxiety that often builds in research trainees when they feel unsupported.
+
+---
+
+The consistency matters more than the length. Even a brief, **predictable** meeting builds trust and keeps projects moving.
+
+Would you like tips on a specific challenge, like managing conflict, mentoring trainees, or balancing lab leadership with clinical duties?

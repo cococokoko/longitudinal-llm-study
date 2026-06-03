@@ -1,0 +1,24 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=30 out=951
+Latency:   11993 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+A foundational and widely used optimization technique in machine learning is **Gradient Descent**, along with its highly popular modern variant, **Adam** (Adaptive Moment Estimation).
+
+To put it in a context that might resonate with your work: imagine a machine learning model designed to automatically segment brain tumors in MRI scans or predict patient outcomes in a neuro-ICU. When the model first begins learning, its predictions are highly inaccurate. 
+
+Gradient Descent is the mathematical engine that fixes this. It measures the model's "error rate" (known as the loss function) and calculates the gradient, or slope, of that error. The algorithm then iteratively adjusts the "weights" of the artificial neurons to step down the slope until it reaches the lowest possible error rate. 
+
+Conceptually, it is a highly simplified mathematical analogue to synaptic plasticity—just as neural pathways in the human brain strengthen or weaken based on learning stimuli, optimization techniques like Adam adjust the artificial connections in a machine learning model so it becomes progressively more accurate at its given task.

@@ -1,0 +1,57 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=25 out=486
+Latency:   9351 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+Here’s a strong idea that’s both meaningful in Vietnam and doable on a student budget:
+
+**Project: A Low-Cost Water Filter for Removing Microplastics and Pollutants**
+
+**Why it matters in Vietnam:**
+Vietnam has serious issues with water pollution, especially in rivers and canals in cities like Ho Chi Minh City and Hanoi. Microplastics and household runoff are becoming a growing problem, and many rural areas still rely on basic filtration or untreated water.
+
+**Core idea:**
+Design and test an affordable, layered water filtration system using locally available materials (like sand, gravel, charcoal, coconut husk fiber, etc.) and compare how well different combinations remove contaminants—especially tiny plastic particles.
+
+**What makes it “incredible”:**
+You’re not just filtering dirty water—you’re testing *which materials work best* and potentially improving on traditional filtration methods with a Vietnam-specific solution.
+
+**How to do it:**
+- Build several filter columns (plastic bottles or PVC pipes work fine)
+- Each one has different layers:
+  - Sand + gravel (basic)
+  - Activated charcoal (can be homemade from coconut shells)
+  - Coconut fiber (common in Vietnam)
+  - Cloth layers or fine mesh
+- Create “polluted” water:
+  - Add soil, food coloring, oil, and tiny plastic bits (like crushed plastic)
+- Run water through each filter and compare:
+  - Clarity (visual or using a light sensor if you want to go high-tech)
+  - Smell
+  - Amount of particles left (you can filter the output again through paper and measure residue)
+
+**Optional upgrade (to stand out):**
+- Use a simple Arduino + turbidity sensor to measure water clarity scientifically
+- Compare cost vs effectiveness of each design
+- Propose a “best design” for rural households
+
+**Research question examples:**
+- “Which low-cost filtration material combination is most effective at removing microplastics from water?”
+- “Can coconut-based materials improve water filtration efficiency compared to standard sand filters?”
+
+**Why judges will like it:**
+- Real-world problem tied to your country
+- Clear experimental design with measurable results
+- Scalable solution (not just theory)
+- Shows environmental awareness and engineering thinking
+
+If you want, I can level it up even more (like turning it into a competition-winning project with a unique twist or adding a “wow factor”).

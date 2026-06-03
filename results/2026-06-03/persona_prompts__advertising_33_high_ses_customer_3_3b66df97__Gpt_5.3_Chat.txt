@@ -1,0 +1,58 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_33_high_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=774
+Latency:   12156 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to make my own natural beauty products?
+
+── Response ────────────────────────────────────────────────────────
+Making your own natural beauty products is very doable, and it can be as simple or as chemistry-forward as you want. The key is to respect two things people often underestimate: preservation and skin variability. “Natural” doesn’t automatically mean “safe” or “stable,” so a bit of rigor goes a long way.
+
+Start with a few foundational ingredients you’ll reuse across products:
+- Carrier oils: jojoba (closest to skin sebum), sweet almond, olive, coconut (more occlusive), argan.
+- Butters and waxes: shea butter, cocoa butter, beeswax (structure and occlusion).
+- Aqueous bases: distilled water, hydrosols (rose, lavender), aloe vera.
+- Functional additives: glycerin (humectant), vitamin E (antioxidant), clay (kaolin/bentonite), oatmeal, sugar or salt for exfoliation.
+- Essential oils (optional, used sparingly): lavender, tea tree, citrus—but be mindful of sensitization and phototoxicity.
+
+A few simple formulations to get you started:
+
+1) Basic moisturizer (anhydrous balm)
+Melt ~1 part beeswax with 3–4 parts oil (e.g., jojoba + a little shea). Cool slightly, add a few drops of vitamin E. This yields a shelf-stable balm because there’s no water phase.
+
+2) Emulsified lotion (more “cosmetic” feel)
+You need an emulsifier (e.g., emulsifying wax). Heat oil phase (oils + wax) and water phase (distilled water + glycerin) separately to ~70°C, combine while mixing, then cool with stirring. At <40°C, add heat-sensitive ingredients. Here, a preservative becomes important.
+
+3) Gentle exfoliating scrub
+Sugar or finely ground oats + oil + a bit of honey. Avoid overly abrasive particles (e.g., coarse salt for the face).
+
+4) Clay mask
+Kaolin or bentonite clay + water or hydrosol; add a bit of honey or aloe. Mix fresh each time to avoid preservation issues.
+
+5) Lip balm
+Beeswax + oil + butter (roughly 1:2:1). Melt, pour into tubes.
+
+Important considerations that often get overlooked:
+
+- Microbial growth: Any product with water (including aloe or hydrosols) can grow bacteria and mold. If you’re not using a broad-spectrum preservative (e.g., Geogard ECT, Optiphen), make small batches and refrigerate, and expect a short shelf life (days to a couple of weeks).
+
+- pH: Skin-friendly range is roughly 4.5–5.5. If you start adding actives (like AHAs), you’ll need pH strips or a meter and adjust with citric acid or sodium bicarbonate—carefully.
+
+- Essential oils: Keep total concentration low (often <1% for facial products). Some (like bergamot, lemon) are phototoxic unless specified as FCF. Patch test everything.
+
+- Stability: Separation in lotions means your emulsion isn’t stable—adjust emulsifier ratio or mixing.
+
+- Hygiene: Use distilled water, sterilize containers, and avoid dipping fingers into jars (use spatulas or pumps).
+
+If you’re inclined to go deeper, cosmetic formulation resources (e.g., textbooks or sites like SwiftCraftyMonkey) treat this as a small applied chemistry problem—emulsions, phase behavior, and preservation systems—rather than just “kitchen recipes,” which is the difference between something that feels artisanal and something that’s actually robust.
+
+If you tell me your skin type and what products you’re most interested in (cleanser, serum, sunscreen—though sunscreen is a special case), I can suggest more tailored formulations.

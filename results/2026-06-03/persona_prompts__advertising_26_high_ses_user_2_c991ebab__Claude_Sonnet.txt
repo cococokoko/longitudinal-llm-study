@@ -1,0 +1,56 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=33 out=379
+Latency:   9916 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+As a senior attorney, you likely appreciate both the **legal compliance dimensions** and **practical risk management** aspects of this topic.
+
+## Foundational Controls
+
+### Access Management
+- Implement **least-privilege access** principles
+- Use multi-factor authentication (MFA) on all systems
+- Maintain formal offboarding procedures to revoke access promptly
+- Conduct periodic access reviews
+
+### Data Classification
+- Identify and categorize sensitive data (client PII, financial records, privileged communications)
+- Apply protections proportionate to sensitivity
+- Know where data lives across all systems
+
+## Technical Safeguards
+- **Encryption** at rest and in transit
+- Regular, tested **backup procedures** (follow 3-2-1 rule)
+- Keep software and systems **patched and updated**
+- Use reputable endpoint protection
+- Secure Wi-Fi networks separately from guest access
+
+## Organizational Measures
+- **Written security policies** and incident response plans
+- Regular **employee training** (phishing remains the leading attack vector)
+- Vendor due diligence and contractual security requirements
+- Cyber liability insurance review
+
+## Legal Compliance Considerations Worth Noting
+- State breach notification laws vary significantly
+- Sector-specific requirements (HIPAA, FTC Safeguards Rule, GLBA)
+- Reasonable security standards increasingly inform **negligence liability**
+- Document your security practices
+
+## Practical Priority
+For most small businesses, **human error and phishing** represent the greatest actual risk - training often delivers better ROI than sophisticated technical tools.
+
+Would you like me to focus on any specific aspect, such as vendor contracts or incident response planning?

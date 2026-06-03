@@ -1,0 +1,40 @@
+Wave:      2026-06-03
+Dataset:   global_opinion_qa
+Item ID:   goqa_6c662d04113d
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=184 out=964
+Latency:   11366 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Job opportunities of all people are fair regardless of social and financial abilities of their parents or acquaintances
+
+Options:
+A. Not equal at all
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{
+  "A": 0.15,
+  "B": 0.20,
+  "C": 0.20,
+  "D": 0.15,
+  "E": 0.10,
+  "F": 0.08,
+  "G": 0.05,
+  "H": 0.04,
+  "I": 0.03
+}

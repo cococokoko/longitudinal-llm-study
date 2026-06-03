@@ -1,0 +1,73 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=613
+Latency:   10944 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Short answer: don’t overthink it—pick one language, tie it to a real problem you care about, and build things immediately. The biggest mistake people in your position make is staying too abstract.
+
+Given your background, here’s a practical path that works well:
+
+First, pick a language with leverage.  
+Python is the obvious choice. It’s forgiving, widely used in analytics, automation, AI, and internal tooling—areas that intersect nicely with consulting work.
+
+Second, anchor it to something useful in your day-to-day.  
+Don’t start with “learn Python.” Start with “automate something annoying” or “analyze a dataset I care about.” Examples:
+- Clean and analyze a messy client dataset
+- Automate slide or report generation
+- Pull data from APIs (market data, financials, etc.)
+- Build a simple model (forecasting, clustering, etc.)
+
+This keeps motivation high and makes the learning stick.
+
+Third, learn just enough fundamentals as you go.  
+You don’t need a computer science curriculum upfront. Focus on:
+- Variables, loops, conditionals
+- Functions
+- Basic data structures (lists, dicts)
+- Reading/writing files
+- Using libraries (this is where real power comes from)
+
+Fourth, use high-quality, fast-moving resources.  
+Skip bloated courses. Instead:
+- “Python for Everybody” (good structured intro)
+- Or jump straight into something like “Automate the Boring Stuff with Python”
+- Supplement heavily with ChatGPT or similar tools to explain code, debug, and accelerate learning
+
+Fifth, build small, ugly projects quickly.  
+Think in terms of 1–3 hour builds, not “big projects.” For example:
+- Script that renames and organizes files
+- Scraper that pulls competitor data into a CSV
+- Simple dashboard using Streamlit
+- Email/report generator from a dataset
+
+You’ll learn far more from shipping 10 scrappy tools than one polished app.
+
+Sixth, learn to read code, not just write it.  
+You’ll often be stitching together existing libraries or snippets. Get comfortable scanning documentation and GitHub examples—that’s a core skill.
+
+Seventh, don’t aim to become an engineer.  
+Your advantage isn’t syntax mastery—it’s combining:
+- Business judgment
+- Problem framing
+- “Good enough” technical solutions
+
+That combination is rare and extremely valuable.
+
+If you want a concrete 2-week starting plan:
+- Days 1–3: Basics (variables, loops, functions) via a fast tutorial
+- Days 4–7: Build a simple automation script tied to your work
+- Days 8–10: Learn pandas (data analysis)
+- Days 11–14: Build a small end-to-end project (e.g., ingest data → analyze → output report)
+
+If you tell me what kind of work you do (strategy, ops, M&A, etc.), I can suggest a few very targeted “first projects” that will feel immediately relevant.

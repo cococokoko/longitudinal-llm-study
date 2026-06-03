@@ -1,0 +1,93 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=34 out=617
+Latency:   14984 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## Step 1: Download and Install Dolphin
+
+1. Go to **dolphin-emu.org**
+2. Download the latest stable or development build
+3. Run the installer (no admin rights needed for portable version)
+
+---
+
+## Step 2: Basic Dolphin Setup
+
+1. Open Dolphin
+2. Go to **Config → Paths** and add your ROM folder
+3. Your game library will populate automatically
+
+---
+
+## Step 3: Configure the Touchpad
+
+Go to **Controllers → Emulated Wii Remote**
+
+### Touchpad as Pointer (IR/Cursor)
+- Dolphin has limited native touchpad support
+- **Recommended:** Use **TouchMote** or **GlovePIE** to map touchpad to Wii pointer
+
+### Basic Touchpad Mapping in Dolphin
+- Controllers → **Emulate the Wii's Bluetooth adapter**
+- Click **Configure** on Wii Remote 1
+- Map buttons manually by clicking each field and tapping/clicking
+
+---
+
+## Step 4: On-Screen Keyboard for Text Input
+
+- Press **Windows key + Ctrl + O** to open the on-screen keyboard
+- Use it for any text fields within Dolphin settings
+- Pin it to stay visible while navigating menus
+
+---
+
+## Step 5: Touch-Friendly Tips
+
+| Setting | Recommendation |
+|---|---|
+| UI Scaling | Increase in Windows Display Settings (125-150%) |
+| Dolphin toolbar | Keep visible for easy touch access |
+| Game list | Use **List view** for easier touch scrolling |
+| Fullscreen | Press **Alt+Enter** or use the View menu |
+
+---
+
+## Step 6: Controller Options (Recommended Additions)
+
+Since touchpad + OSK is limited for gaming:
+
+- **Bluetooth controller** paired to Surface works great
+- **Xbox controller** via USB or Bluetooth
+- **Touch screen** (if your Surface has one) can be mapped in Dolphin
+
+---
+
+## Step 7: Enable Touch Screen Input (If Available)
+
+1. Controllers → Wii Remote 1 → Configure
+2. Under **IR/Pointer**, you can map touch coordinates
+3. Use **DolphiniOS** concepts adapted for Windows touch
+
+---
+
+## Troubleshooting
+
+- **Lag:** Lower graphics settings in Graphics → General
+- **No games showing:** Double-check ROM path in Config → Paths
+- **Touchpad not responding:** Check Windows touchpad sensitivity in Settings → Bluetooth & Devices → Touchpad
+
+---
+
+Would you like help with a specific game or more detail on any of these steps?

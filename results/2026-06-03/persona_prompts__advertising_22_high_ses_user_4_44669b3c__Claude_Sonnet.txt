@@ -1,0 +1,51 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=346
+Latency:   9316 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+# Remote Team Collaboration Tools for Research Groups
+
+Here's a practical breakdown by function:
+
+## Communication
+- **Slack** - Organized channels by project, integrates with many research tools
+- **Microsoft Teams** - Good if your institution uses Office 365
+- **Zoom/Teams** - Video meetings, lab meetings, journal clubs
+
+## Project & Task Management
+- **Asana or Monday.com** - Track experiments, deadlines, responsibilities
+- **Trello** - Simple kanban boards for workflow visualization
+- **Notion** - Flexible workspace combining notes, tasks, and databases
+
+## Document Collaboration
+- **Google Workspace** - Real-time document/spreadsheet collaboration
+- **Overleaf** - Essential for collaborative manuscript writing (LaTeX)
+- **Microsoft SharePoint** - Institutional document management
+
+## Research-Specific Tools
+- **Benchling** - Electronic lab notebooks, protocol sharing
+- **OSF (Open Science Framework)** - Project management + data sharing
+- **Zotero/Mendeley** - Shared reference libraries
+
+## Data & Code
+- **GitHub** - Version control for code and analysis pipelines
+- **Dropbox/Box** - File sharing (check institutional data agreements)
+
+## Practical Recommendations
+- **Start simple** - avoid tool overload
+- Check what your **institution already licenses**
+- Consider **data security requirements** for patient/sensitive data
+- Establish clear **team norms** for which tool serves which purpose
+
+Would you like recommendations tailored to a specific challenge you're facing?

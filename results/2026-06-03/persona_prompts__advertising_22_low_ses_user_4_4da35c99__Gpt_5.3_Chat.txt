@@ -1,0 +1,52 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=29 out=418
+Latency:   7270 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Got it—since you’re working shifts, the key is tools that handle **asynchronous communication, quick handoffs, and clear visibility** rather than just live meetings.
+
+Here are some of the most useful options, depending on what your team actually needs:
+
+**For messaging and quick updates**
+- Slack: very flexible, channels for different units or shifts, easy file sharing
+- Microsoft Teams: similar to Slack but often better if your hospital already uses Microsoft 365
+- WhatsApp (or similar): simple and fast, but not ideal for anything sensitive or structured
+
+**For shift handoffs and task tracking**
+- Trello: visual boards for tracking tasks or patient-related workflows (non-sensitive info only)
+- Asana: more structured than Trello, good for checklists and recurring responsibilities
+- Notion: combines notes, checklists, and databases—great for shared protocols or logs
+
+**For scheduling and shift coordination**
+- When I Work: built specifically for shift-based teams
+- Shiftboard or Deputy: more advanced scheduling and compliance tools
+- Google Calendar / Outlook: basic but works well for smaller teams
+
+**For documentation and shared knowledge**
+- Google Docs/Drive: easy real-time collaboration
+- Microsoft OneDrive/SharePoint: better if you're in a Microsoft ecosystem
+- Notion or Confluence: for keeping procedures, training info, and updates in one place
+
+**For quick video or check-ins**
+- Zoom: reliable and simple
+- Microsoft Teams: again, good all-in-one if already in use
+
+---
+
+One important note given your environment:  
+You’ll want to make sure anything you use is **HIPAA-compliant (or your country’s equivalent)** if there’s even a chance patient information is involved. Many general tools (like Slack or WhatsApp) are only appropriate if you’re strictly avoiding patient identifiers.
+
+---
+
+If you want, tell me how your team currently communicates (group chat? paper notes? verbal handoffs?), and I can suggest a setup that actually fits your workflow instead of just a generic stack.

@@ -1,0 +1,22 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_03_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=21 out=1020
+Latency:   12098 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a joke about electric vehicles.
+
+── Response ────────────────────────────────────────────────────────
+Why do tech executives love electric vehicles?
+
+Because it’s the only physical product where "range anxiety" perfectly simulates the feeling of watching a Q4 budget burn rate. 
+
+Plus

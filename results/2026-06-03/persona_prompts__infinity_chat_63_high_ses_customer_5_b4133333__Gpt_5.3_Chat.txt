@@ -1,0 +1,45 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=320
+Latency:   4245 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+Think of a function that depends on more than one variable, like a simple revenue model:
+
+R(p, m) = p × m  
+where p = price per unit, m = number of units sold.
+
+Now plug in some numbers. Suppose p = 10 and m = 50, so R = 500.
+
+A **partial derivative** tells you how R changes when you vary one variable while holding the other constant.
+
+First, vary price only (hold m = 50 fixed):  
+If p increases from 10 to 11, revenue goes from 500 to 550.  
+Change in R = 50 for a +1 change in p.  
+
+So the partial derivative of R with respect to p is:  
+∂R/∂p = m = 50
+
+Interpretation: at m = 50, each $1 increase in price increases revenue by $50.
+
+Now vary m only (hold p = 10 fixed):  
+If m increases from 50 to 51, revenue goes from 500 to 510.  
+Change in R = 10 for a +1 change in m.
+
+So the partial derivative of R with respect to m is:  
+∂R/∂m = p = 10
+
+Interpretation: at p = 10, each additional unit sold adds $10 to revenue.
+
+So in short, partial derivatives isolate the effect of one variable at a time—exactly what you’d want in a multi-factor system when you’re asking “what’s the sensitivity to just this one lever?”

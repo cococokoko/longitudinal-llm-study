@@ -1,0 +1,22 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_47_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=63
+Latency:   1484 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me a trivia question about blue birds and its corresponding answer.
+
+── Response ────────────────────────────────────────────────────────
+Here’s a clean one:
+
+Question: Which blue bird is often used as a symbol of happiness and is the state bird of both Missouri and New York?
+
+Answer: The Eastern Bluebird (Sialia sialis)

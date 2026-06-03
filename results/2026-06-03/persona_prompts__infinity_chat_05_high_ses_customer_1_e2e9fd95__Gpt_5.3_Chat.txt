@@ -1,0 +1,29 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=247
+Latency:   5046 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A feature I think would genuinely move the needle is a **passive cognitive drift detector**—something that quietly tracks subtle changes in behavior over time and flags early signs of cognitive decline.
+
+Instead of relying on explicit “tests,” it would learn a user’s baseline patterns: how quickly they respond to notifications, their typical movement routines, speech cadence during calls, even variability in sleep-wake timing. Small deviations—like increasing hesitation in responses, missed habitual actions (e.g., forgetting a usual walk), or growing irregularity in daily structure—can precede clinically obvious impairment.
+
+When the system detects a meaningful shift, it doesn’t alarm the user directly. Instead, it could:
+- Prompt gentle, non-intrusive check-ins (“Want to review today’s plan?”)
+- Offer optional micro-assessments framed as casual interactions
+- Notify a designated caregiver or clinician only if thresholds are crossed
+
+From a clinical standpoint, this could complement periodic cognitive screening with continuous, real-world data—arguably more sensitive to early decline than episodic testing.
+
+The key is restraint: it should feel like a supportive companion, not a diagnostic device. Privacy, consent, and false-positive control would be critical design constraints.

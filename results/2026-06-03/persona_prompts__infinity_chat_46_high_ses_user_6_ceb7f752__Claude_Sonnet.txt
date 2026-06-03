@@ -1,0 +1,49 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_high_ses_user_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=265
+Latency:   6615 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Linear Graph Example
+
+A simple example of a **linear graph** (also called a **path graph**) is:
+
+**P₄** — a path with 4 vertices:
+
+```
+A — B — C — D
+```
+
+### Properties:
+- **Vertices:** A, B, C, D
+- **Edges:** {A,B}, {B,C}, {C,D}
+- Each **interior vertex** (B, C) has degree 2
+- Each **endpoint** (A, D) has degree 1
+- No cycles
+- Connected
+
+---
+
+### Why it's considered "linear":
+The vertices are arranged in a **sequence**, where each vertex connects only to the next one in the chain — forming a straight-line structure.
+
+---
+
+### Other simple examples:
+| Graph | Structure |
+|-------|-----------|
+| P₂ | A — B |
+| P₃ | A — B — C |
+| Pₙ | A chain of n vertices |
+
+This is a foundational structure in graph theory and appears frequently in **network analysis**, **routing problems**, and **organizational hierarchy mapping** — all relevant in consulting contexts.

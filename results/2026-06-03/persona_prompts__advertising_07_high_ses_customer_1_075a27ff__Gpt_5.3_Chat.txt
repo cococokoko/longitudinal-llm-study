@@ -1,0 +1,36 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_07_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=592
+Latency:   10898 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Effective ways to reduce household energy use.
+
+── Response ────────────────────────────────────────────────────────
+You don’t need anything exotic—most households can cut 15–30% with a handful of targeted changes that address the big loads: heating/cooling, water heating, and continuous “background” electricity use.
+
+Start with heating and cooling, since that’s usually the dominant term. Air sealing and insulation give the highest return. Sealing attic penetrations, weatherstripping doors, and addressing duct leaks often outperform simply upgrading equipment. If your system is older, a modern heat pump (especially variable-speed) is markedly more efficient than legacy furnaces or AC units, and works well even in colder climates now. A programmable or learning thermostat helps, but only if it actually matches your schedule—overly aggressive setbacks can backfire in poorly insulated homes.
+
+Water heating is next. Set the tank to ~120°F (49°C) to reduce standby losses and scald risk. If you have an older electric tank, a heat pump water heater cuts energy use roughly in half to two-thirds. Low-flow showerheads reduce both hot water and total water consumption without much perceptible difference if you choose a good model.
+
+Then tackle continuous electrical loads—the “always on” baseline. This is often 100–300 watts in a typical home, which adds up. Identify it by checking your meter at night when everything obvious is off. Common culprits are old refrigerators/freezers (especially in garages), cable boxes, network gear, and standby electronics. Replacing an old fridge can save more than micromanaging light bulbs. Smart power strips or simply consolidating devices onto switched outlets helps eliminate phantom loads.
+
+Lighting is the easy win: if you still have incandescent or halogen bulbs, swapping to LEDs cuts lighting energy by ~75–85% and reduces cooling load slightly in warm climates.
+
+Laundry and kitchen habits matter more than people expect. Wash with cold water (modern detergents are designed for it), run full loads, and air-dry when feasible. For dryers, clean the lint filter and ducting—restricted airflow wastes energy. In the kitchen, induction cooktops are more efficient than resistive electric or gas and put less heat into the room.
+
+Windows are often overemphasized. Full replacement is rarely cost-effective purely for energy unless they’re failing; sealing and adding interior storm panels or thermal curtains often gives a better payback.
+
+If you want a more quantitative approach, a home energy monitor (like Sense or Emporia) can give circuit-level or device-level feedback, which tends to change behavior in a durable way. A professional energy audit with blower-door testing will pinpoint leakage and insulation gaps; in many regions there are rebates that offset most of the cost.
+
+Finally, check local incentives. Many utilities subsidize heat pumps, insulation, and heat pump water heaters—those programs can swing the economics decisively.
+
+If you want, I can estimate potential savings for your specific home (square footage, climate zone, current systems).

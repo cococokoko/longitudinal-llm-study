@@ -1,0 +1,33 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_01_high_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=37 out=142
+Latency:   5499 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Compose a short poem about the feeling of watching a sunset.
+
+── Response ────────────────────────────────────────────────────────
+:::writing
+The sun unthreads itself along the rim of day,  
+a slow unspooling of gold into quiet blue.  
+Edges soften; even the loudest thoughts  
+lower their voices to a hush.
+
+Light lingers on the backs of clouds  
+like a memory not ready to leave,  
+then slips—gracefully, almost apologetically—  
+into the keeping of dusk.
+
+For a moment, everything holds:  
+breath, color, the thin line of now—  
+until the sky forgets the sun  
+and remembers the stars.
+:::

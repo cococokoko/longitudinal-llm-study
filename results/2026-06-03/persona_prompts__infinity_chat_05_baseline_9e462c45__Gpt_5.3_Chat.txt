@@ -1,0 +1,27 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=221
+Latency:   3990 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A really meaningful feature would be a “context-aware safety check-in” system.
+
+Instead of just a panic button (which many people forget or are unable to press), the watch quietly learns a user’s normal daily patterns—like when they usually wake up, move around, or leave the house. If something unusual happens, such as no movement in the morning, an unusually long period of inactivity, or a fall-like motion followed by stillness, the watch gently checks in.
+
+For example, it could vibrate and display: “Are you okay?” with a simple one-tap response or even voice reply. If there’s no response within a set time, it automatically alerts a chosen contact or caregiver with location and context (“No movement detected since 8:30 AM”).
+
+What makes it especially senior-friendly:
+- No need to remember to trigger it manually  
+- Very simple interaction (tap or speak)  
+- Reduces false alarms by learning routines  
+- Gives family peace of mind without being intrusive  
+
+It balances independence with safety, which is often the biggest concern for older adults.

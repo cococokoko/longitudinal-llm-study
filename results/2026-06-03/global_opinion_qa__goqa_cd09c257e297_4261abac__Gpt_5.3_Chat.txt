@@ -1,0 +1,25 @@
+Wave:      2026-06-03
+Dataset:   global_opinion_qa
+Item ID:   goqa_cd09c257e297
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=117 out=209
+Latency:   5172 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: If North Korea´s provocations happen, strong sanctions against that are needed.
+
+Options:
+A. Strongly agree
+B. Agree
+C. Disagree
+D. Strongly disagree
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.3, "B": 0.5, "C": 0.15, "D": 0.05}

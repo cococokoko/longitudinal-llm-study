@@ -1,0 +1,136 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=37 out=935
+Latency:   11216 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+At a high level, you’re wiring together Apache (web server), MySQL/MariaDB (data), and PHP (application logic) to handle users, posts, and threads. I’ll sketch a clean, minimal version so you can see the moving parts without getting buried.
+
+First, the basic architecture:
+
+- Apache serves PHP files
+- PHP handles routing, sessions, and DB interaction
+- MySQL stores users, threads, posts
+- HTML/CSS/JS render the UI
+
+Core database schema (simplified):
+
+- users: id, username, password_hash, created_at
+- threads: id, title, user_id, created_at
+- posts: id, thread_id, user_id, content, created_at
+
+Example SQL:
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) UNIQUE NOT NULL,
+  password_hash VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE threads (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  user_id INT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  thread_id INT,
+  user_id INT,
+  content TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (thread_id) REFERENCES threads(id),
+  FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+Next, database connection in PHP (use PDO, not old mysql_* APIs):
+
+$db = new PDO('mysql:host=localhost;dbname=forum;charset=utf8mb4', 'user', 'pass', [
+  PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+]);
+
+User registration (important: password hashing):
+
+$passwordHash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+$stmt = $db->prepare("INSERT INTO users (username, password_hash) VALUES (?, ?)");
+$stmt->execute([$_POST['username'], $passwordHash]);
+
+Login:
+
+$stmt = $db->prepare("SELECT * FROM users WHERE username = ?");
+$stmt->execute([$_POST['username']]);
+$user = $stmt->fetch();
+
+if ($user && password_verify($_POST['password'], $user['password_hash'])) {
+  session_start();
+  $_SESSION['user_id'] = $user['id'];
+}
+
+Creating a thread:
+
+$stmt = $db->prepare("INSERT INTO threads (title, user_id) VALUES (?, ?)");
+$stmt->execute([$_POST['title'], $_SESSION['user_id']]);
+
+Posting in a thread:
+
+$stmt = $db->prepare("INSERT INTO posts (thread_id, user_id, content) VALUES (?, ?, ?)");
+$stmt->execute([$_POST['thread_id'], $_SESSION['user_id'], $_POST['content']]);
+
+Displaying threads:
+
+$stmt = $db->query("SELECT threads.id, title, username FROM threads JOIN users ON users.id = threads.user_id ORDER BY created_at DESC");
+$threads = $stmt->fetchAll();
+
+Displaying posts in a thread:
+
+$stmt = $db->prepare("
+  SELECT posts.content, posts.created_at, users.username
+  FROM posts
+  JOIN users ON users.id = posts.user_id
+  WHERE thread_id = ?
+  ORDER BY posts.created_at ASC
+");
+$stmt->execute([$_GET['thread_id']]);
+$posts = $stmt->fetchAll();
+
+Security essentials (don’t skip these):
+
+- Always use prepared statements (as above) to prevent SQL injection
+- Escape output with htmlspecialchars() to prevent XSS
+- Use password_hash / password_verify (never store raw passwords)
+- Add CSRF tokens for forms
+- Validate all input (length, type, etc.)
+- Regenerate session IDs on login
+
+Basic file structure:
+
+- /public
+  - index.php (list threads)
+  - thread.php (view thread)
+  - login.php / register.php
+- /src
+  - db.php (connection)
+  - auth.php
+- /templates
+  - header/footer
+
+Routing can be simple (separate PHP files) or you can use a front controller pattern.
+
+If you don’t want to reinvent everything, consider using a lightweight PHP framework (like Laravel) even on LAMP—it gives you routing, ORM, CSRF protection, and auth scaffolding out of the box, which dramatically reduces the chance of subtle security bugs.
+
+If you want, I can extend this into a slightly more “production-shaped” version (pagination, editing posts, moderation, etc.) or show a Laravel-based approach that’s cleaner for long-term use.

@@ -1,0 +1,105 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=560
+Latency:   9698 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+Cool idea—Scratch is actually great for this kind of game.
+
+Here’s a simple way to build a zombie survivor step by step:
+
+First, the core idea  
+You control a character, zombies chase you, and you survive as long as possible (maybe with shooting or health).
+
+1. Create your player  
+- Make a sprite (your survivor)  
+- Add movement:
+
+Use blocks like:
+- when green flag clicked  
+- forever  
+  - if key (W) pressed → change y by 5  
+  - if key (S) pressed → change y by -5  
+  - if key (A) pressed → change x by -5  
+  - if key (D) pressed → change x by 5  
+
+Optional: point towards mouse if you want aiming.
+
+2. Add zombies (enemies)  
+- Create a zombie sprite  
+- Make it chase the player:
+
+Code idea:
+- when green flag clicked  
+- forever  
+  - point towards [player]  
+  - move (2–4 steps)
+
+To spawn more zombies:
+- Use clones:
+
+when green flag clicked  
+forever  
+  wait (3) seconds  
+  create clone of myself  
+
+when I start as a clone  
+go to random position  
+repeat until touching player  
+  point towards player  
+  move (2) steps  
+
+3. Add health system  
+- Make a variable: “Health”  
+- Set Health to 100 at start  
+
+In zombie code:
+- if touching player → change Health by -1  
+
+Add:
+- if Health <= 0 → game over (stop all or switch backdrop)
+
+4. Add attacking (optional but fun)  
+Simplest: click to shoot
+
+- Create a bullet sprite  
+- When mouse clicked → create clone of bullet  
+
+Bullet code:
+- when I start as clone  
+  go to player  
+  point towards mouse-pointer  
+  repeat until touching edge  
+    move 10 steps  
+    if touching zombie → delete both
+
+5. Score system  
+- Make a “Score” variable  
+- When a zombie is defeated → change Score by +1  
+
+6. Make it feel like a game  
+Add:
+- Increasing difficulty (zombies get faster over time)  
+- Different zombie types  
+- Sound effects  
+- Background (like a city or field)
+
+7. Simple polish ideas  
+- Add a “Game Over” screen  
+- Add a restart button  
+- Show health bar instead of just a number  
+
+If you want, I can give you:
+- exact Scratch block layouts  
+- a more advanced version (waves, guns, upgrades)  
+- or help you debug your project if something breaks
+
+What kind of zombie game are you imagining—top-down shooter, survival timer, or something else?

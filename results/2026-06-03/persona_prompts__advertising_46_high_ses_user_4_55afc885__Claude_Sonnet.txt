@@ -1,0 +1,46 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_46_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=337
+Latency:   8091 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best resources for starting a plant-based diet?
+
+── Response ────────────────────────────────────────────────────────
+Here are some well-regarded resources across different formats:
+
+## Evidence-Based Books
+- **"How Not to Die"** - Michael Greger, MD (with citations)
+- **"The China Study"** - T. Colin Campbell (foundational research)
+- **"Proteinaholic"** - Garth Davis, MD
+
+## Academic/Clinical Resources
+- **NutritionFacts.org** - Greger's site, references primary literature
+- **Physicians Committee for Responsible Medicine (PCRM)** - pcrm.org
+- **American College of Lifestyle Medicine** - clinical guidelines
+
+## Practical Guides
+- **"The Plant-Based Solution"** - Joel Kahn, MD
+- Forks Over Knives website/app for meal planning
+
+## Peer-Reviewed Starting Points
+- Journals like *Nutrients*, *JAMA Internal Medicine*, and *Annals of Internal Medicine* have solid review articles on plant-based dietary patterns
+
+## Worth Noting Critically
+- Some popular resources overstate certainty
+- Nutritional epidemiology has real limitations
+- Key considerations include **B12, vitamin D, omega-3s, iron, and zinc** monitoring
+- Individual variation matters
+
+## For Your Research Context
+- The **EAT-Lancet Commission report** is useful for planetary health framing
+- **PREDIMED** and **Adventist Health Studies** are strong reference datasets
+
+Would you like recommendations focused on any specific aspect?

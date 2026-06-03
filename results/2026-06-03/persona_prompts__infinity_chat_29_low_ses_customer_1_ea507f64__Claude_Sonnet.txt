@@ -1,0 +1,176 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_low_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=1024
+Latency:   11998 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+# Building an Online Forum with LAMP Stack
+
+## Prerequisites
+- Linux server (Ubuntu/Debian recommended)
+- Apache, MySQL, PHP installed
+- Basic knowledge of HTML/CSS/PHP
+
+---
+
+## 1. Setup LAMP Stack
+
+```bash
+# Install Apache, MySQL, PHP
+sudo apt update
+sudo apt install apache2 mysql-server php php-mysql php-mysqli libapache2-mod-php
+
+# Start services
+sudo systemctl start apache2
+sudo systemctl start mysql
+sudo systemctl enable apache2
+sudo systemctl enable mysql
+```
+
+---
+
+## 2. Create the Database
+
+```sql
+-- Login to MySQL
+mysql -u root -p
+
+-- Create database and tables
+CREATE DATABASE forum_db;
+USE forum_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT,
+    user_id INT,
+    title VARCHAR(200) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT,
+    user_id INT,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+---
+
+## 3. Project File Structure
+
+```
+/var/www/html/forum/
+├── config/
+│   └── db.php
+├── includes/
+│   ├── header.php
+│   └── footer.php
+├── index.php
+├── register.php
+├── login.php
+├── logout.php
+├── thread.php
+├── new_thread.php
+└── category.php
+```
+
+---
+
+## 4. Database Connection
+
+```php
+<?php
+// config/db.php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'your_username');
+define('DB_PASS', 'your_password');
+define('DB_NAME', 'forum_db');
+
+$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+```
+
+---
+
+## 5. User Registration
+
+```php
+<?php
+// register.php
+require 'config/db.php';
+session_start();
+
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username']);
+    $email    = trim($_POST['email']);
+    $password = $_POST['password'];
+
+    // Basic validation
+    if (empty($username) || empty($email) || empty($password)) {
+        $error = "All fields are required.";
+    } else {
+        // Hash password
+        $hashed = password_hash($password, PASSWORD_DEFAULT);
+
+        $stmt = $conn->prepare(
+            "INSERT INTO users (username, email, password) VALUES (?, ?, ?)"
+        );
+        $stmt->bind_param("sss", $username, $email, $hashed);
+
+        if ($stmt->execute()) {
+            header("Location: login.php");
+            exit;
+        } else {
+            $error = "Username or email already exists.";
+        }
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head><title>Register</title></head>
+<body>
+    <h2>Register</h2>
+    <?php if ($error): ?>
+        <p style="color:red"><?= htmlspecialchars($error) ?></p>
+    <?php endif; ?>
+    <form method="POST">
+        <input type="text"     name="username" placeholder="

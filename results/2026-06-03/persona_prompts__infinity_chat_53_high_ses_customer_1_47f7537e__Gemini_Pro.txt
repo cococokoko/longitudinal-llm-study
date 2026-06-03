@@ -1,0 +1,20 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_53_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=24 out=1020
+Latency:   11700 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a May the 4th joke.
+
+── Response ────────────────────────────────────────────────────────
+What did the attending neurosurgeon say to the PGY-1 in the OR on May the 4th?
+
+"Use the *forceps*, Padawan... and please stop making

@@ -1,0 +1,17 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1020
+Latency:   12507 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+In graph theory, a "linear graph" is most commonly referred to as a **Path Graph** (denoted mathematically as $P_n$). It is a graph where all vertices (nodes) are connected in a single, straight sequence without any branches, loops, or cycles.
+
+Here is a clear example

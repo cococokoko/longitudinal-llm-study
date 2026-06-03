@@ -1,0 +1,17 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1020
+Latency:   14123 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+To understand a partial derivative, it helps to think of a situation where an outcome depends on **two or more different factors**. 
+
+A partial derivative measures how much the outcome changes when you tweak **only

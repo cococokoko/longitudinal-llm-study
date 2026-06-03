@@ -1,0 +1,28 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_low_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=34 out=927
+Latency:   10752 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+One of the most common optimization techniques in machine learning is called **Stochastic Gradient Descent (SGD)**. 
+
+Since you work full-time in fast food with a schedule that's always changing, here is a way to think about it that might feel very familiar:
+
+Imagine you are trying to find the absolute most efficient way to clear a massive, chaotic lunch rush (in machine learning, this goal is called "minimizing the error"). 
+
+If you used standard *Gradient Descent*, you would have to look at every single order for the entire day before deciding how to move or what to cook. That takes way too long and requires too much memory. 
+
+Instead, with *Stochastic* (which literally means random or unpredictable) *Gradient Descent*, you just look at one order—or a small batch of orders—at a time. You adjust your workflow on the fly based on whatever just popped up on the screen. 
+
+Even though your movements might feel a bit erratic and unpredictable step-by-step (much like your work schedule!), adjusting on the fly actually helps you reach your end goal of clearing the rush much faster than trying to process everything at once.

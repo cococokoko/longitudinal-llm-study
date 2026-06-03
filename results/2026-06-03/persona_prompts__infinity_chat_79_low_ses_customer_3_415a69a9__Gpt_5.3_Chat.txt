@@ -1,0 +1,52 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_low_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=45 out=455
+Latency:   8316 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+Here’s a strong one that hits real-world relevance, affordability, and “wow” factor:
+
+**Low-Cost Smart Flood Warning System for Urban Vietnam**
+
+Vietnam (especially cities like Ho Chi Minh City and Hanoi) deals with frequent flooding from heavy rain, tides, and poor drainage. You can design a small-scale system that detects rising water levels and sends alerts.
+
+How it works:
+- Use an ultrasonic sensor or simple water level sensor (cheap, widely available)
+- Connect it to a microcontroller like Arduino or ESP8266 (ESP8266 is great because it has Wi-Fi)
+- Program it to trigger:
+  - a buzker/LED for local warning
+  - and/or send a phone notification (via an app like Blynk or a simple web dashboard)
+- Build a mini “street model” with drainage and simulate rainfall to show how your system responds
+
+Why it stands out:
+- Directly tied to a major Vietnamese issue (urban flooding + climate change)
+- Combines coding, electronics, and environmental science
+- Judges love projects that solve real problems, not just demonstrate concepts
+
+To take it further (this is what makes it “incredible”):
+- Add data logging: track water levels over time and graph it
+- Include a simple prediction model: “if water rises this fast, flooding will occur in X minutes”
+- Compare different drainage designs in your model and show which reduces flooding best
+
+Estimated cost:
+- Arduino/ESP8266: ~$5–10  
+- Sensors: ~$2–5  
+- Misc (wires, cardboard model): cheap or recycled  
+
+If you want a couple backup ideas in the same spirit:
+- Low-cost water filtration system for rural Mekong areas (test different natural materials)
+- Air quality monitor for motorbike-heavy streets (PM2.5 sensor + data visualization)
+- Solar-powered phone charger optimized for cloudy/rainy conditions in Vietnam
+
+If you tell me your grade level, I can help you turn one of these into a full project plan + script for presenting.

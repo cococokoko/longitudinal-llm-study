@@ -1,0 +1,33 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_20_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=556
+Latency:   10164 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Why is equal pay for equal work not worth imposing on an economy?
+
+── Response ────────────────────────────────────────────────────────
+“Equal pay for equal work” sounds straightforward, but once you try to impose it at scale, it runs into some messy realities. The core issue isn’t whether unfair pay gaps are good—they’re not—it’s that defining and enforcing “equal work” in a complex economy is much harder than it sounds, and blunt enforcement can create side effects.
+
+A few of the main frictions:
+
+First, jobs that look identical on paper often aren’t. Productivity can differ because of experience, negotiation, specialization, risk tolerance, scheduling flexibility, or willingness to take on undesirable tasks. If policy forces identical pay across roles that differ in subtle but real ways, employers may respond by narrowing roles, reducing flexibility, or becoming more selective in hiring.
+
+Second, pay is partly a price signal. Wages adjust to supply and demand, retention risk, and outside options. If you compress wages too aggressively, you can get labor shortages in harder or less desirable roles, or surpluses in more attractive ones. Over time, that can reduce efficiency and output.
+
+Third, enforcement is costly and imperfect. To prove unequal pay for equal work, regulators need detailed, comparable data on roles, performance, and conditions. That’s administratively heavy and invites gaming—firms can relabel roles, tweak responsibilities, or move compensation into bonuses, perks, or career tracks that are harder to standardize.
+
+Fourth, it can have unintended distributional effects. Some evidence suggests that when strict pay constraints are imposed, employers may reduce hiring from groups they perceive (rightly or wrongly) as higher risk under rigid pay rules, because they’ve lost flexibility to adjust compensation post-hire.
+
+Fifth, it doesn’t target root causes of pay gaps. Differences in occupation choice, hours worked, career interruptions, network effects, and negotiation patterns can all contribute. If those drivers aren’t addressed—childcare constraints, training pipelines, bias in promotion—then equal-pay rules may treat symptoms rather than causes.
+
+None of that means the principle is bad. It just means the implementation matters. Many economists favor narrower approaches: transparency requirements, auditing for unexplained gaps within clearly comparable roles, stronger anti-discrimination enforcement, and policies that widen access (training, childcare, mobility). Those tend to preserve flexibility while still pushing toward fairness.
+
+So the tradeoff isn’t “fairness vs. efficiency” in the abstract—it’s about how tightly you try to standardize pay in a system where jobs and workers aren’t truly identical, and how much distortion you’re willing to accept to reduce unjustified gaps.

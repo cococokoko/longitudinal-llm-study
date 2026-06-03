@@ -1,0 +1,50 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_high_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=44 out=523
+Latency:   10422 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+Here’s a concept that tends to stand out because it blends environmental chemistry, low-cost engineering, and a very real Vietnamese problem:
+
+**Project: A Low-Cost Smart Sensor Network for Monitoring Salinity Intrusion in the Mekong Delta**
+
+Vietnam’s Mekong Delta is increasingly affected by saltwater intrusion due to sea-level rise and upstream damming. Farmers often don’t have timely, hyper-local data to decide when irrigation water is safe for rice or fruit crops.
+
+The idea is to design and test a network of ultra-affordable salinity sensors that can be deployed in canals and rice paddies, then transmit data to a simple mobile dashboard.
+
+Core components:
+- A homemade conductivity sensor (using graphite or stainless electrodes) calibrated against known salinity levels
+- An inexpensive microcontroller (like ESP32 or Arduino)
+- Wireless communication (LoRa or Wi-Fi, depending on budget and range)
+- A basic data visualization interface (even a simple phone app or web dashboard)
+
+What makes it “incredible” rather than just functional is the experimental depth you can build in:
+- Compare sensor accuracy against commercial probes
+- Study how temperature, sediment, and biofouling affect readings over time
+- Model salinity intrusion patterns using collected data and correlate with tidal cycles
+- Simulate decision thresholds for crops (e.g., when rice yield begins to drop)
+
+You could even extend it into a predictive tool:
+- Use historical tide and rainfall data to forecast salinity spikes
+- Test a simple machine learning model vs. a physics-based model
+
+Why it’s compelling:
+- Direct relevance to food security and rural livelihoods in Vietnam
+- Clear interdisciplinary scope (physics, environmental science, data science, engineering)
+- Strong “real-world deployment” angle rather than just lab work
+- Scalable: you can build one sensor or a small network depending on budget
+
+If you want something slightly more experimental, a twist would be to integrate a passive colorimetric strip (chemical indicator) and compare its reliability to the electronic sensor—bridging classical chemistry and modern IoT.
+
+If you’d like, I can help you shape this into a full research question, hypothesis set, and judging criteria so it really lands at competition level.

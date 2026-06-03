@@ -1,0 +1,190 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=1024
+Latency:   10340 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+Building a forum on a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP) is very doable, but it’s not a tiny project—so I’ll give you a clean, realistic path from zero to something working, plus a simple example to ground it.
+
+First, the big picture: a forum needs users, posts, threads, and categories. Everything else (likes, moderation, etc.) builds on top of that.
+
+Core pieces you’ll need:
+
+- Apache: serves your PHP files
+- MySQL: stores users, posts, etc.
+- PHP: handles logic (login, posting, rendering pages)
+
+Basic database structure (simplified):
+
+- users: id, username, password_hash, created_at  
+- categories: id, name  
+- threads: id, category_id, title, user_id, created_at  
+- posts: id, thread_id, user_id, content, created_at  
+
+Step 1: Set up LAMP
+
+On Ubuntu, for example:
+
+- sudo apt update  
+- sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql  
+
+Put your project in /var/www/html/forum (or similar).
+
+Step 2: Create the database
+
+In MySQL:
+
+CREATE DATABASE forum;
+
+USE forum;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) UNIQUE,
+  password_hash VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE categories (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100)
+);
+
+CREATE TABLE threads (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  category_id INT,
+  title VARCHAR(255),
+  user_id INT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE posts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  thread_id INT,
+  user_id INT,
+  content TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Step 3: Database connection in PHP
+
+Create something like db.php:
+
+<?php
+$pdo = new PDO("mysql:host=localhost;dbname=forum;charset=utf8mb4", "root", "yourpassword");
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+?>
+
+Step 4: User registration (basic)
+
+register.php:
+
+<?php
+require 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $username = $_POST['username'];
+  $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+  $stmt = $pdo->prepare("INSERT INTO users (username, password_hash) VALUES (?, ?)");
+  $stmt->execute([$username, $password]);
+
+  echo "User created!";
+}
+?>
+
+<form method="POST">
+  <input name="username" required>
+  <input type="password" name="password" required>
+  <button>Register</button>
+</form>
+
+Step 5: Login system
+
+Use sessions:
+
+session_start();
+
+On login:
+
+$stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
+$stmt->execute([$username]);
+$user = $stmt->fetch();
+
+if ($user && password_verify($password, $user['password_hash'])) {
+  $_SESSION['user_id'] = $user['id'];
+}
+
+Step 6: Creating threads
+
+create_thread.php:
+
+<?php
+session_start();
+require 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $stmt = $pdo->prepare("INSERT INTO threads (category_id, title, user_id) VALUES (?, ?, ?)");
+  $stmt->execute([
+    $_POST['category_id'],
+    $_POST['title'],
+    $_SESSION['user_id']
+  ]);
+}
+?>
+
+Step 7: Posting replies
+
+reply.php:
+
+<?php
+session_start();
+require 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $stmt = $pdo->prepare("INSERT INTO posts (thread_id, user_id, content) VALUES (?, ?, ?)");
+  $stmt->execute([
+    $_POST['thread_id'],
+    $_SESSION['user_id'],
+    $_POST['content']
+  ]);
+}
+?>
+
+Step 8: Displaying threads and posts
+
+Example thread view:
+
+<?php
+require 'db.php';
+
+$stmt = $pdo->prepare("SELECT * FROM posts WHERE thread_id = ?");
+$stmt->execute([$_GET['thread_id']]);
+$posts = $stmt->fetchAll();
+
+foreach ($posts as $post) {
+  echo "<p>" . htmlspecialchars($post['content']) . "</p>";
+}
+?>
+
+Important things beginners often miss:
+
+- Always use prepared statements (you are—good)
+- Escape output with htmlspecialchars to prevent XSS
+- Use password_hash and password_verify (never store plain passwords)
+- Add basic validation (empty fields, length limits)
+- Use sessions safely (regenerate IDs on login)
+
+What I’d strongly recommend
+
+If your goal is to learn: build this yourself as above.
+
+If your goal is to launch a real forum: don’t reinvent everything. Use something

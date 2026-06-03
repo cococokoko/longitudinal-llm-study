@@ -1,0 +1,55 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=34 out=345
+Latency:   9180 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+Here are the key areas to focus on, organized for practical implementation:
+
+## Essential Foundations
+- **Use strong, unique passwords** for all accounts
+- **Enable two-factor authentication (2FA)** wherever possible
+- **Keep software updated** - patches fix security vulnerabilities
+- **Install reputable antivirus/antimalware** software
+
+## Data Protection
+- **Back up data regularly** using the 3-2-1 rule
+  - 3 copies, on 2 different media, 1 offsite/cloud
+- **Encrypt sensitive files** and customer data
+- **Limit who can access** what information (least privilege principle)
+
+## Network Security
+- Use a **secure, password-protected WiFi**
+- Consider a **VPN** for remote work
+- Separate guest networks from business networks
+
+## Human Factors
+- **Train employees** to recognize phishing emails
+- Create a **clear security policy** in writing
+- Have a **response plan** if a breach occurs
+
+## Practical Starting Points
+| Priority | Action | Cost |
+|----------|--------|------|
+| High | Enable 2FA | Free |
+| High | Automate backups | Low |
+| Medium | Password manager | Low |
+| Medium | Employee training | Low-Free |
+
+## Worth Knowing
+- Many **free resources** exist through CISA.gov
+- **Cyber insurance** is increasingly affordable for small businesses
+
+Would you like me to go deeper on any specific area?

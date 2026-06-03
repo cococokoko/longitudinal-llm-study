@@ -1,0 +1,27 @@
+Wave:      2026-06-03
+Dataset:   global_opinion_qa
+Item ID:   goqa_d53f4df7af38
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=124 out=130
+Latency:   2258 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Do you think the formal education system in your country provides people with the skills and training they need:
+
+To start a business
+
+Options:
+A. Yes
+B. No
+C. Don't know
+D. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.2, "B": 0.7, "C": 0.08, "D": 0.02}

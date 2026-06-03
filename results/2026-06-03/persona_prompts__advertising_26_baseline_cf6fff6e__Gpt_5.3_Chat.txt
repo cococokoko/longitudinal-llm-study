@@ -1,0 +1,39 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=455
+Latency:   8182 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Good question—small businesses are actually a common target because attackers assume defenses are weaker. You don’t need an enterprise budget to be well-protected, but you do need consistency.
+
+Here are the practices that matter most in real-world terms:
+
+Start with access control. Give people access only to what they need to do their job, nothing more. Use strong, unique passwords for everything and enforce multi-factor authentication (this alone stops a huge percentage of attacks).
+
+Keep everything updated. Most breaches exploit known vulnerabilities that already have fixes. Turn on automatic updates for operating systems, apps, firewalls, and routers wherever possible.
+
+Back up your data regularly. Follow the “3-2-1 rule”: three copies of your data, on two different media types, with one copy offsite (like cloud backups). Make sure backups are encrypted and test restoring them—don’t assume they work.
+
+Train your team. Human error is the biggest risk. Teach employees how to spot phishing emails, avoid suspicious links, and handle sensitive data. This doesn’t need to be fancy—short, regular reminders go a long way.
+
+Secure your network. Use a properly configured firewall, strong Wi-Fi passwords, and separate guest networks from business systems. If employees work remotely, require a VPN or secure access setup.
+
+Encrypt sensitive data. This includes both stored data (at rest) and data being transmitted (in transit). Many modern tools do this automatically, but it’s worth verifying.
+
+Use reputable software and limit shadow IT. Stick to trusted vendors and avoid employees installing random apps that could introduce risk.
+
+Have a basic incident response plan. Even a simple checklist helps: who to contact, how to isolate affected systems, how to notify customers if needed. When something goes wrong, speed matters.
+
+Control physical access too. Lock devices, use screen timeouts, and be mindful of who can physically access computers or servers.
+
+Review and monitor. Regularly check logs, access records, and unusual activity. You don’t need a full security operations center—just paying attention can catch issues early.
+
+If you want, I can tailor this to your specific setup (like retail, SaaS, healthcare, etc.) or suggest a simple, low-cost tool stack that covers most of these areas.

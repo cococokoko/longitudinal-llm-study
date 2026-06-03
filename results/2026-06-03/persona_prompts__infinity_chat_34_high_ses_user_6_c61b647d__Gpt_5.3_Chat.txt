@@ -1,0 +1,67 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_34_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=576
+Latency:   8449 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What is a good secondhand market laptop for learning Python?
+
+── Response ────────────────────────────────────────────────────────
+You don’t need anything fancy for learning Python, so the sweet spot in the secondhand market is “business-class laptops that were expensive 3–5 years ago.” They’re durable, well-built, and now relatively cheap.
+
+Here are some consistently good picks:
+
+**Lenovo ThinkPad (T or X series)**
+- Models: T480, T490, T14 (Gen 1), X1 Carbon (Gen 6–8)
+- Why: excellent keyboards, very reliable, tons of parts available
+- Bonus: easy to upgrade RAM/storage on many models (especially T480)
+
+**Dell Latitude (7000 series)**
+- Models: 7490, 7400, 7410
+- Why: understated, solid build, widely available from corporate resale
+- Good balance of portability and durability
+
+**HP EliteBook (800 series)**
+- Models: 840 G5, G6, G7
+- Why: often the best value in bulk resale markets, decent screens, solid performance
+
+**If you’re open to macOS:**
+- MacBook Air M1 (used/refurbished) — this is the outlier
+- Why: extremely fast for Python, silent, amazing battery life
+- Downside: usually pricier than the Windows options, less upgradeable
+
+---
+
+**What specs to target (don’t overthink this):**
+- CPU: Intel i5/i7 8th gen or newer (or AMD Ryzen 4000+)
+- RAM: 16 GB preferred (8 GB is okay but you’ll outgrow it quickly)
+- Storage: 256 GB SSD minimum (512 GB ideal)
+- Screen: 1080p minimum (avoid older 1366×768 panels)
+
+---
+
+**What you’ll likely pay (rough ranges):**
+- $250–400: T480 / Latitude 7490 / EliteBook 840 G5
+- $400–600: newer T14 / Latitude 7410 / EliteBook G7
+- $600–800: MacBook Air M1 (used)
+
+---
+
+**Practical advice:**
+- Buy from corporate refurbishers or reputable sellers (not random eBay listings unless well-rated)
+- Check battery health and keyboard condition — those matter more than CPU differences
+- Don’t chase specs; Python learning (even with data science) is not hardware-intensive at the start
+
+---
+
+If you want a quick, no-regret answer:  
+Get a **ThinkPad T480 with 16GB RAM and a 512GB SSD**. It’s the Toyota Corolla of developer laptops—boring, dependable, and hard to make a mistake with.
+
+If you tell me your budget and whether you prefer Windows or macOS, I can narrow it down to 1–2 exact listings to look for.

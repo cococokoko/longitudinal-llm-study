@@ -1,0 +1,26 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_47_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=28 out=940
+Latency:   12220 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me a trivia question about blue birds and its corresponding answer.
+
+── Response ────────────────────────────────────────────────────────
+Here is a trivia question with a nod to your expertise in neuroanatomy:
+
+**Question:** 
+Blue Jays are famous for caching thousands of acorns across vast territories in the fall and remembering their exact locations months later. To support this extraordinary spatial memory, which specific brain structure is significantly enlarged in Blue Jays (and other corvids) compared to most other bird species?
+
+**Answer:** 
+The hippocampus (specifically, the avian hippocampal formation). 
+
+*Bonus academic fact:* Just as it does in human spatial navigation, the hippocampus is crucial for these birds. Fascinatingly, this region in caching birds actually undergoes seasonal neurogenesis—expanding in volume during the fall when they need to store and map thousands of food locations!

@@ -1,0 +1,43 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_low_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=476
+Latency:   8154 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If you want to stay relevant, don’t chase a single language or framework. Those come and go. Focus on layers that age well, and then add newer tools on top.
+
+Start with fundamentals. Really solid understanding of data structures, algorithms, networking basics, operating systems, and how the web actually works. People skip this because it’s not flashy, but it’s what lets you adapt when the tools change.
+
+Then get strong in one primary language and ecosystem. It doesn’t matter too much which (Python, JavaScript/TypeScript, Java, Go, etc.), but go deep enough that you understand how things behave under the hood, not just how to make them work.
+
+After that, here’s where the “future-relevant” part comes in:
+
+- AI-assisted development: You don’t need to become a researcher, but you should be very comfortable using AI tools to write, debug, and review code. Knowing how to guide them well (clear prompts, constraints, verification) is becoming a core skill.
+- System design: How to build scalable, reliable systems. Think APIs, databases, caching, distributed systems. This is what separates junior from senior work.
+- Cloud and infrastructure: Understand how apps run in production—Docker, Kubernetes basics, CI/CD, and at least one cloud provider (AWS, GCP, or Azure).
+- Data literacy: You should be comfortable working with data—databases (SQL and some NoSQL), data pipelines, and basic analysis. Even better if you understand how ML systems are structured at a high level.
+- Security and privacy basics: More important every year. Things like authentication, authorization, common vulnerabilities.
+
+Also, don’t ignore the “human” side:
+
+- Writing clear documentation
+- Breaking down problems
+- Communicating tradeoffs
+
+Those are hard to automate and increasingly valuable.
+
+If your time is limited (which it sounds like it might be), a practical path could look like this:
+Pick one stack (for example: TypeScript + React + Node, or Python + FastAPI), build small but complete projects, deploy them to the cloud, and gradually layer in things like authentication, databases, and AI features.
+
+If you want, tell me how much time you realistically have each week and whether you’re starting from scratch, and I can map this into a simple, doable plan.

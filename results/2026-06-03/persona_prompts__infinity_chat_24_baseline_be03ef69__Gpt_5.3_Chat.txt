@@ -1,0 +1,30 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=152
+Latency:   2544 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+:::writing
+Subject: Quick catch-up?
+
+Hi [Name],
+
+Hope you’ve been doing well. It’s been a little while since we last connected, and I’d love to catch up and hear how things are going on your end.
+
+It would also be great to see if there are any new ways we can support each other and continue building on our partnership.
+
+Would you be available for a quick call or coffee sometime in the next couple of weeks? I’m happy to work around your schedule.
+
+Looking forward to reconnecting.
+
+Best,  
+[Your Name]
+:::

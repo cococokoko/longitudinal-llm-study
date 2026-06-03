@@ -1,0 +1,87 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_34_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=760
+Latency:   13821 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best techniques for effective online teaching?
+
+── Response ────────────────────────────────────────────────────────
+Since you’re already used to thinking like a scientist and a clinician, the most effective online teaching tends to look less like “delivering content” and more like designing a controlled learning environment with feedback loops.
+
+Here are the approaches that consistently work well, especially with advanced learners:
+
+**1. Treat attention as the scarce resource**
+Long lectures don’t translate well online. Break content into short, purposeful segments (roughly 5–15 minutes), each anchored to a single learning objective. After each segment, force a cognitive action: a question, a prediction, a brief application.
+
+**2. Retrieval practice beats re-exposure**
+Learners retain far more when they’re asked to recall or apply, not just rewatch or reread. Use:
+- Cold calls (even in chat)
+- Polling questions (diagnostic reasoning works well here)
+- “What’s your next step?” scenarios  
+This mirrors clinical reasoning and keeps engagement high.
+
+**3. Make thinking visible**
+In person, learners pick up on your reasoning implicitly. Online, you need to externalize it:
+- Narrate your diagnostic thought process step by step
+- Contrast “novice” vs “expert” reasoning explicitly
+- Show common errors and why they fail  
+This is particularly powerful for trainees in medicine and science.
+
+**4. Use cases, not slides, as the backbone**
+Even for basic science, framing around a problem or case increases retention and transfer. For example:
+- Start with a clinical vignette or research problem
+- Unfold information progressively
+- Ask learners to update hypotheses as new data arrives  
+This mimics real-world decision-making under uncertainty.
+
+**5. Build in deliberate interaction (not just optional Q&A)**
+Passive “Any questions?” rarely works online. Instead:
+- Pre-plan interaction every 5–10 minutes
+- Use breakout rooms with very specific tasks (e.g., “agree on top 2 differentials and justify”)
+- Assign roles if groups are small (leader, skeptic, summarizer)
+
+**6. Keep stakes low but feedback frequent**
+Frequent, low-stakes assessment improves learning more than high-stakes exams:
+- Short quizzes with immediate feedback
+- Annotated model answers
+- Rapid correction of misconceptions  
+If possible, automate some of this to scale.
+
+**7. Optimize cognitive load**
+Online environments make overload easier:
+- Reduce extraneous detail on slides
+- Signal what matters (“this is the key takeaway”)
+- Sequence from simple → complex, but revisit concepts in varied contexts  
+Avoid the temptation to “cover more” just because it’s recorded.
+
+**8. Create presence and accountability**
+Dropout and disengagement are higher online unless learners feel seen:
+- Use names when possible
+- Require some form of participation (chat, polls, short submissions)
+- Set clear expectations for preparation and engagement
+
+**9. Leverage asynchronous + synchronous intentionally**
+The best online courses separate these roles:
+- Asynchronous: core content, foundational knowledge
+- Synchronous: discussion, application, troubleshooting, reasoning  
+Don’t use live time to repeat what could be watched.
+
+**10. Close the loop**
+End sessions with consolidation:
+- “One-minute papers” (what changed in your thinking?)
+- Key takeaways framed as decisions or actions
+- Preview of how today’s material connects to next session
+
+---
+
+If you want to push this further for a physician-scientist audience, the highest-yield move is to center teaching around uncertainty and decision-making under incomplete data. That aligns with both clinical medicine and research, and it naturally drives engagement online.
+
+If you tell me your typical audience (med students, residents, fellows, PhD trainees, mixed), I can suggest a more tailored structure or even sketch a sample session.

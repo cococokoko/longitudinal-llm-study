@@ -1,0 +1,65 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=49 out=328
+Latency:   8847 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface
+
+Here's a practical guide for your setup:
+
+## Installation First
+
+1. Download Dolphin from **dolphin-emu.org** (official site only)
+2. Run the installer and follow standard setup
+3. Add your legally-owned Wii game files (ISO/WBFS format)
+
+---
+
+## Touchpad Configuration
+
+**In Dolphin's Controller Settings:**
+- Go to **Options → Controller Settings**
+- Set GameCube/Wii controllers to **"Emulated"**
+- Click **Configure** to map inputs
+
+**Touchpad Mapping Tips:**
+- Map touchpad clicks to buttons (A, B)
+- Use touchpad gestures for basic navigation
+- Consider enabling **touchpad zones** for different button areas
+
+---
+
+## On-Screen Keyboard Considerations
+
+The on-screen keyboard works best for:
+- Menu navigation
+- Text entry in Dolphin settings
+- **Not ideal** for actual gameplay
+
+---
+
+## Honest Recommendation
+
+For actual gameplay, this input combination will be **quite frustrating**. I'd suggest:
+- A **Bluetooth controller** (Xbox, PlayStation, or actual Wiimote)
+- A **USB controller**
+- Even a basic **USB keyboard** for better key mapping
+
+---
+
+## Would You Like Help With:
+- Specific controller mapping layouts?
+- Bluetooth controller pairing?
+- Performance optimization for Surface hardware?

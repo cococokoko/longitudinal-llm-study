@@ -1,0 +1,22 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_45_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=90
+Latency:   3217 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a sentence using a minimum of 2 R-colored vowels.
+
+── Response ────────────────────────────────────────────────────────
+Here's a sentence with multiple R-colored vowels:
+
+"The **director** ordered her **workers** to **further** their research."
+
+The R-colored vowels (vowels influenced by the "r" sound) appear in: di**rec**tor, **or**dered, **her**, w**or**kers, f**ur**ther, and res**ear**ch.

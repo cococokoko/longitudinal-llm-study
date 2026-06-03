@@ -1,0 +1,52 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   infinity_chat_34_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=451
+Latency:   7703 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What is a good secondhand market laptop for learning Python?
+
+── Response ────────────────────────────────────────────────────────
+You don’t need anything fancy to learn Python, so the goal is a cheap, reliable machine with a decent keyboard and enough RAM to stay smooth.
+
+Here’s what to look for first:
+- At least 8 GB RAM (16 GB is nice if you can find it cheap)
+- SSD (256 GB or more — avoid old spinning hard drives if possible)
+- CPU: Intel i5 (8th gen or newer) or Ryzen 5 (3000 series or newer)
+- Battery condition matters on used machines — expect some wear
+
+Now some great secondhand models that are consistently solid:
+
+**Lenovo ThinkPad (best overall)**
+- Models: T480, T490, X280, X1 Carbon (Gen 6+)
+- Why: durable, excellent keyboards, easy to repair
+- T480 is a sweet spot: cheap, upgradeable RAM, great for coding
+
+**Dell XPS 13 or Latitude**
+- XPS 13 (9370 or newer): sleek, lightweight, good screens
+- Latitude 5400 / 5410 / 7420: more business-oriented, tougher and often cheaper
+
+**HP EliteBook**
+- Models: 840 G5 / G6 / G7
+- Solid build, good keyboards, usually well-priced used
+
+**MacBook (if you prefer macOS)**
+- MacBook Air M1 (if budget allows): excellent and will last years
+- Older Intel MacBooks (2018–2020): fine, but avoid butterfly keyboard models if possible
+
+What you’ll typically pay (rough ranges):
+- $200–300: ThinkPad T480 / EliteBook 840 G5
+- $300–500: T490, XPS 13, newer EliteBooks
+- $500+: MacBook Air M1 (great value if you can stretch)
+
+Things to avoid:
+- 4 GB RAM machines (you’ll feel it quickly)
+- Chromebooks (limited for Python unless you know workarounds)
+- Very old CPUs (pre-2017-ish)
+
+If you want, tell me your budget and whether you prefer Windows/macOS/Linux and I can narrow it down to a couple exact listings to look for.

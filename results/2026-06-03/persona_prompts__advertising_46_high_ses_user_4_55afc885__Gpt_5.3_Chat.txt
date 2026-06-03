@@ -1,0 +1,48 @@
+Wave:      2026-06-03
+Dataset:   persona_prompts
+Item ID:   advertising_46_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=763
+Latency:   15050 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best resources for starting a plant-based diet?
+
+── Response ────────────────────────────────────────────────────────
+Great question—and it’s nice to see this coming from someone who’s likely thinking about both evidence and practical implementation.
+
+I’ll break this into three layers: high-quality evidence-based guidance, practical clinician-oriented resources, and then “real life” tools for actually doing it.
+
+First, evidence-based and medically grounded resources:
+- The Academy of Nutrition and Dietetics position paper on vegetarian diets (regularly updated) is still one of the most rigorous summaries of nutritional adequacy, risks, and planning considerations.
+- The EAT-Lancet Commission report is useful if you’re also thinking about population health and sustainability, though it’s broader than strictly “plant-based.”
+- The Adventist Health Studies (AHS-2 in particular) and EPIC-Oxford datasets are worth revisiting if you want primary literature on outcomes.
+- For cardiometabolic disease specifically, Dean Ornish and Caldwell Esselstyn’s interventional work is often cited, but I’d read it alongside more contemporary meta-analyses to contextualize effect sizes and adherence issues.
+
+Clinician-oriented and translational resources:
+- The American College of Lifestyle Medicine (ACLM) has very practical toolkits, including prescribing plant-based diets, billing considerations, and patient handouts.
+- Kaiser Permanente’s “Plant-Based Diets: A Physician’s Guide” is concise and clinically usable.
+- The Physicians Committee for Responsible Medicine (PCRM) offers CME courses and protocols; they’re more advocacy-forward, so it’s worth pairing with neutral sources, but their materials are very actionable.
+- NutritionFacts.org (Michael Greger) is exhaustive and citation-heavy; it’s useful as a literature aggregator, though you’ll want to independently verify key claims given the strong framing.
+
+For nutritional adequacy and common pitfalls (this is where many implementations fail):
+- Key nutrients to actively manage: B12 (non-negotiable supplementation), iodine, iron (especially in premenopausal women), calcium, vitamin D, omega-3s (EPA/DHA—consider algae-based sources), and protein distribution in older adults.
+- The NIH Office of Dietary Supplements and Harvard T.H. Chan School of Public Health both have solid, relatively unbiased nutrient-specific guidance.
+- VeganHealth.org (Jack Norris, RD) is one of the more careful, detail-oriented sites on micronutrient planning.
+
+For actually helping people adopt and sustain it:
+- “How Not to Die” (Greger) and “Eat to Beat Disease” (Li) are popular entry points, but for a more clinically grounded tone, “The Plant-Based Diet for Beginners” (Shah) or similar RD-authored guides are often easier for patients.
+- Forks Over Knives (website + meal planner) is very effective for behavior change, though it leans toward low-fat whole-food plant-based, which isn’t necessary for everyone.
+- Apps like Cronometer are useful early on for both patients and researchers to sanity-check micronutrient intake patterns.
+
+If you’re thinking as a research group leader, a few additional angles might be worth your time:
+- Adherence and behavioral economics matter more than macronutrient ideology—interventions that allow some flexibility (e.g., “plant-forward” vs strictly vegan) often outperform in real-world settings.
+- The heterogeneity within “plant-based” is huge; ultra-processed plant foods can attenuate or erase expected benefits, which is becoming clearer in newer cohort analyses.
+- There’s still an evidence gap around long-term outcomes in diverse populations and in older adults with sarcopenia risk—protein quality and distribution become non-trivial there.
+
+If you want, I can tailor this toward a specific use case—like designing a clinical intervention, building patient education materials, or optimizing for a particular disease area.
