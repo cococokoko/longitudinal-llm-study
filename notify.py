@@ -29,7 +29,69 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-LOW_BALANCE_THRESHOLD = 30.0   # warn if limit_remaining drops below this
+LOW_BALANCE_THRESHOLD    = 30.0   # warn if OpenRouter limit_remaining drops below this
+GITHUB_MINUTES_FREE_PLAN = 2000   # free-plan private repo monthly limit
+GITHUB_REPO_SIZE_LIMIT_MB = 1024  # GitHub recommended repo size limit (1 GB)
+
+
+# ── GitHub stats ──────────────────────────────────────────────────────────────
+
+def _github_get(path: str, token: str) -> dict | None:
+    try:
+        req = urllib.request.Request(
+            f"https://api.github.com{path}",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Accept": "application/vnd.github+json",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            return json.loads(resp.read())
+    except Exception:
+        return None
+
+
+def fetch_github_stats() -> dict | None:
+    token = os.environ.get("GH_PAT")
+    repo  = os.environ.get("GITHUB_REPOSITORY")
+    if not token or not repo:
+        return None
+
+    repo_data = _github_get(f"/repos/{repo}", token)
+    if not repo_data:
+        return None
+
+    size_kb    = repo_data.get("size", 0)
+    is_private = repo_data.get("private", False)
+
+    # Workflow runs for this repo — sum durations of today's completed runs
+    from datetime import datetime, timezone
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    runs_data = _github_get(
+        f"/repos/{repo}/actions/runs?per_page=20&status=completed", token
+    )
+    todays_runs = []
+    if runs_data:
+        for run in runs_data.get("workflow_runs", []):
+            if run.get("run_started_at", "").startswith(today_str):
+                start = datetime.fromisoformat(run["run_started_at"].replace("Z", "+00:00"))
+                end   = datetime.fromisoformat(run["updated_at"].replace("Z", "+00:00"))
+                todays_runs.append({
+                    "name":       run.get("display_title") or run.get("name", ""),
+                    "minutes":    max(1, round((end - start).total_seconds() / 60)),
+                    "conclusion": run.get("conclusion", ""),
+                })
+
+    total_minutes_today = sum(r["minutes"] for r in todays_runs)
+
+    return {
+        "repo":                 repo,
+        "size_kb":              size_kb,
+        "is_private":           is_private,
+        "todays_runs":          todays_runs,
+        "total_minutes_today":  total_minutes_today,
+    }
 
 
 # ── OpenRouter balance ────────────────────────────────────────────────────────
@@ -144,7 +206,7 @@ def build_subject(data: dict, balance: dict | None) -> str:
     return f"{emoji} LLM Study {data['date']} — {data['ok']}/{data['total']} OK ({pct}%)"
 
 
-def build_body(data: dict, balance: dict | None) -> str:
+def build_body(data: dict, balance: dict | None, github: dict | None = None) -> str:
     # ── Balance block ─────────────────────────────────────────────────────────
     if balance and balance["limit_remaining"] is not None:
         remaining = balance["limit_remaining"]
@@ -174,6 +236,61 @@ def build_body(data: dict, balance: dict | None) -> str:
         """
     else:
         balance_html = "<p style='color:#999;font-size:13px'>Balance unavailable (OPENROUTER_API_KEY not set).</p>"
+
+    # ── GitHub block ──────────────────────────────────────────────────────────
+    if github:
+        size_mb      = github["size_kb"] / 1024
+        size_pct     = round(100 * size_mb / GITHUB_REPO_SIZE_LIMIT_MB)
+        size_color   = "#c62828" if size_pct >= 80 else ("#f57c00" if size_pct >= 50 else "#2e7d32")
+
+        # Today's workflow runs
+        runs = github.get("todays_runs", [])
+        total_min = github.get("total_minutes_today", 0)
+        if runs:
+            def _run_row(r: dict) -> str:
+                c = "#2e7d32" if r["conclusion"] == "success" else "#c62828"
+                return (
+                    f"<tr>"
+                    f"<td style='padding:2px 12px;color:#666;font-size:13px'>{r['name'][:60]}</td>"
+                    f"<td style='padding:2px 12px;font-size:13px'>{r['minutes']} min</td>"
+                    f"<td style='padding:2px 12px;font-size:13px;color:{c}'>{r['conclusion']}</td>"
+                    f"</tr>"
+                )
+            run_rows = "".join(_run_row(r) for r in runs)
+            minutes_html = f"""
+            <tr><td style='padding:3px 12px;color:#666'>Workflow runs today</td>
+                <td style='padding:3px 12px' colspan='2'>
+                  <table border='0' cellspacing='0' style='width:100%'>
+                    {run_rows}
+                    <tr style='border-top:1px solid #eee'>
+                      <td style='padding:2px 12px;font-size:13px'><b>Total</b></td>
+                      <td style='padding:2px 12px;font-size:13px'><b>{total_min} min</b></td>
+                      <td style='padding:2px 12px;font-size:13px;color:#999'>
+                        {'unlimited (public)' if not github['is_private'] else f'of {GITHUB_MINUTES_FREE_PLAN:,}/mo free'}
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+            </tr>"""
+        else:
+            minutes_html = (
+                "<tr><td style='padding:3px 12px;color:#666'>Workflow runs today</td>"
+                "<td style='padding:3px 12px;color:#999'>none found</td></tr>"
+            )
+
+        github_html = f"""
+        <h3>GitHub</h3>
+        <table border='0' cellspacing='0' style='font-size:14px;width:100%'>
+          <tr><td style='padding:3px 12px;color:#666'>Repo size</td>
+              <td style='padding:3px 12px'>
+                <b style='color:{size_color}'>{size_mb:.1f} MB</b>
+                <span style='color:#999;font-size:12px'>&nbsp;/ {GITHUB_REPO_SIZE_LIMIT_MB:,} MB recommended limit ({size_pct}%)</span>
+              </td></tr>
+          {minutes_html}
+        </table>
+        """
+    else:
+        github_html = "<p style='color:#999;font-size:13px'>GitHub stats unavailable (GH_PAT / GITHUB_REPOSITORY not set).</p>"
 
     if not data["ran"]:
         return (
@@ -248,6 +365,8 @@ def build_body(data: dict, balance: dict | None) -> str:
 
       {balance_html}
 
+      {github_html}
+
       <p style='margin-top:24px;font-size:12px;color:#888'>
         Wave ID: {data['wave_id']}<br>
         Sent by notify.py — LLM Dataset Longitudinal Study
@@ -292,8 +411,9 @@ def main() -> None:
 
     data    = check_run(args.db, args.date)
     balance = fetch_balance()
+    github  = fetch_github_stats()
     subject = build_subject(data, balance)
-    body    = build_body(data, balance)
+    body    = build_body(data, balance, github)
 
     if args.dry_run:
         print(subject)

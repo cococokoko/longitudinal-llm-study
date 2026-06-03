@@ -57,12 +57,14 @@ def _truncate(text: str, max_len: int) -> str:
 
 
 def _sample(
-    items: list[DatasetItem], n: int, strategy: str, seed: int | None
+    items: list[DatasetItem], n: int | None, strategy: str, seed: int | None
 ) -> list[DatasetItem]:
     if not items:
         return []
     if strategy == "persona_balanced":
         return _sample_persona_balanced(items, seed)
+    if n is None:
+        return items
     rng = random.Random(42 if strategy == "fixed" else seed)
     return rng.sample(items, min(n, len(items)))
 
