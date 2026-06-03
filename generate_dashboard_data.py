@@ -282,7 +282,7 @@ def compute_cosine_4a(conn, waves, existing) -> list[dict]:
     return results
 
 
-# ── Steering Sensibility: framing × SES gap to baseline ─────────────────────
+# ── Steering Sensitivity: framing × SES gap to baseline ─────────────────────
 
 def compute_cosine_4b_ii(conn, waves, existing) -> list[dict]:
     """
