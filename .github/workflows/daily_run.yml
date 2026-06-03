@@ -2,7 +2,7 @@ name: Daily pipeline run
 
 on:
   schedule:
-    - cron: "0 10 * * *"   # 11:00 CET (10:00 UTC)
+    - cron: "0 7 * * *"    # 09:00 CEST / 08:00 CET  (GitHub Actions runs in UTC)
   workflow_dispatch:         # allow manual trigger from GitHub UI
 
 concurrency:
@@ -34,11 +34,15 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python pipeline.py run
 
+      - name: Generate dashboard data
+        run: python generate_dashboard_data.py
+        continue-on-error: true   # don't block DB commit if embeddings fail
+
       - name: Commit results
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add study.db results/
+          git add study.db results/ docs/
           git diff --cached --quiet && echo "Nothing to commit" || \
             git commit -m "chore: daily run $(date -u +%Y-%m-%d)" && git push
 

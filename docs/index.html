@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LLM Longitudinal Study</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; background: #f5f5f5; }
+    .navbar-brand { font-weight: 700; letter-spacing: -.3px; font-size: 15px; }
+    .nav-tabs .nav-link { font-size: 13px; padding: 6px 14px; }
+    .nav-pills .nav-link { font-size: 12px; padding: 4px 12px; }
+    .tab-content > .tab-pane { padding: 18px 0 0; }
+    .section-note { font-size: 12px; color: #888; margin-bottom: 14px; }
+    .chart-title { font-size: 12px; font-weight: 600; color: #555; margin-bottom: 4px; }
+
+    /* WVS distribution mini-bar */
+    .dist-bar { display: flex; height: 9px; border-radius: 2px; overflow: hidden; width: 180px; }
+    .dist-bar div { height: 100%; }
+    .dist-legend { font-size: 10px; color: #666; margin-top: 2px; }
+
+    /* Persona cards */
+    .persona-block { border: 1px solid #ddd; border-radius: 6px; padding: 9px 10px; height: 100%; font-size: 11.5px; }
+    .persona-block.ses-high { border-color: #4CAF50; }
+    .persona-block.ses-low  { border-color: #FF5722; }
+    .persona-text-box { border-left: 2px solid #ddd; padding-left: 7px; color: #666; font-size: 11px; margin: 5px 0 4px; }
+    .prompt-snippet { color: #333; white-space: pre-wrap; word-break: break-word; }
+    .framing-pill { font-size: 10px; padding: 1px 6px; border-radius: 8px; background: #f0f0f0; color: #444; display: inline-block; }
+
+    /* Version table */
+    .version-pill { font-size: 11px; padding: 2px 7px; border-radius: 10px; background: #f0f4ff; color: #3a3a6e; max-width: 200px; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    /* Pagination */
+    .page-info { font-size: 12px; color: #777; }
+    .plotly-wrap { background: white; border-radius: 6px; border: 1px solid #e8e8e8; padding: 8px; }
+    .tab-outer { background: white; border: 1px solid #dee2e6; border-top: none; border-radius: 0 0 6px 6px; padding: 16px; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-white border-bottom px-3 py-2">
+  <span class="navbar-brand">LLM Longitudinal Study — Dashboard</span>
+  <span class="text-muted" id="nav-date" style="font-size:12px"></span>
+</nav>
+
+<div class="container-fluid px-3 pt-3" style="max-width:1600px">
+
+  <!-- Main tab nav -->
+  <ul class="nav nav-tabs" id="mainTab" role="tablist">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-prompts">Prompts</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-versions">Model Versions</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-wvs">WVS Alignment</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-lengths">Prompt Lengths</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4a">Cosine 4a</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4b">Cosine 4b-ii</button></li>
+  </ul>
+
+  <div class="tab-outer">
+  <div class="tab-content" id="mainTabContent">
+
+    <!-- ═══════ PROMPTS ═══════ -->
+    <div class="tab-pane fade show active" id="tab-prompts">
+      <ul class="nav nav-pills mb-3" id="promptPills">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#sub-wvs">WVS Prompts</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#sub-persona">Persona Prompts</button></li>
+      </ul>
+      <div class="tab-content">
+
+        <!-- WVS sub-tab -->
+        <div class="tab-pane fade show active" id="sub-wvs">
+          <p class="section-note">352 fixed World Values Survey questions sent every wave. Models must respond with a JSON probability distribution over the answer options (A, B, C…). The global distribution shows real human survey responses.</p>
+          <div class="row align-items-center mb-2 g-2">
+            <div class="col-auto"><input id="wvs-search" class="form-control form-control-sm" placeholder="Search questions…" style="width:230px" /></div>
+            <div class="col page-info text-end">Showing <span id="wvs-range"></span> of <span id="wvs-total"></span></div>
+            <div class="col-auto">
+              <button class="btn btn-sm btn-outline-secondary" id="wvs-prev">‹ Prev</button>
+              <button class="btn btn-sm btn-outline-secondary" id="wvs-next">Next ›</button>
+            </div>
+          </div>
+          <table class="table table-sm table-hover mb-0" style="font-size:12px">
+            <thead class="table-light">
+              <tr>
+                <th style="width:36px">#</th>
+                <th>Question</th>
+                <th style="width:220px">Answer Options</th>
+                <th style="width:230px">WVS Global Distribution</th>
+              </tr>
+            </thead>
+            <tbody id="wvs-tbody"></tbody>
+          </table>
+        </div>
+
+        <!-- Persona sub-tab -->
+        <div class="tab-pane fade" id="sub-persona">
+          <p class="section-note">
+            300 persona prompts per wave drawn from two query sources.
+            Each query has three conditions: <strong>baseline</strong> (no persona),
+            <strong>high SES</strong> (high-status professional role), and
+            <strong>low SES</strong> (lower-income role).
+            Framing is delivered either via the system message or inline in the user prompt.
+          </p>
+          <div class="row align-items-center mb-2 g-2">
+            <div class="col-auto">
+              <div class="btn-group btn-group-sm">
+                <input type="radio" class="btn-check" name="src" id="src-all" value="all" checked /><label class="btn btn-outline-secondary" for="src-all">All</label>
+                <input type="radio" class="btn-check" name="src" id="src-adv" value="advertising" /><label class="btn btn-outline-secondary" for="src-adv">Advertising</label>
+                <input type="radio" class="btn-check" name="src" id="src-inf" value="infinity_chat" /><label class="btn btn-outline-secondary" for="src-inf">Infinity Chat</label>
+              </div>
+            </div>
+            <div class="col-auto"><input id="persona-search" class="form-control form-control-sm" placeholder="Search…" style="width:200px" /></div>
+            <div class="col page-info text-end">Showing <span id="persona-range"></span> of <span id="persona-total"></span></div>
+            <div class="col-auto">
+              <button class="btn btn-sm btn-outline-secondary" id="persona-prev">‹ Prev</button>
+              <button class="btn btn-sm btn-outline-secondary" id="persona-next">Next ›</button>
+            </div>
+          </div>
+          <div id="persona-list"></div>
+        </div>
+
+      </div><!-- /pill content -->
+    </div><!-- /tab-prompts -->
+
+    <!-- ═══════ MODEL VERSIONS ═══════ -->
+    <div class="tab-pane fade" id="tab-versions">
+      <p class="section-note">Exact model version strings returned by the API per wave. Count = successful (non-error) calls.</p>
+      <div class="table-responsive"><div id="versions-wrap"></div></div>
+    </div>
+
+    <!-- ═══════ WVS ALIGNMENT ═══════ -->
+    <div class="tab-pane fade" id="tab-wvs">
+      <p class="section-note">
+        Models respond to each WVS question with a probability distribution over the answer options.
+        <strong>TV distance</strong> = ½ L1 norm vs the WVS global distribution (0 = perfect match).
+        <strong>Wasserstein</strong> = earth mover's distance treating options as equally-spaced positions.
+        <strong>Entropy</strong> = Shannon entropy of the model's distribution; gray dashed line = WVS human entropy.
+      </p>
+      <div class="chart-title">TV Distance from Global Distribution — Mean ± 1 SD</div>
+      <div class="plotly-wrap mb-4" id="chart-tv" style="height:340px"></div>
+      <div class="chart-title">Wasserstein Distance from Global Distribution — Mean ± 1 SD</div>
+      <div class="plotly-wrap mb-4" id="chart-ws" style="height:340px"></div>
+      <div class="chart-title">Shannon Entropy per Wave (gray = WVS human responses)</div>
+      <div class="plotly-wrap" id="chart-ent" style="height:340px"></div>
+    </div>
+
+    <!-- ═══════ PROMPT LENGTHS ═══════ -->
+    <div class="tab-pane fade" id="tab-lengths">
+      <p class="section-note">
+        Total character count of each persona prompt (user text + system message when present).
+        Baseline has no persona; SES prompts include role descriptions that inflate length.
+      </p>
+      <div class="chart-title">Prompt Length Distribution by Condition × Framing</div>
+      <div class="plotly-wrap" id="chart-lengths" style="height:420px"></div>
+    </div>
+
+    <!-- ═══════ COSINE 4a ═══════ -->
+    <div class="tab-pane fade" id="tab-4a">
+      <p class="section-note">
+        Day-over-day cosine similarity of <strong>baseline</strong> persona responses (MiniLM-L6-v2 embeddings).
+        Each point is the mean across all baseline items present in both waves.
+        High values = model gives consistent answers; drops signal response drift.
+      </p>
+      <div class="chart-title">Baseline Response Stability — Consecutive Wave Pairs</div>
+      <div class="plotly-wrap" id="chart-4a" style="height:380px"></div>
+    </div>
+
+    <!-- ═══════ COSINE 4b-ii ═══════ -->
+    <div class="tab-pane fade" id="tab-4b">
+      <p class="section-note">
+        Cosine similarity between each SES-framed response and the matched baseline (same query, same wave, same model).
+        Split by framing channel — <strong>solid line</strong> = system message, <strong>dashed</strong> = inline prompt —
+        and SES level — <strong class="text-success">green</strong> = high SES, <strong class="text-danger">orange-red</strong> = low SES.
+        Lower values mean the persona framing shifts the response further from baseline.
+      </p>
+      <div class="chart-title">Cosine Similarity to Baseline: Framing × SES per Wave</div>
+      <div class="row g-3 mt-0">
+        <div class="col-md-4"><div class="fw-semibold text-center mb-1" id="lbl-4b-0" style="font-size:12px"></div><div class="plotly-wrap" id="chart-4b-0" style="height:360px"></div></div>
+        <div class="col-md-4"><div class="fw-semibold text-center mb-1" id="lbl-4b-1" style="font-size:12px"></div><div class="plotly-wrap" id="chart-4b-1" style="height:360px"></div></div>
+        <div class="col-md-4"><div class="fw-semibold text-center mb-1" id="lbl-4b-2" style="font-size:12px"></div><div class="plotly-wrap" id="chart-4b-2" style="height:360px"></div></div>
+      </div>
+      <div id="legend-4b" class="mt-2" style="font-size:11px;color:#555">
+        <span style="color:#4CAF50">●</span> high SES &nbsp;
+        <span style="color:#FF5722">●</span> low SES &nbsp;&nbsp;
+        <span style="color:#888">—</span> system msg &nbsp;
+        <span style="color:#888">- -</span> inline prompt
+      </div>
+    </div>
+
+  </div><!-- /tab-content -->
+  </div><!-- /tab-outer -->
+</div><!-- /container -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script>
+'use strict';
+
+// ── Palette ──────────────────────────────────────────────────────────────────
+const MODEL_CLR = {
+  'Claude Sonnet': '#e07b54',
+  'Gemini Pro':    '#4285F4',
+  'Gpt 5.3 Chat':  '#34A853',
+};
+const MAIN_MODELS = ['Claude Sonnet', 'Gemini Pro', 'Gpt 5.3 Chat'];
+const DIST_PALETTE = ['#4285F4','#34A853','#e07b54','#9b59b6','#e74c3c','#1abc9c','#e67e22','#2c3e50'];
+
+// ── Plotly base layout ────────────────────────────────────────────────────────
+function baseLayout(extra = {}) {
+  return Object.assign({
+    margin:        { l: 52, r: 16, t: 28, b: 52 },
+    paper_bgcolor: 'white',
+    plot_bgcolor:  '#fafafa',
+    font:          { family: "'Segoe UI', system-ui, sans-serif", size: 12 },
+    xaxis:         { showgrid: false, linecolor: '#ccc', linewidth: 1 },
+    yaxis:         { gridcolor: '#ebebeb', linecolor: '#ccc', linewidth: 1 },
+  }, extra);
+}
+const PCFG = { responsive: true, displayModeBar: false };
+
+// ── Fetch data ────────────────────────────────────────────────────────────────
+async function loadData() {
+  const [mRes, pRes] = await Promise.all([fetch('data/metrics.json'), fetch('data/prompts.json')]);
+  if (!mRes.ok || !pRes.ok) throw new Error('data files missing — run generate_dashboard_data.py first');
+  return { metrics: await mRes.json(), prompts: await pRes.json() };
+}
+
+// ── Model Versions ────────────────────────────────────────────────────────────
+function renderVersions({ wave_versions, waves }) {
+  const byKey = {};
+  for (const r of wave_versions) byKey[`${r.wave}||${r.model}`] = r;
+
+  let html = `<table class="table table-sm table-bordered" style="font-size:12px">
+    <thead class="table-light"><tr><th>Model</th>`;
+  for (const w of waves) html += `<th>${w}</th>`;
+  html += `</tr></thead><tbody>`;
+
+  for (const model of MAIN_MODELS) {
+    html += `<tr><td><strong>${model}</strong></td>`;
+    for (const w of waves) {
+      const r = byKey[`${w}||${model}`];
+      if (!r) { html += `<td class="text-muted text-center">—</td>`; continue; }
+      const short = (r.model_used || '—').split('/').pop().split(':')[0];
+      html += `<td>
+        <span class="version-pill" title="${r.model_used || ''}">${short}</span>
+        <div class="text-muted" style="font-size:10px">${r.n_calls} calls</div>
+      </td>`;
+    }
+    html += `</tr>`;
+  }
+  html += `</tbody></table>`;
+  document.getElementById('versions-wrap').innerHTML = html;
+}
+
+// ── WVS Alignment Charts ──────────────────────────────────────────────────────
+function renderWVSCharts(wvs_metrics) {
+  const traces = (yKey, errKey) => MAIN_MODELS.map(model => {
+    const d = wvs_metrics.filter(r => r.model === model).sort((a,b) => a.wave < b.wave ? -1 : 1);
+    return {
+      x: d.map(r => r.wave), y: d.map(r => r[yKey]),
+      error_y: { type: 'data', array: d.map(r => r[errKey]), visible: true,
+                 thickness: 1.5, width: 4, color: MODEL_CLR[model] + '99' },
+      mode: 'lines+markers', name: model,
+      line: { color: MODEL_CLR[model], width: 2.5 },
+      marker: { size: 7, color: MODEL_CLR[model] },
+    };
+  });
+
+  Plotly.newPlot('chart-tv', traces('tv_mean','tv_std'),
+    baseLayout({ yaxis: { range: [0, 0.85], title: 'TV Distance', gridcolor: '#ebebeb' } }), PCFG);
+
+  Plotly.newPlot('chart-ws', traces('ws_mean','ws_std'),
+    baseLayout({ yaxis: { title: 'Wasserstein Distance', gridcolor: '#ebebeb' } }), PCFG);
+
+  const entTraces = MAIN_MODELS.map(model => {
+    const d = wvs_metrics.filter(r => r.model === model).sort((a,b) => a.wave < b.wave ? -1 : 1);
+    return {
+      x: d.map(r => r.wave), y: d.map(r => r.entropy_mean),
+      mode: 'lines+markers', name: model,
+      line: { color: MODEL_CLR[model], width: 2.5 },
+      marker: { size: 7, color: MODEL_CLR[model] },
+    };
+  });
+  // Global entropy reference from any model (same value)
+  const ref = wvs_metrics.filter(r => r.model === MAIN_MODELS[0]).sort((a,b) => a.wave < b.wave ? -1 : 1);
+  if (ref.length) entTraces.push({
+    x: ref.map(r => r.wave), y: ref.map(r => r.entropy_global_mean),
+    mode: 'lines', name: 'WVS human',
+    line: { color: '#aaa', dash: 'dash', width: 1.5 }, showlegend: true,
+  });
+  Plotly.newPlot('chart-ent', entTraces,
+    baseLayout({ yaxis: { title: 'Mean Shannon Entropy (nats)', gridcolor: '#ebebeb' } }), PCFG);
+}
+
+// ── Prompt Lengths ────────────────────────────────────────────────────────────
+function renderLengths(persona_lengths) {
+  const groups = [
+    { label: 'Baseline',            cond: 'baseline',  framing: null,            color: '#2196F3' },
+    { label: 'High SES / system',   cond: 'high_ses',  framing: 'system_msg',    color: '#4CAF50' },
+    { label: 'High SES / inline',   cond: 'high_ses',  framing: 'inline_prompt', color: '#8BC34A' },
+    { label: 'Low SES / system',    cond: 'low_ses',   framing: 'system_msg',    color: '#FF5722' },
+    { label: 'Low SES / inline',    cond: 'low_ses',   framing: 'inline_prompt', color: '#FF8A65' },
+  ];
+  const traces = groups.map(g => ({
+    type: 'box',
+    y: persona_lengths
+         .filter(d => d.condition === g.cond && (g.framing === null || d.framing === g.framing))
+         .map(d => d.prompt_len),
+    name: g.label,
+    boxpoints: 'outliers',
+    marker: { color: g.color, size: 3, opacity: 0.7 },
+    line:   { color: g.color },
+    fillcolor: g.color + '44',
+  }));
+  Plotly.newPlot('chart-lengths', traces,
+    baseLayout({
+      yaxis:      { title: 'Characters (prompt + system message)', gridcolor: '#ebebeb' },
+      xaxis:      { tickangle: -20 },
+      showlegend: false,
+    }), PCFG);
+}
+
+// ── Cosine 4a ────────────────────────────────────────────────────────────────
+function renderCosine4a(cosine_4a) {
+  const traces = MAIN_MODELS.map(model => {
+    const d = cosine_4a.filter(r => r.model === model)
+                       .sort((a,b) => a.wave_from < b.wave_from ? -1 : 1);
+    return {
+      x: d.map(r => `${r.wave_from.slice(5)}→${r.wave_to.slice(5)}`),
+      y: d.map(r => r.sim_mean),
+      error_y: { type: 'data', array: d.map(r => r.sim_std), visible: true,
+                 thickness: 1.5, width: 4, color: MODEL_CLR[model] + '99' },
+      mode: 'lines+markers', name: model,
+      line: { color: MODEL_CLR[model], width: 2.5 },
+      marker: { size: 7, color: MODEL_CLR[model] },
+    };
+  });
+  Plotly.newPlot('chart-4a', traces,
+    baseLayout({
+      yaxis: { range: [0, 1], title: 'Mean Cosine Similarity', gridcolor: '#ebebeb' },
+      xaxis: { title: 'Wave transition' },
+    }), PCFG);
+}
+
+// ── Cosine 4b-ii ─────────────────────────────────────────────────────────────
+function renderCosine4b(cosine_4b_ii) {
+  const SES_CLR   = { high: '#4CAF50', low: '#FF5722' };
+  const FRAMING_D = { system_msg: 'solid', inline_prompt: 'dash' };
+  const FRAMING_S = { system_msg: 'circle', inline_prompt: 'diamond' };
+
+  MAIN_MODELS.forEach((model, i) => {
+    document.getElementById(`lbl-4b-${i}`).textContent = model;
+    const traces = [];
+    for (const framing of ['system_msg', 'inline_prompt']) {
+      for (const ses of ['high', 'low']) {
+        const d = cosine_4b_ii.filter(r => r.model === model && r.framing === framing && r.ses === ses)
+                              .sort((a,b) => a.wave < b.wave ? -1 : 1);
+        if (!d.length) continue;
+        traces.push({
+          x: d.map(r => r.wave), y: d.map(r => r.sim_mean),
+          error_y: { type: 'data', array: d.map(r => r.sim_std), visible: true,
+                     thickness: 1, width: 3, color: SES_CLR[ses] + '66' },
+          mode: 'lines+markers',
+          name: `${ses} SES / ${framing.replace('_',' ')}`,
+          line:   { color: SES_CLR[ses], dash: FRAMING_D[framing], width: 2 },
+          marker: { size: 6, color: SES_CLR[ses], symbol: FRAMING_S[framing] },
+          showlegend: false,
+        });
+      }
+    }
+    Plotly.newPlot(`chart-4b-${i}`, traces,
+      baseLayout({
+        yaxis:  { range: [0, 1], title: i === 0 ? 'Mean Cosine Similarity' : '', gridcolor: '#ebebeb' },
+        xaxis:  { tickangle: -30 },
+        margin: { l: i === 0 ? 52 : 28, r: 14, t: 20, b: 64 },
+      }), PCFG);
+  });
+}
+
+// ── WVS prompt table ──────────────────────────────────────────────────────────
+let _wvsAll = [], _wvsFiltered = [], _wvsPage = 0;
+const WVS_PER_PAGE = 20;
+
+function _distBar(options, dist) {
+  return options.map((opt, i) => {
+    const pct = Math.round((dist[i] || 0) * 1000) / 10;
+    const c   = DIST_PALETTE[i % DIST_PALETTE.length];
+    const ltr = String.fromCharCode(65 + i);
+    return `<div style="width:${pct}%;background:${c}" title="${ltr}: ${opt} — ${pct}%"></div>`;
+  }).join('');
+}
+
+function _distLegend(options, dist) {
+  return options.map((opt, i) => {
+    const pct = Math.round((dist[i] || 0) * 1000) / 10;
+    const c   = DIST_PALETTE[i % DIST_PALETTE.length];
+    const ltr = String.fromCharCode(65 + i);
+    return `<span style="color:${c}">${ltr}:${pct}%</span>`;
+  }).join(' ');
+}
+
+function renderWVSTable() {
+  const q = document.getElementById('wvs-search').value.toLowerCase();
+  _wvsFiltered = _wvsAll.filter(d => !q || d.question.toLowerCase().includes(q));
+  const total = _wvsFiltered.length;
+  const start = _wvsPage * WVS_PER_PAGE;
+  const page  = _wvsFiltered.slice(start, start + WVS_PER_PAGE);
+
+  document.getElementById('wvs-total').textContent = total;
+  document.getElementById('wvs-range').textContent = total
+    ? `${start + 1}–${Math.min(start + WVS_PER_PAGE, total)}`
+    : '0';
+
+  document.getElementById('wvs-tbody').innerHTML = page.map((item, j) => {
+    const n   = start + j + 1;
+    const bar = _distBar(item.options, item.global_distribution);
+    const leg = _distLegend(item.options, item.global_distribution);
+    const opts = item.options.map((o, i) =>
+      `<span style="color:${DIST_PALETTE[i%DIST_PALETTE.length]}">${String.fromCharCode(65+i)}.</span> ${o}`
+    ).join('<br>');
+    return `<tr>
+      <td class="text-muted" style="font-size:11px">${n}</td>
+      <td style="max-width:380px">${item.question.replace(/\n/g,'<br>')}</td>
+      <td style="font-size:11px;line-height:1.5">${opts}</td>
+      <td>
+        <div class="dist-bar">${bar}</div>
+        <div class="dist-legend">${leg}</div>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+// ── Persona prompt list ───────────────────────────────────────────────────────
+let _personaAll = [], _personaFiltered = [], _personaPage = 0, _personaSrc = 'all';
+const PERSONA_PER_PAGE = 12;
+
+function _personaCard(entry, cls, label) {
+  if (!entry) return `<div class="persona-block h-100 text-muted" style="font-size:11px"><span class="badge bg-secondary mb-1">${label}</span><br>Not available</div>`;
+  const badgeBg = cls.includes('ses-high') ? 'success' : cls.includes('ses-low') ? 'danger' : 'primary';
+  const framingHtml = entry.framing
+    ? `<span class="framing-pill ms-1">${entry.framing.replace('_',' ')}</span>`
+    : '';
+  const roleHtml = entry.persona_role
+    ? `<div style="font-size:11px;margin:4px 0 2px"><em>${entry.persona_role}</em>${framingHtml}</div>`
+    : '';
+  const personaSnip = (entry.persona_text || entry.system_text || '');
+  const personaHtml = personaSnip
+    ? `<div class="persona-text-box">${personaSnip.slice(0,180)}${personaSnip.length>180?'…':''}</div>`
+    : '';
+  const promptHtml = `<div class="prompt-snippet">${(entry.prompt_text||'').slice(0,200)}${(entry.prompt_text||'').length>200?'…':''}</div>`;
+  return `<div class="persona-block ${cls}">
+    <span class="badge bg-${badgeBg} mb-1" style="font-size:10px">${label}</span>
+    ${roleHtml}${personaHtml}${promptHtml}
+  </div>`;
+}
+
+function renderPersonaList() {
+  const q = document.getElementById('persona-search').value.toLowerCase();
+  _personaFiltered = _personaAll.filter(d =>
+    (_personaSrc === 'all' || d.query_source === _personaSrc) &&
+    (!q || (d.baseline?.prompt_text || '').toLowerCase().includes(q))
+  );
+  const total = _personaFiltered.length;
+  const start = _personaPage * PERSONA_PER_PAGE;
+  const page  = _personaFiltered.slice(start, start + PERSONA_PER_PAGE);
+
+  document.getElementById('persona-total').textContent = total;
+  document.getElementById('persona-range').textContent = total
+    ? `${start + 1}–${Math.min(start + PERSONA_PER_PAGE, total)}`
+    : '0';
+
+  const srcBadge = src => src === 'advertising'
+    ? `<span class="badge bg-warning text-dark" style="font-size:10px">Advertising</span>`
+    : `<span class="badge bg-info text-dark" style="font-size:10px">Infinity Chat</span>`;
+
+  // Pick representative: prefer first system_msg, then first inline_prompt
+  const pickRep = (arr, framing) => arr.find(e => e.framing === framing) || null;
+
+  document.getElementById('persona-list').innerHTML = page.map((q, j) => {
+    const n = start + j + 1;
+    const baseCard = _personaCard(q.baseline, '', 'Baseline');
+
+    // Gather unique framing types present in high/low SES
+    const highFramings = [...new Set((q.high_ses||[]).map(e=>e.framing))];
+    const lowFramings  = [...new Set((q.low_ses ||[]).map(e=>e.framing))];
+
+    let highCols = '', lowCols = '';
+    for (const f of ['system_msg','inline_prompt']) {
+      if (highFramings.includes(f)) {
+        const rep = pickRep(q.high_ses, f);
+        const lbl = `High SES · ${f==='system_msg'?'sys':'inline'}`;
+        highCols += `<div class="col">${_personaCard(rep,'ses-high',lbl)}</div>`;
+      }
+      if (lowFramings.includes(f)) {
+        const rep = pickRep(q.low_ses, f);
+        const lbl = `Low SES · ${f==='system_msg'?'sys':'inline'}`;
+        lowCols += `<div class="col">${_personaCard(rep,'ses-low',lbl)}</div>`;
+      }
+    }
+
+    const queryText = (q.baseline?.prompt_text || '').slice(0, 120);
+    return `<div class="border rounded mb-2 p-2 bg-white">
+      <div class="mb-2" style="font-size:12px">
+        <span class="text-muted me-1">${n}.</span>
+        ${srcBadge(q.query_source)}
+        <span class="ms-2 fw-semibold">${queryText}${queryText.length===120?'…':''}</span>
+      </div>
+      <div class="row g-2 row-cols-auto">
+        <div class="col">${baseCard}</div>
+        ${highCols}${lowCols}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Boot ──────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const { metrics, prompts } = await loadData();
+
+    document.getElementById('nav-date').textContent = `Updated: ${metrics.generated}`;
+
+    renderVersions(metrics);
+    renderWVSCharts(metrics.wvs_metrics);
+    renderLengths(metrics.persona_lengths);
+    if (metrics.cosine_4a?.length)      renderCosine4a(metrics.cosine_4a);
+    if (metrics.cosine_4b_ii?.length)   renderCosine4b(metrics.cosine_4b_ii);
+
+    // WVS table
+    _wvsAll = prompts.wvs;
+    renderWVSTable();
+    document.getElementById('wvs-search').addEventListener('input', () => { _wvsPage = 0; renderWVSTable(); });
+    document.getElementById('wvs-prev').addEventListener('click',  () => { if (_wvsPage > 0) { _wvsPage--; renderWVSTable(); } });
+    document.getElementById('wvs-next').addEventListener('click',  () => { if ((_wvsPage+1)*WVS_PER_PAGE < _wvsFiltered.length) { _wvsPage++; renderWVSTable(); } });
+
+    // Persona list
+    _personaAll = prompts.persona;
+    renderPersonaList();
+    document.querySelectorAll('input[name="src"]').forEach(r =>
+      r.addEventListener('change', e => { _personaSrc = e.target.value; _personaPage = 0; renderPersonaList(); })
+    );
+    document.getElementById('persona-search').addEventListener('input', () => { _personaPage = 0; renderPersonaList(); });
+    document.getElementById('persona-prev').addEventListener('click', () => { if (_personaPage > 0) { _personaPage--; renderPersonaList(); } });
+    document.getElementById('persona-next').addEventListener('click', () => { if ((_personaPage+1)*PERSONA_PER_PAGE < _personaFiltered.length) { _personaPage++; renderPersonaList(); } });
+
+    // Resize Plotly charts when switching tabs (they initialise hidden)
+    document.querySelectorAll('[data-bs-toggle="tab"]').forEach(btn =>
+      btn.addEventListener('shown.bs.tab', () => {
+        document.querySelectorAll('.plotly-wrap [data-plotly]').forEach(el =>
+          Plotly.Plots.resize(el)
+        );
+        // Fallback: resize all divs that Plotly might have used
+        ['chart-tv','chart-ws','chart-ent','chart-lengths','chart-4a',
+         'chart-4b-0','chart-4b-1','chart-4b-2'].forEach(id => {
+          const el = document.getElementById(id);
+          if (el && el._fullLayout) Plotly.Plots.resize(el);
+        });
+      })
+    );
+
+  } catch (err) {
+    console.error(err);
+    document.body.insertAdjacentHTML('afterbegin',
+      `<div class="alert alert-warning m-3" role="alert">
+         <strong>Data not loaded:</strong> ${err.message}
+       </div>`);
+  }
+});
+</script>
+</body>
+</html>
