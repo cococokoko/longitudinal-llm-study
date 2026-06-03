@@ -471,21 +471,31 @@ def main():
     print("Persona prompt lengths…")
     persona_lengths = compute_persona_lengths(conn)
 
-    print("Cosine 4a (incremental)…")
-    existing_4a = existing.get("cosine_4a", [])
-    try:
-        cosine_4a = existing_4a + compute_cosine_4a(conn, waves, existing_4a)
-    except Exception as e:
-        print(f"  4a failed: {e} — keeping existing data")
-        cosine_4a = existing_4a
+    # Discard any entries outside the study window; also clear both arrays if
+    # we haven't yet collected enough waves — enforces a clean start.
+    if len(waves) < MIN_WAVES_FOR_COSINE:
+        print(f"  Cosine tabs: clearing — need {MIN_WAVES_FOR_COSINE}+ waves, have {len(waves)}")
+        cosine_4a     = []
+        cosine_4b_ii  = []
+    else:
+        existing_4a = [r for r in existing.get("cosine_4a", [])
+                       if r.get("wave_from", "") >= STUDY_START]
+        existing_4b = [r for r in existing.get("cosine_4b_ii", [])
+                       if r.get("wave", "") >= STUDY_START]
 
-    print("Cosine 4b-ii (incremental)…")
-    existing_4b = existing.get("cosine_4b_ii", [])
-    try:
-        cosine_4b_ii = existing_4b + compute_cosine_4b_ii(conn, waves, existing_4b)
-    except Exception as e:
-        print(f"  4b-ii failed: {e} — keeping existing data")
-        cosine_4b_ii = existing_4b
+        print("Cosine 4a — Output Diversity (incremental)…")
+        try:
+            cosine_4a = existing_4a + compute_cosine_4a(conn, waves, existing_4a)
+        except Exception as e:
+            print(f"  4a failed: {e} — keeping existing data")
+            cosine_4a = existing_4a
+
+        print("Cosine 4b-ii — Steering Sensitivity (incremental)…")
+        try:
+            cosine_4b_ii = existing_4b + compute_cosine_4b_ii(conn, waves, existing_4b)
+        except Exception as e:
+            print(f"  4b-ii failed: {e} — keeping existing data")
+            cosine_4b_ii = existing_4b
 
     metrics = {
         "generated":      datetime.date.today().isoformat(),
