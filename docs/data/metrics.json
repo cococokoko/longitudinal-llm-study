@@ -12,14 +12,14 @@
     },
     {
       "wave": "2026-06-03",
-      "model": "Gemini Pro",
-      "model_used": "google/gemini-3.1-pro-preview-20260219",
+      "model": "GPT Chat",
+      "model_used": "openai/gpt-5.3-chat-20260303",
       "n_calls": 781
     },
     {
       "wave": "2026-06-03",
-      "model": "Gpt 5.3 Chat",
-      "model_used": "openai/gpt-5.3-chat-20260303",
+      "model": "Gemini Pro",
+      "model_used": "google/gemini-3.1-pro-preview-20260219",
       "n_calls": 781
     }
   ],
@@ -27,8 +27,6 @@
     {
       "wave": "2026-06-03",
       "model": "Claude Sonnet",
-      "tv_mean": 0.2624,
-      "tv_std": 0.1638,
       "ws_mean": 0.6544,
       "ws_std": 0.661,
       "entropy_mean": 1.2714,
@@ -37,25 +35,21 @@
     },
     {
       "wave": "2026-06-03",
-      "model": "Gemini Pro",
-      "tv_mean": 0.3154,
-      "tv_std": 0.2741,
-      "ws_mean": 0.758,
-      "ws_std": 0.8746,
-      "entropy_mean": 1.0071,
-      "entropy_global_mean": 1.8855,
-      "n": 317
-    },
-    {
-      "wave": "2026-06-03",
-      "model": "Gpt 5.3 Chat",
-      "tv_mean": 0.4257,
-      "tv_std": 0.2494,
+      "model": "GPT Chat",
       "ws_mean": 1.0394,
       "ws_std": 0.9177,
       "entropy_mean": 0.9354,
       "entropy_global_mean": 1.9357,
       "n": 345
+    },
+    {
+      "wave": "2026-06-03",
+      "model": "Gemini Pro",
+      "ws_mean": 0.758,
+      "ws_std": 0.8746,
+      "entropy_mean": 1.0071,
+      "entropy_global_mean": 1.8855,
+      "n": 317
     }
   ],
   "persona_lengths": [

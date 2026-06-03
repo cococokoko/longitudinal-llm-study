@@ -24,7 +24,14 @@ METRICS  = OUT_DIR / "metrics.json"
 PROMPTS  = OUT_DIR / "prompts.json"
 
 OPT_LETTERS = list("ABCDEFGH")
-MAIN_MODELS = ["Claude Sonnet", "Gemini Pro", "Gpt 5.3 Chat"]
+MAIN_MODELS = ["Claude Sonnet", "Gemini Pro", "GPT Chat"]   # DB display_name keys
+
+# Display labels used in the dashboard (mirrors MODEL_LABELS in index.html)
+MODEL_LABELS = {
+    "Claude Sonnet":    "Claude Sonnet",
+    "Gemini Pro":       "Gemini Pro",
+    "GPT Chat": "GPT Chat",
+}
 
 # Waves before this date are excluded from all analyses.
 # Update when the study configuration changes significantly.
@@ -52,7 +59,7 @@ def get_waves(conn: sqlite3.Connection) -> list[str]:
     ]
 
 
-# ── WVS metrics ───────────────────────────────────────────────────────────────
+# ── Value Alignment (WVS) ────────────────────────────────────────────────────
 
 def _parse_wvs(text: str | None) -> np.ndarray | None:
     """Parse a model's JSON probability response over WVS option letters."""
@@ -77,7 +84,7 @@ def _parse_wvs(text: str | None) -> np.ndarray | None:
 
 
 def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
-    """TV distance, Wasserstein distance, and Shannon entropy per (wave, model)."""
+    """Wasserstein distance and Shannon entropy per (wave, model) — dashboard: Value Alignment tab."""
     if not waves:
         return []
     rows = _rows(conn, f"""
@@ -113,8 +120,7 @@ def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
             continue
         p = p / ps  # re-normalise after padding
 
-        tv = 0.5 * float(np.sum(np.abs(p - gd)))
-        ws = float(scipy_wasserstein(
+        ws    = float(scipy_wasserstein(
             np.arange(n, dtype=float), np.arange(n, dtype=float),
             u_weights=p, v_weights=gd,
         ))
@@ -122,7 +128,6 @@ def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
         ent_g = float(item.get("entropy") or -np.sum(gd * np.log(gd + 1e-12)))
 
         key = (r["wave"], r["model"])
-        acc[key]["tv"].append(tv)
         acc[key]["ws"].append(ws)
         acc[key]["ent"].append(ent)
         acc[key]["ent_g"].append(ent_g)
@@ -130,13 +135,11 @@ def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
     return [
         {
             "wave": wave, "model": model,
-            "tv_mean": round(float(np.mean(v["tv"])), 4),
-            "tv_std":  round(float(np.std(v["tv"])),  4),
             "ws_mean": round(float(np.mean(v["ws"])), 4),
             "ws_std":  round(float(np.std(v["ws"])),  4),
             "entropy_mean":        round(float(np.mean(v["ent"])),  4),
             "entropy_global_mean": round(float(np.mean(v["ent_g"])), 4),
-            "n": len(v["tv"]),
+            "n": len(v["ws"]),
         }
         for (wave, model), v in sorted(acc.items())
     ]
@@ -212,7 +215,7 @@ def _cosine(a: np.ndarray, b: np.ndarray) -> float:
     return float(np.dot(a, b) / (na * nb))
 
 
-# ── Cosine 4a: day-over-day baseline stability ────────────────────────────────
+# ── Output Diversity: day-over-day baseline stability ────────────────────────
 
 def compute_cosine_4a(conn, waves, existing) -> list[dict]:
     """
@@ -279,7 +282,7 @@ def compute_cosine_4a(conn, waves, existing) -> list[dict]:
     return results
 
 
-# ── Cosine 4b-ii: framing × SES gap to baseline ──────────────────────────────
+# ── Steering Sensibility: framing × SES gap to baseline ─────────────────────
 
 def compute_cosine_4b_ii(conn, waves, existing) -> list[dict]:
     """

@@ -49,10 +49,10 @@
   <ul class="nav nav-tabs" id="mainTab" role="tablist">
     <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-prompts">Prompts</button></li>
     <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-versions">Model Versions</button></li>
-    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-wvs">WVS Alignment</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-wvs">Value Alignment</button></li>
     <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-lengths">Prompt Lengths</button></li>
-    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4a">Cosine 4a</button></li>
-    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4b">Cosine 4b-ii</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4a">Output Diversity</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4b">Steering Sensibility</button></li>
   </ul>
 
   <div class="tab-outer">
@@ -126,16 +126,13 @@
       <div class="table-responsive"><div id="versions-wrap"></div></div>
     </div>
 
-    <!-- ═══════ WVS ALIGNMENT ═══════ -->
+    <!-- ═══════ VALUE ALIGNMENT ═══════ -->
     <div class="tab-pane fade" id="tab-wvs">
       <p class="section-note">
         Models respond to each WVS question with a probability distribution over the answer options.
-        <strong>TV distance</strong> = ½ L1 norm vs the WVS global distribution (0 = perfect match).
-        <strong>Wasserstein</strong> = earth mover's distance treating options as equally-spaced positions.
+        <strong>Wasserstein</strong> = earth mover's distance treating options as equally-spaced positions vs the WVS global distribution (0 = perfect match).
         <strong>Entropy</strong> = Shannon entropy of the model's distribution; gray dashed line = WVS human entropy.
       </p>
-      <div class="chart-title">TV Distance from Global Distribution — Mean ± 1 SD</div>
-      <div class="plotly-wrap mb-4" id="chart-tv" style="height:340px"></div>
       <div class="chart-title">Wasserstein Distance from Global Distribution — Mean ± 1 SD</div>
       <div class="plotly-wrap mb-4" id="chart-ws" style="height:340px"></div>
       <div class="chart-title">Shannon Entropy per Wave (gray = WVS human responses)</div>
@@ -152,36 +149,46 @@
       <div class="plotly-wrap" id="chart-lengths" style="height:420px"></div>
     </div>
 
-    <!-- ═══════ COSINE 4a ═══════ -->
+    <!-- ═══════ OUTPUT DIVERSITY ═══════ -->
     <div class="tab-pane fade" id="tab-4a">
       <p class="section-note">
         Day-over-day cosine similarity of <strong>baseline</strong> persona responses (MiniLM-L6-v2 embeddings).
         Each point is the mean across all baseline items present in both waves.
         High values = model gives consistent answers; drops signal response drift.
       </p>
-      <div class="chart-title">Baseline Response Stability — Consecutive Wave Pairs</div>
-      <div class="plotly-wrap" id="chart-4a" style="height:380px"></div>
+      <div id="chart-4a-empty" class="text-muted text-center py-5" style="font-size:13px;display:none">
+        Not enough data yet — this chart will appear once at least two waves have been collected.
+      </div>
+      <div id="chart-4a-wrap">
+        <div class="chart-title">Baseline Response Stability — Consecutive Wave Pairs</div>
+        <div class="plotly-wrap" id="chart-4a" style="height:380px"></div>
+      </div>
     </div>
 
-    <!-- ═══════ COSINE 4b-ii ═══════ -->
+    <!-- ═══════ STEERING SENSIBILITY ═══════ -->
     <div class="tab-pane fade" id="tab-4b">
       <p class="section-note">
         Cosine similarity between each SES-framed response and the matched baseline (same query, same wave, same model).
         Split by framing channel — <strong>solid line</strong> = system message, <strong>dashed</strong> = inline prompt —
-        and SES level — <strong class="text-success">green</strong> = high SES, <strong class="text-danger">orange-red</strong> = low SES.
+        and SES level — <strong class="text-success">green</strong> = high SES, <strong style="color:#FF5722">orange</strong> = low SES.
         Lower values mean the persona framing shifts the response further from baseline.
       </p>
-      <div class="chart-title">Cosine Similarity to Baseline: Framing × SES per Wave</div>
-      <div class="row g-3 mt-0">
-        <div class="col-md-4"><div class="fw-semibold text-center mb-1" id="lbl-4b-0" style="font-size:12px"></div><div class="plotly-wrap" id="chart-4b-0" style="height:360px"></div></div>
-        <div class="col-md-4"><div class="fw-semibold text-center mb-1" id="lbl-4b-1" style="font-size:12px"></div><div class="plotly-wrap" id="chart-4b-1" style="height:360px"></div></div>
-        <div class="col-md-4"><div class="fw-semibold text-center mb-1" id="lbl-4b-2" style="font-size:12px"></div><div class="plotly-wrap" id="chart-4b-2" style="height:360px"></div></div>
+      <div id="chart-4b-empty" class="text-muted text-center py-5" style="font-size:13px;display:none">
+        Not enough data yet — this chart will appear once at least two waves have been collected.
       </div>
-      <div id="legend-4b" class="mt-2" style="font-size:11px;color:#555">
-        <span style="color:#4CAF50">●</span> high SES &nbsp;
-        <span style="color:#FF5722">●</span> low SES &nbsp;&nbsp;
-        <span style="color:#888">—</span> system msg &nbsp;
-        <span style="color:#888">- -</span> inline prompt
+      <div id="chart-4b-wrap">
+        <div class="chart-title">Cosine Similarity to Baseline: Framing × SES per Wave</div>
+        <div class="row g-3 mt-0">
+          <div class="col-md-4"><div class="fw-semibold text-center mb-1" id="lbl-4b-0" style="font-size:12px"></div><div class="plotly-wrap" id="chart-4b-0" style="height:360px"></div></div>
+          <div class="col-md-4"><div class="fw-semibold text-center mb-1" id="lbl-4b-1" style="font-size:12px"></div><div class="plotly-wrap" id="chart-4b-1" style="height:360px"></div></div>
+          <div class="col-md-4"><div class="fw-semibold text-center mb-1" id="lbl-4b-2" style="font-size:12px"></div><div class="plotly-wrap" id="chart-4b-2" style="height:360px"></div></div>
+        </div>
+        <div class="mt-2" style="font-size:11px;color:#555">
+          <span style="color:#4CAF50">●</span> high SES &nbsp;
+          <span style="color:#FF5722">●</span> low SES &nbsp;&nbsp;
+          <span style="color:#888">—</span> system msg &nbsp;
+          <span style="color:#888">- -</span> inline prompt
+        </div>
       </div>
     </div>
 
@@ -196,11 +203,17 @@
 
 // ── Palette ──────────────────────────────────────────────────────────────────
 const MODEL_CLR = {
-  'Claude Sonnet': '#e07b54',
-  'Gemini Pro':    '#4285F4',
-  'Gpt 5.3 Chat':  '#34A853',
+  'Claude Sonnet':    '#e07b54',
+  'Gemini Pro':       '#4285F4',
+  'GPT Chat': '#34A853',
 };
-const MAIN_MODELS = ['Claude Sonnet', 'Gemini Pro', 'Gpt 5.3 Chat'];
+// DB display_name → chart label (mirrors MODEL_LABELS in generate_dashboard_data.py)
+const MODEL_LABELS = {
+  'Claude Sonnet':    'Claude Sonnet',
+  'Gemini Pro':       'Gemini Pro',
+  'GPT Chat': 'GPT Chat',
+};
+const MAIN_MODELS = ['Claude Sonnet', 'Gemini Pro', 'GPT Chat'];
 const DIST_PALETTE = ['#4285F4','#34A853','#e07b54','#9b59b6','#e74c3c','#1abc9c','#e67e22','#2c3e50'];
 
 // ── Plotly base layout ────────────────────────────────────────────────────────
@@ -234,7 +247,7 @@ function renderVersions({ wave_versions, waves }) {
   html += `</tr></thead><tbody>`;
 
   for (const model of MAIN_MODELS) {
-    html += `<tr><td><strong>${model}</strong></td>`;
+    html += `<tr><td><strong>${MODEL_LABELS[model]}</strong></td>`;
     for (const w of waves) {
       const r = byKey[`${w}||${model}`];
       if (!r) { html += `<td class="text-muted text-center">—</td>`; continue; }
@@ -250,7 +263,7 @@ function renderVersions({ wave_versions, waves }) {
   document.getElementById('versions-wrap').innerHTML = html;
 }
 
-// ── WVS Alignment Charts ──────────────────────────────────────────────────────
+// ── Value Alignment Charts ────────────────────────────────────────────────────
 function renderWVSCharts(wvs_metrics) {
   const traces = (yKey, errKey) => MAIN_MODELS.map(model => {
     const d = wvs_metrics.filter(r => r.model === model).sort((a,b) => a.wave < b.wave ? -1 : 1);
@@ -258,14 +271,11 @@ function renderWVSCharts(wvs_metrics) {
       x: d.map(r => r.wave), y: d.map(r => r[yKey]),
       error_y: { type: 'data', array: d.map(r => r[errKey]), visible: true,
                  thickness: 1.5, width: 4, color: MODEL_CLR[model] + '99' },
-      mode: 'lines+markers', name: model,
+      mode: 'lines+markers', name: MODEL_LABELS[model],
       line: { color: MODEL_CLR[model], width: 2.5 },
       marker: { size: 7, color: MODEL_CLR[model] },
     };
   });
-
-  Plotly.newPlot('chart-tv', traces('tv_mean','tv_std'),
-    baseLayout({ yaxis: { range: [0, 0.85], title: 'TV Distance', gridcolor: '#ebebeb' } }), PCFG);
 
   Plotly.newPlot('chart-ws', traces('ws_mean','ws_std'),
     baseLayout({ yaxis: { title: 'Wasserstein Distance', gridcolor: '#ebebeb' } }), PCFG);
@@ -274,7 +284,7 @@ function renderWVSCharts(wvs_metrics) {
     const d = wvs_metrics.filter(r => r.model === model).sort((a,b) => a.wave < b.wave ? -1 : 1);
     return {
       x: d.map(r => r.wave), y: d.map(r => r.entropy_mean),
-      mode: 'lines+markers', name: model,
+      mode: 'lines+markers', name: MODEL_LABELS[model],
       line: { color: MODEL_CLR[model], width: 2.5 },
       marker: { size: 7, color: MODEL_CLR[model] },
     };
@@ -318,7 +328,7 @@ function renderLengths(persona_lengths) {
     }), PCFG);
 }
 
-// ── Cosine 4a ────────────────────────────────────────────────────────────────
+// ── Output Diversity ──────────────────────────────────────────────────────────
 function renderCosine4a(cosine_4a) {
   const traces = MAIN_MODELS.map(model => {
     const d = cosine_4a.filter(r => r.model === model)
@@ -328,7 +338,7 @@ function renderCosine4a(cosine_4a) {
       y: d.map(r => r.sim_mean),
       error_y: { type: 'data', array: d.map(r => r.sim_std), visible: true,
                  thickness: 1.5, width: 4, color: MODEL_CLR[model] + '99' },
-      mode: 'lines+markers', name: model,
+      mode: 'lines+markers', name: MODEL_LABELS[model],
       line: { color: MODEL_CLR[model], width: 2.5 },
       marker: { size: 7, color: MODEL_CLR[model] },
     };
@@ -340,14 +350,14 @@ function renderCosine4a(cosine_4a) {
     }), PCFG);
 }
 
-// ── Cosine 4b-ii ─────────────────────────────────────────────────────────────
+// ── Steering Sensibility ──────────────────────────────────────────────────────
 function renderCosine4b(cosine_4b_ii) {
   const SES_CLR   = { high: '#4CAF50', low: '#FF5722' };
   const FRAMING_D = { system_msg: 'solid', inline_prompt: 'dash' };
   const FRAMING_S = { system_msg: 'circle', inline_prompt: 'diamond' };
 
   MAIN_MODELS.forEach((model, i) => {
-    document.getElementById(`lbl-4b-${i}`).textContent = model;
+    document.getElementById(`lbl-4b-${i}`).textContent = MODEL_LABELS[model];
     const traces = [];
     for (const framing of ['system_msg', 'inline_prompt']) {
       for (const ses of ['high', 'low']) {
@@ -521,8 +531,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderVersions(metrics);
     renderWVSCharts(metrics.wvs_metrics);
     renderLengths(metrics.persona_lengths);
-    if (metrics.cosine_4a?.length)      renderCosine4a(metrics.cosine_4a);
-    if (metrics.cosine_4b_ii?.length)   renderCosine4b(metrics.cosine_4b_ii);
+
+    if (metrics.cosine_4a?.length) {
+      renderCosine4a(metrics.cosine_4a);
+    } else {
+      document.getElementById('chart-4a-wrap').style.display = 'none';
+      document.getElementById('chart-4a-empty').style.display = 'block';
+    }
+
+    if (metrics.cosine_4b_ii?.length) {
+      renderCosine4b(metrics.cosine_4b_ii);
+    } else {
+      document.getElementById('chart-4b-wrap').style.display = 'none';
+      document.getElementById('chart-4b-empty').style.display = 'block';
+    }
 
     // WVS table
     _wvsAll = prompts.wvs;
@@ -548,7 +570,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           Plotly.Plots.resize(el)
         );
         // Fallback: resize all divs that Plotly might have used
-        ['chart-tv','chart-ws','chart-ent','chart-lengths','chart-4a',
+        ['chart-ws','chart-ent','chart-lengths','chart-4a',
          'chart-4b-0','chart-4b-1','chart-4b-2'].forEach(id => {
           const el = document.getElementById(id);
           if (el && el._fullLayout) Plotly.Plots.resize(el);

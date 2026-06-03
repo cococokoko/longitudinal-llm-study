@@ -1,6 +1,6 @@
 # LLM Dataset Longitudinal Study
 
-Tracks how LLM responses change over time by running the same prompt sets against the same models on a recurring daily schedule. Each run is called a **wave** and is stored in `study.db` for longitudinal analysis. A live dashboard is published automatically to GitHub Pages after every run.
+Tracks how LLM responses change over time by running the same prompt sets against the latest models of GPT/Claude/Gemini on a recurring daily schedule. Each run is called a **wave** and is stored in `study.db` for longitudinal analysis. A live dashboard is published automatically to GitHub Pages after every run.
 
 ---
 
@@ -44,9 +44,9 @@ Each query produces three items: `baseline` (no persona), `high_ses`, and `low_s
 
 Configured in `config.yaml`. Main models run via [OpenRouter](https://openrouter.ai):
 
-- **GPT** (`openai/` family, `-chat` suffix)
-- **Claude Sonnet** (`anthropic/` family)
-- **Gemini Pro** (`google/` family, `flash` without `lite`)
+- **GPT Chat** (`openai/gpt-chat-latest` — resolves to the current GPT chat release)
+- **Claude Sonnet** (`~anthropic/claude-sonnet-latest` - redirects to the latest model in the Anthropic Claude Sonnet family)
+- **Gemini Pro** (`~google/gemini-pro-latest` - redirects to the latest model in the Google Gemini Pro family)
 
 The pipeline auto-checks OpenRouter for newer releases in each family at the start of every run and updates `config.yaml` automatically.
 
@@ -140,10 +140,10 @@ The dashboard has six tabs:
 |---|---|
 | **Prompts** | Searchable tables — WVS questions with global distributions; persona prompts with baseline / high SES / low SES side-by-side |
 | **Model Versions** | Exact model version strings and call counts per wave |
-| **WVS Alignment** | TV distance, Wasserstein distance, and Shannon entropy vs the WVS global distribution, per model per wave |
+| **Value Alignment** | Wasserstein distance and Shannon entropy vs the WVS global distribution, per model per wave |
 | **Prompt Lengths** | Character-count distributions per condition × framing (baseline / high SES system msg / high SES inline / low SES …) |
-| **Cosine 4a** | Day-over-day cosine similarity of baseline responses (MiniLM-L6-v2) — measures response drift |
-| **Cosine 4b-ii** | Cosine similarity to baseline by framing × SES level per wave — measures how much the persona framing shifts responses |
+| **Output Diversity** | Day-over-day cosine similarity of baseline responses (MiniLM-L6-v2) — measures response drift |
+| **Steering Sensibility** | Cosine similarity to baseline by framing × SES level per wave — measures how much the persona framing shifts responses |
 
 Cosine charts are computed incrementally by `generate_dashboard_data.py`: only the new wave's responses are embedded on each run (~3 min), with prior results read from the existing JSON. Both cosine tabs remain empty until at least two waves exist.
 
