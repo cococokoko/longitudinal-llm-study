@@ -1,0 +1,62 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_user_2
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=26 out=1024
+Latency:   6955 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Okay, as a senior attorney, you understand the legal and ethical implications of data breaches. Here's a breakdown of best practices for data security in small businesses, tailored to your experience and understanding:
+
+**I. Foundational Principles & Legal Considerations (Your Expertise):**
+
+*   **Compliance is Paramount:**
+    *   **Identify Applicable Laws:**  This is your starting point.  What laws apply to the small business based on its location, industry, and the type of data it handles?  (e.g., GDPR, CCPA/CPRA, HIPAA, GLBA, state-specific data breach notification laws, etc.).  This is where your legal expertise is crucial.
+    *   **Risk Assessment:**  Conduct a thorough risk assessment to identify potential vulnerabilities and threats. This should be documented and regularly updated.
+    *   **Data Minimization:**  Collect and retain only the data necessary for legitimate business purposes.  This reduces the scope of potential breaches and simplifies compliance.
+    *   **Data Retention Policies:**  Establish and enforce clear data retention policies, including secure disposal methods (shredding, wiping hard drives, etc.) after the retention period.
+    *   **Privacy Policies & Terms of Service:**  Ensure these are clear, concise, and compliant with all applicable laws.  They should be easily accessible to customers and employees.
+    *   **Incident Response Plan:**  Develop a comprehensive incident response plan that outlines steps to take in the event of a data breach. This should include notification procedures, legal counsel involvement, and communication strategies.
+    *   **Vendor Management:**  Vet third-party vendors (cloud providers, software developers, etc.) to ensure they have adequate security measures in place.  Include data security clauses in all contracts.
+*   **Legal Counsel Involvement:**  Emphasize the importance of involving legal counsel in all aspects of data security, from policy development to incident response.  This is critical for ensuring compliance and mitigating legal risks.
+*   **Employee Training:**  Regular and comprehensive training is essential.  This should cover:
+    *   Data privacy laws and regulations.
+    *   Phishing awareness and prevention.
+    *   Password security best practices.
+    *   Social engineering awareness.
+    *   Proper handling of sensitive data.
+    *   Reporting security incidents.
+*   **Documentation:**  Maintain detailed documentation of all security policies, procedures, training, and incident responses. This is crucial for demonstrating due diligence in the event of a breach.
+
+**II. Technical Security Measures:**
+
+*   **Access Control:**
+    *   **Least Privilege:** Grant employees only the minimum access necessary to perform their job duties.
+    *   **Strong Passwords & Multi-Factor Authentication (MFA):** Enforce strong password policies and require MFA for all accounts, especially those with access to sensitive data.
+    *   **Regular Password Changes:**  Implement a policy for regular password changes.
+    *   **Role-Based Access Control (RBAC):**  Assign access based on job roles, not individual employees.
+*   **Network Security:**
+    *   **Firewall:**  Use a firewall to protect the network from unauthorized access.
+    *   **Intrusion Detection/Prevention Systems (IDS/IPS):**  Consider implementing IDS/IPS to detect and prevent malicious activity.
+    *   **Secure Wi-Fi:**  Use strong encryption (WPA3) and a separate guest network.
+    *   **Network Segmentation:**  Segment the network to isolate sensitive data and limit the impact of a breach.
+*   **Endpoint Security:**
+    *   **Antivirus/Anti-Malware Software:**  Install and regularly update antivirus and anti-malware software on all devices.
+    *   **Endpoint Detection and Response (EDR):**  Consider EDR solutions for more advanced threat detection and response.
+    *   **Patch Management:**  Implement a robust patch management system to keep software and operating systems up-to-date.
+    *   **Device Encryption:**  Encrypt all devices (laptops, smartphones, etc.) that store sensitive data.
+*   **Data Backup & Recovery:**
+    *   **Regular Backups:**  Implement a regular backup schedule (e.g., daily, weekly) and test the backups regularly.
+    *   **Offsite Backups:**  Store backups offsite (e.g., cloud storage) to protect against physical disasters.
+    *   **Data Recovery Plan:**  Develop a data recovery plan that outlines the steps to take to restore data in the event of a disaster or breach.
+*   **Email Security:**
+    *   **Spam Filtering:**  Use a spam filter to block malicious emails.
+    *   **Phishing Protection:**  Implement measures to protect against phishing attacks (e.g., email authentication protocols like SPF, DKIM, and DMAR

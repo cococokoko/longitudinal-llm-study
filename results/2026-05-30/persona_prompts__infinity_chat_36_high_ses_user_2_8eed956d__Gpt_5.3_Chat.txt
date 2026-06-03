@@ -1,0 +1,30 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=33 out=316
+Latency:   7394 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Give me some examples of websites where users can select a default landing page?
+
+── Response ────────────────────────────────────────────────────────
+Got it—you're thinking of sites that let users choose what they see first when they land or log in. A few solid, recognizable examples:
+
+- Google (classic example): you can set a homepage/dashboard in some contexts (e.g., iGoogle historically, and now via browser/homepage settings tied to Google services).
+- Yahoo: long allowed users to customize their homepage with modules (news, finance, sports), effectively creating a personalized landing page.
+- Microsoft 365 / Office.com: users land on a customizable dashboard showing recent docs, pinned apps, etc.
+- Salesforce: highly customizable home dashboards depending on user preferences and role.
+- Notion: users can set a default page or workspace view when opening the app.
+- Slack: you can configure default startup behavior (e.g., which workspace/channel you land in).
+- Reddit: users can set their “home feed” based on subscriptions, effectively controlling the landing experience.
+- Feedly: users land on a chosen feed/category when opening.
+- Banking apps (e.g., Chase, Bank of America): often let users choose which account or summary page is their default view.
+- News aggregators like Apple News or Google News: personalize the “front page” based on user preferences and sometimes allow manual prioritization.
+
+If you're thinking in a product or legal design context, the common thread is whether the landing page is (1) user-selected explicitly or (2) algorithmically personalized with optional overrides. Let me know if you want examples specific to SaaS, finance, or something like client portals.

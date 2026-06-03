@@ -1,0 +1,19 @@
+Wave:      2026-05-31
+Dataset:   persona_prompts
+Item ID:   infinity_chat_12_high_ses_user_2
+Model:     nan (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=nan out=nan
+Latency:   45 ms
+Error:     HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+what I should look for when I Compare Expat Insurance?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403

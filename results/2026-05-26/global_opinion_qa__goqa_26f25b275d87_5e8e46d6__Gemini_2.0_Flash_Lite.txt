@@ -1,0 +1,29 @@
+Wave:      2026-05-26
+Dataset:   global_opinion_qa
+Item ID:   goqa_26f25b275d87
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=154 out=53
+Latency:   675 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Is your overall opinion of Pope Francis very favorable, somewhat favorable, somewhat unfavorable, or very unfavorable?
+
+Options:
+A. Very favorable
+B. Somewhat favorable
+C. Somewhat unfavorable
+D. Very unfavorable
+E. Never heard of (VOL)
+F. Can't rate (VOL)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.0, "B": 1.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+```

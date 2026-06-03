@@ -1,0 +1,55 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=524
+Latency:   7474 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Most home Wi‑Fi issues come down to a few predictable things: placement, interference, outdated gear, or just needing more coverage. Here’s how to improve it without overcomplicating things:
+
+**1. Fix router placement first (biggest impact)**
+- Put it in a central, open area (not tucked in a corner or closet)
+- Keep it elevated (shelf height or higher)
+- Avoid thick walls, metal objects, aquariums, and appliances
+- If it has antennas, angle them differently (one vertical, one horizontal)
+
+**2. Use the right band**
+- 2.4 GHz = longer range, slower speeds (good for far rooms)
+- 5 GHz = faster speeds, shorter range (good when you’re nearby)
+- If your router supports it, enable “band steering” or split the networks and connect devices intentionally
+
+**3. Change the channel (reduces interference)**
+- Neighboring networks can crowd your signal
+- In router settings, try different channels (for 2.4 GHz, usually 1, 6, or 11; for 5 GHz, pick a less crowded one)
+- There are phone apps that show which channels are busy
+
+**4. Update your router and firmware**
+- If your router is 5+ years old, it may just be the bottleneck
+- Look for Wi‑Fi 6 or Wi‑Fi 6E routers for better performance and handling multiple devices
+- Also check for firmware updates in the admin settings
+
+**5. Add coverage instead of boosting blindly**
+- For larger homes, a mesh Wi‑Fi system works way better than a single router
+- Wi‑Fi extenders can help, but they often reduce speed; mesh systems are more seamless
+
+**6. Reduce congestion**
+- Too many devices can slow things down
+- Move heavy-use devices (TVs, gaming consoles, PCs) to Ethernet if possible
+- Disconnect devices you’re not using
+
+**7. Check your internet plan vs reality**
+- Run a speed test near the router
+- If speeds are already low there, the issue is your ISP plan or line—not Wi‑Fi
+
+**8. Reboot and reset (simple but effective)**
+- Restart router/modem occasionally
+- If things are weird, a factory reset can fix hidden issues (but you’ll need to reconfigure)
+
+If you want, tell me your home size, router model, and what’s going wrong (slow everywhere vs just certain rooms), and I can suggest a more precise setup.

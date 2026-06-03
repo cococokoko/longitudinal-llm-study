@@ -1,0 +1,45 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_13_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=585
+Latency:   11489 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Mastering the art of cooking steak.
+
+── Response ────────────────────────────────────────────────────────
+Cooking steak well is less about fancy tricks and more about control—heat, timing, and restraint. If you dial those in, you can get restaurant-level results pretty consistently.
+
+Start with the meat itself. Thickness matters more than cut for technique—aim for at least 1–1.5 inches so you can build a crust without overcooking the center. Ribeye gives you forgiveness because of fat; strip is a bit leaner but still reliable; filet is tender but easy to overcook and lacks flavor unless you compensate.
+
+Salt early if you can—at least 45 minutes, ideally a few hours or overnight in the fridge. This isn’t just seasoning; it dries the surface and helps you get that deep crust. If you’re short on time, salt right before it hits the pan, but make sure the surface is dry.
+
+Heat is where most people go wrong. You want a pan (preferably cast iron or steel) that’s properly hot before the steak goes in. Not “kind of warm”—actually hot enough that the steak sizzles immediately and confidently. A thin film of high-smoke-point oil (grapeseed, avocado) helps with heat transfer.
+
+Once it’s in, leave it alone. Constant flipping doesn’t build a crust. Give it a solid sear—about 2–3 minutes—then flip. After the second side gets color, you can lower the heat slightly and add butter, garlic, and herbs if you want to baste. That step is about flavor and gentle finishing, not the initial sear.
+
+For doneness, use temperature, not guesswork:
+- Rare: ~120–125°F (49–52°C)
+- Medium-rare: ~130–135°F (54–57°C)
+- Medium: ~140–145°F (60–63°C)
+
+Pull it a few degrees early; it will rise while resting.
+
+Resting isn’t optional. Give it 5–10 minutes so juices redistribute. Cutting too early just spills moisture you worked to keep.
+
+If you want to get more precise, reverse searing is worth learning: bring the steak up slowly in a low oven (around 225°F / 107°C) until it’s about 10–15°F below target, then finish with a very hot sear. It gives you edge-to-edge even doneness with a controlled crust—very surgical, in a way.
+
+Common pitfalls I see:
+- Pan not hot enough → gray, steamed exterior
+- Overcrowding → drops temperature, same problem
+- Moving the steak too much → weak crust
+- Skipping rest → dry plate despite perfect cooking
+
+Once you’ve got this baseline, you can start playing—dry brining longer, experimenting with compound butters, different fats, even charcoal vs pan. But the fundamentals above will carry you most of the way.

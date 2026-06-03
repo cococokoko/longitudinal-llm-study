@@ -1,0 +1,76 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=523
+Latency:   12028 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+## Foundation Basics
+
+### Access Control
+- **Use strong, unique passwords** (12+ characters) for all accounts
+- Implement **multi-factor authentication (MFA)** everywhere possible
+- Follow **least privilege principle** - give employees only the access they need
+- Remove access immediately when employees leave
+
+### Software & Systems
+- Keep **all software updated** promptly (patches fix security vulnerabilities)
+- Use **reputable antivirus/anti-malware** software
+- Enable **automatic updates** where practical
+- Avoid unsupported/end-of-life software
+
+## Data Protection
+
+### Backups
+- Follow the **3-2-1 rule**: 3 copies, 2 different media types, 1 offsite
+- **Test your backups regularly** - untested backups often fail
+- Consider automated cloud backup solutions
+
+### Encryption
+- Encrypt sensitive data at rest and in transit
+- Use **HTTPS** for any web presence
+- Encrypt laptops and mobile devices
+
+## Network Security
+- Use a **business-grade firewall**
+- Separate **guest WiFi** from business networks
+- Consider a **VPN** for remote workers
+
+## Human Factors (Often Overlooked)
+
+- **Train employees** to recognize phishing emails
+- Create a clear **security policy** in writing
+- Establish an **incident response plan** before you need it
+- Be cautious with **third-party vendors** who access your data
+
+## Practical Priorities
+
+| Priority | Action |
+|----------|--------|
+| High | MFA on email and banking |
+| High | Regular backups |
+| Medium | Employee training |
+| Medium | Network segmentation |
+| Lower | Advanced threat monitoring |
+
+## Common Mistakes to Avoid
+- Assuming you're "too small to be targeted" (small businesses are frequent targets)
+- Storing sensitive data you don't actually need
+- Skipping security to save money short-term
+- No written policies or procedures
+
+## Low-Cost Resources
+- **NIST Small Business Cybersecurity Corner** (free guidance)
+- **CISA free tools and resources**
+- **Google Workspace/Microsoft 365** have built-in security features worth enabling
+
+Would you like me to go deeper on any specific area?

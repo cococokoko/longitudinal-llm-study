@@ -1,0 +1,25 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_low_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=39 out=139
+Latency:   2580 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Nice, that’s a thoughtful thing to want in that kind of job.
+
+Here’s a simple three-question filter you can actually use in the moment:
+
+1. If I were the patient (or their family), would this feel respectful, fair, and compassionate?  
+2. Would I be comfortable explaining and defending this action to a supervisor, coworker, or in an official report?  
+3. Does this action support the patient’s safety, dignity, and well-being—or is it mainly for my own convenience?
+
+If something fails one of these, it’s a strong signal to pause or rethink it. If it passes all three, you’re usually on solid moral ground.

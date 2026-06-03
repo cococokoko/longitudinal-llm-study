@@ -1,0 +1,35 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=28 out=1020
+Latency:   9921 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+To get a truly great story out of an AI, the secret is treating the prompt like a creative brief. Since you likely appreciate a good framework, the best approach is to give the AI specific parameters: target age, tone, character traits, and the core message or "takeaway."
+
+Here is a highly effective, modular prompt template you can copy and paste. Just fill in the bracketed information to customize it for your kids.
+
+***
+
+### The Master Story Prompt
+
+**Copy and paste this into the AI:**
+
+> "Act as an award-winning children’s book author. I want you to write a highly engaging, imaginative story for a **[Insert Age]**-year-old. 
+>
+> Here are the parameters for the story:
+> *   **Protagonist:** **[Name]**, a **[describe character, e.g., curious little girl, brave raccoon, tiny robot]** who has a special talent for **[insert skill/trait]**.
+> *   **Setting:** **[Insert setting, e.g., a magical forest where trees glow, a futuristic city in the clouds, a cozy treehouse]**.
+> *   **The Challenge:** The protagonist wants to **[insert goal]**, but they have to overcome **[insert obstacle]**.
+> *   **The Sidekick:** They are joined by **[describe sidekick, e.g., a grumpy but lovable owl, a flying skateboard]**.
+> *   **Core Theme/Moral:** The story should subtly teach the importance of **[e.g., teamwork, a growth mindset

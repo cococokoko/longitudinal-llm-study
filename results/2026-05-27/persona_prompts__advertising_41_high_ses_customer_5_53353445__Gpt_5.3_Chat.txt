@@ -1,0 +1,32 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_41_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=33 out=422
+Latency:   8798 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+If you need a fast lift, you’re really trying to influence the parts of your score that update monthly and react quickly. The biggest wins come from utilization, errors, and payment behavior.
+
+Start with your credit card balances. High utilization is the fastest drag and the fastest fix. If you can get your reported balances below about 30% of each card’s limit (and ideally under 10%), you’ll usually see a noticeable bump within a billing cycle. If you have cash to deploy, paying down cards before the statement closes—not just before the due date—can move the needle quickly because that’s what gets reported.
+
+If paying balances down isn’t easy, you can still lower utilization by asking for a credit limit increase. Many issuers will do a soft pull for this, so it won’t hurt your score. Don’t increase spending—just let the extra headroom reduce your ratio.
+
+Next, check for errors. Pull your reports from all three bureaus and scan for incorrect late payments, duplicate accounts, or balances that look off. Disputing inaccuracies can lead to relatively quick corrections if you’re right, and that can have an immediate effect.
+
+If you’ve had a late payment recently, getting the account current is critical. Beyond that, a goodwill adjustment request to the lender sometimes works—especially if your history is otherwise clean. It’s not guaranteed, but it’s one of the few ways to potentially remove a negative mark.
+
+Keep all accounts current from here on out. Even one missed payment can outweigh several positive changes. Setting autopay for at least the minimum due is a simple safeguard.
+
+A couple of smaller levers: if you have a thin file, being added as an authorized user on a well-managed, low-utilization account can help. And avoid opening several new accounts at once—hard inquiries and reduced average account age can offset your gains in the short term.
+
+If you tell me roughly where your score sits and what’s dragging it down (high balances, missed payments, short history, etc.), I can be more surgical about the fastest path up.

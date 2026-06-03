@@ -1,0 +1,19 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_46_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=25 out=1020
+Latency:   11962 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best resources for starting a plant-based diet?
+
+── Response ────────────────────────────────────────────────────────
+ "As a physician-scientist..."* (Sets the right tone).
+    *   *Categories:* Clinical/Scientific, Books, Practical/Apps, Meal Prep.
+    *   

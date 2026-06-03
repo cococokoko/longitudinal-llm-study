@@ -1,0 +1,47 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=33 out=411
+Latency:   9151 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Give me some examples of websites where users can select a default landing page?
+
+── Response ────────────────────────────────────────────────────────
+Here are some familiar examples where users can choose or influence their default landing page:
+
+- Google (google.com): You can set a preferred homepage in your browser, and within Google services you can customize what appears first (e.g., Google News or Google Discover feed preferences).
+
+- Yahoo (yahoo.com): Historically strong at this—users can customize their Yahoo homepage with news, finance, weather, etc.
+
+- MSN (msn.com): Microsoft allows personalization of the homepage with topics, layout, and preferred content.
+
+- Reddit (reddit.com): Logged-in users effectively set their “landing page” via subscribed subreddits (home feed vs. r/all vs. custom feeds).
+
+- Twitter/X (x.com): Users can choose between “For You” and “Following” as their default timeline experience.
+
+- Facebook (facebook.com): While not called a “homepage setting,” users can prioritize feeds (Favorites, Groups, Pages), which affects the default landing experience.
+
+- LinkedIn (linkedin.com): The main feed can be influenced by followed topics, connections, and newsletter subscriptions.
+
+- YouTube (youtube.com): The homepage is highly personalized; users can also default to Subscriptions instead of Home via bookmarks or app behavior.
+
+- Notion (notion.so): Users can set a default page to open on startup.
+
+- Slack (slack.com / app): Users can configure which workspace/channel or view opens first.
+
+- Salesforce (salesforce.com): Users can customize default landing tabs and dashboards upon login.
+
+- Atlassian Jira/Confluence: Users can choose dashboards or spaces as their default landing view.
+
+- SharePoint (Microsoft 365): Organizations and users can configure default start pages and sites.
+
+- Banking apps/websites (various): Many allow users to set a preferred account summary or dashboard as the landing page after login.
+
+If you’re thinking in a legal or product-design context, the key distinction is whether the platform offers an explicit “set as default” control versus an implicit personalization based on behavior or subscriptions.

@@ -1,0 +1,45 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=372
+Latency:   8322 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+The “best” way isn’t one-size-fits-all, but there’s a path that works really well for most beginners because it balances learning with actually doing.
+
+Start with one language and stick to it for a while. Python is usually the easiest entry point because the syntax is clean and you can get results quickly. If you’re more interested in websites, you could start with JavaScript instead, but don’t try to learn both at once.
+
+Don’t begin with theory-heavy material. Start building tiny things right away, even if they’re simple:
+- a calculator
+- a number guessing game
+- a basic to-do list
+
+You’ll learn faster by running into problems and figuring them out than by just watching tutorials.
+
+Use a structured beginner course to guide you at first. Good free options include:
+- freeCodeCamp
+- Harvard’s CS50 (a bit more challenging but excellent)
+- Codecademy (more guided, interactive)
+
+But here’s the key: don’t just follow along passively. After each lesson, close the tutorial and try to recreate something similar from memory. That’s where real learning happens.
+
+Get comfortable being confused. You will feel stuck a lot—that’s normal. The skill you’re really building early on is figuring things out, not memorizing syntax.
+
+Also, learn just enough fundamentals to support what you’re building:
+- variables
+- conditionals (if/else)
+- loops
+- functions
+
+You don’t need to master everything upfront.
+
+Finally, start small projects as soon as possible and gradually increase complexity. That’s how you move from “I kind of get it” to “I can actually build things.”
+
+If you want, tell me what kind of stuff you’re interested in (apps, games, websites, data, etc.), and I can suggest a more tailored path.

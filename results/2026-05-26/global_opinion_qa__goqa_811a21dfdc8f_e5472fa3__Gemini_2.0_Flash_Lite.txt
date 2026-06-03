@@ -1,0 +1,28 @@
+Wave:      2026-05-26
+Dataset:   global_opinion_qa
+Item ID:   goqa_811a21dfdc8f
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=164 out=45
+Latency:   677 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: After the dissolution of the Soviet Union, we changed from a country where there was just one party to a country with a multiparty system. Overall, do you strongly approve, approve, disapprove or strongly disapprove of this change in your country?
+
+Options:
+A. Strongly approve
+B. Approve
+C. Disapprove
+D. Strongly disapprove
+E. DK/Refused
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.5, "B": 0.3, "C": 0.1, "D": 0.0, "E": 0.1}
+```

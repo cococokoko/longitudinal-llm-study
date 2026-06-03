@@ -1,0 +1,55 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_low_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=544
+Latency:   11343 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+Nice, this is a fun angle—most people only hear about the mainstream stuff (Nmap, Metasploit, Wireshark), but there are some lesser-known tools and techniques that are pretty powerful:
+
+• Canarytokens  
+Not exactly rare, but underused. You plant fake credentials/files/URLs and get alerted when someone touches them. Great for early breach detection with almost no overhead.
+
+• BloodHound (advanced usage)  
+People know it, but few use it deeply. It maps Active Directory relationships and attack paths using graph theory. The “rare” part is chaining multi-step privilege escalation paths that aren’t obvious.
+
+• MITRE Caldera  
+Automated adversary emulation platform. Lets you simulate real-world attacker behavior mapped to MITRE ATT&CK. Useful for testing defenses continuously.
+
+• Covenant  
+A quieter alternative to Metasploit. It’s a .NET command-and-control framework that blends into Windows environments better.
+
+• Sliver  
+Another modern C2 framework (open-source) that’s gaining traction. Often preferred over Cobalt Strike in red team circles because it’s flexible and not signature-heavy.
+
+• eBPF-based security tools  
+This is more of a method than a tool. Using eBPF in Linux lets you monitor syscalls and network activity in real time with very low overhead. Tools like Cilium Tetragon use this approach.
+
+• OSINT automation frameworks (like SpiderFoot HX or Maltego transforms)  
+Advanced users chain data sources to build intelligence graphs automatically. The “rare” part is fully automating recon pipelines.
+
+• Firmware analysis (Binwalk + Ghidra combo)  
+Instead of just pentesting apps, you extract and reverse engineer firmware from IoT devices. Still niche but increasingly important.
+
+• Deception environments (like OpenDeception or Thinkst Canary)  
+You create fake infrastructure/services to mislead attackers and study their behavior. Very powerful but underutilized.
+
+• Memory forensics (Volatility 3 advanced plugins)  
+Most people stop at disk forensics, but analyzing RAM can reveal fileless malware, injected code, and live attacker activity.
+
+• Attack surface management (ASM) tools like Amass (advanced mode)  
+Used not just for subdomains, but for mapping entire external exposure over time.
+
+If you're early in your career (especially on probation), a good move is to pick one of these and go a bit deeper rather than trying to touch everything. eBPF monitoring or BloodHound analysis are great “stand out” skills because they show depth, not just tool usage.
+
+If you want, I can suggest a focused mini-project using one of these that would actually impress your team.

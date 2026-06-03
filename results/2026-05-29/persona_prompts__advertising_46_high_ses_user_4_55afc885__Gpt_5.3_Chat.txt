@@ -1,0 +1,58 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_46_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=706
+Latency:   13751 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best resources for starting a plant-based diet?
+
+── Response ────────────────────────────────────────────────────────
+Great question—there’s a lot of noise in this space, so it’s worth anchoring in resources that are both evidence-based and practical.
+
+A good starting point is organizations that emphasize whole-food, plant-forward eating rather than highly processed “vegan” diets:
+
+- The Nutrition Source (Harvard T.H. Chan School of Public Health): clear, balanced summaries on plant-based patterns, protein, fats, and micronutrients. Good for quick refreshers and patient education handouts.
+- Oldways (Mediterranean/plant-forward patterns): less dogmatic than strict vegan frameworks and useful if you’re thinking in terms of dietary patterns rather than ideology.
+- American College of Lifestyle Medicine (ACLM): clinically oriented, with CME, guidelines, and practical toolkits. Strong on cardiometabolic outcomes.
+
+For more rigorous or clinician-facing material:
+
+- Academy of Nutrition and Dietetics position paper on vegetarian/vegan diets: still one of the most cited summaries on adequacy across the lifespan.
+- EPIC-Oxford and Adventist Health Studies: large cohort data on long-term outcomes (CVD, cancer, mortality) with plant-based patterns.
+- Key RCT/meta-analysis authors to be aware of: Christopher Gardner (Stanford), Neal Barnard (more advocacy-leaning but still publishes RCTs), and studies on Portfolio Diet (Jenkins et al.) which is often more clinically translatable than strict veganism.
+
+Books (variable rigor, but useful for synthesis and patient framing):
+
+- “How Not to Die” (Greger): very comprehensive literature synthesis, though it leans strongly pro–whole-food plant-based and can overstate causality.
+- “The Plant-Based Diet for Beginners” (Gabriel Miller) or similar practical guides: useful for translating theory into meals, though less academic.
+- “The Proof Is in the Plants” (Simon Hill): more balanced, evidence-focused, and good on nuance (protein, omega-3s, ultra-processed foods).
+
+If you want practical implementation (for yourself or patients):
+
+- PCRM (Physicians Committee for Responsible Medicine): strong on protocols, meal plans, and trial-based interventions (especially diabetes). Advocacy-driven, so worth balancing with other sources.
+- Forks Over Knives: very accessible recipes and transition strategies, though not particularly academic.
+- Dietitian-created platforms like “Plant-Based Dietitian” (Sharon Palmer) or “Pick Up Limes” (more public-facing but nutritionally sound).
+
+Nutrients to keep front-of-mind (especially if you’re advising patients):
+
+- B12 (non-negotiable supplementation)
+- Iron (bioavailability considerations; pairing with vitamin C)
+- Omega-3s (ALA vs EPA/DHA—consider algae-based supplements)
+- Calcium and vitamin D
+- Iodine (often overlooked if avoiding iodized salt/seafood)
+- Protein adequacy is usually not an issue if caloric intake is sufficient, but distribution and leucine thresholds can matter in older adults
+
+If your interest is research-oriented, it’s also worth distinguishing between:
+- Whole-food plant-based diets (high fiber, low ultra-processed foods)
+- “Vegan” diets that may be high in refined carbs and seed oils
+
+Outcomes differ significantly, and a lot of public discourse conflates them.
+
+If you want, I can tailor this toward a specific angle—cardiometabolic disease, oncology, athletic performance, or how to build a protocol for a clinical study.

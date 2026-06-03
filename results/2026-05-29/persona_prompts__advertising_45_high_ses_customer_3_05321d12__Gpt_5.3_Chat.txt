@@ -1,0 +1,43 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_45_high_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35 out=561
+Latency:   12088 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I learn DIY home repairs and improvements?
+
+── Response ────────────────────────────────────────────────────────
+If you approach this like a research program rather than a hobby, you’ll learn faster and avoid a lot of expensive mistakes.
+
+Start by building a conceptual framework of how a house actually works. Most DIY frustration comes from treating problems as isolated when they’re really system-level. Focus first on the big five: structure, water, electrical, HVAC, and finishes. You don’t need to master them, but you should understand how they interact—especially how water and electricity fail, because those are what cause real damage.
+
+A good sequence is:
+
+- Learn the anatomy of a house: framing, load paths, insulation, vapor barriers, wiring basics, plumbing layouts. This gives you a mental model so you’re not guessing blindly.
+- Study failure modes: why pipes leak, why paint peels, why breakers trip, why doors go out of square. Repairs make more sense when you understand causation.
+- Then start with low-risk, high-frequency tasks: patching drywall, fixing a running toilet, replacing fixtures, caulking, basic carpentry.
+
+In terms of resources, mix structured and observational learning:
+- Books: “The Complete Do-It-Yourself Manual” (Family Handyman) is still one of the best system overviews. It’s surprisingly rigorous.
+- Video: This Old House (excellent for method and standards), and a few careful YouTube channels like Home RenoVision or Essential Craftsman—watch critically, not passively.
+- Real-world observation: whenever you hire a professional, treat it like fieldwork. Ask questions. Most tradespeople will explain if you’re respectful and specific.
+
+You’ll also want to assemble a minimal but high-quality toolset early. Poor tools distort your learning because they introduce noise—bad cuts, stripped screws, inconsistent measurements. A drill/driver, level, stud finder, hand tools, and a few measuring tools will carry you a long way.
+
+Two constraints to respect:
+
+First, code and safety boundaries. Electrical panels, gas lines, and structural changes aren’t just “advanced”—they’re regulated for good reason. Learn enough to understand what a professional is doing, even if you don’t do it yourself.
+
+Second, iteration size. Think in small, reversible experiments. Don’t start with a kitchen remodel; start with a single cabinet adjustment or a faucet replacement. Each completed task compounds your intuition.
+
+If you want a more academic framing: treat each project as a case study. Before you begin, form a hypothesis about what’s wrong and how to fix it. Afterward, compare outcome to expectation. That feedback loop is what turns scattered DIY attempts into real competence.
+
+If you tell me what kinds of projects you’re most interested in (or what your current home is like), I can sketch a more tailored progression.

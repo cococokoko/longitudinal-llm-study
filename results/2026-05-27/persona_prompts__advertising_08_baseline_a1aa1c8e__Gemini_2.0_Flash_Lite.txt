@@ -1,0 +1,58 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_08_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=6 out=794
+Latency:   5553 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+Okay, let's find you some perfect hiking trails! To help me narrow down the options, I need a little more information.  Tell me about:
+
+**1. Where are you located or where do you want to hike?** (This is the most important!)
+   *   **City/Region/State/Country:**  (e.g., "I live in Denver, Colorado," "I want to hike in the Swiss Alps," "I'm visiting Yosemite National Park.")
+
+**2. What is your experience level?**
+   *   **Beginner:**  (Mostly flat trails, well-maintained, short distances)
+   *   **Intermediate:** (Some elevation gain, moderate distances, potentially some uneven terrain)
+   *   **Advanced:** (Significant elevation gain, longer distances, potentially challenging terrain like scrambling or exposure)
+
+**3. What is your desired trail length and elevation gain?**
+   *   **Distance:** (e.g., "Under 5 miles," "5-10 miles," "10+ miles")
+   *   **Elevation Gain:** (e.g., "Minimal," "Up to 1000 feet," "1000-2000 feet," "2000+ feet")  If you're unsure, just give me a general idea (e.g., "I don't want anything too strenuous.")
+
+**4. What kind of scenery are you looking for?**
+   *   **Specific Features:** (e.g., "Lakes," "Mountains," "Forests," "Waterfalls," "Views," "Wildflowers," "Wildlife")
+   *   **General Preferences:** (e.g., "Something scenic," "A quiet trail," "A trail with lots of shade," "A trail with a good view at the top")
+
+**5. Who are you hiking with?**
+   *   **Solo:**
+   *   **With a partner:**
+   *   **With friends:**
+   *   **With family (including children):** (If with children, please specify their ages and experience levels)
+   *   **With pets:** (If with pets, are they allowed on trails in the area? Are there any leash requirements?)
+
+**6. What time of year are you planning to hike?** (This affects trail conditions and accessibility)
+   *   **Season:** (e.g., "Spring," "Summer," "Fall," "Winter")
+   *   **Specific Dates:** (e.g., "Next weekend," "The week of July 4th")
+
+**7. Any other preferences or considerations?**
+   *   **Accessibility:** (e.g., "Wheelchair accessible," "Stroller-friendly")
+   *   **Crowds:** (e.g., "I prefer less crowded trails," "I don't mind crowds")
+   *   **Camping:** (Are you interested in overnight backpacking?)
+   *   **Permits:** (Are permits required for the trail?)
+   *   **Anything else:** (e.g., "I want a trail that's good for trail running," "I'm looking for a loop trail")
+
+Once I have this information, I can give you some specific trail recommendations!  I can use resources like:
+
+*   **AllTrails:** (A popular website and app with user reviews, photos, and trail maps)
+*   **Local Parks and Recreation websites:** (Often have detailed trail information)
+*   **National Park Service websites:** (For trails in national parks)
+*   **Local hiking groups and forums:** (For insider tips and current trail conditions)
+
+Let's get started!  Tell me about your ideal hike!

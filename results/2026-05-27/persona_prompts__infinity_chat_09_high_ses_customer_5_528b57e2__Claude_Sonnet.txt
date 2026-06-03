@@ -1,0 +1,47 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=294
+Latency:   7165 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+Here's a prompt you can use:
+
+---
+
+**"Write a fun and imaginative children's story for ages 4-8 about a [animal/character] who learns an important lesson about [friendship/courage/kindness/honesty]. The story should have:**
+
+- **A lovable main character with a funny personality**
+- **A simple but exciting problem to solve**
+- **Colorful, descriptive language that's easy to understand**
+- **A heartwarming ending with a clear moral lesson**
+- **Short paragraphs and dialogue that reads aloud well**
+
+**Make it engaging, playful, and around 500 words."**
+
+---
+
+**Tips to customize it:**
+
+- Replace the brackets with specifics like *"a tiny dragon who learns about sharing"*
+- Add **your child's name** as the main character
+- Mention a **favorite animal or hobby** to make it personal
+- Specify a **setting** like space, underwater, or a magical forest
+
+---
+
+**Example filled in:**
+
+*"Write a story about a little elephant named Ellie who learns that asking for help is a sign of strength, set in a colorful jungle..."*
+
+Would you like me to **write the actual story** for you right now? Just tell me a theme or character! 🐘✨

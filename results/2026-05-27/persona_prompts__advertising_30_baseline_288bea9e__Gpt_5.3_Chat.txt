@@ -1,0 +1,53 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=367
+Latency:   7217 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Start simple and practical—don’t overthink it or try to learn everything at once.
+
+If you’re starting from zero, the easiest entry point is Python. It’s readable, widely used, and forgiving for beginners. You can install it and start running code in minutes, or even use it in your browser (like on Replit or similar sites).
+
+Here’s a straightforward way to begin:
+
+First, learn the absolute basics:
+- Variables, data types (numbers, strings, lists)
+- Conditionals (if/else)
+- Loops (for, while)
+- Functions
+
+Don’t just read—type code and run it. Even tiny experiments help.
+
+Second, follow a structured beginner course:
+- “Python for Everybody” (free, very beginner-friendly)
+- freeCodeCamp (hands-on, step-by-step)
+- Codecademy (interactive, guided)
+
+Pick one and stick with it. Jumping between too many resources slows you down.
+
+Third, build tiny projects early:
+- A number guessing game
+- A simple calculator
+- A to-do list in the terminal
+
+Projects are where things actually click. Even if they’re messy, that’s the point.
+
+Fourth, get comfortable being stuck:
+You will hit errors constantly. That’s normal. Learning to read error messages and Google effectively is a core skill.
+
+Fifth, gradually aim toward something you care about:
+- Websites → learn HTML/CSS/JavaScript
+- Data → Python + pandas
+- Apps → Python, JavaScript, or Swift/Kotlin later
+
+One thing to avoid: spending weeks watching tutorials without building anything. That feels productive, but it’s a trap.
+
+If you want, tell me what interests you (games, apps, websites, AI, etc.), and I can map out a more personalized path.

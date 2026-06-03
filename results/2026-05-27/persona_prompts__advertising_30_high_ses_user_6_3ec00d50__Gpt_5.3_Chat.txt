@@ -1,0 +1,97 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=655
+Latency:   13715 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Short answer: don’t start with “coding,” start with *what you want to be able to do*, then learn just enough coding to do that well.
+
+Given your role, the goal isn’t to become a software engineer—it’s to become *dangerous enough* to automate analysis, prototype ideas, and have sharper conversations with technical teams.
+
+Here’s a practical way to approach it:
+
+First, pick a use case that actually shows up in your work  
+For example:
+- Cleaning and analyzing messy Excel data faster  
+- Building quick models or forecasts  
+- Automating repetitive reporting  
+- Prototyping a simple tool or dashboard for a client  
+
+This keeps motivation high and prevents getting lost in theory.
+
+Second, start with Python  
+It’s the most useful “general-purpose” language for business problems:
+- Easier to read than most languages  
+- Huge ecosystem for data (pandas, numpy)  
+- Works well with AI tools  
+- Widely used across industries  
+
+You don’t need to worry about other languages yet.
+
+Third, learn in this order (very non-academic)  
+Skip deep theory. Focus on utility.
+
+1) Basics (a few days)  
+Variables, loops, if statements, functions  
+Enough to understand what code is doing
+
+2) Working with data (this is the real payoff)  
+- pandas (Excel on steroids)  
+- reading CSV/Excel files  
+- filtering, grouping, merging  
+
+3) Visualization  
+- matplotlib or plotly  
+- turning analysis into something client-ready  
+
+4) Light automation  
+- scripts that save you hours  
+- pulling data, cleaning it, exporting outputs  
+
+Fourth, use AI as your co-pilot from day one  
+This is a force multiplier, especially at your level.
+
+Instead of memorizing syntax:
+- Describe what you want: “clean this dataset, group by X, show trends”  
+- Ask for code  
+- Run it, break it, tweak it  
+
+Your job is to *understand and direct*, not to hand-write everything.
+
+Fifth, learn by doing small, real projects  
+Examples tailored to your world:
+- Turn a messy client dataset into a clean dashboard  
+- Automate a weekly KPI report  
+- Build a simple pricing model  
+- Simulate scenarios (e.g., cost reductions, demand changes)
+
+Sixth, ignore the traps  
+- Don’t start with CS theory or algorithms  
+- Don’t try to “master Python”  
+- Don’t over-index on courses without building things  
+
+If you want structured resources, keep it light:
+- “Python for Everybody” (quick foundation)  
+- Then jump straight into pandas tutorials  
+- Or even better: learn entirely via guided AI prompts + real tasks  
+
+Seventh, redefine success  
+At your level, success looks like:
+- You can independently manipulate datasets  
+- You can prototype ideas without waiting on a team  
+- You can challenge technical assumptions with credibility  
+- You know what’s easy vs hard to build  
+
+If you stick with it for ~30–60 minutes a day for a month, you’ll already be ahead of most senior executives.
+
+If you want, I can map a 2-week “busy partner” learning plan based on your actual workflow.

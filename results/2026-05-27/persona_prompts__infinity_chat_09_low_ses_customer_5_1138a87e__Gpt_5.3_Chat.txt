@@ -1,0 +1,40 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_low_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=277
+Latency:   7188 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+Here’s a solid, reusable prompt you can give to an AI to generate a great kids’ story:
+
+:::writing block
+Write a fun, imaginative children’s story for ages [insert age range, e.g., 4–8]. The story should be engaging, easy to follow, and full of warmth and gentle humor.
+
+Include:
+- A lovable main character (child, animal, or magical creature)
+- A clear problem or adventure
+- A positive message or lesson (like kindness, bravery, sharing, or curiosity)
+- Simple, vivid descriptions that spark imagination
+- Dialogue to bring the characters to life
+
+Keep the tone playful and comforting, not scary. Use language appropriate for young children, with short sentences and clear ideas.
+
+Optional details to include:
+- Setting: [forest, space, school, ocean, etc.]
+- Main character name and traits: [name + personality]
+- Theme or lesson: [kindness, teamwork, honesty, etc.]
+
+End the story with a satisfying, happy conclusion.
+:::
+
+If you want, I can customize this for a specific kind of story (bedtime, funny, educational, etc.).

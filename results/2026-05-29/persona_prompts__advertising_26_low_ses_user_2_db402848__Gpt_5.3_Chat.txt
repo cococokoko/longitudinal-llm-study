@@ -1,0 +1,41 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=30 out=627
+Latency:   13574 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Balancing everything as a single parent and running a business is already a lot, so the goal with security is to keep it strong but manageable—systems that protect you without constant babysitting.
+
+Here are the practices that give the most protection for the least ongoing effort:
+
+Start with the basics that prevent most attacks. Use strong, unique passwords for every account and store them in a password manager (like 1Password, Bitwarden, etc.). Turn on multi-factor authentication (MFA) everywhere you can—especially email, banking, cloud storage, and any admin accounts. This alone blocks a huge percentage of breaches.
+
+Keep your software updated automatically. That includes your computer, phone, apps, website plugins, and any business tools. Most attacks exploit outdated software, so turning on auto-updates is a big win with almost no ongoing work.
+
+Back up your data regularly and automatically. Use the “3-2-1 rule” if possible: three copies of your data, on two different types of storage, with one offsite (like a cloud backup). Make sure backups are automatic and occasionally test that you can restore them. This protects you from ransomware, accidents, and device loss.
+
+Secure your Wi-Fi and devices. Use a strong Wi-Fi password, WPA3 or WPA2 encryption, and change the default router admin login. Lock your devices with passcodes or biometrics, and enable disk encryption (FileVault on Mac, BitLocker on Windows). If you ever lose a device, your data stays protected.
+
+Limit access to only what’s necessary. If you use contractors, employees, or even shared family devices, give people the minimum access they need and avoid sharing accounts. Separate your personal and business accounts/devices if you can—it reduces risk and headaches.
+
+Watch out for phishing. Most small business breaches start with a fake email or message. Be cautious with links, attachments, and urgent requests—especially anything involving money or passwords. When in doubt, go directly to the service’s official site instead of clicking links.
+
+Use secure, reputable tools. Stick with well-known platforms for payments, file storage, and communication. They invest heavily in security so you don’t have to build it yourself.
+
+Have a simple response plan. You don’t need anything fancy—just know what you’d do if something goes wrong. For example: who to contact (bank, clients, IT support), how to reset passwords quickly, and how to restore backups. Writing this down once saves a lot of panic later.
+
+If you handle sensitive customer data (like payment info or personal records), check if there are specific regulations you need to follow (like PCI-DSS for payments or GDPR if you deal with EU customers). Often the easiest route is to use third-party services that are already compliant.
+
+Finally, automate and simplify wherever possible. As a busy parent, your best security setup is one that runs quietly in the background and doesn’t depend on you remembering a dozen things every day.
+
+If you want, I can suggest a simple “set it up in a weekend” security stack tailored to the kind of business you run.

@@ -1,0 +1,39 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_13_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=455
+Latency:   8915 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Mastering the art of cooking steak.
+
+── Response ────────────────────────────────────────────────────────
+You’d approach this the same way you’d approach a delicate case: control the variables, respect the underlying structure, and don’t rush the critical moments.
+
+Start with the cut. Ribeye gives you margin for error because of its fat; strip is a bit leaner but still forgiving; filet is tender but punishes overcooking. Thickness matters more than people think—aim for at least 1.5 inches so you can develop a proper crust without overshooting the center.
+
+Salt early if you can—at least 45 minutes, or even overnight. That’s essentially a controlled dry brine: it pulls moisture out, then reabsorbs it, seasoning deeper and improving the sear. If you’re short on time, salt right before it hits the pan and accept a slightly less even result.
+
+Temperature control is everything. Let the steak sit out for ~30 minutes so you’re not fighting a cold core. Use a heavy pan (cast iron if possible) and get it properly hot—just before the oil smokes. Neutral oil first, not butter. Butter comes later.
+
+When it hits the pan, don’t move it. You’re building a crust via the Maillard reaction, and that needs uninterrupted contact. Flip once you’ve got a deep brown surface—usually 2–4 minutes depending on thickness and heat. Then reduce the heat, add butter, garlic, maybe thyme, and baste. That’s your “fine control” phase.
+
+If it’s thick, finish in the oven (around 180–200°C). Use a thermometer if you want precision:
+- Rare: 50–52°C  
+- Medium-rare: 54–57°C  
+- Medium: 60–63°C  
+
+Pull it a few degrees early; carryover heat will finish the job.
+
+Resting isn’t optional. Give it 5–10 minutes so the juices redistribute instead of flooding the plate.
+
+Final detail: slice against the grain if you’re serving it cut. It changes the perceived tenderness more than most people expect.
+
+Once you’ve got the baseline down, you can start adjusting variables—fat source, herbs, pan vs grill—but the core is always the same: heat management, timing, and restraint.

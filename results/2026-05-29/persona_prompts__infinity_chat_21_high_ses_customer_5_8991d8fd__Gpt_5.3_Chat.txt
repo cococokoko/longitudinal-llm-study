@@ -1,0 +1,28 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_21_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=185
+Latency:   3839 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+what shall i do for dinner?
+
+── Response ────────────────────────────────────────────────────────
+Depends how much energy you’ve got tonight and whether you want something restorative or a bit of a treat.
+
+If you’re wiped: go simple but satisfying—rotisserie chicken, good bread, a bagged salad upgraded with nuts or cheese. Minimal decisions, still feels like a real meal.
+
+If you want comfort: pasta with a quick sauce (butter, garlic, chili flakes, parmesan) or takeout ramen. Warm, fast, reliably good.
+
+If you want something “clean” and sharp: grilled salmon or chicken over greens with a punchy vinaigrette. Feels like you made a good call for tomorrow morning.
+
+If you want a small reward: order from your favorite place, but be intentional—pick one thing you’ll actually enjoy rather than default scrolling.
+
+If you tell me your mood (lazy, healthy, indulgent, social), I can narrow it to one solid call.

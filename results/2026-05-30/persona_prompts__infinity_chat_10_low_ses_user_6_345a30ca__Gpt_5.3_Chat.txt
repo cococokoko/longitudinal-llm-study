@@ -1,0 +1,79 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_low_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=47 out=399
+Latency:   5678 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work in a warehouse position that requires long hours.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Nice idea—that’s a great way to stand out.
+
+You’ve got a few solid **free hosting options** for a simple HTML resume. The easiest ones:
+
+---
+
+### 1. GitHub Pages (best overall, a bit of setup)
+This is the most popular and reliable free option.
+
+**How to do it:**
+- Create a free GitHub account
+- Click “New repository”
+- Name it something like: `yourusername.github.io`
+- Upload your HTML file (name it `index.html`)
+- Go to Settings → Pages → enable GitHub Pages
+
+**Result:**
+Your site will be live at:  
+`https://yourusername.github.io`
+
+**Why it’s good:**
+- Totally free
+- No ads
+- Looks professional to employers
+- Fast and reliable
+
+---
+
+### 2. Netlify (easiest drag-and-drop option)
+If you don’t want to deal with GitHub much:
+
+**Steps:**
+- Go to netlify.com
+- Sign up (can use Google)
+- Drag your folder with the HTML file into the upload area
+
+**Result:**
+You’ll get a link like:  
+`https://random-name.netlify.app`
+
+You can rename it to something cleaner.
+
+---
+
+### 3. Cloudflare Pages (also good, slightly more setup)
+Similar to GitHub Pages, but requires linking a repo. Worth it if you want performance, but overkill for a resume.
+
+---
+
+### Quick tips for your resume site:
+- Make sure your main file is named `index.html`
+- Keep everything in one folder (HTML + images)
+- Test it locally before uploading
+- Use a simple, clean layout—employers care more about clarity than fancy effects
+
+---
+
+If you want, I can:
+- Look at your HTML and suggest improvements
+- Help you pick a clean design
+- Walk you step-by-step through GitHub Pages with screenshots-style instructions
+
+Just tell me 👍

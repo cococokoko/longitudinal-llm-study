@@ -1,0 +1,50 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_49_low_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=35 out=510
+Latency:   10743 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Fast-food schedules are chaotic, so you want fixes that are quick to try and don’t require constant tinkering. Here’s the stuff that actually makes a noticeable difference, in order of impact:
+
+**1. Router placement (biggest easy win)**
+Put your router out in the open, roughly central in your home, and off the floor (like on a shelf). Avoid closets, metal cabinets, or corners. Walls—especially concrete or brick—kill signal.
+
+**2. Restart + update**
+Restart your modem and router (unplug 30 seconds). Then check the router app or settings page for a firmware update—this can quietly fix performance issues.
+
+**3. Split or choose the right WiFi band**
+If your router has 2.4 GHz and 5 GHz:
+- 2.4 GHz = slower but better through walls (good for distant rooms)
+- 5 GHz = faster but shorter range (good near router)
+Connect important devices (phone, laptop) to 5 GHz when you’re nearby.
+
+**4. Reduce congestion**
+If your WiFi is slow at certain times (like evenings), neighbors are likely interfering. In your router settings, switch channels (especially for 2.4 GHz: try 1, 6, or 11). Many routers have an “auto” channel option—worth toggling.
+
+**5. Upgrade if your router is old**
+If it’s 4–5+ years old, it may be the bottleneck. Look for something labeled WiFi 6 (AX). You don’t need the most expensive model—mid-range is fine.
+
+**6. Use a mesh system or extender (for dead zones)**
+If certain rooms suck no matter what:
+- Mesh WiFi (best, more seamless)
+- Range extender (cheaper but less smooth)
+Mesh is worth it if your place isn’t tiny.
+
+**7. Limit device overload**
+Too many devices (smart TVs, consoles, etc.) can bog things down. Disconnect stuff you’re not using, especially if your plan speed isn’t high.
+
+**8. Check your internet plan**
+If everything else looks good but it’s still slow, your plan might just be too low for your usage. Run a speed test near the router—if it’s already slow there, that’s your answer.
+
+If you want, tell me your home size and what’s going wrong (slow everywhere vs just one room), and I can narrow it down to the best fix without wasting your time.

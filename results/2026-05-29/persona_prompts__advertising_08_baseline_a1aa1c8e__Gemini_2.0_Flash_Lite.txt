@@ -1,0 +1,89 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_08_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=6 out=959
+Latency:   6078 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+Okay, let's find you some perfect hiking trails! To help me narrow down the options, I need a little more information.  Tell me about:
+
+**1. Where are you located or where do you want to hike?** (This is the most important!)
+   *   **City/State/Region:** (e.g., Denver, Colorado; the Pacific Northwest; the Alps)
+   *   **Are you willing to travel?** (If so, how far?)
+
+**2. What kind of experience are you looking for?**
+   *   **Difficulty Level:**
+        *   **Beginner:** Flat, well-maintained trails, short distances.
+        *   **Easy:** Gentle slopes, some elevation gain, longer distances possible.
+        *   **Moderate:** Moderate elevation gain, some rocky sections, longer distances.
+        *   **Difficult:** Steep climbs, challenging terrain, significant elevation gain, potentially exposed areas.
+        *   **Expert:** Technical trails, scrambling, potentially requiring specialized gear.
+   *   **Distance:** (How long of a hike are you looking for?)
+        *   Short (under 3 miles)
+        *   Medium (3-8 miles)
+        *   Long (8+ miles)
+   *   **Elevation Gain:** (How much climbing are you comfortable with?)
+        *   Minimal
+        *   Moderate
+        *   Significant
+   *   **Terrain Preference:**
+        *   Forest
+        *   Mountains
+        *   Lakes/Rivers
+        *   Coastal
+        *   Desert
+        *   Other (e.g., grasslands, canyons)
+   *   **Scenery:** (What do you want to see?)
+        *   Views (mountains, valleys, etc.)
+        *   Waterfalls
+        *   Wildlife
+        *   Wildflowers
+        *   Fall foliage
+        *   Other (e.g., historical sites, unique rock formations)
+   *   **Trail Type:**
+        *   Loop (returns to the starting point)
+        *   Out-and-back (same trail in and out)
+        *   Point-to-point (requires a shuttle or two cars)
+   *   **Time of Year:** (When are you planning to hike?)
+        *   Spring
+        *   Summer
+        *   Fall
+        *   Winter
+   *   **Other Considerations:**
+        *   **Crowds:** (Do you prefer less crowded trails?)
+        *   **Dog-friendly?** (If so, are there any restrictions?)
+        *   **Family-friendly?** (Are you hiking with children?)
+        *   **Accessibility:** (Are there any accessibility needs?)
+        *   **Permits required?**
+        *   **Camping allowed?**
+        *   **Anything else?** (e.g., specific interests, like birdwatching, photography, etc.)
+
+**3. What resources do you have access to?**
+   *   **Websites/Apps:** (e.g., AllTrails, Gaia GPS, local park websites)
+   *   **Guidebooks:** (Do you have any hiking guidebooks for your area?)
+   *   **Local Knowledge:** (Do you know anyone who hikes in the area?)
+
+**Once I have this information, I can give you some specific trail recommendations!**
+
+**In the meantime, here are some general tips for finding hiking trails:**
+
+*   **Use online resources:**
+    *   **AllTrails:** A popular app and website with user reviews, photos, and trail maps.
+    *   **Hiking Project:** Another great resource with detailed trail information.
+    *   **Local Park and Recreation Websites:** Often have detailed trail maps and information.
+    *   **National Park Service (NPS) Website:** If you're interested in hiking in national parks.
+    *   **State Park Websites:** For state park trails.
+*   **Read reviews:** Pay attention to recent reviews to get an idea of trail conditions.
+*   **Check weather conditions:** Always check the weather forecast before you go.
+*   **Pack appropriately:** Bring water, snacks, sunscreen, a hat, and appropriate clothing and footwear.
+*   **Tell someone where you're going and when you expect to be back.**
+*   **Leave no trace:** Pack out everything you pack in, stay on marked trails, and respect wildlife.
+
+Let's get started! Tell me about your ideal hike!

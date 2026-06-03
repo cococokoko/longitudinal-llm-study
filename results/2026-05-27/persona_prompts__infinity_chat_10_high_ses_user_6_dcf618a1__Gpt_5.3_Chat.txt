@@ -1,0 +1,64 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=46 out=410
+Latency:   9516 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Nice, that’s a great simple use case for static hosting. Since you already have plain HTML files, you’ve got a bunch of very easy free options. Here are the best ones, in plain terms:
+
+**1) GitHub Pages (most common, very reliable)**
+- Create a free GitHub account
+- Create a new repository (name it something like `resume-site`)
+- Upload your HTML files (make sure your main file is named `index.html`)
+- Go to repo Settings → Pages → enable GitHub Pages from the main branch
+- You’ll get a link like: `https://yourusername.github.io/resume-site/`
+
+Why this is good: stable, free, widely used, and looks professional enough to share.
+
+---
+
+**2) Netlify (even easier drag-and-drop option)**
+- Go to netlify.com and sign up
+- Drag your folder of HTML files onto their dashboard
+- It instantly deploys and gives you a URL
+
+Why this is good: fastest setup, no Git needed. You can literally be live in under a minute.
+
+---
+
+**3) Cloudflare Pages (clean and fast)**
+- Sign up for Cloudflare Pages
+- Connect a GitHub repo or upload your files
+- Deploy
+
+Why this is good: fast global performance, also very professional.
+
+---
+
+**4) Google Drive / Dropbox (not recommended)**
+You *can* hack this together, but it won’t behave like a real website. Skip this.
+
+---
+
+**Important tips**
+- Make sure your main page is called `index.html`
+- Keep all files in the same folder structure when uploading
+- Test locally first by opening `index.html` in your browser
+
+---
+
+If you want the simplest path with zero friction: use Netlify drag-and-drop.
+
+If you want something a bit more “tech-forward” and maintainable: use GitHub Pages.
+
+If you want, I can walk you through one of these step-by-step in about 2–3 minutes.

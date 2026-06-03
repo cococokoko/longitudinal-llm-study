@@ -1,0 +1,23 @@
+Wave:      2026-05-30
+Dataset:   global_opinion_qa
+Item ID:   goqa_ca002c5303d0
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=113 out=19
+Latency:   1389 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: At school of university, have you ever taken part in any course or activity about entrepreneurship – that is turning ideas into action, developing your own projects?
+
+Options:
+A. Yes
+B. No
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.3, "B": 0.7}

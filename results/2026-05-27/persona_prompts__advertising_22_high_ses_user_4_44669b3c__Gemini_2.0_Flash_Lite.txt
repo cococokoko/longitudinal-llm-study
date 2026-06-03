@@ -1,0 +1,84 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_4
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=1024
+Latency:   7346 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist leading a research group, you need tools that facilitate seamless collaboration, data sharing, communication, and project management, all while adhering to data privacy and security regulations. Here's a breakdown of the best tools for remote team collaboration, categorized for clarity:
+
+**I. Communication & Meeting Platforms:**
+
+*   **Video Conferencing:**
+    *   **Zoom:** Widely used, reliable, offers screen sharing, breakout rooms, recording, and integration with other tools. Consider HIPAA compliance if handling patient data.
+    *   **Microsoft Teams:** Excellent for integration with Microsoft Office suite, offers chat, video calls, file sharing, and project management features. Also offers HIPAA compliance options.
+    *   **Google Meet:** Simple, integrates with Google Workspace (Gmail, Calendar, Drive), and offers screen sharing and recording. HIPAA compliance is possible with appropriate settings.
+    *   **Considerations:**
+        *   **Security:** Ensure strong passwords, enable waiting rooms, and understand the platform's security features.
+        *   **Recording:** Obtain consent before recording meetings.
+        *   **Accessibility:** Provide captions and transcripts for accessibility.
+
+*   **Instant Messaging & Chat:**
+    *   **Microsoft Teams:** Excellent for quick communication, file sharing, and team-based conversations.
+    *   **Slack:** Highly customizable, integrates with many other tools, and offers channels for different projects or topics.
+    *   **WhatsApp/Signal (for non-PHI communication):** Useful for quick, informal communication, but be mindful of data privacy.
+    *   **Considerations:**
+        *   **Data Privacy:** Avoid sharing Protected Health Information (PHI) on platforms that are not HIPAA compliant.
+        *   **Channel Organization:** Create dedicated channels for different projects, topics, and teams.
+        *   **Notifications:** Manage notification settings to avoid information overload.
+
+*   **Email:**
+    *   **Gmail/Outlook:** Essential for formal communication, document sharing, and scheduling.
+    *   **Considerations:**
+        *   **HIPAA Compliance:** Use secure email providers or implement encryption if sending PHI.
+        *   **Email Etiquette:** Establish clear guidelines for email communication.
+
+**II. Project Management & Task Tracking:**
+
+*   **Project Management Software:**
+    *   **Asana:** User-friendly, offers task management, project timelines, and team collaboration features.
+    *   **Trello:** Kanban-style project management, visually appealing, and easy to use for task tracking.
+    *   **Monday.com:** Highly customizable, offers project tracking, workflow automation, and reporting.
+    *   **Microsoft Project:** Powerful project management tool, suitable for complex projects with detailed timelines and resource allocation.
+    *   **Considerations:**
+        *   **Project Complexity:** Choose a tool that matches the complexity of your projects.
+        *   **Integration:** Consider how well the tool integrates with other platforms you use.
+        *   **Training:** Provide training to your team on how to use the chosen tool.
+
+*   **Version Control (for code and documents):**
+    *   **GitHub/GitLab:** Essential for collaborative coding, version control, and code review.
+    *   **Considerations:**
+        *   **Security:** Protect your repositories with strong passwords and access controls.
+        *   **Training:** Provide training on Git and version control best practices.
+
+**III. Data Sharing & Storage:**
+
+*   **Cloud Storage:**
+    *   **Google Drive:** Easy to use, integrates with Google Workspace, and offers collaborative document editing.
+    *   **Microsoft OneDrive:** Integrates with Microsoft Office suite, offers file sharing, and version control.
+    *   **Dropbox:** User-friendly, offers file sharing, and collaboration features.
+    *   **Considerations:**
+        *   **HIPAA Compliance:** Ensure your chosen provider offers HIPAA-compliant options if storing PHI.
+        *   **Security:** Use strong passwords, enable two-factor authentication, and understand the platform's security features.
+        *   **File Organization:** Establish a clear file organization system.
+
+*   **Secure Data Transfer:**
+    *   **Secure File Transfer Protocol (SFTP):** For transferring large files securely.
+    *   **Considerations:**
+        *   **Encryption:** Ensure files are encrypted during transfer.
+        *   **Access Controls:** Implement strict access controls.
+
+*   **Electronic Lab Notebooks (ELNs):**
+    *   **Benchling:** Comprehensive ELN with features for experiment planning, data analysis, and collaboration.
+    *   **LabArchives:** User-friendly ELN with features for experiment documentation, data storage, and collaboration.
+    *   **Considerations:**
+        *   **Data Security:** Ensure the ELN is HIPAA compliant if handling PHI.

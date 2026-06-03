@@ -1,0 +1,50 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=337
+Latency:   7537 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+# Remote Team Collaboration Tools for Research Groups
+
+Here's a practical breakdown by function:
+
+## Communication
+- **Slack** - Organized channels by project, integrates with many research tools
+- **Microsoft Teams** - Good if your institution uses Office 365
+- **Zoom/Google Meet** - Video conferencing for lab meetings
+
+## Project & Task Management
+- **Asana or Trello** - Task tracking, deadlines, accountability
+- **Notion** - Flexible workspace combining notes, tasks, and databases
+- **Monday.com** - Visual project timelines
+
+## Document Collaboration
+- **Google Workspace** - Real-time document editing
+- **Overleaf** - Essential for manuscript writing in LaTeX
+- **SharePoint** - If institution-based
+
+## Research-Specific Tools
+- **Benchling** - Lab notebooks, especially for wet lab work
+- **OSF (Open Science Framework)** - Project management + data sharing
+- **Zotero/Mendeley** - Shared reference libraries
+
+## Data & Code
+- **GitHub** - Version control for code and analysis pipelines
+- **Dropbox/Box** - File sharing (check institutional compliance)
+
+## Practical Recommendations
+- **Keep it simple** - Tool overload is a real problem
+- **Standardize early** - Set clear expectations for which tool serves which purpose
+- **Consider HIPAA compliance** if sharing any patient-related data
+
+Would you like recommendations tailored to a specific workflow challenge your group faces?

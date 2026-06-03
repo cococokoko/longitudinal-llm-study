@@ -1,0 +1,18 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_43_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=23 out=1020
+Latency:   76403 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to plan an environmentally friendly wedding?
+
+── Response ────────────────────────────────────────────────────────
+Given your demanding schedule as a neurosurgeon at a major teaching hospital, your time is your most scarce resource. Planning a wedding is a massive logistical undertaking on its own, and adding the layer of

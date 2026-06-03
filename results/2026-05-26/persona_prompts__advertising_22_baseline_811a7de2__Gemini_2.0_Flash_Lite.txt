@@ -1,0 +1,81 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=10 out=1024
+Latency:   6655 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The "best" tools for remote team collaboration depend on your specific needs, team size, budget, and preferred workflows. However, here's a breakdown of the top tools, categorized by their primary function, along with their pros and cons:
+
+**1. Communication & Messaging:**
+
+*   **Slack:**
+    *   **Pros:** Excellent for real-time messaging, channels for organized discussions, file sharing, integrations with many other tools, searchable history, voice and video calls.
+    *   **Cons:** Can be overwhelming with too many channels and notifications, free plan has limited message history.
+    *   **Best for:** Quick communication, project-specific discussions, team announcements, and integrating with other tools.
+
+*   **Microsoft Teams:**
+    *   **Pros:** Combines chat, video conferencing, file storage, and project management features, integrates seamlessly with other Microsoft Office 365 apps, good for organizations already using Microsoft products.
+    *   **Cons:** Can be resource-intensive, interface can feel cluttered, less flexible than Slack in some areas.
+    *   **Best for:** Organizations heavily invested in the Microsoft ecosystem, all-in-one communication and collaboration.
+
+*   **Discord:**
+    *   **Pros:** Excellent for voice and video calls, especially for large groups, good for community building, free plan offers a lot of features.
+    *   **Cons:** Primarily designed for gaming communities, can be less professional-looking than Slack or Teams, less robust project management features.
+    *   **Best for:** Voice and video calls, community building, and teams that prioritize real-time communication.
+
+*   **Google Chat (formerly Hangouts Chat):**
+    *   **Pros:** Integrates seamlessly with Google Workspace (Gmail, Drive, Calendar), simple and easy to use, good for quick chats and file sharing.
+    *   **Cons:** Fewer features than Slack or Teams, less robust integrations.
+    *   **Best for:** Teams already using Google Workspace, simple and straightforward communication.
+
+**2. Video Conferencing & Meetings:**
+
+*   **Zoom:**
+    *   **Pros:** Reliable video and audio quality, screen sharing, recording capabilities, breakout rooms, virtual backgrounds, large meeting capacity.
+    *   **Cons:** Security concerns in the past (though addressed), free plan has time limits for group meetings.
+    *   **Best for:** Virtual meetings, webinars, and presentations.
+
+*   **Google Meet:**
+    *   **Pros:** Integrates seamlessly with Google Workspace, easy to use, good for quick meetings, screen sharing, recording capabilities.
+    *   **Cons:** Fewer advanced features than Zoom, can be less reliable in some situations.
+    *   **Best for:** Teams already using Google Workspace, quick and easy meetings.
+
+*   **Microsoft Teams:** (See above in Communication & Messaging)
+    *   **Pros:** Integrated video conferencing, screen sharing, recording, and meeting scheduling.
+    *   **Cons:** Can be resource-intensive.
+    *   **Best for:** All-in-one communication and collaboration, especially for Microsoft users.
+
+*   **Whereby:**
+    *   **Pros:** Simple and easy to use, no downloads required, good for quick meetings, customizable meeting rooms.
+    *   **Cons:** Fewer advanced features than Zoom or Teams, limited free plan.
+    *   **Best for:** Simple and quick video calls, teams that prioritize ease of use.
+
+**3. Project Management & Task Management:**
+
+*   **Asana:**
+    *   **Pros:** Excellent for task management, project tracking, team collaboration, progress visualization, integrations with other tools.
+    *   **Cons:** Can be overwhelming for simple projects, free plan has limitations.
+    *   **Best for:** Complex projects, task assignment, progress tracking, and team collaboration.
+
+*   **Trello:**
+    *   **Pros:** Simple and visual Kanban-style project management, easy to use, good for visualizing workflows, free plan is generous.
+    *   **Cons:** Less robust than Asana for complex projects, limited reporting features.
+    *   **Best for:** Simple projects, visualizing workflows, and task management.
+
+*   **Monday.com:**
+    *   **Pros:** Highly visual and customizable project management, excellent for tracking progress, automation features, integrations with other tools.
+    *   **Cons:** Can be expensive, can be overwhelming for simple projects.
+    *   **Best for:** Complex projects, tracking progress, and automation.
+
+*   **Jira:**
+    *   **Pros:** Powerful project management, especially for software development teams, customizable workflows, issue tracking, integrations with other tools.
+    *   **Cons:** Steep learning curve, can be complex to set up and manage.
+    *   **Best for:** Software development teams

@@ -1,0 +1,40 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_low_ses_customer_5
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=30 out=617
+Latency:   4823 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+Okay, here's a prompt you can give to an AI to generate a great story for kids, keeping in mind the customer supports extended family and manages many household responsibilities:
+
+**Prompt:**
+
+"Write a heartwarming children's story about a young child named [Child's Name] who lives in a busy household. [Child's Name] helps their [Relationship to Child, e.g., Grandma, Auntie, Cousin] with [Specific Task, e.g., gardening, cooking, taking care of younger siblings]. The story should highlight the importance of family, kindness, and finding joy in everyday moments, even when things are hectic. The story should also subtly touch upon the idea of responsibility and how helping others makes [Child's Name] feel good. The story should have a problem that [Child's Name] solves with the help of their family. The story should end with a positive message about family and working together. Please make the story age-appropriate for children aged [Age Range, e.g., 5-8 years old]. Include a title."
+
+**Tips for Customization and Better Results:**
+
+*   **[Child's Name]:** Replace this with a name you like.
+*   **[Relationship to Child]:** Be specific. Instead of "family member," use "Grandma," "Auntie Sarah," "Cousin Leo," etc.
+*   **[Specific Task]:** This is crucial! Examples: "gardening," "cooking dinner," "reading to younger siblings," "helping with the laundry," "walking the dog," "setting the table." The more specific, the better.
+*   **[Age Range]:** Adjust this to fit the target audience.
+*   **Consider adding these to the prompt:**
+    *   "The story should have a talking animal."
+    *   "The story should take place in a [Setting, e.g., cozy cottage, bustling city apartment, sunny backyard]."
+    *   "The story should include a lesson about [Specific Value, e.g., sharing, patience, perseverance]."
+    *   "The story should have a happy ending."
+
+**Example of a more detailed prompt:**
+
+"Write a heartwarming children's story about a young girl named Lily who lives in a busy household. Lily helps her Grandma with cooking dinner every night. The story should highlight the importance of family, kindness, and finding joy in everyday moments, even when things are hectic. The story should also subtly touch upon the idea of responsibility and how helping others makes Lily feel good. The story should have a problem that Lily solves with the help of her family. The story should end with a positive message about family and working together. Please make the story age-appropriate for children aged 6-8 years old. The story should take place in a cozy kitchen. Include a title."
+
+Good luck! Let me know if you'd like me to refine the prompt further.

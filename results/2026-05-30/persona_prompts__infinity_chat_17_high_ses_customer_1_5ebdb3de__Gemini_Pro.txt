@@ -1,0 +1,18 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_17_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=24 out=1020
+Latency:   13525 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a mystery story set in a small town
+
+── Response ────────────────────────────────────────────────────────
+The fog always rolled into Blackwood thickest just before dawn, swallowing the pine trees and the single traffic light on Main Street. For Dr. David Aris, the quiet was the whole point.

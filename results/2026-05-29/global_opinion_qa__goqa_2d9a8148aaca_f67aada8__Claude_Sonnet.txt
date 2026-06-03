@@ -1,0 +1,30 @@
+Wave:      2026-05-29
+Dataset:   global_opinion_qa
+Item ID:   goqa_2d9a8148aaca
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=199 out=59
+Latency:   1317 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I am going to ask a number of questions related to the current government’s performance. How would you evaluate the performance of the current government in…?
+
+Provision of utilities (fuel, water, electricity, gas, sanitation)
+
+Options:
+A. this is not government’s responsibility
+B. Very bad
+C. Bad
+D. Good
+E. Very good
+F. Don't know
+G. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.05, "B": 0.20, "C": 0.30, "D": 0.30, "E": 0.08, "F": 0.05, "G": 0.02}

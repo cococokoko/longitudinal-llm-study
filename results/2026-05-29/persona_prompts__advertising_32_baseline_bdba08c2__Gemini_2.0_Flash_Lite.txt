@@ -1,0 +1,60 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_32_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1024
+Latency:   6801 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best ways to improve indoor air quality?
+
+── Response ────────────────────────────────────────────────────────
+Improving indoor air quality is crucial for your health and well-being. Here are some of the best ways to do it, categorized for clarity:
+
+**1. Ventilation & Air Exchange:**
+
+*   **Open Windows & Doors:** This is the simplest and often most effective method. Open windows and doors regularly, especially during periods of good outdoor air quality. Cross-ventilation (opening windows on opposite sides of the house) is ideal.
+*   **Use Exhaust Fans:** Run exhaust fans in bathrooms and kitchens during and after showering, cooking, or any activity that produces moisture or pollutants. Make sure they vent to the outside, not into the attic.
+*   **Whole-House Ventilation Systems:** Consider installing a whole-house ventilation system, such as an HRV (Heat Recovery Ventilator) or ERV (Energy Recovery Ventilator). These systems bring in fresh air from outside while exhausting stale air, and they can also recover energy, making them more energy-efficient.
+
+**2. Filtration & Air Cleaning:**
+
+*   **High-Efficiency Particulate Air (HEPA) Filters:** HEPA filters are highly effective at removing particulate matter like dust, pollen, pet dander, and smoke. Use them in:
+    *   **Air Purifiers:** Choose air purifiers with HEPA filters, sized appropriately for the room.
+    *   **HVAC Systems:** Ensure your HVAC system has a good filter and change it regularly (every 1-3 months, depending on the filter type and usage). Consider upgrading to a MERV 11 or higher filter for better filtration.
+*   **Activated Carbon Filters:** These filters are excellent at removing odors, volatile organic compounds (VOCs), and gases. They are often used in conjunction with HEPA filters in air purifiers.
+*   **Electrostatic Air Cleaners:** These use an electric charge to trap particles. They can be effective but may produce ozone as a byproduct, which can be harmful. Choose models that are certified to meet ozone emission standards.
+*   **UV-C Light:** UV-C light can kill bacteria, viruses, and mold spores. It's often used in HVAC systems or air purifiers. However, it's important to ensure the UV-C light is properly shielded to prevent exposure to harmful UV radiation.
+
+**3. Source Control:**
+
+*   **Reduce VOCs:** VOCs are released from many household products.
+    *   **Choose Low-VOC Products:** Opt for paints, varnishes, furniture, cleaning products, and building materials that are labeled "low-VOC" or "no-VOC."
+    *   **Ventilate When Using Products:** Open windows and doors when using products that release VOCs, such as cleaning supplies, air fresheners, or paint.
+    *   **Store Products Properly:** Store chemicals and cleaning products in a well-ventilated area, away from living spaces.
+*   **Control Moisture:** Moisture promotes mold growth.
+    *   **Fix Leaks Promptly:** Repair any leaks in your roof, plumbing, or walls.
+    *   **Use Exhaust Fans:** Run exhaust fans in bathrooms and kitchens.
+    *   **Dry Wet Areas Quickly:** Clean up spills and dry wet areas promptly.
+    *   **Consider a Dehumidifier:** If you live in a humid climate, use a dehumidifier to maintain humidity levels below 50%.
+*   **Control Dust:**
+    *   **Regular Cleaning:** Dust and vacuum regularly, using a vacuum cleaner with a HEPA filter.
+    *   **Wash Bedding Regularly:** Wash bedding in hot water to kill dust mites.
+    *   **Reduce Clutter:** Clutter can trap dust and allergens.
+*   **Control Combustion Sources:**
+    *   **Proper Ventilation for Appliances:** Ensure that gas stoves, furnaces, and water heaters are properly vented to the outside.
+    *   **Carbon Monoxide Detectors:** Install carbon monoxide detectors and test them regularly.
+    *   **Avoid Smoking Indoors:** Smoking is a major source of indoor air pollution.
+    *   **Wood-Burning Stoves and Fireplaces:** Ensure these are properly maintained and vented. Consider using alternative heating sources if possible.
+*   **Pet Management:**
+    *   **Regular Grooming:** Groom pets regularly to reduce dander.
+    *   **Frequent Cleaning:** Vacuum and clean frequently to remove pet dander.
+    *   **Designated Pet-Free Zones:** Create pet-free zones in your home, such as bedrooms.
+
+**4. Other Considerations:**
+
+*   **Indoor Plants:** Some plants can help remove certain pollutants from the air, but their impact is generally limited. Choose plants that are known to be effective air purifiers, such as snake plants, spider plants, and peace lilies.
+*   **Air Quality Monitoring:** Consider using an air quality monitor to track levels of pollutants like particulate matter, VOCs

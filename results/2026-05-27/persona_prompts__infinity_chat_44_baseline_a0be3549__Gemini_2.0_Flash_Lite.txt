@@ -1,0 +1,23 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=20 out=282
+Latency:   2662 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here's a series of three questions designed to help determine the moral rightness or wrongness of an action:
+
+1.  **Does this action cause harm or suffering to others (directly or indirectly)?**  (This focuses on the consequences of the action.  Consider physical, emotional, psychological, and social harm.)
+
+2.  **Does this action violate any fundamental rights or principles (e.g., fairness, justice, autonomy, honesty) that are generally considered important for a just and ethical society?** (This focuses on the principles and values at stake, and whether the action upholds or undermines them.)
+
+3.  **Would I be comfortable if everyone acted in this way, or if this action were done to me?** (This uses the principle of universalizability and the Golden Rule to assess the action's consistency and fairness.)
+
+If the answer to question 1 is "yes," and/or the answer to question 2 is "yes," and/or the answer to question 3 is "no," then the action is likely morally wrong.  If the answers are consistently "no," then the action is likely morally right (or at least, not morally wrong).  It's important to note that these questions provide a framework for ethical reasoning, but they don't always provide easy answers.  Context and nuance are always important.

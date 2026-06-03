@@ -1,0 +1,62 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_1
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=21 out=1024
+Latency:   9647 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Okay, as a neurosurgeon, you're likely used to dealing with complex systems and precision. Let's approach improving your home WiFi with that same level of detail. We'll cover the basics, then delve into more advanced options, keeping in mind your likely need for reliable, high-performance connectivity.
+
+**I. Understanding the Basics (and Why They Matter)**
+
+Before we jump into solutions, let's establish a foundation. Think of your WiFi like a network of roads:
+
+*   **The Router (The Traffic Controller):** This is the central device that directs internet traffic to your devices. It's the most critical component.
+*   **The Modem (The Gateway to the Internet):** This connects your home network to your internet service provider (ISP).
+*   **Your Devices (The Cars):** Laptops, phones, tablets, smart home devices – all vying for bandwidth.
+*   **Bandwidth (The Road Width):** The amount of data your internet connection can handle at once. This is determined by your ISP plan.
+*   **Signal Strength (The Road Surface):** How well your devices can "hear" the router's signal. Obstacles like walls and distance degrade this.
+*   **Interference (Traffic Jams):** Other devices (microwaves, Bluetooth devices, neighboring WiFi networks) can disrupt your WiFi signal.
+
+**II. Troubleshooting and Basic Improvements (The Quick Fixes)**
+
+Let's start with the easy stuff. These steps often resolve common issues:
+
+1.  **Restart Everything:** This is the IT equivalent of "have you tried turning it off and on again?"
+    *   **Modem:** Unplug it from power for 60 seconds.
+    *   **Router:** Unplug it from power for 60 seconds.
+    *   **Devices:** Restart your laptops, phones, etc.
+2.  **Router Placement (Location, Location, Location):** This is crucial.
+    *   **Central Location:** Place your router as centrally as possible in your home to maximize coverage.
+    *   **Elevated Position:** Put it on a shelf or table, not on the floor.
+    *   **Clear of Obstacles:** Avoid placing it inside cabinets, behind metal objects, or near walls.
+    *   **Away from Interference:** Keep it away from microwaves, cordless phones, and Bluetooth devices.
+3.  **Channel Selection (Choosing the Right Lane):** Your router broadcasts on a specific "channel."
+    *   **2.4 GHz vs. 5 GHz:**
+        *   **2.4 GHz:** Longer range, but more prone to interference and slower speeds. Good for devices that don't need high bandwidth (e.g., smart home devices).
+        *   **5 GHz:** Shorter range, but less interference and much faster speeds. Ideal for streaming, gaming, and video conferencing.
+    *   **Router Settings:** Access your router's settings (usually by typing its IP address into a web browser – check your router's manual for the address). Look for the "Wireless Settings" or "WiFi Settings" section.
+    *   **Channel Selection:** Manually select a less congested channel. Use a WiFi analyzer app (see below) to identify the least crowded channels in your area.
+4.  **WiFi Analyzer Apps (Traffic Reports):** These apps (available for smartphones and computers) scan your area for WiFi networks and show you channel congestion and signal strength.
+    *   **Examples:** WiFi Analyzer (Android), NetSpot (macOS, Windows), inSSIDer (Windows).
+5.  **Update Router Firmware (Keeping the Traffic Controller Up-to-Date):** Router manufacturers regularly release firmware updates to improve performance, security, and fix bugs. Check your router's settings for an "Update" or "Firmware" section.
+6.  **Check Your Internet Speed (Is the Road Wide Enough?):** Run a speed test (e.g., Speedtest.net) to verify you're getting the speeds you're paying for from your ISP. If not, contact your ISP.
+
+**III. Advanced Solutions (For Optimal Performance)**
+
+If the basics aren't enough, let's move on to more sophisticated solutions:
+
+1.  **Upgrade Your Router (The High-Performance Vehicle):**
+    *   **WiFi 6 (802.11ax):** The latest WiFi standard, offering faster speeds, better performance in crowded environments, and improved battery life for connected devices. Highly recommended if your devices support it.
+    *   **WiFi 6E:** Extends WiFi 6 into the 6 GHz band, providing even more bandwidth and less interference.
+    *   **Mesh WiFi Systems (The Network of Roads):** These systems use multiple access points (nodes) to create a seamless

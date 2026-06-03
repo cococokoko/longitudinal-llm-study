@@ -1,0 +1,60 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_high_ses_user_6
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=41 out=1024
+Latency:   7380 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Okay, as a partner at a major consulting firm, you'll want a professional and reliable solution. While there are many free options, some are better suited for your needs than others. Here's a breakdown of the best free options, considering your requirements for professionalism and ease of use, along with some important considerations:
+
+**Top Free Hosting Options for Your Resume (Prioritized for Professionalism):**
+
+1.  **GitHub Pages:**
+
+    *   **Pros:**
+        *   **Free and Reliable:**  GitHub is a well-established platform.
+        *   **Easy to Use:**  Relatively straightforward to set up, especially if you're comfortable with basic Git commands (which you might already be familiar with).  You can simply upload your HTML files to a repository.
+        *   **Custom Domain (Optional):**  You can connect a custom domain (e.g., yourname.com) for a more professional look.  You'll need to purchase the domain separately (e.g., from GoDaddy, Namecheap, Google Domains).
+        *   **Good for Static Sites:**  Perfect for a simple HTML resume.
+        *   **Version Control:**  GitHub provides version control, so you can easily track changes and revert to previous versions if needed.
+        *   **No Ads:**  GitHub Pages doesn't display ads.
+    *   **Cons:**
+        *   **Requires a GitHub Account:**  You'll need to create a free GitHub account.
+        *   **Slight Learning Curve:**  You'll need to learn the basics of Git and GitHub (e.g., creating a repository, committing changes, pushing to the repository).  There are tons of tutorials online.
+        *   **Limited Features:**  Primarily for static websites.  Not suitable for complex applications.
+    *   **How to Use:**
+        1.  **Create a GitHub Account:**  Go to [https://github.com/](https://github.com/) and sign up.
+        2.  **Create a Repository:**  Create a new repository (e.g., "my-resume").  Make it public.
+        3.  **Upload Your Files:**  You can either:
+            *   **Upload Directly:**  Click "Upload files" on the repository page and drag and drop your HTML files.
+            *   **Use Git (Recommended):**  Clone the repository to your computer, copy your HTML files into the repository folder, commit the changes, and push them to GitHub.  This is the more professional and flexible approach.
+        4.  **Enable GitHub Pages:**  Go to the "Settings" tab of your repository.  Scroll down to the "GitHub Pages" section.  Select the branch you want to use (usually "main" or "master") and save.  GitHub will provide a URL for your website (e.g., `yourusername.github.io/my-resume`).
+        5.  **Connect a Custom Domain (Optional):**  If you have a domain, follow GitHub's instructions for connecting it.  This usually involves adding DNS records to your domain registrar.
+
+2.  **Netlify:**
+
+    *   **Pros:**
+        *   **Free Tier:**  Offers a generous free tier suitable for a resume website.
+        *   **Easy Deployment:**  Very user-friendly.  You can deploy your website by dragging and dropping your HTML files or connecting to a Git repository (GitHub, GitLab, Bitbucket).
+        *   **Fast and Reliable:**  Netlify uses a global CDN (Content Delivery Network) for fast loading times.
+        *   **Custom Domain (Optional):**  Supports custom domains.
+        *   **Automatic HTTPS:**  Provides free SSL certificates for secure connections.
+        *   **No Ads:**  Doesn't display ads.
+    *   **Cons:**
+        *   **Free Tier Limitations:**  The free tier has some limitations (e.g., bandwidth, build minutes), but they are usually sufficient for a resume website.
+        *   **Slight Learning Curve:**  While easy to use, you'll need to create a Netlify account and understand the deployment process.
+    *   **How to Use:**
+        1.  **Create a Netlify Account:**  Go to [https://www.netlify.com/](https://www.netlify.com/) and sign up.
+        2.  **Deploy Your Site:**  You can either:
+            *   **Drag and Drop:**  Drag and drop your HTML files directly onto the Netlify dashboard.
+            *   **Connect to Git:**  Connect your GitHub (or other Git) repository to Netlify.  Netlify will automatically build and deploy your site whenever you push changes to your repository.
+        3.  **Custom Domain (

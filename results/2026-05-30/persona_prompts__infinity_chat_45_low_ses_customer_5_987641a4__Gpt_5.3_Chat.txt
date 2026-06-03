@@ -1,0 +1,36 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_45_low_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=31 out=324
+Latency:   6028 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Is moral objective or subjective?
+
+── Response ────────────────────────────────────────────────────────
+Short answer: people disagree because there’s a decent case for both.
+
+If you lean **objective**, the idea is that some moral facts are true regardless of what anyone thinks. For example, “causing unnecessary suffering is wrong” would be true in the same way “fire burns” is true. Philosophers who take this view often argue that:
+- some moral claims feel universally binding (not just preferences),
+- we can reason about ethics and make progress (like condemning slavery more consistently over time),
+- moral disagreement doesn’t mean there’s no truth, just that people can be mistaken.
+
+If you lean **subjective**, morality depends on human perspectives—culture, emotions, social agreements. From this angle:
+- different societies have had radically different moral codes,
+- what feels “obviously wrong” often tracks upbringing and biology,
+- moral statements might be more like expressions (“I disapprove of that”) than facts.
+
+There are also middle positions. For example:
+- morality might be grounded in human well-being (not purely subjective, but not floating independently of humans either),
+- or it might emerge from rational agreements between people trying to live together.
+
+Where people usually land depends on what they find more convincing: the sense that some things are just wrong no matter what, or the observation that moral beliefs shift a lot across time and place.
+
+If you want, I can walk through a couple of classic arguments (like moral realism vs relativism) in a more concrete way.

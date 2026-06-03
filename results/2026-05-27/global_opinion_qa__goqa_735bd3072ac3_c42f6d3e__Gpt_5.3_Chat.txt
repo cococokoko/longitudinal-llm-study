@@ -1,0 +1,26 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_735bd3072ac3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=140 out=116
+Latency:   2264 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: With which one of the following statements do you agree most? The meaning of religion is…
+
+Options:
+A. Follow religious norms and ceremonies
+B. Do good to other people
+C. Don't know
+D. No answer
+E. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.15, "B": 0.7, "C": 0.05, "D": 0.05, "E": 0.05}

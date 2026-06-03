@@ -1,0 +1,88 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   infinity_chat_21_low_ses_customer_5
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=23 out=994
+Latency:   6682 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+what shall i do for dinner?
+
+── Response ────────────────────────────────────────────────────────
+Okay, knowing you support extended family and manage a lot of household responsibilities, let's aim for a dinner that's:
+
+*   **Easy to make:** Minimizing your time in the kitchen.
+*   **Crowd-pleasing:** Something everyone (including picky eaters!) will enjoy.
+*   **Budget-friendly:** Considering you're likely feeding a larger group.
+*   **Potentially make-ahead:** So you can prep some of it earlier in the day.
+
+Here are a few ideas, ranging in effort level:
+
+**Option 1: One-Pan Roasted Chicken and Veggies (Easiest)**
+
+*   **Why it works:** Minimal cleanup, cooks itself, and is a complete meal.
+*   **Ingredients:**
+    *   Whole chicken (or chicken pieces like thighs/drumsticks for faster cooking)
+    *   Potatoes (cut into chunks)
+    *   Carrots (chopped)
+    *   Onion (wedged)
+    *   Broccoli or other veggies you like (optional)
+    *   Olive oil
+    *   Salt, pepper, garlic powder, paprika, herbs (rosemary, thyme are great)
+*   **Instructions:**
+    1.  Preheat oven to 400°F (200°C).
+    2.  Toss veggies with olive oil and seasonings on a large baking sheet.
+    3.  Place chicken on top of the veggies. Season chicken generously.
+    4.  Roast for about 1 hour (or until chicken is cooked through and veggies are tender).
+*   **Make-ahead:** Chop veggies and prep seasonings earlier in the day.
+
+**Option 2: Slow Cooker Pulled Pork or Chicken Sandwiches (Easy & Great for a Crowd)**
+
+*   **Why it works:**  Set it and forget it!  Great for feeding a lot of people.
+*   **Ingredients:**
+    *   Pork shoulder (for pulled pork) or chicken breasts/thighs
+    *   BBQ sauce (or your favorite sauce)
+    *   Onion (optional)
+    *   Buns
+    *   Coleslaw (pre-made or easy to make)
+*   **Instructions:**
+    1.  Place meat in slow cooker. Add onion if using.
+    2.  Pour BBQ sauce over meat.
+    3.  Cook on low for 6-8 hours (pork) or 4-6 hours (chicken), or until meat is very tender.
+    4.  Shred meat with two forks.
+    5.  Serve on buns with coleslaw.
+*   **Make-ahead:**  This is perfect for making ahead!  Cook the meat in the slow cooker the day before and store it in the fridge. Reheat and shred before serving.
+
+**Option 3: Pasta with Meat Sauce (Classic & Customizable)**
+
+*   **Why it works:**  Everyone loves pasta!  You can easily adjust the ingredients to your preferences and what you have on hand.
+*   **Ingredients:**
+    *   Pasta (spaghetti, penne, etc.)
+    *   Ground meat (beef, turkey, or a mix)
+    *   Onion, garlic
+    *   Canned crushed tomatoes or tomato sauce
+    *   Italian seasoning
+    *   Salt, pepper
+    *   Optional:  Veggies like carrots, bell peppers, mushrooms
+    *   Optional:  Grated Parmesan cheese
+*   **Instructions:**
+    1.  Cook pasta according to package directions.
+    2.  Brown ground meat in a pan. Drain off any excess grease.
+    3.  Add chopped onion and garlic and cook until softened.
+    4.  Add crushed tomatoes, Italian seasoning, salt, and pepper. Simmer for at least 15 minutes (longer is better for flavor).
+    5.  Stir in cooked pasta.
+    6.  Serve with Parmesan cheese.
+*   **Make-ahead:**  Make the meat sauce ahead of time and store it in the fridge. Cook the pasta just before serving.
+
+**To help me give you the *best* recommendation, tell me:**
+
+*   **What ingredients do you already have on hand?** (This helps me suggest something you can easily make.)
+*   **How much time do you have to cook?** (Quick and easy, or something that can simmer for a while?)
+*   **Are there any dietary restrictions or preferences?** (Vegetarian, allergies, dislikes?)
+*   **How many people are you feeding?** (This helps me adjust the quantities.)

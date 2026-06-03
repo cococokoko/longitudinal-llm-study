@@ -1,0 +1,67 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=1024
+Latency:   18549 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+The best way to start learning coding from scratch depends on your learning style, goals, and available resources. However, here's a comprehensive guide with a breakdown of steps, considerations, and resources:
+
+**1. Define Your Goals and Interests:**
+
+*   **What do you want to build?**  Do you want to create websites, mobile apps, games, data analysis tools, or something else?  Knowing your desired outcome will help you choose the right programming language and focus your learning.
+*   **Why do you want to learn to code?**  Is it for a career change, a hobby, to automate tasks, or something else?  Your motivation will fuel your learning journey.
+*   **What's your time commitment?**  How much time can you realistically dedicate to learning each week?  Be honest with yourself.
+
+**2. Choose Your First Programming Language:**
+
+This is a crucial decision.  Here are some popular choices and their strengths:
+
+*   **For Web Development (Front-End - what users see):**
+    *   **HTML (HyperText Markup Language):**  The foundation of all websites.  It structures the content (text, images, links).  Easy to learn initially.
+    *   **CSS (Cascading Style Sheets):**  Controls the visual presentation of a website (colors, fonts, layout).  Also relatively easy to learn.
+    *   **JavaScript:**  Adds interactivity and dynamic behavior to websites (animations, user input, etc.).  More complex than HTML/CSS, but incredibly powerful.
+*   **For Web Development (Back-End - what happens on the server):**
+    *   **Python:**  Versatile, beginner-friendly, and widely used for web development (with frameworks like Django and Flask), data science, and scripting.
+    *   **JavaScript (Node.js):**  Allows you to use JavaScript on the server-side, creating full-stack JavaScript applications.
+    *   **Ruby (with Ruby on Rails):**  Another popular choice for web development, known for its focus on developer happiness.
+    *   **PHP:**  A widely used language for web development, especially for content management systems (like WordPress).
+    *   **Java:**  A robust and widely used language, often used for enterprise-level web applications.
+*   **For Mobile App Development:**
+    *   **Swift (iOS):**  Apple's language for developing apps for iPhones, iPads, and Macs.
+    *   **Kotlin (Android):**  Google's preferred language for Android app development.
+    *   **JavaScript (React Native, Ionic):**  Allows you to build cross-platform mobile apps using JavaScript.
+    *   **Dart (Flutter):**  Google's language and framework for building cross-platform mobile apps.
+*   **For Data Science and Machine Learning:**
+    *   **Python:**  The dominant language in this field, with extensive libraries like NumPy, Pandas, Scikit-learn, and TensorFlow.
+    *   **R:**  Another popular language for statistical computing and data analysis.
+*   **For Game Development:**
+    *   **C# (with Unity):**  A popular choice for creating 2D and 3D games.
+    *   **C++:**  A powerful language often used for high-performance game development.
+    *   **Lua:**  A scripting language often used in game engines.
+    *   **JavaScript (with Phaser, PixiJS):**  For web-based games.
+*   **For General-Purpose Programming and System Administration:**
+    *   **Python:**  Excellent for scripting, automation, and general-purpose tasks.
+    *   **Bash/Shell Scripting:**  Essential for Linux/Unix system administration.
+
+**Recommendation for Beginners:**
+
+*   **Start with HTML, CSS, and JavaScript (for web development):**  This is a great starting point because you can see immediate results in your web browser.  It's also a valuable skill set.
+*   **Alternatively, start with Python:**  Python is known for its readability and beginner-friendliness.  It's a versatile language that can be used for many different purposes.
+
+**3. Choose Your Learning Resources:**
+
+There are countless resources available.  Here are some of the best:
+
+*   **Online Courses:**
+    *   **FreeCodeCamp.org:**  Offers a comprehensive, project-based curriculum for web development, data science, and more.  Excellent for beginners.
+    *   **Codecademy:**  Interactive coding lessons with a focus on practical exercises.  Good for learning the basics.
+    *   **Khan Academy:**  Provides free, high-quality video tutorials and exercises on a variety of programming topics.
+    *   **Udacity:**  Offers

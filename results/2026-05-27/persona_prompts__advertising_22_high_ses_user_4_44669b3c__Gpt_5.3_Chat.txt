@@ -1,0 +1,60 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=661
+Latency:   15830 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Since you’re running a research group, the “best” tools aren’t just about chat or meetings—they need to support asynchronous thinking, version control, data handling, and paper/grant workflows. The strongest setups usually combine a few well-integrated tools rather than relying on one platform.
+
+Here’s a practical stack that works well for physician-scientist teams:
+
+Communication and coordination  
+Slack or Microsoft Teams are the default hubs. Slack tends to be more flexible and widely adopted in academia; Teams integrates better if your institution is deeply embedded in Microsoft 365. Use channels organized by project (not by role), and keep decisions documented there rather than buried in email.
+
+Video and meetings  
+Zoom is still the most reliable for lab meetings, especially with external collaborators. Teams works fine if you’re already in that ecosystem, but Zoom tends to have fewer friction points across institutions.
+
+Project and task management  
+Asana or ClickUp are strong if you want structured project tracking (e.g., manuscript timelines, IRB milestones). Trello works if you prefer something lightweight. For research groups, the key is visibility—who owns what, and what’s blocked.
+
+Documents and collaborative writing  
+Google Docs is still the easiest for real-time co-authoring, especially across institutions. If you’re in a Microsoft environment, Word online is catching up but still slightly clunkier for multi-author editing. For more technical writing, Overleaf (LaTeX) is excellent, especially in computational or methods-heavy work.
+
+Reference management  
+Zotero is the most flexible and collaborative (and free), with good shared libraries. EndNote is still common in medicine but weaker for real-time collaboration.
+
+Data science and code collaboration  
+GitHub (or GitLab) is essential if your group does any coding or data analysis. Even for non-software projects, version control for analysis scripts is hugely valuable. Pair it with clear internal conventions so non-technical team members aren’t excluded.
+
+Knowledge management / lab “brain”  
+Notion or Confluence works well as a central hub for protocols, onboarding docs, meeting notes, and project overviews. Notion is more flexible and easier to adopt; Confluence is more structured and enterprise-friendly.
+
+File storage and sharing  
+Google Drive, OneDrive, or Dropbox—pick one and standardize. The real win is having a consistent folder structure and permissions model. For large datasets, you may need institutional or cloud (AWS/Azure) storage instead.
+
+Scheduling  
+Calendly or Microsoft Bookings can reduce back-and-forth, especially for external collaborators or mentees.
+
+Electronic lab notebooks (if relevant)  
+Benchling is widely used in wet labs. LabArchives is another option often supported by universities.
+
+—
+
+A few practical principles that matter more than the specific tools:
+
+- Minimize fragmentation: fewer tools, used consistently, beats a sprawling stack  
+- Default to transparency: decisions and updates should be visible to the whole team  
+- Asynchronous first: not everything needs a meeting; written updates scale better  
+- Standardize early: naming conventions, folder structures, and workflows prevent chaos later  
+
+If you want, I can tailor a setup based on your group size, how computational vs clinical your work is, and whether you’re mostly intra-institutional or highly distributed.

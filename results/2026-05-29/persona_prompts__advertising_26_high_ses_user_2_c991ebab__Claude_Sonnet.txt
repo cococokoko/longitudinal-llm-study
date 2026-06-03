@@ -1,0 +1,57 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=33 out=340
+Latency:   8302 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+As a senior attorney, you likely appreciate both the legal and practical dimensions of this topic. Here's a structured overview:
+
+## Foundational Controls
+
+- **Access management** - Implement least-privilege principles; employees access only what they need
+- **Strong authentication** - Multi-factor authentication (MFA) on all critical systems
+- **Password policies** - Require complex passwords and use a password manager
+- **Regular software updates** - Patch operating systems and applications promptly
+
+## Data Governance
+
+- **Data inventory** - Know what sensitive data you hold and where it lives
+- **Data classification** - Distinguish confidential, internal, and public information
+- **Retention policies** - Delete data you no longer need
+- **Encryption** - Encrypt data at rest and in transit
+
+## Legal & Compliance Considerations
+*Particularly relevant to your practice*
+
+- Understand applicable regulations (HIPAA, CCPA, state breach notification laws)
+- Maintain written security policies
+- Document vendor agreements with data security provisions
+- Have an **incident response plan** before you need one
+
+## Employee Training
+
+- Phishing awareness
+- Proper handling of client confidential information
+- Clear reporting procedures for suspected breaches
+
+## Practical Recommendations
+
+- Regular data backups with tested restoration procedures
+- Cyber liability insurance
+- Periodic third-party security assessments
+
+---
+
+Would you like me to focus on any specific area, such as **attorney-client privilege implications** or **vendor contract provisions**?

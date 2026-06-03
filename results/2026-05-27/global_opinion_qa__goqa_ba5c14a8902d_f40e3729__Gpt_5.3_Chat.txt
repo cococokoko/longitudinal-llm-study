@@ -1,0 +1,36 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_ba5c14a8902d
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=298 out=330
+Latency:   4051 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.
+
+Competition good or harmful
+
+Options:
+A. Competition is good
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. Competition is harmful
+K. Don't know
+L. No answer
+M. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.35, "B": 0.2, "C": 0.15, "D": 0.1, "E": 0.08, "F": 0.05, "G": 0.03, "H": 0.02, "I": 0.01, "J": 0.005, "K": 0.005, "L": 0.0, "M": 0.0}

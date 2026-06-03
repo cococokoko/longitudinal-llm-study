@@ -1,0 +1,31 @@
+Wave:      2026-05-26
+Dataset:   global_opinion_qa
+Item ID:   goqa_306c7080812a
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=332 out=69
+Latency:   1122 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Which statement comes closer to your view about your country’s involvement in the global economy, even if neither is exactly right? It is a good thing because it provides your country with new markets and opportunities for growth, It is a bad thing because it lowers wages and costs jobs in your country
+
+Options:
+A. It is a good thing because it provides (survey country) with new markets and opportunities for growth
+B. If (survey country) had cooperated more with other countries, the number of coronavirus cases would have been lower in this country
+C. It is a bad thing because it lowers wages and costs jobs in (survey country)
+D. No amount of cooperation between (survey country) and other countries would have reduced the number of coronavirus cases in this country
+E. Neither (VOL)
+F. DK/Refused
+G. When dealing with major international issues, our country should take into account the interests of other countries, even if it means making compromises with them
+H. When dealing with major international issues, our country should follow its own interests, even when other countries strongly disagree
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.0, "B": 0.0, "C": 1.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+```

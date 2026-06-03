@@ -1,0 +1,69 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_19_high_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=463
+Latency:   9499 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+the best books to learn Design and Analysis of Algorithms I in 2023
+
+── Response ────────────────────────────────────────────────────────
+# Best Books for Design and Analysis of Algorithms (2023)
+
+## 🏆 Top Tier / Essential
+
+### 1. **Introduction to Algorithms (CLRS)**
+- Cormen, Leiserson, Rivest, Stein — 4th Edition (2022)
+- The **gold standard** for algorithm courses
+- Rigorous mathematical treatment, comprehensive coverage
+- Best for: formal proofs, pseudocode, broad coverage
+
+### 2. **Algorithm Design** — Kleinberg & Tardos
+- Excellent narrative and intuition-building
+- Strong on **greedy, DP, network flow, NP-completeness**
+- Best for: understanding *why* algorithms work
+
+---
+
+## 📘 Strong Alternatives
+
+### 3. **Algorithms** — Dasgupta, Papadimitriou, Vazirani
+- Free PDF available legally
+- Concise, elegant, mathematically mature
+- Great supplementary text
+
+### 4. **The Algorithm Design Manual** — Skiena (3rd Ed.)
+- Practical perspective with real-world war stories
+- Excellent **catalog of problems**
+- Best for: applied intuition
+
+---
+
+## 🎯 Topic-Specific Recommendations
+
+| Topic | Recommended Resource |
+|-------|---------------------|
+| Graph Algorithms | CLRS + Kleinberg |
+| Dynamic Programming | Kleinberg & Tardos |
+| Complexity Theory | Sipser's *Theory of Computation* |
+| Randomized Algorithms | Mitzenmacher & Upfal |
+| Proofs/Rigor | CLRS 4th Ed. |
+
+---
+
+## 💡 Suggested Approach for a Course
+
+> **Primary:** CLRS (4th Ed.)
+> **Supplement:** Kleinberg & Tardos for intuition
+> **Practice:** Skiena for problem-solving perspective
+
+---
+
+Would you like recommendations tailored to a **specific syllabus** or **research area**?

@@ -1,0 +1,85 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=567
+Latency:   12916 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+## Foundation Basics
+
+### Access Control
+- **Use strong, unique passwords** (12+ characters) for all accounts
+- Implement **multi-factor authentication (MFA)** everywhere possible
+- Follow **least privilege principle** - give employees only the access they need
+- Remove access immediately when employees leave
+
+### Software & Systems
+- Keep **all software updated** promptly (patches fix security vulnerabilities)
+- Use **reputable antivirus/anti-malware** software
+- Enable **automatic updates** where practical
+- Replace outdated systems that no longer receive security updates
+
+## Data Protection
+
+### Backups
+- Follow the **3-2-1 rule**: 3 copies, 2 different media types, 1 offsite
+- **Test your backups regularly** - untested backups often fail when needed
+- Consider automated cloud backup solutions
+
+### Encryption
+- Encrypt sensitive data **at rest and in transit**
+- Use HTTPS for any web presence
+- Encrypt laptops and mobile devices
+
+## Network Security
+- Use a **business-grade firewall**
+- Separate **guest WiFi from business networks**
+- Consider a **VPN** for remote workers
+- Disable unused network services
+
+## Human Factors (Often Overlooked)
+
+### Employee Training
+- Train staff to **recognize phishing emails**
+- Establish clear **incident reporting procedures**
+- Create a written **security policy**
+- Conduct regular refresher training
+
+### Common Threats to Address
+- Phishing attacks
+- Social engineering
+- Ransomware
+- Insider threats
+
+## Practical Priorities
+
+| Priority | Action | Cost |
+|----------|--------|------|
+| High | Enable MFA | Free-Low |
+| High | Regular backups | Low |
+| High | Employee training | Low |
+| Medium | Password manager | Low |
+| Medium | Endpoint protection | Moderate |
+
+## Compliance Considerations
+- Know which regulations apply to you (**GDPR, HIPAA, PCI-DSS**, etc.)
+- Document your security practices
+- Have a **breach response plan** written before you need it
+
+## Affordable Resources
+- **NIST Small Business Cybersecurity Corner** (free guidance)
+- **CISA free tools and resources**
+- Consider **cyber liability insurance**
+
+---
+
+**Key mindset:** Security doesn't require a large budget - consistency and basic hygiene prevent most attacks. Would you like me to go deeper on any specific area?

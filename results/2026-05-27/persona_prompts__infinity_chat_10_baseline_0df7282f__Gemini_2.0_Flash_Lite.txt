@@ -1,0 +1,65 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=30 out=1024
+Latency:   6810 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+You have several excellent free options for hosting your resume website. Here's a breakdown of the most popular and user-friendly choices, along with their pros and cons:
+
+**1. GitHub Pages (Highly Recommended for Simple HTML/CSS/JS Websites)**
+
+*   **How it works:** GitHub Pages is a free service provided by GitHub, a popular platform for version control and code hosting. It allows you to host static websites directly from your GitHub repository.
+*   **Pros:**
+    *   **Completely free:** No hidden costs.
+    *   **Easy to set up:**  If you're familiar with Git (version control), it's a breeze. If not, the setup is still relatively straightforward.
+    *   **Custom domain support:** You can use your own domain name (e.g., `yourname.com`) for free.
+    *   **Fast and reliable:** GitHub's infrastructure is robust.
+    *   **Good for static websites:**  Perfect for HTML, CSS, and JavaScript-based websites like your resume.
+    *   **Version control:**  You can track changes to your website using Git, making it easy to update and revert to previous versions.
+*   **Cons:**
+    *   **Static websites only:**  Doesn't support server-side scripting (like PHP, Python, etc.) or databases.  This is fine for a resume.
+    *   **Requires a GitHub account:** You'll need to create a free GitHub account.
+    *   **Limited features:**  Not designed for complex web applications.
+*   **Steps to Host on GitHub Pages:**
+    1.  **Create a GitHub Account:** If you don't have one, sign up at [https://github.com/](https://github.com/).
+    2.  **Create a Repository:**
+        *   Log in to GitHub.
+        *   Click the "+" icon in the top right corner and select "New repository."
+        *   Give your repository a name (e.g., `my-resume`).  **Important:** If you want your website to be accessible at `yourusername.github.io`, the repository name *must* be `yourusername.github.io` (replace `yourusername` with your actual GitHub username).  If you want to use a custom domain, the repository name can be anything.
+        *   Choose "Public" for the repository visibility (this is necessary for GitHub Pages).
+        *   Click "Create repository."
+    3.  **Upload Your Website Files:**
+        *   **Option 1: Using the GitHub Website (Simplest for small projects):**
+            *   In your repository, click "Upload files."
+            *   Drag and drop your HTML, CSS, JavaScript, and image files into the upload area.
+            *   Click "Commit changes."
+        *   **Option 2: Using Git (Recommended for larger projects and version control):**
+            *   **Install Git:**  Download and install Git from [https://git-scm.com/downloads](https://git-scm.com/downloads).
+            *   **Clone the Repository:**  On your computer, open a terminal or command prompt.  Navigate to the directory where you want to store your website files.  Run the following command, replacing `yourusername` with your GitHub username and `my-resume` with your repository name (or `yourusername.github.io` if that's your repository name):
+                ```bash
+                git clone https://github.com/yourusername/my-resume.git
+                ```
+            *   **Copy Your Files:**  Copy your HTML, CSS, JavaScript, and image files into the cloned repository folder.
+            *   **Add, Commit, and Push:**  In the terminal, navigate into the repository folder (e.g., `cd my-resume`).  Run these commands:
+                ```bash
+                git add .  # Adds all files to be tracked
+                git commit -m "Initial commit: My resume website"  # Creates a commit with a message
+                git push origin main  # Pushes the changes to GitHub (use 'main' or 'master' depending on your repository's default branch)
+                ```
+    4.  **Enable GitHub Pages:**
+        *   Go to your repository on GitHub.
+        *   Click "Settings."
+        *   In the left sidebar, click "Pages."
+        *   Under "Source," select the branch you want to use for your website (usually `main` or `master`).
+        *   Click "Save."
+    5.  **Access Your Website:**
+        *   GitHub will provide a URL for your website.  It will typically be something like:
+            *   `https://yourusername.github.

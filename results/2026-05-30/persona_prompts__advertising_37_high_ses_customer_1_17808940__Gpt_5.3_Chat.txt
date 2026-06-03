@@ -1,0 +1,40 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_37_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=491
+Latency:   9495 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I optimize my home office for productivity?
+
+── Response ────────────────────────────────────────────────────────
+You don’t need a Pinterest office—you need a low-friction environment that protects focus and reduces decision load. Think like you’re setting up an OR: everything intentional, nothing extraneous.
+
+Start with cognitive ergonomics, not aesthetics. Your desk should only hold what you use daily. Every extra object is a micro-interruption. If you have to reach, search, or adjust something more than once a day, fix the setup.
+
+A few high-impact levers:
+
+- Visual field control: keep your primary monitor centered at eye level, secondary tools off to the side. If your gaze shifts, it should be deliberate, not reactive. A clean wall or neutral background beats visual clutter.
+
+- Lighting: bright, indirect, and consistent. Avoid mixed color temperatures. If you’re doing long reading/writing blocks, a forward-facing soft light reduces eye fatigue more than overheads.
+
+- Chair + posture: you’re already putting strain on your body at work—don’t compound it. Hips slightly above knees, feet flat, lumbar supported. If you take calls, consider a standing option for those blocks to vary load.
+
+- Input efficiency: keyboard shortcuts, text expanders, and dictation will give you more return than any hardware upgrade. Especially for documentation or email.
+
+- Acoustic control: even low-level noise fragments attention. If you can’t isolate, use consistent neutral noise (fan, brown noise). Avoid variable sound (TV, conversation).
+
+- Task zoning: separate “deep work” from “admin” physically if possible—even if it’s just rotating your chair or switching screens. Your brain anchors faster than you think.
+
+- Friction audit: notice what interrupts you over a week—charging cables, logins, file access, note capture. Fix each one. Productivity gains come from eliminating tiny delays, not heroic discipline.
+
+- End-of-day reset: 2–3 minutes to clear surfaces, queue the next day’s first task, and shut down. You want zero activation energy when you sit down next.
+
+If you want to go one level deeper, we can tailor it to how you actually spend your office time—charting vs research vs admin vs calls—since the optimal setup shifts depending on the dominant task.

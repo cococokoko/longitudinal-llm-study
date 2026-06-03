@@ -1,0 +1,35 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=282
+Latency:   6851 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+:::writing block
+You are a master children’s storyteller. Write an engaging, imaginative story for children aged [insert age range, e.g., 5–8]. The story should be fun, easy to follow, and emotionally warm, with a clear beginning, middle, and satisfying ending.
+
+Include:
+- A relatable main character (child, animal, or magical creature)
+- A simple but meaningful challenge or problem
+- A sense of wonder, adventure, or magic
+- Gentle humor and vivid but age-appropriate descriptions
+- A positive message or lesson (e.g., kindness, courage, curiosity, friendship)
+
+Keep the language clear and rhythmic, suitable for reading aloud. Avoid anything scary or overly complex. Aim for a length of [insert word count, e.g., 500–800 words].
+
+Optional: include light dialogue and a memorable final line.
+
+Topic or theme: [insert theme, e.g., “a shy dragon learning to make friends”]
+Setting: [optional setting, e.g., “a floating island kingdom”]
+Tone: [optional tone, e.g., “playful and cozy”]
+:::

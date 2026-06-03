@@ -1,0 +1,39 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=437
+Latency:   7262 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+You don’t need to “become a developer” to get real value from coding. The fastest path for someone at your level is to treat it as a leverage tool—something that helps you think, prototype, and interrogate problems more sharply.
+
+Start with one clear use case, not a language. For example: automating slide/report prep, analyzing messy client data, building quick prototypes, or understanding what your tech teams are actually doing. Pick one that shows up in your week.
+
+Then learn just enough Python to serve that use case. Python is the right starting point: simple syntax, huge ecosystem, and it’s what most data, AI, and automation workflows sit on. Don’t get stuck in “courses first.” Do this instead:
+
+- Spend a couple of hours learning the absolute basics (variables, loops, functions). Any intro tutorial will do.
+- Immediately apply it to something real from your work. Even a small script that cleans a spreadsheet or summarizes text is enough.
+- Use tools like ChatGPT or Copilot as a coding partner. Describe what you want, read the code it produces, tweak it, break it, fix it. That feedback loop is where you learn fastest.
+
+Once you’re comfortable, layer in a few high-leverage libraries depending on your needs:
+- pandas for data work
+- requests for pulling data from APIs
+- basic visualization (matplotlib or plotly)
+- possibly a lightweight web app tool like Streamlit if you want to demo things to clients
+
+Also, learn a bit of SQL. You’ll hit databases constantly in consulting, and even basic SQL makes you far more effective with data teams.
+
+What matters more than syntax is developing “computational instinct”—breaking problems into steps a machine can execute. That skill transfers across tools and makes you much sharper in tech-heavy engagements.
+
+One thing to avoid: don’t try to learn everything or follow a long, abstract curriculum. You’ll lose momentum. Tie everything to a real problem, keep cycles short, and accept messy early code.
+
+If you want, I can map this to a 4–6 week plan tailored to the kind of work you do.

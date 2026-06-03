@@ -1,0 +1,27 @@
+Wave:      2026-05-26
+Dataset:   global_opinion_qa
+Item ID:   goqa_532dafa7a811
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=138 out=37
+Latency:   1124 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Turning to another subject, would you say you are very excited, somewhat excited, not too excited or not at all excited about the 2010 World Cup soccer tournament?
+
+Options:
+A. Very excited
+B. Somewhat excited
+C. Not too excited
+D. Not at all excited
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.0, "B": 0.0, "C": 1.0, "D": 0.0}
+```

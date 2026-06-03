@@ -1,0 +1,53 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_low_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=370
+Latency:   9362 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+# Rare & Lesser-Known Tools/Methods in Cybersecurity
+
+## 🔍 Reconnaissance & OSINT
+- **Maltego** - Advanced relationship mapping
+- **SpiderFoot** - Automated OSINT collection
+- **Recon-ng** - Web reconnaissance framework
+- **theHarvester** - Email/subdomain harvesting
+
+## 🛠️ Exploitation & Testing
+- **Covenant** - .NET-based C2 framework
+- **Villain** - Multi-session handler
+- **Sliver** - Cross-platform adversary simulation
+- **SILENTTRINITY** - Python-based post-exploitation
+
+## 🔬 Forensics & Analysis
+- **Volatility** - Memory forensics
+- **Autopsy** - Digital forensics platform
+- **Velociraptor** - Endpoint visibility
+- **RITA** - Network traffic analysis
+
+## 🕵️ Evasion Techniques
+- **Living off the Land (LOLBins)** - Using legitimate system tools
+- **Process hollowing** - Code injection method
+- **DNS tunneling** - Covert data exfiltration
+
+## 📡 Network Analysis
+- **Zeek (Bro)** - Network security monitor
+- **NetworkMiner** - Passive network sniffer
+- **Scapy** - Packet manipulation
+
+## ⚠️ Important Notes
+- Use only in **authorized environments**
+- Many require **certifications/legal permission**
+- Always follow **responsible disclosure**
+
+Would you like deeper detail on any specific category?

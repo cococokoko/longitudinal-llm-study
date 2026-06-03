@@ -1,0 +1,45 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=22 out=291
+Latency:   6507 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me some examples of websites where users can select a default landing page?
+
+── Response ────────────────────────────────────────────────────────
+Here are some examples of websites where users can select or customize their default landing page:
+
+## Social Media / News
+- **Reddit** - Users can set their preferred feed (Home, Popular, All) as default
+- **Facebook** - Some options for default tab on mobile
+
+## Search Engines / Browsers
+- **Google** - Can be set as browser homepage
+- **Yahoo** - Allows customization of their homepage content
+
+## E-Commerce
+- **Amazon** - Can sometimes default to specific departments
+- **eBay** - Users can customize their homepage view
+
+## Productivity / Dashboards
+- **Notion** - Users can pin a default workspace or page
+- **Salesforce** - Users can set a preferred default home tab
+- **HubSpot** - Dashboard preferences can be configured
+
+## Financial
+- **Online banking portals** (e.g., Chase, Bank of America) - Often let users choose a default account view
+
+## Content Platforms
+- **YouTube** - Can choose between Subscriptions or Home as default
+- **Netflix** - Profile-based landing preferences
+
+## Enterprise Software
+- **Microsoft SharePoint** - Admins/users can set default landing pages
+- **SAP** - Users can configure default screens
+
+Would you like more details about any specific type of website or use case?

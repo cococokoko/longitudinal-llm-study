@@ -1,0 +1,109 @@
+Wave:      2026-05-18
+Dataset:   infinite_chats_taxonomy
+Item ID:   147ffa0ce9ff1e85d3603b47ca6ecb48
+Model:     Gemini 2.0 Flash Lite (openrouter)
+Tokens:    in=16 out=1024
+Latency:   6587 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+what kind of information can be pulled out of tax documents for a tax analysis page
+
+── Response ────────────────────────────────────────────────────────
+Tax documents are a treasure trove of financial information that can be used for a comprehensive tax analysis. Here's a breakdown of the types of information you can pull out, categorized for clarity:
+
+**I. Income & Revenue Information:**
+
+*   **Gross Income:**
+    *   Wages, salaries, tips (Form W-2)
+    *   Interest income (Form 1099-INT)
+    *   Dividend income (Form 1099-DIV)
+    *   Business income (Schedule C, Form 1065, Form 1120, Form 1120-S)
+    *   Capital gains and losses (Schedule D, Form 1099-B)
+    *   Rental income (Schedule E)
+    *   Social Security benefits (Form SSA-1099)
+    *   Unemployment compensation (Form 1099-G)
+    *   Alimony received (if applicable)
+    *   Other income (Form 1099-MISC/NEC, etc.)
+*   **Adjustments to Income (Above-the-Line Deductions):**
+    *   Educator expenses
+    *   IRA contributions (traditional)
+    *   Student loan interest
+    *   Health savings account (HSA) deduction
+    *   Moving expenses (if applicable)
+    *   Self-employment tax
+    *   Self-employed health insurance deduction
+    *   Alimony paid (if applicable)
+    *   Other adjustments (e.g., jury duty pay turned over to employer)
+
+**II. Deductions & Credits:**
+
+*   **Itemized Deductions (Schedule A):**
+    *   Medical expenses (subject to AGI limitation)
+    *   State and local taxes (SALT) (limited)
+    *   Home mortgage interest
+    *   Charitable contributions (cash and non-cash)
+    *   Casualty and theft losses (subject to limitations)
+    *   Other itemized deductions (e.g., gambling losses)
+*   **Standard Deduction:** (Based on filing status)
+*   **Tax Credits:**
+    *   Child tax credit
+    *   Child and dependent care credit
+    *   Education credits (American Opportunity Tax Credit, Lifetime Learning Credit)
+    *   Retirement savings contributions credit (Saver's Credit)
+    *   Residential energy credits
+    *   Earned Income Tax Credit (EITC)
+    *   Premium Tax Credit (for health insurance)
+    *   Foreign tax credit
+    *   General Business Credits (for businesses)
+
+**III. Business-Specific Information (if applicable):**
+
+*   **Business Expenses:**
+    *   Cost of goods sold (COGS)
+    *   Advertising
+    *   Car and truck expenses
+    *   Commissions
+    *   Depreciation
+    *   Employee benefits
+    *   Insurance
+    *   Interest on business loans
+    *   Legal and professional fees
+    *   Office expenses
+    *   Rent or lease expenses
+    *   Repairs and maintenance
+    *   Supplies
+    *   Taxes and licenses
+    *   Travel expenses
+    *   Utilities
+    *   Wages
+    *   Other business expenses
+*   **Business Income/Loss:** (From Schedule C, K-1s, etc.)
+*   **Depreciation & Amortization Schedules:**
+*   **Qualified Business Income (QBI) Deduction Information (Form 8995 or 8995-A):**
+    *   QBI amount
+    *   Qualified property
+    *   Wages
+    *   UBIA (Unadjusted Basis Immediately After Acquisition) of qualified property
+*   **Entity Information:** (EIN, entity type, etc.)
+
+**IV. Tax Liability & Payments:**
+
+*   **Taxable Income:** (Calculated after all deductions are applied)
+*   **Tax Liability:** (Calculated based on the tax brackets for the filing status)
+*   **Tax Payments:**
+    *   Federal income tax withheld (Form W-2, 1099-R)
+    *   Estimated tax payments (Form 1040-ES)
+    *   Prior year overpayment applied to current year
+    *   Credits applied
+*   **Refund or Amount Owed:**
+
+**V. Financial Account Information:**
+
+*   **Bank Account Information:** (For direct deposit of refunds or payments)
+*   **Investment Account Information:** (For transactions reported on 1099-B, 1099-DIV, etc.)
+
+**VI. Other Relevant Information:**
+
+*   **Filing Status:** (Single, Married Filing Jointly, etc.)
+*   **Depend

@@ -1,0 +1,34 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=33 out=441
+Latency:   9743 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+If your Wi‑Fi feels slow or unreliable, the fixes usually come down to placement, interference, and hardware limits. Here’s a practical way to tighten it up without overcomplicating things:
+
+Start with the router itself. Put it out in the open, roughly central in the home, and elevated (a shelf is better than the floor). Avoid closets, basements, and being tucked behind a TV. Wi‑Fi hates thick walls, metal, and water (aquariums, pipes), so even a small reposition can make a noticeable difference.
+
+Check your band and channels. Use 5 GHz (or 6 GHz if your gear supports Wi‑Fi 6E/7) for speed and low congestion, especially in dense neighborhoods. Use 2.4 GHz only for long range or older devices. Many routers auto-select channels, but if yours doesn’t, switching to a less crowded channel can help.
+
+Upgrade hardware if it’s more than a few years old. A modern Wi‑Fi 6 or 7 router handles multiple devices far better and reduces latency under load. If your place is larger or has multiple floors, a mesh system is usually better than a single powerful router—it gives consistent coverage instead of strong/weak zones.
+
+Mind device load. Streaming boxes, cloud backups, and security cameras can quietly eat bandwidth. If something critical (like video calls or remote access) needs stability, use Ethernet for that device or enable QoS (quality of service) on the router to prioritize it.
+
+Update firmware. It’s boring but matters—router updates often improve stability and performance.
+
+Check your internet plan versus reality. Run a wired speed test directly from the modem/router. If speeds are low there, the issue is your ISP, not Wi‑Fi. If wired is fast but Wi‑Fi is slow, it’s your local setup.
+
+If you want to go one step further: add wired access points (or a mesh system with wired backhaul). That’s the most reliable way to get “it just works” coverage across a home.
+
+If you tell me your home size, layout, and current router, I can suggest a more tailored setup.

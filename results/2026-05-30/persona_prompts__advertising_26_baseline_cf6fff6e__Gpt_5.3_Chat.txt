@@ -1,0 +1,77 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=666
+Latency:   10165 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Good question—small businesses are actually prime targets because attackers assume defenses are weaker. The goal isn’t perfection, it’s reducing easy ways in.
+
+Here are the practices that give you the biggest security payoff without huge cost:
+
+**1. Lock down access (identity is your perimeter now)**
+- Use strong, unique passwords for everything (a password manager is essential)
+- Turn on multi-factor authentication (MFA) everywhere possible, especially email, banking, and cloud tools
+- Give employees only the access they need (principle of least privilege)
+- Immediately remove access when someone leaves
+
+**2. Keep systems updated**
+- Turn on automatic updates for operating systems, apps, and plugins
+- Replace unsupported or end-of-life software and hardware
+- Don’t ignore firmware updates on routers, firewalls, and printers
+
+**3. Backups are your safety net**
+- Follow the 3-2-1 rule: 3 copies, 2 different media types, 1 offsite (cloud works well)
+- Make backups automatic, not manual
+- Test restoring data regularly—backups that don’t restore are useless
+- Protect backups from ransomware (immutable or versioned storage)
+
+**4. Secure your network**
+- Use a business-grade router/firewall (not default ISP settings)
+- Change default passwords on all devices
+- Segment networks (e.g., separate guest Wi-Fi from internal systems)
+- Use VPNs for remote access instead of exposing systems directly
+
+**5. Train your people (this is huge)**
+- Teach employees how to spot phishing emails and scams
+- Run occasional simulated phishing tests if possible
+- Make it easy to report suspicious activity without fear of blame
+
+**6. Protect devices**
+- Require screen locks and device encryption (BitLocker, FileVault)
+- Use endpoint protection (modern antivirus/EDR tools)
+- Enable remote wipe for lost/stolen devices
+- Don’t allow unmanaged personal devices to access sensitive systems without controls
+
+**7. Secure your data**
+- Classify what’s sensitive (customer info, financials, etc.)
+- Encrypt sensitive data both in transit (HTTPS) and at rest
+- Limit where sensitive data is stored and who can download it
+- Avoid storing data you don’t actually need
+
+**8. Choose vendors carefully**
+- Use reputable cloud providers with strong security practices
+- Review what access third-party apps request
+- Remove unused integrations and accounts
+
+**9. Monitor and respond**
+- Turn on logging where possible (especially for admin activity)
+- Set alerts for unusual behavior (logins from new locations, mass downloads)
+- Have a simple incident response plan: who to contact, what to shut down, how to communicate
+
+**10. Have basic policies in place**
+- Acceptable use policy (what employees can/can’t do)
+- Password and device policy
+- Data handling guidelines
+- These don’t need to be long—clarity beats complexity
+
+If you want a simple starting point: enable MFA everywhere, use a password manager, automate backups, and train your staff on phishing. Those four steps alone eliminate a huge percentage of real-world attacks.
+
+If you tell me your business type (e.g., retail, SaaS, healthcare), I can tailor this into a more specific checklist.

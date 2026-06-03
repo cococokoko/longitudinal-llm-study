@@ -1,0 +1,59 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_high_ses_user_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=48 out=307
+Latency:   6868 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Here are some great **free options** to host your HTML resume website:
+
+## Easiest Options
+
+### **GitHub Pages** *(Most recommended)*
+- Create a free account at github.com
+- Upload your HTML files to a repository
+- Enable GitHub Pages in settings
+- Get a free URL like `yourname.github.io`
+
+### **Netlify**
+- Go to netlify.com
+- Simply **drag and drop** your folder of HTML files
+- Get a free URL instantly
+- Very beginner friendly
+
+### **Google Drive** *(Simplest but limited)*
+- Upload files to Google Drive
+- Less ideal since Google deprecated direct hosting
+
+---
+
+## Quick Comparison
+
+| Option | Difficulty | Custom Domain |
+|--------|-----------|---------------|
+| Netlify | Very Easy | Yes |
+| GitHub Pages | Easy | Yes |
+| Vercel | Easy | Yes |
+
+---
+
+## My Recommendation
+
+**Netlify** is probably the fastest for your situation:
+1. Go to **netlify.com**
+2. Sign up free
+3. Drag your HTML folder onto their dashboard
+4. Share the link immediately
+
+You can also later connect a **custom domain** (like `yourname.com`) for a more professional appearance, which typically costs around **$10-15/year**.
+
+Would you like more detail on any of these options?

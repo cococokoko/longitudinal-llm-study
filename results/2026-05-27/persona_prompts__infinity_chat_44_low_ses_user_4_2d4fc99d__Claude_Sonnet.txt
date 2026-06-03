@@ -1,0 +1,38 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_low_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=42 out=273
+Latency:   6244 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here are three questions that can help evaluate if something is morally right or wrong, particularly useful in a healthcare setting:
+
+---
+
+**1. Does it respect the person's dignity and autonomy?**
+Consider whether the action treats the patient as a person worthy of respect, and whether it honors their right to make informed decisions about their own care.
+
+**2. Would I be comfortable if others could see exactly what I am doing and why?**
+This transparency test asks whether your action and your reasoning behind it could withstand open scrutiny from colleagues, supervisors, patients, and their families.
+
+**3. Does it cause unnecessary harm or does it genuinely serve the patient's wellbeing?**
+Consider whether the action minimizes harm and whether your primary motivation is the patient's best interest rather than convenience or other factors.
+
+---
+
+These three questions roughly align with core principles commonly used in healthcare ethics:
+
+- **Autonomy** - respecting patient rights
+- **Accountability** - acting with integrity
+- **Beneficence/Non-maleficence** - doing good and avoiding harm
+
+They can serve as a quick mental checklist when you face a difficult situation on the floor. Would you like me to refine these for a specific type of situation you encounter?

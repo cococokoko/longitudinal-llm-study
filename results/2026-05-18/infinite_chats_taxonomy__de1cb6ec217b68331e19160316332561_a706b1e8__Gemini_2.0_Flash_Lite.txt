@@ -1,0 +1,88 @@
+Wave:      2026-05-18
+Dataset:   infinite_chats_taxonomy
+Item ID:   de1cb6ec217b68331e19160316332561
+Model:     Gemini 2.0 Flash Lite (openrouter)
+Tokens:    in=34 out=1024
+Latency:   5889 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Hi give me a python code to give me an analysis of nifty 50 considering OI data, Fii & DII data which I can run daily before market opens
+
+── Response ────────────────────────────────────────────────────────
+```python
+import yfinance as yf
+import pandas as pd
+import requests  # For fetching data from external URLs
+from datetime import datetime, timedelta
+
+# --- Configuration ---
+NIFTY_SYMBOL = "^NSEI"  # Nifty 50 symbol in Yahoo Finance
+# FII and DII data source (example, you'll need to find a reliable source)
+# Replace these with URLs from a reliable source.  These are just examples and might not work.
+FII_DII_URL = "https://www.nseindia.com/api/market-data-stats?key=fii_dii_data"  # Example (check if it works)
+# Replace with a source for OI data (example, also might not work)
+OI_DATA_URL = "https://www.nseindia.com/api/option-chain-indices?symbol=NIFTY"  # Example (check if it works)  (or use a paid API)
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Referer': 'https://www.nseindia.com/',  # Important for some APIs
+}
+
+
+def fetch_nifty_data(symbol):
+    """Fetches historical Nifty data using yfinance."""
+    try:
+        nifty = yf.Ticker(symbol)
+        today = datetime.now().date()
+        # Fetch data for the last few days (adjust as needed)
+        history = nifty.history(period="5d")  # Get data for the last 5 days
+        return history
+    except Exception as e:
+        print(f"Error fetching Nifty data: {e}")
+        return None
+
+
+def fetch_fii_dii_data(url, headers):
+    """Fetches FII/DII data from a given URL."""
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
+        data = response.json()  # Assuming the data is in JSON format
+        # Process the data to extract FII/DII figures.  This is highly dependent on the
+        # structure of the JSON response from your chosen URL.  Example processing:
+        if 'data' in data and len(data['data']) > 0:
+            fii_buy = data['data'][0]['fiiBuy']   # Adjust these keys based on the API response
+            fii_sell = data['data'][0]['fiiSell']
+            dii_buy = data['data'][0]['diiBuy']
+            dii_sell = data['data'][0]['diiSell']
+            return {
+                'fii_buy': fii_buy,
+                'fii_sell': fii_sell,
+                'dii_buy': dii_buy,
+                'dii_sell': dii_sell,
+                'net_fii': fii_buy - fii_sell,
+                'net_dii': dii_buy - dii_sell
+            }
+        else:
+            print("FII/DII data not found or in unexpected format.")
+            return None
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching FII/DII data: {e}")
+        return None
+    except (KeyError, IndexError) as e:  # Handle potential issues with JSON structure
+        print(f"Error processing FII/DII data: {e}.  Check the data format.")
+        return None
+
+
+def fetch_oi_data(url, headers):
+    """Fetches Open Interest (OI) data (example, may require a paid API)."""
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        data = response.json()
+
+        # Process the JSON to extract relevant OI data.  This is very dependent on the
+        # structure of the JSON returned by your chosen API/source.  Example:
+        if 'records' in data and 'expiryDates' in data['records'] and len(data['records']['expiryDates']) > 0

@@ -1,0 +1,28 @@
+Wave:      2026-05-29
+Dataset:   global_opinion_qa
+Item ID:   goqa_cac1592cd6e4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=203 out=59
+Latency:   1567 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Do you think this country’s government should or should not have the right to do the following: Keep people under video surveillance in public areas
+
+Options:
+A. Definitely should have the right
+B. Probably should have the right
+C. Probably should not have the right
+D. Definitely should not have the right
+E. Don't know
+F. No answer
+G. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.15, "B": 0.35, "C": 0.25, "D": 0.15, "E": 0.07, "F": 0.02, "G": 0.01}

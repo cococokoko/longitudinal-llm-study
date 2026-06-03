@@ -1,0 +1,86 @@
+Wave:      2026-05-18
+Dataset:   infinite_chats_taxonomy
+Item ID:   8db8a5e851459926f23a1359ca4ce9b6
+Model:     Gemini 2.0 Flash Lite (openrouter)
+Tokens:    in=37 out=1024
+Latency:   6585 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I keep getting this error  "error: a bin target must be available for `cargo run` " while trying to run this https://github.com/burn-rs/burn
+
+── Response ────────────────────────────────────────────────────────
+The error "error: a bin target must be available for `cargo run`" means that your Cargo project doesn't have a binary executable target defined in its `Cargo.toml` file.  `cargo run` is designed to run an executable, so it needs a program to run.
+
+Here's how to troubleshoot and fix this when working with the burn-rs repository:
+
+**1. Understand the Project Structure**
+
+*   Burn-rs is a large project with many examples and utilities. It's likely you need to specify *which* part of the project you want to run.  The main `burn` crate itself is a library, not a runnable program.
+*   Look for examples or other targets within the repository.
+
+**2. Identify Runnable Targets**
+
+*   **Browse the Repository:**  Carefully examine the repository's structure.  Look for directories like `examples`, `tests` (which often have executables), or specific projects within the burn-rs ecosystem.  These are the most likely places to find a program you can run.
+*   **Check `Cargo.toml` Files:** In the subdirectories containing potential runnable code (examples, etc.), look for `Cargo.toml` files. Open them and look for `[[bin]]` sections.  These sections define binary targets.  A `Cargo.toml` file might look something like this for an example:
+
+    ```toml
+    [package]
+    name = "my_example"
+    version = "0.1.0"
+    edition = "2021"
+
+    [dependencies]
+    burn = { git = "https://github.com/burn-rs/burn", branch = "main" }
+    # ... other dependencies ...
+
+    [[bin]]
+    name = "my_example_program"
+    path = "src/main.rs"
+    ```
+
+    *   `[[bin]]` indicates a binary target.
+    *   `name` is the name you'll use to run it (e.g., `cargo run --bin my_example_program`).
+    *   `path` is the path to the `main.rs` file where the program's entry point is defined.
+
+**3. Run a Specific Example (The Most Likely Solution)**
+
+*   **Navigate to the Example Directory:**  Find the directory with the example you want to run.  For instance, it might be something like `burn/examples/mnist`.
+*   **`cd` into the Example Directory:** Use your terminal to change directories: `cd burn/examples/mnist` (or the actual path)
+*   **Run with `cargo run` and `--bin` or `--example`:**  You have two main options, depending on how the example is set up:
+
+    *   **If the example has a `[[bin]]` section in its `Cargo.toml`:**
+        ```bash
+        cargo run --bin <example_name>
+        ```
+        Replace `<example_name>` with the name defined in the `[[bin]]` section (usually the same as the example's directory name, but check the `Cargo.toml`).  For example: `cargo run --bin mnist`
+
+    *   **If the example is defined as an `[[example]]` in `Cargo.toml`:**
+        ```bash
+        cargo run --example <example_name>
+        ```
+        Replace `<example_name>` with the example's name as defined in its `Cargo.toml`.  For example: `cargo run --example mnist`
+
+    *   **If the example is a standalone project (e.g., in a separate directory with its own `Cargo.toml`):**
+        ```bash
+        cd <example_directory>  # e.g., cd burn/examples/mnist
+        cargo run
+        ```
+        This is the simplest case.  If you've `cd`'d into the directory with the `Cargo.toml` that defines a binary, `cargo run` will automatically build and run it.
+
+**4. Run a Test (Less Common, but Possible)**
+
+*   Some projects might provide tests that are executable.  You can try to run tests if you can't find a dedicated example.
+*   Navigate to the directory with the tests.
+*   Run the test:
+    ```bash
+    cargo test --bin <test_name>  # If the test is a binary
+    cargo test --example <test_name> # If the test is an example
+    ```
+    Or, if the directory contains its own `Cargo.toml` and has a binary:
+    ```bash
+    cd <test_directory>
+    cargo test
+    ```
+
+**Example Scenario: Running the MNIST Example**

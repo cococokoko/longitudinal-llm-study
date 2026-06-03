@@ -1,0 +1,74 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=44 out=556
+Latency:   10691 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+generate more comprehensive details and examples on, 13. Time-Saving Tools and Apps, minimalist tone
+
+── Response ────────────────────────────────────────────────────────
+:::writing block
+13. Time-Saving Tools and Apps
+
+Time is the scarcest resource at scale. The goal is not more tools, but fewer, better ones that remove friction, automate repetition, and compress decision cycles.
+
+Core categories:
+
+• Capture and organization  
+A single place to collect thoughts, tasks, and references.  
+Examples: Notion (all-in-one workspace), Apple Notes (fast capture), Obsidian (local, linked thinking).  
+Use case: quick voice-to-text notes after meetings, later distilled into action items.
+
+• Task and priority management  
+Simple systems that surface what matters now.  
+Examples: Todoist (lightweight), Microsoft To Do (integrated), Things (clean UX).  
+Use case: daily “top 3” priorities instead of long, stale lists.
+
+• Calendar optimization  
+Treat calendar as a strategic tool, not a passive log.  
+Examples: Google Calendar + Calendly (self-scheduling), Clockwise (auto-focus blocks).  
+Use case: auto-protect deep work blocks; eliminate back-and-forth scheduling.
+
+• Communication compression  
+Reduce meetings and long threads.  
+Examples: Slack with async norms, Loom (quick video updates), Superhuman (fast email triage).  
+Use case: replace status meetings with short recorded updates.
+
+• Automation and integration  
+Move routine work off your plate.  
+Examples: Zapier, Make, native app automations.  
+Use case: auto-route inbound requests, sync CRM updates, trigger follow-ups.
+
+• AI copilots  
+Accelerate drafting, summarizing, and analysis.  
+Examples: ChatGPT, Microsoft Copilot, Claude.  
+Use case: summarize long reports, draft memos, generate first-pass strategy docs.
+
+• Document workflows  
+Speed creation, approval, and retrieval.  
+Examples: Google Docs (collaborative editing), DocuSign (signatures), Dropbox/Drive (central storage).  
+Use case: real-time editing instead of versioned attachments.
+
+• Meeting efficiency  
+Shorter, fewer, more decisive meetings.  
+Examples: Otter.ai or Fireflies (transcription), Fellow (agenda + notes).  
+Use case: auto-generated summaries with action items.
+
+Principles:
+
+• Default to fewer tools; depth beats breadth  
+• Automate anything repeated more than twice  
+• Prefer async over sync  
+• Design for retrieval, not just storage  
+• Regularly audit and remove unused tools
+
+A well-curated stack doesn’t feel powerful. It feels invisible.
+:::

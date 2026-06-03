@@ -1,0 +1,85 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=595
+Latency:   9166 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+You don’t need to “become a programmer” in the traditional sense. As a consulting partner, the highest ROI is learning just enough coding to think computationally, automate your own work, and credibly guide teams. That changes how you should start.
+
+Here’s a clean way in:
+
+**1. Start with Python, not theory**
+Python is the easiest on-ramp and the most useful for business contexts (data, automation, AI tooling).
+
+- Install: use something simple like Anaconda or just Python + VS Code
+- Use Jupyter notebooks early—they’re interactive and intuitive
+
+**2. Anchor learning to your real work**
+Skip generic exercises like “build a calculator.” Instead, pick things you already do:
+
+- Clean up messy Excel/CSV data
+- Automate recurring analyses or slide inputs
+- Parse PDFs or scrape basic web data
+- Build quick models (forecasting, segmentation)
+
+This keeps motivation high and makes the learning stick.
+
+**3. Learn just enough fundamentals (in parallel)**
+You don’t need CS depth, but you do need the basics:
+
+- Variables, loops, conditionals
+- Functions (this is key)
+- Data structures (lists, dictionaries, tables via pandas)
+- Reading/writing files
+
+You can pick these up quickly via something like:
+- “Python for Everybody” (Coursera) or
+- A fast-paced tutorial (3–6 hours total)
+
+**4. Use AI as your coding copilot from day one**
+This is the biggest unlock.
+
+- Describe what you want: “Take this CSV, group by region, calculate growth, output a clean table”
+- Ask for explanations when you don’t understand code
+- Iteratively refine
+
+Focus less on memorizing syntax and more on understanding what’s happening.
+
+**5. Build 3–5 small, practical tools**
+Examples tailored to your role:
+
+- A script that turns raw data into a formatted Excel/PowerPoint-ready output
+- A simple client KPI dashboard (using Streamlit)
+- A document summarizer for long PDFs
+- A basic forecasting model you can tweak live
+
+These give you leverage and credibility quickly.
+
+**6. Learn just enough about data + AI**
+Given your position, this matters more than deep coding:
+
+- Pandas (data manipulation)
+- APIs (how tools talk to each other)
+- Basic ML concepts (not implementation-heavy)
+- How LLMs work at a high level
+
+**7. Time investment reality**
+You can get “dangerously useful” in:
+- ~10–15 hours to get started
+- ~40–60 hours to become independently productive
+
+That’s very different from becoming a software engineer.
+
+---
+
+If you want, I can map this into a 2–3 week plan tailored to your schedule (e.g., 30 min/day vs weekend blocks), or suggest a couple of “consulting-specific” starter projects based on your industry focus.

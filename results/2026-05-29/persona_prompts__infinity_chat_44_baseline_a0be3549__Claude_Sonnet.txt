@@ -1,0 +1,34 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=28 out=276
+Latency:   9457 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here are three questions that can help evaluate whether something is morally right or wrong:
+
+**1. Does it cause harm?**
+Does this action cause unnecessary harm, suffering, or damage to others, including physical, emotional, or social harm? This considers both immediate and long-term consequences.
+
+**2. Is it fair and respectful of others' rights?**
+Does this action treat people fairly and with equal dignity? Would you be comfortable if the same action were applied to you or someone you care about? This is sometimes called the "Golden Rule" test.
+
+**3. Could you openly defend it?**
+Would you be comfortable explaining and justifying this action to a reasonable, thoughtful person? Would it hold up to honest public scrutiny, or would you feel the need to hide or misrepresent it?
+
+---
+
+**A few honest caveats worth noting:**
+- No simple set of questions can resolve every moral dilemma
+- Reasonable people can answer these questions differently
+- Some situations involve genuine conflicts where no option is clearly right
+- These questions work best as a starting framework for deeper thinking rather than a definitive test
+
+These questions draw on several major ethical traditions, including consequentialism, deontology, and virtue ethics, giving them a reasonably broad foundation.

@@ -1,0 +1,37 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=518
+Latency:   10321 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Good question—small businesses get targeted a lot precisely because attackers expect weaker defenses. You don’t need a huge budget to be solid, but you do need consistency and a few smart priorities.
+
+Start with access control. Give people only the access they actually need (least privilege), and require strong, unique passwords plus multi-factor authentication (MFA) everywhere you can—especially email, cloud apps, and admin accounts. A password manager is one of the simplest, highest-impact tools you can adopt.
+
+Keep systems updated. Most breaches exploit known vulnerabilities that already have patches. Turn on automatic updates for operating systems, apps, routers, and anything internet-connected.
+
+Backups are your safety net. Follow the “3-2-1 rule”: three copies of your data, on two different media, with one offsite (often cloud). Test restoring periodically—backups aren’t useful if they don’t actually work.
+
+Train your people. Phishing is still the #1 entry point. Short, regular training sessions and simulated phishing tests can dramatically reduce risk. Teach staff to verify unusual requests (like urgent payment changes) through a second channel.
+
+Secure your network. Use a business-grade router/firewall, change default credentials, enable encryption (WPA3 if possible), and separate guest Wi-Fi from internal systems. If you handle sensitive data, consider segmenting your network so a breach in one area doesn’t expose everything.
+
+Protect devices. Install reputable endpoint protection (antivirus/EDR), encrypt laptops and mobile devices, and make sure lost or stolen devices can be remotely wiped.
+
+Control data itself. Know what sensitive data you have, where it’s stored, and who can access it. Minimize what you collect and retain—less data means less risk. Encrypt sensitive data at rest and in transit.
+
+Use trusted tools and vendors. Stick to well-known, supported software. If you use cloud services, review their security settings—many breaches happen because of misconfigurations, not hacks.
+
+Have an incident response plan. Even a simple one: who to contact, how to isolate systems, how to communicate with customers, and how to restore operations. This saves time and panic if something happens.
+
+Stay compliant where relevant. Depending on your industry, you may need to follow frameworks like GDPR, HIPAA, or PCI DSS—not just for legal reasons, but because they reflect solid security practices.
+
+If you want, tell me a bit about your setup (number of employees, cloud vs on-prem, types of data), and I can tailor this into a practical checklist for you.

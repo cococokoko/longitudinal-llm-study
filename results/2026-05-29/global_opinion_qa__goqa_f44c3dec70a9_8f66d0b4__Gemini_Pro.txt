@@ -1,0 +1,38 @@
+Wave:      2026-05-29
+Dataset:   global_opinion_qa
+Item ID:   goqa_f44c3dec70a9
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=188 out=659
+Latency:   7395 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all
+
+Religion
+
+Options:
+A. Very important
+B. Rather important
+C. Not very important
+D. Not at all important
+E. Don't know
+F. No answer
+G. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{
+  "A": 0.16,
+  "B": 0.22,
+  "C": 0.28,
+  "D": 0.32,
+  "E": 0.01,
+  "F": 0.01,
+  "G": 0.00
+}

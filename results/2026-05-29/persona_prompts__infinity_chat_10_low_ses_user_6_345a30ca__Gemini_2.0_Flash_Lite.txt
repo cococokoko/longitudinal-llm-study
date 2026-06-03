@@ -1,0 +1,61 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_low_ses_user_6
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=42 out=1024
+Latency:   5868 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work in a warehouse position that requires long hours.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+That's great that you've created a website for your resume! Here's a breakdown of how you can host it for free, along with some considerations:
+
+**Free Hosting Options:**
+
+1.  **GitHub Pages:**
+
+    *   **Pros:**  Completely free, integrates well with Git (version control), easy to set up for simple HTML/CSS/JS websites.  Good for static websites like a resume.  Offers a custom domain option.
+    *   **Cons:**  Limited features (no server-side scripting, databases, etc.), can be a bit technical if you're not familiar with Git.
+    *   **How to Use:**
+        1.  **Create a GitHub Account:** If you don't have one, sign up at [https://github.com/](https://github.com/).
+        2.  **Create a Repository:**  In your GitHub account, create a new repository.  The repository name is important:
+            *   If you want your website to be at `yourusername.github.io`, the repository name should be `yourusername.github.io` (replace `yourusername` with your actual GitHub username).
+            *   If you want your website to be at `yourusername.github.io/your-project-name`, the repository name can be anything, but it's good practice to name it something descriptive like `resume-website`.
+        3.  **Upload Your Files:**  There are a few ways to upload your HTML files:
+            *   **Drag and Drop (Simplest):**  In your repository, click "Add file" and then "Upload files." Drag and drop your `.html` files (and any CSS, JavaScript, and image files) into the repository.
+            *   **Git (Recommended for Version Control):**  This is the more professional way.  You'll need to install Git on your computer.  Then:
+                *   `git clone <your_repository_url>` (Get the repository URL from your GitHub page)
+                *   Copy your HTML files into the cloned folder.
+                *   `git add .` (Adds all files to be tracked)
+                *   `git commit -m "Initial commit of resume website"` (Creates a commit with a message)
+                *   `git push origin main` (Pushes your changes to GitHub)
+        4.  **Enable GitHub Pages:**
+            *   Go to your repository on GitHub.
+            *   Click on "Settings".
+            *   In the left sidebar, click on "Pages".
+            *   Under "Source", select the branch you want to use (usually "main" or "master").
+            *   Click "Save".
+        5.  **Wait and Test:**  GitHub will build your site.  It might take a few minutes.  You'll see a message with the URL where your website will be hosted (e.g., `yourusername.github.io` or `yourusername.github.io/your-project-name`).  Visit that URL in your browser to see your resume!
+
+2.  **Netlify:**
+
+    *   **Pros:**  Very user-friendly, excellent for static sites, fast deployment, free SSL certificate, easy to connect to a custom domain.  Good for beginners.
+    *   **Cons:**  Free tier has some limitations (bandwidth, build minutes), but usually sufficient for a resume.
+    *   **How to Use:**
+        1.  **Sign Up:** Go to [https://www.netlify.com/](https://www.netlify.com/) and create an account.
+        2.  **Deploy Your Site:**
+            *   **Drag and Drop (Simplest):**  Drag and drop your entire website folder (containing your `.html` files, CSS, images, etc.) directly onto the Netlify interface.  Netlify will automatically deploy it.
+            *   **Connect to Git (Recommended):**  Connect your GitHub (or GitLab, Bitbucket) repository to Netlify.  Netlify will automatically build and deploy your site whenever you push changes to your repository.  This is the best approach for ongoing updates.
+        3.  **Get Your URL:**  Netlify will provide you with a unique URL for your website (e.g., `your-project-name.netlify.app`).
+        4.  **Optional: Custom Domain:**  You can connect a custom domain (e.g., `yourname.com`) to your Netlify site.  Netlify provides instructions for this.
+
+3.  **Vercel:**
+
+    *   **Pros:**  Similar to Netlify, very easy to use, great for static sites, fast deployment, free SSL, good for beginners.
+    *   **Cons

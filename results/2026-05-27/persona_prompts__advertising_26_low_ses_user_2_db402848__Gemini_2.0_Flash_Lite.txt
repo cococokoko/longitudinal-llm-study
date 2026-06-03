@@ -1,0 +1,64 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_user_2
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=25 out=1024
+Latency:   8010 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Being a single parent juggling childcare and work is incredibly challenging! Let's break down data security best practices for small businesses, keeping in mind the need for simplicity and efficiency.
+
+**I. Foundational Principles (The "Must-Dos")**
+
+*   **1. Strong Passwords & Password Management:**
+    *   **Why:** This is the first line of defense. Weak passwords are the easiest way for hackers to gain access.
+    *   **How:**
+        *   **Use strong, unique passwords for EVERYTHING:**  At least 12 characters, a mix of uppercase, lowercase, numbers, and symbols.  Avoid personal information.
+        *   **Use a Password Manager:**  (e.g., LastPass, 1Password, Bitwarden - Bitwarden has a free tier that is very good).  These securely store and generate strong passwords, and often autofill them for you.  This is a HUGE time saver.
+        *   **Enable Multi-Factor Authentication (MFA) / Two-Factor Authentication (2FA):**  Whenever possible (email, banking, social media, cloud storage, etc.).  This requires a second verification method (like a code sent to your phone) in addition to your password.
+        *   **Regularly Change Passwords:**  At least every 90 days, especially for critical accounts.
+*   **2. Keep Software Updated:**
+    *   **Why:** Updates often include security patches that fix vulnerabilities hackers exploit.
+    *   **How:**
+        *   **Enable Automatic Updates:**  For your operating system (Windows, macOS), web browsers, antivirus software, and any other software you use.
+        *   **Be Vigilant:**  If automatic updates aren't possible, check for updates regularly (at least weekly).
+*   **3. Backups, Backups, Backups!**
+    *   **Why:**  Data loss can be devastating.  Backups protect you from ransomware, hardware failure, accidental deletion, and other disasters.
+    *   **How:**
+        *   **Implement a Backup Strategy:**
+            *   **Local Backup:**  An external hard drive or USB drive.  Back up frequently (daily or weekly).
+            *   **Cloud Backup:**  (e.g., Backblaze, Carbonite, Google Drive, Dropbox, OneDrive).  This is crucial for offsite protection.  Choose a provider that offers encryption.
+            *   **Test Your Backups:**  Regularly verify that you can restore your data.
+        *   **Automate Backups:**  Set up automatic backups so you don't have to remember to do it.
+        *   **Follow the 3-2-1 Rule:**  Have 3 copies of your data, on 2 different media, with 1 copy offsite.
+*   **4. Secure Your Network:**
+    *   **Why:**  Your network is the gateway to your data.
+    *   **How:**
+        *   **Use a Strong Router Password:**  Change the default password on your router immediately.
+        *   **Enable Router Firewall:**  This helps block unauthorized access.
+        *   **Use a Secure Wi-Fi Network:**  Use WPA2 or WPA3 encryption (not WEP).  Create a separate guest network for visitors.
+        *   **Consider a VPN (Virtual Private Network):**  Especially if you work remotely or use public Wi-Fi.  A VPN encrypts your internet traffic.
+*   **5. Employee Training & Awareness:**
+    *   **Why:**  Human error is a major cause of data breaches.  Your employees (including yourself!) need to be aware of the risks.
+    *   **How:**
+        *   **Phishing Awareness:**  Teach yourself and any employees to recognize phishing emails (emails that try to trick you into giving up information).  Look for suspicious senders, poor grammar, and urgent requests.
+        *   **Safe Browsing Habits:**  Avoid clicking on suspicious links or downloading files from untrusted sources.
+        *   **Data Handling Procedures:**  Establish clear guidelines for handling sensitive data (e.g., customer information, financial records).
+        *   **Regular Reminders:**  Reinforce security best practices regularly.
+
+**II.  Important Considerations (The "Should-Dos")**
+
+*   **6. Antivirus/Anti-Malware Software:**
+    *   **Why:**  Protects against viruses, malware, and other threats.
+    *   **How:**
+        *   **Install reputable antivirus software:**  (e.g., Norton, McAfee, Bitdefender, Windows Defender (built-in to Windows)).
+        *   **Keep it updated:**  Ensure the software is always running and updated.
+        *   **Run regular

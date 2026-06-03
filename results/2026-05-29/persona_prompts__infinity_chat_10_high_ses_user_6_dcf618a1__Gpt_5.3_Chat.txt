@@ -1,0 +1,57 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=46 out=316
+Latency:   5302 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Nice, that’s a great move—an HTML resume site is perfect for simple free hosting.
+
+The easiest options (no cost, minimal setup):
+
+**1. GitHub Pages (most common)**
+- Create a GitHub account
+- Create a new repository (name it something like `yourname.github.io`)
+- Upload your HTML files (make sure your main file is called `index.html`)
+- Go to repo settings → “Pages” → enable it
+- Your site will be live at: `https://yourname.github.io`
+
+Why this is good: very reliable, widely used, looks professional.
+
+---
+
+**2. Netlify (even easier UI)**
+- Go to netlify.com and sign up
+- Drag and drop your folder with the HTML files into their upload area
+- It instantly deploys and gives you a public URL
+
+Why this is good: fastest setup, no Git needed.
+
+---
+
+**3. Cloudflare Pages**
+- Similar to GitHub Pages but a bit more “infra-style”
+- Good performance, but slightly more setup if you’re new
+
+---
+
+**Quick tips**
+- Make sure your homepage file is named exactly `index.html`
+- Use relative paths for images/files (no local file paths like `C:\...`)
+- Test everything locally before uploading
+
+---
+
+If you want the most straightforward: use Netlify.  
+If you want something more “tech-forward / professional footprint”: GitHub Pages.
+
+If you want, I can walk you through one of these step-by-step based on your comfort level.

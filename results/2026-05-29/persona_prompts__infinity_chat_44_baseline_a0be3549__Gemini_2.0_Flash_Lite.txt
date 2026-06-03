@@ -1,0 +1,21 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=20 out=181
+Latency:   1652 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here's a series of three questions designed to help determine the moral rightness or wrongness of an action:
+
+1.  **Does this action cause harm or suffering to others (directly or indirectly)?**  (This focuses on the consequences of the action.  Consider physical, emotional, psychological, and social harm.)
+
+2.  **Does this action violate any fundamental rights or principles (e.g., fairness, justice, autonomy, honesty)?** (This focuses on the principles and values at stake.  Consider if the action treats people as a means to an end, or if it undermines trust or equality.)
+
+3.  **Would I be comfortable if everyone acted this way?** (This is a test of universalizability.  If the action, if universally adopted, would lead to chaos, injustice, or other undesirable outcomes, it's likely morally wrong.)

@@ -1,0 +1,47 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=21 out=458
+Latency:   11851 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me some examples of websites where users can select a default landing page?
+
+── Response ────────────────────────────────────────────────────────
+Here are some familiar examples where users can choose or customize their default landing page:
+
+- Google (google.com): You can set what shows first via preferences or by bookmarking a custom page (like Google News, Gmail, or a specific search). Many browsers also let you make Google apps your startup page.
+
+- YouTube: Logged-in users often land on Home, Subscriptions, or Library depending on behavior and some settings/extensions.
+
+- Reddit: You can choose to land on your Home feed, Popular, or a specific subreddit by setting a custom URL or using preferences.
+
+- Twitter / X: Users typically land on the “For You” or “Following” tab, and the site remembers your last-used preference.
+
+- Facebook: The main feed is default, but users can effectively set favorites (like Groups, Pages, or Marketplace) as their starting point via bookmarks or shortcuts.
+
+- Gmail: Lets you choose inbox type (Default, Priority, Unread first, etc.), which changes the landing experience when you open it.
+
+- Notion: You can set a specific page as your default by bookmarking it or using browser startup settings.
+
+- Slack (web): Opens to the last workspace/channel you were in, acting like a personalized landing page.
+
+- Trello: You can set a favorite board or workspace as your starting point using browser bookmarks or by leaving it as your last visited page.
+
+- Jira: Lets users customize dashboards and set a default dashboard on login.
+
+- Confluence: Users can choose a specific space or dashboard as their default homepage.
+
+- Shopify (admin): Merchants can land on Home, Orders, or Analytics depending on where they navigate most and via bookmarks.
+
+- Salesforce: Users can set a default home tab or dashboard.
+
+- Microsoft 365 (office.com): You can pin apps or documents, and often land on recent files or a chosen app.
+
+- Start pages / dashboards like Netvibes, Start.me, or iGoogle (historically): Built specifically to let users define a fully custom landing page with widgets.
+
+In many cases, even if there isn’t a single explicit “default landing page” toggle, users achieve it through a mix of app settings, saved state (last visited page), and browser-level controls like bookmarks or startup pages.

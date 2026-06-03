@@ -1,0 +1,29 @@
+Wave:      2026-05-30
+Dataset:   global_opinion_qa
+Item ID:   goqa_64c9e7bf2dae
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=198 out=231
+Latency:   3223 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Some people think that having honest elections makes a lot of difference in their lives; other people think that it doesn’t matter much. How important would you say is having honest elections for you—very important,
+rather important, not very important or not at all important?
+
+Options:
+A. Very important
+B. Rather important
+C. Not very important
+D. Not at all important
+E. Don't know
+F. No answer
+G. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.9, "B": 0.09, "C": 0.005, "D": 0.003, "E": 0.001, "F": 0.001, "G": 0.0}

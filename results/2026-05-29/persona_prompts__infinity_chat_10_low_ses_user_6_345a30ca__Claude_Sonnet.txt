@@ -1,0 +1,57 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_low_ses_user_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=49 out=282
+Latency:   6920 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work in a warehouse position that requires long hours.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+## Free Ways to Host Your Resume Website
+
+Here are the best options for hosting static HTML files:
+
+---
+
+### **GitHub Pages** (Most Popular)
+- Completely free
+- Go to **github.com** and create a free account
+- Create a new repository
+- Upload your HTML files
+- Go to Settings → Pages → enable it
+- Your site will be at **username.github.io/repository-name**
+
+---
+
+### **Netlify** (Easiest)
+- Go to **netlify.com**
+- Create a free account
+- You can literally **drag and drop your folder** of HTML files
+- Get a free URL instantly like **yourname.netlify.app**
+
+---
+
+### **Google Drive** *(not recommended anymore)*
+- Google removed public hosting support
+
+---
+
+### **My Recommendation for Your Situation**
+
+**Netlify is probably the easiest** since you just drag and drop your files with no technical knowledge needed. You can be up and running in about 5 minutes.
+
+---
+
+### **Tips for Your Resume Site**
+- Make sure your main file is named **index.html**
+- Keep the design clean and mobile friendly
+- Include your contact information clearly
+
+Would you like more detailed steps for any of these options?

@@ -1,0 +1,62 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=779
+Latency:   5478 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me some examples of websites where users can select a default landing page?
+
+── Response ────────────────────────────────────────────────────────
+Here are some examples of websites where users can select a default landing page, categorized by the type of website:
+
+**1. Social Media Platforms:**
+
+*   **Facebook:** Users can choose their default landing page to be either the News Feed or the Marketplace.
+*   **LinkedIn:** Users can set their default landing page to be the Home page (News Feed), My Network, Jobs, or Messaging.
+*   **Twitter:** While not a direct setting, the platform often remembers the last page you were on, effectively making it your default. Some third-party Twitter clients might offer more explicit control.
+
+**2. Email Providers:**
+
+*   **Gmail:** While not a direct setting, Gmail often remembers the last tab you were on (Inbox, Starred, Snoozed, etc.) and defaults to that.
+*   **Outlook (Web):** Similar to Gmail, Outlook remembers the last viewed folder or section.
+*   **Yahoo Mail:** Yahoo Mail typically defaults to the Inbox, but users can navigate to other folders and the site will often remember the last viewed location.
+
+**3. E-commerce Platforms (for logged-in users):**
+
+*   **Amazon:** While not a direct setting, Amazon often remembers the last page you were on, such as your order history, shopping cart, or a specific product page.
+*   **Etsy:** Etsy often remembers the last page you were on, such as your shop dashboard, order history, or a specific listing.
+
+**4. Productivity and Collaboration Tools:**
+
+*   **Google Workspace (Docs, Sheets, Slides):** While not a direct setting, these apps often remember the last document you were working on and open it when you return.
+*   **Microsoft 365 (Word, Excel, PowerPoint):** Similar to Google Workspace, these apps often remember the last document you were working on.
+*   **Trello:** Trello remembers the last board you were viewing.
+*   **Asana:** Asana remembers the last project or workspace you were viewing.
+
+**5. News and Content Aggregators:**
+
+*   **Feedly:** Feedly remembers the last feed or article you were reading.
+*   **Flipboard:** Flipboard remembers the last magazine or section you were viewing.
+
+**6. Web Browsers (via extensions or settings):**
+
+*   **Chrome/Firefox (with extensions):** While not a built-in feature, extensions can be used to customize the default landing page or new tab page. For example, extensions can be used to open a specific website or a custom dashboard.
+
+**7. Custom Dashboards and Portals:**
+
+*   **Intranet Portals:** Many intranet portals allow users to customize their homepage, often including the ability to select which widgets and information are displayed.
+*   **Personalized Dashboards (e.g., for finance, health):** Websites that provide personalized dashboards often allow users to customize the default view, such as showing specific accounts, metrics, or information.
+
+**Key Considerations:**
+
+*   **User Experience (UX):** The goal is to make it easy for users to access the information or features they use most frequently.
+*   **Personalization:** Allowing users to customize their landing page enhances their experience and makes the website more relevant to their needs.
+*   **Implementation:** The implementation can range from simple "remember last viewed page" functionality to more complex settings with multiple options.
+*   **Privacy:** Websites should be transparent about how they store and use user preferences.
+
+These examples demonstrate the variety of websites that offer some form of default landing page customization, whether through explicit settings or implicit behavior. The specific implementation depends on the website's purpose and the needs of its users.

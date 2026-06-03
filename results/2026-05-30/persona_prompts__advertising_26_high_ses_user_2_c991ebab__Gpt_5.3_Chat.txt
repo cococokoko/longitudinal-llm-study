@@ -1,0 +1,35 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=511
+Latency:   11161 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+For small businesses, the biggest risk isn’t usually sophisticated nation‑state attacks—it’s basic gaps: weak passwords, unpatched systems, and employees getting tricked. The best practices focus on reducing those everyday vulnerabilities without overcomplicating things.
+
+Start with access control. Use strong, unique passwords for every system and require multi-factor authentication (MFA) wherever possible—especially for email, cloud apps, and financial systems. Limit access to only what each employee actually needs (the “least privilege” principle), and regularly review who has access to what.
+
+Keep systems updated. Many breaches exploit known vulnerabilities that already have patches available. Enable automatic updates for operating systems, software, and firmware where you can. If you use managed IT services, make patching part of their explicit responsibility.
+
+Backups are your safety net. Maintain regular, automated backups of critical data, stored both locally and offsite (or in a secure cloud environment). Test restoration periodically—backups that don’t restore properly are a common failure point.
+
+Employee awareness matters more than most technical tools. Train staff to recognize phishing emails, suspicious links, and social engineering attempts. This doesn’t need to be overly technical—short, recurring training is more effective than a single annual session.
+
+Secure your network. Use a properly configured firewall, encrypt Wi‑Fi (WPA3 or at least WPA2), and separate guest networks from business systems. If employees work remotely, require VPN access or ensure they’re using secure, managed devices.
+
+Protect sensitive data directly. Encrypt laptops, mobile devices, and any storage containing client or financial information. For especially sensitive data, consider additional controls like data loss prevention (DLP) tools or restricted file sharing.
+
+Have a response plan. Even small businesses should document what happens if something goes wrong—who to contact, how to isolate systems, and any legal or regulatory notification obligations. This is where your legal background is especially relevant: aligning incident response with breach notification laws and client confidentiality duties is critical.
+
+Finally, vet your vendors. Many small businesses rely heavily on third-party tools (cloud accounting, CRM, payroll). Make sure those providers follow reasonable security practices, and understand where your data sits and who is responsible for it.
+
+If you want, I can tailor this specifically for law firms—there are a few additional confidentiality and privilege considerations that change the priorities a bit.

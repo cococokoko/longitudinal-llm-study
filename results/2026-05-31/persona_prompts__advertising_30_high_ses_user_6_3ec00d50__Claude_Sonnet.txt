@@ -1,0 +1,17 @@
+Wave:      2026-05-31
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_user_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30.0 out=311.0
+Latency:   8999 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

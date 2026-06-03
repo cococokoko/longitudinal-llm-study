@@ -1,0 +1,52 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_34_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=369
+Latency:   10833 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best techniques for effective online teaching?
+
+── Response ────────────────────────────────────────────────────────
+# Effective Online Teaching Techniques for Physician-Scientists
+
+Given your background leading a research group, here are evidence-based approaches particularly relevant to your context:
+
+## Core Pedagogical Principles
+
+### Cognitive Load Management
+- **Chunk content** into 6-10 minute segments (optimal for attention retention)
+- Use **worked examples** before asking learners to solve problems independently
+- Avoid redundant information across audio and text simultaneously
+
+### Active Learning Strategies
+- **Retrieval practice** - frequent low-stakes quizzes outperform passive review
+- **Spaced repetition** for complex concepts (immunology, pharmacology, etc.)
+- **Case-based learning** translates well to online formats
+
+## Practical Techniques
+
+| Technique | Best For | Tools |
+|-----------|----------|-------|
+| Flipped classroom | Complex concepts | Pre-recorded lectures + live discussion |
+| Think-pair-share | Critical reasoning | Breakout rooms |
+| Live polling | Formative assessment | Poll Everywhere, Mentimeter |
+| Annotation | Data interpretation | Hypothesis, Perusall |
+
+## Specific to Research Training
+- **Journal club formats** work well asynchronously
+- **Screen-share data analysis** sessions are highly effective
+- Record **lab meeting discussions** for asynchronous review
+
+## Common Pitfalls to Avoid
+- Replicating in-person lectures verbatim online
+- Neglecting **social presence** and community building
+- Underestimating technical barriers for learners
+
+Would you like deeper guidance on any specific aspect - trainee mentorship, graduate courses, or CME content?

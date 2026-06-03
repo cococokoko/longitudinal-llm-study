@@ -1,0 +1,21 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=30 out=1020
+Latency:   14621 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Congratulations on building your own resume website! Since your website consists of `.html` files (and likely some CSS or images), it is called a **"static website."** 
+
+There are several excellent, completely free services designed specifically for hosting static websites. 
+
+Before you start, **make sure your main resume file is named exactly `index.html`**. All hosting platforms look for this specific file to know what the homepage is. Put this file, along with any images or CSS files, into a single folder on your computer.
+
+Here

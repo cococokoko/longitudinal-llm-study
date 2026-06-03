@@ -1,0 +1,63 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=6 out=1024
+Latency:   7287 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving your home WiFi can be a frustrating but ultimately rewarding process. Here's a breakdown of common issues and solutions, categorized for easier understanding:
+
+**I. Identifying the Problem:**
+
+*   **Slow Speeds:**
+    *   **Test your speed:** Use a speed test website (like Speedtest.net, Fast.com, or Google's speed test) to measure your download and upload speeds. Compare these to what you're paying for from your internet service provider (ISP).
+    *   **Test at different times:** Network congestion can fluctuate. Test during peak hours (evenings, weekends) and off-peak hours to see if there's a difference.
+    *   **Test with a wired connection:** Connect a device directly to your modem/router with an Ethernet cable. This helps isolate whether the problem is with your WiFi or your internet connection itself. If the wired connection is slow, the issue is likely with your ISP.
+*   **Weak Signal/Dead Zones:**
+    *   **Signal strength indicator:** Check the WiFi signal strength on your devices (usually represented by bars or a percentage).
+    *   **Move around:** Walk around your home with a device connected to WiFi and observe the signal strength. Identify areas with weak or no signal.
+*   **Intermittent Connectivity:**
+    *   **Frequent disconnections:** Devices lose connection to the WiFi network.
+    *   **Slow loading times:** Websites and apps take a long time to load, even when connected.
+*   **High Latency/Lag:**
+    *   **Online gaming issues:** Noticeable delays or lag in online games.
+    *   **Video conferencing problems:** Audio and video stuttering or freezing during video calls.
+
+**II. Troubleshooting and Solutions:**
+
+**A. Simple Solutions (Often the First Steps):**
+
+*   **Restart Everything:**
+    *   **Modem:** Unplug your modem for 30-60 seconds, then plug it back in. Wait for it to fully power on (usually a few minutes).
+    *   **Router:** Unplug your router for 30-60 seconds, then plug it back in. Wait for it to fully power on.
+    *   **Devices:** Restart the devices experiencing problems (phones, tablets, computers).
+*   **Check Physical Connections:**
+    *   **Cables:** Ensure all cables (Ethernet, coaxial) are securely connected to your modem, router, and devices.
+    *   **Damage:** Inspect cables for any damage (kinks, cuts). Replace damaged cables.
+*   **Placement of Router:**
+    *   **Central Location:** Place your router in a central location in your home to maximize coverage.
+    *   **Elevated Position:** Place the router on a shelf or table, away from the floor.
+    *   **Avoid Obstacles:** Keep the router away from walls, metal objects, mirrors, and appliances that can interfere with the signal (microwaves, cordless phones, Bluetooth devices).
+    *   **Antenna Orientation:** If your router has external antennas, experiment with their orientation (vertical, horizontal, angled) to see if it improves signal strength.
+*   **Reduce Interference:**
+    *   **Other Wireless Devices:** Minimize the number of devices using the WiFi network simultaneously, especially during peak hours.
+    *   **Microwaves:** Avoid using the microwave while streaming or gaming, as it can interfere with the 2.4 GHz band.
+    *   **Bluetooth Devices:** Bluetooth devices also operate on the 2.4 GHz band. Try turning off Bluetooth on devices you're not actively using.
+
+**B. Router Settings and Configuration:**
+
+*   **Change WiFi Channel:**
+    *   **Interference:** WiFi routers broadcast on different channels. If your neighbors' routers are using the same channel, it can cause interference.
+    *   **Channel Scanner:** Use a WiFi analyzer app (available for smartphones and computers) to scan for the least congested channels in your area.
+    *   **Router Settings:** Access your router's settings (usually by typing its IP address into a web browser, e.g., 192.168.1.1 or 192.168.0.1). Look for the "Wireless" or "WiFi" settings and change the channel. Experiment with different channels (1, 6, and 11 are often recommended for the 2.4 GHz band).
+*   **Choose the Right WiFi Band:**
+    *   **2.4 GHz vs. 5 GHz:** Most modern routers support both 2.4 GHz and 5 GHz bands.
+        *   **2.4 GHz:** Longer range, but slower speeds and more susceptible to interference. Good for general browsing, email, and devices further from the router.
+        *   

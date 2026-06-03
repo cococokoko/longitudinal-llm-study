@@ -1,0 +1,55 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_low_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=653
+Latency:   11058 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+If you’re looking beyond the usual Nmap / Wireshark / Metasploit toolkit, there’s a whole layer of lesser-known tools and techniques that tend to be used by more specialized teams or researchers. Here are some interesting ones across different niches:
+
+• Deception tech (e.g., Canarytokens, OpenCanary, Thinkst Canary)  
+These simulate vulnerable systems or plant “tripwires” (fake credentials, files, URLs). They’re low-noise: if something touches them, it’s almost certainly malicious. Super useful for early breach detection.
+
+• Memory forensics frameworks (Volatility, Rekall)  
+Instead of analyzing disk artifacts, these dig into RAM dumps to find injected code, credential residue, and rootkits. Often used in advanced incident response.
+
+• eBPF-based monitoring (like Cilium Tetragon, Tracee)  
+Modern Linux allows deep kernel-level observation without traditional kernel modules. You can track syscalls, privilege escalation, or suspicious behavior in real time with minimal overhead.
+
+• OSINT automation (SpiderFoot, Maltego transforms, Amass with custom pipelines)  
+People know OSINT, but fewer automate it deeply. Chaining APIs, scraping, and graph analysis can uncover relationships between domains, people, infrastructure in ways manual recon misses.
+
+• Firmware analysis (Binwalk, Firmadyne, Ghidra for embedded)  
+Looking inside router/IoT firmware is still a niche skill. Lots of vulnerabilities live here because vendors rarely expect deep inspection.
+
+• Adversary emulation frameworks (MITRE Caldera, Infection Monkey)  
+These don’t just “scan” — they simulate real attacker behavior mapped to MITRE ATT&CK. Great for testing detection and response, not just prevention.
+
+• Side-channel analysis (power/timing attacks)  
+More common in hardware security, but still rare overall. Extracting secrets by measuring power usage or timing differences can bypass strong crypto if implemented poorly.
+
+• DNS tunneling detection & covert channel analysis (e.g., iodine, dnscat2 for testing; Zeek scripts for detection)  
+Attackers often hide data exfiltration in DNS. Detecting it requires statistical and behavioral analysis, not just signature matching.
+
+• Chaos engineering for security (chaos security experiments)  
+Instead of waiting for attacks, you deliberately break controls (disable logging, simulate credential leaks) to see how resilient your defenses are.
+
+• Graph-based attack path analysis (BloodHound for AD, Cartography for cloud)  
+BloodHound is getting more known, but the method—mapping relationships and privilege paths as graphs—is still underused outside mature teams.
+
+If you want something especially “rare but practical” early in your career, I’d point you toward:
+- Deception tech (quick wins, very visible impact)
+- Memory forensics (stands out as a skill)
+- Graph-based analysis like BloodHound (high demand in enterprise environments)
+
+If you tell me your focus (blue team, red team, cloud, etc.), I can narrow this down to tools that would actually help you stand out during probation.

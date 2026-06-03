@@ -1,0 +1,23 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_50_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=25 out=112
+Latency:   5215 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Name one meaning of life.
+
+── Response ────────────────────────────────────────────────────────
+One meaning of life, relevant across both science and human experience:
+
+**To understand** — the drive to reduce uncertainty, build knowledge, and make sense of the world around us.
+
+It's honest in that it's a *proposed* meaning rather than a definitive answer, and it's one you likely live professionally.
+
+Worth noting: this is a genuinely open question where reasonable people - philosophers, scientists, theologians - disagree substantially. I'd rather give you one honest candidate than pretend there's a settled answer.

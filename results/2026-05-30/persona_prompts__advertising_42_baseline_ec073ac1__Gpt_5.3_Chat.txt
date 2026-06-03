@@ -1,0 +1,43 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=451
+Latency:   6886 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+Depends a bit on your style (data nerd vs. “just keep me on track”), but these are consistently the best options right now:
+
+**All-in-one tracking (fitness + nutrition)**
+- **MyFitnessPal** – Still the most popular. Huge food database, barcode scanner, integrates with tons of apps/devices. Downsides: more features locked behind premium now.
+- **Cronometer** – Best if you care about *micronutrients* and accuracy. Tracks vitamins/minerals in detail, cleaner data than MFP. Slightly less social/gamified.
+- **Lifesum** – More lifestyle-focused, with meal plans and a polished interface. Good if you want guidance, not just tracking.
+
+**Workout-focused apps**
+- **Strong** – Great for weightlifting. Simple, fast logging, progressive overload tracking.
+- **Fitbod** – Auto-generates gym workouts based on your recovery and available equipment. Good if you don’t want to plan.
+- **Nike Training Club** – Free, high-quality guided workouts (strength, mobility, cardio).
+
+**Habit + simple tracking**
+- **MacroFactor** – Excellent for nutrition coaching. It adjusts your calorie targets based on your actual progress. Very smart but paid.
+- **Lose It!** – Easier, more streamlined alternative to MyFitnessPal.
+- **Habitica / Streaks** – Not fitness-specific, but great if consistency is your main struggle.
+
+**Wearable ecosystems (if you have a device)**
+- **Apple Fitness / Health** – Best for iPhone + Apple Watch users.
+- **Garmin Connect** – Great for runners, cyclists, endurance training.
+- **Whoop** – Focuses on recovery, sleep, and strain rather than step counts.
+
+If you want a quick recommendation:
+- Data-driven + serious tracking: Cronometer or MacroFactor  
+- Simple + popular: MyFitnessPal  
+- Gym lifting focus: Strong + any food tracker  
+- “Tell me what to do” vibe: Fitbod or Lifesum  
+
+If you tell me your goal (fat loss, muscle gain, general health, etc.), I can narrow it down to 1–2 that fit you best.

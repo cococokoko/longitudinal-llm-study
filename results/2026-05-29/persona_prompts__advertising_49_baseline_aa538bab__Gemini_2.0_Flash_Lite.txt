@@ -1,0 +1,55 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=6 out=1024
+Latency:   6857 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving your home WiFi can be a game-changer for your internet experience. Here's a breakdown of how to troubleshoot and optimize your WiFi, covering various aspects:
+
+**1. Basic Troubleshooting & Quick Fixes:**
+
+*   **Restart Everything:** This is the first and often most effective step.
+    *   **Modem:** Unplug your modem for 30-60 seconds, then plug it back in. Wait for it to fully power on (usually a few minutes).
+    *   **Router:** Unplug your router for 30-60 seconds, then plug it back in. Wait for it to fully power on.
+    *   **Devices:** Restart the devices experiencing WiFi issues (phones, laptops, tablets, etc.).
+*   **Check the Basics:**
+    *   **Is the Internet Down?** Check with your internet service provider (ISP) to see if there's an outage in your area.
+    *   **Are All Lights On?** Make sure your modem and router have the correct lights illuminated (power, internet, WiFi). Consult your device's manual if you're unsure.
+    *   **Are You Paying Your Bill?** Seriously, it happens!
+*   **Move Closer to the Router:** If you're experiencing weak signal, try moving closer to your router to see if the connection improves. This helps determine if the issue is distance-related.
+*   **Check for Interference:**
+    *   **Other Electronic Devices:** Microwaves, cordless phones, Bluetooth devices, and other electronics can interfere with WiFi signals. Try moving your router away from these devices.
+    *   **Physical Obstacles:** Walls, especially those made of concrete or brick, can weaken the signal. Metal objects can also interfere.
+
+**2. Router Placement & Optimization:**
+
+*   **Central Location:** Place your router in a central location in your home to maximize coverage.
+*   **Elevated Position:** Put the router on a shelf, table, or mount it on a wall. Avoid placing it on the floor, inside a cabinet, or behind obstructions.
+*   **Avoid Obstacles:** Keep the router away from walls, metal objects, and other devices that could interfere with the signal.
+*   **Antenna Positioning:** If your router has external antennas, experiment with their positioning. Try pointing them in different directions (e.g., all vertical, some horizontal, some angled) to see what works best for your home layout.
+*   **Consider Your Home's Layout:**
+    *   **Single-Story Home:** A central location is usually ideal.
+    *   **Multi-Story Home:** Place the router on the upper floor or in a central location on the main floor.
+    *   **Large Home:** You might need to consider a mesh WiFi system or WiFi extenders (see below).
+
+**3. Router Settings & Configuration:**
+
+*   **Router Admin Panel:** Access your router's settings through a web browser. The address is usually something like `192.168.1.1` or `192.168.0.1` (check your router's manual). You'll need your router's username and password (often found on a sticker on the router itself or in the manual).
+*   **Change the WiFi Channel:**
+    *   **Why:** WiFi routers broadcast on different channels. Overlapping channels can cause interference, especially in crowded areas (apartments, neighborhoods).
+    *   **How:** In your router's settings, look for the "Wireless" or "WiFi" section. Find the "Channel" setting.
+    *   **Which Channel to Choose:**
+        *   **2.4 GHz:** Channels 1, 6, and 11 are generally recommended as they don't overlap. Use a WiFi analyzer app (see below) to see which channels are least congested in your area.
+        *   **5 GHz:** This band has more channels and less interference, but a shorter range. Choose the least congested channel.
+    *   **WiFi Analyzer Apps:** Use a WiFi analyzer app on your smartphone or computer (e.g., WiFi Analyzer for Android, NetSpot for macOS/Windows) to scan for nearby WiFi networks and identify the least congested channels.
+*   **Enable WPA3 Security:** This is the most secure WiFi encryption protocol. Make sure your router and devices support it. If not, use WPA2-PSK (AES) as a minimum. Avoid WEP or WPA.
+*   **Update Router Firmware:** Router manufacturers regularly release firmware updates that improve performance, security, and stability. Check your router's settings for a "Firmware Update" option.
+*   **Enable QoS (Quality of Service):** QoS prioritizes certain types of network traffic (e.g., video streaming, online gaming

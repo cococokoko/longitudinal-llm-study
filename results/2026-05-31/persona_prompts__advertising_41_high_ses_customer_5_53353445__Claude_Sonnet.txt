@@ -1,0 +1,18 @@
+Wave:      2026-05-31
+Dataset:   persona_prompts
+Item ID:   advertising_41_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31.0 out=298.0
+Latency:   7386 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

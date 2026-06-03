@@ -1,0 +1,24 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_23_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=24 out=1045
+Latency:   18621 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I learn to cook healthy meals quickly?
+
+── Response ────────────────────────────────────────────────────────
+As a tech executive, your most constrained resource is time, and your cognitive load is already maxed out by the end of the day. Traditional ways of learning to cook—scrolling through recipe blogs or watching hours of tutorials—have a terrible ROI on your time. 
+
+To learn to cook healthy meals quickly, you need to treat your kitchen like a startup: **optimize your supply chain, leverage technology, build modular systems, and focus on first principles.**
+
+Here is a highly efficient, executive-level blueprint for mastering healthy cooking:
+
+### 1. Learn First Principles, Not Recipes (The "Software")

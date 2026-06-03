@@ -1,0 +1,39 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_26_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=25 out=629
+Latency:   11684 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can social media cultivate extremism
+
+── Response ────────────────────────────────────────────────────────
+Social media doesn’t “create” extremism out of nowhere, but it can reliably amplify, organize, and harden it. The mechanisms are pretty well studied across sociology, psychology, and network science:
+
+First, recommendation systems tend to optimize for engagement, not accuracy or social cohesion. Content that is emotionally arousing—especially anger, fear, or moral outrage—keeps people on the platform longer. That creates a structural bias toward more extreme, polarizing material, because it outperforms moderate content.
+
+Second, homophily and network clustering. People naturally connect with like‑minded others; platforms accelerate this through follows, groups, and algorithmic suggestions. Over time, users can end up in tightly clustered communities where dissenting views are rare, which sets up echo chambers.
+
+Third, within those echo chambers, group polarization kicks in. When people repeatedly hear similar views, the average opinion of the group often shifts toward a more extreme version of itself. Social reinforcement—likes, shares, comments—rewards the strongest expressions of the group’s beliefs.
+
+Fourth, norms and identity formation. Online communities often evolve shared language, symbols, and narratives that bind members together. Extremist ideas can become markers of in‑group identity, making them more resistant to outside correction. Disagreeing isn’t just “wrong,” it becomes a form of social betrayal.
+
+Fifth, misinformation and epistemic erosion. Rapid, low-friction sharing allows false or misleading claims to spread faster than they can be corrected. Repetition and social proof can make these claims feel true. Over time, trust in mainstream sources may erode, pushing individuals further into alternative information ecosystems.
+
+Sixth, grievance amplification. Platforms give visibility to perceived injustices (real or distorted), often stripped of context. When grievances are continuously highlighted without resolution, they can fuel narratives of threat, victimhood, or moral urgency—common ingredients in radicalization.
+
+Seventh, gateway dynamics. People rarely jump straight into extreme content. They may start with mainstream or mildly partisan material, then get nudged—via recommendations or community links—toward more extreme interpretations. This “adjacent possible” pathway is subtle but important.
+
+Eighth, anonymity and disinhibition. Reduced social accountability can lower the cost of expressing extreme views and increase harassment, which in turn can normalize harsher rhetoric within a community.
+
+Ninth, cross-platform ecosystems. Fringe ideas that originate in smaller, less moderated spaces can be laundered into more mainstream platforms in diluted form, broadening exposure.
+
+Finally, offline-online feedback loops. Online radicalization can translate into offline organizing, which then feeds back into online narratives (“proof” of legitimacy, momentum, or persecution), reinforcing the cycle.
+
+For a research group, it can be useful to think in terms of interacting layers: platform design (algorithms, affordances), network structure (clustering, centrality), psychological processes (identity, emotion, cognition), and broader social context (economic stress, political conflict). None alone is sufficient, but together they create conditions where extremism can scale faster and stabilize more easily than it would otherwise.

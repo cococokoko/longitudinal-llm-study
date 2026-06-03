@@ -1,0 +1,29 @@
+Wave:      2026-05-26
+Dataset:   global_opinion_qa
+Item ID:   goqa_87e1c92bd316
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=174 out=53
+Latency:   588 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Aside from weddings and funerals how often do you attend religious services... more than once a week, once a week, once or twice a month, a few times a year, seldom, or never?
+
+Options:
+A. More than once a week
+B. Once a week
+C. Once or twice a month
+D. A few times a year
+E. Seldom
+F. Never
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.1, "E": 0.3, "F": 0.6}
+```

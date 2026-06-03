@@ -1,0 +1,26 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=26 out=174
+Latency:   3985 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Sure — here’s a simple three-question test you can use to evaluate whether something is morally right or wrong:
+
+1. **Would I be okay if everyone acted this way in the same situation?**  
+   (This checks for fairness and consistency.)
+
+2. **Does this cause harm, or does it respect the well-being of others?**  
+   (This focuses on consequences and empathy.)
+
+3. **Would I feel comfortable if this action were made public or done to me?**  
+   (This tests honesty, accountability, and reciprocity.)
+
+If an action fails one or more of these, it’s a strong signal to reconsider it.

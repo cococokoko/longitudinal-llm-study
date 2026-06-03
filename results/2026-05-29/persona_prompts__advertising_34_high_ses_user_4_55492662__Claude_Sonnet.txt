@@ -1,0 +1,59 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_34_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=417
+Latency:   11242 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best techniques for effective online teaching?
+
+── Response ────────────────────────────────────────────────────────
+# Effective Online Teaching Techniques for Physician-Scientists
+
+Given your background leading a research group, here are evidence-based approaches particularly relevant to your context:
+
+## Core Pedagogical Principles
+
+### Cognitive Load Management
+- **Chunk content** into 6-10 minute segments (optimal for attention retention)
+- Use **worked examples** before problem-solving tasks
+- Avoid redundant text on slides while speaking simultaneously
+
+### Active Learning Strategies
+- **Polling/quizzes** (Mentimeter, Poll Everywhere) during sessions
+- **Case-based discussions** - particularly powerful for clinical/scientific reasoning
+- **Think-pair-share** adapted for breakout rooms
+- Retrieval practice over passive re-reading
+
+## Technical Execution
+
+| Element | Recommendation |
+|---------|---------------|
+| Video | Face visible, good lighting, stable camera |
+| Audio | External microphone significantly improves engagement |
+| Pacing | Slower than in-person; build in pauses |
+| Recording | Allow asynchronous review |
+
+## Specific to Research Group Teaching
+- **Journal clubs** work well in hybrid formats
+- **Flipped classroom** - assign papers/videos beforehand, use live time for discussion
+- Screen-sharing for data analysis walkthroughs
+- Collaborative annotation tools (Hypothesis, Google Docs)
+
+## Common Pitfalls to Avoid
+- Lecturing without interaction for >15 minutes
+- Neglecting to check comprehension
+- Underestimating preparation time (typically 3-4x in-person)
+
+## Recommended Platforms
+- **Zoom** with breakout rooms for small groups
+- **Canvas/Moodle** for structured courses
+- **Slack/Teams** for ongoing group discussion
+
+Would you like specific advice for a particular teaching context - trainees, medical students, or scientific presentations?

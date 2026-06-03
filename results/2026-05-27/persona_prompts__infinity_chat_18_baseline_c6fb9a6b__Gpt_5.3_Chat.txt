@@ -1,0 +1,32 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=10 out=318
+Latency:   5053 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+write a cover letter
+
+── Response ────────────────────────────────────────────────────────
+Sure—here’s a clean, adaptable cover letter you can tweak for almost any role:
+
+:::writing block
+Dear Hiring Manager,
+
+I’m writing to express my interest in the [Job Title] position at [Company Name]. With a background in [your field or key skill area], I bring a combination of practical experience, strong problem-solving skills, and a genuine interest in contributing to meaningful work.
+
+In my previous role at [Previous Company or Experience], I was responsible for [briefly describe a key responsibility or achievement]. During that time, I [mention a specific accomplishment, result, or impact], which helped improve [team performance, efficiency, customer satisfaction, etc.]. I’m particularly proud of my ability to [highlight a strength relevant to the job], and I enjoy working in environments that challenge me to grow and adapt.
+
+What draws me to [Company Name] is [mention something specific about the company—its mission, values, projects, or reputation]. I’m excited about the opportunity to contribute to your team and bring my skills in [relevant skills] to help support your goals.
+
+Thank you for considering my application. I would welcome the opportunity to discuss how my background and interests align with your needs. I look forward to hearing from you.
+
+Sincerely,  
+[Your Name]
+:::
+
+If you want, tell me the job and your background and I’ll tailor it so it actually stands out.

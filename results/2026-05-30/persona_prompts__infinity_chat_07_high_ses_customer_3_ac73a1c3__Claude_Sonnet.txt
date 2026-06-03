@@ -1,0 +1,108 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_high_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=928
+Latency:   20760 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+# Rare & Underutilized Tools/Methods in Cybersecurity
+
+Given your academic background, I'll organize this with some depth beyond the standard curriculum.
+
+---
+
+## Offensive / Research Tools
+
+### Network & Protocol Analysis
+- **Scapy** (advanced use) — packet crafting beyond tutorials; custom protocol fuzzing
+- **Impacket** — low-level Windows protocol manipulation (SMB, Kerberos, DCOM)
+- **Responder** — LLMNR/NBT-NS poisoning, often underestimated in internal assessments
+
+### Memory & Binary Analysis
+- **Volatility3** — memory forensics; most practitioners barely scratch the surface
+- **angr** — binary analysis framework using symbolic execution
+- **Ghidra scripting** — automated reverse engineering via Python/Java APIs
+- **Frida** — dynamic instrumentation; powerful for mobile and runtime analysis
+
+### Specialized Exploitation
+- **ROPgadget / pwntools** — ROP chain construction
+- **BARF** — binary analysis and reverse engineering framework
+- **Manticore** — symbolic execution for smart contracts and binaries
+
+---
+
+## Defensive / Detection Methods
+
+### Rarely Deployed Techniques
+- **Canary tokens** — beyond honeypots; embedded in documents, URLs, DNS
+- **eBPF-based monitoring** — kernel-level telemetry without agents (Falco, Tetragon)
+- **YARA rules** — custom malware signature development
+- **Zeek (formerly Bro)** — network behavioral analysis vs. signature matching
+
+### Threat Hunting Methods
+- **TTP-based hunting** (MITRE ATT&CK) vs. IOC-based — fundamentally different epistemology
+- **Sigma rules** — vendor-agnostic detection rule language
+- **Graph-based analysis** — BloodHound for AD attack path modeling (defensive use)
+
+---
+
+## Cryptographic & Protocol-Level
+
+- **Side-channel analysis** — timing attacks, power analysis (ChipWhisperer platform)
+- **Protocol fuzzing** — Boofuzz, AFL++ applied to network protocols
+- **TLS fingerprinting** — JA3/JA3S for encrypted traffic classification
+- **DNS over HTTPS analysis** — detecting covert channels in encrypted DNS
+
+---
+
+## Formal & Academic Methods
+
+| Method | Application |
+|--------|-------------|
+| **Model checking** | Verifying security protocol correctness (ProVerif, Tamarin) |
+| **Fuzzing with coverage guidance** | AFL++, LibFuzzer for vulnerability discovery |
+| **Symbolic execution** | Path exploration for vulnerability finding |
+| **Formal verification** | Proving cryptographic protocol properties |
+| **Attack trees** | Structured threat modeling beyond STRIDE |
+
+---
+
+## OSINT & Reconnaissance (Underused)
+
+- **Maltego transforms** — relationship mapping beyond basic searches
+- **Shodan dorks** — industrial control systems, exposed databases
+- **FOCA** — metadata extraction from public documents
+- **theHarvester** — email/subdomain enumeration
+- **Recon-ng** — modular OSINT framework
+
+---
+
+## Emerging / Cutting-Edge
+
+- **LLM-assisted vulnerability research** — using models for code auditing
+- **Differential fuzzing** — comparing implementations to find behavioral discrepancies
+- **Hardware implant detection** — RF analysis, PCB inspection methodologies
+- **Supply chain analysis** — dependency confusion, typosquatting detection
+- **Homomorphic encryption applications** — computation on encrypted data
+
+---
+
+## Academic Resources Worth Noting
+
+- **USENIX Security / IEEE S&P / CCS / NDSS** proceedings — primary literature
+- **CVE/NVD analysis** — empirical vulnerability research
+- **MITRE ATT&CK as a research framework** — not just a practitioner tool
+
+---
+
+Would you like deeper treatment of any specific area — perhaps something relevant to your research or a course you're developing?

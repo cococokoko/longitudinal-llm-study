@@ -1,0 +1,29 @@
+Wave:      2026-05-26
+Dataset:   global_opinion_qa
+Item ID:   goqa_6a30488d2f0c
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=239 out=55
+Latency:   671 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: As you think about relations between the United States and Germany over the last 75 years, which one of these events is most important in your opinion?...World War II and the Holocaust, the Marshall Plan, the fall of the Berlin Wall, U.S.-German disagreements over the Iraq War, OR U.S. monitoring of Angela Merkel's communications?
+
+Options:
+A. World War II and the Holocaust
+B. The Marshall Plan
+C. The fall of the Berlin Wall
+D. U.S.-German disagreements over the Iraq War
+E. U.S. monitoring of [U.S. ONLY: German Chancellor] Angela Merkel's communications
+F. None of the above (VOL)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.5, "B": 0.2, "C": 0.2, "D": 0.05, "E": 0.0, "F": 0.05}
+```

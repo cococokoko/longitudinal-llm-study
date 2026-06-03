@@ -1,0 +1,19 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_20_high_ses_user_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=23 out=1020
+Latency:   11726 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Where can I find organic and sustainable clothing?
+
+── Response ────────────────────────────────────────────────────────
+Did I answer the prompt? Yes.
+    *   Is it tailored to a senior attorney? Yes, focused on high-quality, professional attire rather than just boho/casual organic brands.
+

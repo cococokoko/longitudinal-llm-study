@@ -1,0 +1,36 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_334bf7b673ae
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=158 out=659
+Latency:   8104 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: In the city or area where you live, are you satisfied or dissatisfied with the quality of the following?
+
+The quality of health care
+
+Options:
+A. Very satisfied
+B. Fairly satisfied
+C. Fairly Dissatisfied
+D. Very dissatisfied
+E. Don't know
+F. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{
+  "A": 0.28,
+  "B": 0.42,
+  "C": 0.16,
+  "D": 0.09,
+  "E": 0.04,
+  "F": 0.01
+}

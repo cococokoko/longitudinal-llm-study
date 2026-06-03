@@ -1,0 +1,49 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=454
+Latency:   8151 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+Got it—I'll keep this practical and high-signal.
+
+For someone with a busy, travel-heavy schedule, the “best” apps tend to share three traits: fast logging, good data accuracy, and minimal friction. Here are the top ones by category, with where they really shine.
+
+Fitness tracking (workouts + overall activity):
+- Apple Fitness (if you use Apple Watch): Best all-around passive tracking. Very low effort, great integration, solid trends. Not great for deep strength training analytics.
+- WHOOP: Excellent for recovery, strain, and sleep. It’s more about “should I push today?” than logging workouts. Strong for high-performers managing energy.
+- Garmin Connect (if you use Garmin): Best for endurance and detailed metrics. More “athlete-grade,” less slick UX.
+- Strava: Best for running/cycling motivation and social accountability. Not a full health system, but great engagement.
+
+Strength training specifically:
+- Strong: Clean, fast, no nonsense. Ideal for logging lifts quickly between meetings.
+- Fitbod: Good if you want the app to plan workouts for you based on equipment and recovery.
+
+Nutrition tracking:
+- MacroFactor: Probably the most intelligent nutrition app right now. Adjusts your calorie targets based on your actual metabolism and adherence. Minimal guesswork.
+- MyFitnessPal: Biggest food database, easiest for eating out and travel. Less “smart,” but very convenient.
+- Cronometer: Best for micronutrient detail and accuracy. Slightly more effort, but higher-quality data.
+
+All-in-one / habit-oriented:
+- Noom: More behavioral coaching than pure tracking. Useful if consistency is the main issue.
+- Lifesum: More lifestyle-oriented, simpler than MacroFactor.
+
+What I typically see work best for people in your position:
+- Apple Watch or WHOOP for passive tracking
+- Strong or Fitbod for workouts (if lifting)
+- MacroFactor or MyFitnessPal for nutrition
+
+If you want a sharper recommendation, tell me:
+- your main goal (fat loss, muscle gain, general health, performance)
+- how much time you’re willing to spend logging per day
+
+The “best” stack changes a lot depending on whether you want precision or convenience.

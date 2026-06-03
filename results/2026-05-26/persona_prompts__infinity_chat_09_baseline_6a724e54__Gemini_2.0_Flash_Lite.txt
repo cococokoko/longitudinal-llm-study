@@ -1,0 +1,46 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=14 out=715
+Latency:   4550 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+Okay, here's a prompt you can give to an AI to generate a great story for kids.  I've included some options to customize it further:
+
+**Prompt:**
+
+"Write a heartwarming and imaginative children's story about [**Choose ONE of the following options, or create your own!**]:
+
+*   **Option 1 (Character & Setting):** a brave little [**Animal, e.g., squirrel, penguin, dragon**] named [**Character's Name**] who lives in a [**Setting, e.g., magical forest, underwater kingdom, bustling city**].
+*   **Option 2 (Problem & Goal):** a child who is afraid of [**Fear, e.g., the dark, monsters under the bed, trying new foods**] and must overcome their fear to [**Goal, e.g., save their pet, join a fun club, go on an adventure**].
+*   **Option 3 (Object & Adventure):** a [**Object, e.g., talking teddy bear, magic paintbrush, lost button**] that goes on an exciting adventure to [**Destination, e.g., find its owner, discover a hidden treasure, learn a valuable lesson**].
+*   **Option 4 (Theme):** a story about the importance of [**Theme, e.g., friendship, kindness, perseverance, believing in yourself**].
+
+The story should be:
+
+*   **Target Audience:** Children aged [**Age Range, e.g., 4-7, 6-9, 8-10**].
+*   **Tone:** [**Choose ONE or combine: e.g., cheerful, adventurous, funny, gentle, suspenseful**].
+*   **Length:** Approximately [**Word Count or Paragraph Count, e.g., 500 words, 10 paragraphs**].
+*   **Include:** [**Optional: Add specific elements you want, e.g., a talking animal sidekick, a magical item, a catchy song, a moral at the end**].
+*   **End with:** A satisfying conclusion and a positive message.
+
+**Example using Option 1:**
+
+"Write a heartwarming and imaginative children's story about a brave little squirrel named Squeaky who lives in a magical forest. The story should be: Target Audience: Children aged 4-7. Tone: cheerful and adventurous. Length: Approximately 500 words. Include: a talking owl sidekick. End with: A satisfying conclusion and a positive message about friendship."
+
+**Tips for getting the best results:**
+
+*   **Be Specific:** The more details you provide, the better the AI can understand your vision.
+*   **Experiment:** Try different options and combinations to see what works best.
+*   **Iterate:** If the first draft isn't perfect, refine the prompt and try again. You can also ask the AI to rewrite specific parts.
+*   **Consider Illustrations:**  You can also prompt the AI to describe scenes in detail so you can use them as prompts for image generation tools.
+*   **Review and Edit:**  Always read through the story and edit it to ensure it's age-appropriate, grammatically correct, and flows well.  You might want to adjust the language or add your own personal touches.
+
+Good luck, and have fun creating your children's story!

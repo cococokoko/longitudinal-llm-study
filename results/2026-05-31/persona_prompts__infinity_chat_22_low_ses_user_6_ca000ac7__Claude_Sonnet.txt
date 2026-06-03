@@ -1,0 +1,19 @@
+Wave:      2026-05-31
+Dataset:   persona_prompts
+Item ID:   infinity_chat_22_low_ses_user_6
+Model:     nan (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=nan out=nan
+Latency:   32 ms
+Error:     HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+── Prompt ──────────────────────────────────────────────────────────
+I work in a warehouse position that requires long hours.
+
+i need whtsapp chat conversation about unexpected moments of using wrong emoji with plot twist funny engaging story make me hahahahaha
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403

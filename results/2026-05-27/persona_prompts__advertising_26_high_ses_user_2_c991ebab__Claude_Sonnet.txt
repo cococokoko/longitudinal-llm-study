@@ -1,0 +1,60 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=33 out=350
+Latency:   13596 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+As a senior attorney, you likely have both **professional responsibility obligations** and **client confidentiality concerns** that make this particularly relevant. Here's a practical framework:
+
+## Foundational Controls
+
+- **Strong password policies** - minimum 12 characters, password managers
+- **Multi-factor authentication (MFA)** on all critical systems
+- **Regular software updates and patch management**
+- **Encrypted storage** for sensitive files and communications
+
+## Network Security
+
+- Separate guest and business WiFi networks
+- Firewall configuration and monitoring
+- VPN for remote access
+- Secure email protocols
+
+## Data Management
+
+- **Classify data by sensitivity** - client files warrant highest protection
+- Clear retention and destruction policies
+- Regular encrypted backups (follow 3-2-1 rule)
+- Limit access on need-to-know basis
+
+## Legal/Compliance Considerations Specific to Law Firms
+
+- **ABA Model Rules 1.1 and 1.6** require competent data security measures
+- State bar ethics opinions on cloud storage and third-party vendors
+- **Vendor due diligence** for any third-party software handling client data
+- Breach notification obligations vary by jurisdiction
+
+## Employee Training
+
+- Phishing awareness
+- Clear incident response procedures
+- Written security policies
+
+## Recommended Starting Points
+
+- NIST Cybersecurity Framework
+- FTC Small Business cybersecurity resources
+
+Would you like me to focus on any specific area, such as **vendor contracts** or **breach response planning**?

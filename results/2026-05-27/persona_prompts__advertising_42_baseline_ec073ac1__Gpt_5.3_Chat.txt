@@ -1,0 +1,47 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=479
+Latency:   10710 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+It kind of depends on how deep you want to go and what keeps you consistent, but here are some of the strongest options right now, broken down by style:
+
+If you want an all-in-one tracker (fitness + nutrition):
+- MyFitnessPal — still the most popular. Huge food database, easy logging, decent workout tracking. Best if you just want something that works without thinking too hard.
+- Cronometer — more precise than MyFitnessPal. Tracks micronutrients (vitamins, minerals), not just calories. Great if you care about accuracy or specific diets.
+- Lifesum — more lifestyle-focused, with meal plans and a cleaner interface. Less “data-heavy,” more guided.
+
+If your main focus is nutrition:
+- MacroFactor — excellent if you like data but don’t want to guess calories. It adjusts your calorie targets based on your actual progress. Very smart, very effective.
+- Lose It! — simpler and more user-friendly than MyFitnessPal. Good for weight loss without overwhelm.
+- Yazio — nice design, solid meal planning features, especially popular in Europe.
+
+If your main focus is workouts:
+- Strong — great for weightlifting. Simple, fast logging, good progress tracking.
+- Hevy — similar to Strong but more modern and social features.
+- Nike Training Club — free guided workouts, good for variety and beginners/intermediate users.
+
+If you want habit + health tracking beyond just fitness:
+- Apple Fitness + Apple Health (if you’re on iPhone) — integrates everything: steps, workouts, sleep, calories.
+- Google Fit (Android equivalent)
+- WHOOP or Oura (with their apps) — more advanced recovery, sleep, and strain tracking if you’re into wearables.
+
+If you want a “coach-like” experience:
+- Noom — psychology-based weight loss coaching (more about behavior change than raw tracking).
+- Future — real human coach connected to your workouts (expensive, but very hands-on).
+
+Quick take:
+- Best overall: MyFitnessPal or MacroFactor  
+- Best for accuracy: Cronometer  
+- Best for lifting: Strong or Hevy  
+- Best for simplicity: Lose It!  
+
+If you tell me your goal (lose weight, build muscle, just be healthier, etc.), I can narrow it down to 1–2 that actually fit you instead of throwing options at you.

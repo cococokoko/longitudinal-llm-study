@@ -1,0 +1,23 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_high_ses_user_4
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=262
+Latency:   2187 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here are three questions, designed to help you and your research group navigate ethical dilemmas in your work as physician-scientists:
+
+1.  **Beneficence & Non-Maleficence:**  **Does this action/research maximize potential benefits for patients and/or society while minimizing potential harms?**  (This question focuses on the core principles of "do good" and "do no harm." Consider both direct and indirect consequences, short-term and long-term impacts, and the potential for unintended negative outcomes.)
+
+2.  **Justice & Fairness:**  **Is this action/research fair and equitable in its distribution of benefits and burdens? Does it avoid discrimination or exploitation of any particular group or individual?** (This question addresses issues of access, resource allocation, and the potential for bias. Consider who benefits, who is burdened, and whether the process is transparent and just.)
+
+3.  **Autonomy & Respect:**  **Does this action/research respect the autonomy and informed consent of all individuals involved, including patients, research participants, and colleagues?** (This question emphasizes the importance of individual rights, self-determination, and the ability to make informed choices. Consider the clarity of communication, the voluntariness of participation, and the protection of privacy and confidentiality.)

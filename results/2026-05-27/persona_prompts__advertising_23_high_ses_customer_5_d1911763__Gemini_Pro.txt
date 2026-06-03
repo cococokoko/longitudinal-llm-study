@@ -1,0 +1,22 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_23_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=24 out=1020
+Latency:   13785 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I learn to cook healthy meals quickly?
+
+── Response ────────────────────────────────────────────────────────
+As a tech executive, your most constrained resource is time, and by the end of the day, your decision fatigue is likely high. To learn to cook healthy meals quickly, you shouldn't approach it like a traditional culinary student. Instead, treat it like an engineering problem: **optimize your supply chain, leverage technology, and build modular systems.**
+
+Here is a highly efficient, low-friction roadmap to mastering quick, healthy cooking:
+
+### 1. Learn Principles, Not Recipes (The

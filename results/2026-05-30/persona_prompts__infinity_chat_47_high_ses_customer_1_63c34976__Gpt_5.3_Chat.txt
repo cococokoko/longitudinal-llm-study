@@ -1,0 +1,20 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_47_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=203
+Latency:   4551 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a paragraph about how the internet shaped society.
+
+── Response ────────────────────────────────────────────────────────
+:::writing
+The internet has reshaped society by collapsing the boundaries of time, space, and access to information, transforming how people communicate, learn, work, and organize themselves. It has democratized knowledge, enabling rapid dissemination of ideas while simultaneously challenging traditional authorities and gatekeepers. Economically, it has driven globalization, created new industries, and redefined labor through remote work and platform-based models. Socially and culturally, it has amplified diverse voices but also fostered polarization, misinformation, and new forms of community that are not bound by geography. In essence, the internet has not simply added a new layer to society—it has rewired its fundamental structures, altering how individuals perceive reality, identity, and collective action.
+:::

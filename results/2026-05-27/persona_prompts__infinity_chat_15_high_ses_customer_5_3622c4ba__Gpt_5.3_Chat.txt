@@ -1,0 +1,35 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_15_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=372
+Latency:   7383 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best trading strategy for stocks
+
+── Response ────────────────────────────────────────────────────────
+There isn’t a single “best” strategy—what works depends on time horizon, risk tolerance, and how much effort you want to put in. But a few approaches consistently outperform most ad‑hoc trading:
+
+If you want something robust and time-efficient, long-term investing in high-quality businesses (or broad index funds) wins more often than not. The edge comes from compounding, not clever timing. Think: durable companies, strong cash flow, pricing power, and holding through volatility.
+
+If you’re more active, a factor-based approach tends to be more reliable than pure intuition. Common ones:
+- Momentum: buy stocks that are already trending up, sell laggards. Works surprisingly well but requires discipline and risk control.
+- Value: buy undervalued companies (low P/E, strong fundamentals). Can lag for long periods but historically solid.
+- Quality: focus on high return on capital, low debt, consistent earnings.
+
+If you’re drawn to trading (shorter-term), risk management matters more than entry signals. Most people fail not because their ideas are terrible, but because they size positions poorly, overtrade, or don’t cut losses. Simple rules—like limiting position size and having predefined exit points—matter more than fancy indicators.
+
+A few grounded principles that cut across all strategies:
+- Avoid overconcentration unless you truly have an informational edge.
+- Costs and taxes quietly erode returns—keep turnover intentional.
+- Don’t confuse luck with skill; track performance over meaningful periods.
+- The market punishes inconsistency more than it rewards brilliance.
+
+If you want, I can tailor this to your situation—how active you want to be, capital size, and risk appetite.

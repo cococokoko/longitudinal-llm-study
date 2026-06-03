@@ -1,0 +1,57 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=586
+Latency:   12428 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+If you’re looking beyond the usual stuff (Nmap, Wireshark, Metasploit), there are quite a few lesser-known tools and techniques that are powerful but not as widely talked about. Here are some interesting ones, grouped a bit so it’s easier to scan:
+
+**Niche reconnaissance & OSINT**
+- SpiderFoot HX (self-hosted version especially): automated deep OSINT with tons of obscure data sources  
+- Amass (advanced graphing mode): not rare, but its graph DB usage is underutilized  
+- Photon: fast crawler for extracting URLs, endpoints, and intel from web apps  
+- theHarvester (with API integrations): often overlooked when properly configured  
+
+**Memory forensics & low-level analysis**
+- Volatility3: many people know it, fewer use its deeper plugins effectively  
+- Rekall: less maintained but still powerful for certain workflows  
+- Redline (Mandiant): surprisingly underused for quick triage  
+
+**Binary and exploit research**
+- Ghidra: widely known, but advanced scripting is underused  
+- Radare2 / Cutter: very powerful but has a steep learning curve  
+- Angr: symbolic execution framework for automated exploit analysis  
+
+**Adversary emulation & detection engineering**
+- Atomic Red Team: small, testable attack techniques mapped to MITRE ATT&CK  
+- Caldera (MITRE): automated adversary emulation platform  
+- Prelude Operator: newer tool for autonomous attack simulation  
+
+**Network-level oddities**
+- Zeek (formerly Bro): extremely powerful network analysis, but complex  
+- Arkime (Moloch): full packet capture indexing at scale  
+- RITA: detects beaconing and C2 traffic patterns  
+
+**Deception & defensive tricks**
+- Canarytokens: simple but clever tripwires (URLs, files, DNS, etc.)  
+- OpenCanary: lightweight honeypot you can actually deploy quickly  
+- T-Pot: multi-honeypot platform for research environments  
+
+**Uncommon techniques (not just tools)**
+- Living-off-the-Land (LotL): using legitimate system tools (PowerShell, WMI, etc.) to avoid detection  
+- DNS tunneling: hiding data exfiltration inside DNS queries  
+- Fileless malware analysis: focusing on memory and runtime behavior instead of disk artifacts  
+- Traffic shaping for evasion: mimicking normal user patterns to bypass detection  
+- Side-channel analysis (timing, cache attacks): more niche, often academic but real  
+
+If you want something more “underground” feeling, tools like Sliver (C2 framework), Mythic, or Covenant are also gaining traction but aren’t as mainstream as Metasploit.
+
+If you tell me your focus (pentesting, blue team, malware analysis, bug bounty, etc.), I can narrow this down to the most useful and realistic ones to learn.

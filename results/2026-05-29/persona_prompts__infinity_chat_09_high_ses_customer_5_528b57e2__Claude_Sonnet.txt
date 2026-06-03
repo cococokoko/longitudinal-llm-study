@@ -1,0 +1,41 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=300
+Latency:   8288 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+Here's a prompt you can use:
+
+---
+
+**"Write a fun and imaginative children's story for ages 4-8 about a [choose: animal/robot/child] named [choose a name] who discovers they have a special ability to [choose something magical or unique]. The story should include a simple problem to solve, a helpful friend, a moment where the main character feels like giving up but keeps trying, and a heartwarming ending with a clear lesson about [choose: kindness/courage/teamwork/creativity]. Use simple words, short sentences, vivid descriptions, and add some humor to keep kids laughing. Make it feel like a classic bedtime story."**
+
+---
+
+**Tips to make it even better:**
+
+- **Add your child's name** as the main character
+- **Include their favorite animal** or hobby
+- **Specify a setting** like space, underwater, or an enchanted forest
+- **Mention a theme** that matters to you as a parent
+
+---
+
+**Example filled in:**
+
+*"Write a story about a small dragon named Pip who discovers he can sneeze rainbows, needs to help his village find water during a drought, and learns that being different is actually a superpower."*
+
+---
+
+Want me to just **write the story directly** for you instead? Just tell me your child's age and interests! 🎉

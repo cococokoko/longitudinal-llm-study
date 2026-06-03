@@ -1,0 +1,35 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=440
+Latency:   8103 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Small businesses don’t need enterprise-level complexity, but they do need consistent, disciplined basics. Most breaches happen because of simple gaps, not sophisticated attacks.
+
+Start with access control. Give employees only the data and systems they actually need (least privilege), and require strong authentication. That means unique passwords plus multi-factor authentication (MFA) wherever possible, especially for email, cloud tools, and admin accounts.
+
+Keep software up to date. Turn on automatic updates for operating systems, apps, and any plugins. A lot of attacks exploit known vulnerabilities that already have patches.
+
+Backups are your safety net. Use the “3-2-1 rule”: three copies of your data, on two different types of storage, with one copy offsite or in the cloud. Test backups occasionally to make sure you can actually restore them.
+
+Encrypt sensitive data. That includes data stored on devices (laptops, phones, servers) and data in transit (use HTTPS, secure email, VPNs if needed). If a device is lost or stolen, encryption can prevent exposure.
+
+Train your people. Phishing emails are still the #1 entry point. Teach staff how to spot suspicious links, attachments, and requests for sensitive info. Regular, short training sessions are more effective than one long annual seminar.
+
+Secure your network. Change default router passwords, use a firewall, and separate guest Wi-Fi from your business network. If employees work remotely, make sure they’re using secure connections.
+
+Limit and monitor third-party access. Many small businesses rely on external tools and vendors. Only grant necessary access and review it periodically. Choose reputable providers with clear security practices.
+
+Have a simple incident response plan. Know who to contact, how to isolate affected systems, and how to communicate if something goes wrong. You don’t need a giant manual—just a clear set of steps.
+
+Finally, comply with relevant regulations (like GDPR, HIPAA, etc.) if they apply to your business. Even if they don’t strictly apply, they’re a good benchmark for responsible data handling.
+
+If you want, I can tailor this to a specific type of business (retail, healthcare, SaaS, etc.) or size.

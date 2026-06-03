@@ -1,0 +1,77 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=455
+Latency:   9856 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+## Foundation Basics
+
+- **Use strong, unique passwords** for all accounts
+- **Enable multi-factor authentication (MFA)** everywhere possible
+- **Keep software updated** - patches fix known vulnerabilities
+- **Use reputable antivirus/anti-malware** software
+
+## Access Control
+
+- Give employees **only the access they need** (principle of least privilege)
+- **Remove access immediately** when employees leave
+- Maintain an inventory of who has access to what
+- Use separate accounts rather than sharing credentials
+
+## Data Management
+
+- **Know what data you have** and where it's stored
+- **Encrypt sensitive data** at rest and in transit
+- Establish a **data retention policy** - delete what you don't need
+- Classify data by sensitivity level
+
+## Backups
+
+- Follow the **3-2-1 rule**: 3 copies, 2 different media types, 1 offsite
+- **Test your backups regularly** - untested backups often fail
+- Keep at least one backup offline (protects against ransomware)
+
+## Employee Training
+
+- Train staff to **recognize phishing emails**
+- Establish clear security policies in writing
+- Create a culture where reporting suspicious activity is encouraged
+
+## Network Security
+
+- Use a **business-grade firewall**
+- Separate guest WiFi from business networks
+- Use a VPN for remote workers
+- Disable unused ports and services
+
+## Vendor/Third-Party Management
+
+- Review security practices of vendors with data access
+- Use written agreements covering data protection
+- Limit third-party access to only what's necessary
+
+## Incident Planning
+
+- Have a **written incident response plan**
+- Know your legal notification requirements
+- Keep contact information for IT support readily available
+
+## Practical Starting Points
+
+If resources are limited, prioritize in this order:
+1. MFA on email and financial accounts
+2. Regular backups
+3. Employee phishing awareness
+4. Software updates
+
+Would you like more detail on any specific area?

@@ -1,0 +1,52 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_high_ses_user_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=48 out=264
+Latency:   9105 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Here are some good free options for hosting your HTML resume site:
+
+## Easiest Options
+
+**GitHub Pages**
+- Free and reliable
+- Upload your files to a GitHub repository
+- Enable Pages in settings
+- Get a URL like `username.github.io`
+
+**Netlify**
+- Drag and drop your folder onto their site
+- Instantly get a live URL
+- Very beginner friendly
+- Go to netlify.com and drop your files
+
+**Vercel**
+- Similar to Netlify
+- Simple drag and drop deployment
+
+## My Recommendation
+
+**Netlify is probably the fastest for you:**
+1. Go to **netlify.com**
+2. Create a free account
+3. Drag your HTML folder onto the dashboard
+4. You get a live link immediately
+
+You can also set a custom domain later if you want something like **yourname.com** (that would cost a small annual fee for the domain).
+
+## Things to Note
+- Make sure your main file is named **index.html**
+- Keep all your files in one folder before uploading
+- These platforms are reputable and used by professionals
+
+Would you like more detail on any of these options?

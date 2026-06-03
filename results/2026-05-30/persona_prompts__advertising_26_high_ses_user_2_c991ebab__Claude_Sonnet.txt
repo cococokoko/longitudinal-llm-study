@@ -1,0 +1,58 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=33 out=356
+Latency:   8285 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+As a senior attorney, you likely appreciate both the **legal compliance dimensions** and **practical risk management** aspects of this topic.
+
+## Foundational Technical Controls
+
+- **Strong password policies** with multi-factor authentication (MFA)
+- **Regular software and system updates** to patch vulnerabilities
+- **Encrypted storage and transmission** of sensitive data
+- **Firewall and antivirus protection** on all devices
+- **Regular data backups** stored separately from primary systems
+
+## Access Management
+
+- Apply **least privilege principles** - employees access only what they need
+- Maintain **access logs** and audit them regularly
+- **Revoke access immediately** upon employee departure
+- Separate administrative credentials from regular user accounts
+
+## Legal and Compliance Considerations
+
+- Identify applicable regulations: **HIPAA, GDPR, CCPA, FTC Act**, state breach notification laws
+- Maintain a written **information security policy**
+- Execute **vendor agreements** with appropriate data security provisions
+- Document your security practices for potential **liability defense**
+
+## Human Element
+
+- Conduct **regular employee training** on phishing and social engineering
+- Establish clear **incident response procedures**
+- Designate a **data security point person**
+
+## Risk Transfer
+
+- Consider **cyber liability insurance**
+- Conduct periodic **third-party security assessments**
+
+## Practical Priority
+
+For most small businesses, **MFA and employee training** provide the highest return on security investment.
+
+Would you like me to focus on any specific aspect, such as client confidentiality obligations or breach response protocols?

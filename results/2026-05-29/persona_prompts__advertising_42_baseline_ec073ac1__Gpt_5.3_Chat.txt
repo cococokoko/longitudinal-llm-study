@@ -1,0 +1,44 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=399
+Latency:   7356 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+Depends a bit on your style (simple tracking vs deep data nerd), but here are some of the best ones right now, grouped by what they’re strongest at:
+
+**All-in-one fitness + nutrition**
+- **MyFitnessPal** – still the most popular. Huge food database, easy calorie tracking, integrates with tons of apps. Best if you want something reliable and simple.
+- **Cronometer** – more precise and “science-y.” Tracks micronutrients (vitamins, minerals), not just calories. Great if you care about accuracy or specific diets.
+- **Lose It!** – very user-friendly and a bit more goal-focused (weight loss, habits). Less overwhelming than MyFitnessPal.
+
+**Workout tracking (gym / strength)**
+- **Strong** – clean interface, great for logging lifts and progressive overload. No fluff.
+- **Hevy** – similar to Strong but with a social/community angle. Growing fast.
+- **Fitbod** – generates workouts for you based on your history and available equipment.
+
+**Running / cardio**
+- **Strava** – the social network of fitness. Great for running/cycling, segments, and motivation.
+- **Nike Run Club** – free, polished, with guided runs and coaching.
+
+**Habit + lifestyle tracking**
+- **MacroFactor** – excellent for nutrition coaching with adaptive calorie targets. More “smart” than MyFitnessPal.
+- **Carbon** – similar idea (created by a well-known coach), focuses on macros and coaching adjustments.
+
+**If you want something simple**
+- MyFitnessPal + Strong is a classic combo.
+
+**If you want data + optimization**
+- Cronometer + MacroFactor (or Fitbod)
+
+**If motivation/social matters**
+- Strava + Hevy
+
+If you tell me your goal (lose weight, build muscle, just stay active, etc.), I can narrow it down to 1–2 that fit you best instead of throwing a bunch at you.

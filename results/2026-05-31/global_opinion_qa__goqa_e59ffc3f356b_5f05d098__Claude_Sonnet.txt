@@ -1,0 +1,35 @@
+Wave:      2026-05-31
+Dataset:   global_opinion_qa
+Item ID:   goqa_e59ffc3f356b
+Model:     nan (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=nan out=nan
+Latency:   38 ms
+Error:     HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: In politics, people talk about? Progressives? and conservatives ?. In general, how would you place your views on this scale?
+
+Options:
+A. Progressive
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. Conservative
+K. Don't know/No answer
+L. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403

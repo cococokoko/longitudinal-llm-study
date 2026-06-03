@@ -1,0 +1,31 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=355
+Latency:   6648 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+A lot of home WiFi issues come down to placement, interference, and outdated gear. Here’s how to get a noticeable boost without overcomplicating it:
+
+Start with your router’s location. Put it in a central, open spot—not tucked in a cabinet or basement corner. Elevate it (a shelf is great), and keep it away from thick walls, metal objects, and large electronics.
+
+Check your band and settings. Use 5 GHz for speed (closer range) and 2.4 GHz for longer reach. If your router supports it, enable band steering or combine SSIDs so devices auto-switch. Also make sure firmware is up to date.
+
+Reduce interference. Nearby networks and devices (microwaves, cordless phones) can mess with your signal. Switching to a less crowded channel in your router settings can help a lot.
+
+Upgrade if needed. If your router is more than ~4–5 years old, newer standards (WiFi 6/6E/7) are much faster and better with multiple devices. That alone can be a big jump.
+
+Use mesh or extenders for coverage. If you have dead zones, a mesh system (like Eero, Google Nest, or TP-Link Deco) is usually better than a single extender—it creates a seamless network across your home.
+
+Limit network congestion. Too many devices or heavy usage (streaming, downloads) can slow things down. You can prioritize devices with QoS settings if your router supports it.
+
+Secure your network. Make sure you’re using WPA2 or WPA3 with a strong password so neighbors aren’t freeloading.
+
+If you want, tell me your home size, router model, and where the dead zones are—I can give more tailored suggestions.

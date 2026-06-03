@@ -1,0 +1,55 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=16 out=410
+Latency:   7371 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+It really depends on what kind of collaboration you mean (chat, project tracking, docs, design, etc.), but here are the most solid, widely used tools by category:
+
+**Team communication**
+- Slack: still the go-to for structured chat, channels, integrations
+- Microsoft Teams: best if you’re already in the Microsoft ecosystem
+- Discord: surprisingly strong for informal or startup-style teams
+
+**Project & task management**
+- Asana: great balance of simplicity and structure
+- ClickUp: very powerful, lots of customization (can feel heavy)
+- Trello: simple kanban boards, easy to start with
+- Jira: best for software/dev teams, but overkill for others
+
+**Docs & knowledge sharing**
+- Notion: all-in-one workspace (docs, wikis, light project tracking)
+- Google Workspace: Docs, Sheets, Drive—still unbeatable for real-time collaboration
+- Confluence: more structured documentation, often paired with Jira
+
+**Video meetings**
+- Zoom: most reliable for calls and webinars
+- Google Meet: simple, works well inside Google ecosystem
+- Teams: again, strong if you're using Microsoft
+
+**File sharing & storage**
+- Google Drive: easy, collaborative
+- Dropbox: fast syncing, clean interface
+- OneDrive: best with Microsoft stack
+
+**Whiteboarding & brainstorming**
+- Miro: very flexible, great for workshops
+- FigJam: simpler, especially good if you use Figma
+- MURAL: similar to Miro, slightly more enterprise-focused
+
+**Design & async collaboration**
+- Figma: real-time design + comments, great for product teams
+- Loom: async video updates, super useful to reduce meetings
+
+If you want a “clean stack” that works for most teams without overcomplication:
+- Slack + Notion + Google Drive + Zoom + Asana
+
+If you tell me your team size and what kind of work you do, I can narrow it down to a tighter setup that won’t feel bloated.

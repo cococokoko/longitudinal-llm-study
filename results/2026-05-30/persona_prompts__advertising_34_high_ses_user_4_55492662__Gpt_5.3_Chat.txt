@@ -1,0 +1,43 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_34_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=724
+Latency:   16795 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best techniques for effective online teaching?
+
+── Response ────────────────────────────────────────────────────────
+For a physician-scientist, the challenge isn’t just transmitting knowledge—it’s preserving the clinical reasoning, uncertainty, and pattern recognition that usually emerge in live environments. The most effective online teaching techniques tend to recreate those elements rather than just deliver content.
+
+Start with structure, but keep it cognitively humane. Online learners fatigue faster and drift more easily, so shorter, well-signposted segments (think 10–20 minutes of focused content) outperform long lectures. Each segment should answer a clear question or clinical problem. A simple rhythm works well: pose a problem → let learners think or commit → unpack the reasoning → generalize.
+
+Interactivity is not optional—it’s the engine. Techniques that work particularly well in medical/scientific contexts include:
+- Cold-call with warning: tell learners you’ll be calling on people and give them 20–30 seconds to think first. It preserves accountability without panic.
+- Polling for diagnostic or management decisions: forces commitment and reveals misconceptions immediately.
+- Chat-based “parallel thinking”: ask everyone to type a differential, mechanism, or next step simultaneously before discussion.
+- Breakout micro-discussions: 2–4 people, tightly timed, with a specific output (e.g., rank-order differentials, design an experiment, critique a figure).
+
+Case-based teaching translates especially well online if you slow it down. Don’t present a full case—unfold it. Stop at key decision points and force prediction (“What do you expect the lab to show?” “What mechanism explains this?”). The value is in the reasoning, not the reveal.
+
+Make your thinking visible. In person, learners pick up on subtle cues; online, you need to externalize them. Narrate your uncertainty, competing hypotheses, and why you discard options. Annotate slides or images live if possible—this mimics bedside or whiteboard teaching.
+
+Leverage dual coding deliberately. Dense slides kill attention. Pair a simple visual (pathway, schema, imaging, figure) with spoken explanation. If you’re teaching data interpretation, walk through figures step-by-step instead of summarizing conclusions.
+
+Build in retrieval, not just exposure. A few well-placed, low-stakes questions spaced across the session (and revisited later) dramatically improve retention. Even better if learners have to generate answers rather than recognize them.
+
+Asynchronous elements amplify the synchronous session if used well. Pre-session materials should be lightweight and purposeful (a short video, a key paper with 2–3 guiding questions). Post-session, a quick follow-up (one clinical pearl, one unresolved question, one application task) helps consolidate learning without overwhelming.
+
+Social presence matters more than polish. Learners engage more when they feel there’s a real person paying attention. Use names, respond to chat, and occasionally deviate from slides to address what’s happening in the room. Camera use helps, but responsiveness matters more than production quality.
+
+For research training, shift from “present your work” to “defend your reasoning.” Have trainees critique papers live, identify causal claims vs associations, or redesign flawed experiments. Online formats are actually excellent for this if you share figures or methods and annotate together.
+
+Finally, measure and adapt. Simple signals—poll accuracy trends, chat participation, who speaks and who doesn’t—tell you quickly what’s working. Iterating based on these is more valuable than chasing any single “best” technique.
+
+If you want, I can tailor this to a specific audience (residents vs PhD students, large lectures vs small groups, clinical vs bench science) or help design a session format.

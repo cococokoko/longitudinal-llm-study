@@ -1,0 +1,28 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=38 out=178
+Latency:   3830 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here’s a compact three-question framework you can use as a moral “stress test”:
+
+1. **Harm and benefit:**  
+   Does this action reduce or cause harm, and are the expected benefits real, proportionate, and fairly distributed?
+
+2. **Respect for persons:**  
+   Does it respect the autonomy, dignity, and rights of everyone affected—especially those with less power or voice?
+
+3. **Universality and accountability:**  
+   Would it be acceptable if everyone in a similar position acted this way, and would I stand by this decision if it were made public or applied to me?
+
+If an action struggles under any one of these, it’s a signal to reconsider or refine it.

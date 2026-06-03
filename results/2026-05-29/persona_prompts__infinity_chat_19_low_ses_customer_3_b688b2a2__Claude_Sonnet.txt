@@ -1,0 +1,72 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_19_low_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=445
+Latency:   8125 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+the best books to learn Design and Analysis of Algorithms I in 2023
+
+── Response ────────────────────────────────────────────────────────
+# Best Books for Design and Analysis of Algorithms (2023)
+
+## 🏆 Top Tier (Most Recommended)
+
+### 1. **Introduction to Algorithms (CLRS)**
+- *Cormen, Leiserson, Rivest, Stein* — 4th Edition (2022)
+- The **gold standard** textbook
+- Covers sorting, graphs, dynamic programming, NP-completeness
+- Very rigorous with proofs
+- ⚠️ Dense for beginners
+
+---
+
+### 2. **Algorithm Design**
+- *Kleinberg & Tardos*
+- Excellent **intuitive explanations**
+- Great for greedy, divide & conquer, network flow
+- More readable than CLRS
+
+---
+
+### 3. **Algorithms** *(free online)*
+- *Jeff Erickson*
+- **Free PDF** at jeffe.cs.illinois.edu
+- Modern, well-written, highly recommended
+
+---
+
+## 📗 Beginner-Friendly Options
+
+| Book | Author | Best For |
+|------|--------|----------|
+| Grokking Algorithms | Aditya Bhargava | Visual learners |
+| Algorithms Illuminated | Tim Roughgarden | Self-study |
+| Data Structures & Algorithms in Python | Goodrich et al. | Practical coding |
+
+---
+
+## 💡 Recommended Learning Path
+
+1. **Start** → Grokking Algorithms
+2. **Build depth** → Kleinberg & Tardos
+3. **Master** → CLRS
+
+---
+
+## 🎯 Key Topics to Cover
+- Sorting & Searching
+- Recursion & Divide-and-Conquer
+- Dynamic Programming
+- Graph Algorithms
+- Greedy Algorithms
+- Big-O Complexity Analysis
+
+Would you like recommendations based on a **specific programming language** or **learning goal**?

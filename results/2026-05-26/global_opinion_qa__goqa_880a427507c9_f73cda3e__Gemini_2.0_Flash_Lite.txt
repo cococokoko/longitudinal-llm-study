@@ -1,0 +1,29 @@
+Wave:      2026-05-26
+Dataset:   global_opinion_qa
+Item ID:   goqa_880a427507c9
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=169 out=53
+Latency:   1096 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How likely or unlikely do you think it is that, in the future, a cyberattack will result in the following situation? b. Elections in your country will be tampered with
+
+Options:
+A. Very likely
+B. Somewhat likely
+C. Somewhat unlikely
+D. Very unlikely
+E. Has already happened (DO NOT READ)
+F. DK/Refused
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.3, "B": 0.4, "C": 0.2, "D": 0.0, "E": 0.0, "F": 0.1}
+```

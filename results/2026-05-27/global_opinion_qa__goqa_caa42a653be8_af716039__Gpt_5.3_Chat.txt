@@ -1,0 +1,25 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_caa42a653be8
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=111 out=197
+Latency:   4573 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I have a hard time breaking bad habits
+
+Options:
+A. Not at all
+B. 2
+C. 3
+D. Very Much
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.1, "B": 0.3, "C": 0.4, "D": 0.2}

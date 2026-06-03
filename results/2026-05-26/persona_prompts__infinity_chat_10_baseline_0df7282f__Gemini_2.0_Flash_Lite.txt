@@ -1,0 +1,65 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=30 out=1024
+Latency:   7794 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+You have several excellent free options for hosting your resume website. Here's a breakdown of the most popular and user-friendly choices, along with their pros and cons:
+
+**1. GitHub Pages (Highly Recommended for Simple Websites)**
+
+*   **How it works:** GitHub Pages is a free service provided by GitHub, a popular platform for version control. You upload your HTML, CSS, and JavaScript files to a special repository on GitHub, and GitHub automatically hosts them.
+*   **Pros:**
+    *   **Completely free:** No hidden costs.
+    *   **Easy to set up:**  Relatively straightforward, even for beginners.
+    *   **Uses Git for version control:**  Allows you to track changes to your website and easily revert to previous versions.  This is a huge benefit for managing your resume.
+    *   **Custom domain support:** You can use your own domain name (e.g., `yourname.com`) if you have one.
+    *   **Fast and reliable:** GitHub's infrastructure is generally very stable.
+    *   **Good for static websites:**  Perfect for HTML, CSS, and JavaScript-based websites like a resume.
+*   **Cons:**
+    *   **Limited features:**  Not suitable for complex websites with databases or server-side scripting (like PHP or Python).
+    *   **Requires a GitHub account:** You'll need to create a free GitHub account.
+    *   **Updates can take a few minutes to propagate:**  Changes you make to your files might not be immediately visible.
+
+*   **Steps to Host on GitHub Pages:**
+
+    1.  **Create a GitHub Account:** Go to [https://github.com/](https://github.com/) and sign up for a free account.
+    2.  **Create a New Repository:**
+        *   Click the "+" icon in the top right corner and select "New repository."
+        *   **Repository name:**  Choose a name.  If you want your website to be accessible at `yourusername.github.io`, the repository name *must* be `yourusername.github.io` (replace `yourusername` with your actual GitHub username).  If you want a different name, you can use any name, but the URL will be `yourusername.github.io/your-repo-name`.
+        *   **Description:** (Optional) Add a description of your website.
+        *   **Visibility:** Choose "Public" (this is required for GitHub Pages).
+        *   **Initialize this repository with a README:**  Check this box.
+        *   Click "Create repository."
+    3.  **Upload Your Website Files:**
+        *   On your repository page, click "Upload files."
+        *   Drag and drop your HTML, CSS, JavaScript, and image files into the upload area, or click "choose your files."
+        *   Click "Commit changes" (at the bottom).
+    4.  **Enable GitHub Pages:**
+        *   Go to the "Settings" tab of your repository.
+        *   In the left sidebar, click "Pages" (under "Code and automation").
+        *   Under "Source," select "Deploy from a branch."
+        *   Select the "main" branch (or "master" if that's what your repository uses).
+        *   Click "Save."
+    5.  **Find Your Website URL:**
+        *   After a few minutes, GitHub Pages will build your website.  You'll see a message at the top of the "Pages" settings page that says "Your site is published at..." followed by your website's URL (e.g., `yourusername.github.io` or `yourusername.github.io/your-repo-name`).
+
+**2. Netlify (Excellent for Static Sites, More Features)**
+
+*   **How it works:** Netlify is a platform specifically designed for hosting static websites. It's known for its ease of use and powerful features.
+*   **Pros:**
+    *   **Free tier:** Offers a generous free tier suitable for most personal websites.
+    *   **Easy deployment:**  You can deploy your website by dragging and dropping a folder, connecting to a Git repository (GitHub, GitLab, Bitbucket), or using their CLI.
+    *   **Fast and reliable:**  Netlify uses a global CDN (Content Delivery Network) to serve your website quickly.
+    *   **Automatic HTTPS:**  Provides free SSL certificates for secure connections.
+    *   **Custom domain support:**  Easily connect your own domain.
+    *   **Build process:**  Can automatically build your website from a Git repository, which is helpful if you use a static site generator.
+    *   **Forms and serverless functions (limited in the free tier

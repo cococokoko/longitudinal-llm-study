@@ -1,0 +1,67 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_33_high_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=770
+Latency:   14380 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to make my own natural beauty products?
+
+── Response ────────────────────────────────────────────────────────
+Making your own natural beauty products can be as simple or as technically sophisticated as you want, depending on how much chemistry you’re willing to engage with. At the simplest level, you’re just combining three functional categories: a base (oils, water, butters), active components (things that do something—exfoliate, soothe, hydrate), and stabilizers/preservatives when needed.
+
+A few foundational principles will save you from the most common mistakes:
+
+First, water vs. no water matters. Anything that contains water (including aloe vera, herbal infusions, milk, etc.) is microbiologically unstable and really does require a preservative system if you intend to store it more than a few days. Oil-only products don’t grow bacteria easily but can oxidize (go rancid), so they benefit from antioxidants like vitamin E.
+
+Second, “natural” doesn’t mean non-irritating. Essential oils, citrus extracts, and even baking soda can disrupt the skin barrier if used too strongly or frequently. Concentration matters far more than marketing labels.
+
+Third, pH matters, especially for skin and hair. Your skin sits around pH ~4.7–5.5. Products far outside that range can cause irritation or barrier damage over time.
+
+If you want a practical entry point, here are a few formulations that are simple but reasonably sound:
+
+Oil-based facial serum (no preservative needed):
+- 2 tbsp jojoba oil (technically a wax ester, very skin-compatible)
+- 1 tbsp rosehip oil (for linoleic acid and mild retinoid-like effects)
+- 5–10 drops vitamin E (antioxidant)
+- Optional: 2–3 drops lavender or frankincense essential oil (keep total essential oils under ~0.5%)
+
+This functions as an occlusive/emollient layer. Apply to damp skin to improve spread and reduce heaviness.
+
+Basic sugar or salt scrub:
+- 1/2 cup sugar (gentler) or fine salt
+- 1/4 cup oil (coconut, almond, or olive)
+- Optional: a little honey for humectant effect
+
+Use sparingly—mechanical exfoliation is easy to overdo.
+
+Simple water-based moisturizer (short shelf life unless preserved):
+- 1/4 cup aloe vera gel
+- 1–2 tsp glycerin (humectant)
+- 1 tbsp light oil (like squalane or jojoba)
+
+Without a preservative, keep refrigerated and use within about a week. If you want to make this properly shelf-stable, you’d need a broad-spectrum preservative and ideally an emulsifier to keep oil and water from separating.
+
+Hair mask:
+- 2 tbsp coconut oil
+- 1 tbsp argan oil
+- 1 tsp honey
+
+Leave on 20–30 minutes, then shampoo out.
+
+If you’re interested in going deeper, the real upgrade is learning emulsions (oil + water systems). That involves:
+- an emulsifying wax or lecithin
+- a preservative (e.g., benzyl alcohol–based systems, potassium sorbate blends, etc.)
+- basic sanitation practices
+- optionally a scale (formulation by weight is far more reliable than volume)
+
+One final note: patch test everything, especially if you’re experimenting with botanicals or essential oils. And if your goal is treating a specific skin condition (acne, rosacea, hyperpigmentation), many “natural” formulations are simply less predictable than well-studied actives like retinoids, azelaic acid, or niacinamide.
+
+If you tell me what kind of product you’re most interested in—anti-aging, dry skin, hair repair, etc.—I can suggest a more tailored formulation with tighter reasoning behind each ingredient.

@@ -1,0 +1,72 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=1024
+Latency:   6503 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+The best way to start learning coding from scratch depends on your goals, learning style, and available time. However, here's a comprehensive guide with a breakdown of the most effective approaches:
+
+**1. Define Your Goals and Choose a Language:**
+
+*   **What do you want to build?**  This is the most crucial first step.  Do you want to:
+    *   **Build websites?**  Focus on HTML, CSS, and JavaScript.
+    *   **Develop mobile apps?**  Consider Swift (iOS), Kotlin (Android), or cross-platform frameworks like React Native or Flutter.
+    *   **Analyze data?**  Python is a popular choice, along with libraries like Pandas and NumPy.
+    *   **Create games?**  C#, C++, or languages like Lua (used in game engines like Corona SDK) are common.
+    *   **Automate tasks?**  Python is excellent for scripting and automation.
+    *   **General programming knowledge?** Python is often recommended for beginners due to its readability and versatility. Java is another option, but can be more complex initially.
+
+*   **Choose your first language:** Based on your goals, select a language.  **Python** is often recommended for beginners because:
+    *   **Readability:**  Its syntax is relatively easy to understand.
+    *   **Versatility:**  Used in web development, data science, machine learning, scripting, and more.
+    *   **Large Community:**  Plenty of resources, tutorials, and support available.
+    *   **Beginner-Friendly Libraries:**  Libraries like `turtle` provide a fun way to learn basic programming concepts.
+
+    Other good starting points:
+    *   **JavaScript:**  Essential for web development (front-end and increasingly back-end).
+    *   **HTML/CSS:**  The foundation of web pages (HTML for structure, CSS for styling).  While technically not programming languages, they are essential for web development.
+
+**2.  Choose Your Learning Resources:**
+
+*   **Online Courses:**
+    *   **FreeCodeCamp.org:**  Excellent for web development (HTML, CSS, JavaScript, and more).  Project-based learning.
+    *   **Codecademy:**  Interactive, beginner-friendly courses in various languages.
+    *   **Khan Academy:**  Good for introductory programming concepts and specific languages (e.g., JavaScript).
+    *   **Udacity:**  Nanodegree programs (paid) with structured curricula and projects.
+    *   **Coursera:**  Courses from universities and institutions (paid and some free options).
+    *   **edX:**  Similar to Coursera, with courses from universities (paid and some free options).
+    *   **Scrimba:**  Interactive courses with screencasts and coding challenges.
+    *   **SoloLearn:**  Mobile-friendly courses with bite-sized lessons.
+
+*   **Interactive Tutorials:**
+    *   **CodeCombat:**  Learn programming by playing a game.
+    *   **Codewars:**  Solve coding challenges (katas) to improve your skills.
+    *   **HackerRank:**  Practice coding and prepare for technical interviews.
+
+*   **Books:**
+    *   **"Python Crash Course" by Eric Matthes:**  A popular and well-regarded beginner's book for Python.
+    *   **"Automate the Boring Stuff with Python" by Al Sweigart:**  Focuses on practical applications of Python for automation.
+    *   **"Eloquent JavaScript" by Marijn Haverbeke:**  A comprehensive book for learning JavaScript.
+    *   **"HTML and CSS: Design and Build Websites" by Jon Duckett:**  A visually appealing and easy-to-understand guide to web development.
+
+*   **YouTube Channels:**
+    *   **FreeCodeCamp.org:**  (mentioned above)
+    *   **The Net Ninja:**  Excellent tutorials on web development (JavaScript, React, Node.js, etc.).
+    *   **Traversy Media:**  Web development tutorials and more.
+    *   **Programming with Mosh:**  Clear and concise tutorials on various programming topics.
+    *   **Sentdex:**  Python tutorials, including data science and machine learning.
+
+*   **Official Documentation:**  As you progress, learn to use the official documentation for your chosen language.  It's the most authoritative source of information.
+
+**3.  Establish a Learning Routine:**
+
+*   **Consistency is Key:**  Even short, regular sessions are more effective than infrequent, long ones. Aim for at least 30 minutes to an hour of coding per day, or several times a week.
+*   **Set Realistic Goals:**  Don't try to learn everything at once. Start with the basics

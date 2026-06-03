@@ -1,0 +1,30 @@
+Wave:      2026-05-30
+Dataset:   global_opinion_qa
+Item ID:   goqa_ca3394da8102
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=186 out=59
+Latency:   1132 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: To what degree are you worried about the following situations?
+
+Not being able to give one's children a good education
+
+Options:
+A. Very much
+B. A great deal
+C. Not much
+D. Not at all
+E. Don't know
+F. No answer
+G. Other missing; Not applicable; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.35, "B": 0.30, "C": 0.20, "D": 0.08, "E": 0.04, "F": 0.02, "G": 0.01}

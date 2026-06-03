@@ -1,0 +1,35 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=28 out=1020
+Latency:   13955 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+As an executive, you likely appreciate a well-structured framework that yields high-quality, predictable results. To get a truly great children's story out of an AI, the secret is in the "prompt engineering"—giving the AI clear parameters for pacing, tone, vocabulary, and thematic elements. 
+
+Here is a highly customizable, "modular" prompt you can copy and paste. Just fill in the bracketed information **[like this]** to tailor it to the kids you are reading to.
+
+***
+
+### The Master Prompt
+
+**Copy and paste the text below into your AI of choice:**
+
+> "Act as an award-winning children's book author, known for the whimsical style of Roald Dahl and the emotional warmth of Pixar movies. I need you to write a captivating story for a **[insert age, e.g., 6-year-old]**. 
+> 
+> **Here are the core parameters:**
+> *   **Protagonist:** **[Name]**, a **[adjective]** kid who loves **[hobby/interest, e.g., building robots out of cardboard / exploring the woods]**.
+> *   **Sidekick:** A **[type of animal/creature, e.g., clumsy but loyal golden retriever / tiny glowing alien]** named **[Name]**.
+> *   **Setting:** **[e.g., A futuristic city in the clouds / A magical forest in the backyard]**.
+> *   **The Core Conflict:** The protagonist must solve a problem: **[e.g., the town's gravity machine is broken / they need to find the lost map of dreams]**.
+> *   **The Moral/Theme:** Emphasize **[e.g., the importance of failing forward and trying again /

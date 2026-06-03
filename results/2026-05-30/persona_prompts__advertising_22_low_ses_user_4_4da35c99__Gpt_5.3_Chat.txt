@@ -1,0 +1,52 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=29 out=451
+Latency:   8853 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Nice—healthcare shifts make coordination extra tricky, so the “best” tools are really the ones that reduce friction across handoffs and weird schedules.
+
+Here are the strongest options, depending on what you need most:
+
+**For day-to-day communication (fast, reliable)**
+- **Microsoft Teams** – very common in healthcare settings, integrates with Outlook and scheduling, good for shift handoffs and quick updates.
+- **Slack** – cleaner and more flexible than Teams, great for organizing conversations by channel (e.g., “night shift,” “ICU updates”), but less tied into hospital systems.
+
+**For scheduling + shift coordination**
+- **When I Work** – built specifically for shift workers; easy swaps, availability tracking, notifications.
+- **Deputy** – similar, a bit more robust for compliance and staffing needs.
+- **Shiftboard** – used in some healthcare environments; good for larger teams.
+
+**For task tracking / handoffs**
+- **Trello** – simple boards for tracking patient-related non-clinical tasks or team responsibilities.
+- **Asana** – more structured if you’re coordinating across multiple roles or departments.
+- **Notion** – flexible “all-in-one” workspace (notes, tasks, docs), but takes setup.
+
+**For quick documentation & shared info**
+- **Google Workspace (Docs/Drive)** – easy sharing, real-time editing.
+- **OneNote** – great if your org already uses Microsoft; good for shift notes and logs.
+
+**For secure healthcare communication (important)**
+- **TigerConnect** – designed for healthcare; HIPAA-compliant messaging, often replaces pagers.
+- **Vocera** – hands-free communication, more hardware-integrated in hospitals.
+
+---
+
+**If I had to narrow it down for your situation:**
+- Teams or TigerConnect for communication  
+- When I Work or Deputy for scheduling  
+- OneNote or Google Docs for shared notes  
+
+That combo usually covers 90% of shift-based collaboration without overcomplicating things.
+
+If you want, tell me what problems your team is actually running into (missed handoffs, schedule confusion, too many messages, etc.), and I can suggest a tighter setup tailored to your workflow.

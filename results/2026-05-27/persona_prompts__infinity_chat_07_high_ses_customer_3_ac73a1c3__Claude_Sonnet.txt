@@ -1,0 +1,112 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_high_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=1024
+Latency:   24879 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+# Rare & Underutilized Tools/Methods in Cybersecurity
+
+Given your academic background, I'll organize this with some depth beyond the standard curriculum.
+
+---
+
+## Offensive / Research Tools
+
+### Network & Protocol Analysis
+- **Scapy** (advanced use) — packet crafting beyond basic tutorials; protocol fuzzing
+- **Impacket** — low-level protocol manipulation (SMB, Kerberos, LDAP)
+- **Responder** — LLMNR/NBT-NS poisoning, often overlooked in enterprise assessments
+- **Bettercap** — modern successor to ettercap with modular architecture
+
+### Binary Analysis
+- **angr** — symbolic execution framework; powerful for vulnerability discovery
+- **Triton** — dynamic binary analysis with SMT solving
+- **KLEE** — LLVM-based symbolic execution (academic origins, CMU/Stanford)
+- **Ghidra scripting** — most practitioners use GUI only; scripting API is vastly underused
+
+### Fuzzing
+- **LibAFL** — Rust-based fuzzing framework; highly composable
+- **Honggfuzz** — persistent mode fuzzing, often outperforms AFL in specific contexts
+- **Nautilus** — grammar-based fuzzing for structured inputs
+- **Jackalope** — binary coverage-guided fuzzing (Google Project Zero)
+
+---
+
+## Defensive / Detection Methods
+
+### Threat Hunting
+- **YARA-L** — Chronicle's rule language for behavioral detection
+- **Sigma rules** — vendor-agnostic SIEM detection (underdeployed)
+- **Velociraptor** — endpoint visibility and forensic collection at scale
+- **OSQuery** — SQL-based endpoint interrogation; rarely used to full potential
+
+### Memory Forensics
+- **Volatility 3** — memory artifact analysis; most practitioners stop at basic plugins
+- **MemProcFS** — memory as a filesystem abstraction
+- **Rekall** — (largely deprecated but academically relevant)
+
+### Deception Technology
+- **OpenCanary** — lightweight honeypot framework
+- **MITRE ENGAGE** — adversary engagement framework (conceptually underutilized)
+- **Canarytokens** — tripwire tokens embedded in documents/URLs
+
+---
+
+## Cryptographic & Protocol Methods
+
+| Method | Why It's Rare |
+|--------|--------------|
+| **Timing side-channel analysis** | Requires precision measurement; often dismissed |
+| **Differential power analysis (DPA)** | Hardware-focused; niche expertise |
+| **Lattice-based crypto attacks** | Post-quantum relevance; mathematically demanding |
+| **Protocol state machine fuzzing** | Requires formal modeling knowledge |
+| **TLS fingerprinting (JA3/JA3S)** | Detection method; underused in blue teams |
+
+---
+
+## Formal & Academic Methods
+
+- **Model checking** (SPIN, TLA+) — verifying security protocol correctness
+- **Tamarin Prover** — automated verification of cryptographic protocols
+- **ProVerif** — formal verification; used in academic protocol analysis
+- **Attack trees / STRIDE** — threat modeling done rigorously (rarely in practice)
+- **Information flow analysis** — taint tracking at compiler/IR level
+
+---
+
+## Operational Security Methods
+
+- **OPSEC failure analysis** — systematic review of metadata leakage
+- **Supply chain attestation** — SLSA framework, SBOM analysis
+- **Hardware implant detection** — RF analysis, PCB inspection methodologies
+- **Covert channel analysis** — timing, storage, and resource covert channels
+
+---
+
+## Emerging / Cutting-Edge
+
+- **LLM-assisted vulnerability research** — prompt engineering for code auditing
+- **Differential fuzzing** — comparing implementations to find semantic bugs
+- **Kernel eBPF security monitoring** — Falco, Tetragon; low overhead detection
+- **Confidential computing attacks** — SGX/TDX side channels (active research area)
+- **Graph-based malware analysis** — GNN approaches to binary classification
+
+---
+
+## Recommended Academic Resources
+
+- **USENIX Security / IEEE S&P / CCS / NDSS** proceedings — primary literature
+- **The Fuzzing Book** (Zeller et al.) — rigorous treatment
+- **"The Art of Software Security Assessment"** — deep technical reference
+- **MITRE ATT&

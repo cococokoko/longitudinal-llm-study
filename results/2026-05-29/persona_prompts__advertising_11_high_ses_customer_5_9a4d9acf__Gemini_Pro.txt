@@ -1,0 +1,18 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_11_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=20 out=1020
+Latency:   20409 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Staying fit without a gym.
+
+── Response ────────────────────────────────────────────────────────
+As a tech executive, your most constrained resource isn’t motivation or capital—it’s time. Between back-to-back meetings, travel, and high-stakes decision-making,

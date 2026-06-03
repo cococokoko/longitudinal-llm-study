@@ -1,0 +1,51 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_high_ses_user_2
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=18 out=555
+Latency:   3796 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+write a cover letter
+
+── Response ────────────────────────────────────────────────────────
+[Your Name]
+[Your Address]
+[Your Phone Number]
+[Your Email Address]
+
+[Date]
+
+[Hiring Manager Name] (If known, otherwise use title)
+[Hiring Manager Title]
+[Law Firm Name]
+[Law Firm Address]
+
+**Subject: Application for [Position Name]**
+
+Dear [Mr./Ms./Mx. Hiring Manager Last Name],
+
+I am writing to express my keen interest in the [Position Name] position at [Law Firm Name], as advertised on [Platform where you saw the advertisement - e.g., LinkedIn, Law.com, etc.]. With [Number] years of experience as a senior attorney, coupled with a proven track record of success in [Mention 2-3 key areas of expertise, e.g., complex litigation, corporate transactions, intellectual property law], I am confident that I possess the skills and experience necessary to make a significant contribution to your esteemed firm.
+
+Throughout my career, I have consistently demonstrated the ability to [Highlight 2-3 key accomplishments and skills, quantifying them whenever possible. Examples:
+*   Successfully managed and resolved [Number] complex cases, resulting in [Positive outcome, e.g., favorable settlements, judgments for clients].
+*   Led a team of [Number] attorneys in [Specific project or area], consistently exceeding performance expectations.
+*   Developed and implemented [Specific strategy or initiative] that resulted in [Quantifiable positive result, e.g., a 15% increase in client retention].].
+
+I am particularly drawn to [Law Firm Name] because of [Mention 1-2 specific reasons why you are interested in this firm. Examples:
+*   Its reputation for excellence in [Specific area of law].
+*   Its commitment to [Specific values or initiatives, e.g., pro bono work, diversity and inclusion].
+*   The opportunity to work alongside [Mention a specific partner or team if you know them and have a positive reason].].
+
+My experience at [Previous Law Firm Name(s)] has provided me with a comprehensive understanding of [Mention relevant legal principles, procedures, and industry knowledge]. I am adept at [Mention relevant skills, e.g., legal research, drafting legal documents, client communication, negotiation, courtroom advocacy]. I am also a highly effective communicator, a skilled negotiator, and a dedicated team player.
+
+I am eager to learn more about this opportunity and discuss how my skills and experience can benefit [Law Firm Name]. My resume, attached for your review, provides further detail on my qualifications and accomplishments. Thank you for your time and consideration. I look forward to hearing from you soon.
+
+Sincerely,
+
+[Your Name]

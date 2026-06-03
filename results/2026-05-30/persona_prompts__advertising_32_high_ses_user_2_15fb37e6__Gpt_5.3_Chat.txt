@@ -1,0 +1,39 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_32_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=520
+Latency:   9486 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best ways to improve indoor air quality?
+
+── Response ────────────────────────────────────────────────────────
+Given your environment—likely long hours in enclosed offices, conference rooms, and HVAC-controlled spaces—the highest-impact improvements tend to be the least glamorous but most consistent.
+
+Start with ventilation. Nothing beats bringing in more outdoor air. If your building allows it, increasing fresh air intake through the HVAC system or simply opening windows (even intermittently) can significantly dilute indoor pollutants. Many commercial buildings under-ventilate to save energy, so it’s worth having facilities confirm airflow rates and compliance with current ASHRAE standards.
+
+Filtration is the next big lever. Upgrading HVAC filters to a higher MERV rating (ideally MERV 13 or above, if the system can handle it) will capture finer particles—dust, allergens, some pathogens. If central upgrades aren’t feasible, a portable HEPA air purifier in your office is a very effective workaround. For the size of a typical office, a unit sized appropriately for square footage can noticeably reduce particulate matter.
+
+Control of sources matters just as much. Common culprits in office environments include:
+- Cleaning products with strong VOCs
+- New furniture or carpeting off-gassing
+- Printers and copiers emitting ultrafine particles
+- Personal items like scented candles or air fresheners
+
+Switching to low-VOC or fragrance-free products and ensuring printers are in well-ventilated areas (not right next to desks) can make a measurable difference.
+
+Humidity is often overlooked. Keeping relative humidity between about 40–60% helps reduce airborne virus survival and prevents mold growth. Too dry (common in winter offices) can irritate airways; too humid invites biological growth. A small humidifier or dehumidifier, depending on your climate, can stabilize this.
+
+Regular maintenance is critical but invisible. Dirty ducts, poorly maintained filters, or neglected drip pans can undermine everything else. If you have influence with building management, periodic HVAC inspections and timely filter changes are worth pushing for.
+
+Plants are nice aesthetically, but their air-cleaning impact is minimal in real-world office conditions. They won’t hurt, but they’re not a substitute for ventilation or filtration.
+
+If you want a data-driven approach, a compact indoor air quality monitor (tracking CO₂, PM2.5, and humidity) can be surprisingly useful. Elevated CO₂ is a good proxy for inadequate ventilation—if it’s consistently high in your office or conference rooms, that’s a strong signal to adjust airflow.
+
+In practice, the most effective combination tends to be: better ventilation + upgraded filtration + removal of pollutant sources. Everything else is secondary.

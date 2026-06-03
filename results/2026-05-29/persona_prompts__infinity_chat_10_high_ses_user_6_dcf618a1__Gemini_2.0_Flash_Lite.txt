@@ -1,0 +1,59 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_high_ses_user_6
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=41 out=1024
+Latency:   6457 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Okay, as a partner at a major consulting firm, you'll want a professional and reliable solution. Here's a breakdown of the best free options for hosting your HTML resume, keeping in mind your need for a polished presentation:
+
+**Best Free Options (Prioritized for Professionalism):**
+
+1.  **GitHub Pages:**
+
+    *   **Pros:**
+        *   **Free and Reliable:**  GitHub is a well-established platform.
+        *   **Easy to Use:**  Relatively straightforward to set up, especially if you're familiar with Git (version control).  If not, there are tons of tutorials.
+        *   **Custom Domain (Optional):** You can connect a custom domain (e.g., yourname.com) for a more professional look.  You'll need to purchase the domain separately (e.g., from GoDaddy, Namecheap).
+        *   **Good for Static Sites:**  Perfect for HTML, CSS, and JavaScript-based resumes.
+        *   **Version Control:**  Allows you to easily track changes and revert to previous versions of your resume.
+        *   **HTTPS:**  GitHub Pages automatically provides HTTPS (secure connection).
+    *   **Cons:**
+        *   **Requires a GitHub Account:**  You'll need to create one.
+        *   **Slight Learning Curve:**  You'll need to understand the basics of Git and how to push your files to a repository.  However, there are many beginner-friendly tutorials.
+        *   **Limited Server-Side Functionality:**  GitHub Pages is designed for static content.  You can't run server-side scripts (like PHP or Python) directly.  This isn't a problem for a basic HTML resume.
+    *   **How to Use:**
+        1.  **Create a GitHub Account:**  If you don't have one, sign up at [https://github.com/](https://github.com/).
+        2.  **Create a Repository:**  Create a new repository (think of it as a project folder) on GitHub.  Give it a descriptive name (e.g., "yourname-resume").  Make it public.
+        3.  **Upload Your Files:**  There are a few ways to do this:
+            *   **Using the GitHub Web Interface:**  You can upload your HTML, CSS, and JavaScript files directly through the GitHub website.  This is the easiest method for beginners.
+            *   **Using Git (Recommended):**  This is the more professional and flexible approach.
+                *   **Install Git:**  Download and install Git on your computer ([https://git-scm.com/downloads](https://git-scm.com/downloads)).
+                *   **Initialize a Git Repository:**  In your resume's folder on your computer, open a terminal or command prompt and run `git init`.
+                *   **Add Your Files:**  Run `git add .` (to add all files) or `git add your-resume.html your-style.css` (to add specific files).
+                *   **Commit Your Changes:**  Run `git commit -m "Initial commit of resume"`.  The message is a description of your changes.
+                *   **Connect to GitHub:**  In your GitHub repository, you'll find instructions on how to connect your local repository to the remote repository on GitHub (usually using `git remote add origin <your_repository_url>`).
+                *   **Push Your Files:**  Run `git push -u origin main` (or `git push -u origin master` if your main branch is named "master").
+        4.  **Enable GitHub Pages:**
+            *   Go to your repository on GitHub.
+            *   Click on "Settings".
+            *   Scroll down to the "GitHub Pages" section.
+            *   Select the branch you want to use to host your site (usually "main" or "master").
+            *   Click "Save".
+        5.  **Access Your Resume:**  GitHub will provide a URL for your resume (e.g., `https://your-github-username.github.io/your-repository-name/`).  It might take a few minutes for the site to deploy.
+        6.  **Custom Domain (Optional):**  If you have a custom domain, you can configure it in the GitHub Pages settings.  You'll need to update your domain's DNS settings to point to GitHub.  GitHub provides detailed instructions.
+
+2.  **Netlify:**
+
+    *   **Pros:**
+        *   **Free Tier:**  Offers a generous free tier suitable for a resume.
+        *   **Easy Deployment:**  Very user-friendly deployment process.  You can drag and drop your files or

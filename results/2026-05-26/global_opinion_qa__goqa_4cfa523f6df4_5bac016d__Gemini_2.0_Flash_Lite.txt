@@ -1,0 +1,29 @@
+Wave:      2026-05-26
+Dataset:   global_opinion_qa
+Item ID:   goqa_4cfa523f6df4
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=186 out=53
+Latency:   664 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: As you may know, over the past few years the U.S. has imposed tariffs, or fees on imported goods from foreign countries, including China.  Overall, do you think these increased tariffs were...
+
+Options:
+A. Good for the U.S.
+B. Bad for the U.S.
+C. No real effect either way
+D. DK/Refused
+E. Good for you personally
+F. Bad for you personally
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.1, "B": 0.6, "C": 0.2, "D": 0.1, "E": 0.0, "F": 0.0}
+```

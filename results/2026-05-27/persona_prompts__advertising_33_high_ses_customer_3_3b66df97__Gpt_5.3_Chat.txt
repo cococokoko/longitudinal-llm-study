@@ -1,0 +1,52 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_33_high_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=674
+Latency:   14314 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to make my own natural beauty products?
+
+── Response ────────────────────────────────────────────────────────
+Making your own natural beauty products is very doable, and it’s one of those areas where a little foundational chemistry goes a long way. The key is to think in terms of function—cleansing, moisturizing, preserving—rather than just “natural = good.”
+
+Start with a few basic building blocks:
+
+- Carrier oils: these form the base of most products. Jojoba (technically a wax, very skin-compatible), sweet almond, olive, and coconut oil are common choices. Each has a different weight and absorption profile.
+- Butters and waxes: shea butter, cocoa butter, and beeswax add structure and occlusion (they help seal moisture in).
+- Water phase: for creams and lotions. This can be distilled water, hydrosols (like rose water), or aloe vera juice.
+- Emulsifiers: if you’re combining oil and water, you need something to keep them from separating. Beeswax alone is not a true emulsifier—use something like emulsifying wax or lecithin.
+- Active ingredients: clays, oatmeal, honey, herbal infusions, or vitamin E.
+- Preservatives: this is the part people often skip, but anything with water needs preservation to prevent microbial growth. “Natural” preservatives exist (like certain organic acid blends), but they still need to be used correctly.
+
+A few simple starter recipes:
+
+1) Facial oil (no preservative needed)
+Blend a lightweight oil (jojoba or grapeseed) with a few drops of a heavier oil (like rosehip). You can add 1–2% vitamin E as an antioxidant. This is stable because there’s no water.
+
+2) Lip balm
+Melt together beeswax, a butter (like shea), and a liquid oil in roughly a 1:1:1 ratio. Pour into containers and let it set. You can adjust wax content for firmness.
+
+3) Basic lotion
+Heat an oil phase (oils + emulsifier) and a water phase separately, then combine and mix while cooling. This is where precision matters: temperature, ratios, and preservation all affect stability and safety.
+
+4) Clay mask
+Mix kaolin or bentonite clay with water or hydrosol just before use. Don’t store it once hydrated—no preservative means it’s a microbial risk.
+
+A few principles that matter more than recipes:
+
+- Hygiene: treat your workspace like a lab bench. Clean tools, sterilized containers, and distilled water reduce contamination.
+- Shelf life: oils oxidize; water grows microbes. If there’s water and no preservative, it should be used immediately or stored briefly in the fridge.
+- Skin variability: “natural” ingredients can still irritate or sensitize. Essential oils, in particular, need dilution (typically well under 1% for facial products).
+- pH: especially for anything water-based, since it affects both skin compatibility and preservative effectiveness.
+
+If you want to go deeper, it’s worth learning a bit about emulsions, lipid chemistry, and microbial growth—you’ll find that making a stable lotion is closer to running a small formulation experiment than a kitchen recipe.
+
+If you tell me what kind of products you’re most interested in (e.g., anti-aging serums, cleansers, hair care), I can give more tailored formulations.

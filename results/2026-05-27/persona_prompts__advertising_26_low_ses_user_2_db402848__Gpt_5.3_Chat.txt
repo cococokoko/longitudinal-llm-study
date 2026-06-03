@@ -1,0 +1,35 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=30 out=414
+Latency:   9830 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Balancing everything on your own means you don’t have time for overly complex systems—so the best security practices are the ones that give strong protection without adding daily friction. Think “simple, consistent, and layered.”
+
+Start with the basics that prevent most real-world breaches. Use strong, unique passwords for every account, and don’t try to remember them all—use a password manager. Turn on multi-factor authentication (MFA) everywhere it’s available, especially for email, banking, and any business tools. Email is often the main entry point for attackers.
+
+Keep all devices and software updated automatically. A lot of attacks just exploit outdated systems. The same goes for antivirus or endpoint protection—pick a reputable one and keep it running.
+
+Backups are your safety net. Automatically back up important business data to a secure cloud service and, if possible, keep a second copy offline or in a separate system. That way ransomware or accidental deletion doesn’t wipe you out.
+
+Limit access to sensitive data. If you use contractors or tools, only give them access to what they absolutely need. It reduces risk and keeps things simpler to manage.
+
+Be cautious with email and links. Phishing is still the most common threat. If something feels off—urgent requests, unexpected attachments, login prompts—pause and verify before clicking.
+
+Secure your Wi-Fi and devices. Use a strong Wi-Fi password, enable encryption (WPA3 if available), and avoid doing business tasks on public Wi-Fi unless you’re using a VPN.
+
+If you handle customer data (especially payments or personal info), use trusted, well-known platforms instead of building your own system. They handle a lot of security for you.
+
+Finally, write down a simple plan for “what if something goes wrong.” Who do you contact, how do you restore data, how do you notify customers? Even a basic plan can save hours of stress.
+
+If you want, tell me what kind of business you run and what tools you use, and I can suggest a setup that fits your workflow without adding extra burden.

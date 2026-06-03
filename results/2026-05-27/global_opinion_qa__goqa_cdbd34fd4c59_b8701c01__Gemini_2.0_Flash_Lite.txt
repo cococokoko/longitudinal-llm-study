@@ -1,0 +1,27 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_cdbd34fd4c59
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=118 out=37
+Latency:   1042 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Do you consider yourself anti-partisan or only non-partisan?
+
+Options:
+A. Anti-partisan
+B. Apartheid
+C. Don't know/No answer
+D. Not applicable
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.0, "B": 0.0, "C": 1.0, "D": 0.0}
+```

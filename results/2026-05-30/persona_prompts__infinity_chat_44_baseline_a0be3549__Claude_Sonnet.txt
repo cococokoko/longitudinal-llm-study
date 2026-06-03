@@ -1,0 +1,42 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=28 out=270
+Latency:   6745 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here are three questions that can help evaluate whether something is morally right or wrong:
+
+## A Simple Moral Framework
+
+**1. Does it cause harm?**
+Does this action cause unnecessary harm, suffering, or damage to others, including physical, emotional, or social harm? Who is affected and how seriously?
+
+**2. Is it fair?**
+Would you be comfortable if the same action were applied to you or someone you care about? Does it treat people with equal respect and dignity?
+
+**3. Can you defend it openly?**
+Would you be comfortable explaining and justifying this action to a reasonable, thoughtful person? Could you stand behind it publicly without shame?
+
+---
+
+These three questions draw on different ethical traditions:
+- **Harm** reflects consequentialist thinking
+- **Fairness** reflects the Golden Rule and principles of justice
+- **Defensibility** reflects virtue ethics and integrity
+
+**A few honest caveats:**
+- No simple test perfectly resolves every moral question
+- Reasonable people can still disagree after applying these
+- Complex situations may require deeper analysis
+
+They work best as a **starting point for reflection** rather than a definitive verdict.
+
+Would you like me to adjust the framework for a specific purpose or context?

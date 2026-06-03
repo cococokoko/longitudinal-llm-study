@@ -1,0 +1,50 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=446
+Latency:   7856 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+A few upgrades can make a big difference, and you don’t need to do all of them—start with the easiest wins:
+
+**1. Router placement matters more than people think**  
+Put it in a central, open spot (not in a closet, basement corner, or behind a TV). Higher is better. Avoid thick walls, metal, and appliances.
+
+**2. Reboot + update**  
+Restart the router and check for firmware updates. Old firmware can slow things down or cause drops.
+
+**3. Use the right band (2.4 vs 5 vs 6 GHz)**  
+- 2.4 GHz: longer range, slower  
+- 5 GHz: faster, shorter range  
+- 6 GHz (if you have it): fastest, shortest range  
+Use 5 GHz for most devices close to the router, 2.4 for far rooms.
+
+**4. Change the channel**  
+If neighbors’ WiFi overlaps, you get interference. Use your router settings or a WiFi analyzer app to pick a less crowded channel.
+
+**5. Upgrade the router (big impact if it’s old)**  
+If it’s 4–5+ years old, a newer WiFi 6 or 6E router can massively improve speed and stability, especially with many devices.
+
+**6. Consider mesh if your home is big or multi-floor**  
+Instead of one router, mesh systems (like Eero, Nest, Orbi) spread coverage evenly without dead zones.
+
+**7. Reduce interference**  
+Keep it away from microwaves, cordless phones, baby monitors, Bluetooth hubs.
+
+**8. Secure your network**  
+If neighbors or unknown devices are connected, that slows you down. Use WPA2/WPA3 with a strong password.
+
+**9. Limit heavy usage**  
+Streaming, downloads, and gaming all at once can choke bandwidth. Some routers let you prioritize devices (QoS).
+
+**10. Ethernet where possible**  
+For things like gaming consoles, PCs, or TVs—wired connections are faster and free up WiFi bandwidth.
+
+If you want, tell me your home size/layout and current router model—I can suggest a setup that fits your space.

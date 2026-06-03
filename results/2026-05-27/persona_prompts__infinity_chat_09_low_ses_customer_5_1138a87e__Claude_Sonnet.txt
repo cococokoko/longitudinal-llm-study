@@ -1,0 +1,40 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_low_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=299
+Latency:   7787 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+Here's a prompt you can use:
+
+---
+
+**"Write a warm and engaging children's story (ages 4-8) about a child named [NAME] who lives in a big, busy household with grandparents, aunts, uncles, and cousins all under one roof. The child feels overwhelmed trying to help everyone at once — grandma needs her glasses, the baby is crying, dinner needs stirring, and homework is due! Through a little magic and teamwork, the whole family discovers that when everyone helps each other, even the busiest day becomes an adventure. Include:**
+
+- **Simple, fun language kids love**
+- **Colorful, descriptive scenes**
+- **A heartwarming lesson about family teamwork**
+- **A funny moment that makes kids giggle**
+- **A cozy, happy ending**
+
+Make it feel like a bedtime story that celebrates big, loving families."**
+
+---
+
+**Tips to customize it:**
+- Add your child's **real name** to make it personal
+- Mention **specific family members** like "Grandpa Joe" or "baby sister Mia"
+- Add a **favorite animal or toy** as a story character
+- Request a **specific length** like "5 minutes read aloud"
+
+Would you like me to adjust this prompt for a specific age group or theme? 😊

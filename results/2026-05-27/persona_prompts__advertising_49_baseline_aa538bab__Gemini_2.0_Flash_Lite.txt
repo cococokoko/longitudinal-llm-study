@@ -1,0 +1,62 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=6 out=1024
+Latency:   7693 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving your home WiFi can be a frustrating but ultimately rewarding process. Here's a breakdown of common issues and solutions, categorized for easier understanding:
+
+**I. Understanding the Problem (Diagnosis is Key!)**
+
+*   **Slow Speeds:**
+    *   **Test Your Speed:** Use a speed test website (like Speedtest.net, Fast.com, or Google's speed test) to measure your download and upload speeds. Compare these to what you're paying for from your internet service provider (ISP).
+    *   **Identify the Bottleneck:** Is the slow speed affecting all devices, or just one? Is it slow at all times, or only during peak hours? This helps pinpoint the source of the problem.
+    *   **Check Your ISP's Service:** Contact your ISP to inquire about outages, service issues, or if your plan is meeting your needs.
+*   **Weak Signal/Dead Zones:**
+    *   **Signal Strength Indicator:** Most devices have a WiFi signal strength indicator. Observe this in different areas of your home.
+    *   **Physical Obstacles:** Walls, especially those with metal studs or insulation, can weaken the signal. Appliances like microwaves can also interfere.
+    *   **Distance:** The further you are from the router, the weaker the signal.
+*   **Intermittent Connectivity:**
+    *   **Router Reboots:** Does the connection drop frequently, requiring you to reboot your router?
+    *   **Device-Specific Issues:** Does the problem affect all devices or just a few?
+    *   **Interference:** Other wireless devices (microwaves, cordless phones, Bluetooth devices) can cause interference.
+*   **Security Concerns:**
+    *   **Open Network:** Is your WiFi network secured with a strong password?
+    *   **Router Firmware:** Is your router's firmware up-to-date?
+
+**II. Basic Troubleshooting Steps (Easy Fixes First!)**
+
+*   **Restart Everything:**
+    *   **Router and Modem:** Unplug your modem and router. Wait 30 seconds, plug the modem back in, wait for it to fully boot up, then plug in the router and wait for it to boot up. This often resolves temporary glitches.
+    *   **Devices:** Restart the devices experiencing issues (phones, tablets, computers).
+*   **Check Cables:**
+    *   **Ethernet Cables:** Ensure all Ethernet cables connecting your modem, router, and devices are securely plugged in and not damaged.
+*   **Move the Router:**
+    *   **Central Location:** Place your router in a central, open location in your home, away from walls, metal objects, and appliances.
+    *   **Elevated Position:** Elevate the router (e.g., on a shelf) to improve signal propagation.
+*   **Reduce Interference:**
+    *   **Channel Selection:** Your router broadcasts on a specific WiFi channel. Other routers in your neighborhood can interfere. Use a WiFi analyzer app (available for smartphones and computers) to find the least congested channel and change your router's settings accordingly.
+    *   **Other Devices:** Move your router away from other electronic devices that might cause interference (microwaves, cordless phones, Bluetooth devices).
+*   **Update Device Drivers:**
+    *   **Network Adapters:** Ensure the network adapter drivers on your computers and other devices are up-to-date.
+
+**III. Advanced Solutions (When Basic Troubleshooting Fails)**
+
+*   **Upgrade Your Router:**
+    *   **Newer Standards:** Consider upgrading to a router that supports the latest WiFi standards (e.g., Wi-Fi 6 (802.11ax) or Wi-Fi 6E). These offer faster speeds, better range, and improved handling of multiple devices.
+    *   **Features:** Look for features like:
+        *   **Dual-band or Tri-band:** Dual-band routers broadcast on both 2.4 GHz and 5 GHz frequencies. Tri-band routers add a second 5 GHz band. 5 GHz offers faster speeds but shorter range. 2.4 GHz offers better range but slower speeds.
+        *   **MU-MIMO (Multi-User, Multiple-Input, Multiple-Output):** Allows the router to communicate with multiple devices simultaneously, improving performance.
+        *   **Beamforming:** Focuses the WiFi signal towards specific devices, improving range and speed.
+        *   **Quality of Service (QoS):** Prioritizes certain types of traffic (e.g., video streaming) to ensure a smoother experience.
+*   **Optimize Router Settings:**
+    *   **Change the WiFi Channel:** As mentioned above, use a WiFi analyzer to find the least congested channel.
+    *   **Enable WPA3 Security:** Use the strongest security protocol available (WPA3 is the most

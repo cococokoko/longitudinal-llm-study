@@ -1,0 +1,64 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_19_low_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=395
+Latency:   7743 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+the best books to learn Design and Analysis of Algorithms I in 2023
+
+── Response ────────────────────────────────────────────────────────
+# Best Books for Design and Analysis of Algorithms (2023)
+
+## 🏆 Top Tier / Most Recommended
+
+### 1. **Introduction to Algorithms (CLRS)**
+- **Authors:** Cormen, Leiserson, Rivest, Stein
+- **Edition:** 4th Edition (2022)
+- **Why:** The gold standard — comprehensive, rigorous, widely used in universities
+- **Best for:** Deep theoretical understanding
+
+### 2. **Algorithm Design**
+- **Authors:** Kleinberg & Tardos
+- **Why:** Excellent explanations, great problem-solving approach
+- **Best for:** Understanding *why* algorithms work
+
+---
+
+## 📘 Beginner-Friendly Options
+
+### 3. **Grokking Algorithms**
+- **Author:** Aditya Bhargava
+- **Why:** Visual, easy to read, perfect starting point
+- **Best for:** Complete beginners
+
+### 4. **Algorithms (4th Edition)**
+- **Author:** Robert Sedgewick
+- **Why:** Java-based, practical implementations
+- **Best for:** Hands-on learners
+
+---
+
+## 💡 Supplementary Resources
+
+| Resource | Best For |
+|----------|----------|
+| **The Algorithm Design Manual** (Skiena) | Interview prep + real-world |
+| **Algorithms Illuminated** (Roughgarden) | Companion to Stanford course |
+
+---
+
+## 📌 Recommendation by Goal
+
+- **University course** → CLRS
+- **Self-learning** → Grokking → then Kleinberg
+- **Job interviews** → Skiena + LeetCode practice
+
+Would you like recommendations for specific topics?

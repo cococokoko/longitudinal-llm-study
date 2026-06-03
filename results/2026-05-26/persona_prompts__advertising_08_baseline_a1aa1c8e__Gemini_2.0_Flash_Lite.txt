@@ -1,0 +1,60 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_08_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=6 out=731
+Latency:   4718 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+Okay, let's find you some perfect hiking trails! To help me narrow down the options, I need a little more information.  Tell me about:
+
+**1. Your Location:**
+
+*   **Where are you located?** (City, State, Country)  This is the most crucial piece of information.
+*   **Are you willing to travel?** (How far are you willing to drive/fly?)
+
+**2. Your Hiking Experience & Fitness Level:**
+
+*   **Beginner, Intermediate, or Advanced?** (Be honest! This helps me suggest appropriate trails.)
+*   **How long have you been hiking?**
+*   **What's your typical hiking distance and elevation gain?** (e.g., 3-5 miles with 500-1000 feet of elevation gain)
+*   **What's your current fitness level?** (e.g., Can you comfortably walk for an hour? Are you used to hills?)
+*   **Do you have any physical limitations or injuries?**
+
+**3. Your Preferences:**
+
+*   **What kind of scenery do you enjoy?** (e.g., Mountains, forests, lakes, waterfalls, coastal views, deserts, canyons, etc.)
+*   **What's the purpose of your hike?** (e.g., Exercise, relaxation, photography, wildlife viewing, solitude, social with friends/family)
+*   **How long do you want to hike for?** (e.g., Day hike, overnight backpacking trip)
+*   **How many people will be hiking?**
+*   **Are you hiking with children or pets?** (If so, what are their ages/sizes?)
+*   **What time of year are you planning to hike?** (This affects weather, trail conditions, and accessibility.)
+*   **Do you prefer loop trails, out-and-back trails, or point-to-point trails?**
+*   **Are there any specific features you'd like to see?** (e.g., waterfalls, historic sites, unique rock formations)
+*   **Do you prefer trails that are well-maintained or more rugged and remote?**
+*   **Are you looking for trails that are crowded or less crowded?**
+
+**4. Your Gear & Resources:**
+
+*   **Do you have hiking boots, a backpack, and other essential gear?**
+*   **Do you have access to a car or other transportation?**
+*   **Do you have any preferred hiking apps or websites?** (e.g., AllTrails, Gaia GPS, local park websites)
+
+**Once I have this information, I can give you much more specific and helpful recommendations!**
+
+**In the meantime, here are some general resources you can explore:**
+
+*   **AllTrails:** A popular app and website with user reviews, photos, and trail maps.
+*   **Hiking Project:** Another great resource with detailed trail information.
+*   **Local Park Websites:** State and national park websites often have detailed trail information, maps, and alerts.
+*   **Local Hiking Clubs:** Joining a hiking club is a great way to find trails and meet other hikers.
+*   **Google Maps:** Can be used to find trails and see user reviews.
+*   **Yelp:** Can be used to find trails and see user reviews.
+
+I look forward to helping you find some amazing trails! Just give me the details!

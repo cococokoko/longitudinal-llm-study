@@ -1,0 +1,27 @@
+Wave:      2026-05-30
+Dataset:   global_opinion_qa
+Item ID:   goqa_37d66e482ce7
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=144 out=88
+Latency:   1686 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How would you evaluate the impact of emigration on the development of Nigeria?
+
+Options:
+A. Rather bad
+B. Quite bad
+C. Neither good nor bad
+D. Quite good
+E. Very good
+F. Don't know
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.25, "B": 0.4, "C": 0.1, "D": 0.15, "E": 0.05, "F": 0.05}

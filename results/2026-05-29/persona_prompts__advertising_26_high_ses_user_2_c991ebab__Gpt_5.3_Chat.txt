@@ -1,0 +1,37 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=564
+Latency:   9500 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Even small businesses sit on data that’s valuable enough to attract real attacks, and they usually don’t have the layers of protection larger enterprises do. The good news is that most risk can be reduced with disciplined basics rather than expensive tools.
+
+Start with access control. Limit who can see or modify sensitive data, and base that access strictly on role. Use strong, unique passwords everywhere and enforce multi-factor authentication, especially for email, remote access, cloud tools, and anything tied to finances. A surprising number of breaches still start with compromised credentials.
+
+Keep systems updated. That includes operating systems, apps, plugins, routers, and anything connected to your network. Many attacks exploit known vulnerabilities that were already patched months earlier. If possible, enable automatic updates or have a routine patch schedule.
+
+Backups are critical and often mishandled. Maintain encrypted backups that are stored separately from your main systems (ideally offline or in a segmented cloud environment). Test them periodically. A backup that can’t be restored isn’t a backup.
+
+Email remains the primary attack vector. Train staff to recognize phishing, fake invoices, and credential-harvesting attempts. This doesn’t need to be overly technical—short, repeated awareness training works better than one long session. Pair that with email filtering tools and domain protections like SPF, DKIM, and DMARC.
+
+Secure your network perimeter and endpoints. Use a business-grade firewall, encrypt Wi‑Fi (WPA3 if available), and separate guest networks from internal systems. Ensure laptops and mobile devices are encrypted and can be remotely wiped if lost. If employees work remotely, require VPN access or use secure zero-trust solutions.
+
+Data minimization is often overlooked but powerful. Don’t collect or retain more sensitive information than you actually need. The less you store, the less you have to protect—and the less you can lose.
+
+Vendors and third parties are a common weak point. Make sure any service providers who handle your data meet reasonable security standards. Even basic due diligence—asking about encryption, breach notification policies, and access controls—goes a long way.
+
+Have a simple incident response plan. It doesn’t need to be elaborate, but you should know who to call (IT, legal, insurance, possibly law enforcement), how to contain a breach, and how to communicate with clients if needed. For a law firm, this intersects with ethical duties around confidentiality and breach disclosure, so it’s worth aligning with your jurisdiction’s rules.
+
+Finally, consider cyber insurance as a complement, not a substitute, for good security practices. Policies often require certain controls anyway, and they can help cover response costs if something slips through.
+
+If you want, I can tailor this specifically to a law firm environment—client confidentiality, document management systems, and trust accounting introduce a few extra nuances.

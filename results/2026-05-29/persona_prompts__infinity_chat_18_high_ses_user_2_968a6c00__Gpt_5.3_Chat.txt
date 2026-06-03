@@ -1,0 +1,42 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=375
+Latency:   5342 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+write a cover letter
+
+── Response ────────────────────────────────────────────────────────
+:::writing
+[Your Name]  
+[Your Address]  
+[City, State, ZIP]  
+[Email Address]  
+[Phone Number]  
+[Date]
+
+[Recipient Name]  
+[Company/Organization Name]  
+[Address]  
+[City, State, ZIP]
+
+Dear [Recipient Name],
+
+I am writing to express my interest in [position title] at [organization name]. As a senior attorney with extensive experience at a well-established law firm, I have developed a strong foundation in [practice area(s)], along with a track record of delivering strategic, client-focused legal solutions in complex and high-stakes matters.
+
+Over the course of my career, I have advised clients ranging from [type of clients, e.g., Fortune 500 companies, startups, public entities] on issues including [key specialties or case types]. My work has involved not only technical legal analysis but also close collaboration with clients to align legal strategy with broader business objectives. I am particularly skilled in [negotiation, litigation, regulatory compliance, deal structuring, etc.], and I bring a practical, results-oriented approach to every matter I handle.
+
+What draws me to [organization name] is its reputation for [specific quality: innovation, client service, leadership in a field, etc.]. I am especially interested in contributing to [specific team, initiative, or goal], where I believe my experience and perspective would add meaningful value.
+
+I would welcome the opportunity to discuss how my background and skills align with your needs. Thank you for your time and consideration.
+
+Sincerely,  
+[Your Name]
+:::

@@ -85,7 +85,7 @@ Runs are idempotent â€” if a wave already exists for today, only missing (item Ã
 
 ### Docker (recommended for daily/weekly runs)
 
-The Dockerfile installs `cron` and schedules the pipeline at **09:30 CET** every day.
+The Dockerfile installs `cron` and schedules the pipeline at **11:00 CET** every day.
 
 ```bash
 # Start the scheduled container

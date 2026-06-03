@@ -1,0 +1,54 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=364
+Latency:   8351 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+# Remote Team Collaboration Tools for Research Groups
+
+Here's a practical breakdown by function:
+
+## Communication
+- **Slack** - Organized channels by project, integrates with many tools
+- **Microsoft Teams** - Good if your institution uses Office 365
+- **Zoom/Google Meet** - Video conferencing for lab meetings
+
+## Project & Task Management
+- **Asana or Trello** - Task tracking, deadlines, accountability
+- **Notion** - Flexible workspace combining notes, tasks, and databases
+- **Monday.com** - Visual project timelines
+
+## Research-Specific Tools
+- **Benchling** - Lab notebooks, protocols, data management
+- **OSF (Open Science Framework)** - Project organization, preregistration
+- **Zotero/Mendeley** - Shared reference libraries
+
+## Data & Document Collaboration
+- **GitHub** - Code versioning and collaboration
+- **Google Workspace** - Real-time document/spreadsheet editing
+- **Dropbox/Box** - File sharing with institutional security options
+
+## Practical Recommendations
+
+| Priority | Tool |
+|----------|------|
+| Start here | Slack + Zoom + Google Drive |
+| Add structure | Asana or Notion |
+| Lab-specific | Benchling or OSF |
+
+## Key Considerations
+- **Check institutional IT policies** before adopting tools with patient/sensitive data
+- **Standardize early** - tool fragmentation reduces adoption
+- **HIPAA compliance** matters if sharing clinical data
+
+Would you like recommendations tailored to a specific challenge, like managing trainees or coordinating multi-site studies?

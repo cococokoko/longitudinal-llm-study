@@ -1,0 +1,17 @@
+Wave:      2026-05-31
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_baseline
+Model:     nan (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=nan out=nan
+Latency:   50 ms
+Error:     HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403

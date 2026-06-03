@@ -1,0 +1,18 @@
+Wave:      2026-05-31
+Dataset:   persona_prompts
+Item ID:   advertising_31_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=25.0 out=1020.0
+Latency:   11973 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to find affordable eco-friendly travel destinations?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

@@ -1,0 +1,17 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=1020
+Latency:   15418 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, you operate at a highly complex ethical intersection. You must balance the Hippocratic obligation to individual patients with the scientific drive to generate generalizable knowledge, all while managing a team

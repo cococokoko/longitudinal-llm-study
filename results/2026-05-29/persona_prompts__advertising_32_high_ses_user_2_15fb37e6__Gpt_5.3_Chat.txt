@@ -1,0 +1,37 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_32_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=518
+Latency:   11099 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best ways to improve indoor air quality?
+
+── Response ────────────────────────────────────────────────────────
+Given your setting, the goal isn’t just “cleaner air,” but consistent, measurable air quality that holds up in a professional environment (clients, staff, liability, and productivity). The most effective approach combines ventilation, filtration, and source control.
+
+Start with ventilation. Many offices underperform here. Increase outdoor air exchange through your HVAC system if possible, and verify it’s actually delivering the intended air changes per hour. Demand-controlled ventilation systems often reduce fresh air to save energy—great for costs, not always for cognition. If your building allows, slightly higher ventilation rates during occupied hours can meaningfully improve alertness and reduce CO₂ buildup.
+
+Upgrade filtration next. Use high-efficiency filters in your HVAC system—MERV 13 is a strong baseline; higher if your system can handle the pressure drop. If you have conference rooms or enclosed offices where people spend long periods, add portable HEPA air purifiers sized appropriately for the room. These are especially useful for reducing fine particulates and airborne pathogens.
+
+Control sources of pollution. Office environments often overlook this:
+- Limit use of high-VOC cleaning products and switch to low-emission alternatives.
+- Be cautious with new furniture, carpets, or renovations—they can off-gas for weeks.
+- Printers and copiers should be in well-ventilated areas or separate rooms.
+- Fragrances (candles, diffusers) often degrade air quality more than people realize.
+
+Monitor what matters. Install indoor air quality monitors that track at least CO₂, PM2.5, temperature, and humidity. CO₂ is a good proxy for ventilation effectiveness; consistently above ~800–1000 ppm suggests insufficient fresh air. PM2.5 tells you about fine particles from outdoor pollution or indoor sources.
+
+Manage humidity. Aim for 40–60% relative humidity. Too low increases respiratory irritation; too high encourages mold. Many offices run dry due to HVAC—humidification may be worth considering in winter.
+
+Maintenance is often the weak link. Regularly change filters, clean ducts when needed, and ensure coils and drain pans are free of buildup. Poorly maintained systems can negate all other improvements.
+
+If you want a higher-end, defensible standard (especially for a firm concerned with employee wellbeing), look at frameworks like WELL Building Standard or ASHRAE 62.1 and 241. Even partial alignment gives you a structured, credible approach.
+
+If you’d like, I can tailor this to a single-floor office vs. a multi-tenant building, or suggest specific purifier models and monitoring setups.

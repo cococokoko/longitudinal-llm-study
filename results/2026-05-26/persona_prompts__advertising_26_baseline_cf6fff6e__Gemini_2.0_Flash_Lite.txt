@@ -1,0 +1,74 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1024
+Latency:   7600 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Data security is crucial for small businesses, as they are often targets for cyberattacks due to limited resources and potentially less robust security measures. Here are some best practices, categorized for clarity:
+
+**I. Foundational Security Practices:**
+
+*   **Develop a Security Plan:**
+    *   **Risk Assessment:** Identify your valuable data (customer information, financial records, intellectual property), potential threats (phishing, malware, ransomware), and vulnerabilities (weak passwords, outdated software).
+    *   **Policy Creation:** Establish clear policies for data handling, password management, acceptable use of company devices, and incident response.
+    *   **Employee Training:** Educate employees on security threats, best practices, and company policies. Regular training and updates are essential.
+    *   **Regular Review:** Update your plan and policies regularly to adapt to evolving threats and business changes.
+
+*   **Password Management:**
+    *   **Strong Passwords:** Enforce strong password requirements (minimum length, complexity, use of special characters).
+    *   **Password Managers:** Encourage the use of password managers to generate, store, and manage complex passwords securely.
+    *   **Multi-Factor Authentication (MFA):** Implement MFA on all critical accounts (email, cloud storage, financial systems).
+    *   **Regular Password Changes:** Consider requiring password changes periodically, especially for sensitive accounts.
+
+*   **Data Backup and Recovery:**
+    *   **Regular Backups:** Implement a regular backup schedule (daily, weekly) for all critical data.
+    *   **Offsite Backups:** Store backups offsite (cloud storage, external hard drive) to protect against physical disasters or ransomware attacks.
+    *   **Backup Verification:** Regularly test your backups to ensure they are working correctly and can be restored.
+    *   **Disaster Recovery Plan:** Develop a plan for restoring data and business operations in case of a data breach or disaster.
+
+*   **Software Updates and Patching:**
+    *   **Automated Updates:** Enable automatic updates for operating systems, software applications, and security software.
+    *   **Patch Management:** Regularly apply security patches to address vulnerabilities in software.
+    *   **End-of-Life Software:** Avoid using outdated software that is no longer supported by the vendor, as it is more vulnerable to attacks.
+
+**II. Network Security:**
+
+*   **Firewall:** Install and configure a firewall to protect your network from unauthorized access.
+*   **Secure Wi-Fi:**
+    *   **Strong Encryption:** Use WPA2 or WPA3 encryption for your Wi-Fi network.
+    *   **Guest Network:** Create a separate guest network for visitors to isolate them from your internal network.
+    *   **Regular Password Changes:** Change your Wi-Fi password regularly.
+*   **Network Segmentation:** Segment your network to isolate sensitive data and systems from less secure areas.
+*   **Virtual Private Network (VPN):** Use a VPN for remote access to your network, especially when employees work remotely or use public Wi-Fi.
+
+**III. Endpoint Security (Devices):**
+
+*   **Antivirus/Anti-Malware:** Install and maintain up-to-date antivirus and anti-malware software on all devices (computers, laptops, smartphones).
+*   **Endpoint Detection and Response (EDR):** Consider EDR solutions for advanced threat detection and response capabilities.
+*   **Device Encryption:** Encrypt hard drives and mobile devices to protect data in case of loss or theft.
+*   **Mobile Device Management (MDM):** Implement MDM to manage and secure mobile devices used for business purposes.
+*   **Secure Remote Access:** Implement secure remote access solutions (VPN, secure desktop) for employees working remotely.
+
+**IV. Email Security:**
+
+*   **Spam Filtering:** Use a spam filter to block malicious emails.
+*   **Phishing Awareness:** Educate employees about phishing attacks and how to identify them.
+*   **Email Encryption:** Use email encryption to protect sensitive information transmitted via email.
+*   **Email Authentication:** Implement email authentication protocols (SPF, DKIM, DMARC) to prevent email spoofing.
+
+**V. Data Handling and Storage:**
+
+*   **Data Minimization:** Collect and store only the data you need.
+*   **Data Encryption:** Encrypt sensitive data at rest (stored on hard drives) and in transit (transmitted over networks).
+*   **Access Control:** Implement role-based access control (RBAC) to limit access to data based on job responsibilities.
+*   **Data Retention Policy:** Establish a data retention policy to determine how long data should be stored and when it should be securely deleted.
+*   **Secure Data Disposal:** Implement secure data disposal procedures (shredding, wiping) for physical and digital data.
+*   **Cloud Security:** If using cloud services, choose reputable providers with strong security

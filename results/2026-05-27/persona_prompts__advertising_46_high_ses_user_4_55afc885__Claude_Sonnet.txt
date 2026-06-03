@@ -1,0 +1,44 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_46_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=332
+Latency:   7393 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best resources for starting a plant-based diet?
+
+── Response ────────────────────────────────────────────────────────
+Here are some well-regarded resources across different formats:
+
+## Evidence-Based Books
+- **"How Not to Die"** - Michael Greger, MD (reviews mortality research)
+- **"The China Study"** - T. Colin Campbell (though note some methodological critiques exist)
+- **"Eat to Live"** - Joel Fuhrman, MD
+
+## Peer-Reviewed Starting Points
+- **Nutrients journal** has open-access reviews on plant-based diet adequacy
+- **PCRM.org** (Physicians Committee for Responsible Medicine) - clinically oriented resources
+- **Academy of Nutrition and Dietetics position paper** on vegetarian/vegan diets
+
+## Practical Tools
+- **Cronometer** - tracks micronutrient intake with good granularity
+- **Forks Over Knives** website/app - meal planning
+- **NutritionFacts.org** - Greger's site summarizing research
+
+## Key Nutritional Considerations Worth Monitoring
+- B12 supplementation (essentially required)
+- Vitamin D, omega-3s (DHA/EPA), iron, zinc, calcium, iodine
+- Protein adequacy and amino acid completeness
+
+## Honest Caveats
+- Evidence quality varies considerably in this field
+- Individual responses differ
+- Some popular advocates overstate certainty
+
+Would you like recommendations focused on a specific aspect - the clinical evidence, practical implementation, or specific health goals?

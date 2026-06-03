@@ -1,0 +1,23 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_low_ses_user_4
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=34 out=179
+Latency:   3412 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here are three questions you can use to help determine if something is morally right or wrong in your role as a patient care aide:
+
+1.  **Does this action uphold the dignity and well-being of the patient?** (This focuses on the core of your job: providing care and respect. Consider if the action promotes their comfort, safety, and autonomy.)
+
+2.  **Would I be comfortable with this action being known to the patient, their family, my colleagues, and the public?** (This tests for transparency and accountability. If you wouldn't want it known, it's a red flag.)
+
+3.  **Does this action align with the hospital's policies, ethical guidelines, and my professional responsibilities?** (This ensures you're following established rules and standards of care, which are often designed to protect both patients and staff.)

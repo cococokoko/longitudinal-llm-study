@@ -1,0 +1,24 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=14 out=1020
+Latency:   11866 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+Here is a "Master Prompt" you can copy and paste into any AI. I have included brackets **[like this]** where you can fill in your own details to make it perfectly tailored to the child you are generating it for. 
+
+### The "Master" Children's Story Prompt
+
+**Copy and paste this:**
+
+> "Act as an award-winning children's book author like Roald Dahl or Julia Donaldson. I want you to write a highly engaging, imaginative, and beautifully paced story for a **[insert age, e.g., 5-year-old]**. 
+>
+> Here are the details for the story:
+> *   **Main Character

@@ -1,0 +1,18 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=21 out=1020
+Latency:   11747 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Given your role as a neurosurgeon at a major teaching hospital, your home WiFi needs are likely much more demanding than the average person's. You aren't just streaming movies; you are likely reviewing massive, high-resolution PACS imaging

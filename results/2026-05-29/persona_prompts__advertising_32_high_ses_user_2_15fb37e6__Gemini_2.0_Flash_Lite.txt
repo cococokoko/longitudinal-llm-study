@@ -1,0 +1,67 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_32_high_ses_user_2
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=25 out=1024
+Latency:   6701 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best ways to improve indoor air quality?
+
+── Response ────────────────────────────────────────────────────────
+As a senior attorney, you likely spend a significant amount of time indoors. Improving indoor air quality (IAQ) is crucial for your health, productivity, and overall well-being. Here's a breakdown of the best ways to improve IAQ, categorized for clarity:
+
+**I. Prevention & Source Control (The Most Effective Approach):**
+
+*   **Identify and Eliminate Sources:**
+    *   **VOCs (Volatile Organic Compounds):** These are chemicals that off-gas from many common items.
+        *   **Furniture & Carpeting:** Choose low-VOC or no-VOC furniture, carpets, and rugs. Consider natural materials like wool or jute.
+        *   **Cleaning Products:** Opt for natural, non-toxic cleaning products. Avoid harsh chemicals like bleach and ammonia.
+        *   **Air Fresheners & Scented Candles:** These often contain VOCs. Use natural alternatives like essential oil diffusers (with caution, as some can trigger allergies) or baking soda to absorb odors.
+        *   **Office Supplies:** Be mindful of the VOC content in pens, markers, and printer ink.
+        *   **Paints & Coatings:** Use low-VOC or zero-VOC paints and sealants.
+    *   **Mold & Mildew:**
+        *   **Address Water Leaks Immediately:** This is the most critical step. Repair leaks in the roof, plumbing, and windows promptly.
+        *   **Control Humidity:** Keep humidity levels below 60% (ideally between 30-50%) using a dehumidifier, especially in humid climates or areas prone to moisture.
+        *   **Proper Ventilation:** Ensure adequate ventilation in bathrooms and kitchens to prevent moisture buildup.
+    *   **Dust & Allergens:**
+        *   **Regular Cleaning:** Dust frequently with a microfiber cloth or a vacuum cleaner with a HEPA filter.
+        *   **Vacuuming:** Vacuum carpets and rugs regularly with a HEPA-filtered vacuum cleaner.
+        *   **Reduce Clutter:** Clutter traps dust and allergens.
+    *   **Radon:**
+        *   **Testing:** Have your office tested for radon, a naturally occurring radioactive gas.
+        *   **Mitigation:** If levels are high, implement a radon mitigation system (usually involves a vent pipe and fan).
+    *   **Pesticides & Herbicides:**
+        *   **Minimize Use:** Avoid using pesticides and herbicides indoors. If necessary, use them sparingly and follow all safety instructions.
+        *   **Professional Pest Control:** Consider hiring a professional pest control service that uses environmentally friendly methods.
+
+**II. Ventilation & Air Exchange:**
+
+*   **Increase Fresh Air Intake:**
+    *   **Open Windows (When Possible):** This is the simplest and most natural way to improve IAQ. However, consider outdoor air quality and pollen levels.
+    *   **HVAC System Maintenance:** Ensure your HVAC system is properly maintained, including regular filter changes and duct cleaning.
+    *   **Mechanical Ventilation:** If natural ventilation is insufficient, consider installing a mechanical ventilation system that brings in fresh air from outside.
+*   **Proper Ventilation in Specific Areas:**
+    *   **Bathrooms & Kitchens:** Ensure exhaust fans are working properly and are used during and after cooking and showering.
+
+**III. Air Filtration & Purification:**
+
+*   **HEPA Filters:**
+    *   **HVAC Filters:** Use high-efficiency particulate air (HEPA) filters in your HVAC system. These filters capture a significant percentage of airborne particles, including dust, pollen, mold spores, and some bacteria and viruses.
+    *   **Portable Air Purifiers:** Consider using portable air purifiers with HEPA filters in your office, especially if you have allergies or sensitivities.
+*   **Activated Carbon Filters:**
+    *   **VOC Removal:** Activated carbon filters are effective at removing VOCs and odors. They are often used in conjunction with HEPA filters in air purifiers.
+*   **UV-C Light:**
+    *   **Germicidal Effect:** UV-C light can kill bacteria, viruses, and mold spores. It is often used in HVAC systems and air purifiers. However, it's important to ensure the UV-C light is properly shielded to prevent exposure to harmful radiation.
+*   **Consider the MERV Rating:** When choosing air filters, pay attention to the Minimum Efficiency Reporting Value (MERV) rating. Higher MERV ratings indicate better filtration. For most offices, a MERV 11-13 filter is a good starting point.
+
+**IV. Monitoring & Maintenance:**
+
+*   **Regular Inspections:**
+    *   **HVAC System:** Schedule regular inspections and maintenance of your HVAC system by a qualified professional.
+    *   **Building Envelope:** Inspect the building envelope (roof, walls, windows, doors) for leaks and other issues that could contribute

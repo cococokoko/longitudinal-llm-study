@@ -1,0 +1,41 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_34_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=623
+Latency:   11541 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best techniques for effective online teaching?
+
+── Response ────────────────────────────────────────────────────────
+For someone in your position, the “best” techniques aren’t just about clarity—they’re about translating how experts think into something learners can actually internalize, especially without the cues of an in-person setting. The strongest online teaching tends to be deliberate, structured, and cognitively efficient rather than just well-delivered.
+
+A few principles consistently work well:
+
+Start by designing for attention, not just content. Online learners fatigue quickly, especially with dense material. Break teaching into short segments (10–20 minutes max) with a clear goal for each. Even in a longer session, think in “chapters” with resets in between—questions, polls, or brief case pivots.
+
+Make thinking visible. As an expert, a lot of your reasoning is automatic. Slow that down. Narrate your clinical or scientific reasoning explicitly—what you notice, what you ignore, how you prioritize hypotheses. This is often more valuable than the final answer.
+
+Use retrieval, not just exposure. Learners retain far more when they are forced to recall or apply information. Cold-calling in a supportive way, live polls, short case questions, or even “pause and write your answer” moments work well. Passive listening is the weakest mode online.
+
+Lean heavily on cases and ambiguity. Especially in medicine, presenting a case with incomplete information and evolving data mirrors real practice and keeps engagement high. Resist the urge to resolve things too quickly—let learners sit in uncertainty and reason through it.
+
+Exploit multimodality, but selectively. Slides, whiteboards, imaging, and brief annotations help—but only if they reduce cognitive load. Avoid cluttered slides. One idea per visual is a good rule. If you’re explaining something complex, drawing it live (even roughly) can be far more effective than polished slides.
+
+Build interaction that feels consequential. If learners feel their participation doesn’t matter, they disengage. Ask questions where answers shape what you do next—e.g., “Half of you chose A, let’s unpack why that’s tempting and where it fails.”
+
+Use spaced reinforcement. A single session rarely sticks. Follow up with brief asynchronous elements: a 3-question quiz, a clinical pearl email, or a short recap video. Spacing and repetition are what convert exposure into memory.
+
+Be intentional about social presence. Online environments can feel anonymous. Use names when possible, acknowledge contributions, and occasionally share your own uncertainty or past mistakes. It makes participation safer and increases engagement.
+
+Keep feedback tight and specific. When learners answer, don’t just say “correct” or “not quite.” Say why. Highlight the reasoning, not just the outcome. This is where most of the learning happens.
+
+Finally, measure what’s actually working. Short feedback loops—one-minute surveys, performance on follow-up questions, or even observing participation patterns—can tell you more than end-of-course evaluations.
+
+If you want, I can tailor this to a specific format you’re using (e.g., Zoom lectures, flipped classroom, resident teaching rounds, MOOCs) or to a particular audience like trainees vs. mixed clinical/research groups.

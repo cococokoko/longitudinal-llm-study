@@ -1,0 +1,29 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_95e237815fe4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=172 out=104
+Latency:   5728 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: People have different views about themselves and how they relate to the world. Using this card, would you tell me how strongly you agree or disagree with each of the following statements about how you see yourself?
+
+North America
+
+Options:
+A. Very close
+B. Close
+C. Not very close
+D. Not close at all
+E. Don't know
+F. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.25, "B": 0.4, "C": 0.15, "D": 0.1, "E": 0.05, "F": 0.05}

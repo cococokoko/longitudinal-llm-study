@@ -1,0 +1,18 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_19_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=23 out=1020
+Latency:   11816 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I improve my mental health?
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon at a major teaching hospital, you are operating in one of the most high-stakes, high-pressure environments imaginable. You are balancing the intense cognitive and physical demands of complex

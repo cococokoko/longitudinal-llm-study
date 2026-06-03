@@ -1,0 +1,37 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_26_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=25 out=628
+Latency:   12147 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can social media cultivate extremism
+
+── Response ────────────────────────────────────────────────────────
+Social media doesn’t “create” extremism out of nowhere, but it can reliably amplify, accelerate, and harden it. A few mechanisms matter most:
+
+First, recommendation systems optimize for engagement, not accuracy or social stability. Content that is emotionally arousing—especially anger, outrage, or fear—tends to outperform neutral information. Over time, users who show even mild interest in contentious topics can be nudged toward more extreme versions because those keep attention longer. This creates a gradient, not a sudden jump: each step feels like a small shift, but the endpoint can be quite radical.
+
+Second, repeated exposure reshapes what feels normal. If a user’s feed becomes saturated with one-sided or extreme viewpoints, those views begin to seem common and legitimate. This is a classic “norm perception” effect: people calibrate their sense of reality based on what they see frequently, even if it’s not representative.
+
+Third, social reinforcement is immediate and quantifiable. Likes, shares, and comments reward conformity to group norms. In tightly clustered communities, more extreme statements can earn more status, pushing members to escalate rhetoric or beliefs over time. This is similar to group polarization in offline settings, but faster and more visible.
+
+Fourth, network structure matters. Social platforms tend to form dense clusters (echo chambers) connected by relatively few bridges. Within clusters, information recirculates and intensifies; across clusters, interaction is often adversarial. That combination can both radicalize within groups and increase hostility between them.
+
+Fifth, identity and belonging are central. Extremist narratives often provide a strong sense of in-group identity and moral clarity. Social media makes it easy to find others who share grievances, even if those people are geographically dispersed. That reduces social friction and can normalize beliefs that would otherwise remain fringe.
+
+Sixth, misinformation and conspiratorial content exploit cognitive biases. Humans are drawn to simple, agent-driven explanations for complex events and to information that confirms prior beliefs. False or misleading content that fits those patterns spreads easily, especially when it is emotionally charged.
+
+Seventh, perceived anonymity and distance reduce social cost. People may express or experiment with more extreme views online than they would offline, which can then become internalized over time.
+
+Finally, adversarial actors—state or non-state—can intentionally seed and amplify divisive or extreme content. They exploit the same engagement dynamics to widen fractures and recruit or influence audiences.
+
+From a research perspective, this sits at the intersection of cognitive psychology (biases, reinforcement), network science (clustering, contagion), and platform design (ranking algorithms, affordances). Interventions that have been explored include reducing algorithmic amplification of borderline content, introducing friction (e.g., prompts before sharing), diversifying exposure, and strengthening credible counter-messaging—but each comes with trade-offs around autonomy, trust, and unintended effects.
+
+If you’re thinking about this as a research agenda, it can be useful to distinguish between exposure, susceptibility, and mobilization: many people encounter extreme content, far fewer adopt it, and fewer still act on it. The mechanisms overlap but aren’t identical.

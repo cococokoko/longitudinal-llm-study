@@ -1,0 +1,45 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=21 out=258
+Latency:   5217 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are some english words that have two different words for the same meaning?
+
+── Response ────────────────────────────────────────────────────────
+English is full of this kind of duplication because it pulled vocabulary from different languages (especially Germanic roots and French/Latin after the Norman Conquest). So you often get two words with the same or very similar meanings, but different origins or tones.
+
+Here are some good examples:
+
+- ask / inquire  
+- start / commence  
+- buy / purchase  
+- help / assist  
+- end / finish / conclude  
+- freedom / liberty  
+- kingly / royal  
+- hearty / cordial  
+- house / mansion  
+- fire / flame  
+- holy / sacred  
+- time / duration  
+- rise / ascend  
+- fall / descend  
+
+Sometimes the meanings aren’t perfectly identical—one might sound more formal or technical:
+
+- ask (casual) vs inquire (formal)  
+- buy (everyday) vs purchase (formal/business)  
+- help (general) vs assist (slightly formal)
+
+There are also triplets where English kept all versions:
+
+- kingly (Germanic), royal (French), regal (Latin)  
+- ask (Germanic), question (French), interrogate (Latin)
+
+If you want, I can show more pairs that are *exact* synonyms vs ones that subtly differ in tone—that’s where it gets really interesting.

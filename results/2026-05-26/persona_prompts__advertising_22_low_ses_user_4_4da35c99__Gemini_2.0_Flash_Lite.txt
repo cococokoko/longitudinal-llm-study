@@ -1,0 +1,61 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_user_4
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=24 out=1024
+Latency:   8412 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Okay, working shifts as a Patient Care Aide (PCA) at a hospital presents a unique challenge for remote team collaboration. You're likely dealing with a mix of on-site and off-site team members, and the need for quick, reliable communication is paramount. Here's a breakdown of the best tools, categorized by their primary function, along with considerations specific to your role:
+
+**I. Communication & Messaging:**
+
+*   **A. Instant Messaging & Chat:**
+    *   **1. Microsoft Teams:** (If your hospital uses Microsoft products)
+        *   **Pros:** Excellent for text-based chat, file sharing, video calls, and integration with other Microsoft Office apps (like Outlook for scheduling).  Teams can be organized by department, shift, or specific patient cases.  Has mobile apps for easy access on your phone.
+        *   **Cons:** Can be overwhelming if not organized well. Requires a Microsoft account.
+        *   **Use Cases for PCAs:** Quick questions about patient care, shift handoffs, updates on patient status, coordinating breaks, sharing important documents (e.g., updated care plans).
+    *   **2. Slack:**
+        *   **Pros:** Similar to Teams, but often considered more user-friendly. Excellent for creating channels for different topics (e.g., "ICU-ShiftA," "WoundCare-Consults").  Integrates with many other apps.  Good for both quick messages and longer discussions.
+        *   **Cons:** Can become cluttered if not managed well. Requires a Slack account.
+        *   **Use Cases for PCAs:** Same as Teams, plus potentially using channels for specific patient needs or to alert the team of an emergency.
+    *   **3. WhatsApp/Signal (for personal use, but potentially useful for quick communication with colleagues):**
+        *   **Pros:** Widely used, easy to set up, and good for quick messages. Signal is known for its strong privacy features.
+        *   **Cons:** Not ideal for official hospital communication due to HIPAA regulations (unless the hospital has approved its use and has security measures in place).  Can be less organized than dedicated team platforms.
+        *   **Use Cases for PCAs:**  Potentially for quick communication with colleagues outside of work hours (e.g., swapping shifts, asking a quick question about a patient).  **Important:**  Be extremely cautious about sharing any patient information on these platforms.
+*   **B. Email:**
+    *   **1. Hospital-Provided Email (Outlook, Gmail, etc.):**
+        *   **Pros:** Official communication channel, good for formal announcements, scheduling, and sharing documents.  Often integrated with other hospital systems.
+        *   **Cons:** Can be slow for urgent matters.  Can get buried in a busy inbox.
+        *   **Use Cases for PCAs:** Receiving shift schedules, policy updates, important announcements from supervisors, sharing patient information (within HIPAA guidelines).
+
+**II. Scheduling & Task Management:**
+
+*   **A. Hospital-Provided Scheduling Software:**
+    *   **1. Kronos, API, or similar:**
+        *   **Pros:** The primary tool for viewing your schedule, requesting time off, and potentially swapping shifts.  Often integrates with payroll.
+        *   **Cons:** Limited collaboration features beyond scheduling.
+        *   **Use Cases for PCAs:** Checking your schedule, requesting time off, and potentially communicating with colleagues about shift swaps.
+*   **B. Shared Calendars (within Teams, Outlook, or Google Calendar):**
+    *   **1. Microsoft Outlook Calendar, Google Calendar:**
+        *   **Pros:** Good for scheduling meetings, setting reminders, and sharing availability.  Can be integrated with Teams or other communication platforms.
+        *   **Cons:** Requires everyone to use the same calendar system.
+        *   **Use Cases for PCAs:** Scheduling team meetings (e.g., brief handoff meetings at shift changes), setting reminders for important tasks (e.g., medication reminders, patient assessments).
+*   **C. Task Management (for specific projects or tasks):**
+    *   **1. Microsoft To Do, Trello, Asana (if your hospital uses them):**
+        *   **Pros:** Help to organize tasks, assign responsibilities, and track progress.  Can be useful for managing specific patient care tasks or projects.
+        *   **Cons:** May be overkill for simple tasks.  Requires team adoption.
+        *   **Use Cases for PCAs:**  Potentially for managing tasks related to a specific patient (e.g., wound care, ambulation) or for coordinating tasks across shifts.
+
+**III. Video Conferencing & Meetings:**
+
+*   **A. Microsoft Teams, Zoom, Google Meet:**
+    *   **Pros:** Excellent for virtual meetings, training

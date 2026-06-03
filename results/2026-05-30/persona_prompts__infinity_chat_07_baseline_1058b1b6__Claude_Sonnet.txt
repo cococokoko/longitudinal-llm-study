@@ -1,0 +1,119 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=1024
+Latency:   20316 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+# Rare & Underutilized Tools/Methods in Cybersecurity
+
+## 🔍 Reconnaissance & OSINT
+
+| Tool/Method | Description |
+|-------------|-------------|
+| **Maltego CE** | Advanced relationship mapping for OSINT |
+| **SpiderFoot HX** | Automated OSINT with 200+ data sources |
+| **FOCA** | Metadata extraction from public documents |
+| **Recon-ng** | Web reconnaissance framework (often overlooked) |
+| **theHarvester** | Email/subdomain harvesting |
+| **Creepy** | Geolocation OSINT from social media |
+
+---
+
+## 🛠️ Exploitation & Testing
+
+### Rarely Used Frameworks
+```
+- SILENTTRINITY    → Python-based C2 using .NET runtime
+- Covenant         → .NET C2 framework (alternative to Metasploit)
+- Merlin           → HTTP/2 C2 server written in Go
+- Sliver           → Cross-platform adversary simulation
+- Havoc Framework  → Modern C2 with advanced evasion
+```
+
+### Niche Exploitation Methods
+- **VLAN Hopping** — Switch spoofing / double tagging
+- **LLMNR/NBT-NS Poisoning** — Credential capture on local networks
+- **Kerberoasting** — Offline cracking of service account hashes
+- **AS-REP Roasting** — Targeting accounts without pre-auth
+- **PrintNightmare variants** — Printer spooler abuse
+- **Shadow Credentials** — ADCS-based persistence
+
+---
+
+## 🔐 Cryptography & Steganography
+
+```bash
+# Steganography tools rarely used in assessments
+- Steghide          # Hide data in images/audio
+- OpenStego         # Watermarking + data hiding
+- SilentEye         # GUI-based steganography
+- snow              # Whitespace steganography in text
+- Stegosuite        # Java-based stego tool
+```
+
+---
+
+## 🌐 Network-Based Rare Methods
+
+### Protocol Abuse
+- **BGP Hijacking simulation** — Route manipulation testing
+- **DNS Cache Poisoning** — Kaminsky attack variants
+- **IPv6 Attacks** — Often ignored in dual-stack environments
+  - SLAAC attacks
+  - Rogue DHCPv6
+- **QUIC Protocol Analysis** — HTTP/3 inspection gaps
+- **CoAP Protocol Exploitation** — IoT protocol abuse
+
+### Tools
+```
+- Bettercap         → Network attack Swiss army knife
+- Responder         → LLMNR/NBNS/MDNS poisoner
+- mitm6             → IPv6 MITM attacks
+- Scapy             → Custom packet crafting
+- Yersinia          → Layer 2 protocol attacks
+```
+
+---
+
+## 🧠 Advanced Malware Analysis
+
+| Tool | Purpose |
+|------|---------|
+| **FLARE VM** | Windows malware analysis environment |
+| **Cutter** | GUI for Radare2 reverse engineering |
+| **Binary Ninja** | Advanced binary analysis platform |
+| **Ghidra Scripting** | NSA tool with Python/Java automation |
+| **Frida** | Dynamic instrumentation toolkit |
+| **angr** | Binary analysis framework (symbolic execution) |
+| **DRAKVUF** | Agentless dynamic malware analysis |
+
+---
+
+## 🏗️ Infrastructure & Evasion
+
+### Living Off the Land (LOLBins)
+```powershell
+# Rarely monitored Windows binaries
+certutil.exe      # Download files, encode/decode
+mshta.exe         # Execute HTA files remotely
+regsvr32.exe      # Squiblydoo technique
+wmic.exe          # Remote execution
+msiexec.exe       # Remote MSI execution
+odbcconf.exe      # DLL execution
+```
+
+### Evasion Tools
+```
+- Chameleon         → PowerShell script obfuscation
+- Invoke-Obfuscation → PowerShell obfuscation framework
+- PEzor             → PE packer/obfuscator
+- Scarecrow         → EDR evasion payload creation
+-

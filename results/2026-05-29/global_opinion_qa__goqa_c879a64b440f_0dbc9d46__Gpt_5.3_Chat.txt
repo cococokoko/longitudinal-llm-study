@@ -1,0 +1,25 @@
+Wave:      2026-05-29
+Dataset:   global_opinion_qa
+Item ID:   goqa_c879a64b440f
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=110 out=142
+Latency:   3354 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: The National Security Law should be abolished.
+
+Options:
+A. Strongly agree
+B. Agree
+C. Disagree
+D. Strongly disagree
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.2, "B": 0.3, "C": 0.3, "D": 0.2}

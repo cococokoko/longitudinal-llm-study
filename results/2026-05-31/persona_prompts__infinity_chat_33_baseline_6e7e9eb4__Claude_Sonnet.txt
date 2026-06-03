@@ -1,0 +1,17 @@
+Wave:      2026-05-31
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     nan (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=nan out=nan
+Latency:   31 ms
+Error:     HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+── Prompt ──────────────────────────────────────────────────────────
+write a 4 lines poem in english
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403

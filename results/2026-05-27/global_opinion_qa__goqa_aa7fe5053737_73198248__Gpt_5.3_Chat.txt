@@ -1,0 +1,30 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_aa7fe5053737
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=168 out=214
+Latency:   3720 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How frequently do the following things occur in your neighborhood?
+
+Men and boys hurting women and girls
+
+Options:
+A. Very frequently
+B. Quite frequently
+C. Not frequently
+D. Not at all frequently
+E. Don't know
+F. No answer/refused
+G. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.05, "B": 0.15, "C": 0.35, "D": 0.25, "E": 0.15, "F": 0.03, "G": 0.02}

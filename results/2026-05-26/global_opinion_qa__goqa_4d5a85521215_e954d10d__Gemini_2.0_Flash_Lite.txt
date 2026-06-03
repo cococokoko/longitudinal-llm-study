@@ -1,0 +1,29 @@
+Wave:      2026-05-26
+Dataset:   global_opinion_qa
+Item ID:   goqa_4d5a85521215
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=181 out=53
+Latency:   1027 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Who is second most to blame for your country's current economic problems?  Is it...Our government, Banks and other major financial institutions, the United States, the European Union, or the your country public?
+
+Options:
+A. Our government
+B. Banks and other major financial institutions
+C. United States
+D. European Union
+E. The (survey country) public
+F. None of the above (VOL)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 1.0}
+```

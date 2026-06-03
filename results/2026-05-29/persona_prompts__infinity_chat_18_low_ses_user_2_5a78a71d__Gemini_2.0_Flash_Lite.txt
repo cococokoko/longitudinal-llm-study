@@ -1,0 +1,46 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_low_ses_user_2
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=17 out=513
+Latency:   3190 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+write a cover letter
+
+── Response ────────────────────────────────────────────────────────
+[Your Name]
+[Your Address]
+[Your Phone Number]
+[Your Email Address]
+
+[Date]
+
+[Hiring Manager Name] (If you know it, otherwise use title)
+[Hiring Manager Title]
+[Company Name]
+[Company Address]
+
+Dear [Mr./Ms./Mx. Last Name or Hiring Manager],
+
+I am writing to express my enthusiastic interest in the [Job Title] position at [Company Name], as advertised on [Platform where you saw the job posting - e.g., LinkedIn, company website]. Having followed [Company Name]'s work in [Industry/Specific area] for some time, I am particularly impressed by [Mention something specific that interests you about the company - e.g., their commitment to innovation, their positive company culture, a specific project].
+
+As a highly motivated and results-oriented individual with [Number] years of experience in [Relevant field], I am confident that my skills and experience align perfectly with the requirements of this role. In my previous role at [Previous Company], I was responsible for [List 2-3 key responsibilities and accomplishments, quantifying them whenever possible.  Focus on skills relevant to the job description]. For example:
+
+*   Successfully managed [Project/Task] resulting in [Positive outcome - e.g., a 15% increase in efficiency, the successful launch of a new product].
+*   Developed and implemented [Strategy/Process] that led to [Positive outcome - e.g., improved customer satisfaction, reduced operational costs].
+*   Consistently exceeded expectations in [Specific area] by [Specific action/achievement].
+
+I understand the demands of balancing work and personal responsibilities, and as a single parent, I have developed exceptional time management, organizational, and problem-solving skills. I am adept at prioritizing tasks, working efficiently under pressure, and maintaining a strong focus on achieving goals. I am also a highly resourceful and adaptable individual, capable of quickly learning new skills and embracing new challenges.
+
+I am particularly drawn to [Company Name]'s [Mention something specific about the company that appeals to you - e.g., company culture, values, commitment to work-life balance]. I am confident that I can contribute significantly to your team and am eager to learn more about this exciting opportunity.
+
+Thank you for your time and consideration. I have attached my resume for your review and welcome the opportunity to discuss my qualifications further in an interview.
+
+Sincerely,
+[Your Name]

@@ -1,0 +1,62 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_low_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=47 out=345
+Latency:   5678 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work in a warehouse position that requires long hours.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Nice, that’s a great idea—having a live resume site stands out way more than a PDF.
+
+The easiest free ways to host plain HTML files are:
+
+**1. GitHub Pages (most popular, totally free)**
+- Make a GitHub account
+- Create a new repository (name it something like `yourname.github.io`)
+- Upload your HTML files (make sure your main file is named `index.html`)
+- Go to repo settings → “Pages” → enable it
+- Your site will be live at: `https://yourname.github.io`
+
+Pros: reliable, fast, looks professional  
+Cons: small learning curve if you’ve never used GitHub
+
+---
+
+**2. Netlify (super beginner-friendly)**
+- Go to netlify.com and sign up
+- Drag and drop your folder with the HTML files onto their dashboard
+- Done — it gives you a live link instantly
+
+Pros: easiest method, no setup  
+Cons: random URL unless you customize it
+
+---
+
+**3. Cloudflare Pages**
+- Similar to Netlify but a bit more technical
+- Good performance, also free
+
+---
+
+**What I’d recommend for you:**
+If you want simple → use **Netlify drag-and-drop**  
+If you want something a bit more “tech/professional” → use **GitHub Pages**
+
+---
+
+**Quick tip before uploading:**
+- Make sure your main file is named exactly: `index.html`
+- Test it locally in your browser first
+- Keep all files (images, CSS) in the same folder structure
+
+---
+
+If you want, I can walk you step-by-step through GitHub Pages or check your files before you upload 👍

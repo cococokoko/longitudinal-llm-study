@@ -1,0 +1,41 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=692
+Latency:   14427 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+For small businesses, the goal isn’t to replicate enterprise-grade complexity—it’s to reduce the most common and costly risks with disciplined, repeatable practices. The majority of breaches in small organizations still come down to basic gaps: weak authentication, phishing, unpatched systems, and uncontrolled data access.
+
+A practical approach centers on a few core areas:
+
+Start with access control. Every user should have only the access they actually need (least privilege), and administrative rights should be tightly limited and regularly reviewed. Multi-factor authentication should be mandatory for email, cloud services, remote access, and anything involving sensitive data. Password policies alone are no longer sufficient—MFA is one of the highest-impact controls you can deploy.
+
+Secure endpoints and systems. All devices—laptops, phones, servers—should be encrypted, centrally managed, and kept up to date with automatic patching. Use reputable endpoint protection (EDR/XDR, not just basic antivirus) and enable remote wipe capabilities for lost or stolen devices. Many small businesses overlook personal devices (BYOD), which can quietly become a major vulnerability if not governed.
+
+Focus heavily on phishing and human factors. Regular, short security awareness training paired with simulated phishing exercises significantly reduces risk. Employees don’t need to become experts, but they should recognize suspicious emails, know how to report them, and understand the stakes.
+
+Protect data where it lives and where it moves. Identify what data is sensitive (client records, financials, PII, legal documents), then ensure it’s encrypted both at rest and in transit. Use secure, access-controlled storage instead of ad hoc file sharing. Limit or disable USB storage where appropriate, and monitor for unusual data transfers.
+
+Backups are your safety net. Maintain regular, automated backups of critical systems and test restoration periodically. At least one backup should be offline or immutable to protect against ransomware. Many businesses have backups that technically exist but fail when actually needed.
+
+Manage vendors and cloud services carefully. Small businesses often rely heavily on SaaS tools—each one is a potential entry point. Use only vetted providers, enable MFA on all accounts, and periodically review who has access. Contracts should address data handling, breach notification, and security expectations, even if briefly.
+
+Establish a basic incident response plan. It doesn’t need to be elaborate, but it should answer: who to call, how to contain a breach, and how to communicate internally and externally. Time matters in incidents, and improvisation is costly.
+
+Log and monitor. Even lightweight logging—especially for login activity, admin changes, and data access—can help detect issues early. Many modern tools provide built-in dashboards that small businesses can leverage without a dedicated security team.
+
+Finally, align with a recognized framework without overengineering. The NIST Cybersecurity Framework or CIS Critical Security Controls (v8) are both practical starting points. CIS, in particular, is very actionable for smaller organizations and prioritizes controls by impact.
+
+Given your role as a senior attorney, it’s also worth emphasizing confidentiality obligations and regulatory exposure. Legal practices are prime targets due to the sensitivity of client data. Encryption, access controls, and auditability aren’t just technical safeguards—they’re part of demonstrating reasonable security under professional responsibility standards and data protection laws.
+
+If you want, I can tailor this to a law firm context specifically—there are a few risk areas (like document sharing, e-discovery platforms, and client communications) that deserve extra attention.

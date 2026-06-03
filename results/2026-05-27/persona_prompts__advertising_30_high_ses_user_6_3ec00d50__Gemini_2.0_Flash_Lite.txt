@@ -1,0 +1,65 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_user_6
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=24 out=1024
+Latency:   8407 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Okay, as a partner at a major consulting firm, you're likely time-constrained and need a learning approach that's efficient, relevant, and provides a good return on investment. Here's a breakdown of the best way to start learning coding from scratch, tailored for your situation:
+
+**1. Define Your "Why" and Set Realistic Goals:**
+
+*   **Why are you learning to code?** This is the most crucial question. Are you:
+    *   **Trying to understand your team better?** (e.g., data scientists, developers)
+    *   **Wanting to automate tasks and improve your own productivity?** (e.g., data analysis, report generation)
+    *   **Exploring new service offerings for your clients?** (e.g., AI, digital transformation)
+    *   **Simply curious and want to expand your skillset?**
+*   **Set realistic goals.** Don't try to become a full-fledged software engineer overnight. Start with small, achievable goals:
+    *   "I want to be able to understand the basic concepts of Python and read code by the end of the month."
+    *   "I want to automate the generation of my weekly status report within 3 months."
+    *   "I want to build a simple data visualization dashboard within 6 months."
+*   **Focus on the *application* of coding.**  You don't need to know *everything*. Focus on what's relevant to your goals and your clients' needs.
+
+**2. Choose the Right Language(s) and Tools:**
+
+*   **Python is generally the best starting point for your situation.**
+    *   **Why Python?**
+        *   **Readability:** Python's syntax is relatively easy to understand, making it easier to learn the fundamentals.
+        *   **Versatility:** Python is used in a wide range of applications, including data science, machine learning, automation, web development, and more. This gives you flexibility.
+        *   **Large Community and Resources:**  There's a massive online community, tons of tutorials, and readily available libraries (like Pandas for data analysis, Scikit-learn for machine learning) that can help you.
+        *   **Integration with Existing Tools:** Python can often integrate with tools you already use, like Excel or databases.
+*   **Consider other languages *later* if needed:**
+    *   **SQL:** If you work with data, learning SQL (Structured Query Language) is essential for querying and manipulating databases.
+    *   **R:** Another popular language for statistical computing and data analysis.
+    *   **JavaScript:** If you want to understand web development or build interactive dashboards.
+*   **Tools:**
+    *   **Code Editor/IDE:**
+        *   **VS Code (Visual Studio Code):** Free, versatile, and widely used. Excellent for Python development with extensions.
+        *   **PyCharm (Community Edition):** Free, specifically designed for Python, and offers advanced features.
+        *   **Jupyter Notebook/Lab:** Great for interactive coding, data analysis, and creating shareable documents.
+    *   **Version Control (Git):** Learn the basics of Git and GitHub (or GitLab, Bitbucket) for tracking your code changes and collaborating. This is crucial for any serious coding project.
+    *   **Cloud Environment (Optional, but recommended):** Consider using a cloud environment like Google Colab (free, with GPU access) or AWS SageMaker Studio (more advanced) for more complex projects or if you need more computing power.
+
+**3. Structured Learning Path (Prioritize Efficiency):**
+
+*   **Online Courses (Highly Recommended):**
+    *   **Choose reputable platforms:** Coursera, edX, Udacity, DataCamp, Codecademy, freeCodeCamp.org.
+    *   **Look for courses specifically designed for beginners.**
+    *   **Focus on practical, hands-on projects.**  The more you code, the faster you'll learn.
+    *   **Consider courses that align with your goals.** For example, if you want to automate tasks, look for courses that cover scripting and automation. If you're interested in data analysis, choose courses that focus on data manipulation and visualization.
+    *   **Examples of good courses:**
+        *   **Coursera:** "Python for Everybody" (University of Michigan) - Excellent for beginners.
+        *   **Codecademy:** "Learn Python 3" - Interactive and beginner-friendly.
+        *   **DataCamp:** "Introduction to Python" - Focuses on data science applications.
+        *   **Udacity:** "Intro to Programming Nanodegree" - More structured and project-based.
+*   **Books (Supplement, but not primary):**
+    *   Books can be

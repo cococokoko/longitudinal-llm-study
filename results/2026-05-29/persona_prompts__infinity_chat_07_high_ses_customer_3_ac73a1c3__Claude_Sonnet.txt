@@ -1,0 +1,110 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_high_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=978
+Latency:   44877 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+# Rare & Underutilized Tools/Methods in Cybersecurity
+
+## Offensive / Research Tools
+
+### Network & Protocol Analysis
+- **Scapy** (advanced usage) — custom packet crafting beyond typical use cases
+- **Impacket** — Python library for low-level protocol manipulation (SMB, Kerberos, LDAP)
+- **Responder** — LLMNR/NBT-NS poisoning, often overlooked in assessments
+- **Bettercap** — modern network attack framework, underused compared to older alternatives
+
+### Memory & Binary Analysis
+- **Volatility3** — memory forensics; surprisingly rare in practice
+- **Ghidra scripting** — most analysts use GUI only; scripting capabilities are powerful
+- **angr** — binary analysis framework using symbolic execution
+- **Frida** — dynamic instrumentation toolkit for runtime analysis
+
+### Fuzzing
+- **AFL++** — coverage-guided fuzzing, underutilized outside research
+- **LibFuzzer** — in-process fuzzing, rarely used in enterprise security
+- **Boofuzz** — network protocol fuzzing
+
+---
+
+## Defensive / Detection Methods
+
+### Deception Technology
+- **OpenCanary** — lightweight honeypot framework
+- **Canarytokens** — tripwire tokens embedded in documents/URLs
+- **MITRE ENGAGE** — adversary engagement framework (conceptually underused)
+
+### Threat Hunting
+- **YARA rule development** — most teams consume rules rather than write them
+- **Sigma rules** — vendor-agnostic detection rules, adoption still limited
+- **Velociraptor** — endpoint visibility and DFIR, significantly underdeployed
+- **OSQuery** — SQL-based endpoint querying, powerful but underutilized
+
+### Log & Behavioral Analysis
+- **Zeek (formerly Bro)** — network traffic analysis beyond IDS
+- **RITA** — Real Intelligence Threat Analytics, built on Zeek logs
+- **Chainsaw** — rapid Windows event log triage
+
+---
+
+## Cryptographic & Specialized Methods
+
+| Method | Why It's Rare |
+|--------|--------------|
+| **Homomorphic encryption** | Computationally expensive; limited practical deployment |
+| **Differential privacy** | Understood theoretically, rarely implemented |
+| **Formal verification** (ProVerif, Tamarin) | Used in protocol research, almost never in industry |
+| **Side-channel analysis** | Requires hardware expertise |
+| **Lattice-based crypto analysis** | Post-quantum research area |
+
+---
+
+## Methodological Approaches
+
+### Often Overlooked
+- **Threat modeling** (STRIDE, PASTA, LINDDUN) — frequently skipped in development cycles
+- **Attack surface management** — continuous, automated asset discovery
+- **Purple teaming** — collaborative red/blue exercises vs. siloed operations
+- **Supply chain analysis** — SBOM (Software Bill of Materials) generation and analysis
+- **Firmware analysis** — binwalk, FACT; critical for IoT but rarely done
+
+### Academic/Research Methods
+- **Formal methods** for security protocol verification
+- **Game-theoretic security modeling**
+- **Moving Target Defense (MTD)** — dynamically changing attack surfaces
+- **Hardware security research** — fault injection, glitching
+
+---
+
+## Niche but Powerful Platforms
+
+- **MISP** — threat intelligence sharing platform, underused outside large orgs
+- **TheHive + Cortex** — incident response orchestration
+- **Cutter** — GUI for radare2, underused vs. IDA/Ghidra
+- **Nuclei** — template-based vulnerability scanning with custom templates
+- **Semgrep** — static analysis with custom rules for code review
+
+---
+
+## Why These Remain Rare
+
+1. **Steep learning curves** — require deep technical knowledge
+2. **Limited documentation** — especially for advanced use cases
+3. **Organizational inertia** — preference for commercial tools
+4. **Skill gap** — gap between research and practitioner communities
+5. **Time investment** — setup and tuning costs are high
+
+---
+
+Would you like deeper treatment of any particular category — perhaps with academic literature references or research directions?

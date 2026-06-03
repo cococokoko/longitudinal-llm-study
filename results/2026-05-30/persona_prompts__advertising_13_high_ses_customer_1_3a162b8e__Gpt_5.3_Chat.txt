@@ -1,0 +1,53 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_13_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=687
+Latency:   11388 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Mastering the art of cooking steak.
+
+── Response ────────────────────────────────────────────────────────
+Cooking steak well is mostly about controlling heat, moisture, and timing with intention rather than ritual. Once you understand those levers, it becomes very consistent.
+
+Start with the meat itself. Thickness matters more than cut for technique—aim for at least 1.25–1.5 inches so you have a gradient between crust and center. Ribeye gives you forgiveness from fat; strip is cleaner but less forgiving; filet is tender but easy to overcook.
+
+Salt early if you can. A dry brine (just salt, no cover) for a few hours or overnight pulls moisture to the surface, dissolves the salt, and then reabsorbs it, seasoning deeper and improving browning. If you’re short on time, salt right before it hits the pan—just don’t salt and then let it sit briefly, which leaves the surface wet.
+
+Surface dryness is critical. Pat it very dry before cooking. Moisture is the enemy of browning.
+
+Heat control is where most people go wrong. You want a pan hot enough to drive the Maillard reaction quickly, but not so hot that you scorch before heat penetrates. Cast iron or heavy stainless works best. Add a high-smoke-point fat (or use the steak’s own fat if it’s well-marbled).
+
+Two reliable approaches:
+
+• Classic sear then finish: Sear hard for ~1.5–2 minutes per side, then reduce heat and continue cooking, flipping every 30–60 seconds. Frequent flipping evens out the internal gradient and reduces overcooking at the edges. Add butter, garlic, herbs toward the end and baste if you like.
+
+• Reverse sear: Bring the steak up gently in a low oven (around 225–250°F / 105–120°C) until it’s about 10–15°F below your target internal temperature, then sear hard for a short time. This gives you a very even interior and a controlled crust.
+
+Internal temperature is more reliable than time. Rough targets:
+Rare ~120–125°F (49–52°C)
+Medium-rare ~130–135°F (54–57°C)
+Medium ~135–145°F (57–63°C)
+
+Pull it a few degrees early; carryover will finish the job.
+
+Resting is less about “locking in juices” and more about allowing thermal gradients to even out. For a thick steak, 5–10 minutes is enough. If you’ve been flipping frequently, you can get away with less rest.
+
+Butter basting is optional but useful: it improves surface heat transfer and adds flavor. Tilt the pan, spoon foaming butter repeatedly over the steak in the final minute or two.
+
+Common failure modes:
+Overcrowding the pan (kills browning)
+Low heat (grey steak)
+Moving it too early (no crust)
+Overcooking thin cuts (no margin for error)
+
+If you want to refine further, pay attention to tactile feedback. The resistance when you press the steak correlates surprisingly well with doneness, and you’ll start to predict internal temperature without a thermometer.
+
+If you tell me your setup (pan type, burner strength, typical cut), I can tune this into a very repeatable protocol for you.

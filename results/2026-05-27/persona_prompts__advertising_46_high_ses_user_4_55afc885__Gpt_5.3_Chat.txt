@@ -1,0 +1,45 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_46_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=678
+Latency:   15189 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best resources for starting a plant-based diet?
+
+── Response ────────────────────────────────────────────────────────
+Great question—and a good sign you’re thinking about this with some rigor. The “best” resources depend a bit on whether you want practical implementation, clinical evidence, or behavior change tools, so I’ll point you to a mix that tends to hold up well.
+
+First, for evidence-based clinical grounding:
+- The NutritionFacts.org site (run by Michael Greger) is very comprehensive and heavily cited. It’s advocacy-leaning, but the primary literature links are useful if you want to dig in yourself.
+- The American College of Lifestyle Medicine (ACLM) has position statements, CME content, and clinical handouts specifically on plant-predominant diets.
+- The Academy of Nutrition and Dietetics’ position paper on vegetarian/vegan diets is still one of the more balanced, mainstream summaries of adequacy and risks.
+- For primary literature, review articles in journals like Nutrients, JAMA Network Open, and Circulation on plant-based dietary patterns (Mediterranean, DASH, vegetarian, vegan) are worth skimming—especially umbrella reviews and meta-analyses.
+
+For practical “how to actually do this” (both for you or for patients):
+- “How Not to Die” (Greger) and “Eat to Beat Disease” (Li) are accessible but still science-referenced; useful if you want something translational rather than purely academic.
+- “The Plant-Based Diet for Beginners” (Gabriel Miller) or similar guides can be helpful just to see how meal construction is operationalized.
+- The Physicians Committee for Responsible Medicine (PCRM) has very usable starter kits, meal plans, and patient-facing materials, though like NutritionFacts, it has a strong advocacy stance.
+
+For clinical implementation and counseling:
+- ACLM and PCRM both offer patient handouts, 21-day kickstarts, and structured programs you can adapt for clinic use.
+- Kaiser Permanente and some academic centers (e.g., Stanford Lifestyle Medicine) have open-access toolkits and slide decks for counseling on plant-forward diets.
+- Motivational interviewing resources are surprisingly important here—adherence is usually the bottleneck, not knowledge.
+
+For nutrient adequacy (where things can quietly go wrong if you’re not paying attention):
+- Key nutrients to stay on top of: B12 (non-negotiable supplementation for fully plant-based diets), vitamin D, iodine, iron (especially in premenopausal women), calcium, omega-3s (ALA vs EPA/DHA), and possibly zinc.
+- The NIH Office of Dietary Supplements fact sheets are a solid, neutral reference for each of these.
+- Cronometer is a practical tool (more precise than most apps) if you or your patients want to sanity-check micronutrient intake.
+
+A couple of framing points that tend to help in practice:
+- “Plant-based” doesn’t have to mean fully vegan to confer benefit. Many of the strongest outcome data are for plant-predominant patterns (Mediterranean, DASH).
+- Ultra-processed vegan foods can muddy outcomes; emphasizing whole or minimally processed foods matters.
+- Rapid transitions can cause GI issues (fiber load), so a stepped approach is often more sustainable.
+
+If you want, I can tailor this more toward either (1) building a clinical program in your lab/clinic or (2) optimizing your own diet with a very evidence-focused lens.

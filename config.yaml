@@ -37,8 +37,8 @@ models:
 # ── Experiment models ─────────────────────────────────────────────────────────
 
 experiment_models:
-  - model_id: "google/gemini-2.0-flash-lite-001"
-    display_name: "Gemini 2.0 Flash Lite"
+  - model_id: "google/gemini-2.5-flash-lite"
+    display_name: "Gemini 2.5 Flash Lite"
     provider: "openrouter"
     parameters:
       temperature: 0.0
@@ -75,7 +75,7 @@ datasets:
     system_field: system         # null for baseline/user conditions; set for customer conditions
     id_field: item_id
     max_prompt_length: 0
-    # 100 queries × 3 conditions (baseline, high_ses, low_ses) = 300 items.
+    # 429 queries × 3 conditions (baseline, high_ses, low_ses) = 1287 total items
     # Fixed so the same set is sent every wave for longitudinal comparability.
     sampling_strategy: fixed
-    sample_n: 300
+    sample_n: 429

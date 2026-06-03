@@ -1,0 +1,62 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=37 out=338
+Latency:   11083 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+## Free Ways to Host Your Resume Website
+
+Here are the best options for hosting static HTML files:
+
+---
+
+### **GitHub Pages** *(Most Popular)*
+1. Create a free account at **github.com**
+2. Create a new repository named `yourusername.github.io`
+3. Upload your HTML files
+4. Your site goes live at `https://yourusername.github.io`
+
+**Pros:** Free, reliable, custom domain support
+
+---
+
+### **Netlify** *(Easiest)*
+1. Go to **netlify.com** and sign up free
+2. Simply **drag and drop** your folder onto their dashboard
+3. Get an instant URL like `yoursite.netlify.app`
+
+**Pros:** Extremely easy, no technical knowledge needed
+
+---
+
+### **Vercel**
+1. Sign up at **vercel.com**
+2. Upload or connect your files
+3. Get a URL like `yoursite.vercel.app`
+
+---
+
+### **Google Drive** *(Quick but limited)*
+- Less ideal since Google removed direct HTML hosting support
+
+---
+
+## My Recommendation
+
+| Goal | Use |
+|------|-----|
+| Easiest setup | **Netlify** (drag and drop) |
+| Most professional | **GitHub Pages** |
+| Want to learn coding tools | **GitHub Pages** |
+
+---
+
+**Netlify is probably your best starting point** since you can literally drag and drop your files and have it live in minutes.

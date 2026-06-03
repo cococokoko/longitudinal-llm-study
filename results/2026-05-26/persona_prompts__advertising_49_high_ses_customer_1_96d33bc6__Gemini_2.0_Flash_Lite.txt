@@ -1,0 +1,55 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_1
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=21 out=1024
+Latency:   8900 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Okay, as a neurosurgeon, you're likely used to dealing with complex systems and precision. Improving your home WiFi can be approached with a similar level of detail. Let's break down how to optimize your home WiFi, considering your likely needs for reliable, high-bandwidth connectivity:
+
+**1. Assess Your Current Situation (Diagnosis):**
+
+*   **Speed Test:** Use a reliable speed test service (like Speedtest.net or Google's speed test) to measure your current download and upload speeds. Note these down. This is your baseline.
+*   **Coverage Test:** Walk around your home with a device connected to your WiFi (phone, tablet, laptop) and check the signal strength in different rooms. Many phones have built-in signal strength indicators. Note any "dead zones" or areas with weak signal.
+*   **Device Count:** How many devices are typically connected to your WiFi simultaneously? Consider phones, tablets, laptops, smart TVs, gaming consoles, smart home devices (thermostats, security cameras, etc.).
+*   **Usage Patterns:** What are you primarily using your WiFi for? Streaming 4K video? Video conferencing? Online gaming? Downloading large files? This helps determine your bandwidth needs.
+*   **Router Location:** Where is your router currently located? Is it centrally located in your home? Is it near walls, metal objects, or other potential interference sources?
+*   **Router Model:** What is the make and model of your current router? Is it old? Does it support the latest WiFi standards (e.g., Wi-Fi 6/6E)?
+
+**2. Identify Potential Problems (Differential Diagnosis):**
+
+*   **Router Limitations:** Your router might be outdated, not powerful enough for your needs, or have limited range.
+*   **Interference:** Other electronic devices (microwaves, cordless phones, Bluetooth devices) can interfere with your WiFi signal. Walls, metal objects, and other obstructions can also weaken the signal.
+*   **Congestion:** Too many devices connected simultaneously can saturate your network.
+*   **Internet Service Provider (ISP) Issues:** Your internet plan might not provide enough bandwidth for your needs. There could also be problems with the connection from your ISP.
+*   **Router Placement:** Poor router placement can significantly reduce coverage.
+*   **Channel Congestion:** Your router might be using a WiFi channel that's crowded with other nearby WiFi networks.
+
+**3. Implement Solutions (Treatment Plan):**
+
+*   **Router Upgrade:**
+    *   **Consider a new router:** If your router is old, upgrading to a newer model with Wi-Fi 6 or Wi-Fi 6E is highly recommended. These standards offer faster speeds, better range, and improved handling of multiple devices. Look for routers with MU-MIMO (Multi-User, Multiple-Input, Multiple-Output) and beamforming technology.
+    *   **Mesh WiFi System:** For larger homes or homes with difficult layouts, a mesh WiFi system is often the best solution. These systems use multiple access points (nodes) to create a seamless WiFi network throughout your home.
+*   **Router Placement Optimization:**
+    *   **Central Location:** Place your router in a central location in your home, ideally elevated and away from walls, metal objects, and other obstructions.
+    *   **Elevated Position:** Place the router on a shelf or table, not on the floor.
+    *   **Avoid Obstructions:** Keep the router away from walls, metal objects, mirrors, and appliances that can interfere with the signal.
+*   **Channel Optimization:**
+    *   **Change WiFi Channel:** Most routers automatically select a WiFi channel, but you can manually change it. Use a WiFi analyzer app (available for smartphones and computers) to identify the least congested channel in your area.
+    *   **2.4 GHz vs. 5 GHz:** Modern routers broadcast on both 2.4 GHz and 5 GHz bands. The 5 GHz band offers faster speeds but has a shorter range. The 2.4 GHz band has a longer range but is more prone to interference. Connect devices that need high speeds (e.g., streaming devices, laptops) to the 5 GHz band and devices that need wider coverage (e.g., smart home devices) to the 2.4 GHz band.
+*   **Bandwidth Management:**
+    *   **Prioritize Devices:** Some routers allow you to prioritize certain devices or applications, giving them more bandwidth.
+    *   **Limit Device Usage:** If possible, limit the number of devices using the internet simultaneously, especially during critical activities like video conferencing.
+*   **Interference Mitigation:**
+    *   **Move Devices:** Move your router away from potential sources of interference, such as microwaves, cordless phones, and Bluetooth devices.
+    *   **Use Wired Connections:** For devices that don't need to be

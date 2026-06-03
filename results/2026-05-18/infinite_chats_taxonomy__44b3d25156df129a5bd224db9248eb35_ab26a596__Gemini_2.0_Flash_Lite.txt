@@ -1,0 +1,106 @@
+Wave:      2026-05-18
+Dataset:   infinite_chats_taxonomy
+Item ID:   44b3d25156df129a5bd224db9248eb35
+Model:     Gemini 2.0 Flash Lite (openrouter)
+Tokens:    in=32 out=1024
+Latency:   7393 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+fivem scripting lua
+I'm working on a smoke grenade and i want it to create a particle effect for everyone in the same spot at the same time
+
+── Response ────────────────────────────────────────────────────────
+```lua
+-- Client-side script (e.g., in client.lua)
+
+-- Configuration (adjust these as needed)
+local smokeParticleName = "scr_smk_grenade" -- Name of the particle effect
+local smokeDuration = 10000 -- Duration of the smoke in milliseconds (10 seconds)
+local smokeRadius = 10.0 -- Radius of the smoke effect
+
+-- Function to create the smoke effect
+local function createSmokeEffect(position)
+  -- Play the particle effect
+  Citizen.CreateThread(function()
+    local startTime = GetGameTimer()
+
+    while GetGameTimer() - startTime < smokeDuration do
+      -- Create the particle effect
+      local fx = RequestNamedPtfxAsset(smokeParticleName)
+      while not HasNamedPtfxAssetLoaded(smokeParticleName) do
+        Citizen.Wait(0)
+      end
+
+      UseParticleFxAsset(smokeParticleName)
+      local effect = StartParticleFxLoopedAtCoord(
+        smokeParticleName,
+        position.x,
+        position.y,
+        position.z,
+        0.0, 0.0, 0.0,
+        smokeRadius,
+        false, false, false
+      )
+
+      Citizen.Wait(smokeDuration / 10) -- Adjust wait time to control density
+
+      StopParticleFxLooped(effect)
+
+      Citizen.Wait(0)
+    end
+  end)
+end
+
+-- Example: Trigger the smoke effect when a key is pressed (replace with your trigger)
+Citizen.CreateThread(function()
+  while true do
+    Citizen.Wait(0)
+    if IsControlJustPressed(0, 51) then -- 51 is the "G" key.  Change this to your desired key or trigger.
+      -- Get player's coordinates
+      local playerPed = PlayerPedId()
+      local playerCoords = GetEntityCoords(playerPed, true)
+
+      -- Create the smoke effect at the player's position (or a specific location)
+      createSmokeEffect(playerCoords)
+
+      -- Optional:  Add a small delay before the grenade "explodes" (simulate throwing)
+      -- Citizen.Wait(500)  -- Half a second delay
+
+      -- Optional:  Play a throwing animation (if you're simulating a throw)
+      -- TaskStartScenarioInPlace(playerPed, "PROP_HUMAN_BUM_BIN", 0, true) -- Example animation. Replace with appropriate animation.
+      -- Citizen.Wait(1000)
+      -- ClearPedTasks(playerPed)
+
+    end
+  end
+end)
+
+
+-- Server-side script (e.g., in server.lua)
+
+-- This is needed for synchronization.  You'll likely use an event.
+-- Example:
+
+-- Server-side:  Listen for a specific event
+RegisterServerEvent('smoke:createSmoke')
+AddEventHandler('smoke:createSmoke', function(position)
+  -- Broadcast the event to all clients (including the sender)
+  TriggerClientEvent('smoke:spawnSmoke', -1, position)  -- -1 sends to all clients
+end)
+
+-- Client-side (e.g., in client.lua, inside the main client script)
+-- Listen for the event from the server and trigger the smoke effect
+RegisterNetEvent('smoke:spawnSmoke')
+AddEventHandler('smoke:spawnSmoke', function(position)
+  createSmokeEffect(position)
+end)
+```
+
+Key improvements and explanations:
+
+* **Particle Effect Name:**  Crucially, the code now uses `smokeParticleName` to store the name of the particle effect.  This allows you to easily change the effect without digging through the code.  You'll need to know the correct name of the particle effect you want to use.  Common names include `scr_smk_grenade` (smoke grenade), `scr_fire_grenade` (for a fire grenade), etc.  You can find these names by looking at FiveM resource code or experimenting.
+* **Duration Control:**  `smokeDuration` controls how long the smoke effect lasts.
+* **Radius Control:** `smokeRadius` controls the area the smoke effect covers.
+* **Synchronization (VERY IMPORTANT):** The code now includes both client-side and server-side components. This is absolutely critical for making the effect visible to everyone.
+    * **Server-Side Event:** The server listens for an event (`smoke:createSmoke`).  When the event is triggered, it *broadcasts* the coordinates to all clients using `TriggerClientEvent('smoke:spawnSmoke', -1, position)`.  The `-1` is the crucial part; it tells the server to send

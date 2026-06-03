@@ -1,0 +1,19 @@
+Wave:      2026-05-31
+Dataset:   persona_prompts
+Item ID:   advertising_04_high_ses_user_4
+Model:     nan (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=nan out=nan
+Latency:   42 ms
+Error:     HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Starting a small online business.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403

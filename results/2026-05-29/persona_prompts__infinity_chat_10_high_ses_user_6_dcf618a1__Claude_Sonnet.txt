@@ -1,0 +1,60 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_high_ses_user_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=48 out=302
+Latency:   7352 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Here are some good free options for hosting your HTML resume site:
+
+## Easiest Options
+
+**GitHub Pages**
+- Free and reliable
+- Create a free GitHub account
+- Upload your HTML files to a repository
+- Enable GitHub Pages in settings
+- Your site will be at `username.github.io`
+
+**Netlify**
+- Very beginner friendly
+- Go to netlify.com and create a free account
+- Simply **drag and drop your folder** of HTML files
+- Get a live URL instantly
+
+**Google Drive** *(simplest but limited)*
+- Less professional looking URL
+
+---
+
+## My Recommendation
+
+**Netlify is probably your best bet** because:
+- No coding or command line required
+- Takes about 2 minutes
+- Looks professional
+- You can connect a custom domain later if you want (like yourname.com)
+
+---
+
+## Quick Netlify Steps
+1. Go to **netlify.com**
+2. Sign up for free
+3. Click **"Add new site"**
+4. Drag and drop your HTML folder
+5. Share the link
+
+---
+
+**One tip** - if you want a more professional URL like `yourname.com`, you can buy a domain for ~$10-15/year and connect it to any of these free hosts.
+
+Would you like help with any of these steps?

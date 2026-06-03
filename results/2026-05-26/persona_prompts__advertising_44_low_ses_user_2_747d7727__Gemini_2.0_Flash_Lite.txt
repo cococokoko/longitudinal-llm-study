@@ -1,0 +1,73 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_44_low_ses_user_2
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=24 out=1024
+Latency:   7748 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+Okay, being a single parent juggling childcare and work during a pandemic is incredibly challenging. Safety is paramount. Here's a breakdown of the safest ways to travel, considering your situation:
+
+**1. Assess the Necessity of Travel:**
+
+*   **Can you avoid it?** This is the most important question. Can meetings be done virtually? Can work be done remotely? Can errands be consolidated? Every trip avoided reduces risk.
+*   **Prioritize Essential Travel:** If travel is unavoidable, prioritize essential trips like work, medical appointments, or childcare arrangements.
+*   **Consider the Destination:** Research the local COVID-19 situation at your destination. Are case numbers high? Are there local restrictions?
+
+**2. Modes of Transportation (Ranked by Relative Safety):**
+
+*   **a) Walking/Biking:**
+    *   **Safest for short distances.**
+    *   **Pros:** No enclosed spaces, fresh air, good exercise.
+    *   **Cons:** Weather dependent, may not be practical for all distances or with children.
+    *   **Precautions:** Wear a mask if you encounter others, maintain distance.
+*   **b) Private Car:**
+    *   **Relatively safe, especially if you're the only occupant.**
+    *   **Pros:** Control over the environment, less exposure to others.
+    *   **Cons:** Requires a car, potential exposure if others are in the car.
+    *   **Precautions:**
+        *   **Clean and Disinfect:** Regularly clean and disinfect high-touch surfaces (steering wheel, door handles, gear shift, etc.).
+        *   **Ventilation:** Open windows for ventilation when possible.
+        *   **Masks:** Wear masks if anyone else is in the car, especially if they are not part of your immediate household.
+        *   **Avoid Carpooling:** If possible, avoid carpooling with people outside your household.
+*   **c) Ride-Sharing Services (Uber, Lyft):**
+    *   **More risky than private car, but can be managed.**
+    *   **Pros:** Convenient, readily available.
+    *   **Cons:** Exposure to the driver and previous passengers.
+    *   **Precautions:**
+        *   **Masks:** Both you and your child(ren) (if old enough) and the driver *must* wear masks.
+        *   **Ventilation:** Ask the driver to open windows for ventilation.
+        *   **Disinfect:** Wipe down high-touch surfaces (door handles, seatbelts) before and after the ride. Carry disinfectant wipes.
+        *   **Consider Driver's Masking:** Check the driver's mask situation before entering the car. If they aren't wearing one, you might want to cancel and request another ride.
+        *   **Limit Passengers:** If possible, travel with only your child(ren).
+*   **d) Public Transportation (Bus, Subway, Train):**
+    *   **Higher risk due to enclosed spaces and potential for crowding.**
+    *   **Pros:** Affordable, can reach many destinations.
+    *   **Cons:** Crowded, potential for close contact with many people.
+    *   **Precautions:**
+        *   **Masks:** *Mandatory* for everyone. Ensure your child(ren) wear masks correctly.
+        *   **Ventilation:** If possible, choose seats near open windows or doors.
+        *   **Avoid Crowds:** Travel during off-peak hours if possible.
+        *   **Hand Hygiene:** Use hand sanitizer frequently. Avoid touching your face.
+        *   **Distance:** Maintain distance from others as much as possible.
+        *   **Consider Alternatives:** If possible, consider walking, biking, or ride-sharing instead.
+*   **e) Air Travel:**
+    *   **Highest risk due to enclosed spaces, potential for crowding, and recirculated air.**
+    *   **Pros:** Fastest way to travel long distances.
+    *   **Cons:** Significant exposure risk.
+    *   **Precautions:**
+        *   **Masks:** *Mandatory* for everyone. Ensure your child(ren) wear masks correctly. Consider N95 or KN95 masks for better protection.
+        *   **Ventilation:** Choose a window seat.
+        *   **Hand Hygiene:** Frequent hand sanitizing. Avoid touching your face.
+        *   **Social Distancing:** Maintain distance from others as much as possible.
+        *   **Consider Pre-Boarding:** If possible, board last to minimize time in the crowded boarding area.
+        *   **Clean Surfaces:** Wipe down tray tables, armrests, and other surfaces with disinfectant wipes.
+        *   **Consider the Airport:** Airports can be crowded. Be mindful of social distancing and mask-wearing in

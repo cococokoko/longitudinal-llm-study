@@ -1,0 +1,32 @@
+Wave:      2026-05-29
+Dataset:   global_opinion_qa
+Item ID:   goqa_27b7920156e4
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=209 out=61
+Latency:   708 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country?
+
+Having a democratic political system
+
+Options:
+A. Very good
+B. Fairly good
+C. Fairly bad
+D. Very bad
+E. Don't know
+F. No answer
+G. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.7, "B": 0.3, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+```

@@ -1,0 +1,49 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=36 out=306
+Latency:   5404 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Nice, that’s a perfect use case for free static hosting. Since your site is just HTML files, you’ve got several easy options:
+
+**1. GitHub Pages (most popular)**
+- Create a free GitHub account
+- Create a new repository (name it something like `username.github.io` if you want a clean URL)
+- Upload your HTML files (drag and drop in the web interface works fine)
+- Go to repo Settings → Pages → enable it
+- Your site will be live at `https://username.github.io/`
+
+Pros: totally free, reliable, looks good to employers  
+Cons: small learning curve if you’ve never used GitHub
+
+**2. Netlify (super easy)**
+- Go to netlify.com and sign up
+- Drag and drop your project folder onto the dashboard
+- It instantly gives you a live URL
+
+Pros: fastest setup, no coding knowledge needed  
+Cons: random URL unless you customize it
+
+**3. Vercel**
+- Similar to Netlify
+- Import your project or drag and drop
+- Auto-deploys your site
+
+**4. Cloudflare Pages**
+- Another solid free option, similar idea (connect repo or upload)
+
+---
+
+If you want the **simplest possible path**, use Netlify drag-and-drop.
+
+If you want something that looks more “professional” long-term, go with GitHub Pages.
+
+If you tell me which one you want, I can walk you through it step by step 👍

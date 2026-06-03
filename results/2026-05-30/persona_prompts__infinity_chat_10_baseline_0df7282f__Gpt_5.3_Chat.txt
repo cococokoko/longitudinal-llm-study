@@ -1,0 +1,72 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=36 out=431
+Latency:   6598 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Nice, that’s a perfect use case for free static hosting. Since you already have plain `.html` files, this is super easy. Here are the best options (all free), with the simplest first:
+
+---
+
+**1. GitHub Pages (most popular, very reliable)**  
+Good if you don’t mind making a GitHub account.
+
+**Steps:**
+- Create a GitHub account (if you don’t have one)
+- Click “New repository”
+- Name it something like `my-resume-site`
+- Upload your `.html` files (drag + drop works)
+- Make sure your main file is named `index.html`
+- Go to **Settings → Pages**
+- Under “Source”, select your main branch and save
+
+You’ll get a link like:  
+`https://yourusername.github.io/my-resume-site/`
+
+---
+
+**2. Netlify (super beginner-friendly, fastest setup)**  
+This is honestly the easiest “no technical stuff” option.
+
+**Steps:**
+- Go to netlify.com
+- Click “Add new site” → “Deploy manually”
+- Drag your whole project folder into the upload box
+
+That’s it. You instantly get a live URL like:  
+`https://random-name.netlify.app`
+
+You can rename the site in settings.
+
+---
+
+**3. Cloudflare Pages (also great, a bit more setup)**  
+Similar to GitHub Pages but slightly more advanced. Not necessary unless you want to learn more.
+
+---
+
+**Important tips:**
+- Make sure your main file is called `index.html` (this is what loads first)
+- Use relative paths for images and CSS (`./style.css`, not `C:\...`)
+- Keep everything in one folder when uploading
+
+---
+
+**If you want a custom domain (like yourname.com):**
+- You can connect one later on Netlify or GitHub Pages
+- Domains usually cost ~$10/year, but hosting stays free
+
+---
+
+If you want, I can:
+- Walk you through one option step-by-step
+- Check your folder structure
+- Help you polish the site before you publish it 👍

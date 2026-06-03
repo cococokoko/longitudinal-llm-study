@@ -1,0 +1,30 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_low_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=22 out=291
+Latency:   4243 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+write a cover letter
+
+── Response ────────────────────────────────────────────────────────
+:::writing
+Dear Hiring Manager,
+
+I am writing to express my interest in the [Job Title] position at [Company Name]. With a strong ability to manage responsibilities, stay organized, and adapt to changing priorities, I am confident in my ability to contribute effectively to your team.
+
+As a single parent balancing both professional and family responsibilities, I have developed exceptional time management, problem-solving, and multitasking skills. Coordinating childcare alongside work commitments has strengthened my reliability, resilience, and ability to remain calm and focused under pressure. These strengths translate directly into my professional approach—I meet deadlines, communicate clearly, and handle challenges with a practical, solutions-oriented mindset.
+
+In my previous role(s) at [Previous Company/Experience], I demonstrated [briefly mention relevant skills or achievements—e.g., managing projects, supporting clients, improving processes]. I am particularly drawn to this opportunity at [Company Name] because [specific reason related to the company or role], and I am eager to bring my dedication and strong work ethic to your team.
+
+I would welcome the opportunity to further discuss how my skills and experience align with your needs. Thank you for your time and consideration.
+
+Sincerely,  
+[Your Name]
+:::

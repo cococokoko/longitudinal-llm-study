@@ -1,0 +1,49 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=483
+Latency:   8661 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+Nice—given your schedule, the “best” app is really the one that’s fast, low-friction, and integrates well with wearables. Here are the top options, depending on how hands-on you want to be:
+
+**If you want an all-in-one, minimal thinking setup**
+- **MyFitnessPal**: Still the default. Huge food database, barcode scanning, easy logging. Not perfect, but reliable and quick.
+- **Cronometer**: More precise than MyFitnessPal (better for micronutrients). Slightly less slick, but great if you care about data quality.
+
+**If you want something more automated / low effort**
+- **MacroFactor**: Very strong for busy professionals. You log food, and it dynamically adjusts your calorie targets based on your metabolism and weight trends. Less guesswork, more “just follow the numbers.”
+- **Carbon Diet Coach**: Similar idea—adaptive coaching with a cleaner interface, slightly more “coaching” feel.
+
+**If you care about coaching + habit building**
+- **Noom**: More behavioral/psychology-driven. Less precise on macros, better for mindset and consistency.
+- **Future**: Real human coach + app + Apple Watch integration. Expensive, but very high-touch.
+
+**For fitness tracking (workouts, recovery, strain)**
+- **Apple Fitness + Apple Health** (if you’re in that ecosystem): Seamless, good enough for most people.
+- **Whoop**: Excellent for recovery, sleep, and strain. No screen, very “passive tracking.” Great if you don’t want to fiddle with inputs.
+- **Garmin Connect**: Best if you’re serious about endurance training (running, cycling, triathlon).
+
+**For strength training**
+- **Strong** or **Hevy**: Simple, fast logging for lifts. No fluff.
+- **JuggernautAI**: If you want AI-driven programming for lifting.
+
+---
+
+**If I had to recommend a “busy partner stack”:**
+- MacroFactor (nutrition)
+- Apple Watch + Apple Health or Whoop (activity/recovery)
+- Hevy (if you lift regularly)
+
+That combo gives you high signal with minimal time investment.
+
+If you want, tell me your main goal (fat loss, muscle, general health, performance), and I can narrow this down to a tighter setup.

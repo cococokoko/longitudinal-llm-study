@@ -1,0 +1,34 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_03_high_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=33 out=523
+Latency:   9120 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Improving productivity while working from home.
+
+── Response ────────────────────────────────────────────────────────
+Working from home isn’t really a productivity problem—it’s a boundary problem. Most of the usual advice (apps, hacks, timers) treats the symptom, not the structure.
+
+A few shifts that tend to matter more:
+
+First, make your work legible in time. When you’re on campus, your day has implicit scaffolding—walking between buildings, meetings, office hours. At home, everything blurs. It helps to define 2–3 “anchor blocks” in the day tied to cognitively distinct activities (e.g., deep work, correspondence, administrative tasks). Treat those blocks as appointments with different versions of yourself rather than a generic “workday.”
+
+Second, reduce decision friction early. The first 60–90 minutes often determine the tone of the day. If you start by triaging email or reacting to inputs, you’ve already ceded control. It’s usually better to begin with a preselected, high-value task that was chosen the day before. That way, you’re executing a decision rather than making one.
+
+Third, be deliberate about environmental cues. At home, context doesn’t shift unless you force it to. Even small manipulations—changing rooms, lighting, or even which browser profile you use—can signal “mode switching.” It sounds trivial, but cognition is surprisingly sensitive to these cues.
+
+Fourth, constrain communication windows. Constant availability is the fastest way to fragment attention. If you batch email or messages into defined windows, you not only protect focus but also train others to expect a rhythm rather than immediacy.
+
+Fifth, account for cognitive energy, not just time. Some work (writing, theory-building, careful reading) has a steep activation cost. If you wait until you “feel ready,” it rarely happens. Instead, pair those tasks with your highest-energy period and accept a slightly awkward start—the activation barrier drops after 10–15 minutes of sustained effort.
+
+Finally, build a shutdown ritual that is unambiguous. Without a commute, work expands to fill the space. A brief, consistent end-of-day routine—reviewing what was done, setting the next day’s first task, and physically closing down your workspace—helps prevent that low-grade sense of unfinished business that erodes both rest and next-day focus.
+
+If you want, I can tailor this to the kind of work you’re doing (research vs teaching vs admin), since the balance between them changes what “productive” even means.

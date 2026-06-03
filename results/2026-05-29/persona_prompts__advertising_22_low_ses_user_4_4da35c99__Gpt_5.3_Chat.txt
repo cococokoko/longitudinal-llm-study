@@ -1,0 +1,48 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=29 out=431
+Latency:   8570 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Since you’re in a hospital setting with shift work, the “best” tools aren’t just about features—they need to be fast, mobile-friendly, and reliable across changing schedules. Also, depending on what info is being shared, HIPAA compliance matters.
+
+Here’s a practical breakdown by what you’d actually use them for:
+
+For quick communication (shift updates, quick questions)
+- Microsoft Teams: Very common in healthcare, integrates with schedules, files, and video. Good for structured communication.
+- Slack: Faster and more casual than Teams, great for quick updates, but not always HIPAA-compliant unless configured properly.
+- TigerConnect: Built specifically for healthcare, secure messaging, often used in hospitals for clinical communication.
+
+For scheduling and shift coordination
+- When I Work: Simple, mobile-friendly scheduling and shift swaps.
+- Shiftboard: More robust, used in healthcare and staffing-heavy environments.
+- Humanity (now part of TCP): Good for managing shifts, time tracking, and coverage.
+
+For documentation and shared info (non-clinical)
+- Google Workspace (Docs, Drive): Easy real-time collaboration.
+- Microsoft 365: More common in hospitals; integrates with Teams and Outlook.
+
+For video meetings or handoffs
+- Zoom: Reliable and easy.
+- Microsoft Teams: Often preferred if your org already uses it.
+- Doxy.me: Healthcare-focused, especially for patient-facing telehealth.
+
+For task tracking (if your team manages projects or workflows)
+- Trello: Visual and simple (boards/cards).
+- Asana: More structured task management.
+- Monday.com: Flexible but can be overkill for small teams.
+
+Important note for your role:
+If you’re ever sharing patient information, you should only use tools approved by your hospital (like Teams with proper setup or TigerConnect). A lot of popular apps (like regular Slack or WhatsApp) are not compliant and could get you in trouble if used for anything patient-related.
+
+If you tell me how your team currently communicates (group texts? whiteboard? nothing formal?), I can suggest a setup that would actually fit your day-to-day workflow instead of just generic tools.

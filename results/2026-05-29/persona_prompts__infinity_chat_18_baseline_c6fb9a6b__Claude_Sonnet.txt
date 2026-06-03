@@ -1,0 +1,54 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=354
+Latency:   6465 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+write a cover letter
+
+── Response ────────────────────────────────────────────────────────
+# Cover Letter
+
+Here's a **general cover letter template** you can customize:
+
+---
+
+[Your Name]
+[Your Address]
+[City, State, ZIP]
+[Email Address] | [Phone Number]
+[Date]
+
+---
+
+[Hiring Manager's Name]
+[Company Name]
+[Company Address]
+
+---
+
+Dear [Hiring Manager's Name],
+
+I am writing to express my strong interest in the **[Job Title]** position at **[Company Name]**. With my background in **[relevant field/experience]**, I am confident that my skills and enthusiasm make me an excellent candidate for this role.
+
+In my previous role at **[Previous Company]**, I successfully **[key achievement or responsibility]**, which resulted in **[measurable outcome]**. I also bring experience in **[relevant skill]** and **[relevant skill]**, which I believe align well with your team's goals.
+
+What excites me most about **[Company Name]** is **[specific reason — mission, product, culture, etc.]**. I admire your commitment to **[something specific about the company]** and would love to contribute to that work.
+
+I would welcome the opportunity to discuss how my experience can benefit your team. Thank you for your time and consideration.
+
+Sincerely,
+**[Your Name]**
+
+---
+
+## To get a **personalized** cover letter, tell me:
+
+- 🏢 The **job/industry** you're applying for
+- 📄 Your **experience or background**
+- 🎯 The **company name** (if known)

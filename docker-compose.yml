@@ -6,4 +6,3 @@ services:
       - ./study.db:/app/study.db
       - ./results:/app/results
       - ./logs:/app/logs
-      - ./dvb_all_prompts_full.json:/app/dvb_all_prompts_full.json

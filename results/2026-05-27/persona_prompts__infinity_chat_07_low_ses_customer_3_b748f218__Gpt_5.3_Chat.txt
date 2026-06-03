@@ -1,0 +1,50 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_low_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=532
+Latency:   13094 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+If you mean “less commonly discussed but legit” tools or approaches (not shady stuff), there are quite a few interesting ones that fly under the radar compared to the usual Wireshark/Metasploit crowd:
+
+• Canarytokens / deception tech  
+Instead of just defending, you plant fake assets (files, creds, endpoints). If they’re touched, you get an alert. Tools like Canarytokens or Thinkst Canary are simple but powerful.
+
+• eBPF-based security monitoring  
+Extended Berkeley Packet Filter lets you observe system behavior at the kernel level with very low overhead. Tools like Cilium Tetragon or Falco (with eBPF) can catch suspicious activity in real time.
+
+• Memory forensics (Volatility, Rekall)  
+Rather than analyzing disk artifacts, you inspect RAM snapshots. Great for detecting fileless malware or advanced intrusions that don’t leave obvious traces.
+
+• Attack surface management (ASM) tools  
+Platforms like Amass (open source) or tools like Shodan/Censys used defensively to map everything your org exposes to the internet—including forgotten assets.
+
+• Threat hunting with Sigma rules  
+Sigma is like a universal detection rule format. You can write one detection rule and convert it across SIEMs. Not rare, but underused compared to vendor-specific queries.
+
+• DNS tunneling detection  
+Looking for data exfiltration hidden inside DNS traffic. Tools like Zeek scripts or specialized analytics can catch weird patterns (long, encoded queries).
+
+• Hardware-based security analysis  
+Using things like ChipWhisperer or JTAG debugging to test physical devices for vulnerabilities. More niche, especially in IoT/embedded security.
+
+• Honeypots beyond the basics  
+Modern honeypots simulate full environments (not just fake SSH). Cowrie, T-Pot, or even custom high-interaction setups can gather real attacker behavior.
+
+• Behavioral biometrics  
+Monitoring how users type, move a mouse, or interact with systems to detect account takeovers. Still emerging and not widely deployed.
+
+• Supply chain security scanning  
+Tools like Syft/Grype or in-toto help verify software dependencies and build integrity—especially relevant after SolarWinds-style attacks.
+
+If you want, I can narrow this down to tools that are actually practical for someone early in their career (especially if you're just settling into a new role).

@@ -1,0 +1,28 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_feca555f13ec
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=212 out=185
+Latency:   2854 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Some people say that nowadays it is impossible to get a job without wasta whilst others are persuaded that posts are attributed according to qualifications. Through the examples that you personally encountered with recently, you see this as…
+
+Options:
+A. Getting a job by wasta is extremely wide-spread
+B. Getting a job by wasta is quiet often
+C. Getting a job by wasta happens sometimes
+D. Jobs are gotten without wasta
+E. I do not know examples concerned
+F. Don't know
+G. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.1, "B": 0.3, "C": 0.3, "D": 0.2, "E": 0.05, "F": 0.03, "G": 0.02}

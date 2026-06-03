@@ -1,0 +1,28 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=38 out=192
+Latency:   4352 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here are three broadly useful questions you can apply across scientific, clinical, and everyday contexts:
+
+1. **What are the likely benefits and harms, and who bears them?**  
+   This forces you to weigh outcomes, including unintended consequences, and to notice whether risks and benefits are distributed fairly.
+
+2. **Does this respect the autonomy and dignity of all affected individuals?**  
+   This captures issues like informed consent, coercion, privacy, and whether people are being treated as ends in themselves rather than means.
+
+3. **Would this decision be acceptable if it were transparent and applied consistently?**  
+   This tests fairness, integrity, and whether the reasoning holds up under public scrutiny or if roles were reversed.
+
+Together, these map roughly onto consequences, rights, and justice—giving you a compact but robust ethical filter.

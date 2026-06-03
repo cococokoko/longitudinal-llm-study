@@ -1,0 +1,25 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_high_ses_user_4
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=303
+Latency:   3224 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here are three questions, designed to help you and your research group navigate ethical dilemmas in your work as physician-scientists:
+
+1.  **Beneficence & Non-Maleficence:**  **Does this action/research maximize potential benefits for patients and/or society while minimizing potential harms?** (This question focuses on the core principles of "do good" and "do no harm." Consider both direct and indirect consequences, short-term and long-term impacts, and the potential for unintended negative outcomes.)
+
+2.  **Justice & Fairness:**  **Is this action/research fair and equitable in its distribution of benefits and burdens?** (This question probes issues of access, resource allocation, and potential biases. Consider who benefits, who is burdened, and whether the process is just and transparent.  Are vulnerable populations protected?)
+
+3.  **Autonomy & Respect:**  **Does this action/research respect the autonomy and dignity of all individuals involved, including patients, research participants, and colleagues?** (This question emphasizes informed consent, privacy, confidentiality, and the right to self-determination.  Are individuals treated as ends in themselves, not merely as means to an end?  Are their values and perspectives considered?)
+
+These questions are designed to be used in a thoughtful and iterative process.  They are not meant to provide simple "yes" or "no" answers, but rather to guide a thorough ethical analysis and discussion within your research group.  Good luck!

@@ -1,0 +1,37 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=21 out=228
+Latency:   4522 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are some english words that have two different words for the same meaning?
+
+── Response ────────────────────────────────────────────────────────
+Do you mean *synonyms*—different words that share (roughly) the same meaning? English has tons of them, often because it borrowed from different languages. Here are some nice pairs (or trios) that mean nearly the same thing:
+
+- big / large  
+- small / little  
+- begin / start  
+- end / finish  
+- buy / purchase  
+- help / assist  
+- ask / inquire  
+- tell / inform  
+- get / obtain  
+- need / require  
+- try / attempt  
+- fix / repair  
+- freedom / liberty  
+- job / occupation  
+- kingly / royal (also “regal”)  
+- holy / sacred  
+- hearty / cordial  
+
+A fun pattern: often the shorter, more casual word comes from Old English (like “ask,” “help,” “kingly”), while the more formal one comes from French or Latin (“inquire,” “assist,” “royal”).
+
+If you meant something slightly different—like one word with two meanings, or pairs that are exactly interchangeable in all contexts—tell me and I’ll narrow it down.

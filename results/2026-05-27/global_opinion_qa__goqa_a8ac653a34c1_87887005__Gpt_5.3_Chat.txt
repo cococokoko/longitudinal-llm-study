@@ -1,0 +1,36 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_a8ac653a34c1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=319 out=367
+Latency:   4361 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.
+
+Incomes should be made more equal vs There should be greater incentives for individual effort
+
+Options:
+A. Incomes should be made more equal
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. There should be greater incentives for individual effort
+K. Don't know
+L. No answer
+M. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.03, "B": 0.04, "C": 0.06, "D": 0.08, "E": 0.12, "F": 0.18, "G": 0.2, "H": 0.12, "I": 0.07, "J": 0.05, "K": 0.02, "L": 0.01, "M": 0.02}

@@ -1,0 +1,18 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_05_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=21 out=1020
+Latency:   13326 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Healthy meal planning on a budget.
+
+── Response ────────────────────────────────────────────────────────
+As a tech executive, your most constrained resources are time and cognitive bandwidth. When you’re managing teams, driving strategy, and sitting in back-to-back meetings, the default is often

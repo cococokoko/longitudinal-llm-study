@@ -1,0 +1,55 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=16 out=417
+Latency:   7347 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+It depends a bit on how your team works (async vs real-time, size, technical vs non-technical), but here’s a solid, modern stack that covers most needs without overcomplicating things:
+
+**Communication**
+- Slack: still the go-to for team chat, channels, integrations, and quick updates  
+- Microsoft Teams: better if you’re already in the Microsoft ecosystem  
+- Discord: surprisingly good for smaller or more casual teams  
+
+**Video + Meetings**
+- Zoom: most reliable for external calls and large meetings  
+- Google Meet: simple and works well inside Google Workspace  
+
+**Project & Task Management**
+- Asana: great balance of structure and flexibility  
+- ClickUp: very powerful, almost an “all-in-one” workspace (can feel heavy)  
+- Trello: simple, visual kanban boards  
+- Linear or Jira: better for engineering-focused teams  
+
+**Docs & Knowledge Sharing**
+- Notion: extremely flexible (docs, wikis, light project tracking)  
+- Confluence: more structured, especially with Jira  
+- Google Docs/Drive: still the easiest for real-time collaboration  
+
+**File Sharing**
+- Google Drive: easiest for most teams  
+- Dropbox: strong syncing and reliability  
+- OneDrive: best if using Microsoft 365  
+
+**Whiteboarding / Brainstorming**
+- Miro: top choice for collaborative whiteboards  
+- FigJam: great if your team uses Figma  
+
+**Async Video & Updates**
+- Loom: quick video updates instead of meetings  
+- Claap or Vimeo Record: similar async communication tools  
+
+**All-in-one combos (if you want fewer tools)**
+- Notion + Slack + Google Drive → popular lightweight stack  
+- Microsoft Teams + OneDrive + Planner → all-in Microsoft stack  
+- ClickUp (docs + tasks) + Slack → more consolidated approach  
+
+If you tell me your team size and what kind of work you do (engineering, marketing, etc.), I can narrow this down to a much tighter setup so you’re not juggling too many tools.

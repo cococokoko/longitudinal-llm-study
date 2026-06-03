@@ -1,0 +1,41 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=21 out=341
+Latency:   6957 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me some examples of websites where users can select a default landing page?
+
+── Response ────────────────────────────────────────────────────────
+Here are some familiar examples where users can choose or customize their default landing page:
+
+- Google (google.com): lets users set a default homepage or “start page” in their account or browser, often customized with widgets like Gmail, news, or weather via Google app settings or iGoogle-style replacements.
+
+- YouTube: users can land on Home, Subscriptions, or Library depending on preferences and last-used behavior.
+
+- Reddit: allows users to set their default feed (Home, Popular, All, or specific custom feeds/subreddits).
+
+- Twitter/X: users can default to “For You” or “Following” timeline.
+
+- LinkedIn: can prioritize Feed, My Network, or Jobs depending on user habits and sometimes remembered state.
+
+- GitHub: after login, users land on a personalized dashboard (or can navigate to repositories, issues, etc., often remembered from last visit).
+
+- Amazon: defaults to a personalized homepage based on browsing history, but also remembers last department or frequently visited sections.
+
+- Netflix / Spotify: default landing is personalized (profile-based), and they remember last-used profile or section like Home vs. Library.
+
+- Slack: opens to the last workspace/channel you were using.
+
+- Notion: lets users set a default page or just returns to the last opened page.
+
+- Jira / Confluence: users can set a default dashboard or space as their landing page.
+
+- Salesforce: allows setting a default homepage/dashboard after login.
+
+If you’re thinking about implementing this, there are a few common patterns: explicit setting (user picks a default page in settings), implicit (remember last visited), or role-based defaults (e.g., admins vs. regular users).

@@ -1,0 +1,56 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=773
+Latency:   6797 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me some examples of websites where users can select a default landing page?
+
+── Response ────────────────────────────────────────────────────────
+Here are some examples of websites where users can select a default landing page, categorized by the type of website:
+
+**1. Social Media Platforms:**
+
+*   **Facebook:** Users can choose their default landing page to be either the News Feed or the Marketplace.
+*   **LinkedIn:** Users can set their default landing page to be the Home page (News Feed), My Network, Jobs, or Messaging.
+*   **Twitter:** While not a direct setting, the platform often remembers your last visited page (e.g., Notifications, Explore, or your Profile) and loads that as your "default" on subsequent visits.
+
+**2. Email Providers:**
+
+*   **Gmail:** While not a direct setting, Gmail often remembers your last visited page (e.g., Inbox, Starred, Sent, or Drafts) and loads that as your "default" on subsequent visits.
+*   **Outlook (Web):** Similar to Gmail, Outlook remembers your last visited folder (Inbox, Sent Items, etc.) and loads that as your "default" on subsequent visits.
+
+**3. E-commerce Platforms (for logged-in users):**
+
+*   **Amazon:** While not a direct setting, Amazon often remembers your last visited page (e.g., your Orders, your Recommendations, or your Shopping Cart) and loads that as your "default" on subsequent visits.
+*   **Etsy:** Similar to Amazon, Etsy often remembers your last visited page (e.g., your Purchases, your Shop Manager, or your Favorites) and loads that as your "default" on subsequent visits.
+
+**4. Productivity and Collaboration Tools:**
+
+*   **Google Workspace (e.g., Google Drive, Google Calendar):** While not a direct setting, these apps often remember your last visited page and load that as your "default" on subsequent visits.
+*   **Microsoft 365 (e.g., Outlook, OneDrive, Teams):** Similar to Google Workspace, these apps often remember your last visited page and load that as your "default" on subsequent visits.
+
+**5. News and Content Aggregators:**
+
+*   **Flipboard:** Users can customize their "Home" feed, which acts as a default landing page, by selecting topics and sources they want to follow.
+*   **Feedly:** Users can customize their "Home" feed, which acts as a default landing page, by selecting topics and sources they want to follow.
+
+**6. Web Browsers (through extensions or settings):**
+
+*   **Chrome/Firefox (with extensions):** While not a built-in feature, extensions can be used to customize the new tab page or homepage, effectively setting a default landing page.
+
+**7. Online Banking and Financial Platforms:**
+
+*   **Most online banking portals:** While not a direct setting, these platforms often remember your last visited page (e.g., Account Summary, Transactions, or Bill Pay) and load that as your "default" on subsequent visits.
+
+**Key Considerations:**
+
+*   **Logged-in vs. Logged-out:** The ability to set a default landing page is almost always tied to a user account and is only available when the user is logged in.
+*   **Implicit vs. Explicit:** Some websites offer a direct setting to choose a default landing page (explicit), while others use the last visited page as the default (implicit).
+*   **Purpose:** The purpose of a default landing page is to provide a personalized and convenient starting point for users, saving them time and effort.
+*   **User Experience:** The choice of a default landing page can significantly impact the user experience, making it easier for users to access the information or features they need most frequently.

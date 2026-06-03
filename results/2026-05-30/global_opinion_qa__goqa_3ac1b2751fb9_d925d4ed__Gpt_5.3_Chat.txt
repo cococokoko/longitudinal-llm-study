@@ -1,0 +1,31 @@
+Wave:      2026-05-30
+Dataset:   global_opinion_qa
+Item ID:   goqa_3ac1b2751fb9
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=181 out=277
+Latency:   5457 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Do you agree, disagree or neither agree nor disagree with the following statements?
+
+Problem if women have more income than husband
+
+Options:
+A. Strongly agree
+B. Agree
+C. Neither agree nor disagree
+D. Disagree
+E. Disagree strongly
+F. Don't know
+G. No answer
+H. Missing; Unknown
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.005, "C": 0.01, "D": 0.08, "E": 0.9, "F": 0.005, "G": 0.0, "H": 0.0}

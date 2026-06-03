@@ -1,0 +1,29 @@
+Wave:      2026-05-27
+Dataset:   global_opinion_qa
+Item ID:   goqa_b15a652c6d80
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=203 out=153
+Latency:   3360 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it.
+
+Signing a petition
+
+Options:
+A. Have done
+B. Might do
+C. Would never do
+D. Don't know
+E. No answer
+F. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.7, "C": 0.0, "D": 0.2, "E": 0.1, "F": 0.0}

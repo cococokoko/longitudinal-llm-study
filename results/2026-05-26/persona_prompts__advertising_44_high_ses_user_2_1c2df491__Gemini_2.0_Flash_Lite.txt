@@ -1,0 +1,76 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_user_2
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=25 out=1024
+Latency:   7097 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+As a senior attorney, you likely have a demanding schedule and a need to travel for work and potentially personal reasons. Navigating travel during a pandemic requires a layered approach, prioritizing safety and minimizing risk. Here's a breakdown of the safest ways to travel, considering different modes and factors:
+
+**1. Assess the Need to Travel:**
+
+*   **Is it essential?** The most important question. Can the meeting be done virtually? Can the deposition be rescheduled? Prioritize virtual options whenever possible.
+*   **Destination Risk:** Research the current COVID-19 situation at your destination. Consider:
+    *   **Case numbers and trends:** Are cases rising, falling, or stable?
+    *   **Vaccination rates:** Higher vaccination rates generally mean lower risk.
+    *   **Variant prevalence:** Are there concerning variants circulating?
+    *   **Local restrictions:** What are the mask mandates, social distancing guidelines, and other regulations?
+    *   **Healthcare capacity:** Is the local healthcare system strained?
+*   **Personal Risk Factors:** Consider your own health and risk factors:
+    *   **Age:** Older individuals are at higher risk.
+    *   **Underlying health conditions:** Conditions like diabetes, heart disease, and respiratory illnesses increase risk.
+    *   **Vaccination status and booster:** Being fully vaccinated and boosted significantly reduces your risk.
+    *   **Immune status:** If you are immunocompromised, you may be at higher risk.
+
+**2. Pre-Travel Preparations:**
+
+*   **Vaccination and Boosters:** Ensure you are fully vaccinated and up-to-date with boosters. This is the single most effective way to protect yourself.
+*   **Testing:**
+    *   **Pre-travel testing:** Get tested 1-3 days before departure, regardless of vaccination status. This helps identify asymptomatic infections.
+    *   **Post-travel testing:** Consider testing 3-5 days after your return, especially if you were in a higher-risk environment.
+*   **Travel Insurance:** Consider travel insurance that covers medical expenses and trip cancellations related to COVID-19.
+*   **Pack Appropriately:**
+    *   **High-quality masks:** N95, KN95, or KF94 masks offer the best protection. Pack several.
+    *   **Hand sanitizer:** Carry a travel-sized bottle and use it frequently.
+    *   **Disinfectant wipes:** For wiping down surfaces in your hotel room, on the plane, etc.
+    *   **Medications:** Bring any necessary prescription medications and over-the-counter remedies.
+*   **Inform Your Firm:** Let your firm know your travel plans and any health concerns. They may have specific protocols or requirements.
+
+**3. Modes of Transportation (Ranked by Relative Safety):**
+
+*   **Driving Your Own Car:**
+    *   **Safest option:** You control the environment and minimize contact with others.
+    *   **Considerations:** Long drives can be tiring. Plan for stops and minimize contact at gas stations and rest areas.
+    *   **Precautions:** Wear a mask when interacting with others, use hand sanitizer, and wipe down frequently touched surfaces in your car.
+*   **Private Jet:**
+    *   **Relatively safe:** Minimizes contact with the general public.
+    *   **Considerations:** Requires access to a private jet.
+    *   **Precautions:** Ensure the aircraft is properly cleaned and ventilated.
+*   **Commercial Flights:**
+    *   **Higher risk:** Involves close proximity to many people in a confined space.
+    *   **Precautions:**
+        *   **Masks:** Wear a high-quality mask at all times, properly fitted.
+        *   **Ventilation:** Air filtration systems on planes are generally good, but choose a window seat to minimize exposure.
+        *   **Social distancing:** Try to maintain distance from others when possible.
+        *   **Minimize contact:** Avoid touching surfaces. Use hand sanitizer frequently.
+        *   **Consider flight duration:** Shorter flights are generally safer.
+        *   **Choose airlines with strong safety protocols:** Research airlines' cleaning and ventilation practices.
+*   **Trains and Buses:**
+    *   **Moderate risk:** Can involve close contact with others.
+    *   **Precautions:**
+        *   **Masks:** Wear a high-quality mask at all times.
+        *   **Ventilation:** Choose seats near windows or ventilation.
+        *   **Social distancing:** Try to maintain distance from others.
+        *   **Minimize contact:** Avoid touching surfaces. Use hand sanitizer frequently.
+*   **Ride-Sharing Services (Uber, Lyft, Taxis):**
+    *   **Moderate risk:** Involves close contact with the driver.
+    *   **Precautions:**

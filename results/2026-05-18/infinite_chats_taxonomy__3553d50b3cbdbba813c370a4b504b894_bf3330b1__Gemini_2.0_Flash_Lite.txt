@@ -1,0 +1,102 @@
+Wave:      2026-05-18
+Dataset:   infinite_chats_taxonomy
+Item ID:   3553d50b3cbdbba813c370a4b504b894
+Model:     Gemini 2.0 Flash Lite (openrouter)
+Tokens:    in=49 out=1024
+Latency:   25048 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+how to write the gtest for static void sdl_egl_swap_buffers(struct graphics_opengl_platform *egl) 
+{
+
+    SDL_GL_SwapWindow(egl->eglwindow);
+}
+
+── Response ────────────────────────────────────────────────────────
+```c++
+#include <gtest/gtest.h>
+#include <SDL.h>
+#include <SDL_opengl.h> // Include for SDL_GL_SwapWindow (if needed)
+
+// Assuming you have the following structure defined somewhere in your code:
+struct graphics_opengl_platform {
+    SDL_Window *eglwindow;
+};
+
+// Assuming the function you're testing is defined somewhere in your code:
+extern "C" { // Use extern "C" to avoid name mangling if your function is C
+void sdl_egl_swap_buffers(struct graphics_opengl_platform *egl);
+}
+
+// Mocking SDL_GL_SwapWindow
+// We need to mock SDL_GL_SwapWindow because it's an SDL function
+// that handles OpenGL context swapping. We don't want to rely on a
+// working OpenGL context for our tests.  This allows us to verify
+// that our function *calls* SDL_GL_SwapWindow with the correct
+// arguments.
+namespace SDL { // To avoid potential naming conflicts
+    bool swap_window_called = false;
+    SDL_Window *swap_window_arg = nullptr; // To store the argument passed to the mocked function
+
+    void GL_SwapWindow(SDL_Window *window) {
+        swap_window_called = true;
+        swap_window_arg = window;
+    }
+}
+
+// Test Fixture (Optional, but recommended for organizing tests)
+class SdlEglSwapBuffersTest : public ::testing::Test {
+protected:
+    void SetUp() override {
+        // Initialize SDL (if needed, and only if your function relies on it)
+        if (SDL_WasInit(SDL_INIT_VIDEO) == 0) { // Check if already initialized
+            if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+                FAIL() << "SDL could not initialize! SDL_Error: " << SDL_GetError();
+            }
+        }
+        egl_platform = new graphics_opengl_platform;
+        egl_platform->eglwindow = SDL_CreateWindow("Test Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_OPENGL);
+        ASSERT_NE(egl_platform->eglwindow, nullptr) << "Failed to create SDL window.";
+
+        SDL::swap_window_called = false;
+        SDL::swap_window_arg = nullptr;
+
+    }
+
+    void TearDown() override {
+        if (egl_platform->eglwindow) {
+            SDL_DestroyWindow(egl_platform->eglwindow);
+            egl_platform->eglwindow = nullptr; // Important to avoid double-free
+        }
+        delete egl_platform;
+        egl_platform = nullptr;
+
+        SDL_Quit(); // Clean up SDL
+    }
+
+    graphics_opengl_platform *egl_platform = nullptr; // Instance for test use
+};
+
+// Test Case 1: Basic test - Verify SDL_GL_SwapWindow is called with the correct window
+TEST_F(SdlEglSwapBuffersTest, CallsSDLSwapWindowWithCorrectWindow) {
+    sdl_egl_swap_buffers(egl_platform);
+    ASSERT_TRUE(SDL::swap_window_called);
+    ASSERT_EQ(SDL::swap_window_arg, egl_platform->eglwindow);
+}
+
+
+// Test Case 2:  Handles null eglwindow gracefully (if this is a valid scenario)
+// This test is important if your code *could* receive a null window.  If not, remove it.
+TEST_F(SdlEglSwapBuffersTest, HandlesNullEglWindow) {
+    // Set the window to null
+    egl_platform->eglwindow = nullptr;
+
+    // Call the function - ideally, it *shouldn't* crash.
+    sdl_egl_swap_buffers(egl_platform);
+
+    // Assert that SDL_GL_SwapWindow was *not* called.  (Or, if it was, that it handled the null gracefully)
+    // This depends on the *expected* behavior of your code.  If the function *should* do nothing when eglwindow is nullptr,
+    // then you would assert that SDL::swap_window_called is false.  If it should crash, your test would fail.
+    // If the function is expected to handle a null window gracefully *and* do something, such as logging an error,
+    // then you'll need to adapt the test to verify that the

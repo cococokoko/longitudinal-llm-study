@@ -1,0 +1,41 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_08_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=24 out=321
+Latency:   5223 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+Nice—sounds like you’re looking for trails that are actually worth your limited time, not just “popular.”
+
+A few directions depending on what you want:
+
+If you want iconic, high-reward hikes (the kind that feel like a reset from a demanding job):
+- Half Dome (Yosemite, CA) – strenuous but unforgettable  
+- Angels Landing (Zion, UT) – short, intense, big payoff  
+- Franconia Ridge Loop (NH) – one of the best ridge walks in the U.S.
+
+If you prefer quieter, less crowded but still excellent:
+- Mount Audubon (CO) – alpine views without the chaos of 14ers  
+- Linville Gorge (NC) – rugged, wild, underrated  
+- Olympic National Park interior trails (WA) – rainforest + mountains, fewer people
+
+If time is tight and you need high quality in a few hours:
+- Breakneck Ridge (NY) – quick, steep, very satisfying  
+- Runyon Canyon alternatives (LA locals’ picks like Escondido Falls or Sandstone Peak)  
+- Mount Tamalpais loops (CA) – ocean views, flexible distances
+
+If you want something more curated to you, tell me:
+- where you’re usually based or willing to travel  
+- how hard you like to push (casual vs. “I want a challenge”)  
+- solo vs. social vibe  
+
+I can dial this in to a pretty sharp shortlist.

@@ -1,0 +1,51 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_19_low_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=467
+Latency:   8902 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+the best books to learn Design and Analysis of Algorithms I in 2023
+
+── Response ────────────────────────────────────────────────────────
+If you’re just getting started with Design and Analysis of Algorithms (often called DAA or “Algorithms I”), you want books that balance intuition, problem-solving, and some rigor—without overwhelming you, especially if you’re juggling a new job.
+
+Here are some of the best picks, depending on how you like to learn:
+
+If you want a clear, beginner-friendly foundation:
+- “Grokking Algorithms” – Aditya Bhargava  
+  Super visual and easy to digest. Great for building intuition before diving deeper. Not very rigorous, but excellent as a first pass.
+
+- “Algorithms” – Robert Sedgewick & Kevin Wayne  
+  Very well-structured, pairs nicely with their online course. Clear explanations and practical focus.
+
+If you want a solid university-level core (Algorithms I standard):
+- “Introduction to Algorithms” (CLRS) – Cormen, Leiserson, Rivest, Stein  
+  The classic. Comprehensive and respected everywhere. It’s dense, so don’t try to read it cover-to-cover—use it as a reference and go topic by topic.
+
+- “Algorithm Design” – Kleinberg & Tardos  
+  A bit more readable than CLRS and very good at explaining *why* algorithms work. Great for understanding design techniques (greedy, divide & conquer, DP).
+
+If you prefer a more practical / coding-oriented angle:
+- “The Algorithm Design Manual” – Steven Skiena  
+  Very approachable, full of real-world context and problem-solving guidance. Good balance between theory and practice.
+
+- “Competitive Programming” – Halim & Halim  
+  More problem-focused. Best if you want to get good at coding problems alongside learning concepts.
+
+If math proofs aren’t your thing (at least for now):
+Start with Grokking Algorithms or Skiena, then move to Kleinberg & Tardos. CLRS can come later once you’re more comfortable.
+
+Since you’re in a new job and likely short on time, a realistic path could be:
+- Start: Grokking Algorithms (quick confidence boost)
+- Then: Sedgewick or Skiena
+- Use CLRS as a reference when you need depth
+
+If you want, I can map these to a 6–8 week study plan that fits around a busy work schedule.

@@ -1,0 +1,70 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_10_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=46 out=380
+Latency:   6067 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+I made a website with .html files on my computer for my resume. How can I host if for free online so other people can see it?
+
+── Response ────────────────────────────────────────────────────────
+Nice, that’s a great move—simple HTML sites are the easiest to host for free.
+
+Here are the best no-cost options, in plain terms:
+
+**1) GitHub Pages (most common, reliable)**
+- Create a free GitHub account
+- Create a new repository (name it something like `yourname.github.io`)
+- Upload your HTML files (make sure your main file is called `index.html`)
+- Go to repository Settings → Pages → enable it
+- Your site will be live at: `https://yourname.github.io`
+
+Pros: professional, fast, widely used  
+Cons: small learning curve if you’ve never used GitHub
+
+---
+
+**2) Netlify (very easy drag-and-drop)**
+- Go to netlify.com and sign up
+- Drag your folder of HTML files into the dashboard
+- It instantly gives you a live URL
+
+Pros: easiest option, no setup  
+Cons: random URL unless you customize
+
+---
+
+**3) Cloudflare Pages**
+- Similar to GitHub Pages but slightly more “infra” oriented
+- Connect a GitHub repo and deploy
+
+Pros: very fast global delivery  
+Cons: slightly more setup than Netlify
+
+---
+
+**4) Google Drive (not recommended anymore)**
+Used to work easily, but Google removed native hosting. Skip this.
+
+---
+
+**Quick recommendation**
+If you want fast and painless: **Netlify drag-and-drop**  
+If you want something more “professional/lasting”: **GitHub Pages**
+
+---
+
+**A couple practical tips**
+- Make sure your homepage file is named exactly `index.html`
+- Keep all assets (CSS, images) in the same folder structure when uploading
+- Test locally before uploading (double-click the file)
+
+---
+
+If you want, I can walk you through GitHub Pages step-by-step or sanity-check your folder structure before you upload.

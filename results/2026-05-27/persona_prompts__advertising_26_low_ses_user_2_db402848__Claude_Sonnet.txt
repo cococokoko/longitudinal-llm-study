@@ -1,0 +1,54 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=34 out=330
+Latency:   7924 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+Here are the key areas to focus on:
+
+## Essential Foundations
+- **Use strong, unique passwords** for all accounts
+- **Enable two-factor authentication** wherever possible
+- **Keep software updated** - patches fix security vulnerabilities
+- **Regular data backups** using the 3-2-1 rule (3 copies, 2 formats, 1 offsite)
+
+## Access Control
+- Give employees **only the access they need** for their role
+- **Remove access immediately** when someone leaves
+- Use a **password manager** like Bitwarden or LastPass
+
+## Network Security
+- Secure your WiFi with WPA3 encryption
+- Consider a **separate network for guests**
+- Use a **VPN** especially on public networks
+
+## Practical Protection
+- Install reputable **antivirus software**
+- Train yourself and any employees to **recognize phishing emails**
+- Have a simple **incident response plan** if something goes wrong
+
+## Low-Cost Starting Points
+- Google Workspace or Microsoft 365 have built-in security tools
+- Many cybersecurity resources are **free through CISA** (cisa.gov)
+
+## Quick Priority Order
+1. Backups first
+2. Strong passwords + 2FA
+3. Software updates
+4. Employee awareness
+
+---
+
+Is there a **specific aspect of your business** you'd like more targeted advice on, such as customer data or remote work security?

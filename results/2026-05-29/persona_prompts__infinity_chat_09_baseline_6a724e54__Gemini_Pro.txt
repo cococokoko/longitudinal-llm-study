@@ -1,0 +1,22 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=14 out=1020
+Latency:   13899 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+To get a truly *great* story from an AI, you need to give it more than just "write a story for kids." You need to tell it the target age, the tone, the pacing, and the core message. 
+
+Here are a few prompt options, depending on what kind of story you want. Just copy, paste, and fill in the bracketed **[ ]** information!
+
+### Option 1: The "Master" Customizable Prompt (Best Overall)
+*Use this if you have a rough idea of what you want the story to be about.*
+
+> "Act as an award-winning children’s book author, like Roald Dahl or a Pixar writer. I want you to write a highly engaging, imaginative story for a **[insert age

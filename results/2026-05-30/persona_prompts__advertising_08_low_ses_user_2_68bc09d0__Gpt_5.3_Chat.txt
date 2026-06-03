@@ -1,0 +1,37 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_08_low_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=24 out=278
+Latency:   5623 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+Nice combo goal—getting outdoors *and* making it work with parenting is very doable, just takes the right kind of trail.
+
+If you’re juggling kids and time, the “perfect” trail usually means:
+- short to moderate length (1–4 miles)
+- loop or out-and-back with easy exit options
+- clear paths (no scrambling or tricky navigation)
+- interesting features to keep kids engaged (waterfalls, streams, viewpoints, rocks to climb)
+- nearby facilities or at least safe parking
+
+A few ways to find good ones fast:
+- AllTrails or Gaia GPS: filter by “easy” or “kid friendly,” then sort by length and rating
+- Google Maps: search “easy hikes near me” and check photos—super underrated trick
+- Local parks & state park websites: they often label “family-friendly” trails clearly
+
+If you want to narrow it down better, tell me:
+- your general location
+- kids’ ages (huge factor)
+- how long you realistically want to be out
+- stroller vs walking vs carrier
+
+and I’ll suggest some specific trails that actually fit your situation, not just generic “top hikes” 🙂

@@ -1,0 +1,39 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_26_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=25 out=569
+Latency:   11807 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can social media cultivate extremism
+
+── Response ────────────────────────────────────────────────────────
+Social media doesn’t “create” extremism out of nowhere, but it can reliably accelerate and concentrate it. The main mechanisms are pretty well studied across sociology, psychology, and network science:
+
+First, ranking algorithms tend to optimize for engagement, not accuracy or prosocial outcomes. Content that provokes anger, fear, or moral outrage gets more clicks, comments, and shares, so it’s preferentially amplified. Over time, users are nudged toward more emotionally intense and often more extreme material because it performs better.
+
+Second, repeated exposure and homophily produce echo chambers. People follow, like, and interact with similar others, and the platform reinforces that pattern. Within these clusters, viewpoints become more homogeneous, dissenting information is filtered out, and beliefs can shift toward the group’s more extreme edge (group polarization).
+
+Third, social identity dynamics get amplified. Platforms make it easy to signal group membership (hashtags, memes, slogans), which strengthens in-group cohesion and out-group hostility. When identity becomes fused with a belief system, challenges to ideas feel like personal attacks, which hardens positions.
+
+Fourth, norm shifts happen quickly online. If extreme language or ideas appear common in a feed, users can come to see them as normal or acceptable (pluralistic ignorance and false consensus effects). This lowers the psychological barrier to expressing or adopting more extreme views.
+
+Fifth, there’s a pathway effect: mainstream → edgy → fringe. Recommendation systems and cross-platform links can gradually expose users to slightly more radical content at each step. Even small shifts, repeated over time, can move someone significantly.
+
+Sixth, anonymity and reduced social cost change behavior. People say and endorse things online they wouldn’t offline, which both increases the supply of extreme content and normalizes it for observers.
+
+Seventh, grievance and uncertainty are easily mobilized. Content that frames issues in terms of threat, injustice, or conspiracy spreads well, especially during periods of social or economic stress. Extremist narratives often provide simple explanations and a sense of agency or belonging.
+
+Eighth, coordinated actors exploit these dynamics. Organized groups use bots, sockpuppets, and targeted messaging to seed and amplify extreme narratives, making them appear more widespread and legitimate than they are.
+
+Finally, intermittent reinforcement (likes, shares, notifications) keeps users engaged long enough for these processes to compound.
+
+If you’re thinking about this as a research agenda, common approaches include network analysis of information cascades, audit studies of recommendation systems, longitudinal cohort studies of attitude change, and experiments manipulating exposure to different content types. Interventions being studied range from algorithmic changes (downranking borderline content, diversifying recommendations), to friction (prompts before sharing), to inoculation strategies that build resistance to manipulative content.
+
+Happy to go deeper on any of those angles depending on your field or methods.

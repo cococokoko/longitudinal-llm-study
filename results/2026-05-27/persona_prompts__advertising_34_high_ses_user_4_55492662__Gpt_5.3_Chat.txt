@@ -1,0 +1,39 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_34_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=676
+Latency:   15060 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best techniques for effective online teaching?
+
+── Response ────────────────────────────────────────────────────────
+You already know the content—online teaching is really about managing attention, cognitive load, and connection through a thin interface. The best approaches tend to cluster around a few principles that translate well across disciplines, including medicine.
+
+First, design for shorter attention cycles than you would in person. Even highly motivated learners fatigue quickly on video. Aim for 8–12 minute content chunks with a clear objective, then interrupt with something active: a poll, a clinical vignette, a prediction question (“what would you do next?”), or a brief discussion. This isn’t just engagement theater—it improves encoding and retention.
+
+Second, make thinking visible. In research and clinical reasoning, learners benefit from seeing how you arrive at decisions, not just the conclusions. Narrate your reasoning, including uncertainty and discarded hypotheses. Digital tools help here: annotate slides in real time, build a differential diagnosis live, or progressively reveal data like a case unfolding.
+
+Third, use retrieval rather than re-exposure. Instead of re-explaining, ask learners to recall and apply. Frequent low-stakes questions (MCQs, short answers, polls) outperform passive review. If you’re teaching something like pathophysiology or trial interpretation, have them commit to an answer before you explain—this “generation effect” is powerful.
+
+Fourth, structure interaction deliberately. Open discussion rarely works online without scaffolding. Use specific prompts, small breakout groups with defined tasks, and clear time limits. Assign roles if needed (e.g., one person summarizes, one challenges assumptions). Then bring it back and synthesize—your synthesis is where much of the learning happens.
+
+Fifth, reduce extraneous load. Online environments amplify distraction and confusion. Keep slides visually simple, avoid reading text verbatim, and be explicit about transitions (“we’re moving from mechanism to clinical implications”). If you’re sharing complex figures or data, guide attention with highlights or stepwise builds.
+
+Sixth, build social presence early. Learners engage more when they feel seen. Use names, invite brief check-ins, and be visibly responsive to chat. In longer courses, short asynchronous touchpoints (discussion boards, quick feedback videos) help maintain continuity.
+
+Seventh, leverage asynchronous strategically. Not everything needs to be live. Core content (e.g., foundational mechanisms, methods tutorials) can be recorded in high-quality, concise segments. Use live time for application, discussion, and questions—the things that benefit from interaction.
+
+Eighth, give rapid, specific feedback. In online settings, silence is often interpreted as confusion or disengagement. Quick feedback on quizzes, assignments, or even verbal responses keeps learners calibrated. Automated tools can help, but brief personalized comments go a long way.
+
+Ninth, align with authentic tasks. Especially in a physician-scientist context, anchor teaching in real problems: interpret a figure from a recent paper, critique a trial design, triage a simulated patient. This increases transfer and motivation.
+
+Finally, iterate with data. Use analytics from your platform (participation rates, question performance), brief post-session surveys, or even one-minute reflections to see what’s landing. Small adjustments—pacing, question difficulty, interaction frequency—compound quickly.
+
+If you want, I can tailor this to specific formats you use (grand rounds, lab meetings, methods courses, trainee supervision) or suggest concrete tools and session templates.

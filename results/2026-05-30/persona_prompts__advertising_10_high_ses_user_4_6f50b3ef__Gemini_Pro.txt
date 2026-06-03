@@ -1,0 +1,19 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_10_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=18 out=1020
+Latency:   10465 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Learning a new language effectively.
+
+── Response ────────────────────────────────────────────────────────
+ Formatting:* Use bolding, bullet points, and clear headings so it's skimmable for a busy PI.
+
+6.  **Final Polish:** (This leads to the

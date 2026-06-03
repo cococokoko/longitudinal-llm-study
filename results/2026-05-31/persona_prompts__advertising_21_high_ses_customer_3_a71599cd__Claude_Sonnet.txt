@@ -1,0 +1,20 @@
+Wave:      2026-05-31
+Dataset:   persona_prompts
+Item ID:   advertising_21_high_ses_customer_3
+Model:     nan (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=nan out=nan
+Latency:   50 ms
+Error:     HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I start a vegetable garden in my backyard?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] HTTPStatusError: Client error '403 Forbidden' for url 'https://openrouter.ai/api/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403

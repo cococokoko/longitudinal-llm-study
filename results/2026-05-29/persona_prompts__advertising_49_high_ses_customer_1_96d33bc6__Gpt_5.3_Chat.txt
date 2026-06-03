@@ -1,0 +1,34 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=33 out=428
+Latency:   9167 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+If your WiFi feels sluggish or unreliable, it’s usually a mix of coverage, interference, and bottlenecks. Here’s how to tighten it up without overcomplicating things:
+
+Start with placement. Your router should be central, elevated, and in the open—think a bookshelf in the middle of your home, not a basement corner or inside a cabinet. Walls (especially concrete or metal) and large appliances really do eat signal.
+
+If your home is more than ~1500–2000 sq ft, or has multiple floors, a single router often won’t cut it. A mesh system (e.g., Eero, Google Nest WiFi, Orbi) is usually the cleanest fix—multiple nodes that hand off seamlessly as you move. It’s far more reliable than extenders.
+
+Check your band usage. Use 5 GHz (or 6 GHz if you have WiFi 6E/7) for speed when you’re near the router, and 2.4 GHz for longer range devices. Many modern systems manage this automatically, but it’s worth confirming.
+
+Interference is a hidden culprit. Neighboring networks, especially in apartments, can crowd channels. Logging into your router and switching to a less congested channel can help. Also keep the router away from microwaves, cordless phone bases, etc.
+
+Upgrade hardware if it’s older than ~4–5 years. WiFi 6 or 6E routers handle multiple devices far better (important if you’ve got phones, tablets, smart TVs, etc. all active at once).
+
+Backhaul matters. If you go mesh, wired Ethernet between nodes (if feasible) dramatically improves performance. Otherwise, place nodes close enough to each other that they still have a strong signal.
+
+Finally, check your actual internet plan vs. expectations. If your ISP is giving you 100 Mbps, no router will magically turn that into gigabit speeds. Running a quick wired speed test at the modem helps separate WiFi issues from ISP limits.
+
+If you want, tell me your home layout and current setup—I can suggest a more tailored fix.

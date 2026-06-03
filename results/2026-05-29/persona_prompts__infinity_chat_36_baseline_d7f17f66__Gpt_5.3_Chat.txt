@@ -1,0 +1,50 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=21 out=440
+Latency:   9314 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me some examples of websites where users can select a default landing page?
+
+── Response ────────────────────────────────────────────────────────
+Here are some familiar examples where users can choose or customize a default landing page (or homepage/dashboard):
+
+- Google (google.com): You can set it so your browser opens directly to Google Search, and within Google services like Gmail or Workspace, users can land on specific views (Inbox, Chat, etc.).
+
+- YouTube: Users can land on the Home feed, Subscriptions tab, or Library depending on preferences or bookmarks.
+
+- Reddit: Lets you choose between Home (personalized feed), Popular, or specific subreddits as your starting point.
+
+- Twitter / X: You can default to “For You” or “Following” timeline.
+
+- LinkedIn: Typically opens to the main feed, but users often navigate directly to Jobs, Messaging, or Notifications as their de facto landing page.
+
+- GitHub: After login, users land on a personalized dashboard, but many go straight to repositories, issues, or pull requests via saved URLs.
+
+- Notion: Lets users set a default page (like a dashboard or workspace page) when opening the app.
+
+- Slack: Opens to the last visited channel, but users can treat a specific channel or DM as their “home.”
+
+- Jira / Confluence (Atlassian): Users can configure dashboards or spaces as their landing page.
+
+- Salesforce: Allows users to customize their default home tab or dashboard view.
+
+- WordPress (admin): You can set the dashboard or specific pages (like posts or stats) as your default admin landing.
+
+- Shopify: Merchants land on their admin dashboard, but can jump directly into orders, products, or analytics as their main entry point.
+
+- Banking apps (like Chase, Revolut): Often let users choose whether they land on account overview, transactions, or cards.
+
+- News sites (like NYTimes): Users can default to sections like World, Business, or a personalized feed.
+
+If you’re designing this feature, the common patterns are:
+- “Remember last visited page”
+- “Let user pin/set a home”
+- “Offer predefined options (Dashboard, Feed, Messages, etc.)”
+
+If you want, I can break down UX patterns or pitfalls for implementing this cleanly.

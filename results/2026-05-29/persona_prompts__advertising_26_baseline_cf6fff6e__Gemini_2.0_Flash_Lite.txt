@@ -1,0 +1,82 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1024
+Latency:   6071 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Data security is crucial for small businesses, as they are often targets for cyberattacks due to limited resources and potentially less robust security measures. Here are some best practices, categorized for clarity:
+
+**I. Foundational Security Practices:**
+
+*   **Develop a Security Policy:**
+    *   Create a written document outlining your security goals, acceptable use policies, data handling procedures, and incident response plan.
+    *   Communicate the policy to all employees and require them to acknowledge and adhere to it.
+    *   Regularly review and update the policy to reflect changes in technology and threats.
+*   **Employee Training and Awareness:**
+    *   Provide regular security awareness training to all employees, covering topics like:
+        *   Phishing and social engineering (recognizing and avoiding scams)
+        *   Password security (strong passwords, password managers)
+        *   Safe browsing habits (avoiding suspicious websites)
+        *   Data handling and privacy (protecting sensitive information)
+        *   Reporting security incidents
+    *   Conduct phishing simulations to test employee awareness and identify areas for improvement.
+*   **Physical Security:**
+    *   Secure physical access to your office and data storage locations.
+    *   Use locks, security cameras, and access control systems (e.g., key cards) to restrict unauthorized entry.
+    *   Secure laptops, tablets, and other portable devices.
+    *   Shred or securely dispose of sensitive paper documents.
+
+**II. Technical Security Measures:**
+
+*   **Strong Passwords and Multi-Factor Authentication (MFA):**
+    *   Enforce strong password policies (minimum length, complexity requirements).
+    *   Use a password manager to generate and store strong, unique passwords for each account.
+    *   Implement MFA (e.g., using an authenticator app, SMS codes, or hardware tokens) on all critical accounts (email, cloud storage, financial systems).
+*   **Firewall and Network Security:**
+    *   Use a firewall to protect your network from unauthorized access.
+    *   Configure the firewall to block unnecessary ports and services.
+    *   Segment your network to isolate sensitive data and systems.
+    *   Regularly update your firewall's firmware.
+*   **Antivirus and Anti-Malware Software:**
+    *   Install and maintain up-to-date antivirus and anti-malware software on all computers and servers.
+    *   Schedule regular scans.
+    *   Enable real-time protection.
+*   **Software Updates and Patch Management:**
+    *   Keep all software (operating systems, applications, web browsers, etc.) up-to-date with the latest security patches.
+    *   Enable automatic updates whenever possible.
+    *   Establish a process for promptly applying security patches.
+*   **Data Backup and Disaster Recovery:**
+    *   Implement a regular data backup strategy.
+    *   Back up data frequently (daily or even more often, depending on the criticality of the data).
+    *   Store backups both on-site and off-site (e.g., in the cloud) to protect against data loss due to fire, theft, or natural disasters.
+    *   Test your backups regularly to ensure they can be restored.
+    *   Develop a disaster recovery plan to outline the steps to take in the event of a data breach or other disaster.
+*   **Encryption:**
+    *   Encrypt sensitive data at rest (e.g., on hard drives) and in transit (e.g., using HTTPS for websites, VPNs for remote access).
+    *   Use encryption for email communication containing sensitive information.
+*   **Secure Remote Access:**
+    *   If employees need to access company data remotely, use a secure VPN (Virtual Private Network) to encrypt the connection.
+    *   Implement MFA for remote access.
+    *   Consider using a remote desktop solution with strong security features.
+*   **Website Security:**
+    *   Use HTTPS (SSL/TLS) to encrypt data transmitted between your website and users' browsers.
+    *   Keep your website software (e.g., WordPress, Joomla) and plugins up-to-date.
+    *   Consider using a web application firewall (WAF) to protect against web-based attacks.
+*   **Data Loss Prevention (DLP):**
+    *   Consider DLP solutions to monitor and prevent sensitive data from leaving your organization (e.g., through email, USB drives, or cloud storage).
+
+**III. Data Privacy and Compliance:**
+
+*   **Understand and Comply with Relevant Regulations:**
+    *   Be aware of data privacy regulations that apply to your business (e.g., GDPR, CCPA, HIPAA).
+    *   Implement measures to comply with these regulations.
+*   **Data Minimization:**
+    *   Collect and retain only the data

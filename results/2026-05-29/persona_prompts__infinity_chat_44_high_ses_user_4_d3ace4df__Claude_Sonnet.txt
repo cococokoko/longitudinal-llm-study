@@ -1,0 +1,39 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=40 out=277
+Latency:   6990 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Can you write me a series of three questions that can determine if something is morally right or wrong?
+
+── Response ────────────────────────────────────────────────────────
+Here are three questions designed to systematically evaluate moral rightness or wrongness:
+
+---
+
+**1. Does it cause harm, and to whom?**
+Consider whether the action causes physical, psychological, financial, or social harm — to individuals, groups, or society broadly. Weigh both immediate and long-term consequences.
+
+**2. Is it fair, and would you accept it if the roles were reversed?**
+Consider whether the action treats people equitably and respects their rights and dignity. Ask whether you would consider it acceptable if you were on the receiving end.
+
+**3. Could you defend it transparently to a reasonable, informed person?**
+Consider whether you could openly explain your reasoning — including your motivations — to a thoughtful colleague or ethics board without feeling the need to conceal or minimize anything.
+
+---
+
+**Why these three work well together:**
+- Question 1 draws on **consequentialist** thinking
+- Question 2 draws on **deontological/fairness** principles
+- Question 3 tests **integrity and accountability**
+
+This framework is particularly practical in a **research context**, where decisions often involve competing interests — patient welfare, scientific advancement, funding pressures, and institutional obligations.
+
+Would you like me to tailor these specifically for research ethics scenarios?

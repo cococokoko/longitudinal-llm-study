@@ -1,0 +1,73 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_19_high_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=532
+Latency:   13338 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+the best books to learn Design and Analysis of Algorithms I in 2023
+
+── Response ────────────────────────────────────────────────────────
+# Best Books for Design and Analysis of Algorithms (2023)
+
+## 🏆 Top Tier / Essential
+
+### 1. **Introduction to Algorithms (CLRS)**
+- Cormen, Leiserson, Rivest, Stein — 4th Edition (2022)
+- The **gold standard** for algorithm courses
+- Rigorous mathematical treatment, comprehensive coverage
+- Best for: formal proofs, pseudocode, broad topic coverage
+
+### 2. **Algorithm Design** — Kleinberg & Tardos
+- Excellent narrative and intuition-building
+- Strong on **greedy, DP, network flow, NP-completeness**
+- More readable than CLRS for many students
+
+---
+
+## 📘 Strong Alternatives
+
+### 3. **Algorithms** — Dasgupta, Papadimitriou, Vazirani
+- Free PDF available legally
+- Concise, elegant, mathematically mature
+- Great companion to a graduate-level course
+
+### 4. **The Algorithm Design Manual** — Skiena (3rd Ed.)
+- Practical perspective with real-world war stories
+- Excellent **catalog of algorithms** as reference
+- Good for implementation intuition
+
+---
+
+## 🎯 Supplementary / Specialized
+
+| Book | Strength |
+|------|----------|
+| **Algorithms Illuminated** — Roughgarden | Accessible, matches Stanford lectures |
+| **Concrete Mathematics** — Knuth et al. | Mathematical foundations |
+| **Art of Problem Solving** series | Combinatorics/math depth |
+
+---
+
+## 📌 Recommendation by Context
+
+| Your Goal | Best Choice |
+|-----------|-------------|
+| Teaching a course | CLRS + Kleinberg & Tardos |
+| Research foundation | CLRS + Dasgupta et al. |
+| Student accessibility | Kleinberg & Tardos |
+| Practical/applied | Skiena |
+
+---
+
+## 💡 Pro Tip
+Many professors pair **CLRS** (rigor) with **Kleinberg & Tardos** (intuition) for a well-rounded course. Roughgarden's lecture notes/videos complement either well.
+
+Would you like recommendations on specific topics like **NP-completeness, graph algorithms, or randomized algorithms**?

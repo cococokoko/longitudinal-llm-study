@@ -1,0 +1,51 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=352
+Latency:   7744 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+# Remote Team Collaboration Tools for Research Groups
+
+Here's a practical breakdown by function:
+
+## Communication
+- **Slack** - Organized channels by project, integrates with many research tools
+- **Microsoft Teams** - Good if your institution uses Office 365
+- **Zoom/Teams** - Video meetings, lab meetings, journal clubs
+
+## Project & Task Management
+- **Asana or Trello** - Task tracking, deadlines, accountability
+- **Notion** - Flexible workspace combining notes, tasks, and databases
+- **Monday.com** - Visual project timelines
+
+## Document Collaboration
+- **Google Workspace** - Real-time document/spreadsheet editing
+- **Overleaf** - Essential for collaborative manuscript writing (LaTeX)
+- **Microsoft SharePoint** - Institutional document management
+
+## Research-Specific Tools
+- **GitHub** - Code version control for computational work
+- **OSF (Open Science Framework)** - Project management + data sharing
+- **Benchling** - Lab notebook and protocol management
+- **Zotero/Mendeley** - Shared reference libraries
+
+## Data & Analysis
+- **Dropbox/Box** - File sharing (check HIPAA compliance needs)
+- **REDCap** - Clinical data management
+
+## Practical Recommendations
+- **Start simple** - avoid tool overload
+- Establish clear **communication norms** (response time expectations)
+- Regular **structured check-ins** matter more than the tools themselves
+
+Would you like recommendations tailored to a specific aspect of your work (clinical, wet lab, computational)?

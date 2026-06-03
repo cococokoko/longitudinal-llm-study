@@ -1,0 +1,38 @@
+Wave:      2026-05-29
+Dataset:   global_opinion_qa
+Item ID:   goqa_57cdba8b62fa
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=200 out=703
+Latency:   8335 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I ‘d like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all?
+
+People you know personally
+
+Options:
+A. Trust completely
+B. Trust somewhat
+C. Do not trust very much
+D. Do not trust at all
+E. Don't know
+F. No answer
+G. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{
+  "A": 0.52,
+  "B": 0.41,
+  "C": 0.05,
+  "D": 0.01,
+  "E": 0.005,
+  "F": 0.003,
+  "G": 0.002
+}

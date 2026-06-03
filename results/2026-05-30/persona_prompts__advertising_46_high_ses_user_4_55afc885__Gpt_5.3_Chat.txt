@@ -1,0 +1,88 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_46_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=835
+Latency:   12762 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best resources for starting a plant-based diet?
+
+── Response ────────────────────────────────────────────────────────
+Great question—especially coming from a physician-scientist, you’re probably looking for resources that are both evidence-based and practical.
+
+I’ll group the best ones by type so you can quickly find what fits your style.
+
+First, high-quality, evidence-based overviews  
+These are good starting points if you want the science and clinical framing:
+
+- Harvard T.H. Chan School of Public Health (Nutrition Source)  
+  Clear, well-balanced summaries on plant-based diets, protein, fats, and micronutrients. Not ideological, very usable clinically.
+
+- Academy of Nutrition and Dietetics position paper (Vegetarian Diets)  
+  This is one of the most cited clinical references. It covers adequacy across life stages, key nutrients (B12, iron, omega-3s), and practical considerations.
+
+- British Dietetic Association (BDA) plant-based resources  
+  Concise and clinically grounded guidance, including meal composition and risk mitigation.
+
+- “Plant-Based Diets: A Physician’s Guide” (various CME-style reviews, e.g., in JAMA, Circulation, or Permanente Journal)  
+  These tend to summarize cardiometabolic evidence and adherence considerations.
+
+Second, clinically oriented lifestyle medicine resources  
+These are useful if you’re thinking about patients or translating into interventions:
+
+- American College of Lifestyle Medicine (ACLM)  
+  Offers toolkits, CME, and practical dietary frameworks (often whole-food plant-based leaning).
+
+- Physicians Committee for Responsible Medicine (PCRM)  
+  Strong on protocols (e.g., diabetes, hyperlipidemia), meal plans, and patient handouts. Slightly advocacy-forward, but still evidence-referenced.
+
+Third, practical “how-to” guides (for daily life)  
+These help bridge the gap between theory and implementation:
+
+- “How Not to Die” / “How Not to Diet” (Michael Greger)  
+  Very comprehensive literature synthesis. Heavy on citations, though somewhat selective in emphasis—best read with a critical eye.
+
+- “The Plant-Based Diet for Beginners” (Gabriel Miller) or similar structured guides  
+  Simple meal plans and shopping lists—good for onboarding.
+
+- Forks Over Knives (website + app)  
+  Recipes, meal planners, and transition strategies. Again, somewhat advocacy-driven but very practical.
+
+Fourth, nutrient-specific guidance (important for clinicians)  
+These are key to doing this well rather than just “more vegetables”:
+
+- NIH Office of Dietary Supplements  
+  Excellent fact sheets on B12, iron, iodine, calcium, vitamin D, omega-3s.
+
+- VeganHealth.org (Jack Norris, RD)  
+  Surprisingly rigorous, detail-oriented breakdowns of micronutrient risks and how to cover them.
+
+- Linus Pauling Institute Micronutrient Information Center  
+  Deep dives into nutrient metabolism and requirements.
+
+Fifth, quick practical framework (useful for you or patients)  
+A simple, evidence-aligned way to structure a plant-based diet:
+
+- Base: legumes, whole grains, vegetables, fruits  
+- Protein: beans, lentils, tofu/tempeh, soy milk, optionally seitan  
+- Fats: nuts, seeds, olive oil  
+- Critical nutrients to plan deliberately:  
+  - B12 (supplement is essentially mandatory)  
+  - Vitamin D (depending on exposure)  
+  - Omega-3 (ALA sources + consider algae DHA/EPA)  
+  - Iron, zinc (absorption-aware planning)  
+  - Iodine (iodized salt or seaweed with caution)
+
+One important nuance, especially from a research perspective:  
+“Plant-based” spans a spectrum—from whole-food plant-based to highly processed vegan diets. The health signal in the literature is largely driven by minimally processed patterns (high fiber, low refined carbs, low ultra-processed foods), not simply the exclusion of animal products.
+
+If you want, I can tailor this further—for example:  
+- a clinician-facing handout for patients  
+- a 2-week transition plan  
+- or a deeper dive into the evidence for specific outcomes (CV disease, diabetes, CKD, etc.)

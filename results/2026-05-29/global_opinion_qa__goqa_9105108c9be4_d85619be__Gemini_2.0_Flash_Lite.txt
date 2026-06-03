@@ -1,0 +1,38 @@
+Wave:      2026-05-29
+Dataset:   global_opinion_qa
+Item ID:   goqa_9105108c9be4
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=256 out=109
+Latency:   881 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.
+
+Violence against other people
+
+Options:
+A. Never justifiable
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. Always justifiable
+K. Don't know
+L. No answer
+M. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.2, "B": 0.0, "C": 0.1, "D": 0.1, "E": 0.1, "F": 0.1, "G": 0.1, "H": 0.1, "I": 0.1, "J": 0.0, "K": 0.1, "L": 0.0, "M": 0.0}
+```

@@ -1,0 +1,66 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=675
+Latency:   10717 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+If you’re looking beyond the usual stuff like Nmap, Metasploit, or Burp, there’s a whole layer of more niche or “under-the-radar” tools and techniques that practitioners use for specific situations. Here are some interesting ones, grouped loosely by use:
+
+Recon & OSINT (less mainstream)
+- SpiderFoot HX (self-hosted version): automated OSINT with deep correlation, but often overlooked compared to Maltego  
+- Amass (advanced modes): most people use it basically, but its graph database + intel features are where it shines  
+- theHarvester (with uncommon sources enabled): people rarely configure all APIs properly  
+- Datasploit: pulls together fragmented public data in a structured way  
+- Recon-ng modules (custom ones): writing your own modules is where it becomes powerful  
+
+Network & traffic oddities
+- p0f: passive OS fingerprinting without sending packets  
+- Yersinia: attacks Layer 2 protocols (STP, CDP, DHCP), rarely tested in modern environments  
+- Scapy: not rare, but crafting custom packets for weird edge-case testing is underused  
+- MITM6: abuses IPv6 in IPv4-heavy networks for stealthy MITM  
+
+Web exploitation (less common angles)
+- SSRFmap: automates server-side request forgery exploitation paths  
+- Gopherus: generates gopher payloads for advanced SSRF chaining  
+- tplmap: targets template injection (SSTI), which many scanners miss  
+- XSStrike: more intelligent XSS detection than basic fuzzers  
+
+Active Directory / enterprise internals
+- PingCastle: quick AD risk assessment, not as famous as BloodHound but very effective  
+- CrackMapExec (advanced modules): most people barely scratch its capabilities  
+- Rubeus: Kerberos abuse toolkit  
+- ADExplorer (from Sysinternals): offline AD database analysis  
+
+Evasion & stealth techniques (methods more than tools)
+- Living off the Land (LotL): using built-in binaries like PowerShell, WMI, certutil to avoid detection  
+- Domain fronting (partially mitigated but still relevant in some contexts)  
+- Process hollowing / DLL sideloading  
+- Using DNS as a covert channel (data exfiltration via DNS queries)  
+
+Firmware / hardware edge cases
+- CHIPSEC: firmware/BIOS security assessment  
+- Bus Pirate: hardware interfacing for embedded device testing  
+- JTAGulator: finding debug interfaces on hardware  
+
+Cloud-specific niche tools
+- ScoutSuite: multi-cloud security auditing  
+- Pacu: AWS exploitation framework (like Metasploit but for AWS)  
+- CloudFox: situational awareness in cloud environments  
+
+Weird but useful techniques
+- Canary tokens: plant fake secrets and get alerts when accessed  
+- Password spraying with timing strategies to avoid lockouts  
+- Unicode homoglyph attacks (lookalike characters in domains/usernames)  
+- File polyglots (files valid as multiple formats, e.g., image + script)  
+
+A lot of these aren’t “rare” because they’re unknown—they’re just underused because they require deeper understanding or don’t fit into automated workflows.
+
+If you want, I can go deeper into one category (like stealth techniques or AD abuse) or show a realistic workflow using some of these.

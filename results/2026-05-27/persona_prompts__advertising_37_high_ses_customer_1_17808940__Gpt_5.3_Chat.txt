@@ -1,0 +1,47 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_37_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=613
+Latency:   13660 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I optimize my home office for productivity?
+
+── Response ────────────────────────────────────────────────────────
+You’re already operating in a high-stakes, cognitively demanding field, so the goal isn’t just “comfort” — it’s reducing cognitive friction and preserving mental bandwidth.
+
+Start with the variables that most directly affect sustained attention:
+
+- Visual field control: Keep your primary workspace visually quiet. Anything in your direct line of sight should be task-relevant. Peripheral clutter is fine; central clutter is costly.
+- Lighting: Prioritize bright, indirect, neutral-to-cool light during work blocks. If possible, position your desk perpendicular to a window to avoid glare but still get circadian benefit. A dimmable task light for late hours helps prevent fatigue.
+- Ergonomics as fatigue prevention: You don’t need a perfect “ergonomic setup,” but you do want neutrality. Monitor at eye level, keyboard allowing relaxed shoulders, chair that supports slight recline. The key is minimizing low-grade strain that accumulates over long sessions.
+- Air and temperature: Slightly cooler environments (~19–21°C / 66–70°F) tend to support alertness. Good airflow matters more than people realize for cognitive endurance.
+
+Then optimize for cognitive workflow:
+
+- Single-task zones: If space allows, separate “deep work” from “admin” even if it’s just different positions on the same desk. Your brain will start associating each zone with a mode.
+- Frictionless capture: Keep a very low-effort system for dumping thoughts (physical notepad or a single digital inbox). Mental interruptions are more damaging than most people account for.
+- Screen discipline: One primary screen > multiple competing focal points. If you use multiple monitors, assign strict roles (e.g., reference vs. active work) to avoid attention fragmentation.
+- Default layouts: Keep your digital workspace in a consistent state—same apps, same arrangement—so you’re not re-orienting every time you sit down.
+
+For focus and recovery cycles:
+
+- Time-blocking with defined endpoints works better than open-ended sessions, especially for complex reasoning tasks.
+- Build in deliberate “offloading” breaks—short walks, no phone—rather than passive scrolling, which doesn’t actually reset attention.
+- If you take calls or meetings, batch them to protect uninterrupted blocks.
+
+A couple of small but high-leverage upgrades:
+
+- A good microphone and camera setup if you do virtual consults—reduces subtle communication friction.
+- Noise control: either high-quality noise-canceling headphones or a consistent ambient sound source. Unpredictable noise is more disruptive than steady noise.
+
+Finally, make it slightly “overbuilt” for your standards. Given your baseline cognitive load, even marginal gains in focus or fatigue resistance will compound quickly.
+
+If you want, I can help you tailor this to your actual room layout or workflow (e.g., research vs. clinical admin vs. teaching).

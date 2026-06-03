@@ -1,0 +1,87 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_4
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=889
+Latency:   17398 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+For a physician-scientist running a research group, the “best” stack isn’t one tool—it’s a clean ecosystem that reduces friction across communication, data, writing, and project tracking. The sweet spot is usually a small set of well-integrated tools rather than a sprawling stack.
+
+Here’s what tends to work well in research environments:
+
+Communication and coordination  
+Slack or Microsoft Teams are the default anchors.  
+- Slack is generally more flexible, integrates extremely well with research tools (GitHub, Google Drive, Notion, etc.), and is preferred in many academic labs.  
+- Teams fits better if your institution is deeply tied to Microsoft 365 and compliance structures.  
+For meetings: Zoom remains the most reliable for external collaborators; Teams is fine internally if already adopted.
+
+Project and task management  
+You want something lightweight but structured:  
+- Asana: strong for multi-person projects, timelines, and accountability. Good for grant timelines and multi-site studies.  
+- ClickUp: more customizable, but can get complex.  
+- Trello: simplest option, good for smaller labs or early-stage groups.  
+- Notion: doubles as both task manager and knowledge base (more on that below), but requires discipline to avoid becoming messy.
+
+Knowledge management / “lab brain”  
+This is where many groups fall apart if it’s not intentional.  
+- Notion: very popular for lab wikis, protocols, onboarding docs, and meeting notes. Flexible, but needs structure.  
+- Confluence: more rigid, better for larger or institutional teams.  
+- Obsidian: great for individuals or small groups who want local-first, markdown-based knowledge, but less collaborative out of the box.
+
+Document collaboration and writing  
+- Google Docs/Drive: still the easiest for real-time collaboration, especially for manuscripts and grant drafts.  
+- Overleaf: essential if your group writes in LaTeX (common in computational or methods-heavy work).  
+- Microsoft Word (with OneDrive/SharePoint): often required for institutional workflows and tracked changes with senior collaborators.
+
+Reference management  
+- Zotero: best balance of free, powerful, and collaborative. Group libraries work well.  
+- EndNote: still common in clinical environments, especially where journals or institutions expect it.
+
+Data science and code collaboration  
+- GitHub (or GitLab): essential if anyone in your group writes code. Enables version control, issues, and reproducibility.  
+- JupyterHub or cloud notebooks (e.g., Google Colab): useful for shared computational work.  
+- For more regulated data environments, institutional secure compute platforms may override these.
+
+Data storage and sharing  
+This is where you need to be careful given clinical data:  
+- Box or OneDrive (enterprise): often the safest choice for HIPAA-aligned environments.  
+- Google Drive: fine for non-PHI data, widely used in academia.  
+- Avoid ad hoc Dropbox use unless institutionally approved.
+
+Electronic lab notebooks (ELNs)  
+- Benchling: excellent for wet labs, especially molecular biology.  
+- LabArchives: widely used in academia, compliant and structured.  
+- eLabNext: another solid option with workflow features.  
+Adoption matters more than features—pick one and standardize.
+
+Scheduling and coordination  
+- Google Calendar or Outlook (depending on your ecosystem)  
+- Doodle or When2Meet for multi-institution scheduling  
+- Calendly for external collaborators and trainees booking time
+
+A practical “high-functioning lab” stack might look like:  
+- Slack + Zoom  
+- Notion (lab wiki + light project tracking)  
+- Asana (for major projects/grants)  
+- Google Drive + Docs  
+- Zotero  
+- GitHub  
+- Benchling or LabArchives  
+- Box (for compliant data storage, if needed)
+
+A few strategic points that matter more than the specific tools:  
+- Standardization beats optimization. A slightly worse tool used consistently is better than a perfect tool used inconsistently.  
+- Define norms early (where decisions are documented, where files live, how projects are tracked).  
+- Minimize duplication (e.g., don’t track tasks in both Slack and Asana).  
+- Be explicit about data governance, especially with PHI.
+
+If you want, I can sketch a setup tailored to your lab type (wet lab, clinical trials, computational, mixed) and size.

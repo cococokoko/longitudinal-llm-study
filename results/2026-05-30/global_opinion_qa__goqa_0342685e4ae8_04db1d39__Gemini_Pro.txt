@@ -1,0 +1,31 @@
+Wave:      2026-05-30
+Dataset:   global_opinion_qa
+Item ID:   goqa_0342685e4ae8
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=210 out=502
+Latency:   5751 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Here are two statements people sometimes make when discussing the environment and economic growth. Which of them comes closer to your own point of view?
+
+A. Protecting the environment should be given priority, even if it causes slower economic growth and some loss of jobs
+
+B. Economic growth and creating jobs should be the top priority, even if the environment suffers to some extent
+
+Options:
+A. Protecting environment
+B. Economy growth and creating jobs
+C. Other answer
+D. Don't know
+E. No answer
+F. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.55, "B": 0.35, "C": 0.05, "D": 0.05, "E": 0.0, "F": 0.0}

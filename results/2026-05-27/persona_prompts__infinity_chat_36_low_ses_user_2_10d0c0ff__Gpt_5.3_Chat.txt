@@ -1,0 +1,38 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_low_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=33 out=359
+Latency:   7532 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+Give me some examples of websites where users can select a default landing page?
+
+── Response ────────────────────────────────────────────────────────
+Plenty of sites let users choose what they see first when they log in or open the app. Here are some solid, real-world examples:
+
+- Google (Workspace apps like Gmail, Drive): you can set which service or inbox type loads by default, and browsers can be configured to open a specific Google page on startup.  
+- Notion: lets you set a default page to open when the app launches.  
+- Slack: you can choose which workspace or conversation you land in, and control startup behavior.  
+- Microsoft 365 (Office online): users can pin apps or documents and set preferred start pages in some contexts.  
+- Trello: allows you to choose which board opens first.  
+- Asana: lets you set a default project or dashboard view.  
+- Jira: supports default dashboards or boards as landing pages.  
+- Salesforce: users can customize their home page/dashboard as the default view.  
+- Shopify (admin): can be configured to land on specific dashboards or areas.  
+- WordPress (admin): plugins or settings can direct users to a specific dashboard or page after login.  
+- Reddit: lets users choose default feeds (Home, Popular, or a custom feed).  
+- YouTube: can default to subscriptions or home depending on settings and bookmarks.  
+- Twitter/X: users often set default timeline (Following vs For You).  
+- Banking apps (many): often allow setting a default account or overview screen.
+
+If you’re thinking about this from a product design angle, a common pattern is either:
+- a “remember last visited page” option, or  
+- a “set as default” control on any page/dashboard.
+
+If you want, I can tailor examples specifically for apps used by busy parents or productivity tools.

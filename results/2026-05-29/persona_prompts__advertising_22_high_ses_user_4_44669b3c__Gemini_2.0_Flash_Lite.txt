@@ -1,0 +1,67 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_4
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=1024
+Latency:   6763 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist leading a research group, you need tools that facilitate seamless collaboration, data sharing, communication, and project management, all while adhering to data privacy and security regulations. Here's a breakdown of the best tools for remote team collaboration, categorized for clarity:
+
+**I. Communication & Coordination:**
+
+*   **A. Real-Time Communication (for quick chats and meetings):**
+    *   **1. Video Conferencing:**
+        *   **Zoom:** (Industry standard, reliable, good for large meetings, screen sharing, recording, breakout rooms, HIPAA compliance options)
+        *   **Microsoft Teams:** (Integrated with Microsoft 365, good for internal communication, file sharing, and project management, HIPAA compliance options)
+        *   **Google Meet:** (Easy to use, integrates with Google Workspace, good for smaller groups, HIPAA compliance options)
+        *   **Considerations:** Ensure HIPAA compliance if handling protected health information (PHI). Check for features like recording, transcription, and virtual backgrounds.
+    *   **2. Instant Messaging/Chat:**
+        *   **Microsoft Teams:** (Excellent for team chats, channels, and quick communication)
+        *   **Slack:** (Highly customizable, integrates with many other tools, good for project-specific channels, but can be overwhelming)
+        *   **WhatsApp/Signal:** (For quick, informal communication, but consider data privacy and security implications, especially with PHI)
+        *   **Considerations:** Choose platforms that allow for organized channels or threads to keep conversations focused.
+*   **B. Asynchronous Communication (for updates, announcements, and documentation):**
+    *   **1. Email:** (Still essential for formal communication, announcements, and external collaborations)
+        *   **Microsoft Outlook:** (Widely used, integrates with other Microsoft tools)
+        *   **Gmail:** (Easy to use, integrates with Google Workspace)
+        *   **Considerations:** Use clear subject lines, concise messages, and consider using email templates for frequently sent information.
+    *   **2. Project Management Platforms (with built-in communication features):** (See Section III)
+
+**II. Data Sharing & Storage:**
+
+*   **A. Cloud Storage:**
+    *   **1. Secure Cloud Storage:**
+        *   **Microsoft OneDrive:** (Integrated with Microsoft 365, good for individual and team file storage, HIPAA compliance options)
+        *   **Google Drive:** (Easy to use, integrates with Google Workspace, good for collaboration, HIPAA compliance options)
+        *   **Box:** (Focuses on secure file sharing and collaboration, good for larger organizations, HIPAA compliance options)
+        *   **Dropbox:** (User-friendly, but consider security and HIPAA compliance for sensitive data)
+        *   **Considerations:** Choose platforms with strong security features, encryption, and access controls. Ensure HIPAA compliance if handling PHI. Implement clear file naming conventions and folder structures.
+*   **B. Data Repositories (for large datasets and long-term storage):**
+    *   **1. Institutional Repositories:** (Check if your institution provides a secure repository for research data)
+    *   **2. Specialized Repositories:** (Consider repositories specific to your field, such as those for genomics, proteomics, or imaging data)
+    *   **Considerations:** Ensure data is properly anonymized or de-identified before sharing. Adhere to FAIR (Findable, Accessible, Interoperable, Reusable) data principles.
+
+**III. Project Management & Task Tracking:**
+
+*   **A. Project Management Platforms:**
+    *   **1. Comprehensive Platforms:**
+        *   **Microsoft Teams:** (Excellent for project management, task assignment, file sharing, and communication, especially if you're already using Microsoft 365)
+        *   **Asana:** (Flexible, good for task management, project tracking, and team collaboration)
+        *   **Monday.com:** (Visually appealing, good for project visualization and workflow automation)
+        *   **ClickUp:** (Highly customizable, good for complex projects and diverse teams)
+        *   **Considerations:** Choose a platform that fits your team's size, project complexity, and preferred workflow. Look for features like task assignment, deadlines, progress tracking, and reporting.
+    *   **2. Task Management Focused:**
+        *   **Trello:** (Simple, Kanban-style boards, good for visualizing workflows and tracking progress)
+        *   **Todoist:** (Simple and effective for individual and team task management)
+        *   **Considerations:** These are good for smaller projects or for managing individual tasks within a larger project.
+*   **B. Version Control (for code and documents):**
+    *   **1. Git and GitHub/GitLab/Bitbucket:** (

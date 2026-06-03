@@ -1,0 +1,34 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   advertising_17_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=443
+Latency:   11705 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make my home more energy efficient?
+
+── Response ────────────────────────────────────────────────────────
+If you want real impact (not just feel‑good tweaks), focus on the handful of changes that actually move your energy bill and comfort.
+
+Start with the building envelope. Most homes leak far more air than people realize, and that’s where easy wins live. Air sealing—around attic hatches, recessed lighting, duct penetrations, and window/door frames—often delivers a faster payback than anything else. Pair that with proper insulation, especially in the attic and, if accessible, walls or crawlspaces. It’s not glamorous, but it’s foundational.
+
+Next, tackle heating and cooling, since that’s usually the biggest energy draw. If your system is older, a modern heat pump (for both HVAC and water heating) can cut energy use dramatically while improving comfort. Even before replacing equipment, make sure ducts are sealed and balanced; leaky ducts can waste 20–30% of your conditioned air. A smart thermostat helps, but only after the underlying system is efficient.
+
+Windows are tricky. Full replacements are expensive and often don’t pay back quickly unless your current windows are truly poor. In many cases, sealing, weatherstripping, or adding window inserts gets you most of the benefit at a fraction of the cost.
+
+Appliances and lighting are more incremental but still worth doing. LEDs everywhere, and when replacing appliances, go high-efficiency (look for Energy Star or equivalent). Induction cooktops are also more efficient and safer than gas.
+
+If you want to go further, consider solar—but only after you’ve reduced your baseline consumption. Otherwise you’re just sizing a bigger, more expensive system than you need. Pairing solar with a home battery can add resilience and let you optimize around time-of-use pricing if your utility supports it.
+
+Two higher-leverage moves that people overlook:
+- Get a professional energy audit with blower door testing. It turns guesswork into a prioritized plan.
+- Shift behavior with data. Real-time energy monitoring (like Sense or utility-provided tools) can surface unexpected drains and change usage patterns quickly.
+
+If you want, I can help you prioritize based on your home type, climate, and budget—those variables change the ROI quite a bit.

@@ -1,0 +1,20 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_high_ses_user_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=18 out=1020
+Latency:   13272 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+write a cover letter
+
+── Response ────────────────────────────────────────────────────────
+Confidentiality.* Crucial at the senior level.
+    *   *Brevity.* Senior people are busy; they appreciate concise writing.
+
+8.  **Final Output Generation:** (

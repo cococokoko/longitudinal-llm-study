@@ -1,0 +1,44 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_low_ses_customer_5
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=30 out=645
+Latency:   4153 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a prompt to ai to make me a great story for kids
+
+── Response ────────────────────────────────────────────────────────
+Okay, here's a prompt you can give to an AI to generate a great story for kids, keeping in mind the customer supports extended family and manages many household responsibilities:
+
+**Prompt:**
+
+"Write a heartwarming children's story about a young child named [Child's Name] who lives in a busy household with their [Relationship to child, e.g., grandparents, aunts, uncles, cousins]. [Child's Name] loves to help out around the house and is known for being [Positive personality trait, e.g., kind, creative, helpful, brave].
+
+The story should center around a challenge the family faces, perhaps a [Specific challenge, e.g., broken toy, upcoming family event, problem with the garden, a sick family member].  [Child's Name] uses their [Positive personality trait] and resourcefulness to help solve the problem.
+
+Include details about the importance of family, working together, and the joy of helping others. The story should have a positive message about overcoming obstacles and the love within a close-knit family. The setting should be a [Describe the setting, e.g., cozy home, bustling neighborhood, sunny garden]. The tone should be [Describe the tone, e.g., cheerful, encouraging, adventurous, gentle].  Make sure the story is appropriate for children aged [Age range, e.g., 4-8 years old].  Give the story a title."
+
+**Tips for using the prompt:**
+
+*   **Fill in the bracketed information:** Be specific! The more details you provide, the better the AI can tailor the story to your needs.
+*   **Experiment:** Try different personality traits, challenges, and settings to see what kind of stories the AI generates.
+*   **Iterate:** If the first story isn't quite right, revise the prompt and try again. You can ask the AI to change specific elements, like the ending or the characters' actions.
+*   **Consider adding a moral:** You can explicitly ask the AI to include a specific moral or lesson at the end of the story.
+*   **Ask for illustrations:** Some AI tools can also generate images to accompany the story. If your tool has this capability, you can add a request for illustrations to the prompt.
+
+**Example using the prompt:**
+
+"Write a heartwarming children's story about a young child named Maya who lives in a busy household with her grandparents, aunts, uncles, and cousins. Maya loves to help out around the house and is known for being creative.
+
+The story should center around a challenge the family faces, perhaps a problem with the garden. Maya uses her creativity and resourcefulness to help solve the problem.
+
+Include details about the importance of family, working together, and the joy of helping others. The story should have a positive message about overcoming obstacles and the love within a close-knit family. The setting should be a sunny garden. The tone should be cheerful. Make sure the story is appropriate for children aged 5-7 years old. Give the story a title."
+
+Good luck, and have fun creating your story!

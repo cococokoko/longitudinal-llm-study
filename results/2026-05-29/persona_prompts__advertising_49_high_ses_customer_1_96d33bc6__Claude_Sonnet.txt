@@ -1,0 +1,49 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=32 out=323
+Latency:   6387 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Here are some effective ways to improve your home WiFi:
+
+## Router Placement
+- Place it in a **central location** in your home
+- Keep it **elevated** and away from walls/floors
+- Avoid interference from microwaves, cordless phones, and baby monitors
+
+## Hardware Upgrades
+- **Upgrade your router** if it's more than 3-4 years old
+- Consider a **mesh network system** (Eero, Google Nest, Orbi) for larger homes
+- Add a **WiFi extender/repeater** for dead zones
+
+## Settings Optimization
+- Use the **5GHz band** for faster speeds (shorter range)
+- Use the **2.4GHz band** for better range/penetration
+- **Change your WiFi channel** to avoid neighbor interference (channels 1, 6, or 11 for 2.4GHz)
+- Update your **router firmware**
+
+## Reduce Interference
+- Keep router away from other electronics
+- Use a **wired connection (ethernet)** for devices that need reliability
+
+## Security & Performance
+- Use **WPA3 or WPA2** security
+- Limit devices on the network
+- **Restart your router** periodically
+
+## Check Your Plan
+- Verify you're getting the speeds you're **paying for**
+- Consider upgrading your **internet plan** if needed
+
+Would you like more detail on any of these steps?

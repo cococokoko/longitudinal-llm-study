@@ -1,0 +1,31 @@
+Wave:      2026-05-31
+Dataset:   global_opinion_qa
+Item ID:   goqa_ef5127cb8e3a
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=209.0 out=83.0
+Latency:   1909 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: All South Koreans are happy Or there is large gap among each person
+
+Options:
+A. Very large gap among each person
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. All people are happy
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

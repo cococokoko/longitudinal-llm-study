@@ -1,0 +1,44 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_high_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=361
+Latency:   5532 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+write a cover letter
+
+── Response ────────────────────────────────────────────────────────
+:::writing block
+[Your Name]  
+[Your Address]  
+[City, State, ZIP]  
+[Email Address]  
+[Phone Number]  
+[Date]
+
+[Recipient Name]  
+[Law Firm / Organization Name]  
+[Address]  
+[City, State, ZIP]
+
+Dear [Recipient Name],
+
+I am writing to express my interest in [position title] at [organization name]. As a senior attorney with extensive experience at a well-established law firm, I have developed a strong track record of delivering strategic legal counsel, managing complex matters, and achieving favorable outcomes for clients across [practice area(s), e.g., corporate litigation, M&A, regulatory compliance].
+
+Over the course of my career, I have advised clients ranging from [types of clients, e.g., multinational corporations to emerging businesses], handling high-stakes matters that require both rigorous legal analysis and practical business judgment. My experience includes leading litigation strategy, negotiating sophisticated transactions, and collaborating cross-functionally with stakeholders to mitigate risk and advance organizational goals.
+
+I am particularly drawn to [organization name] because of its [specific attribute—reputation, practice strength, mission, or recent work]. I am confident that my background in [relevant specialty], combined with my commitment to client service and mentorship, would allow me to contribute meaningfully to your team.
+
+I would welcome the opportunity to discuss how my experience aligns with your needs. Thank you for your time and consideration.
+
+Sincerely,  
+[Your Name]
+:::
+
+If you want, I can tailor this to a specific role, firm, or practice area so it doesn’t read generic.

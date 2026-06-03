@@ -1,0 +1,94 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_user_6
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=682
+Latency:   10028 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+Nice, I’ll keep this practical and high-signal.
+
+At your level (busy, travel-heavy, limited patience for fiddly logging), the “best” apps are the ones that balance accuracy with low friction. The stack I see work best is usually one fitness tracker + one nutrition app + (optionally) a wearable.
+
+Here are the strongest options right now:
+
+Fitness tracking (activity, recovery, performance)
+
+- Whoop  
+  Best for: recovery, sleep, strain management  
+  Why it stands out: it’s passive and very good at telling you when to push vs back off. Great if you don’t want to think, just follow guidance.  
+  Tradeoff: subscription, no screen, less useful for detailed workout tracking like lifting programs.
+
+- Apple Fitness + Apple Watch  
+  Best for: all-around ecosystem, simplicity  
+  Why: seamless, good enough at everything, integrates with tons of apps.  
+  Tradeoff: recovery insights aren’t as deep as Whoop.
+
+- Garmin (Forerunner / Fenix + Garmin Connect)  
+  Best for: data depth, endurance training  
+  Why: extremely detailed metrics, great for running, cycling, VO2 max tracking.  
+  Tradeoff: UI can feel clunky; overkill unless you like data.
+
+- Strava  
+  Best for: motivation + social accountability  
+  Why: turns workouts into something social/competitive.  
+  Tradeoff: not a full health platform on its own.
+
+Nutrition tracking
+
+- MacroFactor  
+  Best overall right now  
+  Why: uses your weight + intake to dynamically adjust calorie targets; very low mental load once set up. No “guilt” nudging.  
+  Tradeoff: paid, but worth it.
+
+- MyFitnessPal  
+  Best for: largest food database, simplicity  
+  Why: easiest to log almost anything, especially when traveling.  
+  Tradeoff: more manual, less intelligent guidance.
+
+- Carbon Diet Coach  
+  Best for: structured coaching feel  
+  Why: gives macro targets and adjusts weekly based on progress.  
+  Tradeoff: slightly more rigid than MacroFactor.
+
+- Lose It!  
+  Best for: lightweight, fast logging  
+  Why: quicker and simpler than MyFitnessPal.  
+  Tradeoff: fewer advanced features.
+
+All-in-one / behavior-focused
+
+- Noom  
+  Best for: behavior change, psychology  
+  Why: good if consistency is your main issue.  
+  Tradeoff: less precise on performance optimization.
+
+- Levels (if you’re into CGMs)  
+  Best for: glucose tracking  
+  Why: useful for understanding how you personally respond to food.  
+  Tradeoff: expensive, arguably overkill unless you’re very data-driven.
+
+What I’d actually recommend for you
+
+If you want a clean, executive-friendly setup with minimal friction:
+
+- Whoop (or Apple Watch if you already have one)  
+- MacroFactor for nutrition
+
+That combo gives you:
+- automatic recovery + sleep insight
+- adaptive nutrition without overthinking
+- very little daily effort
+
+If you’re more performance-oriented (training for something):
+- Garmin + MacroFactor + Strava
+
+If you want, I can tailor this further based on your goals (fat loss, muscle gain, just staying sharp, etc.) and how much time you realistically want to spend tracking.

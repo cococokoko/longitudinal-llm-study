@@ -1,0 +1,63 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_19_low_ses_customer_3
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=1024
+Latency:   9607 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+the best books to learn Design and Analysis of Algorithms I in 2023
+
+── Response ────────────────────────────────────────────────────────
+Okay, knowing you're starting a new job and likely have limited free time, I'll recommend books that are:
+
+*   **Clear and Concise:** Easy to understand without being overly verbose.
+*   **Practical:** Focus on concepts that are widely applicable.
+*   **Manageable:** Not overwhelming in scope, allowing you to make progress even with a busy schedule.
+*   **Up-to-date:** Reflecting current best practices and common algorithms.
+
+Here are my recommendations for learning Design and Analysis of Algorithms I in 2023, keeping your situation in mind:
+
+**Top Recommendation (Beginner-Friendly & Practical):**
+
+1.  **"Introduction to Algorithms" (CLRS) by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein (often called "CLRS" or "The Big Book")**
+
+    *   **Why it's good:** This is the gold standard. It's comprehensive, well-structured, and covers a vast range of algorithms and data structures. It's a great reference.
+    *   **Considerations:** It's a large book. You don't need to read it cover-to-cover. Focus on the core topics (see below). It can be dense at times, so you might need to supplement with online resources.
+    *   **Focus Areas (for your situation):**
+        *   **Part I: Foundations:** (Chapters 1-5) Asymptotic notation (Big O, Big Omega, Big Theta), basic data structures (arrays, linked lists, stacks, queues), and recursion.
+        *   **Part II: Sorting and Order Statistics:** (Chapters 6-9) Heapsort, Quicksort, Merge sort, and related concepts.
+        *   **Part III: Data Structures:** (Chapters 10-12) Hash tables, binary search trees, and red-black trees (if time permits).
+        *   **Part IV: Graph Algorithms:** (Chapters 22-25) Breadth-first search (BFS), Depth-first search (DFS), topological sort, minimum spanning trees (Prim's and Kruskal's), and shortest paths (Dijkstra's and Bellman-Ford).
+
+**Alternative/Supplementary Books (More Focused or Easier to Digest):**
+
+2.  **"Algorithms" by Robert Sedgewick and Kevin Wayne**
+
+    *   **Why it's good:** This book is known for its clear explanations, practical examples, and focus on implementation. It's available in Java and Python versions. It's a great choice if you prefer a more hands-on approach.
+    *   **Considerations:** It might not be as mathematically rigorous as CLRS, but it's excellent for understanding the core concepts and how to implement them.
+    *   **Focus Areas:** Similar to CLRS, but with a stronger emphasis on implementation.
+
+3.  **"Algorithm Design Manual" by Steven S. Skiena**
+
+    *   **Why it's good:** This book is known for its practical approach and focus on problem-solving. It includes a "war stories" section with real-world examples. It's a good choice if you want to learn how to apply algorithms to solve problems.
+    *   **Considerations:** It's less theoretical than CLRS, but it's still a valuable resource.
+    *   **Focus Areas:** Algorithm design techniques (divide and conquer, dynamic programming, greedy algorithms), graph algorithms, and NP-completeness.
+
+**Online Resources (Essential for Supplementing Your Learning):**
+
+*   **MIT OpenCourseware (6.006 Introduction to Algorithms):**  This is a free online course based on CLRS.  It includes lecture videos, problem sets, and solutions.  Excellent for reinforcing concepts.
+*   **Coursera/edX/Udacity Courses:** Search for courses on "Algorithms" or "Data Structures and Algorithms."  Many are based on the books I've recommended.  Look for courses with good reviews and a practical focus.
+*   **LeetCode/HackerRank:** These platforms are invaluable for practicing algorithm implementation and problem-solving.  Start with easy problems and gradually work your way up.  This is where you'll solidify your understanding.
+*   **YouTube Channels:** Search for channels like "Abdul Bari," "Tushar Roy - Coding Made Simple," or "freeCodeCamp.org" for video explanations of algorithms and data structures.
+
+**How to Approach Learning with a New Job:**
+
+1.  **Prioritize:** Focus on the core topics first (as outlined above). Don't try to learn everything at once.
+2.  **Consistency is Key:** Even 30 minutes a day is better than nothing.  Try

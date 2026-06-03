@@ -1,0 +1,57 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=16 out=411
+Latency:   7914 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Depends a bit on your team’s size and how you work, but there’s a solid set of go-to tools that cover most needs. Here’s a practical breakdown by function so you can mix and match:
+
+Communication  
+- Slack: still the default for many teams; great for channels, integrations, async chat  
+- Microsoft Teams: better if you’re already in the Microsoft 365 ecosystem  
+- Discord: surprisingly effective for smaller or more informal teams
+
+Video & meetings  
+- Zoom: reliable, simple, widely used  
+- Google Meet: easy if you’re already using Google Workspace  
+- Teams (again): solid all-in-one if you want chat + meetings together
+
+Project & task management  
+- Asana: structured, good for tracking complex projects  
+- Trello: simple, visual kanban boards  
+- ClickUp: very flexible “all-in-one,” but can feel heavy  
+- Jira: best for software/dev teams
+
+Docs & knowledge sharing  
+- Google Workspace (Docs, Sheets, Drive): real-time collaboration, very smooth  
+- Notion: combines docs, wiki, and lightweight project management  
+- Confluence: more structured knowledge base (especially with Jira)
+
+Whiteboarding & brainstorming  
+- Miro: excellent for workshops, brainstorming, diagrams  
+- FigJam: simpler, great if you’re already using Figma
+
+File storage & sharing  
+- Google Drive: easiest for collaboration  
+- Dropbox: solid for file syncing  
+- OneDrive: best within Microsoft ecosystem
+
+Async video & updates  
+- Loom: record quick videos instead of meetings  
+- Claap or similar tools: for async walkthroughs and feedback
+
+If you want a simple, effective stack for most teams:
+- Slack + Zoom + Google Workspace + Asana + Miro
+
+If you prefer fewer tools and tighter integration:
+- Microsoft Teams + OneDrive + Planner/To Do
+
+If you tell me your team size and type of work (e.g., startup, dev team, marketing, etc.), I can suggest a more tailored setup.

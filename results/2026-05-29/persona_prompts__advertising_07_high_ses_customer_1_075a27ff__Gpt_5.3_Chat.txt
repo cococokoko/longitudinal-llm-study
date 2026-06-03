@@ -1,0 +1,36 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   advertising_07_high_ses_customer_1
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=589
+Latency:   14239 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Effective ways to reduce household energy use.
+
+── Response ────────────────────────────────────────────────────────
+If you’re looking for impact rather than just feel‑good tweaks, it helps to think in terms of where energy actually goes: heating/cooling, hot water, and big appliances dominate most homes. Lighting and gadgets matter, but they’re usually second‑order.
+
+Start with the building itself. Air sealing and insulation almost always outperform fancy tech. Sealing leaks around windows, doors, attic penetrations, and ductwork can cut heating/cooling demand noticeably. If your home has an attic, bringing insulation up to modern standards (often R‑38 to R‑60 depending on climate) is one of the highest‑return upgrades. If you’re in a mixed or cold climate, a professional energy audit with a blower door test is worth it—it turns guesswork into a prioritized plan.
+
+Heating and cooling next. If you have an older furnace, boiler, or AC, upgrading to a high‑efficiency heat pump (air‑source or ground‑source) can reduce energy use substantially, especially when paired with good insulation. Short of replacement, a smart or well‑programmed thermostat (setbacks at night/when away) and regular maintenance (clean filters, tuned systems) deliver steady savings. Also, don’t overlook zoning or simply closing off rarely used rooms if your system allows it.
+
+Hot water is often the second‑largest load. Lowering the tank setpoint slightly (while staying within safe limits), insulating hot water pipes, and installing low‑flow showerheads can cut usage without much lifestyle impact. If you’re due for replacement, heat pump water heaters are far more efficient than standard electric resistance tanks.
+
+Appliances: prioritize the big, always‑on ones. An efficient refrigerator and a heat pump dryer can make a real dent over time. Wash clothes in cold water when possible; modern detergents are designed for it. Run dishwashers and laundry with full loads and use eco modes—they’re slower but optimized for less energy and water.
+
+Lighting is the easy win. If you still have any incandescent or halogen bulbs, swap them for LEDs—they use a fraction of the energy and last much longer. After that, lighting becomes a smaller slice of the pie.
+
+Electronics and standby power are modest but easy to tidy up. Smart power strips for entertainment centers or home offices can eliminate “vampire” loads. It won’t transform your bill, but it’s low effort.
+
+If you want to go further, consider rooftop solar or a community solar subscription if your area supports it. Pairing solar with electrification (heat pump HVAC and water heating) tends to maximize the benefit.
+
+Finally, behavior still matters: moderate thermostat settings, shorter showers, and being mindful about peak usage times (if you’re on time‑of‑use pricing) all add up.
+
+If you share your climate zone and what your current heating system is, I can suggest a more tailored, high‑ROI sequence.

@@ -1,0 +1,53 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_user_2
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=30 out=605
+Latency:   10922 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Balancing a business and parenting is already a lot—so the goal with security isn’t perfection, it’s reducing risk in ways that are practical and sustainable.
+
+Here are the core practices that give you the most protection for the least ongoing effort:
+
+Start with access control.  
+Only give people access to the data and systems they actually need. Use separate accounts for each person (no shared logins), and turn on multi-factor authentication (MFA) everywhere you can—email, banking, cloud storage, accounting tools. This one step alone blocks a huge percentage of real-world attacks.
+
+Use a password manager.  
+Trying to remember strong, unique passwords is unrealistic. A password manager lets you generate and store them securely. It also saves time, which matters when you’re juggling responsibilities.
+
+Keep software updated automatically.  
+Most attacks exploit known vulnerabilities. Turn on automatic updates for your operating system, apps, plugins, and antivirus so you’re not manually tracking them.
+
+Back up your data—regularly and automatically.  
+Follow the “3-2-1 rule” if you can: 3 copies of your data, 2 different storage types, 1 offsite (like cloud backup). Make sure backups run on a schedule without you needing to think about it.
+
+Secure your devices.  
+Use device encryption (built into modern Windows, macOS, iOS, Android). Set devices to lock automatically. If a laptop or phone is lost, encryption prevents data from being easily accessed.
+
+Be cautious with email and links.  
+Phishing is still the most common attack. Don’t click unexpected links or download attachments without verifying the sender. If something feels even slightly off (urgent tone, payment request, login alert), double-check through another channel.
+
+Use secure Wi-Fi practices.  
+Protect your business Wi-Fi with a strong password and modern encryption (WPA3 or WPA2). Avoid handling sensitive work on public Wi-Fi unless you’re using a trusted VPN.
+
+Limit and organize sensitive data.  
+Only collect and store what you truly need. The less sensitive data you keep, the less there is to protect. Periodically delete old or unnecessary records.
+
+Train anyone who helps you.  
+If you have employees, contractors, or even occasional helpers, make sure they know the basics: strong passwords, spotting phishing, and how to handle customer data.
+
+Have a simple incident plan.  
+Know in advance what you’ll do if something goes wrong: who to contact (bank, IT support), how to restore backups, and how to notify affected customers if needed. It saves time and panic later.
+
+If you want a very lean setup for a small business, a good baseline stack is: password manager + MFA everywhere + automatic backups + device encryption. That covers most real risks without adding much daily overhead.
+
+If you tell me what kind of business you run (online store, consulting, childcare services, etc.), I can tailor this into a very simple, realistic setup you could put in place in a weekend.

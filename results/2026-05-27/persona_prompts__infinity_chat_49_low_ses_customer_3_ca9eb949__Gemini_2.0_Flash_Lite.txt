@@ -1,0 +1,28 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_49_low_ses_customer_3
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=31 out=207
+Latency:   2217 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give an example of a life goal related to self-image?
+
+── Response ────────────────────────────────────────────────────────
+Okay, considering the customer is new to a job and on probation, a relevant life goal related to self-image could be:
+
+**"To cultivate a strong sense of professional confidence and competence, allowing me to navigate my new role successfully and build a positive reputation within the company, even during my probationary period."**
+
+This goal is relevant because:
+
+*   **It addresses the new job:** It directly relates to the customer's current situation.
+*   **It focuses on self-image:** It emphasizes building confidence and a positive reputation, which are key aspects of self-image.
+*   **It's achievable and measurable (to some extent):** Success can be gauged by positive feedback, successfully completing tasks, and feeling more comfortable and capable in the role.
+*   **It's timely:** It's relevant to the probationary period and the early stages of the job.
+*   **It's positive and proactive:** It focuses on building something rather than avoiding failure.

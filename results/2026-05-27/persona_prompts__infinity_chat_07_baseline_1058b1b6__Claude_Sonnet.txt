@@ -1,0 +1,130 @@
+Wave:      2026-05-27
+Dataset:   persona_prompts
+Item ID:   infinity_chat_07_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=1024
+Latency:   20471 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Rare tools or methods in cyber security
+
+── Response ────────────────────────────────────────────────────────
+# Rare & Underutilized Tools/Methods in Cybersecurity
+
+## 🔍 Reconnaissance & OSINT
+
+| Tool/Method | Description |
+|-------------|-------------|
+| **Maltego CE** | Advanced relationship mapping for OSINT |
+| **SpiderFoot HX** | Automated OSINT with 200+ data sources |
+| **FOCA** | Metadata extraction from public documents |
+| **Recon-ng** | Web reconnaissance framework (often overlooked) |
+| **theHarvester** | Email/subdomain harvesting |
+| **Creepy** | Geolocation OSINT from social media |
+
+---
+
+## 🛠️ Exploitation & Testing
+
+### Rarely Used Frameworks
+```
+- Covenant C2      → .NET-based command & control
+- Sliver C2        → Go-based alternative to Cobalt Strike
+- Merlin           → HTTP/2 C2 framework
+- Havoc Framework  → Modern Cobalt Strike alternative
+- Villain          → Multi-session handler
+```
+
+### Niche Techniques
+- **VLAN Hopping** — Switch spoofing attacks
+- **KARMA Attacks** — Rogue AP exploitation
+- **RowHammer** — RAM bit-flipping exploitation
+- **Speculative Execution Attacks** — Meltdown/Spectre variants
+- **Fault Injection** — Hardware-level glitching
+
+---
+
+## 🔐 Cryptography & Steganography
+
+```bash
+# Steganography tools rarely used in pentests
+- Steghide        # Hide data in images/audio
+- OpenStego       # Watermarking + data hiding
+- SilentEye       # GUI steganography
+- snow            # Whitespace steganography
+- stegsnow        # ASCII steganography
+```
+
+---
+
+## 📡 Network & Protocol Attacks
+
+### Uncommon Methods
+| Method | Use Case |
+|--------|----------|
+| **BGP Hijacking** | Route manipulation |
+| **QUIC Protocol Analysis** | HTTP/3 traffic inspection |
+| **CoAP Exploitation** | IoT protocol attacks |
+| **Zigbee/Z-Wave Attacks** | Smart home device exploitation |
+| **CAN Bus Attacks** | Automotive network exploitation |
+| **PROFINET Attacks** | Industrial control systems |
+
+### Tools
+```
+- GNURadio         → Software-defined radio attacks
+- HackRF One       → RF signal analysis/replay
+- Scapy            → Custom packet crafting
+- Yersinia         → Layer 2 protocol attacks
+- Loki             → ICMP/DNS covert channels
+```
+
+---
+
+## 🧠 Advanced Evasion Techniques
+
+```
+1. Process Hollowing      → Inject code into legitimate processes
+2. Heaven's Gate          → 32/64-bit switching to evade EDR
+3. Direct Syscalls        → Bypass user-mode hooks
+4. PPID Spoofing          → Parent process ID manipulation
+5. ETW Patching           → Blind Windows event tracing
+6. AMSI Bypass            → Disable antimalware scan interface
+7. Timestomping           → Modify file timestamps
+8. Living off the Land    → Use built-in OS tools (LOLBins)
+```
+
+---
+
+## 🏭 ICS/SCADA Security
+
+```bash
+# Rarely explored attack surface
+- Redpoint         # ICS-specific Nmap scripts
+- PLCScan          # PLC device scanner
+- ISF              # Industrial exploitation framework
+- s7scan           # Siemens S7 scanner
+- ModbusPal        # Modbus protocol simulator
+```
+
+---
+
+## 🔬 Forensics & Anti-Forensics
+
+### Rare Forensic Tools
+```
+- Volatility3       → Memory forensics framework
+- Rekall            → Memory analysis (Google)
+- bulk_extractor    → High-speed data carving
+- Autopsy plugins   → Often underutilized
+- CAINE             → Linux forensics distro
+- Plaso/log2timeline → Timeline analysis
+```
+
+### Anti-Forensics Methods
+```
+- Secure deletion (srm, shred)
+- Encrypted containers (VeraCrypt hidden volumes)
+-

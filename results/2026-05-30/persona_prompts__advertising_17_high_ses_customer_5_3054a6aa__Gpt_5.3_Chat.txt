@@ -1,0 +1,40 @@
+Wave:      2026-05-30
+Dataset:   persona_prompts
+Item ID:   advertising_17_high_ses_customer_5
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=484
+Latency:   8656 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make my home more energy efficient?
+
+── Response ────────────────────────────────────────────────────────
+You don’t need a full retrofit to get meaningful gains—most homes have a handful of high-impact inefficiencies you can tackle in layers, from quick wins to deeper upgrades.
+
+Start with the “leaks,” because wasted conditioned air is usually the biggest silent cost. Air sealing (around windows, doors, attic penetrations, ducts) and adding or upgrading insulation—especially in the attic—often delivers the fastest ROI. A blower door test or energy audit will pinpoint exactly where you’re losing energy instead of guessing.
+
+Next, look at your systems. If your HVAC is more than ~10–15 years old, upgrading to a high-efficiency heat pump (which handles both heating and cooling) can significantly cut energy use, especially if paired with smart zoning or a programmable thermostat. If you already have decent equipment, tuning and duct sealing can still produce noticeable savings.
+
+Hot water is another big lever. A heat pump water heater uses far less electricity than traditional electric models. If you have gas, modern high-efficiency units or hybrid systems can still reduce costs. Insulating hot water lines and lowering the setpoint slightly (without compromising comfort) are easy wins.
+
+Windows are often overestimated. Full replacement is expensive and slow to pay back unless they’re in very poor condition. You’ll usually get better returns first from sealing, weatherstripping, and adding low-e storm windows or window films.
+
+Then layer in smarter controls and load management. Smart thermostats, occupancy sensors, and even simple habits like shifting heavy appliance use to off-peak hours can reduce both consumption and cost. If your utility offers demand response programs, those are worth exploring.
+
+Lighting and appliances are incremental but easy: LED everywhere, and when replacing appliances, prioritize high-efficiency models. The gains are smaller individually but add up.
+
+If you’re thinking longer term, rooftop solar plus battery storage can hedge against energy price volatility and outages—but it only really pays off once you’ve reduced your baseline demand. Otherwise, you’re just financing excess capacity.
+
+Finally, treat this like a capital allocation problem:  
+- Audit first (data over intuition)  
+- Prioritize by payback period and comfort impact  
+- Bundle improvements to reduce labor costs  
+- Capture incentives (federal, state, utility rebates can materially change ROI)
+
+If you want, I can sketch a prioritized plan based on your home type, climate, and current systems.

@@ -1,0 +1,61 @@
+Wave:      2026-05-26_t0
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_user_2
+Model:     google/gemini-2.0-flash-lite-001 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=26 out=1024
+Latency:   10001 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Okay, as a senior attorney, you understand the legal and ethical implications of data breaches. Here's a breakdown of best practices for data security in small businesses, tailored to your experience and perspective:
+
+**I. Foundational Principles & Legal Considerations (Your Expertise):**
+
+*   **Compliance is Paramount:**
+    *   **Know the Laws:**  This is where your legal expertise shines.  Small businesses must comply with a complex web of regulations, including:
+        *   **HIPAA (if handling Protected Health Information):**  Strict requirements for healthcare providers and businesses that handle their data.
+        *   **GDPR (if dealing with EU citizens' data):**  Even if the business isn't based in the EU, if it targets EU customers, GDPR applies.
+        *   **CCPA/CPRA (California Consumer Privacy Act/Rights Act):**  Similar to GDPR, but for California residents.  Other states are enacting similar laws (e.g., Virginia, Colorado).
+        *   **Other State-Specific Laws:**  Many states have their own data breach notification laws and industry-specific regulations.
+        *   **Federal Laws:**  Consider the FTC Act (prohibiting unfair and deceptive practices), the Gramm-Leach-Bliley Act (for financial institutions), and others.
+    *   **Data Minimization:**  Collect and retain only the data necessary for legitimate business purposes.  This reduces the attack surface and potential liability.
+    *   **Data Retention Policies:**  Establish clear policies for how long data is stored and when it's securely deleted.  This is crucial for compliance and risk management.
+    *   **Privacy Policies and Terms of Service:**  Ensure these are clear, concise, and compliant with all applicable laws.  They should accurately reflect data collection, use, and sharing practices.
+    *   **Incident Response Plan:**  Develop a comprehensive plan for responding to data breaches, including notification procedures, legal counsel involvement, and communication strategies.
+*   **Risk Assessment & Due Diligence:**
+    *   **Identify Vulnerabilities:**  Conduct regular risk assessments to identify potential threats and vulnerabilities in the business's systems, processes, and data handling practices.
+    *   **Vendor Management:**  Thoroughly vet third-party vendors who have access to sensitive data.  Ensure they have adequate security measures in place and include data security clauses in contracts.
+    *   **Insurance:**  Consider cyber liability insurance to mitigate financial losses from data breaches.
+*   **Legal Counsel's Role:**
+    *   **Advise on Compliance:**  Provide ongoing legal advice on data security best practices and compliance with relevant laws.
+    *   **Review Contracts:**  Review contracts with vendors and customers to ensure data security provisions are adequate.
+    *   **Manage Breach Response:**  Lead the legal response to data breaches, including notification obligations, regulatory investigations, and potential litigation.
+
+**II. Technical & Operational Best Practices (Practical Implementation):**
+
+*   **Access Control:**
+    *   **Least Privilege:**  Grant employees only the minimum access necessary to perform their job duties.
+    *   **Strong Passwords & Multi-Factor Authentication (MFA):**  Enforce strong password policies and require MFA for all critical systems and accounts.
+    *   **Regular Account Audits:**  Review user accounts and access permissions regularly to ensure they are still appropriate.
+*   **Data Encryption:**
+    *   **Encryption at Rest:**  Encrypt sensitive data stored on devices (laptops, servers, external drives) and in the cloud.
+    *   **Encryption in Transit:**  Use secure protocols (e.g., HTTPS, TLS/SSL) to encrypt data transmitted over networks.
+*   **Network Security:**
+    *   **Firewalls:**  Implement firewalls to protect the network from unauthorized access.
+    *   **Intrusion Detection/Prevention Systems (IDS/IPS):**  Consider using IDS/IPS to monitor network traffic for malicious activity.
+    *   **Secure Wi-Fi:**  Use strong passwords and encryption for Wi-Fi networks.  Consider separate guest networks.
+    *   **Regular Security Audits:**  Conduct regular vulnerability scans and penetration testing to identify and address security weaknesses.
+*   **Endpoint Security:**
+    *   **Antivirus/Anti-Malware Software:**  Install and maintain up-to-date antivirus and anti-malware software on all devices.
+    *   **Endpoint Detection and Response (EDR):**  Consider EDR solutions for more advanced threat detection and response capabilities.
+    *   **Device Management:**  Implement policies for managing and securing devices, including laptops, smartphones, and tablets.
+*   **Data Backup & Disaster Recovery:**
+    *   **Regular Backups:**  Implement a robust backup strategy that includes regular backups of all critical data.
+    *   

@@ -1,0 +1,36 @@
+Wave:      2026-05-29
+Dataset:   persona_prompts
+Item ID:   infinity_chat_43_high_ses_customer_3
+Model:     openai/gpt-5.3-chat-20260303 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35 out=585
+Latency:   12445 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Are there moral facts or is it all relative?
+
+── Response ────────────────────────────────────────────────────────
+Short answer: it’s not all relative, but neither is morality a simple list of objective facts in the way physics is. The most defensible position today is some form of moral realism with a modest epistemology—there are stance‑independent moral truths, but our access to them is indirect, fallible, and mediated by human practices.
+
+A few landmarks to situate the options:
+
+- **Robust moral realism**: there are objective moral facts (e.g., reasons not to cause gratuitous suffering) that don’t depend on anyone’s attitudes. Contemporary versions often tie these facts to reasons or to features like well-being, agency, or flourishing (e.g., Scanlon, Parfit). The attraction is explanatory: it makes sense of genuine moral disagreement and of the felt authority of moral claims.
+
+- **Constructivism**: moral truths are not “out there” independently, but are what would be endorsed under suitably idealized rational procedures (Kantian or contractualist variants). This preserves normativity without positing spooky properties: wrongness is what no one could reasonably reject, or what follows from constitutive standards of agency.
+
+- **Quasi-realism/expressivism**: moral claims express attitudes but can mimic realist talk (truth, error, disagreement). This accounts for the practicality of moral language and avoids metaphysical commitments, but it must work hard to explain why some moral judgments seem correct independent of our attitudes.
+
+- **Relativism**: truth is indexed to cultures or frameworks. It captures variation, but struggles with cross-cultural criticism and moral reform—if “right” just means “approved here,” condemning entrenched injustice elsewhere (or in our own past) becomes conceptually awkward.
+
+Why many philosophers resist full relativism: it undercuts the intelligibility of disagreement (are parties really disagreeing or just reporting local norms?), weakens reasons for reform, and has trouble explaining why we treat some practices as wrong even when widely accepted.
+
+Why many also resist a naïve realism: the epistemology is hard. We don’t have a moral “detector,” and reasonable people disagree. Hence the turn to **hybrid views**: objective reasons exist, but our access is through reflective equilibrium, empirical facts about human beings, and constraints of rational agency. On such views, claims like “unjustified suffering counts against an action” are not mere conventions, yet our judgments about what is justified remain revisable.
+
+If you want a compact synthesis: **there are objective normative constraints grounded in reasons (often connected to agency and welfare), but their application is underdetermined and historically situated, so convergence is partial and fallible**.
+
+If you’re interested, we can press on specific fault lines—e.g., whether reasons are irreducibly normative or reducible to natural facts, or how to make sense of persistent disagreement without collapsing into relativism.
