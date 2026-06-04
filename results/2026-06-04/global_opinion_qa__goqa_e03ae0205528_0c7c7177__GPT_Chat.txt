@@ -4,9 +4,9 @@ Item ID:   goqa_e03ae0205528
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=142.0 out=103.0
+Tokens:    in=142 out=103
 Latency:   2792 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Most people consider both freedom and security to be important, but if you had to choose between them, which one would you consider more important?
@@ -23,4 +23,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.8, "B": 0.15, "C": 0.05, "D": 0.0, "E": 0.0}

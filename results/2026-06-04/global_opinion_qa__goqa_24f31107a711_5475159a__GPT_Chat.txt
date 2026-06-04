@@ -4,9 +4,9 @@ Item ID:   goqa_24f31107a711
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=123.0 out=77.0
+Tokens:    in=123 out=77
 Latency:   1128 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Do you think the formal education system in your country provides people with the skills and training they need:
@@ -24,4 +24,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.05, "B": 0.05, "C": 0.9, "D": 0.0}

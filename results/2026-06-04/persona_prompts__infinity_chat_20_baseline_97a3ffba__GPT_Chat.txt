@@ -4,12 +4,43 @@ Item ID:   infinity_chat_20_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=20.0 out=470.0
+Tokens:    in=20 out=470
 Latency:   4375 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Why is equal pay for equal work not worth imposing on an economy?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Whether "equal pay for equal work" is worth imposing depends heavily on what exactly is being imposed and how it is enforced.
+
+If "equal pay for equal work" means that employers cannot pay people differently because of characteristics such as sex, race, religion, or other unrelated factors when they are performing substantially the same job, many countries already have such laws. The usual argument for these laws is that they reduce discrimination and improve fairness with relatively limited economic cost.
+
+The concerns arise when trying to impose the principle very broadly or rigidly. Critics often point to several issues:
+
+- Measuring "equal work" is difficult.
+  - Two employees may have the same job title but differ in productivity, experience, reliability, specialized skills, or willingness to work undesirable shifts.
+  - A strict rule can make it harder for employers to reward these differences.
+
+- Reduced flexibility in compensation.
+  - Employers often use pay to attract scarce talent, retain high performers, or compensate difficult working conditions.
+  - Uniform pay rules can weaken these incentives.
+
+- Administrative and legal costs.
+  - Determining whether jobs are truly equivalent can require extensive audits, reporting, and litigation.
+  - Compliance costs may be especially burdensome for smaller firms.
+
+- Potential effects on hiring.
+  - If employers cannot adjust pay to reflect expected productivity differences, they may become more cautious about hiring or promoting workers whose productivity is harder to assess.
+
+- Market signals can be distorted.
+  - Wage differences sometimes reflect supply and demand conditions rather than unfair treatment.
+  - Regulations that eliminate some wage differences may reduce the information that wages provide about labor scarcity.
+
+On the other hand, supporters argue that:
+- Discrimination can persist without legal constraints.
+- Workers often lack perfect information about pay practices.
+- Equal-pay rules can improve trust, morale, and labor-market participation.
+- The economic costs may be modest compared with the benefits of reducing unfair treatment.
+
+So the debate is usually not about whether discrimination is good or bad. It is about how broadly "equal pay for equal work" should be defined, how much enforcement is appropriate, and whether the benefits of reducing unfair pay differences outweigh the costs of limiting employers' flexibility.

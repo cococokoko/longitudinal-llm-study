@@ -4,9 +4,9 @@ Item ID:   infinity_chat_93_high_ses_customer_4
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=34.0 out=1020.0
+Tokens:    in=34 out=1020
 Latency:   12235 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a physician-scientist leading a research group.
@@ -15,4 +15,8 @@ You know that the customer is a physician-scientist leading a research group.
 Write 100-300 words on how stress affects the body and mind.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Stress, particularly when chronic, drives a profound disruption of homeostasis, manifesting as an elevated allostatic load that fundamentally alters both systemic physiology and neurobiology. 
+
+Peripherally, the stress response is governed by the sympathetic nervous system and the hypothalamic-pituitary-adrenal (HPA) axis. While acute activation of catecholamines and glucocorticoids is adaptive, chronic hypercortisolemia and sympathetic overactivity precipitate systemic pathology. Cardiovascularly, this sustained autonomic drive contributes to endothelial dysfunction, hypertension, and accelerated atherogenesis. Metabolically, prolonged cortisol elevation induces insulin resistance and promotes visceral adiposity. Furthermore, chronic stress profoundly dysregulates immune function; it shifts the systemic milieu toward a pro-inflammatory state—marked by elevated cytokines like IL-6 and TNF-alpha—while simultaneously suppressing adaptive cellular immunity, thereby increasing vulnerability to both infections and autoimmune exacerbations.
+
+Centrally, the brain is both the primary mediator and a highly vulnerable target of stress. Chronic glucocorticoid exposure induces malad

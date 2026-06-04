@@ -4,9 +4,9 @@ Item ID:   goqa_8d815be68a94
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=164.0 out=659.0
+Tokens:    in=164 out=659
 Latency:   6235 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How much respect is there for individual human rights nowadays in this country?
@@ -25,4 +25,12 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.16,
+  "B": 0.43,
+  "C": 0.29,
+  "D": 0.08,
+  "E": 0.03,
+  "F": 0.01,
+  "G": 0.00
+}

@@ -4,9 +4,9 @@ Item ID:   goqa_8d9c2c20b361
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=137.0 out=43.0
+Tokens:    in=137 out=43
 Latency:   1396 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How have your perceptions about religious values changed from the experience of Hurricane Maria?
@@ -23,4 +23,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.08, "B": 0.12, "C": 0.20, "D": 0.52, "E": 0.08}

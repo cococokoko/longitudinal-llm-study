@@ -4,9 +4,9 @@ Item ID:   goqa_c90eb248fd8f
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=178.0 out=59.0
+Tokens:    in=178 out=59
 Latency:   1798 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How easy is modern contraceptives use to access for women in your community?
@@ -25,4 +25,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.35, "B": 0.35, "C": 0.15, "D": 0.07, "E": 0.05, "F": 0.02, "G": 0.01}

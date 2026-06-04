@@ -4,9 +4,9 @@ Item ID:   goqa_bc0746ffc7de
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=128.0 out=352.0
+Tokens:    in=128 out=352
 Latency:   5445 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How have your perceptions about political culture and political system changed from the experience of Hurricane Maria?
@@ -23,4 +23,10 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.0,
+  "B": 0.0,
+  "C": 0.0,
+  "D": 0.0,
+  "E": 1.0
+}

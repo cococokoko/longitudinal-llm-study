@@ -4,9 +4,9 @@ Item ID:   goqa_fb38a8f65ba5
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=261.0 out=332.0
+Tokens:    in=261 out=332
 Latency:   2841 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.
@@ -33,4 +33,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.03, "B": 0.02, "C": 0.03, "D": 0.05, "E": 0.08, "F": 0.12, "G": 0.15, "H": 0.17, "I": 0.15, "J": 0.12, "K": 0.05, "L": 0.0, "M": 0.03}

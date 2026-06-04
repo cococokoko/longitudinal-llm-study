@@ -4,12 +4,31 @@ Item ID:   advertising_44_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=17.0 out=324.0
+Tokens:    in=17 out=324
 Latency:   3122 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the safest ways to travel during a pandemic?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+The safest way to travel during a pandemic depends on how the disease spreads, how severe it is, and current public health guidance. In general, you can reduce risk by combining several precautions:
+
+- Stay informed about current recommendations from public health authorities in your departure and destination locations.
+- Avoid traveling if you are sick or have symptoms consistent with the disease in question.
+- Stay up to date with recommended vaccinations or preventive medications, if available.
+- Choose less crowded travel options when possible.
+- Wear a well-fitting mask in crowded indoor settings, on public transportation, or when transmission levels are high.
+- Improve ventilation whenever possible, such as by opening windows or spending time outdoors rather than in crowded indoor spaces.
+- Wash your hands regularly or use hand sanitizer when soap and water are not available.
+- Avoid touching your face with unwashed hands.
+- Maintain physical distance from others when practical, especially in crowded areas.
+- Consider testing before and after travel if recommended by health authorities or if you have been exposed to illness.
+- Follow local health requirements and advisories at your destination.
+
+Relative risk can vary by mode of travel:
+- Private vehicle travel with members of your household is often lower risk than crowded public transportation.
+- Air travel can be relatively safe when ventilation systems are functioning properly, but airports, boarding areas, and crowded flights may increase exposure risk.
+- Trains, buses, and ships may involve prolonged close contact with others, making crowding and ventilation important factors.
+
+Because recommendations differ between pandemics and can change over time, it is best to consult current guidance for the specific disease and locations involved.

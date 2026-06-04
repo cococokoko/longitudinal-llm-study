@@ -4,9 +4,9 @@ Item ID:   goqa_bf87be75daeb
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=171.0 out=630.0
+Tokens:    in=171 out=630
 Latency:   7405 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Our society is well integrated
@@ -27,4 +27,14 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.05,
+  "B": 0.08,
+  "C": 0.12,
+  "D": 0.15,
+  "E": 0.20,
+  "F": 0.15,
+  "G": 0.12,
+  "H": 0.08,
+  "I": 0.05
+}

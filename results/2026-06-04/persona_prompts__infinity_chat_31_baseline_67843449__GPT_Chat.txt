@@ -4,12 +4,64 @@ Item ID:   infinity_chat_31_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=20.0 out=455.0
+Tokens:    in=20 out=455
 Latency:   3898 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What is the best investment if I invest 60,000 euros?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+The best investment for €60,000 depends on your goals, time horizon, risk tolerance, and whether you may need the money in the near future. There is no single "best" investment for everyone.
+
+Here are some common approaches:
+
+- Long-term growth (10+ years)
+  - Broad stock market index funds or ETFs are often a strong option.
+  - Examples include globally diversified ETFs that track thousands of companies worldwide.
+  - Historically, diversified stock investments have provided higher returns than cash or bonds over long periods, though values can fluctuate significantly.
+
+- Balanced approach (5–10 years)
+  - A mix of stocks and bonds, such as:
+    - 60% global stock ETFs
+    - 40% bond ETFs
+  - Lower risk than investing entirely in stocks, but typically lower expected returns.
+
+- Lower-risk investing (1–5 years)
+  - High-yield savings accounts
+  - Money market funds
+  - Government bonds or short-term bond funds
+  - Suitable if you may need the money relatively soon.
+
+- Real estate
+  - Direct property investment or real estate investment trusts (REITs).
+  - Can provide income and diversification but may involve higher costs and lower liquidity.
+
+Example allocations for €60,000:
+
+- Growth-oriented:
+  - €54,000 in a global stock ETF
+  - €6,000 kept as cash/emergency reserve
+
+- Balanced:
+  - €36,000 global stock ETF
+  - €24,000 bond ETF
+
+- Conservative:
+  - €20,000 stock ETF
+  - €40,000 savings accounts, money market funds, or bonds
+
+Before investing:
+- Maintain an emergency fund (often 3–6 months of expenses).
+- Pay off high-interest debt if you have any.
+- Consider taxes, investment fees, and your country of residence.
+- Diversify rather than placing the entire amount in a single stock or speculative asset.
+
+If you tell me:
+- Your age
+- Country
+- Investment horizon (e.g., 3, 10, or 20 years)
+- Whether you might need the money soon
+- Your comfort with risk (low, medium, high)
+
+I can suggest a more specific allocation.

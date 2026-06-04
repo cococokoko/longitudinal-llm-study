@@ -4,12 +4,137 @@ Item ID:   infinity_chat_33_baseline
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=34.0 out=1024.0
+Tokens:    in=34 out=1024
 Latency:   24129 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## Prerequisites
+
+### What You'll Need
+- Microsoft Surface (any model with Windows)
+- Dolphin Emulator installed (from [dolphin-emu.org](https://dolphin-emu.org))
+- Wii game files (ROMs you legally own)
+- Patience for touch control setup
+
+---
+
+## Step 1: Install Dolphin
+
+1. Go to **dolphin-emu.org/download**
+2. Download the **Windows x64** version
+3. Run the installer or extract the portable version
+4. Launch **Dolphin.exe**
+
+---
+
+## Step 2: Enable Touch-Friendly Settings in Windows
+
+Before opening Dolphin:
+
+- Go to **Settings → Bluetooth & devices → Touchpad**
+- Make sure touchpad sensitivity is set to your preference
+- Enable **Windows on-screen keyboard**:
+  - Search **"On-Screen Keyboard"** in Start menu
+  - Or press **Win + Ctrl + O**
+  - Pin it to the taskbar for easy access
+
+---
+
+## Step 3: Configure Dolphin Controls
+
+### Open Controller Settings
+1. Open Dolphin
+2. Click **Controllers** in the top toolbar
+3. Under **Wiimote 1**, select **Emulated Wiimote**
+4. Click **Configure**
+
+### Map Touchpad Gestures and Keyboard Keys
+
+In the Wiimote configuration window, map buttons to keyboard keys you can tap on the on-screen keyboard:
+
+| Wii Button | Suggested Key |
+|------------|---------------|
+| A Button | Z |
+| B Button | X |
+| 1 Button | Q |
+| 2 Button | W |
+| D-Pad Up | Arrow Up |
+| D-Pad Down | Arrow Down |
+| D-Pad Left | Arrow Left |
+| D-Pad Right | Arrow Right |
+| Home | H |
+| Plus (+) | Enter |
+| Minus (-) | Backspace |
+| Shake (Nunchuk) | S |
+
+> Click each button field in Dolphin, then tap the corresponding key on your on-screen keyboard to assign it.
+
+---
+
+## Step 4: Configure Motion Controls (IR/Pointer)
+
+Since you don't have a real Wiimote, map the IR pointer to your **mouse/touchpad**:
+
+1. In the Wiimote config window
+2. Find **IR** section
+3. Set it to **Mouse** or use the cursor mapping
+4. Your touchpad cursor will act as the Wiimote pointer
+
+### Touchpad Tips
+- **Single tap** = left click (A button if mapped)
+- **Two-finger scroll** = can be mapped to tilt/motion
+- Use **touchpad sensitivity settings** in Windows for better control
+
+---
+
+## Step 5: Set Up the On-Screen Keyboard for Gaming
+
+### Positioning Tips
+- Resize the on-screen keyboard to be **smaller**
+- Dock it to the **bottom of the screen**
+- Use **Snap layouts** (Win + Z) to put Dolphin on top half, keyboard on bottom
+
+### Alternative: Touch Keyboard
+- The **Touch Keyboard** (tablet mode keyboard) may be more finger-friendly
+- Access via the taskbar system tray keyboard icon
+
+---
+
+## Step 6: Graphics Settings for Surface Performance
+
+Optimize Dolphin for Surface hardware:
+
+1. Go to **Graphics** in Dolphin toolbar
+2. **Backend**: DirectX 11 or DirectX 12
+3. **Internal Resolution**: Start at **1x Native** for performance
+4. **Enhancements**: Keep minimal for smoother gameplay
+
+### General Settings
+- Go to **Config → General**
+- Enable **Dual Core** if your Surface supports it
+- Set CPU clock to **100%**
+
+---
+
+## Step 7: Loading and Playing a Game
+
+1. Click **Open** or add your game folder via **Config → Paths**
+2. Double-click your game in the list
+3. Use your **on-screen keyboard** for button presses
+4. Use your **touchpad** for pointer/IR movement
+
+---
+
+## Tips for Better Experience
+
+| Tip | Details |
+|-----|---------|
+| **Use a Bluetooth controller** | Much easier than touch - Xbox or PS controllers work great |
+| **Tablet mode** | May improve touch responsiveness |
+| **Save states** | Use frequently since

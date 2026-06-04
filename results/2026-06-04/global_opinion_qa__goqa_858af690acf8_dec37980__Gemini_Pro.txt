@@ -4,9 +4,9 @@ Item ID:   goqa_858af690acf8
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=260.0 out=806.0
+Tokens:    in=260 out=806
 Latency:   8694 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.
@@ -33,4 +33,18 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.35,
+  "B": 0.08,
+  "C": 0.08,
+  "D": 0.06,
+  "E": 0.15,
+  "F": 0.07,
+  "G": 0.06,
+  "H": 0.05,
+  "I": 0.03,
+  "J": 0.05,
+  "K": 0.02,
+  "L": 0.0,
+  "M": 0.0
+}

@@ -4,12 +4,19 @@ Item ID:   advertising_30_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=13.0 out=1020.0
+Tokens:    in=13 out=1020
 Latency:   9448 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What's the best way to start learning coding from scratch?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Starting to learn coding from scratch can feel overwhelming, but the best approach is to break it down into manageable, actionable steps. Here is a step-by-step roadmap to get you started on the right foot.
+
+### Step 1: Figure out *why* you want to code
+Before picking a language, decide what you want to build. This will dictate what you should learn:
+*   **I want to build websites:** Learn **HTML, CSS, and JavaScript**.
+*   **I want to analyze data or build AI:** Learn **Python**.
+*   **I want to make mobile apps:** Learn **Swift** (for iOS) or **Kotlin** (for Android), or **Dart/Flutter** (for both).
+*   **I want to make video games:** Learn **C#**

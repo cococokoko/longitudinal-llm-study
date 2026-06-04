@@ -4,9 +4,9 @@ Item ID:   goqa_d7fc920071c5
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=188.0 out=774.0
+Tokens:    in=188 out=774
 Latency:   6856 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all
@@ -27,4 +27,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.54, "B": 0.34, "C": 0.08, "D": 0.03, "E": 0.005, "F": 0.003, "G": 0.002}

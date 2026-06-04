@@ -4,9 +4,9 @@ Item ID:   infinity_chat_63_low_ses_customer_4
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: low_ses
 SES level: low  role: customer
-Tokens:    in=38.0 out=487.0
+Tokens:    in=38 out=487
 Latency:   8193 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer works shifts at a local hospital as a patient care aide.
@@ -15,4 +15,53 @@ You know that the customer works shifts at a local hospital as a patient care ai
 Give a numerical example to illustrate the concept of partial derivative.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Partial Derivatives: A Numerical Example
+
+## Setup
+
+Let's use a function that relates to something practical. Suppose your **hourly earnings** depend on two variables:
+
+- **x** = hours worked per week
+- **y** = years of experience
+
+$$f(x, y) = 2x^2 + 3xy + y^2$$
+
+---
+
+## Evaluate at a Specific Point
+
+Let's say you work **x = 40 hours/week** and have **y = 5 years** of experience.
+
+$$f(40, 5) = 2(40)^2 + 3(40)(5) + (5)^2$$
+$$= 2(1600) + 600 + 25 = \mathbf{3225}$$
+
+---
+
+## Calculate the Partial Derivatives
+
+### ∂f/∂x — *How earnings change with hours, holding experience fixed*
+
+$$\frac{\partial f}{\partial x} = 4x + 3y$$
+
+At (40, 5): &nbsp; $4(40) + 3(5) = 160 + 15 = \mathbf{175}$
+
+> ✅ Each **additional hour** worked adds approximately **175 units** to earnings
+
+### ∂f/∂y — *How earnings change with experience, holding hours fixed*
+
+$$\frac{\partial f}{\partial y} = 3x + 2y$$
+
+At (40, 5): &nbsp; $3(40) + 2(5) = 120 + 10 = \mathbf{130}$
+
+> ✅ Each **additional year** of experience adds approximately **130 units** to earnings
+
+---
+
+## Key Idea
+
+| Partial Derivative | Meaning |
+|---|---|
+| ∂f/∂x = 175 | Vary hours → freeze experience |
+| ∂f/∂y = 130 | Vary experience → freeze hours |
+
+**The partial derivative isolates the effect of ONE variable while treating all others as constants.**

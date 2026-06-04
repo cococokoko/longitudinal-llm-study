@@ -4,9 +4,9 @@ Item ID:   goqa_ab4ddf328eeb
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=184.0 out=72.0
+Tokens:    in=184 out=72
 Latency:   1755 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: If ‘yes’, was the loan used for
@@ -26,4 +26,6 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+```json
+{"A": 0.20, "B": 0.25, "C": 0.05, "D": 0.15, "E": 0.18, "F": 0.10, "G": 0.04, "H": 0.03}
+```

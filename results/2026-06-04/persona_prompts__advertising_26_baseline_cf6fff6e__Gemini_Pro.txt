@@ -4,12 +4,20 @@ Item ID:   advertising_26_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=12.0 out=1020.0
+Tokens:    in=12 out=1020
 Latency:   11803 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best practices for data security in small businesses?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Small businesses are prime targets for cybercriminals because they often have valuable data but lack the enterprise-level security budgets of larger corporations. However, you don’t need a massive budget to secure your business. 
+
+Here are the best practices for data security in small businesses, broken down into **Technology, People, and Processes**.
+
+---
+
+### 1. Technological Defenses (The Tools)
+
+*   **Enforce Multi-Factor Authentication (MFA):** This is the single most effective way to prevent unauthorized access

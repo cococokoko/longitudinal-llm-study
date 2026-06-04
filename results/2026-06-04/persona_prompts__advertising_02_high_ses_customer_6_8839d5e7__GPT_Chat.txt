@@ -4,9 +4,9 @@ Item ID:   advertising_02_high_ses_customer_6
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=31.0 out=429.0
+Tokens:    in=31 out=429
 Latency:   3154 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a partner at a major consulting firm.
@@ -15,4 +15,48 @@ You know that the customer is a partner at a major consulting firm.
 Best skin routine for dry skin.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+For dry skin, the goal is to gently cleanse, replenish moisture, and protect the skin barrier. A simple, consistent routine is usually more effective than a complicated one.
+
+Morning:
+- Gentle cleanser (or rinse with lukewarm water if your skin is very dry)
+  - Look for a fragrance-free, hydrating cleanser.
+- Moisturizer
+  - Choose a cream containing ingredients such as ceramides, glycerin, hyaluronic acid, squalane, or shea butter.
+- Sunscreen
+  - Broad-spectrum SPF 30 or higher every day.
+  - Many moisturizing sunscreens work well for dry skin.
+
+Evening:
+- Gentle cleanser
+  - Avoid harsh soaps, scrubs, and overly hot water.
+- Moisturizer
+  - Apply while skin is slightly damp.
+  - For very dry skin, use a richer cream or balm.
+
+Optional additions:
+- Hydrating serum
+  - Hyaluronic acid, glycerin, or panthenol can help increase hydration.
+- Barrier-supporting products
+  - Ceramides, niacinamide (often well tolerated), and colloidal oatmeal can help strengthen the skin barrier.
+- Occlusive layer at night
+  - A thin layer of petrolatum-based ointment over moisturizer can help lock in moisture if your skin is extremely dry.
+
+Things to avoid:
+- Over-exfoliation (especially daily scrubs)
+- Alcohol-heavy toners
+- Fragranced products if your skin is sensitive
+- Long, hot showers
+
+Example routine:
+- AM: Hydrating cleanser → Ceramide moisturizer → SPF 30+
+- PM: Hydrating cleanser → Hydrating serum (optional) → Rich moisturizer
+
+If your dryness is accompanied by significant redness, itching, flaking, or cracking, it may be worth consulting a dermatologist, as conditions such as eczema, rosacea, or dermatitis can require specific treatment.
+
+If you tell me:
+- Your age
+- Whether you're in a dry or humid climate
+- Any skin concerns (sensitivity, acne, eczema, redness, etc.)
+- Your budget
+
+I can suggest specific products.

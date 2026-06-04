@@ -4,9 +4,9 @@ Item ID:   infinity_chat_33_high_ses_customer_6
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=44.0 out=616.0
+Tokens:    in=44 out=616
 Latency:   5474 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a partner at a major consulting firm.
@@ -15,4 +15,73 @@ You know that the customer is a partner at a major consulting firm.
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+You can run many Wii games in Dolphin using a Microsoft Surface touchpad and the Windows on-screen keyboard, although the experience varies by game. The key is to map Wii Remote functions to keyboard keys that you can tap on the on-screen keyboard while using the touchpad as a pointer.
+
+Setup in Dolphin:
+
+1. Open Dolphin.
+2. Go to Controllers.
+3. Under "Wii Remotes," set:
+   - Wii Remote 1 → Emulated Wii Remote
+4. Click Configure.
+
+Suggested mapping for a Surface touchpad + on-screen keyboard:
+
+Pointer (Wii Remote IR)
+- Enable "Cursor" or "Point" controls.
+- Map:
+  - Up → Up Arrow
+  - Down → Down Arrow
+  - Left → Left Arrow
+  - Right → Right Arrow
+
+Buttons
+- A → Space
+- B (trigger) → Left Shift
+- 1 → 1
+- 2 → 2
+- Plus (+) → Enter
+- Minus (-) → Backspace
+- Home → H
+
+D-Pad
+- D-Pad Up → W
+- D-Pad Down → S
+- D-Pad Left → A
+- D-Pad Right → D
+
+Nunchuk (if required)
+- Extension → Nunchuk
+- Configure:
+  - Stick Up → I
+  - Stick Down → K
+  - Stick Left → J
+  - Stick Right → L
+  - C → C
+  - Z → Z
+
+Using the Surface touchpad as the Wii pointer:
+- In many Wii games, the easiest approach is to map the Wii IR pointer to mouse movement.
+- In the Emulated Wii Remote configuration, look for the Pointer/IR section and bind mouse movement rather than keyboard directions.
+- Then:
+  - Touchpad movement controls the Wii cursor.
+  - On-screen keyboard provides button presses.
+
+For motion controls:
+Many Wii games require shaking, tilting, or swinging the remote. You can map these to keys:
+
+- Shake X → Q
+- Shake Y → E
+- Shake Z → R
+- Tilt Forward/Back → T / G
+- Tilt Left/Right → F / H
+
+These can be tapped on the on-screen keyboard when needed.
+
+Surface-specific tips:
+- Enable the Windows On-Screen Keyboard (Win + Ctrl + O).
+- Resize and dock it to one side of the screen.
+- Run Dolphin in windowed mode so both Dolphin and the keyboard remain visible.
+- If you have a Surface Pen, some pointer-heavy Wii games are easier with the pen than with the touchpad.
+
+If you tell me the specific Wii game you want to play (for example, Mario Kart Wii, Super Mario Galaxy, Wii Sports, Zelda: Twilight Princess, etc.), I can suggest a control layout tailored to that game.

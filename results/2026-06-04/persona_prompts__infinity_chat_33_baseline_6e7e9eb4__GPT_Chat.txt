@@ -4,12 +4,98 @@ Item ID:   infinity_chat_33_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=26.0 out=545.0
+Tokens:    in=26 out=545
 Latency:   4778 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+You can run Dolphin on a Microsoft Surface using only the touchpad and the Windows on-screen keyboard, but you'll need to map Wii controls to keyboard inputs that are practical without a physical gamepad.
+
+Setup steps:
+
+1. Open Dolphin
+2. Go to:
+   - Controllers
+   - Under "Wii Remotes," set "Emulated Wii Remote" for Wii games.
+   - Click "Configure."
+
+Configure basic Wii Remote controls:
+
+Map buttons to keys that are easy to press on the on-screen keyboard.
+
+Example layout:
+- A = Space
+- B = Left Ctrl
+- 1 = 1
+- 2 = 2
+- Plus = Enter
+- Minus = Backspace
+- Home = H
+
+D-Pad:
+- Up = Up Arrow
+- Down = Down Arrow
+- Left = Left Arrow
+- Right = Right Arrow
+
+Using the touchpad as the Wii pointer:
+
+In the Wii Remote configuration:
+- Find the "IR" (Infrared) section.
+- Set:
+  - Up = Mouse Y-
+  - Down = Mouse Y+
+  - Left = Mouse X-
+  - Right = Mouse X+
+
+This allows the Surface touchpad cursor to act as the Wii pointer.
+
+Configure Nunchuk (if required):
+
+1. In Wii Remote configuration:
+   - Extension → Nunchuk
+2. Map:
+   - Stick Up/Down/Left/Right = WASD
+   - C = C
+   - Z = Z
+
+Using the on-screen keyboard:
+
+- Open the Windows touch keyboard from the taskbar.
+- If keys don't register correctly, try:
+  - Windows Settings → Accessibility → Keyboard → On-Screen Keyboard
+  - Use the full accessibility keyboard instead of the compact touch keyboard.
+
+For games requiring motion controls:
+
+Dolphin can emulate motion.
+
+In Wii Remote configuration:
+- Shake:
+  - X = Q
+  - Y = E
+  - Z = R
+
+- Tilt:
+  - Forward = T
+  - Backward = G
+  - Left = F
+  - Right = H
+
+These keys can then be tapped on the on-screen keyboard.
+
+Potential issue on Surface devices:
+
+Many touchpads don't support moving the cursor while simultaneously pressing virtual keys. If you find pointer movement and button presses difficult at the same time:
+- Enable Dolphin's "Relative Input" options where available.
+- Consider using a Bluetooth mouse, Xbox controller, or a Surface Pen for easier pointer control.
+
+If you tell me:
+- Your Surface model,
+- Whether you're using Windows 10 or 11,
+- And which Wii game you're trying to play,
+
+I can suggest a control layout tailored to that specific game.

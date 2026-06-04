@@ -4,9 +4,9 @@ Item ID:   goqa_c49a2d5ae749
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=110.0 out=131.0
+Tokens:    in=110 out=131
 Latency:   1562 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: I refuse things that bad for me
@@ -22,4 +22,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.0, "B": 0.02, "C": 0.08, "D": 0.9}

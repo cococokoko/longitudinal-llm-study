@@ -4,9 +4,9 @@ Item ID:   goqa_9e81393585c5
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=194.0 out=832.0
+Tokens:    in=194 out=832
 Latency:   8827 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them?:
@@ -27,4 +27,12 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.13,
+  "B": 0.45,
+  "C": 0.23,
+  "D": 0.07,
+  "E": 0.11,
+  "F": 0.01,
+  "G": 0.00
+}

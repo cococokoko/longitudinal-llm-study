@@ -4,12 +4,34 @@ Item ID:   infinity_chat_60_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=16.0 out=271.0
+Tokens:    in=16 out=271
 Latency:   3769 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Explain computational irreducibility like I'm 5.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Imagine you have a magic row of dominoes.
+
+You line them up in a special pattern and ask, "What will the 100th domino look like after they start falling and changing?"
+
+For some things, you can use a shortcut. It's like knowing that if you count by twos, you can quickly figure out what comes next without saying every number.
+
+But computational irreducibility means there is no shortcut.
+
+The only way to know what the 100th domino will look like is to watch:
+- the 1st change,
+- then the 2nd,
+- then the 3rd,
+- and so on,
+all the way to the 100th.
+
+It's like asking, "What happens at the end of a very long story?" Sometimes you can skip ahead. But with a computationally irreducible story, the only way to find out is to read every page in order.
+
+So, computational irreducibility means:
+- Some systems follow simple rules.
+- But even if the rules are simple, the results can be complicated.
+- And there may be no faster way to know what happens than letting the system go through every step itself.
+
+In kid-sized terms: It's when a process is like a surprise machine—you can't peek at the ending; you have to watch it happen one step at a time.

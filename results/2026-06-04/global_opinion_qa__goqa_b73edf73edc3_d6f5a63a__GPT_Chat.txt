@@ -4,9 +4,9 @@ Item ID:   goqa_b73edf73edc3
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=163.0 out=116.0
+Tokens:    in=163 out=116
 Latency:   1503 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: If a woman works outside of the home for money, how likely is it that the following consequences might occur:
@@ -26,4 +26,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.03, "B": 0.17, "C": 0.75, "D": 0.05, "E": 0.0, "F": 0.0}

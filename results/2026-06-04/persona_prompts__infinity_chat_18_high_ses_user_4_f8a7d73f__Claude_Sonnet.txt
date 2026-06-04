@@ -4,9 +4,9 @@ Item ID:   infinity_chat_18_high_ses_user_4
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=32.0 out=309.0
+Tokens:    in=32 out=309
 Latency:   9798 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,20 @@ I am a physician-scientist leading a research group.
 Create a short review of a movie that doesn't exist yet.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Review: *The Half-Life of Dr. Voss* (2024)
+
+★★★★½
+
+Director Mara Okonkwo's quietly devastating film follows a computational biologist who discovers a fundamental error buried in her most celebrated paper — one that has since shaped a decade of drug development.
+
+What could have been a procedural thriller instead becomes something rarer: a meditation on **how science actually feels from the inside**. The lab meetings are unglamorous and accurate. The grant anxiety is almost unbearably recognizable. The protagonist's relationship with her postdoc — built on mutual intellectual debt that neither can quite name — is the most honest depiction of mentorship I've seen on screen.
+
+The film resists easy villains. The error wasn't fraud. It was a Tuesday.
+
+Léa Seydoux is extraordinary in the lead, conveying the specific exhaustion of someone who loves the work and is being slowly consumed by the machinery surrounding it. The retraction scene, shot in a single unbroken take, is devastating precisely because nothing dramatic happens. She just sits with it.
+
+My one criticism: the third act gestures toward redemption a bit too tidily. Real science rarely offers that courtesy.
+
+**Recommended without reservation** — particularly for anyone who has ever stared at a figure at midnight wondering if they've been wrong the whole time.
+
+*Runtime: 118 min. Limited release.*

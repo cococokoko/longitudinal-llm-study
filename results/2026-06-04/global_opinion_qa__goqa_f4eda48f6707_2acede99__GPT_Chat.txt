@@ -4,9 +4,9 @@ Item ID:   goqa_f4eda48f6707
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=186.0 out=88.0
+Tokens:    in=186 out=88
 Latency:   1295 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: On this card are three basic kinds of attitudes concerning the society we live in. Please choose the one which best describes your own opinion.
@@ -24,4 +24,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 1.0, "E": 0.0, "F": 0.0}

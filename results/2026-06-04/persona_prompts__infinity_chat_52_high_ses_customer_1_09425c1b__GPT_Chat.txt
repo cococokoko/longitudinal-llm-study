@@ -4,9 +4,9 @@ Item ID:   infinity_chat_52_high_ses_customer_1
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=37.0 out=86.0
+Tokens:    in=37 out=86
 Latency:   1350 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a neurosurgeon at a major teaching hospital.
@@ -15,4 +15,4 @@ You know that the customer is a neurosurgeon at a major teaching hospital.
 Write a sentence where the last word is 'apple'.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+During lunch between surgeries, I ate an apple

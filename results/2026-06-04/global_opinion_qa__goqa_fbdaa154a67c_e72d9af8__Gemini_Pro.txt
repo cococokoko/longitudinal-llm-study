@@ -4,9 +4,9 @@ Item ID:   goqa_fbdaa154a67c
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=165.0 out=696.0
+Tokens:    in=165 out=696
 Latency:   6567 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: To what degree are you worried about the following situations?
@@ -27,4 +27,12 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.25,
+  "B": 0.20,
+  "C": 0.35,
+  "D": 0.15,
+  "E": 0.03,
+  "F": 0.01,
+  "G": 0.01
+}

@@ -4,12 +4,59 @@ Item ID:   advertising_49_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=13.0 out=448.0
+Tokens:    in=13 out=448
 Latency:   3984 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 How to improve home WiFi?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Improving home Wi‑Fi depends on the cause of the problem, but these steps usually provide the biggest gains:
+
+- Move your router to a central, open location.
+  - Keep it off the floor.
+  - Avoid placing it inside cabinets or behind large objects.
+  - Keep it away from microwaves, cordless phones, and thick walls when possible.
+
+- Restart and update your equipment.
+  - Reboot the router occasionally.
+  - Install the latest router firmware updates.
+
+- Use the 5 GHz or 6 GHz band if available.
+  - 2.4 GHz reaches farther but is slower and more crowded.
+  - 5 GHz and 6 GHz offer higher speeds with less interference, though shorter range.
+
+- Change Wi‑Fi channels.
+  - In crowded apartment buildings, neighboring networks can interfere.
+  - Many routers can automatically select the best channel.
+
+- Upgrade security settings.
+  - Use WPA3 if supported, or WPA2 if not.
+  - Remove unknown devices from the network.
+
+- Reduce congestion.
+  - Disconnect devices you do not use.
+  - Enable Quality of Service (QoS) if your router supports it to prioritize video calls or gaming.
+
+- Add coverage if needed.
+  - For larger homes, a mesh Wi‑Fi system often works better than a single router.
+  - A Wi‑Fi extender can help, though mesh systems generally provide a better experience.
+
+- Use wired connections for demanding devices.
+  - Connect desktop PCs, gaming consoles, TVs, or workstations via Ethernet when possible.
+
+- Consider upgrading your router.
+  - If your router is more than 4–6 years old, a newer Wi‑Fi 6 or Wi‑Fi 6E router may improve performance.
+
+- Test your speeds.
+  - Run speed tests near the router and in problem areas.
+  - If speeds are poor even next to the router, the issue may be your internet service rather than Wi‑Fi.
+
+If you tell me:
+- The size of your home/apartment,
+- Your router model,
+- Your internet speed plan,
+- Whether the problem is slow speeds, weak signal, gaming lag, or dropped connections,
+
+I can suggest more specific improvements.

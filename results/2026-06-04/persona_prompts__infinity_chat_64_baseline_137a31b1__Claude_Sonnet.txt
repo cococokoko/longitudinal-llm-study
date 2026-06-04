@@ -4,12 +4,22 @@ Item ID:   infinity_chat_64_baseline
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=30.0 out=305.0
+Tokens:    in=30 out=305
 Latency:   9441 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# TOEFL vs. IELTS: Expert Guidance for International Students
+
+Here is a draft paragraph:
+
+---
+
+When choosing between the TOEFL and IELTS, international students should consider several key factors to make the most strategic decision for their academic goals. The **TOEFL iBT** (Test of English as a Foreign Language) is administered entirely online and is widely preferred by North American universities, emphasizing academic English through reading, listening, speaking, and writing sections that test your ability to integrate information across multiple sources. The **IELTS** (International English Language Testing System), by contrast, offers both Academic and General Training versions, is accepted globally — particularly favored by UK, Australian, and Canadian institutions — and includes a face-to-face speaking component that some test-takers find more natural and less intimidating. From a practical standpoint, students who are comfortable with computer-based testing and academic argumentation often perform stronger on the TOEFL, while those who excel in conversational fluency and prefer a more interactive format may find the IELTS a better fit. **My core recommendation** is to research the specific score requirements of your target institutions first, then take a practice test for both exams to identify which format aligns with your strengths before committing to one.
+
+---
+
+Would you like me to adjust the **tone, length, or focus** of this paragraph?

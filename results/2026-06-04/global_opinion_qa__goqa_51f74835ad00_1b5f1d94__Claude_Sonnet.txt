@@ -4,9 +4,9 @@ Item ID:   goqa_51f74835ad00
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=208.0 out=59.0
+Tokens:    in=208 out=59
 Latency:   1972 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Do you think that this country’s government should or should not have the right to do the following: Collect information about anyone living in this country without their knowledge
@@ -25,4 +25,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.04, "B": 0.08, "C": 0.25, "D": 0.55, "E": 0.05, "F": 0.02, "G": 0.01}

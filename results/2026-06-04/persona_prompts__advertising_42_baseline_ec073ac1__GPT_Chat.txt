@@ -4,12 +4,96 @@ Item ID:   advertising_42_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=17.0 out=586.0
+Tokens:    in=17 out=586
 Latency:   4594 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best apps for tracking fitness and nutrition?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+The best fitness and nutrition tracking app depends on your goals, budget, and how much detail you want. Here are some of the top options:
+
+For nutrition tracking
+
+• MacroFactor
+  - Excellent for tracking calories and macros
+  - Uses your weight trends to estimate your metabolism and adjust targets
+  - Strong food database and barcode scanning
+  - Subscription required
+
+• Cronometer
+  - Best for detailed nutrient tracking
+  - Tracks vitamins, minerals, and other micronutrients
+  - Popular among athletes and people with specific dietary goals
+  - Free version is quite capable
+
+• MyFitnessPal
+  - One of the largest food databases
+  - Easy barcode scanning and meal logging
+  - Integrates with many fitness apps and devices
+  - Some features require a premium subscription
+
+• Lose It!
+  - User-friendly and focused on weight management
+  - Good food database and goal-setting tools
+  - Often less overwhelming than MyFitnessPal
+
+For fitness tracking
+
+• Strava
+  - Great for running and cycling
+  - Excellent GPS tracking and social features
+  - Popular with endurance athletes
+
+• Garmin Connect
+  - Best if you use a Garmin watch
+  - Comprehensive training, recovery, and health metrics
+  - Free with Garmin devices
+
+• Apple Fitness / Apple Health
+  - Strong ecosystem for iPhone and Apple Watch users
+  - Integrates activity, workouts, and health data
+
+• Fitbit
+  - Good for general activity, sleep, and health tracking
+  - Easy-to-understand metrics and trends
+
+For combining fitness and nutrition
+
+• MacroFactor + Apple Health, Garmin, or Fitbit
+  - One of the strongest combinations for serious tracking
+
+• MyFitnessPal
+  - Tracks both food and exercise in one place
+  - Broad device integration
+
+• Lifesum
+  - Attractive interface
+  - Combines nutrition, habits, and activity tracking
+  - Good for users who want guidance rather than deep analytics
+
+For strength training
+
+• Strong
+  - Simple and effective workout logging
+  - Tracks sets, reps, and progress over time
+
+• Hevy
+  - Popular strength-training tracker
+  - Includes social and community features
+
+• Fitbod
+  - Generates workout recommendations based on equipment and recovery
+  - Subscription-based
+
+Recommendations by goal
+
+• Weight loss: MacroFactor, Lose It!, or MyFitnessPal
+• Muscle gain: MacroFactor + Strong or Hevy
+• Endurance sports: Strava + Garmin Connect
+• Detailed nutrition analysis: Cronometer
+• General health and habits: Fitbit or Apple Health
+• Beginner-friendly all-in-one solution: MyFitnessPal or Lifesum
+
+If you tell me your main goal (weight loss, muscle gain, running, general health, etc.) and whether you're on iPhone or Android, I can narrow it down further.

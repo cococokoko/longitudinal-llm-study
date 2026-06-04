@@ -4,9 +4,9 @@ Item ID:   goqa_feca555f13ec
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=224.0 out=59.0
+Tokens:    in=224 out=59
 Latency:   1746 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Some people say that nowadays it is impossible to get a job without wasta whilst others are persuaded that posts are attributed according to qualifications. Through the examples that you personally encountered with recently, you see this as…
@@ -25,4 +25,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.15, "B": 0.25, "C": 0.30, "D": 0.10, "E": 0.10, "F": 0.07, "G": 0.03}

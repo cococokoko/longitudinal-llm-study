@@ -4,12 +4,66 @@ Item ID:   advertising_26_baseline
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=19.0 out=413.0
+Tokens:    in=19 out=413
 Latency:   8249 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best practices for data security in small businesses?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Data Security Best Practices for Small Businesses
+
+## Foundation Basics
+
+- **Use strong, unique passwords** for all accounts
+- **Enable multi-factor authentication (MFA)** everywhere possible
+- **Keep software updated** - patches fix known vulnerabilities
+- **Use reputable antivirus/anti-malware** software
+
+## Access Control
+
+- Give employees **only the access they need** (principle of least privilege)
+- **Remove access immediately** when employees leave
+- Maintain an **inventory of who has access** to what systems
+- Use a **password manager** rather than shared passwords
+
+## Data Protection
+
+- **Encrypt sensitive data** both stored and in transit
+- **Regular backups** following the 3-2-1 rule:
+  - 3 copies of data
+  - 2 different storage types
+  - 1 offsite/cloud backup
+- Know **what data you actually have** and where it lives
+
+## Network Security
+
+- Separate **guest WiFi from business networks**
+- Use a **firewall**
+- Consider a **VPN** for remote workers
+- Secure your router with a strong password
+
+## Human Element (Often Overlooked)
+
+- Train employees to **recognize phishing emails**
+- Create a clear **incident response plan**
+- Establish written **security policies**
+- Run occasional **simulated phishing tests**
+
+## Practical Priorities
+
+| Priority | Action |
+|----------|--------|
+| High | MFA on email and banking |
+| High | Regular backups |
+| Medium | Employee training |
+| Medium | Vendor security review |
+
+## Worth Considering
+
+- **Cyber liability insurance**
+- **Compliance requirements** specific to your industry (HIPAA, PCI-DSS)
+- Annual **security assessments**
+
+Would you like more detail on any specific area?

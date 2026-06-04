@@ -4,9 +4,9 @@ Item ID:   infinity_chat_33_low_ses_customer_1
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: low_ses
 SES level: low  role: customer
-Tokens:    in=57.0 out=327.0
+Tokens:    in=57 out=327
 Latency:   8782 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer works full-time in a fast food job with an unpredictable schedule.
@@ -15,4 +15,43 @@ You know that the customer works full-time in a fast food job with an unpredicta
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need First
+- Dolphin Emulator installed (from dolphin-emu.org)
+- Wii game ROMs (legally obtained from games you own)
+- Your Surface model (affects performance)
+
+---
+
+## Setting Up Dolphin for Touch Input
+
+### Enable On-Screen Keyboard Compatibility
+1. Open Dolphin
+2. Go to **Options → Controller Settings**
+3. Select **Emulated Wiimote** for GC Pad or Wii controls
+
+### Configure Touchpad Controls
+1. In Controller Settings, click **Configure** next to your controller
+2. Map touchpad gestures to buttons:
+   - **Tap** → A button
+   - **Two-finger tap** → B button
+   - **Swipe** → D-pad directions
+
+---
+
+## Practical Tips for Surface
+
+- **Enable Tablet Mode** in Windows settings for easier touch access
+- Use **Windows on-screen keyboard** (search OSK in Start menu)
+- Consider the **Dolphin touchscreen layout** under graphics settings
+- Lower graphics settings if performance is slow
+
+---
+
+## Honest Limitations to Know
+- Touch controls for Wii games can feel awkward
+- A **Bluetooth Wiimote** would work much better
+- A **USB controller** is another good option
+
+Would you like help with a specific game or control mapping?

@@ -4,9 +4,9 @@ Item ID:   goqa_1a02375c20f6
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=206.0 out=64.0
+Tokens:    in=206 out=64
 Latency:   1926 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How about people from other countries coming here to work. Which one of the following do you think the government should do?
@@ -25,4 +25,6 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+```json
+{"A": 0.08, "B": 0.45, "C": 0.35, "D": 0.02, "E": 0.07, "F": 0.02, "G": 0.01}
+```

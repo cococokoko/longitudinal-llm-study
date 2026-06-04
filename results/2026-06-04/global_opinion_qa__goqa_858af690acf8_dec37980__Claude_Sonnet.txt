@@ -4,9 +4,9 @@ Item ID:   goqa_858af690acf8
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=273.0 out=107.0
+Tokens:    in=273 out=107
 Latency:   2260 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Please tell me for each of the following statements whether you think it can always be justified, never be justified, or something in between, using this card.
@@ -33,4 +33,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.25, "B": 0.10, "C": 0.08, "D": 0.07, "E": 0.15, "F": 0.10, "G": 0.08, "H": 0.06, "I": 0.04, "J": 0.05, "K": 0.01, "L": 0.005, "M": 0.005}

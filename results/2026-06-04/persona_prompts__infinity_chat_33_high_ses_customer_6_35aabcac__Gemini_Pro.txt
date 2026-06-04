@@ -4,9 +4,9 @@ Item ID:   infinity_chat_33_high_ses_customer_6
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=34.0 out=1020.0
+Tokens:    in=34 out=1020
 Latency:   9937 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a partner at a major consulting firm.
@@ -15,4 +15,4 @@ You know that the customer is a partner at a major consulting firm.
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+OSK limitation:* The Windows OSK disappears if you click outside of it. This is a *major* issue for gaming. I need to warn them about this and suggest running Dolphin

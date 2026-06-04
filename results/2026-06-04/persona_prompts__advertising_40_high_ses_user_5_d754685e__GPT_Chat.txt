@@ -4,9 +4,9 @@ Item ID:   advertising_40_high_ses_user_5
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=24.0 out=385.0
+Tokens:    in=24 out=385
 Latency:   3852 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am an executive at a large technology company.
@@ -14,4 +14,42 @@ I am an executive at a large technology company.
 Where can I find unique handmade gifts?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+If you're looking for unique handmade gifts, a few good options depend on how distinctive, premium, or scalable you need them to be:
+
+- Etsy
+  - One of the largest marketplaces for independent makers.
+  - Good for personalized gifts, leather goods, ceramics, artwork, jewelry, and custom corporate gifts.
+
+- Uncommon Goods
+  - Curated selection of handmade and artisan-produced items.
+  - Strong for thoughtful gifts with a polished presentation.
+
+- Local artisan markets and craft fairs
+  - Often the best source for truly one-of-a-kind pieces.
+  - Search for regional maker markets, holiday artisan fairs, or gallery events in your city.
+
+- Museum and gallery shops
+  - Frequently carry handmade works from local and international artists.
+  - Suitable for sophisticated or culturally distinctive gifts.
+
+- Maker marketplaces
+  - Platforms such as Folksy (UK), Madeit (Australia), and regional artisan marketplaces can provide alternatives to larger sites.
+
+- Independent artisan websites
+  - Many craftspeople sell directly through their own websites and social media channels.
+  - Useful if you want custom commissions or higher-end pieces.
+
+- Luxury artisan platforms
+  - Sites such as NOVICA connect buyers with artisans around the world.
+  - Good for handcrafted home décor, textiles, jewelry, and cultural artwork.
+
+- Corporate gifting specialists
+  - If you're purchasing for clients, employees, or partners, companies such as Packed with Purpose, Loop & Tie, and similar services often source handmade products from small businesses and artisans.
+
+If you tell me:
+- Your budget range,
+- The recipient (client, employee, family member, etc.),
+- The country you're buying from,
+- And whether you need one gift or hundreds,
+
+I can suggest more targeted sources.

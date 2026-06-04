@@ -4,9 +4,9 @@ Item ID:   goqa_65fe2272cd6b
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=189.0 out=64.0
+Tokens:    in=189 out=64
 Latency:   2120 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: I am going to ask a number of questions related to the current government’s performance. How would you evaluate the performance of the current government in…?
@@ -27,4 +27,6 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+```json
+{"A": 0.03, "B": 0.15, "C": 0.25, "D": 0.35, "E": 0.10, "F": 0.10, "G": 0.02}
+```

@@ -4,12 +4,89 @@ Item ID:   advertising_26_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=18.0 out=699.0
+Tokens:    in=18 out=699
 Latency:   5696 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best practices for data security in small businesses?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Data security is critical for small businesses because they are often targeted by cybercriminals but may have fewer resources than larger organizations. The most effective approach is to combine technology, policies, and employee awareness.
+
+Key best practices include:
+
+• Use strong authentication
+  - Require strong, unique passwords for all accounts.
+  - Use a password manager to generate and store passwords.
+  - Enable multi-factor authentication (MFA) wherever possible, especially for email, banking, cloud services, and administrative accounts.
+
+• Keep software updated
+  - Regularly update operating systems, applications, browsers, and firmware.
+  - Enable automatic updates when practical.
+  - Replace unsupported software and hardware.
+
+• Back up data regularly
+  - Follow the 3-2-1 rule: keep 3 copies of data, on 2 different media types, with 1 copy stored offsite or in the cloud.
+  - Test backups periodically to ensure they can be restored.
+  - Protect backups from ransomware by making some backups immutable or offline.
+
+• Train employees
+  - Educate staff about phishing emails, social engineering, suspicious links, and safe browsing.
+  - Conduct regular security awareness training.
+  - Establish clear procedures for reporting suspicious activity.
+
+• Control access to data
+  - Apply the principle of least privilege: employees should only have access to the data and systems they need.
+  - Remove access promptly when employees leave or change roles.
+  - Review user permissions regularly.
+
+• Secure devices and networks
+  - Use reputable antivirus or endpoint protection software.
+  - Enable device encryption on laptops, phones, and desktops.
+  - Secure Wi-Fi with strong encryption (WPA2 or WPA3) and strong passwords.
+  - Separate guest Wi-Fi from business systems.
+
+• Protect sensitive data
+  - Identify what sensitive data you collect and store.
+  - Encrypt sensitive data both in transit and at rest.
+  - Minimize data collection and retention where possible.
+  - Securely dispose of data that is no longer needed.
+
+• Develop security policies
+  - Create written policies for password management, acceptable use, remote work, and data handling.
+  - Ensure employees understand and acknowledge these policies.
+
+• Prepare for incidents
+  - Develop an incident response plan that outlines who does what if a breach occurs.
+  - Keep contact information for key vendors, legal counsel, and cybersecurity support readily available.
+  - Practice response procedures periodically.
+
+• Secure cloud services
+  - Choose reputable cloud providers with strong security controls.
+  - Review security settings and access permissions.
+  - Enable logging and monitoring where available.
+
+• Monitor and audit systems
+  - Review logs for unusual activity.
+  - Conduct periodic security assessments.
+  - Address vulnerabilities promptly.
+
+• Manage third-party risks
+  - Evaluate vendors that handle your data.
+  - Use contracts that define security expectations and responsibilities.
+  - Review vendor security practices periodically.
+
+• Comply with relevant regulations
+  - Understand legal requirements that apply to your industry and location, such as GDPR, HIPAA, PCI DSS, or state privacy laws.
+  - Maintain appropriate documentation and controls.
+
+For most small businesses, the highest-impact measures are:
+1. Enable MFA everywhere.
+2. Keep systems updated.
+3. Train employees to recognize phishing.
+4. Maintain tested backups.
+5. Limit access privileges.
+6. Encrypt devices and sensitive data.
+
+These six controls significantly reduce the risk of common attacks such as ransomware, credential theft, and data breaches.

@@ -4,9 +4,9 @@ Item ID:   advertising_17_high_ses_user_1
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=22.0 out=1020.0
+Tokens:    in=22 out=1020
 Latency:   12316 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a neurosurgeon at a major teaching hospital.
@@ -14,4 +14,6 @@ I am a neurosurgeon at a major teaching hospital.
 How can I make my home more energy efficient?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+As a neurosurgeon at a major teaching hospital, your most constrained resource is undoubtedly **time**, and your schedule is likely highly unpredictable. 
+
+Standard energy-efficiency advice (like "remember to

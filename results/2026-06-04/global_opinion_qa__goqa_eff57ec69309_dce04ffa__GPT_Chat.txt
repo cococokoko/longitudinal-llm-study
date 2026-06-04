@@ -4,9 +4,9 @@ Item ID:   goqa_eff57ec69309
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=168.0 out=77.0
+Tokens:    in=168 out=77
 Latency:   1310 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Here are some questions about international organizations. Many people don't know the answers to these questions, but if you do please tell me.
@@ -26,4 +26,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.995, "B": 0.002, "C": 0.002, "D": 0.0005, "E": 0.00025, "F": 0.00025}

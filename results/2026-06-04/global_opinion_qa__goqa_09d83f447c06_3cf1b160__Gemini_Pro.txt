@@ -4,9 +4,9 @@ Item ID:   goqa_09d83f447c06
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=170.0 out=834.0
+Tokens:    in=170 out=834
 Latency:   9217 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: In general, how motivated do you think women in your community are to use modern contraceptives?
@@ -25,4 +25,12 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.410,
+  "B": 0.320,
+  "C": 0.160,
+  "D": 0.070,
+  "E": 0.030,
+  "F": 0.005,
+  "G": 0.005
+}

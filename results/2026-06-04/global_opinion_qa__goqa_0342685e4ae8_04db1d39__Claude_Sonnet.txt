@@ -4,9 +4,9 @@ Item ID:   goqa_0342685e4ae8
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=223.0 out=51.0
+Tokens:    in=223 out=51
 Latency:   1389 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Here are two statements people sometimes make when discussing the environment and economic growth. Which of them comes closer to your own point of view?
@@ -28,4 +28,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.72, "B": 0.15, "C": 0.07, "D": 0.04, "E": 0.01, "F": 0.01}

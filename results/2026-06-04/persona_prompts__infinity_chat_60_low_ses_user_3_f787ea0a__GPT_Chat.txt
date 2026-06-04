@@ -4,9 +4,9 @@ Item ID:   infinity_chat_60_low_ses_user_3
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: low_ses
 SES level: low  role: user
-Tokens:    in=28.0 out=274.0
+Tokens:    in=28 out=274
 Latency:   2823 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I recently started a new job and am still on probation.
@@ -14,4 +14,23 @@ I recently started a new job and am still on probation.
 Explain computational irreducibility like I'm 5.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Imagine you have a very long line of dominoes set up in a strange pattern.
+
+You ask, "If I knock over the first domino, what will the 1,000th domino be doing later?"
+
+For some domino setups, you can figure out the answer quickly without watching all the dominoes fall.
+
+But for other setups, the only way to know what happens at domino #1,000 is to actually watch domino #1, then #2, then #3, and so on, all the way to #1,000.
+
+Computational irreducibility is the idea that some things are like that second kind of domino setup:
+
+- There is no shortcut.
+- You can't jump ahead and calculate the answer much faster.
+- The fastest way to know what happens is to let every step happen, one after another.
+
+A simple way to think about it:
+
+- Easy puzzle: "What's 2 + 2?" You can answer right away.
+- Irreducible puzzle: A giant maze where the only way to know where a path leads is to follow it.
+
+So, computational irreducibility means: for some systems, the future can't be predicted without doing all the work of creating that future step by step.

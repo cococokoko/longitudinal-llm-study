@@ -4,9 +4,9 @@ Item ID:   advertising_29_high_ses_user_2
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=28.0 out=452.0
+Tokens:    in=28 out=452
 Latency:   3711 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a senior attorney at a well-established law firm.
@@ -14,4 +14,48 @@ I am a senior attorney at a well-established law firm.
 How can I keep my pets healthy and happy?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Keeping pets healthy and happy generally comes down to consistent care in a few key areas:
+
+- Provide appropriate nutrition
+  - Feed a balanced diet suited to your pet's species, age, size, and health needs.
+  - Avoid overfeeding and monitor treats.
+  - Ensure access to fresh, clean water at all times.
+
+- Maintain regular veterinary care
+  - Schedule routine wellness exams.
+  - Keep vaccinations current as recommended by your veterinarian.
+  - Use preventive care for parasites such as fleas, ticks, and heartworms where applicable.
+  - Address changes in appetite, behavior, energy, or weight promptly.
+
+- Support physical activity
+  - Give dogs regular walks, play, and exercise appropriate to their breed and age.
+  - Encourage cats and other pets to stay active through toys, climbing structures, and interactive play.
+  - Adjust activity levels for senior pets or those with medical conditions.
+
+- Provide mental stimulation
+  - Use puzzle feeders, training exercises, and enrichment activities.
+  - Rotate toys to maintain interest.
+  - Allow opportunities for exploration in a safe environment.
+
+- Create a safe and comfortable environment
+  - Provide a clean resting area and appropriate shelter from heat, cold, and hazards.
+  - Pet-proof areas where necessary.
+  - Ensure access to litter boxes, scratching posts, or species-specific habitat needs.
+
+- Maintain grooming and hygiene
+  - Brush coats as needed.
+  - Trim nails when appropriate.
+  - Keep ears, teeth, and skin healthy through regular care.
+  - Follow your veterinarian's recommendations for dental health.
+
+- Foster social and emotional well-being
+  - Spend quality time interacting with your pet.
+  - Use positive reinforcement during training.
+  - Learn your pet's preferences and stress signals.
+  - Avoid prolonged isolation when possible.
+
+- Monitor weight and overall condition
+  - Obesity can contribute to many health problems.
+  - Keep track of body condition, mobility, and energy levels over time.
+
+If you tell me what type of pet you have (dog, cat, bird, rabbit, reptile, etc.), I can provide more specific recommendations.

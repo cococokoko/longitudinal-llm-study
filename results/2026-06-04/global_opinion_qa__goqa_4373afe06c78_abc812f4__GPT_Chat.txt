@@ -4,9 +4,9 @@ Item ID:   goqa_4373afe06c78
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=280.0 out=194.0
+Tokens:    in=280 out=194
 Latency:   1959 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: And how democratically is this country being governed today?. Again using a scale from 1 to 10, where 1 means that it is “not at all democratic” and 10 means that it is “completely democratic,” what position would you choose?
@@ -31,4 +31,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A":0.0,"B":0.0,"C":0.0,"D":0.0,"E":0.0,"F":0.0,"G":0.0,"H":0.0,"I":0.0,"J":0.0,"K":0.98,"L":0.01,"M":0.01}

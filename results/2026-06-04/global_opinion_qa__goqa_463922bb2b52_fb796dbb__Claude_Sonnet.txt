@@ -4,9 +4,9 @@ Item ID:   goqa_463922bb2b52
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=157.0 out=43.0
+Tokens:    in=157 out=43
 Latency:   2684 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: If a woman works outside of the home for money, how likely is it that the following consequences might occur:
@@ -25,4 +25,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.08, "B": 0.35, "C": 0.50, "D": 0.05, "E": 0.02}

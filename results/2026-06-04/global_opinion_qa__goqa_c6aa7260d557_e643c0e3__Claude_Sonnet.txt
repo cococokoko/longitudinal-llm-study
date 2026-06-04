@@ -4,9 +4,9 @@ Item ID:   goqa_c6aa7260d557
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=199.0 out=59.0
+Tokens:    in=199 out=59
 Latency:   1512 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:
@@ -27,4 +27,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.03, "B": 0.07, "C": 0.35, "D": 0.50, "E": 0.03, "F": 0.01, "G": 0.01}

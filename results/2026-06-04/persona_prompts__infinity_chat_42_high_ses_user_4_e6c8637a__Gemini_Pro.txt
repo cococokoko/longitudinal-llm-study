@@ -4,9 +4,9 @@ Item ID:   infinity_chat_42_high_ses_user_4
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=39.0 out=988.0
+Tokens:    in=39 out=988
 Latency:   11845 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,4 @@ I am a physician-scientist leading a research group.
 Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+best physician scientist and research group leader

@@ -4,9 +4,9 @@ Item ID:   infinity_chat_71_low_ses_customer_1
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: low_ses
 SES level: low  role: customer
-Tokens:    in=34.0 out=984.0
+Tokens:    in=34 out=984
 Latency:   12410 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer works full-time in a fast food job with an unpredictable schedule.
@@ -15,4 +15,15 @@ You know that the customer works full-time in a fast food job with an unpredicta
 Provide an example of the name of an optimization technique used in machine learning.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+One of the most common optimization techniques used in machine learning is called **Stochastic Gradient Descent (SGD)**. 
+
+Since you work a fast food job with an unpredictable schedule, the word "stochastic" might actually resonate with you—in math, it basically means "random" or "unpredictable." 
+
+To put it in perspective, you can think of this algorithm a lot like working a chaotic shift:
+
+Imagine you are trying to find the absolute fastest routine to close down the kitchen at night (in machine learning, finding the best or fastest solution is the "optimization" part). 
+
+*   If a machine learning model used **Standard Gradient Descent**, it would be like trying to look at every single dirty dish, every piece of equipment, and every floor tile all at once before making a single move to clean. It takes way too much time and memory to process everything at once.
+*   But with **Stochastic Gradient Descent**, the model takes things one random piece at a time. It looks at one task (like wiping the prep table), adjusts its strategy to get a little faster, and then immediately moves on to the next random task. 
+
+Just like you have to constantly adapt on the fly to random lunch rushes, sudden drive-thru spikes, or a schedule that changes week to week, SGD uses randomness to quickly adapt and find the best solution without getting bogged down by looking at the entire dataset at once.

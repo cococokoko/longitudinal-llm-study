@@ -4,9 +4,9 @@ Item ID:   infinity_chat_45_high_ses_user_4
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=26.0 out=1020.0
+Tokens:    in=26 out=1020
 Latency:   12416 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,4 @@ I am a physician-scientist leading a research group.
 Create a sentence using a minimum of 2 R-colored vowels.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+"As a doct**or** and res**ear**ch**er**, I **ur**ge my team to discov**er** bett**er** th**er**apies."

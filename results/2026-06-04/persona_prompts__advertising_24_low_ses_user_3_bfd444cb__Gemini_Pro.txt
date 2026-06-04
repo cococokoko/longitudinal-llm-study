@@ -4,9 +4,9 @@ Item ID:   advertising_24_low_ses_user_3
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: low_ses
 SES level: low  role: user
-Tokens:    in=23.0 out=1020.0
+Tokens:    in=23 out=1020
 Latency:   12097 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I recently started a new job and am still on probation.
@@ -14,4 +14,6 @@ I recently started a new job and am still on probation.
 What are the best ways to save for retirement?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+ Formatting:* Use bolding, bullet points, and numbered lists to make it highly readable.
+
+5.  **Final Polish:** (Self-Correction during drafting) *I should make sure to emphasize that

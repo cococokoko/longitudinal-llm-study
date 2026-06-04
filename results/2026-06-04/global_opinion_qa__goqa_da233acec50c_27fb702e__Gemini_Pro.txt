@@ -4,9 +4,9 @@ Item ID:   goqa_da233acec50c
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=153.0 out=547.0
+Tokens:    in=153 out=547
 Latency:   6133 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Of course, we all hope that there will not be another war, but if it were to come to that, would you be willing to fight for your country?
@@ -23,4 +23,10 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.65,
+  "B": 0.20,
+  "C": 0.10,
+  "D": 0.04,
+  "E": 0.01
+}

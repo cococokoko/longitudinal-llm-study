@@ -4,9 +4,9 @@ Item ID:   goqa_caa42a653be8
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=119.0 out=35.0
+Tokens:    in=119 out=35
 Latency:   1625 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: I have a hard time breaking bad habits
@@ -22,4 +22,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.15, "B": 0.25, "C": 0.30, "D": 0.30}

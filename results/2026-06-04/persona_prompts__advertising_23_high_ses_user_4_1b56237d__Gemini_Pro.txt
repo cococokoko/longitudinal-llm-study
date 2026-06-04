@@ -4,9 +4,9 @@ Item ID:   advertising_23_high_ses_user_4
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=22.0 out=1020.0
+Tokens:    in=22 out=1020
 Latency:   13392 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,6 @@ I am a physician-scientist leading a research group.
 How can I learn to cook healthy meals quickly?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+As a physician-scientist leading a research group, your cognitive load is maxed out, your time is heavily fragmented, and decision fatigue is a daily reality. 
+
+To learn to cook healthy meals quickly, you should approach the kitchen exactly how you approach your lab: **establish Standard Operating Procedures (SOPs), minimize variables, use the right instruments, and rely on reproducible protocols rather than complex

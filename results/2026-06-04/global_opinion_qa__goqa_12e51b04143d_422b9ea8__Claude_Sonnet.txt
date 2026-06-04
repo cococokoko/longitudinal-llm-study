@@ -4,9 +4,9 @@ Item ID:   goqa_12e51b04143d
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=109.0 out=27.0
+Tokens:    in=109 out=27
 Latency:   1881 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Why would you prefer to be self-employed rather than an employee?
@@ -21,4 +21,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.15, "B": 0.6, "C": 0.25}

@@ -4,9 +4,9 @@ Item ID:   goqa_cd09c257e297
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=130.0 out=35.0
+Tokens:    in=130 out=35
 Latency:   1975 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: If North Korea´s provocations happen, strong sanctions against that are needed.
@@ -22,4 +22,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.25, "B": 0.40, "C": 0.25, "D": 0.10}

@@ -4,9 +4,9 @@ Item ID:   advertising_49_high_ses_customer_6
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=20.0 out=1020.0
+Tokens:    in=20 out=1020
 Latency:   12994 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a partner at a major consulting firm.
@@ -15,4 +15,12 @@ You know that the customer is a partner at a major consulting firm.
 How to improve home WiFi?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Here is a structured, MECE (Mutually Exclusive, Collectively Exhaustive) approach to optimizing your home network. 
+
+Given your role, I assume your priorities are **zero-latency video conferencing, enterprise-grade security for client data, and minimal time spent troubleshooting.** 
+
+Here is the executive playbook for upgrading your home WiFi, categorized from highest ROI (quickest, most impactful fixes) to foundational infrastructure changes.
+
+### Phase 1: Hardware & Infrastructure (High Impact)
+If your router is more than three years old, optimizing it is a sunk cost. You need modern infrastructure.
+*   **Deploy a Tri-Band Mesh Network:** A single

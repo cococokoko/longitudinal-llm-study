@@ -4,9 +4,9 @@ Item ID:   goqa_aca919045f6c
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=205.0 out=59.0
+Tokens:    in=205 out=59
 Latency:   1607 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: People have different views about themselves and how they relate to the world. Using this card, would you tell me how close do you feel to…?:
@@ -27,4 +27,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.18, "B": 0.35, "C": 0.25, "D": 0.12, "E": 0.06, "F": 0.02, "G": 0.02}

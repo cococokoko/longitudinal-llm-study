@@ -4,12 +4,61 @@ Item ID:   infinity_chat_34_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=18.0 out=432.0
+Tokens:    in=18 out=432
 Latency:   4046 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What is a good secondhand market laptop for learning Python?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+For learning Python, you don't need a powerful laptop. A good secondhand business-class laptop is often a better choice than a cheap consumer model because it's more durable, easier to repair, and usually has a better keyboard.
+
+Good secondhand options:
+
+- Lenovo ThinkPad T480
+  - Intel 8th-generation Core i5 or i7
+  - Upgradeable RAM and SSD
+  - Excellent keyboard
+  - Supports Windows 11
+  - Often considered one of the best-value used laptops
+
+- Lenovo ThinkPad X280
+  - Smaller and lighter than the T480
+  - Good if portability matters
+  - Less upgradeable
+
+- Dell Latitude 5490 or 5500
+  - Business-grade build quality
+  - Easy maintenance
+  - Good Linux compatibility
+
+- HP EliteBook 840 G5 or G6
+  - Solid construction
+  - Good screen and keyboard
+  - Widely available used
+
+- ThinkPad T490
+  - Newer than the T480
+  - Better battery life and efficiency
+  - Usually costs a bit more
+
+Recommended minimum specifications:
+- Intel Core i5 8th generation or newer (or AMD Ryzen 5)
+- 8 GB RAM minimum (16 GB preferred)
+- 256 GB SSD minimum
+- 1080p (Full HD) screen if possible
+
+If you plan to:
+- Learn basic Python, data structures, web development, automation:
+  - 8 GB RAM is fine.
+- Use data science tools (Pandas, Jupyter, machine learning):
+  - Aim for 16 GB RAM.
+
+Models I'd avoid unless they're extremely cheap:
+- Laptops with Intel 6th or 7th generation CPUs
+- Machines with only 4 GB RAM
+- Mechanical hard drives instead of SSDs
+- Very low-resolution (1366×768) displays
+
+For many people, a used Lenovo ThinkPad T480 with an i5-8350U, 16 GB RAM, and a 256–512 GB SSD is the best balance of price, reliability, and performance for learning Python.

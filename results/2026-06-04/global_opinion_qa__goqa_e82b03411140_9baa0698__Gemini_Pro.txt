@@ -4,9 +4,9 @@ Item ID:   goqa_e82b03411140
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=192.0 out=853.0
+Tokens:    in=192 out=853
 Latency:   9946 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: People have different views about themselves and how they relate to the world. Using this card, would you tell me how strongly you agree or disagree with each of the following statements about how you see yourself?
@@ -27,4 +27,6 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+```json
+{"A": 0.16, "B": 0.39, "C": 0.29, "D": 0.13, "E": 0.02, "F": 0.01, "G": 0.0}
+```

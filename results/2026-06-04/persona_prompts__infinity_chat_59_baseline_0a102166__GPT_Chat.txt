@@ -4,12 +4,23 @@ Item ID:   infinity_chat_59_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=23.0 out=159.0
+Tokens:    in=23 out=159
 Latency:   1930 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Give me a tip to be more organized at work. I'm a high school teacher.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+A simple, high-impact tip for a high school teacher is to create a single "Next Class" checklist for each course you teach.
+
+At the end of each teaching day, spend 3–5 minutes per course writing down:
+- What was covered today
+- Where students stopped
+- What materials you'll need next class
+- The first task students will do when they enter
+- Any students who need follow-up
+
+Keep this in one consistent place (a notebook, document, or planning app). Then, before each class, you only need to look at that checklist instead of trying to remember details from memory.
+
+This reduces the mental load of managing multiple classes and makes transitions between periods much smoother. Over time, it also creates a useful record of pacing and lesson adjustments.

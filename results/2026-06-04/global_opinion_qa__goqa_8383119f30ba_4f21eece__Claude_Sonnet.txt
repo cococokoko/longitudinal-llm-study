@@ -4,9 +4,9 @@ Item ID:   goqa_8383119f30ba
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=263.0 out=107.0
+Tokens:    in=263 out=107
 Latency:   2788 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: In political matters, people talk of "the left" and "the right." How would you place your views on this scale, generally speaking?
@@ -31,4 +31,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.05, "B": 0.07, "C": 0.08, "D": 0.10, "E": 0.20, "F": 0.10, "G": 0.08, "H": 0.07, "I": 0.05, "J": 0.05, "K": 0.12, "L": 0.02, "M": 0.01}

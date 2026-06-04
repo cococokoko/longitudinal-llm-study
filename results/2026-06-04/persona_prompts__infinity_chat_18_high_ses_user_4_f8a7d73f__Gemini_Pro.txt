@@ -4,9 +4,9 @@ Item ID:   infinity_chat_18_high_ses_user_4
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=26.0 out=1020.0
+Tokens:    in=26 out=1020
 Latency:   12576 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,10 @@ I am a physician-scientist leading a research group.
 Create a short review of a movie that doesn't exist yet.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+**Title:** *The Somatic Line* (2026)
+**Director:** Elena Rostova
+**Rating:** 4.5/5 Stars
+
+As someone who splits my week between writing NIH grant renewals and rounding in the clinic, I usually avoid Hollywood’s "science" movies. I have a low tolerance for the trope of the lone genius who cures a complex disease over a single weekend montage with glowing blue liquids. But Elena Rostova’s *The Somatic Line* is a rare, breathtaking exception. 
+
+The film follows Dr.

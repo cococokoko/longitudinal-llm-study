@@ -4,9 +4,9 @@ Item ID:   infinity_chat_32_high_ses_user_4
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=31.0 out=902.0
+Tokens:    in=31 out=902
 Latency:   17777 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,179 @@ I am a physician-scientist leading a research group.
 How can I make a zombie survivor game on Scratch?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Making a Zombie Survivor Game on Scratch
+
+Here's a practical guide to build this step by step.
+
+---
+
+## Core Components You'll Need
+
+### 1. **Sprites to Create**
+- Player character
+- Zombie enemy (can duplicate for multiple)
+- Bullet/projectile
+- Health bar or hearts
+- Game Over screen
+
+---
+
+## Step-by-Step Setup
+
+### **Stage/Background**
+- Choose or draw a top-down arena background
+- Set a dark or post-apocalyptic theme
+
+---
+
+### **Player Movement**
+```
+When [Green Flag] clicked
+forever
+  if <key [W] pressed> then
+    change y by (5)
+  end
+  if <key [S] pressed> then
+    change y by (-5)
+  end
+  if <key [A] pressed> then
+    change x by (-5)
+  end
+  if <key [D] pressed> then
+    change x by (5)
+  end
+end
+```
+
+---
+
+### **Player Shooting**
+```
+When [Green Flag] clicked
+forever
+  if <mouse down?> then
+    broadcast [shoot]
+    wait (0.3) seconds
+  end
+end
+```
+
+**Bullet Sprite:**
+```
+When I receive [shoot]
+go to [Player]
+point towards (mouse-pointer)
+show
+repeat until <touching [edge]?>
+  move (15) steps
+end
+hide
+```
+
+---
+
+### **Zombie AI (Chase Player)**
+```
+When [Green Flag] clicked
+forever
+  point towards [Player]
+  move (2) steps
+  if <touching [Player]?> then
+    change [Health] by (-1)
+    wait (0.5) seconds
+  end
+end
+```
+
+**Zombie spawning** - use clones:
+```
+When [Green Flag] clicked
+forever
+  create clone of [Zombie]
+  wait (3) seconds
+end
+
+When I start as a clone
+go to (random position)
+show
+forever
+  point towards [Player]
+  move (2) steps
+end
+```
+
+---
+
+### **Zombie Takes Damage**
+```
+// In Zombie sprite
+When [Green Flag] clicked
+set [Zombie HP] to (3)
+
+forever
+  if <touching [Bullet]?> then
+    change [Zombie HP] by (-1)
+    if <[Zombie HP] < (1)> then
+      delete this clone
+    end
+  end
+end
+```
+
+---
+
+### **Health & Game Over**
+```
+// Monitor Health variable
+When [Green Flag] clicked
+set [Health] to (5)
+
+forever
+  if <[Health] < (1)> then
+    broadcast [Game Over]
+    stop all
+  end
+end
+```
+
+---
+
+## **Useful Variables to Track**
+| Variable | Purpose |
+|----------|---------|
+| Health | Player lives |
+| Score | Zombies killed |
+| Wave | Current difficulty level |
+| Zombie Speed | Increases per wave |
+
+---
+
+## **Wave System (Bonus)**
+```
+When [Green Flag] clicked
+set [Wave] to (1)
+forever
+  if <[Score] > ([Wave] * (5))> then
+    change [Wave] by (1)
+    change [Zombie Speed] by (0.5)
+  end
+end
+```
+
+---
+
+## Tips for Polish
+- **Sound effects** - add bite/shoot sounds
+- **Animations** - use costume changes for walking
+- **Screen boundaries** - prevent player from leaving stage
+- **Invincibility frames** - brief pause after taking damage
+
+---
+
+## Getting Started Quickly
+1. Go to **scratch.mit.edu**
+2. Start with just **player movement + one zombie**
+3. Add features one at a time
+4. Test frequently
+
+Would you like me to go deeper on any specific mechanic?

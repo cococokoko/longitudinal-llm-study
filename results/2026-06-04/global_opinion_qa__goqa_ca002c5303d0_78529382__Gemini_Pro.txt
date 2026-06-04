@@ -4,9 +4,9 @@ Item ID:   goqa_ca002c5303d0
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=102.0 out=377.0
+Tokens:    in=102 out=377
 Latency:   5469 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: At school of university, have you ever taken part in any course or activity about entrepreneurship – that is turning ideas into action, developing your own projects?
@@ -20,4 +20,7 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.25,
+  "B": 0.75
+}
