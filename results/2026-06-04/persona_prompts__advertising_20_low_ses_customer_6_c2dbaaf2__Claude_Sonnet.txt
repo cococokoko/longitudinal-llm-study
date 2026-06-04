@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   advertising_20_low_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=32.0 out=309.0
+Latency:   11267 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+Where can I find organic and sustainable clothing?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

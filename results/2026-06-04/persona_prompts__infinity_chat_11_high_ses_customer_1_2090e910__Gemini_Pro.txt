@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_11_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39.0 out=1020.0
+Latency:   22053 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+I'm 60 years old and haven't achieved anything. What have I missed out on?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

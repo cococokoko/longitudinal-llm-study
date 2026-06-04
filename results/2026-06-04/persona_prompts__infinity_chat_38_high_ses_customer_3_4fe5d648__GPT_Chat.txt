@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_38_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=33.0 out=182.0
+Latency:   2119 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Do you know the demon Morloch?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

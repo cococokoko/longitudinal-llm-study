@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_41_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=37.0 out=133.0
+Latency:   3082 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me 3 short tips for self-development.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

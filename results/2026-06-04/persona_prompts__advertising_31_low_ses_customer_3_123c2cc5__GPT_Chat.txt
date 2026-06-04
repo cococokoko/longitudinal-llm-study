@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   advertising_31_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=35.0 out=470.0
+Latency:   4085 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to find affordable eco-friendly travel destinations?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

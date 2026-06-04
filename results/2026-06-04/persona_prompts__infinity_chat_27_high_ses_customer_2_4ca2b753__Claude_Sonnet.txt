@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_27_high_ses_customer_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=47.0 out=1024.0
+Latency:   24263 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a play script in the style of Dilbert as if a man in an apocalyptic world.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

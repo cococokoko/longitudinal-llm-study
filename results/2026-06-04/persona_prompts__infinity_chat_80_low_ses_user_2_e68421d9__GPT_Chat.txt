@@ -1,0 +1,17 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_80_low_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=37.0 out=109.0
+Latency:   1695 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+Write a tweet about: This is a video from this morning's crazy sunrise at the beach.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

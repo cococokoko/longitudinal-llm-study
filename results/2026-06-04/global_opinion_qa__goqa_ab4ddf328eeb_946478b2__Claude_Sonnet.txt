@@ -1,0 +1,29 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_ab4ddf328eeb
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=184.0 out=72.0
+Latency:   1755 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: If ‘yes’, was the loan used for
+
+Options:
+A. Starting or Growing a Business
+B. Buying or Improving a Home
+C. Getting Married
+D. Household Purchases
+E. Emergencies
+F. Others
+G. Don't Know
+H. No Answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

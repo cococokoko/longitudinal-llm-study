@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_93_high_ses_customer_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39.0 out=434.0
+Latency:   10658 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write 100-300 words on how stress affects the body and mind.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

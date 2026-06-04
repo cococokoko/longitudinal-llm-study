@@ -1,0 +1,30 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_6ca2d6ac699b
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=194.0 out=122.0
+Latency:   1394 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: For each of the following statements I read out, can you tell me how much you agree with each. Do you agree strongly, agree, disagree, or disagree strongly?
+
+On the whole, men make better political leaders than women do
+
+Options:
+A. Agree strongly
+B. Agree
+C. Disagree
+D. Strongly disagree
+E. Don't know
+F. No answer
+G. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

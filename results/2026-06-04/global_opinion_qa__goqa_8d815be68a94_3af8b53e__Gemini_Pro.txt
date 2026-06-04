@@ -1,0 +1,28 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_8d815be68a94
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=164.0 out=659.0
+Latency:   6235 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How much respect is there for individual human rights nowadays in this country?
+
+Options:
+A. A great deal of respect
+B. Fairly much respect
+C. Not much respect
+D. No respect at all
+E. Don't know
+F. No answer
+G. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_48_high_ses_customer_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=45.0 out=166.0
+Latency:   2096 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me a 1-paragraph essay about the development of the economy during the Han Dynasty.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

@@ -1,0 +1,24 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_e1d519acfa0b
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=96.0 out=94.0
+Latency:   1330 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Between equality and security, what is more important?
+
+Options:
+A. Equality
+B. Security
+C. Don't know
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

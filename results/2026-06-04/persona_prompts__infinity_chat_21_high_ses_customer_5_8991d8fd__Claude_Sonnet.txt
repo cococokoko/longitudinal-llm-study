@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_21_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36.0 out=299.0
+Latency:   8024 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me strong arguments as to why some people allow the death penalty.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

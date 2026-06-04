@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_62_high_ses_customer_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=25.0 out=700.0
+Latency:   10806 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide a few sentences on Sisu Cinema Robotics.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

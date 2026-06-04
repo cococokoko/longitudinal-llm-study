@@ -1,0 +1,26 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_19b83e50ac38
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=137.0 out=43.0
+Latency:   1315 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How have your perceptions of economic values changed from the experience of Hurricane Maria?
+
+Options:
+A. A lot
+B. Fairly
+C. Little
+D. Nothing
+E. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

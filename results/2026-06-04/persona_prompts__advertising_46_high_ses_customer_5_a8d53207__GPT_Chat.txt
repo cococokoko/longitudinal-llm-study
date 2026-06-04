@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   advertising_46_high_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36.0 out=543.0
+Latency:   4430 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best resources for starting a plant-based diet?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

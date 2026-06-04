@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   advertising_37_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=36.0 out=490.0
+Latency:   4261 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I optimize my home office for productivity?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

@@ -1,0 +1,25 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_04949717678c
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=120.0 out=72.0
+Latency:   1116 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Sometimes I can’t stop myself from doing something, even if I know it is wrong
+
+Options:
+A. Not at all
+B. 2
+C. 3
+D. Very Much
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

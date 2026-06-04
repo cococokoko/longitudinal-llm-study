@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_41_low_ses_customer_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=27.0 out=919.0
+Latency:   11781 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a single parent who often balances childcare with work.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me 3 short tips for self-development.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

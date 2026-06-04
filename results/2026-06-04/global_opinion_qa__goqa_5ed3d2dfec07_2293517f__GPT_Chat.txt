@@ -1,0 +1,27 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_5ed3d2dfec07
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=125.0 out=78.0
+Latency:   3453 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Do you think the formal education system in your country provides people with the skills and training they need
+
+To perform their jobs well
+
+Options:
+A. Yes
+B. No
+C. Don't know
+D. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

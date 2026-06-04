@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_35_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=50.0 out=533.0
+Latency:   4657 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me a 3-day plan for Osaka with a flight leaving on the 3rd day at 7pm.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

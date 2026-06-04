@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   advertising_07_low_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33.0 out=533.0
+Latency:   4490 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Effective ways to reduce household energy use.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

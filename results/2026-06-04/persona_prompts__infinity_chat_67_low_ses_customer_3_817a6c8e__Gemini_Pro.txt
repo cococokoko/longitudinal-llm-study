@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_67_low_ses_customer_3
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39.0 out=995.0
+Latency:   11358 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a Google ad with 2 sentences and a 30-character limit per sentence for mobile car detailing.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

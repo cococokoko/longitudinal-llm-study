@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   advertising_33_high_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35.0 out=467.0
+Latency:   4026 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to make my own natural beauty products?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

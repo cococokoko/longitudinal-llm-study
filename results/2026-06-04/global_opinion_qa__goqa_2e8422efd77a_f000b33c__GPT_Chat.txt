@@ -1,0 +1,33 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_2e8422efd77a
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=282.0 out=150.0
+Latency:   1539 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I am now going to read out a few statements, and I would like you to think about the role of men and women in the community where you live. In general, who usually decides about the following things. 1 means that men usually decide and 9 means women that women usually decide – 5 means that men and women decide equally.
+
+Options:
+A. Men
+B. 2
+C. 3
+D. 4
+E. Both Equally
+F. 6
+G. 7
+H. 8
+I. Women
+J. Don't know
+K. No answer/Refused
+L. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

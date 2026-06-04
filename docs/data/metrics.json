@@ -1,23 +1,42 @@
 {
-  "generated": "2026-06-03",
+  "generated": "2026-06-04",
   "waves": [
-    "2026-06-03"
+    "2026-06-03",
+    "2026-06-04"
   ],
   "wave_versions": [
     {
       "wave": "2026-06-03",
       "model": "Claude Sonnet",
       "model_used": "anthropic/claude-4.6-sonnet-20260217",
-      "n_calls": 781
+      "n_calls": 543
     },
     {
       "wave": "2026-06-03",
       "model": "GPT Chat",
       "model_used": "openai/gpt-5.3-chat-20260303",
-      "n_calls": 781
+      "n_calls": 543
     },
     {
       "wave": "2026-06-03",
+      "model": "Gemini Pro",
+      "model_used": "google/gemini-3.1-pro-preview-20260219",
+      "n_calls": 543
+    },
+    {
+      "wave": "2026-06-04",
+      "model": "Claude Sonnet",
+      "model_used": "anthropic/claude-4.6-sonnet-20260217",
+      "n_calls": 781
+    },
+    {
+      "wave": "2026-06-04",
+      "model": "GPT Chat",
+      "model_used": "openai/gpt-chat-latest-20260505",
+      "n_calls": 780
+    },
+    {
+      "wave": "2026-06-04",
       "model": "Gemini Pro",
       "model_used": "google/gemini-3.1-pro-preview-20260219",
       "n_calls": 781
@@ -50,6 +69,33 @@
       "entropy_mean": 1.0071,
       "entropy_global_mean": 1.8855,
       "n": 317
+    },
+    {
+      "wave": "2026-06-04",
+      "model": "Claude Sonnet",
+      "ws_mean": 0.6763,
+      "ws_std": 0.7147,
+      "entropy_mean": 1.2822,
+      "entropy_global_mean": 1.9551,
+      "n": 349
+    },
+    {
+      "wave": "2026-06-04",
+      "model": "GPT Chat",
+      "ws_mean": 1.462,
+      "ws_std": 1.0587,
+      "entropy_mean": 0.5623,
+      "entropy_global_mean": 1.9141,
+      "n": 337
+    },
+    {
+      "wave": "2026-06-04",
+      "model": "Gemini Pro",
+      "ws_mean": 0.7701,
+      "ws_std": 0.9056,
+      "entropy_mean": 1.0237,
+      "entropy_global_mean": 1.9076,
+      "n": 327
     }
   ],
   "persona_lengths": [
@@ -63,25 +109,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 102
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 105
+      "prompt_len": 95
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
       "prompt_len": 121
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 108
     },
     {
       "condition": "baseline",
@@ -91,27 +125,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 82
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 87
+      "prompt_len": 98
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 93
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 88
+      "prompt_len": 111
     },
     {
       "condition": "baseline",
@@ -123,25 +145,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 125
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 97
+      "prompt_len": 126
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 127
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 116
+      "prompt_len": 132
     },
     {
       "condition": "baseline",
@@ -151,27 +161,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 88
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 87
+      "prompt_len": 100
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 90
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 92
+      "prompt_len": 115
     },
     {
       "condition": "baseline",
@@ -186,22 +184,10 @@
       "prompt_len": 107
     },
     {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 78
-    },
-    {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 119
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 138
+      "prompt_len": 117
     },
     {
       "condition": "baseline",
@@ -216,16 +202,10 @@
       "prompt_len": 104
     },
     {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 74
-    },
-    {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 88
+      "prompt_len": 123
     },
     {
       "condition": "baseline",
@@ -237,25 +217,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 120
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 102
+      "prompt_len": 125
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 139
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 131
+      "prompt_len": 150
     },
     {
       "condition": "baseline",
@@ -265,21 +233,9 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 107
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 90
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 138
+      "prompt_len": 84
     },
     {
       "condition": "low_ses",
@@ -295,21 +251,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 120
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 119
+      "prompt_len": 98
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 122
+      "prompt_len": 101
     },
     {
       "condition": "baseline",
@@ -321,19 +271,13 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 90
+      "prompt_len": 87
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 95
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 94
+      "prompt_len": 98
     },
     {
       "condition": "baseline",
@@ -345,25 +289,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 105
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 99
+      "prompt_len": 104
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 111
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 130
+      "prompt_len": 106
     },
     {
       "condition": "baseline",
@@ -373,27 +305,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 83
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 72
+      "prompt_len": 107
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 110
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 86
+      "prompt_len": 108
     },
     {
       "condition": "baseline",
@@ -411,13 +331,7 @@
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 128
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 104
+      "prompt_len": 118
     },
     {
       "condition": "baseline",
@@ -427,27 +341,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 115
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 94
+      "prompt_len": 93
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 100
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 117
+      "prompt_len": 95
     },
     {
       "condition": "baseline",
@@ -457,27 +359,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 111
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 110
+      "prompt_len": 84
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 126
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 113
+      "prompt_len": 91
     },
     {
       "condition": "baseline",
@@ -489,109 +379,7 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 84
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 82
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 87
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 86
-    },
-    {
-      "condition": "baseline",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 45
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 118
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 112
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 149
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 127
-    },
-    {
-      "condition": "baseline",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 63
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 141
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 107
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 146
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 121
-    },
-    {
-      "condition": "baseline",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 35
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 109
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 79
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 128
+      "prompt_len": 78
     },
     {
       "condition": "low_ses",
@@ -603,25 +391,73 @@
       "condition": "baseline",
       "framing": "inline_prompt",
       "query_source": "advertising",
+      "prompt_len": 45
+    },
+    {
+      "condition": "high_ses",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
+      "prompt_len": 96
+    },
+    {
+      "condition": "low_ses",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
+      "prompt_len": 124
+    },
+    {
+      "condition": "baseline",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
+      "prompt_len": 63
+    },
+    {
+      "condition": "high_ses",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
+      "prompt_len": 107
+    },
+    {
+      "condition": "low_ses",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
+      "prompt_len": 142
+    },
+    {
+      "condition": "baseline",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
+      "prompt_len": 35
+    },
+    {
+      "condition": "high_ses",
+      "framing": "system_msg",
+      "query_source": "advertising",
+      "prompt_len": 108
+    },
+    {
+      "condition": "low_ses",
+      "framing": "system_msg",
+      "query_source": "advertising",
+      "prompt_len": 120
+    },
+    {
+      "condition": "baseline",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
       "prompt_len": 50
     },
     {
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 117
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 106
+      "prompt_len": 124
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 112
+      "prompt_len": 132
     },
     {
       "condition": "baseline",
@@ -636,22 +472,10 @@
       "prompt_len": 127
     },
     {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 116
-    },
-    {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 134
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 129
+      "prompt_len": 142
     },
     {
       "condition": "baseline",
@@ -663,19 +487,7 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 110
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 108
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 134
+      "prompt_len": 105
     },
     {
       "condition": "low_ses",
@@ -691,45 +503,9 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 119
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 150
-    },
-    {
-      "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 125
-    },
-    {
-      "condition": "baseline",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 46
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 119
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 90
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 150
+      "prompt_len": 100
     },
     {
       "condition": "low_ses",
@@ -741,31 +517,37 @@
       "condition": "baseline",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 55
+      "prompt_len": 46
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 129
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 122
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 148
+      "prompt_len": 102
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 114
+      "prompt_len": 103
+    },
+    {
+      "condition": "baseline",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
+      "prompt_len": 55
+    },
+    {
+      "condition": "high_ses",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
+      "prompt_len": 111
+    },
+    {
+      "condition": "low_ses",
+      "framing": "inline_prompt",
+      "query_source": "advertising",
+      "prompt_len": 113
     },
     {
       "condition": "baseline",
@@ -775,27 +557,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 117
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 122
+      "prompt_len": 133
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 135
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 128
+      "prompt_len": 148
     },
     {
       "condition": "baseline",
@@ -807,25 +577,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 133
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 110
+      "prompt_len": 128
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 135
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 134
+      "prompt_len": 137
     },
     {
       "condition": "baseline",
@@ -837,25 +595,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 140
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 115
+      "prompt_len": 134
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 165
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 120
+      "prompt_len": 143
     },
     {
       "condition": "baseline",
@@ -865,27 +611,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 114
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 108
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 145
+      "prompt_len": 97
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 98
+      "prompt_len": 100
     },
     {
       "condition": "baseline",
@@ -900,22 +634,10 @@
       "prompt_len": 136
     },
     {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 102
-    },
-    {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
       "prompt_len": 140
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 116
     },
     {
       "condition": "baseline",
@@ -927,25 +649,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 130
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 112
+      "prompt_len": 123
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 149
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 118
+      "prompt_len": 136
     },
     {
       "condition": "baseline",
@@ -955,27 +665,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 126
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
       "prompt_len": 109
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 133
-    },
-    {
-      "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 115
+      "prompt_len": 122
     },
     {
       "condition": "baseline",
@@ -987,25 +685,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 121
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 110
+      "prompt_len": 120
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
       "prompt_len": 123
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 101
     },
     {
       "condition": "baseline",
@@ -1017,13 +703,7 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 113
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 118
+      "prompt_len": 115
     },
     {
       "condition": "low_ses",
@@ -1039,27 +719,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 118
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 100
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 149
+      "prompt_len": 101
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 107
+      "prompt_len": 103
     },
     {
       "condition": "baseline",
@@ -1071,13 +739,7 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 112
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 148
+      "prompt_len": 122
     },
     {
       "condition": "low_ses",
@@ -1095,25 +757,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 125
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
       "prompt_len": 130
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 144
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 134
+      "prompt_len": 131
     },
     {
       "condition": "baseline",
@@ -1123,27 +773,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 136
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
       "prompt_len": 119
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 145
-    },
-    {
-      "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 125
+      "prompt_len": 121
     },
     {
       "condition": "baseline",
@@ -1153,27 +791,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 129
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 118
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 131
+      "prompt_len": 95
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 120
+      "prompt_len": 130
     },
     {
       "condition": "baseline",
@@ -1185,19 +811,7 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 93
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 83
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 143
+      "prompt_len": 89
     },
     {
       "condition": "low_ses",
@@ -1213,27 +827,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 121
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 115
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 146
+      "prompt_len": 98
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 121
+      "prompt_len": 104
     },
     {
       "condition": "baseline",
@@ -1243,27 +845,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 109
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 102
+      "prompt_len": 132
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 143
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 116
+      "prompt_len": 151
     },
     {
       "condition": "baseline",
@@ -1275,25 +865,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 122
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 115
+      "prompt_len": 127
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 141
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 152
+      "prompt_len": 130
     },
     {
       "condition": "baseline",
@@ -1305,25 +883,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 127
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 109
+      "prompt_len": 120
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 122
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 115
+      "prompt_len": 136
     },
     {
       "condition": "baseline",
@@ -1333,27 +899,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 128
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
       "prompt_len": 104
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 130
-    },
-    {
-      "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "advertising",
-      "prompt_len": 119
+      "prompt_len": 109
     },
     {
       "condition": "baseline",
@@ -1363,27 +917,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 116
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 114
+      "prompt_len": 133
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 164
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 119
+      "prompt_len": 140
     },
     {
       "condition": "baseline",
@@ -1395,31 +937,19 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 101
+      "prompt_len": 95
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 132
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 107
+      "prompt_len": 110
     },
     {
       "condition": "baseline",
       "framing": "inline_prompt",
       "query_source": "advertising",
       "prompt_len": 37
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 88
     },
     {
       "condition": "high_ses",
@@ -1434,12 +964,6 @@
       "prompt_len": 116
     },
     {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 95
-    },
-    {
       "condition": "baseline",
       "framing": "inline_prompt",
       "query_source": "advertising",
@@ -1449,25 +973,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 99
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 98
+      "prompt_len": 92
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 118
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "advertising",
-      "prompt_len": 110
+      "prompt_len": 105
     },
     {
       "condition": "baseline",
@@ -1477,21 +989,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 74
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "advertising",
-      "prompt_len": 79
+      "prompt_len": 101
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "advertising",
-      "prompt_len": 85
+      "prompt_len": 106
     },
     {
       "condition": "baseline",
@@ -1501,27 +1007,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 138
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 98
+      "prompt_len": 114
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 140
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 127
+      "prompt_len": 129
     },
     {
       "condition": "baseline",
@@ -1533,25 +1027,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 172
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 102
+      "prompt_len": 121
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 107
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 184
+      "prompt_len": 133
     },
     {
       "condition": "baseline",
@@ -1563,19 +1045,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 222
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 113
+      "prompt_len": 107
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 144
+      "prompt_len": 120
     },
     {
       "condition": "baseline",
@@ -1587,25 +1063,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 130
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 165
+      "prompt_len": 200
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 141
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 179
+      "prompt_len": 201
     },
     {
       "condition": "baseline",
@@ -1617,25 +1081,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 151
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 169
+      "prompt_len": 150
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 170
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 169
+      "prompt_len": 181
     },
     {
       "condition": "baseline",
@@ -1645,27 +1097,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 251
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 88
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 256
+      "prompt_len": 82
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 94
+      "prompt_len": 89
     },
     {
       "condition": "baseline",
@@ -1675,27 +1115,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 114
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 93
+      "prompt_len": 87
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 116
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 121
+      "prompt_len": 105
     },
     {
       "condition": "baseline",
@@ -1707,25 +1135,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 106
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 71
+      "prompt_len": 95
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 76
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 107
+      "prompt_len": 102
     },
     {
       "condition": "baseline",
@@ -1737,19 +1153,7 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 104
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 112
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 150
+      "prompt_len": 110
     },
     {
       "condition": "low_ses",
@@ -1765,21 +1169,9 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 203
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 114
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 184
+      "prompt_len": 121
     },
     {
       "condition": "low_ses",
@@ -1800,34 +1192,16 @@
       "prompt_len": 148
     },
     {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 100
-    },
-    {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 167
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 154
+      "prompt_len": 178
     },
     {
       "condition": "baseline",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
       "prompt_len": 74
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 105
     },
     {
       "condition": "high_ses",
@@ -1839,13 +1213,7 @@
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 136
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 112
+      "prompt_len": 132
     },
     {
       "condition": "baseline",
@@ -1855,27 +1223,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 146
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 131
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 148
+      "prompt_len": 118
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 137
+      "prompt_len": 130
     },
     {
       "condition": "baseline",
@@ -1887,25 +1243,13 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 108
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 126
+      "prompt_len": 122
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 114
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 131
+      "prompt_len": 151
     },
     {
       "condition": "baseline",
@@ -1917,13 +1261,7 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 139
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 97
+      "prompt_len": 145
     },
     {
       "condition": "low_ses",
@@ -1932,22 +1270,10 @@
       "prompt_len": 170
     },
     {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 102
-    },
-    {
       "condition": "baseline",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
       "prompt_len": 64
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 168
     },
     {
       "condition": "high_ses",
@@ -1959,7 +1285,7 @@
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 122
+      "prompt_len": 121
     },
     {
       "condition": "baseline",
@@ -1969,27 +1295,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 128
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 119
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 147
+      "prompt_len": 98
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 99
+      "prompt_len": 112
     },
     {
       "condition": "baseline",
@@ -1999,27 +1313,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 97
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 112
+      "prompt_len": 110
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 118
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 99
+      "prompt_len": 135
     },
     {
       "condition": "baseline",
@@ -2031,25 +1333,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 141
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 151
+      "prompt_len": 147
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 153
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 146
+      "prompt_len": 158
     },
     {
       "condition": "baseline",
@@ -2061,25 +1351,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 112
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 119
+      "prompt_len": 139
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 96
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 124
+      "prompt_len": 145
     },
     {
       "condition": "baseline",
@@ -2100,12 +1378,6 @@
       "prompt_len": 175
     },
     {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 96
-    },
-    {
       "condition": "baseline",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
@@ -2113,27 +1385,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 188
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 76
+      "prompt_len": 105
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 193
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 90
+      "prompt_len": 117
     },
     {
       "condition": "baseline",
@@ -2148,22 +1408,10 @@
       "prompt_len": 124
     },
     {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 134
-    },
-    {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 143
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 161
+      "prompt_len": 132
     },
     {
       "condition": "baseline",
@@ -2175,25 +1423,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 174
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 118
+      "prompt_len": 141
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 124
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 153
+      "prompt_len": 155
     },
     {
       "condition": "baseline",
@@ -2208,22 +1444,10 @@
       "prompt_len": 154
     },
     {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 123
-    },
-    {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 156
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 128
+      "prompt_len": 169
     },
     {
       "condition": "baseline",
@@ -2233,27 +1457,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 119
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 119
+      "prompt_len": 120
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 97
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 124
+      "prompt_len": 123
     },
     {
       "condition": "baseline",
@@ -2265,25 +1477,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 153
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 107
+      "prompt_len": 159
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
       "prompt_len": 184
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 139
     },
     {
       "condition": "baseline",
@@ -2295,25 +1495,13 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 112
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
       "prompt_len": 120
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 138
-    },
-    {
-      "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 134
+      "prompt_len": 155
     },
     {
       "condition": "baseline",
@@ -2323,27 +1511,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 115
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 111
+      "prompt_len": 97
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 134
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 113
+      "prompt_len": 100
     },
     {
       "condition": "baseline",
@@ -2353,27 +1529,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 79
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 131
+      "prompt_len": 154
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 110
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 137
+      "prompt_len": 168
     },
     {
       "condition": "baseline",
@@ -2383,27 +1547,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 131
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 115
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 133
+      "prompt_len": 97
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 99
+      "prompt_len": 112
     },
     {
       "condition": "baseline",
@@ -2419,12 +1571,6 @@
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 181
-    },
-    {
-      "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
       "prompt_len": 108
@@ -2439,25 +1585,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 174
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 81
+      "prompt_len": 168
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 205
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 90
+      "prompt_len": 194
     },
     {
       "condition": "baseline",
@@ -2469,19 +1603,13 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 104
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 104
+      "prompt_len": 111
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 118
+      "prompt_len": 119
     },
     {
       "condition": "baseline",
@@ -2496,22 +1624,10 @@
       "prompt_len": 149
     },
     {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 129
-    },
-    {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 168
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 125
+      "prompt_len": 160
     },
     {
       "condition": "baseline",
@@ -2526,22 +1642,10 @@
       "prompt_len": 126
     },
     {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 135
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 173
-    },
-    {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 132
+      "prompt_len": 149
     },
     {
       "condition": "baseline",
@@ -2553,25 +1657,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 138
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 110
+      "prompt_len": 139
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 140
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 119
+      "prompt_len": 143
     },
     {
       "condition": "baseline",
@@ -2581,27 +1673,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 88
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 84
+      "prompt_len": 108
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 116
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 89
+      "prompt_len": 113
     },
     {
       "condition": "baseline",
@@ -2613,19 +1693,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 179
-    },
-    {
-      "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 146
+      "prompt_len": 147
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 177
+      "prompt_len": 156
     },
     {
       "condition": "baseline",
@@ -2635,15 +1709,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 201
+      "prompt_len": 231
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 215
+      "prompt_len": 239
     },
     {
       "condition": "baseline",
@@ -2658,22 +1732,10 @@
       "prompt_len": 117
     },
     {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 83
-    },
-    {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 136
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 90
+      "prompt_len": 128
     },
     {
       "condition": "baseline",
@@ -2685,25 +1747,13 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 156
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 129
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 162
+      "prompt_len": 154
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 162
+      "prompt_len": 159
     },
     {
       "condition": "baseline",
@@ -2715,19 +1765,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 161
+      "prompt_len": 162
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 163
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 127
+      "prompt_len": 166
     },
     {
       "condition": "baseline",
@@ -2739,25 +1783,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 170
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 95
+      "prompt_len": 120
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 185
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 100
+      "prompt_len": 124
     },
     {
       "condition": "baseline",
@@ -2767,27 +1799,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 129
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 84
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 160
+      "prompt_len": 110
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 91
+      "prompt_len": 113
     },
     {
       "condition": "baseline",
@@ -2799,25 +1819,13 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 106
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 94
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 155
+      "prompt_len": 105
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 108
+      "prompt_len": 109
     },
     {
       "condition": "baseline",
@@ -2827,27 +1835,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 146
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 112
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 165
+      "prompt_len": 128
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 115
+      "prompt_len": 134
     },
     {
       "condition": "baseline",
@@ -2859,25 +1855,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 129
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 145
+      "prompt_len": 168
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 134
-    },
-    {
-      "condition": "low_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 151
+      "prompt_len": 182
     },
     {
       "condition": "baseline",
@@ -2889,19 +1873,7 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 142
-    },
-    {
-      "condition": "high_ses",
-      "framing": "inline_prompt",
-      "query_source": "infinity_chat",
-      "prompt_len": 111
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 154
+      "prompt_len": 131
     },
     {
       "condition": "low_ses",
@@ -2917,27 +1889,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 92
-    },
-    {
-      "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 115
-    },
-    {
-      "condition": "low_ses",
-      "framing": "system_msg",
-      "query_source": "infinity_chat",
-      "prompt_len": 129
+      "prompt_len": 112
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 120
+      "prompt_len": 140
     },
     {
       "condition": "baseline",
@@ -2965,15 +1925,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 92
+      "prompt_len": 122
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 106
+      "prompt_len": 152
     },
     {
       "condition": "baseline",
@@ -2985,7 +1945,7 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 99
+      "prompt_len": 104
     },
     {
       "condition": "low_ses",
@@ -3003,7 +1963,7 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 162
+      "prompt_len": 150
     },
     {
       "condition": "low_ses",
@@ -3021,13 +1981,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 173
+      "prompt_len": 169
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 175
+      "prompt_len": 199
     },
     {
       "condition": "baseline",
@@ -3037,15 +1997,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 112
+      "prompt_len": 131
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 117
+      "prompt_len": 162
     },
     {
       "condition": "baseline",
@@ -3055,15 +2015,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 98
+      "prompt_len": 75
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 129
+      "prompt_len": 94
     },
     {
       "condition": "baseline",
@@ -3081,7 +2041,7 @@
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 265
+      "prompt_len": 286
     },
     {
       "condition": "baseline",
@@ -3091,15 +2051,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 144
+      "prompt_len": 125
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 163
+      "prompt_len": 132
     },
     {
       "condition": "baseline",
@@ -3117,7 +2077,7 @@
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 110
+      "prompt_len": 105
     },
     {
       "condition": "baseline",
@@ -3127,15 +2087,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 135
+      "prompt_len": 113
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 137
+      "prompt_len": 115
     },
     {
       "condition": "baseline",
@@ -3145,15 +2105,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 102
+      "prompt_len": 125
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 107
+      "prompt_len": 128
     },
     {
       "condition": "baseline",
@@ -3165,13 +2125,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 146
+      "prompt_len": 147
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 177
+      "prompt_len": 156
     },
     {
       "condition": "baseline",
@@ -3181,15 +2141,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 147
+      "prompt_len": 177
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 161
+      "prompt_len": 207
     },
     {
       "condition": "baseline",
@@ -3201,13 +2161,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 156
+      "prompt_len": 155
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 175
+      "prompt_len": 162
     },
     {
       "condition": "baseline",
@@ -3217,15 +2177,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 220
+      "prompt_len": 242
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 226
+      "prompt_len": 257
     },
     {
       "condition": "baseline",
@@ -3261,7 +2221,7 @@
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 106
+      "prompt_len": 126
     },
     {
       "condition": "baseline",
@@ -3279,7 +2239,7 @@
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 214
+      "prompt_len": 192
     },
     {
       "condition": "baseline",
@@ -3297,7 +2257,7 @@
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 141
+      "prompt_len": 162
     },
     {
       "condition": "baseline",
@@ -3309,7 +2269,7 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 159
+      "prompt_len": 152
     },
     {
       "condition": "low_ses",
@@ -3325,15 +2285,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 120
+      "prompt_len": 142
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 126
+      "prompt_len": 157
     },
     {
       "condition": "baseline",
@@ -3345,13 +2305,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 110
+      "prompt_len": 99
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 112
+      "prompt_len": 136
     },
     {
       "condition": "baseline",
@@ -3361,15 +2321,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 146
+      "prompt_len": 170
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 151
+      "prompt_len": 172
     },
     {
       "condition": "baseline",
@@ -3381,13 +2341,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 233
+      "prompt_len": 227
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 264
+      "prompt_len": 240
     },
     {
       "condition": "baseline",
@@ -3415,15 +2375,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 114
+      "prompt_len": 90
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 133
+      "prompt_len": 99
     },
     {
       "condition": "baseline",
@@ -3435,13 +2395,13 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 139
+      "prompt_len": 134
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 145
+      "prompt_len": 152
     },
     {
       "condition": "baseline",
@@ -3459,7 +2419,7 @@
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 176
+      "prompt_len": 189
     },
     {
       "condition": "baseline",
@@ -3471,13 +2431,13 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 138
+      "prompt_len": 139
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 143
+      "prompt_len": 146
     },
     {
       "condition": "baseline",
@@ -3487,15 +2447,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 202
+      "prompt_len": 185
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 233
+      "prompt_len": 187
     },
     {
       "condition": "baseline",
@@ -3507,7 +2467,7 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 109
+      "prompt_len": 115
     },
     {
       "condition": "low_ses",
@@ -3525,7 +2485,7 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 212
+      "prompt_len": 211
     },
     {
       "condition": "low_ses",
@@ -3541,15 +2501,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 190
+      "prompt_len": 208
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 196
+      "prompt_len": 216
     },
     {
       "condition": "baseline",
@@ -3559,15 +2519,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 179
+      "prompt_len": 151
     },
     {
       "condition": "low_ses",
-      "framing": "system_msg",
+      "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 181
+      "prompt_len": 170
     },
     {
       "condition": "baseline",
@@ -3577,15 +2537,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 138
+      "prompt_len": 157
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 143
+      "prompt_len": 188
     },
     {
       "condition": "baseline",
@@ -3597,13 +2557,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 153
+      "prompt_len": 157
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 184
+      "prompt_len": 165
     },
     {
       "condition": "baseline",
@@ -3613,15 +2573,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 122
+      "prompt_len": 156
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 136
+      "prompt_len": 158
     },
     {
       "condition": "baseline",
@@ -3633,13 +2593,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 277
+      "prompt_len": 281
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 296
+      "prompt_len": 288
     },
     {
       "condition": "baseline",
@@ -3651,13 +2611,13 @@
       "condition": "high_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 117
+      "prompt_len": 105
     },
     {
       "condition": "low_ses",
       "framing": "inline_prompt",
       "query_source": "infinity_chat",
-      "prompt_len": 123
+      "prompt_len": 130
     },
     {
       "condition": "baseline",
@@ -3669,13 +2629,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 144
+      "prompt_len": 139
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 146
+      "prompt_len": 149
     },
     {
       "condition": "baseline",
@@ -3685,15 +2645,15 @@
     },
     {
       "condition": "high_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 85
+      "prompt_len": 110
     },
     {
       "condition": "low_ses",
-      "framing": "inline_prompt",
+      "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 90
+      "prompt_len": 116
     },
     {
       "condition": "baseline",
@@ -3705,13 +2665,13 @@
       "condition": "high_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 133
+      "prompt_len": 137
     },
     {
       "condition": "low_ses",
       "framing": "system_msg",
       "query_source": "infinity_chat",
-      "prompt_len": 164
+      "prompt_len": 153
     }
   ],
   "cosine_4a": [],

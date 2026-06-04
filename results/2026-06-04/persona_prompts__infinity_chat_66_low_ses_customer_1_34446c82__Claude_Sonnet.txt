@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_66_low_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=64.0 out=144.0
+Latency:   9473 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a headline for a company called "USBC CONSTITUTION" that encourages companies to donate their waste for recycling in exchange for money for the donated waste.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

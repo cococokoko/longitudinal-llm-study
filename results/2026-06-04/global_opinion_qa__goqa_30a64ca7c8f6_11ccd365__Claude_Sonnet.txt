@@ -1,0 +1,30 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_30a64ca7c8f6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=203.0 out=59.0
+Latency:   1725 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them?:
+
+Local authorities
+
+Options:
+A. None of them
+B. Few of them
+C. Most of them
+D. All of them
+E. Don't know
+F. No answer
+G. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

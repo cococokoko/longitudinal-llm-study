@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   advertising_33_high_ses_customer_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=32.0 out=329.0
+Latency:   8548 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to make my own natural beauty products?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

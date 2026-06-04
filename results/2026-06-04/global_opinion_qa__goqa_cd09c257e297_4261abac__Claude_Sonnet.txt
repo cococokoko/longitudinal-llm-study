@@ -1,0 +1,25 @@
+Wave:      2026-06-04
+Dataset:   global_opinion_qa
+Item ID:   goqa_cd09c257e297
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=130.0 out=35.0
+Latency:   1975 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: If North Korea´s provocations happen, strong sanctions against that are needed.
+
+Options:
+A. Strongly agree
+B. Agree
+C. Disagree
+D. Strongly disagree
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

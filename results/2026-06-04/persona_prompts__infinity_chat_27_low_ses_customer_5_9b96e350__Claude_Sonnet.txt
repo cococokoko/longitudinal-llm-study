@@ -1,0 +1,18 @@
+Wave:      2026-06-04
+Dataset:   persona_prompts
+Item ID:   infinity_chat_27_low_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=45.0 out=1024.0
+Latency:   26893 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a play script in the style of Dilbert as if a man in an apocalyptic world.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan
