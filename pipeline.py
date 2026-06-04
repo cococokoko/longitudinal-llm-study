@@ -23,11 +23,9 @@ import argparse
 import asyncio
 import datetime
 import os
-import re
 import sys
 from pathlib import Path
 
-import httpx
 import yaml
 from dotenv import load_dotenv
 from rich.console import Console
@@ -106,28 +104,6 @@ def seed_models(
 
 # ── Dataset seeding ───────────────────────────────────────────────────────────
 
-def _sync_dataset_items(conn, dataset_name: str, current_ids: set[str]) -> None:
-    """Remove any DB items for dataset_name whose item_id is no longer in current_ids."""
-    if not current_ids:
-        return
-    # SQLite variable limit is 999; our datasets are well within that.
-    placeholders = ",".join("?" * len(current_ids))
-    stale = conn.execute(
-        f"SELECT id FROM dataset_items "
-        f"WHERE dataset_name = ? AND item_id NOT IN ({placeholders})",
-        [dataset_name, *current_ids],
-    ).fetchall()
-    if not stale:
-        return
-    ids = [r[0] for r in stale]
-    ph  = ",".join("?" * len(ids))
-    conn.execute(f"DELETE FROM response_records WHERE item_id IN ({ph})", ids)
-    conn.execute(f"DELETE FROM wave_items      WHERE item_id IN ({ph})", ids)
-    conn.execute(f"DELETE FROM dataset_items   WHERE id       IN ({ph})", ids)
-    conn.commit()
-    console.print(f"[dim]  Removed {len(ids)} stale items from '{dataset_name}'.[/]")
-
-
 def seed_wave_items(conn, wave_id: str, cfg: dict, seed: int) -> int:
     """Sync each dataset with its source file then register items for this wave."""
     total = 0
@@ -138,9 +114,6 @@ def seed_wave_items(conn, wave_id: str, cfg: dict, seed: int) -> int:
         except Exception as exc:
             console.print(f"[yellow]  Skipped '{ds_cfg['name']}': {exc}[/]")
             continue
-
-        # Keep DB in sync with the source file: drop any item no longer present.
-        _sync_dataset_items(conn, ds_cfg["name"], {item.item_id for item in items})
 
         for item in items:
             db_id = upsert_dataset_item(
@@ -158,82 +131,6 @@ def seed_wave_items(conn, wave_id: str, cfg: dict, seed: int) -> int:
     return total
 
 
-# ── OpenRouter auto-update ────────────────────────────────────────────────────
-
-_FAMILY_RULES: dict[str, object] = {
-    "anthropic/": lambda s: "sonnet" in s and "thinking" not in s,
-    "openai/":    lambda s: s.endswith("-chat"),
-    "google/":    lambda s: "flash" in s and "lite" not in s and "image" not in s,
-}
-
-
-def _version_key(model_id: str) -> tuple[int, int]:
-    nums = re.findall(r"\d+", model_id.split("/")[-1])
-    return (int(nums[0]) if nums else 0, int(nums[1]) if len(nums) > 1 else 0)
-
-
-def _model_display_name(model_id: str) -> str:
-    slug = model_id.split("/")[-1]
-    return " ".join(w.capitalize() for w in slug.replace("-", " ").split())
-
-
-def _auto_update_models(config_path: str, api_key: str) -> bool:
-    """Check OpenRouter for newer releases in the same family and rewrite config.yaml."""
-    try:
-        resp = httpx.get(
-            "https://openrouter.ai/api/v1/models",
-            headers={"Authorization": f"Bearer {api_key}"},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        all_models = [m["id"] for m in resp.json().get("data", [])]
-    except Exception as exc:
-        console.print(f"[yellow]Could not fetch OpenRouter model list: {exc}[/]")
-        return False
-
-    cfg = load_config(config_path)
-    with open(config_path) as fh:
-        text = fh.read()
-
-    changed = False
-    for entry in cfg.get("models", []):
-        current_id = entry["model_id"]
-        base_id    = current_id.removesuffix(":online")
-        suffix     = ":online" if current_id.endswith(":online") else ""
-        provider   = base_id.split("/")[0] + "/"
-        rule       = _FAMILY_RULES.get(provider)
-        if rule is None:
-            continue
-
-        candidates = [m for m in all_models if m.startswith(provider) and rule(m.split("/")[-1])]
-        if not candidates:
-            continue
-
-        latest_base = max(candidates, key=_version_key)
-        latest_id   = latest_base + suffix
-        if latest_id == current_id:
-            console.print(f"[dim]{entry['display_name']} up to date: {current_id}[/]")
-            continue
-
-        new_display = _model_display_name(latest_base)
-        pattern = (
-            r'(model_id:\s*")'
-            + re.escape(current_id)
-            + r'("'
-            + r'\n\s*display_name:\s*")[^"]+'
-            + r'(")'
-        )
-        replacement = rf'\g<1>{latest_id}\g<2>{new_display}\g<3>'
-        text = re.sub(pattern, replacement, text)
-        console.print(f"[cyan]Updated {entry['display_name']} → {latest_id}[/]")
-        changed = True
-
-    if changed:
-        with open(config_path, "w") as fh:
-            fh.write(text)
-
-    return changed
-
 
 # ── Sub-commands ──────────────────────────────────────────────────────────────
 
@@ -244,9 +141,6 @@ def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
     if not openrouter_key:
         console.print("[red]OPENROUTER_API_KEY not set in .env or environment.[/]")
         sys.exit(1)
-
-    if _auto_update_models(args.config, openrouter_key):
-        cfg = load_config(args.config)
 
     db_path = cfg["study"]["db_path"]
     conn    = open_db(db_path)
