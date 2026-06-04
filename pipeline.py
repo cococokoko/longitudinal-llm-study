@@ -106,8 +106,30 @@ def seed_models(
 
 # ── Dataset seeding ───────────────────────────────────────────────────────────
 
+def _sync_dataset_items(conn, dataset_name: str, current_ids: set[str]) -> None:
+    """Remove any DB items for dataset_name whose item_id is no longer in current_ids."""
+    if not current_ids:
+        return
+    # SQLite variable limit is 999; our datasets are well within that.
+    placeholders = ",".join("?" * len(current_ids))
+    stale = conn.execute(
+        f"SELECT id FROM dataset_items "
+        f"WHERE dataset_name = ? AND item_id NOT IN ({placeholders})",
+        [dataset_name, *current_ids],
+    ).fetchall()
+    if not stale:
+        return
+    ids = [r[0] for r in stale]
+    ph  = ",".join("?" * len(ids))
+    conn.execute(f"DELETE FROM response_records WHERE item_id IN ({ph})", ids)
+    conn.execute(f"DELETE FROM wave_items      WHERE item_id IN ({ph})", ids)
+    conn.execute(f"DELETE FROM dataset_items   WHERE id       IN ({ph})", ids)
+    conn.commit()
+    console.print(f"[dim]  Removed {len(ids)} stale items from '{dataset_name}'.[/]")
+
+
 def seed_wave_items(conn, wave_id: str, cfg: dict, seed: int) -> int:
-    """Sample items from each configured dataset and register them for this wave."""
+    """Sync each dataset with its source file then register items for this wave."""
     total = 0
     for ds_cfg in cfg.get("datasets", []):
         console.print(f"[dim]Loading dataset '{ds_cfg['name']}' …[/]")
@@ -116,6 +138,9 @@ def seed_wave_items(conn, wave_id: str, cfg: dict, seed: int) -> int:
         except Exception as exc:
             console.print(f"[yellow]  Skipped '{ds_cfg['name']}': {exc}[/]")
             continue
+
+        # Keep DB in sync with the source file: drop any item no longer present.
+        _sync_dataset_items(conn, ds_cfg["name"], {item.item_id for item in items})
 
         for item in items:
             db_id = upsert_dataset_item(

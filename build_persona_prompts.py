@@ -3,16 +3,17 @@
 build_persona_prompts.py — Generate persona_prompts.json from the fixed query
 lists and SES persona framings.
 
-Produces 100 queries × 3 conditions = 300 items:
+Produces 143 queries × 3 conditions = 429 items:
   - 1  baseline   (no persona)
-  - 1  high_ses   (customer or user format, alternating per query; persona rotates across 6 variants)
-  - 1  low_ses    (customer or user format, alternating per query; persona rotates across 6 variants)
+  - 1  high_ses   (persona and framing randomly assigned per query; seed=42 for reproducibility)
+  - 1  low_ses    (same framing channel as high_ses; independent persona randomly assigned)
 
 Run once (or whenever queries/personas change):
   python build_persona_prompts.py
 """
 
 import json
+import random
 from pathlib import Path
 
 # ── Queries ───────────────────────────────────────────────────────────────────
@@ -206,22 +207,22 @@ LOW_SES_USER = [
 
 # ── Build ─────────────────────────────────────────────────────────────────────
 
-def build() -> list[dict]:
+def build(seed: int = 42) -> list[dict]:
+    rng = random.Random(seed)
     items = []
     sources = [
-        ("advertising",    ADVERTISING_QUERIES),
-        ("infinity_chat",  INFINITY_CHAT_QUERIES),
+        ("advertising",   ADVERTISING_QUERIES),
+        ("infinity_chat", INFINITY_CHAT_QUERIES),
     ]
-
-    # Global query index across both sources, used to rotate personas and
-    # alternate customer/user format in a balanced way.
-    global_qidx = 0
 
     for source, queries in sources:
         for qid, query in enumerate(queries, 1):
-            pid = global_qidx % 6           # which of the 6 persona variants (0-indexed)
-            use_customer = (global_qidx % 2 == 0)  # alternate customer/user per query
-            global_qidx += 1
+            # Randomly pick persona variant (0-5) and framing channel.
+            # High and low SES share the same framing channel per query so that
+            # the framing type is held constant within each comparison pair.
+            high_pid     = rng.randrange(6)
+            low_pid      = rng.randrange(6)
+            use_customer = rng.choice([True, False])
 
             # Baseline — no persona
             items.append({
@@ -237,61 +238,61 @@ def build() -> list[dict]:
                 "system":        None,
             })
 
-            # High-SES — customer (system msg) or user (prepended), alternating
+            # High-SES
             if use_customer:
-                persona_text = HIGH_SES_CUSTOMER[pid]
+                persona_text = HIGH_SES_CUSTOMER[high_pid]
                 items.append({
-                    "item_id":       f"{source}_{qid:02d}_high_ses_customer_{pid + 1}",
+                    "item_id":       f"{source}_{qid:02d}_high_ses_customer_{high_pid + 1}",
                     "query_source":  source,
                     "query_id":      qid,
                     "condition":     "high_ses",
                     "ses_level":     "high",
                     "persona_role":  "customer",
-                    "persona_index": pid + 1,
+                    "persona_index": high_pid + 1,
                     "persona_text":  persona_text,
                     "prompt":        query,
                     "system":        persona_text,
                 })
             else:
-                persona_text = HIGH_SES_USER[pid]
+                persona_text = HIGH_SES_USER[high_pid]
                 items.append({
-                    "item_id":       f"{source}_{qid:02d}_high_ses_user_{pid + 1}",
+                    "item_id":       f"{source}_{qid:02d}_high_ses_user_{high_pid + 1}",
                     "query_source":  source,
                     "query_id":      qid,
                     "condition":     "high_ses",
                     "ses_level":     "high",
                     "persona_role":  "user",
-                    "persona_index": pid + 1,
+                    "persona_index": high_pid + 1,
                     "persona_text":  persona_text,
                     "prompt":        f"{persona_text}\n\n{query}",
                     "system":        None,
                 })
 
-            # Low-SES — customer (system msg) or user (prepended), alternating
+            # Low-SES
             if use_customer:
-                persona_text = LOW_SES_CUSTOMER[pid]
+                persona_text = LOW_SES_CUSTOMER[low_pid]
                 items.append({
-                    "item_id":       f"{source}_{qid:02d}_low_ses_customer_{pid + 1}",
+                    "item_id":       f"{source}_{qid:02d}_low_ses_customer_{low_pid + 1}",
                     "query_source":  source,
                     "query_id":      qid,
                     "condition":     "low_ses",
                     "ses_level":     "low",
                     "persona_role":  "customer",
-                    "persona_index": pid + 1,
+                    "persona_index": low_pid + 1,
                     "persona_text":  persona_text,
                     "prompt":        query,
                     "system":        persona_text,
                 })
             else:
-                persona_text = LOW_SES_USER[pid]
+                persona_text = LOW_SES_USER[low_pid]
                 items.append({
-                    "item_id":       f"{source}_{qid:02d}_low_ses_user_{pid + 1}",
+                    "item_id":       f"{source}_{qid:02d}_low_ses_user_{low_pid + 1}",
                     "query_source":  source,
                     "query_id":      qid,
                     "condition":     "low_ses",
                     "ses_level":     "low",
                     "persona_role":  "user",
-                    "persona_index": pid + 1,
+                    "persona_index": low_pid + 1,
                     "persona_text":  persona_text,
                     "prompt":        f"{persona_text}\n\n{query}",
                     "system":        None,
