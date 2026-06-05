@@ -268,7 +268,7 @@
     .plotly-wrap {
       background: var(--surface); border: 1px solid var(--border-dark);
       border-radius: 12px; padding: 8px;
-      overflow: hidden; /* clip chart backgrounds to rounded border */
+      clip-path: inset(0 round 12px); /* clip chart bg to rounded border without affecting layout */
     }
     /* Side-by-side chart grid */
     .chart-row { display: grid; gap: 16px; }
@@ -277,9 +277,6 @@
     .chart-col-label { font-weight: 600; text-align: center; font-size: 12px; margin-bottom: 6px; }
 
     /* ── Analysis sub-panels ───────────────────────────── */
-    #page-analysis .main-wrap { overflow-x: hidden; }
-    .chart-row { width: 100%; }
-    .plotly-wrap { max-width: 100%; }
     .analysis-panel { display: none; }
     .analysis-panel.active { display: block; }
 
