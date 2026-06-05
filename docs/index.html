@@ -3,35 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LLM Longitudinal Study — Dashboard</title>
-
-  <!-- Exact fonts from the ACA tracker -->
+  <title>Longitudinal LLM Study</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet" />
 
   <style>
-    /* ── Design tokens (exact values from ACA tracker source) ── */
+    /* ── Design tokens ─────────────────────────────────── */
     :root {
-      --bg:           #f8f8ef;
-      --surface:      #FDFDF5;
-      --header-bg:    #D0E6E5;
-      --border-dark:  #2D2D2D;
-      --border-gray:  #D0D0D0;
-      --teal:         #40ABC9;
-      --teal-tag:     rgba(174,221,234,0.3);
-      --coral:        #E57657;
-      --coral-stat:   #e57859;
-      --gray-tag:     rgba(208,208,208,0.3);
-      --text:         #111;
-      --text-gray:    #374151;
-      --text-muted:   #6b7280;
-      --text-light:   #9ca3af;
+      --bg:          #f8f8ef;
+      --surface:     #FDFDF5;
+      --header-bg:   #D0E6E5;
+      --border-dark: #2D2D2D;
+      --border-gray: #D0D0D0;
+      --teal:        #40ABC9;
+      --teal-tag:    rgba(174,221,234,.3);
+      --coral:       #E57657;
+      --coral-stat:  #e57859;
+      --gray-tag:    rgba(208,208,208,.3);
+      --text:        #111;
+      --text-gray:   #374151;
+      --text-muted:  #6b7280;
+      --text-light:  #9ca3af;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'Ubuntu', system-ui, sans-serif;
       font-size: 14px;
@@ -42,381 +38,155 @@
       flex-direction: column;
     }
 
-    /* ─── Header / Nav ─────────────────────────────────────────── */
+    /* ── Header ────────────────────────────────────────── */
     .site-header {
       background: var(--header-bg);
       border-bottom: 1px solid var(--border-dark);
-      position: sticky;
-      top: 0;
-      z-index: 200;
+      position: sticky; top: 0; z-index: 200;
     }
     .site-nav {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      max-width: 1300px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
       height: 64px;
     }
     .site-brand {
       font-family: 'Bitcount Prop Single', sans-serif;
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--text);
-      text-decoration: none;
+      font-size: 1.1rem; font-weight: 600;
+      color: var(--text); text-decoration: none;
     }
-    .nav-right {
-      display: flex;
-      align-items: center;
+    .nav-links {
+      display: flex; align-items: center;
       gap: 32px;
       font-family: 'Bitcount Prop Single', sans-serif;
-      font-size: 0.9rem;
+      font-size: .9rem;
     }
-    .nav-right a {
-      color: var(--text);
-      text-decoration: none;
-      transition: opacity .15s;
+    .nav-links a {
+      color: var(--text); text-decoration: none; transition: opacity .15s;
     }
-    .nav-right a:hover, .nav-right a.active { text-decoration: underline; }
+    .nav-links a:hover { text-decoration: underline; }
+    .nav-links a.active { text-decoration: underline; }
     .nav-date { font-family: 'Ubuntu', sans-serif; font-size: 11px; color: #555; }
 
-    /* ─── Hero section ─────────────────────────────────────────── */
+    /* ── Page show/hide ────────────────────────────────── */
+    .page { display: none; flex: 1; flex-direction: column; }
+    .page.active { display: flex; flex-direction: column; }
+
+    /* ── Hero ──────────────────────────────────────────── */
     .hero {
       background: var(--surface);
-      padding: 32px 0 24px;
+      padding: 36px 0 28px;
     }
-    .hero-inner {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+    .hero-inner { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
     .hero-title {
       font-family: 'Bitcount Prop Single', sans-serif;
-      font-size: 2.1rem;
-      font-weight: 700;
-      letter-spacing: .06em;
+      font-size: 2rem; font-weight: 700; letter-spacing: .06em;
       margin-bottom: 6px;
     }
-    .hero-desc {
-      color: rgba(0,0,0,.65);
-      font-size: .9rem;
-      margin-bottom: 24px;
-    }
+    .hero-desc { color: rgba(0,0,0,.65); font-size: .9rem; margin-bottom: 24px; }
 
-    /* ─── Stats bar ────────────────────────────────────────────── */
+    /* ── Stats ─────────────────────────────────────────── */
     .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      display: grid; grid-template-columns: repeat(4,1fr); gap: 16px;
     }
     .stat-box {
-      border: 1px solid var(--border-dark);
-      border-radius: 12px;
-      height: 80px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: transparent;
+      border: 1px solid var(--border-dark); border-radius: 12px;
+      height: 80px; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; background: transparent;
     }
-    .stat-value {
-      font-size: 1.7rem;
-      font-weight: 700;
-      color: var(--coral-stat);
-      line-height: 1;
-    }
-    .stat-label {
-      font-size: 11px;
-      color: var(--text-muted);
-      text-align: center;
-      margin-top: 5px;
-    }
+    .stat-value { font-size: 1.7rem; font-weight: 700; color: var(--coral-stat); line-height: 1; }
+    .stat-label { font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 5px; }
 
-    /* ─── Type / tab bar ───────────────────────────────────────── */
+    /* ── Type / sub-tab bar ────────────────────────────── */
     .type-bar {
       background: var(--surface);
-      border-top: 1px solid #e5e7eb;
-      border-bottom: 1px solid var(--border-dark);
+      border-top: 1px solid #e5e7eb; border-bottom: 1px solid var(--border-dark);
       padding: 10px 0;
     }
     .type-bar-inner {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 0 24px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
+      max-width: 1300px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
     }
-    .type-label {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-right: 4px;
-      white-space: nowrap;
+    .type-label { font-size: 13px; color: var(--text-muted); margin-right: 4px; white-space: nowrap; }
+    .sub-btn {
+      padding: 6px 16px; border-radius: 8px;
+      border: 1px solid var(--border-gray); background: white;
+      color: var(--text-gray); font-size: 13px; font-weight: 500;
+      font-family: 'Ubuntu', sans-serif; cursor: pointer; transition: all .15s;
     }
-    .tab-btn {
-      padding: 6px 16px;
-      border-radius: 8px;
-      border: 1px solid var(--border-gray);
-      background: white;
-      color: var(--text-gray);
-      font-size: 13px;
-      font-weight: 500;
-      font-family: 'Ubuntu', sans-serif;
-      cursor: pointer;
-      transition: all .15s;
-    }
-    .tab-btn:hover:not(.active) { background: #f9f9f9; }
-    .tab-btn.active {
-      background: var(--teal);
-      color: white;
-      border-color: var(--teal);
-    }
+    .sub-btn:hover:not(.active) { background: #f9f9f9; }
+    .sub-btn.active { background: var(--teal); color: white; border-color: var(--teal); }
 
-    /* ─── Main layout ──────────────────────────────────────────── */
-    .main {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 24px;
-      flex: 1;
-      width: 100%;
+    /* ── Main container ────────────────────────────────── */
+    .main-wrap {
+      max-width: 1300px; margin: 0 auto; padding: 24px;
+      flex: 1; width: 100%;
     }
-
-    /* ─── Tab panels ───────────────────────────────────────────── */
-    .tab-panel { display: none; }
-    .tab-panel.active { display: block; }
-
-    /* ─── Two-column layout (sidebar + content) ────────────────── */
     .two-col {
-      display: grid;
-      grid-template-columns: 260px 1fr;
-      gap: 24px;
-      align-items: start;
+      display: grid; grid-template-columns: 240px 1fr; gap: 24px; align-items: start;
     }
 
-    /* ─── Sidebar ──────────────────────────────────────────────── */
-    .sidebar {
-      position: sticky;
-      top: 88px;
-      max-height: calc(100vh - 108px);
-      overflow-y: auto;
-    }
+    /* ── Sidebar ───────────────────────────────────────── */
+    .sidebar { position: sticky; top: 88px; max-height: calc(100vh - 108px); overflow-y: auto; }
     .sidebar-box {
-      border: 1px solid var(--border-dark);
-      border-radius: 12px;
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      background: transparent;
+      border: 1px solid var(--border-dark); border-radius: 12px;
+      padding: 16px; display: flex; flex-direction: column; gap: 18px;
     }
     .sidebar-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #9ca3af;
+      display: flex; justify-content: space-between; align-items: center;
+      padding-bottom: 10px; border-bottom: 1px solid #9ca3af;
     }
     .sidebar-title { font-weight: 700; font-size: 1rem; color: #111827; }
-    .btn-clear {
-      font-size: 11px;
-      color: var(--coral);
-      font-weight: 500;
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 0;
-      display: none;
+    .fl-label {
+      font-size: 11px; font-weight: 700; color: var(--text-gray);
+      text-transform: uppercase; letter-spacing: .5px; margin-bottom: 7px;
     }
-    .btn-clear:hover { color: #c0392b; }
-    .filter-section-label {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--text-gray);
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      margin-bottom: 7px;
+    .fl-stack { display: flex; flex-direction: column; gap: 5px; }
+    .fl-btn {
+      display: block; width: 100%; text-align: left;
+      padding: 7px 12px; border-radius: 8px;
+      border: 1px solid var(--border-gray); background: white;
+      color: var(--text-gray); font-size: 13px;
+      font-family: 'Ubuntu', sans-serif; cursor: pointer; transition: all .15s;
     }
-    .filter-stack { display: flex; flex-direction: column; gap: 5px; }
-    .filter-btn {
-      display: block;
-      width: 100%;
-      text-align: left;
-      padding: 7px 12px;
-      border-radius: 8px;
-      border: 1px solid var(--border-gray);
-      background: white;
-      color: var(--text-gray);
-      font-size: 13px;
-      font-family: 'Ubuntu', sans-serif;
-      cursor: pointer;
-      transition: all .15s;
-    }
-    .filter-btn:hover:not(.active) { background: #f9fafb; }
-    .filter-btn.active {
-      background: rgba(64,171,201,.1);
-      color: var(--teal);
-      border-color: rgba(64,171,201,.4);
-    }
-
-    /* Search input */
+    .fl-btn:hover:not(.active) { background: #f9fafb; }
+    .fl-btn.active { background: rgba(64,171,201,.1); color: var(--teal); border-color: rgba(64,171,201,.4); }
     .search-wrap { position: relative; }
-    .search-wrap .ico {
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 15px;
-      height: 15px;
-      color: #9ca3af;
-      pointer-events: none;
+    .search-wrap .s-ico {
+      position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+      width: 14px; height: 14px; color: #9ca3af; pointer-events: none;
     }
     .search-input {
-      width: 100%;
-      padding: 8px 10px 8px 32px;
-      border: 1px solid #d1d5db;
-      border-radius: 8px;
-      font-size: 13px;
-      font-family: 'Ubuntu', sans-serif;
-      color: #111827;
-      background: white;
-      outline: none;
-      transition: all .15s;
+      width: 100%; padding: 8px 10px 8px 30px;
+      border: 1px solid #d1d5db; border-radius: 8px;
+      font-size: 13px; font-family: 'Ubuntu', sans-serif;
+      color: #111827; background: white; outline: none; transition: all .15s;
     }
-    .search-input:focus {
-      border-color: var(--coral);
-      box-shadow: 0 0 0 3px rgba(64,171,201,.15);
-    }
+    .search-input:focus { border-color: var(--coral); box-shadow: 0 0 0 3px rgba(64,171,201,.15); }
     .search-input::placeholder { color: #9ca3af; }
-
-    /* Pagination inside sidebar */
-    .page-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-    .page-btns { display: flex; gap: 6px; }
+    .page-row { display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: var(--text-muted); }
+    .page-btns { display: flex; gap: 5px; }
     .page-btn {
-      padding: 4px 10px;
-      border: 1px solid var(--border-gray);
-      border-radius: 6px;
-      background: white;
-      font-size: 12px;
-      cursor: pointer;
-      font-family: 'Ubuntu', sans-serif;
-      transition: all .15s;
+      padding: 3px 9px; border: 1px solid var(--border-gray); border-radius: 6px;
+      background: white; font-size: 12px; cursor: pointer;
+      font-family: 'Ubuntu', sans-serif; transition: all .15s;
     }
     .page-btn:hover { background: #f9fafb; }
 
-    /* ─── Section note ─────────────────────────────────────────── */
+    /* ── Section note ──────────────────────────────────── */
     .section-note {
-      font-size: 13px;
-      color: #4b5563;
-      background: var(--surface);
-      border-left: 3px solid var(--teal);
-      padding: 10px 14px;
-      border-radius: 0 8px 8px 0;
-      margin-bottom: 20px;
-      line-height: 1.65;
+      font-size: 13px; color: #4b5563;
+      background: var(--surface); border-left: 3px solid var(--teal);
+      padding: 10px 14px; border-radius: 0 8px 8px 0;
+      margin-bottom: 20px; line-height: 1.65;
     }
 
-    /* ─── Chart elements ───────────────────────────────────────── */
-    .chart-title {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--text-light);
-      text-transform: uppercase;
-      letter-spacing: .5px;
-      margin-bottom: 8px;
-    }
-    .plotly-wrap {
-      background: var(--surface);
-      border: 1px solid var(--border-dark);
-      border-radius: 12px;
-      padding: 8px;
-      margin-bottom: 20px;
-    }
-
-    /* ─── Prompt cards (exact case-box style) ──────────────────── */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-    .prompt-card {
-      background: var(--surface);
-      border: 1px solid var(--border-dark);
-      border-radius: 12px;
-      padding: 20px;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      min-height: 210px;
-      transition: box-shadow .15s;
-      position: relative;
-      outline: none;
-    }
-    .prompt-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,.1); }
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-    .card-title {
-      font-size: 14px;
-      font-weight: 700;
-      color: #111827;
-      line-height: 1.4;
-      flex: 1;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .card-body {
-      flex: 1;
-      font-size: 11.5px;
-      color: var(--text-muted);
-      line-height: 1.55;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .card-footer {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      padding-top: 10px;
-      border-top: 1px solid #f3f4f6;
-      margin-top: auto;
-    }
-
-    /* ─── Tags / badges ────────────────────────────────────────── */
+    /* ── Tags ──────────────────────────────────────────── */
     .tag {
-      display: inline-block;
-      padding: 2px 7px;
-      border-radius: 4px;
-      font-size: 10px;
-      font-weight: 500;
-      line-height: 1.6;
-      white-space: nowrap;
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 10px; font-weight: 500; line-height: 1.6; white-space: nowrap;
     }
-    /* source tags (top-right of card) */
-    .tag-adv  { background: #fef3c7; color: #92400e; border-radius: 6px; padding: 3px 8px; font-size: 10px; font-weight: 600; }
-    .tag-inf  { background: var(--teal-tag); color: #0e7490; border-radius: 6px; padding: 3px 8px; font-size: 10px; font-weight: 600; }
-    /* condition tags (card footer) */
-    .tag-base { background: rgba(64,171,201,.1); color: var(--teal); border: 1px solid rgba(64,171,201,.25); }
-    .tag-high { background: rgba(174,221,234,.3); color: #065f46; border: 1px solid rgba(64,171,201,.2); }
-    .tag-low  { background: rgba(229,118,87,.1); color: #9a3412; border: 1px solid rgba(229,118,87,.2); }
-    .tag-gray { background: var(--gray-tag); color: var(--text-gray); }
-    /* type badges in versions table */
+    .tag-adv { background: #fef3c7; color: #92400e; }
+    .tag-inf  { background: var(--teal-tag); color: #0e7490; }
     .badge-teal {
       background: rgba(64,171,201,.1); color: var(--teal);
       border: 1px solid rgba(64,171,201,.25); padding: 2px 9px;
@@ -425,14 +195,45 @@
       overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
     }
 
-    /* ─── Table ────────────────────────────────────────────────── */
+    /* ── Open-ended prompt rows ────────────────────────── */
+    .prompt-rows { display: flex; flex-direction: column; gap: 10px; }
+    .prompt-row {
+      background: var(--surface); border: 1px solid var(--border-dark);
+      border-radius: 12px; padding: 18px 20px;
+      transition: box-shadow .15s;
+    }
+    .prompt-row:hover { box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+    .row-header {
+      display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px;
+    }
+    .row-query {
+      font-size: 14px; font-weight: 700; color: #111827;
+      line-height: 1.4; flex: 1;
+    }
+    /* High SES framing — system message → blockquote style */
+    .framing-block {
+      border-left: 3px solid var(--teal);
+      padding: 8px 12px; border-radius: 0 6px 6px 0;
+      background: rgba(64,171,201,.06);
+      font-size: 12px; color: var(--text-gray); line-height: 1.6;
+      font-style: italic;
+    }
+    /* High SES framing — inline prompt → normal text */
+    .framing-inline {
+      font-size: 12px; color: var(--text-muted);
+      line-height: 1.6; padding: 6px 0 0 2px;
+    }
+    .framing-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .4px; color: var(--teal); margin-bottom: 5px;
+    }
+
+    /* ── WVS table ─────────────────────────────────────── */
     .table-wrap { border: 1px solid var(--border-dark); border-radius: 12px; overflow: hidden; }
     .data-table { width: 100%; border-collapse: collapse; font-size: 12px; }
     .data-table thead th {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border-dark);
-      color: var(--text-light);
-      font-size: 10.5px; font-weight: 700;
+      background: var(--surface); border-bottom: 1px solid var(--border-dark);
+      color: var(--text-light); font-size: 10.5px; font-weight: 700;
       text-transform: uppercase; letter-spacing: .5px;
       padding: 10px 14px; text-align: left;
     }
@@ -442,167 +243,180 @@
     }
     .data-table tbody tr:last-child td { border-bottom: none; }
     .data-table tbody tr:hover td { background: var(--surface); }
-
-    /* ─── WVS dist bar ─────────────────────────────────────────── */
     .dist-bar { display: flex; height: 8px; border-radius: 3px; overflow: hidden; width: 180px; }
     .dist-bar div { height: 100%; }
     .dist-legend { font-size: 10px; color: var(--text-light); margin-top: 3px; }
 
-    /* ─── Persona detail modal ─────────────────────────────────── */
-    .modal-overlay {
-      position: fixed; inset: 0;
-      background: rgba(0,0,0,.5);
-      z-index: 1000;
-      display: none;
-      align-items: center; justify-content: center;
-      padding: 16px;
+    /* ── Chart elements ────────────────────────────────── */
+    .chart-title {
+      font-size: 11px; font-weight: 700; color: var(--text-light);
+      text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px;
     }
-    .modal-overlay.open { display: flex; }
-    .modal-box {
-      background: white;
-      border-radius: 16px;
-      max-height: 90vh; overflow-y: auto;
-      box-shadow: 0 25px 50px rgba(0,0,0,.25);
-      padding: 24px 28px;
-      width: 100%; max-width: 920px;
-      position: relative;
+    .plotly-wrap {
+      background: var(--surface); border: 1px solid var(--border-dark);
+      border-radius: 12px; padding: 8px;
     }
-    .modal-close {
-      position: absolute; top: 16px; right: 16px;
-      padding: 8px; color: #9ca3af;
-      background: none; border: none; cursor: pointer;
-      border-radius: 8px; transition: all .15s;
-    }
-    .modal-close:hover { color: #374151; background: #f3f4f6; }
-    .modal-query {
-      font-size: 15px; font-weight: 700; color: #111827;
-      margin-bottom: 16px; padding-right: 36px; line-height: 1.4;
-    }
-    .modal-conds {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 12px;
-    }
-    .cond-card {
-      border: 1px solid #e5e7eb; border-radius: 8px;
-      padding: 12px 14px; font-size: 12px; background: var(--bg);
-    }
-    .cond-card.cond-high { border-left: 3px solid var(--teal); background: rgba(174,221,234,.1); }
-    .cond-card.cond-low  { border-left: 3px solid var(--coral); background: rgba(229,118,87,.05); }
-    .cond-label {
-      display: inline-block;
-      font-size: 10px; font-weight: 700;
-      padding: 2px 8px; border-radius: 999px; margin-bottom: 7px;
-    }
-    .cond-role  { font-size: 11px; color: var(--text-muted); font-style: italic; margin: 3px 0; }
-    .cond-persona-text {
-      border-left: 2px solid #e5e7eb; padding-left: 8px;
-      color: var(--text-muted); font-size: 11px; margin: 5px 0; line-height: 1.5;
-    }
+    /* Side-by-side chart grid */
+    .chart-row { display: grid; gap: 16px; }
+    .chart-row.cols-2 { grid-template-columns: 1fr 1fr; }
+    .chart-row.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .chart-col-label { font-weight: 600; text-align: center; font-size: 12px; margin-bottom: 6px; }
 
-    /* ─── Empty state ──────────────────────────────────────────── */
-    .empty-state {
-      text-align: center; padding: 48px 0;
-      color: var(--text-muted); font-size: 13px;
-    }
+    /* ── Analysis sub-panels ───────────────────────────── */
+    .analysis-panel { display: none; }
+    .analysis-panel.active { display: block; }
 
-    /* ─── Footer ───────────────────────────────────────────────── */
-    .site-footer {
+    /* ── Home page ─────────────────────────────────────── */
+    .home-hero {
       background: var(--surface);
-      border-top: 1px solid #e5e7eb;
-      margin-top: auto;
+      border-bottom: 1px solid var(--border-dark);
+      padding: 56px 0 48px;
+    }
+    .home-inner { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+    .home-title {
+      font-family: 'Bitcount Prop Single', sans-serif;
+      font-size: 2.4rem; font-weight: 700; letter-spacing: .06em;
+      margin-bottom: 28px;
+    }
+    .home-body {
+      font-size: 1rem; line-height: 1.8; color: #222;
+      margin-bottom: 32px;
+    }
+    .home-body p { margin-bottom: 0; }
+    .home-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 20px; border-radius: 8px;
+      background: var(--teal); color: white; font-size: 13px; font-weight: 600;
+      font-family: 'Ubuntu', sans-serif; text-decoration: none;
+      border: 1px solid var(--teal); transition: all .15s; cursor: pointer;
+    }
+    .btn-primary:hover { background: #358fa8; border-color: #358fa8; }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 20px; border-radius: 8px;
+      background: white; color: var(--text-gray); font-size: 13px; font-weight: 600;
+      font-family: 'Ubuntu', sans-serif; text-decoration: none;
+      border: 1px solid var(--border-dark); transition: all .15s; cursor: pointer;
+    }
+    .btn-outline:hover { background: #f9f9f9; }
+
+    /* ── Footer ────────────────────────────────────────── */
+    .site-footer {
+      background: var(--surface); border-top: 1px solid #e5e7eb; margin-top: auto;
     }
     .footer-inner {
-      max-width: 1300px; margin: 0 auto;
-      padding: 28px 24px;
+      max-width: 1300px; margin: 0 auto; padding: 20px 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 8px;
     }
-    .footer-top {
-      display: flex; justify-content: space-between;
-      align-items: center; flex-wrap: wrap; gap: 12px;
-    }
-    .footer-brand { font-size: 14px; color: var(--text); }
-    .footer-copy {
-      margin-top: 20px; padding-top: 20px;
-      text-align: center; font-size: 13px;
-    }
-    .footer-quote {
-      margin-top: 20px; padding-top: 20px;
-      border-top: 1px solid rgba(229,231,235,.6);
-      text-align: center; font-size: 11px;
-      font-style: italic; color: var(--text);
-    }
-    .footer-attr { font-style: normal; display: block; margin-top: 3px; font-size: 11px; }
+    .footer-copy { font-size: 13px; color: var(--text); }
 
-    /* ─── Responsive ───────────────────────────────────────────── */
+    /* ── Responsive ────────────────────────────────────── */
     @media (max-width: 1024px) {
-      .two-col     { grid-template-columns: 1fr; }
-      .sidebar     { position: static; max-height: none; }
-      .cards-grid  { grid-template-columns: repeat(2, 1fr); }
-      .stats-grid  { grid-template-columns: repeat(2, 1fr); }
+      .two-col { grid-template-columns: 1fr; }
+      .sidebar { position: static; max-height: none; }
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
+      .chart-row.cols-2, .chart-row.cols-3 { grid-template-columns: 1fr; }
     }
     @media (max-width: 600px) {
-      .cards-grid  { grid-template-columns: 1fr; }
-      .hero-title  { font-size: 1.6rem; }
+      .home-title { font-size: 1.7rem; }
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
     }
   </style>
 </head>
 <body>
 
-<!-- ═══════ HEADER ═══════════════════════════════════════════════ -->
+<!-- ═══ HEADER ═══════════════════════════════════════════ -->
 <header class="site-header">
   <nav class="site-nav">
-    <a href="#" class="site-brand">LLM Longitudinal Study</a>
-    <div class="nav-right">
-      <a href="#" class="active">Dashboard</a>
+    <a href="#home" class="site-brand" data-nav="home">Longitudinal LLM Study</a>
+    <div class="nav-links">
+      <a href="#home"     data-nav="home">Home</a>
+      <a href="#overview" data-nav="overview">Overview</a>
+      <a href="#analysis" data-nav="analysis">Analysis</a>
       <span class="nav-date" id="nav-date"></span>
     </div>
   </nav>
 </header>
 
-<!-- ═══════ HERO ════════════════════════════════════════════════ -->
-<section class="hero">
-  <div class="hero-inner">
-    <h1 class="hero-title">STUDY DASHBOARD</h1>
-    <p class="hero-desc">Track value alignment and persona sensitivity across repeated waves.</p>
-    <div class="stats-grid">
-      <div class="stat-box">
-        <span class="stat-value" id="stat-waves">—</span>
-        <span class="stat-label">Waves Collected</span>
+<!-- ═══ PAGE: HOME ═══════════════════════════════════════ -->
+<div class="page" id="page-home">
+  <section class="home-hero">
+    <div class="home-inner">
+      <h1 class="home-title">LONGITUDINAL LLM STUDY</h1>
+      <div class="home-body">
+        <p>
+          Large language models offered by leading tech firms are
+          <strong>continuously being updated</strong>.
+          Human–AI interactions from today influence the models of tomorrow.
+          At the same time, <strong>commercial interests shape</strong> the development of LLMs.
+          In this project we design an <strong>automated experimental pipeline</strong>
+          to <strong>monitor and study</strong> how the output of LLMs evolves over time
+          to gain new insights into how models and society <strong>co-evolve</strong>.
+        </p>
       </div>
-      <div class="stat-box">
-        <span class="stat-value">3</span>
-        <span class="stat-label">Models Tracked</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-value" id="stat-wvs">—</span>
-        <span class="stat-label">WVS Questions</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-value" id="stat-persona">—</span>
-        <span class="stat-label">Persona Prompts</span>
+      <div class="home-actions">
+        <a href="#overview" class="btn-primary" data-nav="overview">
+          View Study Overview
+        </a>
+        <a href="https://github.com/cococokoko/longitudinal-llm-study" class="btn-outline" target="_blank" rel="noopener">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════ TYPE / TAB BAR ═══════════════════════════════════════ -->
-<div class="type-bar">
-  <div class="type-bar-inner">
-    <span class="type-label">Analysis:</span>
-    <button class="tab-btn active" data-tab="prompts">Prompts</button>
-    <button class="tab-btn" data-tab="versions">Model Versions</button>
-    <button class="tab-btn" data-tab="alignment">Value Alignment</button>
-    <button class="tab-btn" data-tab="lengths">Prompt Lengths</button>
-    <button class="tab-btn" data-tab="diversity">Output Diversity</button>
-    <button class="tab-btn" data-tab="steering">Steering Sensitivity</button>
-  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Algorithms and Society research group — ELLIS Tübingen</span>
+    </div>
+  </footer>
 </div>
 
-<!-- ═══════ MAIN ══════════════════════════════════════════════════ -->
-<main class="main">
+<!-- ═══ PAGE: OVERVIEW ════════════════════════════════════ -->
+<div class="page" id="page-overview">
 
-  <!-- ── PROMPTS ── -->
-  <div class="tab-panel active" id="panel-prompts">
+  <!-- Stats hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">STUDY OVERVIEW</h1>
+      <p class="hero-desc">Explore the prompts and experimental design used across waves.</p>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <span class="stat-value" id="stat-waves">—</span>
+          <span class="stat-label">Waves Collected</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value">3</span>
+          <span class="stat-label">Models Tracked</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value" id="stat-wvs">—</span>
+          <span class="stat-label">WVS Questions</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value" id="stat-persona">—</span>
+          <span class="stat-label">Open-ended Prompts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Type of prompt bar -->
+  <div class="type-bar">
+    <div class="type-bar-inner">
+      <span class="type-label">Type of prompt:</span>
+      <button class="sub-btn active" data-prompt="openended">Open-ended Prompts</button>
+      <button class="sub-btn" data-prompt="wvs">WVS Questions</button>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="main-wrap">
     <div class="two-col">
 
       <!-- Sidebar -->
@@ -610,34 +424,25 @@
         <div class="sidebar-box">
           <div class="sidebar-head">
             <span class="sidebar-title">Filters</span>
-            <button class="btn-clear" id="btn-clear">Clear All</button>
           </div>
 
           <div class="search-wrap">
-            <svg class="ico" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="s-ico" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
-            <input type="text" id="prompt-search" class="search-input" placeholder="Search prompts…" />
-          </div>
-
-          <div>
-            <p class="filter-section-label">Prompt type</p>
-            <div class="filter-stack">
-              <button class="filter-btn active" data-sub="persona">Persona Prompts</button>
-              <button class="filter-btn" data-sub="wvs">WVS Questions</button>
-            </div>
+            <input type="text" id="prompt-search" class="search-input" placeholder="Search…" />
           </div>
 
           <div id="src-section">
-            <p class="filter-section-label">Source</p>
-            <div class="filter-stack">
-              <button class="filter-btn active" data-src="all">All</button>
-              <button class="filter-btn" data-src="advertising">Advertising</button>
-              <button class="filter-btn" data-src="infinity_chat">Infinity Chat</button>
+            <p class="fl-label">Source</p>
+            <div class="fl-stack">
+              <button class="fl-btn active" data-src="all">All</button>
+              <button class="fl-btn" data-src="advertising">Advertising</button>
+              <button class="fl-btn" data-src="infinity_chat">Infinity Chat</button>
             </div>
           </div>
 
-          <div id="persona-page-section">
+          <div id="persona-pager">
             <div class="page-row">
               <span>Showing <span id="persona-range">—</span> of <span id="persona-total">—</span></span>
               <div class="page-btns">
@@ -647,7 +452,7 @@
             </div>
           </div>
 
-          <div id="wvs-page-section" style="display:none">
+          <div id="wvs-pager" style="display:none">
             <div class="page-row">
               <span>Showing <span id="wvs-range">—</span> of <span id="wvs-total">—</span></span>
               <div class="page-btns">
@@ -659,23 +464,21 @@
         </div>
       </aside>
 
-      <!-- Content area -->
+      <!-- Main content -->
       <div>
 
-        <!-- Persona sub-panel -->
-        <div id="sub-persona">
+        <!-- Open-ended rows -->
+        <div id="sub-openended">
           <p class="section-note">
-            Persona prompts are drawn from two query sources.
-            Each query has three conditions: <strong>baseline</strong> (no persona),
-            <strong>high SES</strong> (high-status professional role), and
-            <strong>low SES</strong> (lower-income role),
-            with framing delivered via the system message or inline.
-            Click a card to see all condition variants.
+            Open-ended prompts are drawn from two query sources.
+            Each prompt is tested with a <strong>baseline</strong> condition and
+            <strong>persona framings</strong> (high SES / low SES), delivered via system message or inline.
+            Below, each prompt shows its baseline query and the representative <strong>high SES</strong> framing.
           </p>
-          <div class="cards-grid" id="persona-grid"></div>
+          <div class="prompt-rows" id="persona-rows"></div>
         </div>
 
-        <!-- WVS sub-panel -->
+        <!-- WVS table -->
         <div id="sub-wvs" style="display:none">
           <p class="section-note">352 fixed World Values Survey questions sent every wave. Models respond with a JSON probability distribution over answer options (A, B, C…). The global distribution shows real human survey responses.</p>
           <div class="table-wrap">
@@ -697,184 +500,173 @@
     </div>
   </div>
 
-  <!-- ── MODEL VERSIONS ── -->
-  <div class="tab-panel" id="panel-versions">
-    <p class="section-note">Exact model version strings returned by the API per wave. Count = successful (non-error) calls.</p>
-    <div id="versions-wrap"></div>
-  </div>
-
-  <!-- ── VALUE ALIGNMENT ── -->
-  <div class="tab-panel" id="panel-alignment">
-    <p class="section-note">
-      <strong>Wasserstein</strong> = earth mover's distance vs the WVS global distribution (0 = perfect match).
-      <strong>Entropy</strong> = Shannon entropy of the model's distribution; gray dashed line = WVS human entropy.
-    </p>
-    <div class="chart-title">Wasserstein Distance from Global Distribution — Mean ± 1 SD</div>
-    <div class="plotly-wrap" id="chart-ws" style="height:340px"></div>
-    <div class="chart-title">Shannon Entropy per Wave</div>
-    <div class="plotly-wrap" id="chart-ent" style="height:340px"></div>
-  </div>
-
-  <!-- ── PROMPT LENGTHS ── -->
-  <div class="tab-panel" id="panel-lengths">
-    <p class="section-note">
-      Total character count of each persona prompt (user text + system message when present).
-      Baseline has no persona; SES prompts include role descriptions that inflate length.
-    </p>
-    <div class="chart-title">Prompt Length Distribution by Condition × Framing</div>
-    <div class="plotly-wrap" id="chart-lengths" style="height:420px"></div>
-  </div>
-
-  <!-- ── OUTPUT DIVERSITY ── -->
-  <div class="tab-panel" id="panel-diversity">
-    <p class="section-note">
-      Day-over-day cosine similarity of <strong>baseline</strong> persona responses (MiniLM-L6-v2 embeddings).
-      High values = model gives consistent answers; drops signal response drift.
-    </p>
-    <div class="empty-state" id="chart-4a-empty" style="display:none">
-      Not enough data yet — appears once at least two waves have been collected.
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Algorithms and Society research group — ELLIS Tübingen</span>
     </div>
-    <div id="chart-4a-wrap">
-      <div class="chart-title">Baseline Response Stability — Consecutive Wave Pairs</div>
-      <div class="plotly-wrap" id="chart-4a" style="height:380px"></div>
+  </footer>
+</div>
+
+<!-- ═══ PAGE: ANALYSIS ════════════════════════════════════ -->
+<div class="page" id="page-analysis">
+
+  <!-- Analysis sub-tab bar -->
+  <div class="type-bar">
+    <div class="type-bar-inner">
+      <span class="type-label">Analysis:</span>
+      <button class="sub-btn active" data-analysis="versions">Model Versions</button>
+      <button class="sub-btn" data-analysis="alignment">Value Alignment</button>
+      <button class="sub-btn" data-analysis="lengths">Prompt Lengths</button>
+      <button class="sub-btn" data-analysis="diversity">Output Diversity</button>
+      <button class="sub-btn" data-analysis="steering">Steering Sensitivity</button>
     </div>
   </div>
 
-  <!-- ── STEERING SENSITIVITY ── -->
-  <div class="tab-panel" id="panel-steering">
-    <p class="section-note">
-      Cosine similarity between SES-framed responses and matched baseline (same query, same wave, same model).
-      <strong>Solid</strong> = system message, <strong>dashed</strong> = inline prompt.
-      <span style="color:var(--teal)">●</span> high SES &nbsp;
-      <span style="color:var(--coral)">●</span> low SES — lower values = framing shifts response further from baseline.
-    </p>
-    <div class="empty-state" id="chart-4b-empty" style="display:none">
-      Not enough data yet — appears once at least two waves have been collected.
+  <div class="main-wrap">
+
+    <!-- Model Versions -->
+    <div class="analysis-panel active" id="panel-versions">
+      <p class="section-note">Exact model version strings returned by the API per wave. Count = successful (non-error) calls.</p>
+      <div id="versions-wrap"></div>
     </div>
-    <div id="chart-4b-wrap">
-      <div class="chart-title">Cosine Similarity to Baseline: Framing × SES per Wave</div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+
+    <!-- Value Alignment -->
+    <div class="analysis-panel" id="panel-alignment">
+      <p class="section-note">
+        <strong>Wasserstein</strong> = earth mover's distance vs the WVS global distribution (0 = perfect match).
+        <strong>Entropy</strong> = Shannon entropy of the model's distribution; gray dashed = WVS human entropy.
+      </p>
+      <div class="chart-row cols-2">
         <div>
-          <div style="font-weight:600;text-align:center;font-size:12px;margin-bottom:6px" id="lbl-4b-0"></div>
-          <div class="plotly-wrap" id="chart-4b-0" style="height:360px"></div>
+          <div class="chart-title">Wasserstein Distance — Mean ± 1 SD</div>
+          <div class="plotly-wrap" id="chart-ws" style="height:300px"></div>
         </div>
         <div>
-          <div style="font-weight:600;text-align:center;font-size:12px;margin-bottom:6px" id="lbl-4b-1"></div>
-          <div class="plotly-wrap" id="chart-4b-1" style="height:360px"></div>
-        </div>
-        <div>
-          <div style="font-weight:600;text-align:center;font-size:12px;margin-bottom:6px" id="lbl-4b-2"></div>
-          <div class="plotly-wrap" id="chart-4b-2" style="height:360px"></div>
+          <div class="chart-title">Shannon Entropy per Wave</div>
+          <div class="plotly-wrap" id="chart-ent" style="height:300px"></div>
         </div>
       </div>
     </div>
+
+    <!-- Prompt Lengths -->
+    <div class="analysis-panel" id="panel-lengths">
+      <p class="section-note">Total character count of each persona prompt (user text + system message when present).</p>
+      <div class="chart-title">Prompt Length Distribution by Condition × Framing</div>
+      <div class="plotly-wrap" id="chart-lengths" style="height:360px"></div>
+    </div>
+
+    <!-- Output Diversity -->
+    <div class="analysis-panel" id="panel-diversity">
+      <p class="section-note">
+        Day-over-day cosine similarity of <strong>baseline</strong> persona responses (MiniLM-L6-v2 embeddings).
+        High values = consistent answers; drops signal response drift.
+      </p>
+      <div id="chart-4a-empty" style="text-align:center;padding:48px 0;color:var(--text-muted);font-size:13px;display:none">
+        Not enough data yet — appears once at least two waves have been collected.
+      </div>
+      <div id="chart-4a-wrap">
+        <div class="chart-title">Baseline Response Stability — Consecutive Wave Pairs</div>
+        <div class="plotly-wrap" id="chart-4a" style="height:340px"></div>
+      </div>
+    </div>
+
+    <!-- Steering Sensitivity -->
+    <div class="analysis-panel" id="panel-steering">
+      <p class="section-note">
+        Cosine similarity between SES-framed responses and matched baseline.
+        <strong>Solid</strong> = system message, <strong>dashed</strong> = inline prompt.
+        <span style="color:var(--teal)">●</span> high SES &nbsp;
+        <span style="color:var(--coral)">●</span> low SES — lower = framing shifts response further from baseline.
+      </p>
+      <div id="chart-4b-empty" style="text-align:center;padding:48px 0;color:var(--text-muted);font-size:13px;display:none">
+        Not enough data yet — appears once at least two waves have been collected.
+      </div>
+      <div id="chart-4b-wrap">
+        <div class="chart-title">Cosine Similarity to Baseline: Framing × SES per Wave</div>
+        <div class="chart-row cols-3" style="margin-top:8px">
+          <div>
+            <div class="chart-col-label" id="lbl-4b-0"></div>
+            <div class="plotly-wrap" id="chart-4b-0" style="height:320px"></div>
+          </div>
+          <div>
+            <div class="chart-col-label" id="lbl-4b-1"></div>
+            <div class="plotly-wrap" id="chart-4b-1" style="height:320px"></div>
+          </div>
+          <div>
+            <div class="chart-col-label" id="lbl-4b-2"></div>
+            <div class="plotly-wrap" id="chart-4b-2" style="height:320px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-</main>
-
-<!-- ═══════ PERSONA DETAIL MODAL ═══════════════════════════════ -->
-<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
-  <div class="modal-box">
-    <button class="modal-close" id="modal-close" aria-label="Close">
-      <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-      </svg>
-    </button>
-    <div id="modal-content"></div>
-  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Algorithms and Society research group — ELLIS Tübingen</span>
+    </div>
+  </footer>
 </div>
-
-<!-- ═══════ FOOTER ════════════════════════════════════════════ -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <p class="footer-brand">LLM Longitudinal Study Dashboard</p>
-    </div>
-    <div class="footer-copy">
-      <p>© 2026 Algorithms and Society research group — ELLIS Tübingen</p>
-    </div>
-    <div class="footer-quote">
-      <p>"All models are wrong — but some are useful."</p>
-      <span class="footer-attr">(attributed to George Box)</span>
-    </div>
-  </div>
-</footer>
 
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <script>
 'use strict';
 
-// ── Palette ───────────────────────────────────────────────────────────────────
-const MODEL_CLR = {
-  'Claude Sonnet': '#e07b54',
-  'Gemini Pro':    '#40ABC9',
-  'GPT Chat':      '#34A853',
-};
-const MODEL_LABELS = {
-  'Claude Sonnet': 'Claude Sonnet',
-  'Gemini Pro':    'Gemini Pro',
-  'GPT Chat':      'GPT Chat',
-};
-const MAIN_MODELS  = ['Claude Sonnet', 'Gemini Pro', 'GPT Chat'];
+// ── Palette ────────────────────────────────────────────────────
+const MODEL_CLR = { 'Claude Sonnet':'#e07b54', 'Gemini Pro':'#40ABC9', 'GPT Chat':'#34A853' };
+const MODEL_LABELS = { 'Claude Sonnet':'Claude Sonnet', 'Gemini Pro':'Gemini Pro', 'GPT Chat':'GPT Chat' };
+const MAIN_MODELS  = ['Claude Sonnet','Gemini Pro','GPT Chat'];
 const DIST_PALETTE = ['#40ABC9','#34A853','#e07b54','#9b59b6','#e74c3c','#1abc9c','#e67e22','#2c3e50'];
 
-// ── Tab switching ─────────────────────────────────────────────────────────────
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
-    ['chart-ws','chart-ent','chart-lengths','chart-4a','chart-4b-0','chart-4b-1','chart-4b-2'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el && el._fullLayout) Plotly.Plots.resize(el);
-    });
-  });
+// ── Hash routing ───────────────────────────────────────────────
+function navigate() {
+  const hash = location.hash.slice(1) || 'home';
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const page = document.getElementById('page-' + hash);
+  if (page) page.classList.add('active');
+  document.querySelectorAll('[data-nav]').forEach(a =>
+    a.classList.toggle('active', a.dataset.nav === hash)
+  );
+  if (hash === 'analysis') setTimeout(resizeAll, 50);
+}
+window.addEventListener('hashchange', navigate);
+
+// Intercept btn-primary / btn-outline that set data-nav
+document.querySelectorAll('[data-nav]').forEach(el => {
+  if (el.tagName === 'A' && el.href.includes('#')) return; // let <a> navigate naturally
 });
 
-// ── Sub-panel toggle (Persona / WVS) ─────────────────────────────────────────
-let _activeSub = 'persona';
-document.querySelectorAll('.filter-btn[data-sub]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn[data-sub]').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    _activeSub = btn.dataset.sub;
-    const isPersona = _activeSub === 'persona';
-    document.getElementById('sub-persona').style.display  = isPersona ? '' : 'none';
-    document.getElementById('sub-wvs').style.display      = isPersona ? 'none' : '';
-    document.getElementById('src-section').style.display  = isPersona ? '' : 'none';
-    document.getElementById('persona-page-section').style.display = isPersona ? '' : 'none';
-    document.getElementById('wvs-page-section').style.display     = isPersona ? 'none' : '';
-    document.getElementById('prompt-search').placeholder = isPersona ? 'Search prompts…' : 'Search questions…';
-  });
-});
+// ── Plotly helpers ─────────────────────────────────────────────
+const CHART_IDS = ['chart-ws','chart-ent','chart-lengths','chart-4a','chart-4b-0','chart-4b-1','chart-4b-2'];
+function resizeAll() {
+  CHART_IDS.forEach(id => { const el = document.getElementById(id); if (el && el._fullLayout) Plotly.Plots.resize(el); });
+}
 
-// ── Plotly base layout ────────────────────────────────────────────────────────
 function baseLayout(extra = {}) {
   return Object.assign({
-    margin:        { l: 52, r: 16, t: 28, b: 52 },
+    margin:        { l: 46, r: 12, t: 24, b: 46 },
     paper_bgcolor: '#FDFDF5',
     plot_bgcolor:  '#f8f8ef',
-    font:          { family: "'Ubuntu', system-ui, sans-serif", size: 11, color: '#374151' },
-    xaxis:         { showgrid: false, linecolor: '#d1d5db', linewidth: 1, tickfont: { size: 11 } },
-    yaxis:         { gridcolor: '#e8e8e1', linecolor: '#d1d5db', linewidth: 1, tickfont: { size: 11 } },
-    legend:        { bgcolor: 'transparent', borderwidth: 0, font: { size: 11 } },
+    font:          { family:"'Ubuntu',system-ui,sans-serif", size:11, color:'#374151' },
+    xaxis:         { showgrid:false, linecolor:'#d1d5db', linewidth:1, tickfont:{size:11} },
+    yaxis:         { gridcolor:'#e8e8e1', linecolor:'#d1d5db', linewidth:1, tickfont:{size:11} },
+    legend:        { bgcolor:'transparent', borderwidth:0, font:{size:11} },
   }, extra);
 }
-const PCFG = { responsive: true, displayModeBar: false };
+const PCFG = { responsive:true, displayModeBar:false };
 
-// ── Fetch data ────────────────────────────────────────────────────────────────
+// ── Data loading ───────────────────────────────────────────────
 async function loadData() {
   const [mRes, pRes] = await Promise.all([fetch('data/metrics.json'), fetch('data/prompts.json')]);
   if (!mRes.ok || !pRes.ok) throw new Error('data files missing — run generate_dashboard_data.py first');
   return { metrics: await mRes.json(), prompts: await pRes.json() };
 }
 
-// ── Model Versions ────────────────────────────────────────────────────────────
+// ── Charts ─────────────────────────────────────────────────────
 function renderVersions({ wave_versions, waves }) {
   const byKey = {};
   for (const r of wave_versions) byKey[`${r.wave}||${r.model}`] = r;
-
   let html = `<div class="table-wrap"><table class="data-table"><thead><tr><th>Model</th>`;
   for (const w of waves) html += `<th>${w}</th>`;
   html += `</tr></thead><tbody>`;
@@ -883,11 +675,9 @@ function renderVersions({ wave_versions, waves }) {
     for (const w of waves) {
       const r = byKey[`${w}||${model}`];
       if (!r) { html += `<td style="color:#9ca3af;text-align:center">—</td>`; continue; }
-      const short = (r.model_used || '—').split('/').pop().split(':')[0];
-      html += `<td>
-        <span class="badge-teal" title="${r.model_used||''}">${short}</span>
-        <div style="font-size:10px;color:#9ca3af;margin-top:3px">${r.n_calls} calls</div>
-      </td>`;
+      const short = (r.model_used||'—').split('/').pop().split(':')[0];
+      html += `<td><span class="badge-teal" title="${r.model_used||''}">${short}</span>
+               <div style="font-size:10px;color:#9ca3af;margin-top:3px">${r.n_calls} calls</div></td>`;
     }
     html += `</tr>`;
   }
@@ -895,338 +685,260 @@ function renderVersions({ wave_versions, waves }) {
   document.getElementById('versions-wrap').innerHTML = html;
 }
 
-// ── Value Alignment Charts ────────────────────────────────────────────────────
 function renderWVSCharts(wvs_metrics) {
-  const traceFn = (yKey, errKey) => MAIN_MODELS.map(model => {
+  const mk = (yKey, errKey) => MAIN_MODELS.map(model => {
     const d = wvs_metrics.filter(r => r.model === model).sort((a,b) => a.wave < b.wave ? -1 : 1);
     return {
-      x: d.map(r => r.wave), y: d.map(r => r[yKey]),
-      error_y: { type: 'data', array: d.map(r => r[errKey]), visible: true,
-                 thickness: 1.5, width: 4, color: MODEL_CLR[model] + '99' },
-      mode: 'lines+markers', name: MODEL_LABELS[model],
-      line: { color: MODEL_CLR[model], width: 2.5 },
-      marker: { size: 7, color: MODEL_CLR[model] },
+      x: d.map(r=>r.wave), y: d.map(r=>r[yKey]),
+      error_y: { type:'data', array:d.map(r=>r[errKey]), visible:true, thickness:1.5, width:4, color:MODEL_CLR[model]+'99' },
+      mode:'lines+markers', name:MODEL_LABELS[model],
+      line:{color:MODEL_CLR[model],width:2.5}, marker:{size:6,color:MODEL_CLR[model]},
     };
   });
-  Plotly.newPlot('chart-ws', traceFn('ws_mean','ws_std'),
-    baseLayout({ yaxis: { title: 'Wasserstein Distance', gridcolor: '#e8e8e1' } }), PCFG);
+  Plotly.newPlot('chart-ws', mk('ws_mean','ws_std'),
+    baseLayout({ yaxis:{title:'Wasserstein Dist.',gridcolor:'#e8e8e1'} }), PCFG);
 
   const entTraces = MAIN_MODELS.map(model => {
     const d = wvs_metrics.filter(r => r.model === model).sort((a,b) => a.wave < b.wave ? -1 : 1);
-    return {
-      x: d.map(r => r.wave), y: d.map(r => r.entropy_mean),
-      mode: 'lines+markers', name: MODEL_LABELS[model],
-      line: { color: MODEL_CLR[model], width: 2.5 },
-      marker: { size: 7, color: MODEL_CLR[model] },
-    };
+    return { x:d.map(r=>r.wave), y:d.map(r=>r.entropy_mean), mode:'lines+markers', name:MODEL_LABELS[model],
+             line:{color:MODEL_CLR[model],width:2.5}, marker:{size:6,color:MODEL_CLR[model]} };
   });
-  const ref = wvs_metrics.filter(r => r.model === MAIN_MODELS[0]).sort((a,b) => a.wave < b.wave ? -1 : 1);
-  if (ref.length) entTraces.push({
-    x: ref.map(r => r.wave), y: ref.map(r => r.entropy_global_mean),
-    mode: 'lines', name: 'WVS human',
-    line: { color: '#d1d5db', dash: 'dash', width: 1.5 },
-  });
+  const ref = wvs_metrics.filter(r => r.model === MAIN_MODELS[0]).sort((a,b) => a.wave<b.wave?-1:1);
+  if (ref.length) entTraces.push({ x:ref.map(r=>r.wave), y:ref.map(r=>r.entropy_global_mean),
+    mode:'lines', name:'WVS human', line:{color:'#d1d5db',dash:'dash',width:1.5} });
   Plotly.newPlot('chart-ent', entTraces,
-    baseLayout({ yaxis: { title: 'Mean Shannon Entropy (nats)', gridcolor: '#e8e8e1' } }), PCFG);
+    baseLayout({ yaxis:{title:'Shannon Entropy (nats)',gridcolor:'#e8e8e1'} }), PCFG);
 }
 
-// ── Prompt Lengths ────────────────────────────────────────────────────────────
 function renderLengths(persona_lengths) {
   const groups = [
-    { label: 'Baseline',          cond: 'baseline', framing: null,            color: '#6366f1' },
-    { label: 'High SES / system', cond: 'high_ses', framing: 'system_msg',    color: '#40ABC9' },
-    { label: 'High SES / inline', cond: 'high_ses', framing: 'inline_prompt', color: '#6ee7b7' },
-    { label: 'Low SES / system',  cond: 'low_ses',  framing: 'system_msg',    color: '#E57657' },
-    { label: 'Low SES / inline',  cond: 'low_ses',  framing: 'inline_prompt', color: '#fca5a5' },
+    {label:'Baseline',         cond:'baseline',framing:null,           color:'#6366f1'},
+    {label:'High SES / sys',   cond:'high_ses',framing:'system_msg',   color:'#40ABC9'},
+    {label:'High SES / inline',cond:'high_ses',framing:'inline_prompt',color:'#6ee7b7'},
+    {label:'Low SES / sys',    cond:'low_ses', framing:'system_msg',   color:'#E57657'},
+    {label:'Low SES / inline', cond:'low_ses', framing:'inline_prompt',color:'#fca5a5'},
   ];
-  const traces = groups.map(g => ({
-    type: 'box',
-    y: persona_lengths
-      .filter(d => d.condition === g.cond && (g.framing === null || d.framing === g.framing))
-      .map(d => d.prompt_len),
-    name: g.label, boxpoints: 'outliers',
-    marker: { color: g.color, size: 3, opacity: .7 },
-    line: { color: g.color }, fillcolor: g.color + '44',
-  }));
-  Plotly.newPlot('chart-lengths', traces,
-    baseLayout({ yaxis: { title: 'Characters (prompt + system message)', gridcolor: '#e8e8e1' },
-                 xaxis: { tickangle: -20 }, showlegend: false }), PCFG);
+  Plotly.newPlot('chart-lengths',
+    groups.map(g => ({
+      type:'box',
+      y:persona_lengths.filter(d=>d.condition===g.cond&&(g.framing===null||d.framing===g.framing)).map(d=>d.prompt_len),
+      name:g.label, boxpoints:'outliers',
+      marker:{color:g.color,size:3,opacity:.7}, line:{color:g.color}, fillcolor:g.color+'44',
+    })),
+    baseLayout({ yaxis:{title:'Characters',gridcolor:'#e8e8e1'}, xaxis:{tickangle:-20}, showlegend:false }), PCFG);
 }
 
-// ── Output Diversity ──────────────────────────────────────────────────────────
 function renderCosine4a(cosine_4a) {
-  const traces = MAIN_MODELS.map(model => {
-    const d = cosine_4a.filter(r => r.model === model).sort((a,b) => a.wave_from < b.wave_from ? -1 : 1);
-    return {
-      x: d.map(r => `${r.wave_from.slice(5)}→${r.wave_to.slice(5)}`),
-      y: d.map(r => r.sim_mean),
-      error_y: { type: 'data', array: d.map(r => r.sim_std), visible: true,
-                 thickness: 1.5, width: 4, color: MODEL_CLR[model] + '99' },
-      mode: 'lines+markers', name: MODEL_LABELS[model],
-      line: { color: MODEL_CLR[model], width: 2.5 },
-      marker: { size: 7, color: MODEL_CLR[model] },
-    };
-  });
-  Plotly.newPlot('chart-4a', traces,
-    baseLayout({ yaxis: { range: [0,1], title: 'Mean Cosine Similarity', gridcolor: '#e8e8e1' },
-                 xaxis: { title: 'Wave transition' } }), PCFG);
+  Plotly.newPlot('chart-4a',
+    MAIN_MODELS.map(model => {
+      const d = cosine_4a.filter(r=>r.model===model).sort((a,b)=>a.wave_from<b.wave_from?-1:1);
+      return { x:d.map(r=>`${r.wave_from.slice(5)}→${r.wave_to.slice(5)}`), y:d.map(r=>r.sim_mean),
+               error_y:{type:'data',array:d.map(r=>r.sim_std),visible:true,thickness:1.5,width:4,color:MODEL_CLR[model]+'99'},
+               mode:'lines+markers', name:MODEL_LABELS[model],
+               line:{color:MODEL_CLR[model],width:2.5}, marker:{size:6,color:MODEL_CLR[model]} };
+    }),
+    baseLayout({ yaxis:{range:[0,1],title:'Mean Cosine Similarity',gridcolor:'#e8e8e1'}, xaxis:{title:'Wave transition'} }), PCFG);
 }
 
-// ── Steering Sensitivity ──────────────────────────────────────────────────────
 function renderCosine4b(cosine_4b_ii) {
-  const SES_CLR   = { high: '#40ABC9', low: '#E57657' };
-  const FRAMING_D = { system_msg: 'solid', inline_prompt: 'dash' };
-  const FRAMING_S = { system_msg: 'circle', inline_prompt: 'diamond' };
-  MAIN_MODELS.forEach((model, i) => {
+  const SES_CLR={high:'#40ABC9',low:'#E57657'};
+  const FD={system_msg:'solid',inline_prompt:'dash'};
+  const FS={system_msg:'circle',inline_prompt:'diamond'};
+  MAIN_MODELS.forEach((model,i) => {
     document.getElementById(`lbl-4b-${i}`).textContent = MODEL_LABELS[model];
-    const traces = [];
-    for (const framing of ['system_msg', 'inline_prompt']) {
-      for (const ses of ['high', 'low']) {
-        const d = cosine_4b_ii.filter(r => r.model === model && r.framing === framing && r.ses === ses)
-                              .sort((a,b) => a.wave < b.wave ? -1 : 1);
-        if (!d.length) continue;
-        traces.push({
-          x: d.map(r => r.wave), y: d.map(r => r.sim_mean),
-          error_y: { type: 'data', array: d.map(r => r.sim_std), visible: true,
-                     thickness: 1, width: 3, color: SES_CLR[ses] + '66' },
-          mode: 'lines+markers',
-          name: `${ses} SES / ${framing.replace('_',' ')}`,
-          line:   { color: SES_CLR[ses], dash: FRAMING_D[framing], width: 2 },
-          marker: { size: 6, color: SES_CLR[ses], symbol: FRAMING_S[framing] },
-          showlegend: false,
-        });
-      }
+    const traces=[];
+    for (const f of ['system_msg','inline_prompt']) for (const s of ['high','low']) {
+      const d = cosine_4b_ii.filter(r=>r.model===model&&r.framing===f&&r.ses===s).sort((a,b)=>a.wave<b.wave?-1:1);
+      if (!d.length) continue;
+      traces.push({ x:d.map(r=>r.wave), y:d.map(r=>r.sim_mean),
+        error_y:{type:'data',array:d.map(r=>r.sim_std),visible:true,thickness:1,width:3,color:SES_CLR[s]+'66'},
+        mode:'lines+markers', name:`${s} SES/${f.replace('_',' ')}`,
+        line:{color:SES_CLR[s],dash:FD[f],width:2}, marker:{size:5,color:SES_CLR[s],symbol:FS[f]}, showlegend:false });
     }
     Plotly.newPlot(`chart-4b-${i}`, traces,
-      baseLayout({
-        yaxis:  { range: [0,1], title: i === 0 ? 'Mean Cosine Similarity' : '', gridcolor: '#e8e8e1' },
-        xaxis:  { tickangle: -30 },
-        margin: { l: i === 0 ? 52 : 28, r: 14, t: 20, b: 64 },
-      }), PCFG);
+      baseLayout({ yaxis:{range:[0,1],title:i===0?'Cosine Similarity':'',gridcolor:'#e8e8e1'},
+                   xaxis:{tickangle:-30}, margin:{l:i===0?46:24,r:10,t:20,b:58} }), PCFG);
   });
 }
 
-// ── WVS table ─────────────────────────────────────────────────────────────────
-let _wvsAll = [], _wvsFiltered = [], _wvsPage = 0;
-const WVS_PER_PAGE = 20;
+// ── WVS table ──────────────────────────────────────────────────
+let _wvsAll=[], _wvsFiltered=[], _wvsPage=0;
+const WVS_PP=20;
 
-function _distBar(options, dist) {
-  return options.map((opt, i) => {
-    const pct = Math.round((dist[i]||0) * 1000) / 10;
-    const c   = DIST_PALETTE[i % DIST_PALETTE.length];
-    const ltr = String.fromCharCode(65 + i);
-    return `<div style="width:${pct}%;background:${c}" title="${ltr}: ${opt} — ${pct}%"></div>`;
-  }).join('');
-}
-function _distLegend(options, dist) {
-  return options.map((opt, i) => {
-    const pct = Math.round((dist[i]||0) * 1000) / 10;
-    const c   = DIST_PALETTE[i % DIST_PALETTE.length];
-    const ltr = String.fromCharCode(65 + i);
-    return `<span style="color:${c}">${ltr}:${pct}%</span>`;
-  }).join(' ');
-}
-
-function renderWVSTable(q = '') {
-  _wvsFiltered = _wvsAll.filter(d => !q || d.question.toLowerCase().includes(q));
-  const total = _wvsFiltered.length;
-  const start = _wvsPage * WVS_PER_PAGE;
-  const page  = _wvsFiltered.slice(start, start + WVS_PER_PAGE);
-  document.getElementById('wvs-total').textContent = total;
-  document.getElementById('wvs-range').textContent = total ? `${start+1}–${Math.min(start+WVS_PER_PAGE,total)}` : '0';
-  document.getElementById('wvs-tbody').innerHTML = page.map((item, j) => {
-    const n   = start + j + 1;
-    const opts = item.options.map((o, i) =>
+function renderWVS(q='') {
+  _wvsFiltered = _wvsAll.filter(d=>!q||d.question.toLowerCase().includes(q));
+  const total=_wvsFiltered.length, start=_wvsPage*WVS_PP;
+  document.getElementById('wvs-total').textContent=total;
+  document.getElementById('wvs-range').textContent=total?`${start+1}–${Math.min(start+WVS_PP,total)}`:'0';
+  document.getElementById('wvs-tbody').innerHTML = _wvsFiltered.slice(start,start+WVS_PP).map((item,j)=>{
+    const n=start+j+1;
+    const opts=item.options.map((o,i)=>
       `<span style="color:${DIST_PALETTE[i%DIST_PALETTE.length]}">${String.fromCharCode(65+i)}.</span> ${o}`
     ).join('<br>');
+    const bar=item.options.map((o,i)=>{
+      const pct=Math.round((item.global_distribution[i]||0)*1000)/10;
+      return `<div style="width:${pct}%;background:${DIST_PALETTE[i%DIST_PALETTE.length]}" title="${String.fromCharCode(65+i)}: ${pct}%"></div>`;
+    }).join('');
+    const leg=item.options.map((o,i)=>{
+      const pct=Math.round((item.global_distribution[i]||0)*1000)/10;
+      return `<span style="color:${DIST_PALETTE[i%DIST_PALETTE.length]}">${String.fromCharCode(65+i)}:${pct}%</span>`;
+    }).join(' ');
     return `<tr>
       <td style="color:#9ca3af;font-size:11px">${n}</td>
       <td style="max-width:380px">${item.question.replace(/\n/g,'<br>')}</td>
       <td style="font-size:11px;line-height:1.6">${opts}</td>
-      <td><div class="dist-bar">${_distBar(item.options,item.global_distribution)}</div>
-          <div class="dist-legend">${_distLegend(item.options,item.global_distribution)}</div></td>
+      <td><div class="dist-bar">${bar}</div><div class="dist-legend">${leg}</div></td>
     </tr>`;
   }).join('');
 }
 
-// ── Persona card grid ─────────────────────────────────────────────────────────
-let _personaAll = [], _personaFiltered = [], _personaPage = 0, _personaSrc = 'all';
-const PERSONA_PER_PAGE = 18;
+// ── Open-ended prompt rows ─────────────────────────────────────
+let _personaAll=[], _personaFiltered=[], _personaPage=0, _personaSrc='all';
+const PERSONA_PP=25;
 
 function srcBadge(src) {
-  return src === 'advertising'
-    ? `<span class="tag-adv">Advertising</span>`
-    : `<span class="tag-inf">Infinity Chat</span>`;
+  return src==='advertising'
+    ? `<span class="tag tag-adv">Advertising</span>`
+    : `<span class="tag tag-inf">Infinity Chat</span>`;
 }
 
-function renderPersonaGrid(searchQ = '') {
-  _personaFiltered = _personaAll.filter(d =>
-    (_personaSrc === 'all' || d.query_source === _personaSrc) &&
-    (!searchQ || (d.baseline?.prompt_text || '').toLowerCase().includes(searchQ))
+function renderPersonaRows(q='') {
+  _personaFiltered = _personaAll.filter(d=>
+    (_personaSrc==='all'||d.query_source===_personaSrc) &&
+    (!q||(d.baseline?.prompt_text||'').toLowerCase().includes(q))
   );
-  const total = _personaFiltered.length;
-  const start = _personaPage * PERSONA_PER_PAGE;
-  const page  = _personaFiltered.slice(start, start + PERSONA_PER_PAGE);
+  const total=_personaFiltered.length, start=_personaPage*PERSONA_PP;
+  document.getElementById('persona-total').textContent=total;
+  document.getElementById('persona-range').textContent=total?`${start+1}–${Math.min(start+PERSONA_PP,total)}`:'0';
 
-  document.getElementById('persona-total').textContent = total;
-  document.getElementById('persona-range').textContent = total
-    ? `${start+1}–${Math.min(start+PERSONA_PER_PAGE,total)}` : '0';
+  document.getElementById('persona-rows').innerHTML = _personaFiltered.slice(start,start+PERSONA_PP).map(entry=>{
+    const query=(entry.baseline?.prompt_text||'').trim();
 
-  const grid = document.getElementById('persona-grid');
-  grid.innerHTML = page.map((entry, j) => {
-    const idx      = start + j;
-    const query    = (entry.baseline?.prompt_text || '').trim();
-    const highF    = [...new Set((entry.high_ses||[]).map(e=>e.framing))];
-    const lowF     = [...new Set((entry.low_ses ||[]).map(e=>e.framing))];
-    const condTags = [
-      `<span class="tag tag-base">Baseline</span>`,
-      ...highF.map(f => `<span class="tag tag-high">High SES · ${f==='system_msg'?'sys':'inline'}</span>`),
-      ...lowF .map(f => `<span class="tag tag-low">Low SES · ${f==='system_msg'?'sys':'inline'}</span>`),
-    ].join('');
+    // Pick representative high SES: prefer system_msg, fall back to inline_prompt
+    const highAll=entry.high_ses||[];
+    const repSys    = highAll.find(e=>e.framing==='system_msg');
+    const repInline = highAll.find(e=>e.framing==='inline_prompt');
+    const rep       = repSys || repInline;
 
-    return `<div class="prompt-card" data-idx="${idx}" tabindex="0" role="button">
-      <div class="card-top">
-        <h3 class="card-title">${esc(query.slice(0,130))}${query.length>130?'…':''}</h3>
+    let framingHtml='';
+    if (rep) {
+      // The persona/role text (not the full prompt, which would repeat the query)
+      const personaText=(rep.persona_text||rep.system_text||'').trim();
+      const role=rep.persona_role||'';
+      const roleHtml=role?`<div style="font-size:11px;font-weight:600;color:var(--teal);margin-bottom:4px">${esc(role)}</div>`:'';
+
+      if (rep.framing==='system_msg') {
+        // System message → blockquote style
+        framingHtml=`<div style="margin-top:10px">
+          <div class="framing-label">High SES — system message</div>
+          ${roleHtml}
+          <div class="framing-block">${esc(personaText.slice(0,400))}${personaText.length>400?'…':''}</div>
+        </div>`;
+      } else {
+        // Inline prompt → normal text (persona preamble only, query already shown)
+        framingHtml=`<div style="margin-top:10px">
+          <div class="framing-label">High SES — inline</div>
+          ${roleHtml}
+          <div class="framing-inline">${esc(personaText.slice(0,400))}${personaText.length>400?'…':''}</div>
+        </div>`;
+      }
+    }
+
+    return `<div class="prompt-row">
+      <div class="row-header">
         ${srcBadge(entry.query_source)}
+        <span class="row-query">${esc(query)}</span>
       </div>
-      <p class="card-body">${esc(query.slice(0,220)).replace(/\n/g,' ')}${query.length>220?'…':''}</p>
-      <div class="card-footer">${condTags}</div>
+      ${framingHtml}
     </div>`;
   }).join('');
-
-  grid.querySelectorAll('.prompt-card').forEach(card => {
-    const open = () => openModal(_personaFiltered[+card.dataset.idx]);
-    card.addEventListener('click', open);
-    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') open(); });
-  });
 }
 
-// ── Persona detail modal ──────────────────────────────────────────────────────
-function openModal(entry) {
-  const query = (entry.baseline?.prompt_text || '').trim();
-
-  function condCard(e, cls, label) {
-    if (!e) return '';
-    const isHigh  = cls === 'cond-high';
-    const isLow   = cls === 'cond-low';
-    const isInline = e.framing === 'inline_prompt';
-    const bg  = isHigh ? 'rgba(64,171,201,.1)' : isLow ? 'rgba(229,118,87,.1)' : '#eff6ff';
-    const clr = isHigh ? '#065f46' : isLow ? '#9a3412' : '#1d4ed8';
-    const framingTag = e.framing
-      ? `<span class="tag tag-gray" style="margin-left:6px">${e.framing.replace('_',' ')}</span>` : '';
-    const roleHtml = e.persona_role
-      ? `<div class="cond-role">${esc(e.persona_role)}${framingTag}</div>` : '';
-    // For inline framing the persona text IS the preamble already embedded in prompt_text;
-    // only show it via persona_text/system_text (the isolated role description).
-    // Never repeat the query (already shown in modal header).
-    const personaSnip = (e.persona_text || e.system_text || '').trim();
-    const personaHtml = personaSnip
-      ? `<div class="cond-persona-text">${esc(personaSnip.slice(0,220))}${personaSnip.length>220?'…':''}</div>` : '';
-    // For inline framing, prompt_text duplicates the query — omit it.
-    // For system_msg framing, prompt_text IS the clean query — also omit (already in header).
-    return `<div class="cond-card ${cls}">
-      <span class="cond-label" style="background:${bg};color:${clr}">${label}</span>
-      ${roleHtml}${personaHtml}
-    </div>`;
-  }
-
-  const highCards = ['system_msg','inline_prompt']
-    .filter(f => (entry.high_ses||[]).some(e=>e.framing===f))
-    .map(f => condCard((entry.high_ses||[]).find(e=>e.framing===f), 'cond-high',
-                       `High SES · ${f==='system_msg'?'sys':'inline'}`)).join('');
-  const lowCards  = ['system_msg','inline_prompt']
-    .filter(f => (entry.low_ses||[]).some(e=>e.framing===f))
-    .map(f => condCard((entry.low_ses||[]).find(e=>e.framing===f), 'cond-low',
-                       `Low SES · ${f==='system_msg'?'sys':'inline'}`)).join('');
-  const baseCard  = condCard(entry.baseline, '', 'Baseline');
-
-  document.getElementById('modal-content').innerHTML = `
-    <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:16px">
-      ${srcBadge(entry.query_source)}
-      <p class="modal-query">${esc(query)}</p>
-    </div>
-    <div class="modal-conds">${baseCard}${highCards}${lowCards}</div>`;
-
-  document.getElementById('modal-overlay').classList.add('open');
-}
-
-document.getElementById('modal-close').addEventListener('click', closeModal);
-document.getElementById('modal-overlay').addEventListener('click', e => {
-  if (e.target === document.getElementById('modal-overlay')) closeModal();
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
-
-// ── Shared search handler ─────────────────────────────────────────────────────
-document.getElementById('prompt-search').addEventListener('input', function() {
-  const q = this.value.toLowerCase();
-  if (_activeSub === 'persona') { _personaPage = 0; renderPersonaGrid(q); }
-  else                          { _wvsPage = 0;     renderWVSTable(q);    }
-});
-
-// ── Source filter ─────────────────────────────────────────────────────────────
-document.querySelectorAll('.filter-btn[data-src]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn[data-src]').forEach(b => b.classList.remove('active'));
+// ── Type of prompt switching (Overview page) ───────────────────
+let _activePromptType='openended';
+document.querySelectorAll('[data-prompt]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-prompt]').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
-    _personaSrc = btn.dataset.src;
-    _personaPage = 0;
-    renderPersonaGrid(document.getElementById('prompt-search').value.toLowerCase());
+    _activePromptType=btn.dataset.prompt;
+    const isOpen=_activePromptType==='openended';
+    document.getElementById('sub-openended').style.display=isOpen?'':'none';
+    document.getElementById('sub-wvs').style.display=isOpen?'none':'';
+    document.getElementById('src-section').style.display=isOpen?'':'none';
+    document.getElementById('persona-pager').style.display=isOpen?'':'none';
+    document.getElementById('wvs-pager').style.display=isOpen?'none':'';
+    document.getElementById('prompt-search').placeholder=isOpen?'Search prompts…':'Search questions…';
   });
 });
 
-// ── Pagination ────────────────────────────────────────────────────────────────
-document.getElementById('persona-prev').addEventListener('click', () => {
-  if (_personaPage > 0) { _personaPage--; renderPersonaGrid(document.getElementById('prompt-search').value.toLowerCase()); }
-});
-document.getElementById('persona-next').addEventListener('click', () => {
-  if ((_personaPage+1)*PERSONA_PER_PAGE < _personaFiltered.length) { _personaPage++; renderPersonaGrid(document.getElementById('prompt-search').value.toLowerCase()); }
-});
-document.getElementById('wvs-prev').addEventListener('click', () => {
-  if (_wvsPage > 0) { _wvsPage--; renderWVSTable(document.getElementById('prompt-search').value.toLowerCase()); }
-});
-document.getElementById('wvs-next').addEventListener('click', () => {
-  if ((_wvsPage+1)*WVS_PER_PAGE < _wvsFiltered.length) { _wvsPage++; renderWVSTable(document.getElementById('prompt-search').value.toLowerCase()); }
+// ── Analysis sub-tab switching ─────────────────────────────────
+document.querySelectorAll('[data-analysis]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-analysis]').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.analysis-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-'+btn.dataset.analysis).classList.add('active');
+    setTimeout(resizeAll,50);
+  });
 });
 
-// ── HTML escape ───────────────────────────────────────────────────────────────
-function esc(s) {
-  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-}
+// ── Shared search ──────────────────────────────────────────────
+document.getElementById('prompt-search').addEventListener('input',function(){
+  const q=this.value.toLowerCase();
+  if (_activePromptType==='openended'){_personaPage=0;renderPersonaRows(q);}
+  else {_wvsPage=0;renderWVS(q);}
+});
 
-// ── Boot ──────────────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', async () => {
+// ── Source filter ──────────────────────────────────────────────
+document.querySelectorAll('[data-src]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-src]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    _personaSrc=btn.dataset.src;
+    _personaPage=0;
+    renderPersonaRows(document.getElementById('prompt-search').value.toLowerCase());
+  });
+});
+
+// ── Pagination ─────────────────────────────────────────────────
+const q=()=>document.getElementById('prompt-search').value.toLowerCase();
+document.getElementById('persona-prev').addEventListener('click',()=>{if(_personaPage>0){_personaPage--;renderPersonaRows(q());}});
+document.getElementById('persona-next').addEventListener('click',()=>{if((_personaPage+1)*PERSONA_PP<_personaFiltered.length){_personaPage++;renderPersonaRows(q());}});
+document.getElementById('wvs-prev').addEventListener('click',()=>{if(_wvsPage>0){_wvsPage--;renderWVS(q());}});
+document.getElementById('wvs-next').addEventListener('click',()=>{if((_wvsPage+1)*WVS_PP<_wvsFiltered.length){_wvsPage++;renderWVS(q());}});
+
+// ── Escape util ────────────────────────────────────────────────
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+// ── Boot ───────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded',async()=>{
+  navigate(); // show correct page on load
+
   try {
-    const { metrics, prompts } = await loadData();
+    const {metrics,prompts}=await loadData();
 
-    document.getElementById('nav-date').textContent       = `Updated: ${metrics.generated}`;
-    document.getElementById('stat-waves').textContent     = metrics.waves?.length ?? '—';
-    document.getElementById('stat-wvs').textContent       = prompts.wvs?.length   ?? '—';
-    document.getElementById('stat-persona').textContent   = prompts.persona?.length ?? '—';
+    const updated=metrics.generated;
+    document.querySelectorAll('.nav-date').forEach(el=>el.textContent=`Updated: ${updated}`);
+    document.getElementById('stat-waves').textContent=metrics.waves?.length??'—';
+    document.getElementById('stat-wvs').textContent=prompts.wvs?.length??'—';
+    document.getElementById('stat-persona').textContent=prompts.persona?.length??'—';
 
     renderVersions(metrics);
     renderWVSCharts(metrics.wvs_metrics);
     renderLengths(metrics.persona_lengths);
 
-    if (metrics.cosine_4a?.length) {
-      renderCosine4a(metrics.cosine_4a);
-    } else {
-      document.getElementById('chart-4a-wrap').style.display  = 'none';
-      document.getElementById('chart-4a-empty').style.display = 'block';
-    }
-    if (metrics.cosine_4b_ii?.length) {
-      renderCosine4b(metrics.cosine_4b_ii);
-    } else {
-      document.getElementById('chart-4b-wrap').style.display  = 'none';
-      document.getElementById('chart-4b-empty').style.display = 'block';
-    }
+    if (metrics.cosine_4a?.length) { renderCosine4a(metrics.cosine_4a); }
+    else { document.getElementById('chart-4a-wrap').style.display='none'; document.getElementById('chart-4a-empty').style.display='block'; }
 
-    _wvsAll     = prompts.wvs;
-    _personaAll = prompts.persona;
-    renderWVSTable();
-    renderPersonaGrid();
+    if (metrics.cosine_4b_ii?.length) { renderCosine4b(metrics.cosine_4b_ii); }
+    else { document.getElementById('chart-4b-wrap').style.display='none'; document.getElementById('chart-4b-empty').style.display='block'; }
 
-  } catch (err) {
+    _wvsAll=prompts.wvs;
+    _personaAll=prompts.persona;
+    renderWVS();
+    renderPersonaRows();
+
+  } catch(err) {
     console.error(err);
     document.body.insertAdjacentHTML('afterbegin',
       `<div style="background:#fef3c7;border-left:4px solid #f59e0b;padding:12px 18px;margin:12px;border-radius:8px;font-size:13px">
