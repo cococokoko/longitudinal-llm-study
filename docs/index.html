@@ -106,7 +106,7 @@
       max-width: 1300px; margin: 0 auto; padding: 0 24px;
       display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
     }
-    .type-label { font-size: 13px; color: var(--text-muted); margin-right: 4px; white-space: nowrap; }
+    .type-label { font-size: 12px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
     .sub-btn {
       padding: 6px 16px; border-radius: 8px;
       border: 1px solid var(--border-gray); background: white;
@@ -114,7 +114,7 @@
       font-family: 'Ubuntu', sans-serif; cursor: pointer; transition: all .15s;
     }
     .sub-btn:hover:not(.active) { background: #f9f9f9; }
-    .sub-btn.active { background: var(--teal); color: white; border-color: var(--teal); }
+    .sub-btn.active { background: #f0A68F; color: #1f2937; font-weight: 700; }
 
     /* ── Main container ────────────────────────────────── */
     .main-wrap {
@@ -210,7 +210,15 @@
       font-size: 14px; font-weight: 700; color: #111827;
       line-height: 1.4; flex: 1;
     }
-    /* High SES framing — system message → blockquote style */
+    /* SES section grouping */
+    .ses-section { margin-top: 12px; display: flex; flex-direction: column; gap: 8px; }
+    .ses-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .5px; color: var(--text-muted); margin-bottom: 2px;
+    }
+    .ses-label.high { color: var(--teal); }
+    .ses-label.low  { color: var(--coral); }
+    /* System message → blockquote style */
     .framing-block {
       border-left: 3px solid var(--teal);
       padding: 8px 12px; border-radius: 0 6px 6px 0;
@@ -218,14 +226,18 @@
       font-size: 12px; color: var(--text-gray); line-height: 1.6;
       font-style: italic;
     }
-    /* High SES framing — inline prompt → normal text */
+    .ses-section.low .framing-block {
+      border-left-color: var(--coral);
+      background: rgba(229,118,87,.05);
+    }
+    /* Inline prompt → normal text */
     .framing-inline {
       font-size: 12px; color: var(--text-muted);
-      line-height: 1.6; padding: 6px 0 0 2px;
+      line-height: 1.6; padding: 4px 0 0 4px;
     }
-    .framing-label {
-      font-size: 10px; font-weight: 700; text-transform: uppercase;
-      letter-spacing: .4px; color: var(--teal); margin-bottom: 5px;
+    .framing-type {
+      font-size: 10px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: .4px; color: var(--text-light); margin-bottom: 4px;
     }
 
     /* ── WVS table ─────────────────────────────────────── */
@@ -251,20 +263,52 @@
     .chart-title {
       font-size: 11px; font-weight: 700; color: var(--text-light);
       text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px;
+      flex-shrink: 0;
     }
     .plotly-wrap {
       background: var(--surface); border: 1px solid var(--border-dark);
       border-radius: 12px; padding: 8px;
+      overflow: hidden; /* clip chart backgrounds to rounded border */
     }
     /* Side-by-side chart grid */
     .chart-row { display: grid; gap: 16px; }
     .chart-row.cols-2 { grid-template-columns: 1fr 1fr; }
     .chart-row.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
-    .chart-col-label { font-weight: 600; text-align: center; font-size: 12px; margin-bottom: 6px; }
+    .chart-col-label { font-weight: 600; text-align: center; font-size: 12px; margin-bottom: 6px; flex-shrink: 0; }
 
-    /* ── Analysis sub-panels ───────────────────────────── */
+    /* ── Analysis page: fill viewport, no scroll ───────── */
+    #page-analysis.active {
+      height: calc(100vh - 64px); /* 64px = sticky header */
+      overflow: hidden;
+    }
+    #page-analysis .main-wrap {
+      padding: 12px 24px;
+      overflow: hidden;
+      flex: 1;
+      min-height: 0;
+    }
     .analysis-panel { display: none; }
-    .analysis-panel.active { display: block; }
+    .analysis-panel.active {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+    }
+    .analysis-panel .section-note { flex-shrink: 0; margin-bottom: 10px; }
+    /* Charts wrapper fills remaining panel space */
+    .charts-area {
+      flex: 1; min-height: 0;
+      display: flex; flex-direction: column;
+    }
+    .charts-area .chart-row {
+      flex: 1; min-height: 0;
+    }
+    .charts-area .chart-row > div {
+      display: flex; flex-direction: column; min-height: 0;
+    }
+    .charts-area .plotly-wrap {
+      flex: 1; min-height: 0;
+    }
 
     /* ── Home page ─────────────────────────────────────── */
     .home-hero {
@@ -470,10 +514,9 @@
         <!-- Open-ended rows -->
         <div id="sub-openended">
           <p class="section-note">
-            Open-ended prompts are drawn from two query sources.
-            Each prompt is tested with a <strong>baseline</strong> condition and
-            <strong>persona framings</strong> (high SES / low SES), delivered via system message or inline.
-            Below, each prompt shows its baseline query and the representative <strong>high SES</strong> framing.
+            Open-ended prompts drawn from two query sources, each tested under a
+            <strong>baseline</strong> condition and <strong>high / low SES</strong> persona framings
+            delivered either via system message or inline in the user prompt.
           </p>
           <div class="prompt-rows" id="persona-rows"></div>
         </div>
@@ -513,7 +556,7 @@
   <!-- Analysis sub-tab bar -->
   <div class="type-bar">
     <div class="type-bar-inner">
-      <span class="type-label">Analysis:</span>
+      <span class="type-label">Measures:</span>
       <button class="sub-btn active" data-analysis="versions">Model Versions</button>
       <button class="sub-btn" data-analysis="alignment">Value Alignment</button>
       <button class="sub-btn" data-analysis="lengths">Prompt Lengths</button>
@@ -536,14 +579,16 @@
         <strong>Wasserstein</strong> = earth mover's distance vs the WVS global distribution (0 = perfect match).
         <strong>Entropy</strong> = Shannon entropy of the model's distribution; gray dashed = WVS human entropy.
       </p>
-      <div class="chart-row cols-2">
-        <div>
-          <div class="chart-title">Wasserstein Distance — Mean ± 1 SD</div>
-          <div class="plotly-wrap" id="chart-ws" style="height:300px"></div>
-        </div>
-        <div>
-          <div class="chart-title">Shannon Entropy per Wave</div>
-          <div class="plotly-wrap" id="chart-ent" style="height:300px"></div>
+      <div class="charts-area">
+        <div class="chart-row cols-2">
+          <div>
+            <div class="chart-title">Wasserstein Distance — Mean ± 1 SD</div>
+            <div class="plotly-wrap" id="chart-ws"></div>
+          </div>
+          <div>
+            <div class="chart-title">Shannon Entropy per Wave</div>
+            <div class="plotly-wrap" id="chart-ent"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -551,8 +596,10 @@
     <!-- Prompt Lengths -->
     <div class="analysis-panel" id="panel-lengths">
       <p class="section-note">Total character count of each persona prompt (user text + system message when present).</p>
-      <div class="chart-title">Prompt Length Distribution by Condition × Framing</div>
-      <div class="plotly-wrap" id="chart-lengths" style="height:360px"></div>
+      <div class="charts-area">
+        <div class="chart-title">Prompt Length Distribution by Condition × Framing</div>
+        <div class="plotly-wrap" id="chart-lengths"></div>
+      </div>
     </div>
 
     <!-- Output Diversity -->
@@ -564,9 +611,9 @@
       <div id="chart-4a-empty" style="text-align:center;padding:48px 0;color:var(--text-muted);font-size:13px;display:none">
         Not enough data yet — appears once at least two waves have been collected.
       </div>
-      <div id="chart-4a-wrap">
+      <div class="charts-area" id="chart-4a-wrap">
         <div class="chart-title">Baseline Response Stability — Consecutive Wave Pairs</div>
-        <div class="plotly-wrap" id="chart-4a" style="height:340px"></div>
+        <div class="plotly-wrap" id="chart-4a"></div>
       </div>
     </div>
 
@@ -581,32 +628,26 @@
       <div id="chart-4b-empty" style="text-align:center;padding:48px 0;color:var(--text-muted);font-size:13px;display:none">
         Not enough data yet — appears once at least two waves have been collected.
       </div>
-      <div id="chart-4b-wrap">
+      <div class="charts-area" id="chart-4b-wrap">
         <div class="chart-title">Cosine Similarity to Baseline: Framing × SES per Wave</div>
-        <div class="chart-row cols-3" style="margin-top:8px">
+        <div class="chart-row cols-3">
           <div>
             <div class="chart-col-label" id="lbl-4b-0"></div>
-            <div class="plotly-wrap" id="chart-4b-0" style="height:320px"></div>
+            <div class="plotly-wrap" id="chart-4b-0"></div>
           </div>
           <div>
             <div class="chart-col-label" id="lbl-4b-1"></div>
-            <div class="plotly-wrap" id="chart-4b-1" style="height:320px"></div>
+            <div class="plotly-wrap" id="chart-4b-1"></div>
           </div>
           <div>
             <div class="chart-col-label" id="lbl-4b-2"></div>
-            <div class="plotly-wrap" id="chart-4b-2" style="height:320px"></div>
+            <div class="plotly-wrap" id="chart-4b-2"></div>
           </div>
         </div>
       </div>
     </div>
 
   </div>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span class="footer-copy">© 2026 Algorithms and Society research group — ELLIS Tübingen</span>
-    </div>
-  </footer>
 </div>
 
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
@@ -628,7 +669,7 @@ function navigate() {
   document.querySelectorAll('[data-nav]').forEach(a =>
     a.classList.toggle('active', a.dataset.nav === hash)
   );
-  if (hash === 'analysis') setTimeout(resizeAll, 50);
+  if (hash === 'analysis') requestAnimationFrame(()=>requestAnimationFrame(resizeAll));
 }
 window.addEventListener('hashchange', navigate);
 
@@ -811,45 +852,46 @@ function renderPersonaRows(q='') {
   document.getElementById('persona-total').textContent=total;
   document.getElementById('persona-range').textContent=total?`${start+1}–${Math.min(start+PERSONA_PP,total)}`:'0';
 
-  document.getElementById('persona-rows').innerHTML = _personaFiltered.slice(start,start+PERSONA_PP).map(entry=>{
-    const query=(entry.baseline?.prompt_text||'').trim();
-
-    // Pick representative high SES: prefer system_msg, fall back to inline_prompt
-    const highAll=entry.high_ses||[];
-    const repSys    = highAll.find(e=>e.framing==='system_msg');
-    const repInline = highAll.find(e=>e.framing==='inline_prompt');
-    const rep       = repSys || repInline;
-
-    let framingHtml='';
-    if (rep) {
-      // The persona/role text (not the full prompt, which would repeat the query)
-      const personaText=(rep.persona_text||rep.system_text||'').trim();
-      const role=rep.persona_role||'';
-      const roleHtml=role?`<div style="font-size:11px;font-weight:600;color:var(--teal);margin-bottom:4px">${esc(role)}</div>`:'';
-
-      if (rep.framing==='system_msg') {
-        // System message → blockquote style
-        framingHtml=`<div style="margin-top:10px">
-          <div class="framing-label">High SES — system message</div>
-          ${roleHtml}
-          <div class="framing-block">${esc(personaText.slice(0,400))}${personaText.length>400?'…':''}</div>
-        </div>`;
-      } else {
-        // Inline prompt → normal text (persona preamble only, query already shown)
-        framingHtml=`<div style="margin-top:10px">
-          <div class="framing-label">High SES — inline</div>
-          ${roleHtml}
-          <div class="framing-inline">${esc(personaText.slice(0,400))}${personaText.length>400?'…':''}</div>
-        </div>`;
-      }
+  // Render one framing variant block (no persona_role label)
+  function framingBlock(e, sesClass) {
+    if (!e) return '';
+    if (e.framing === 'system_msg') {
+      const text = (e.system_text || e.persona_text || '').trim();
+      return `<div>
+        <div class="framing-type">System message</div>
+        <div class="framing-block">${esc(text)}</div>
+      </div>`;
+    } else {
+      // Inline: show the full prompt_text (persona + query combined)
+      const text = (e.prompt_text || '').trim();
+      return `<div>
+        <div class="framing-type">Inline</div>
+        <div class="framing-inline">${esc(text)}</div>
+      </div>`;
     }
+  }
 
+  // Render all framing variants for one SES level
+  function sesSection(variants, sesClass, label) {
+    if (!variants || variants.length === 0) return '';
+    const sys    = variants.find(e => e.framing === 'system_msg');
+    const inline = variants.find(e => e.framing === 'inline_prompt');
+    const blocks = [framingBlock(sys, sesClass), framingBlock(inline, sesClass)].filter(Boolean).join('');
+    return `<div class="ses-section ${sesClass}">
+      <div class="ses-label ${sesClass}">${label}</div>
+      ${blocks}
+    </div>`;
+  }
+
+  document.getElementById('persona-rows').innerHTML = _personaFiltered.slice(start,start+PERSONA_PP).map(entry=>{
+    const query = (entry.baseline?.prompt_text||'').trim();
     return `<div class="prompt-row">
       <div class="row-header">
         ${srcBadge(entry.query_source)}
         <span class="row-query">${esc(query)}</span>
       </div>
-      ${framingHtml}
+      ${sesSection(entry.high_ses, 'high', 'High SES')}
+      ${sesSection(entry.low_ses,  'low',  'Low SES')}
     </div>`;
   }).join('');
 }
@@ -878,9 +920,11 @@ document.querySelectorAll('[data-analysis]').forEach(btn=>{
     document.querySelectorAll('.analysis-panel').forEach(p=>p.classList.remove('active'));
     btn.classList.add('active');
     document.getElementById('panel-'+btn.dataset.analysis).classList.add('active');
-    setTimeout(resizeAll,50);
+    // Two-pass resize: first tick lets flex layout settle, second lets Plotly measure
+    requestAnimationFrame(()=>requestAnimationFrame(resizeAll));
   });
 });
+window.addEventListener('resize', ()=>{ if(document.querySelector('#page-analysis.active')) resizeAll(); });
 
 // ── Shared search ──────────────────────────────────────────────
 document.getElementById('prompt-search').addEventListener('input',function(){
