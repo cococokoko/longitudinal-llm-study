@@ -268,7 +268,7 @@
     .plotly-wrap {
       background: var(--surface); border: 1px solid var(--border-dark);
       border-radius: 12px; padding: 8px;
-      clip-path: inset(0 round 12px); /* clip chart bg to rounded border without affecting layout */
+      overflow: hidden; /* clip chart backgrounds to rounded border */
     }
     /* Side-by-side chart grid */
     .chart-row { display: grid; gap: 16px; }
@@ -277,6 +277,9 @@
     .chart-col-label { font-weight: 600; text-align: center; font-size: 12px; margin-bottom: 6px; }
 
     /* ── Analysis sub-panels ───────────────────────────── */
+    #page-analysis .main-wrap { overflow-x: hidden; }
+    .chart-row { width: 100%; }
+    .plotly-wrap { max-width: 100%; }
     .analysis-panel { display: none; }
     .analysis-panel.active { display: block; }
 
@@ -549,16 +552,10 @@
         <strong>Wasserstein</strong> = earth mover's distance vs the WVS global distribution (0 = perfect match).
         <strong>Entropy</strong> = Shannon entropy of the model's distribution; gray dashed = WVS human entropy.
       </p>
-      <div class="chart-row cols-2">
-        <div>
-          <div class="chart-title">Wasserstein Distance — Mean ± 1 SD</div>
-          <div class="plotly-wrap" id="chart-ws" style="height:calc(100vh - 300px)"></div>
-        </div>
-        <div>
-          <div class="chart-title">Shannon Entropy per Wave</div>
-          <div class="plotly-wrap" id="chart-ent" style="height:calc(100vh - 300px)"></div>
-        </div>
-      </div>
+      <div class="chart-title">Wasserstein Distance — Mean ± 1 SD</div>
+      <div class="plotly-wrap" id="chart-ws" style="height:380px;margin-bottom:16px"></div>
+      <div class="chart-title">Shannon Entropy per Wave</div>
+      <div class="plotly-wrap" id="chart-ent" style="height:380px"></div>
     </div>
 
     <!-- Prompt Lengths -->
@@ -596,20 +593,12 @@
       </div>
       <div id="chart-4b-wrap">
         <div class="chart-title">Cosine Similarity to Baseline: Framing × SES per Wave</div>
-        <div class="chart-row cols-3" style="margin-top:6px">
-          <div>
-            <div class="chart-col-label" id="lbl-4b-0"></div>
-            <div class="plotly-wrap" id="chart-4b-0" style="height:calc(100vh - 330px)"></div>
-          </div>
-          <div>
-            <div class="chart-col-label" id="lbl-4b-1"></div>
-            <div class="plotly-wrap" id="chart-4b-1" style="height:calc(100vh - 330px)"></div>
-          </div>
-          <div>
-            <div class="chart-col-label" id="lbl-4b-2"></div>
-            <div class="plotly-wrap" id="chart-4b-2" style="height:calc(100vh - 330px)"></div>
-          </div>
-        </div>
+        <div class="chart-col-label" id="lbl-4b-0"></div>
+        <div class="plotly-wrap" id="chart-4b-0" style="height:320px;margin-bottom:16px"></div>
+        <div class="chart-col-label" id="lbl-4b-1"></div>
+        <div class="plotly-wrap" id="chart-4b-1" style="height:320px;margin-bottom:16px"></div>
+        <div class="chart-col-label" id="lbl-4b-2"></div>
+        <div class="plotly-wrap" id="chart-4b-2" style="height:320px"></div>
       </div>
     </div>
 
@@ -764,8 +753,8 @@ function renderCosine4b(cosine_4b_ii) {
         line:{color:SES_CLR[s],dash:FD[f],width:2}, marker:{size:5,color:SES_CLR[s],symbol:FS[f]}, showlegend:false });
     }
     Plotly.newPlot(`chart-4b-${i}`, traces,
-      baseLayout({ yaxis:{range:[0,1],title:i===0?'Cosine Similarity':'',gridcolor:'#e8e8e1'},
-                   xaxis:{tickangle:-30}, margin:{l:i===0?46:24,r:10,t:20,b:58} }), PCFG);
+      baseLayout({ yaxis:{range:[0,1],title:'Cosine Similarity',gridcolor:'#e8e8e1'},
+                   xaxis:{tickangle:-30} }), PCFG);
   });
 }
 
