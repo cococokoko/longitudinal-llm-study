@@ -24,7 +24,7 @@ from client import LLMClient
 load_dotenv()
 console = Console()
 
-MODEL    = "openai/gpt-5.3-chat:online"
+MODEL    = "openai/gpt-chat-latest"
 PERSONA  = Path("persona_prompts.json")
 GOQA     = Path("globalopinionqa_subset_100.json")
 
