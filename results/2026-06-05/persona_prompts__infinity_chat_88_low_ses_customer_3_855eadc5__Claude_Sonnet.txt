@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_88_low_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=43.0 out=162.0
+Latency:   4787 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Describe Deadpool in a short paragraph. Make sure it's accessible to children.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

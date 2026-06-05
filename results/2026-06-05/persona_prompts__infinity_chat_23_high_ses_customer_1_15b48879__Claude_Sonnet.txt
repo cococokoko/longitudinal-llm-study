@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_23_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38.0 out=329.0
+Latency:   9500 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Is there such a thing as a paradox of free speech?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

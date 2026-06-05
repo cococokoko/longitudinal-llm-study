@@ -1,0 +1,15 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18.0 out=149.0
+Latency:   1949 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a short review of a movie that doesn't exist yet.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

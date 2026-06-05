@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   advertising_13_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34.0 out=672.0
+Latency:   5745 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Mastering the art of cooking steak.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

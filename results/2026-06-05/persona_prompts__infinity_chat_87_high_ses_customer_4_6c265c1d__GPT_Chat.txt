@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_87_high_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=43.0 out=61.0
+Latency:   1316 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me the name of an instrumental song that matches the mood of a rainy night.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

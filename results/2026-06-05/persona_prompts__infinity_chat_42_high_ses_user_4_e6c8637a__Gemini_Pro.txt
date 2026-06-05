@@ -1,0 +1,17 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=39.0 out=634.0
+Latency:   9751 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

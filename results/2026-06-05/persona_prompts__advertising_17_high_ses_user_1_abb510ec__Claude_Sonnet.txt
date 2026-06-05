@@ -1,0 +1,17 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   advertising_17_high_ses_user_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=31.0 out=300.0
+Latency:   7543 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+How can I make my home more energy efficient?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

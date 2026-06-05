@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   advertising_27_low_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=36.0 out=341.0
+Latency:   3370 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I reduce my carbon footprint with daily habits?
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

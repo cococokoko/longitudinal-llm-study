@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_67_high_ses_customer_3
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38.0 out=993.0
+Latency:   10618 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a Google ad with 2 sentences and a 30-character limit per sentence for mobile car detailing.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

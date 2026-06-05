@@ -1,0 +1,30 @@
+Wave:      2026-06-05
+Dataset:   global_opinion_qa
+Item ID:   goqa_b1ef05ee4f40
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=208.0 out=591.0
+Latency:   7653 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country?
+
+Having the army rule
+
+Options:
+A. Very good
+B. Fairly good
+C. Fairly bad
+D. Very bad
+E. Don't know
+F. No answer
+G. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

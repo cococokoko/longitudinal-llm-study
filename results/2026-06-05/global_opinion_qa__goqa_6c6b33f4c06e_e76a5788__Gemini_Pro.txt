@@ -1,0 +1,31 @@
+Wave:      2026-06-05
+Dataset:   global_opinion_qa
+Item ID:   goqa_6c6b33f4c06e
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=186.0 out=688.0
+Latency:   7562 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How much are you satisfied with your current work
+
+Options:
+A. 2
+B. 3
+C. 4
+D. 5
+E. 6
+F. 7
+G. 8
+H. 9
+I. Very satisfied
+J. No job
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

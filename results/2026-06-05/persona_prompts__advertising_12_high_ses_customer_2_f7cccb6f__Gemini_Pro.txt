@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   advertising_12_high_ses_customer_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=23.0 out=1020.0
+Latency:   13860 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Eco-friendly travel options.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

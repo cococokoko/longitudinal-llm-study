@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_55_low_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=42.0 out=120.0
+Latency:   3773 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Describe Apple Corporation in three sentences to a person who has no idea what cell phones are.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

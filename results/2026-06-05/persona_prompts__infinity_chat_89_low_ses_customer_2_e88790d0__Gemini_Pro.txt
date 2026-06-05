@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_89_low_ses_customer_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=63.0 out=1020.0
+Latency:   10198 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a single parent who often balances childcare with work.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a personal tweet about how I am walking right now at sunrise to the lighthouse; it's spring but cold like winter. Write a fear-of-missing-out title including "You've Never Seen Anything Like This!"
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

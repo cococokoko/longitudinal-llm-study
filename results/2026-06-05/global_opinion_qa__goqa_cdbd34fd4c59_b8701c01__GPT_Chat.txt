@@ -1,0 +1,25 @@
+Wave:      2026-06-05
+Dataset:   global_opinion_qa
+Item ID:   goqa_cdbd34fd4c59
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=118.0 out=126.0
+Latency:   1967 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Do you consider yourself anti-partisan or only non-partisan?
+
+Options:
+A. Anti-partisan
+B. Apartheid
+C. Don't know/No answer
+D. Not applicable
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

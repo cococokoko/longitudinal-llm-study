@@ -1,0 +1,26 @@
+Wave:      2026-06-05
+Dataset:   global_opinion_qa
+Item ID:   goqa_6f462f4bb22a
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=156.0 out=27.0
+Latency:   846 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it:
+
+Vote for a demobilized as a congressman
+
+Options:
+A. Have done
+B. Might do
+C. Would never do
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

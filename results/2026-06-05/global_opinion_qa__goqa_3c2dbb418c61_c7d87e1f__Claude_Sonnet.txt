@@ -1,0 +1,27 @@
+Wave:      2026-06-05
+Dataset:   global_opinion_qa
+Item ID:   goqa_3c2dbb418c61
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=172.0 out=51.0
+Latency:   4753 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: To what extent do you agree or disagree with the following statement: “Citizens must support the government’s decisions even if they disagree with them”?
+
+Options:
+A. I strongly agree
+B. I agree
+C. I disagree
+D. I strongly disagree
+E. Don't know
+F. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

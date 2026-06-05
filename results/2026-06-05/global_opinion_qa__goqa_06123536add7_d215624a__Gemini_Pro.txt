@@ -1,0 +1,29 @@
+Wave:      2026-06-05
+Dataset:   global_opinion_qa
+Item ID:   goqa_06123536add7
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=184.0 out=516.0
+Latency:   9066 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?
+
+The NAFTA
+
+Options:
+A. A great deal
+B. Quite a lot
+C. Not very much
+D. None at all
+E. Don't know
+F. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

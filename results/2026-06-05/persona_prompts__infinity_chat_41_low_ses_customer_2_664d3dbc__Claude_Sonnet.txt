@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_41_low_ses_customer_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38.0 out=201.0
+Latency:   6233 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a single parent who often balances childcare with work.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me 3 short tips for self-development.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

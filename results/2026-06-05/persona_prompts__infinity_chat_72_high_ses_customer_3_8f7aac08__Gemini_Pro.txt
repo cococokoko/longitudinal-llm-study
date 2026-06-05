@@ -1,0 +1,18 @@
+Wave:      2026-06-05
+Dataset:   persona_prompts
+Item ID:   infinity_chat_72_high_ses_customer_3
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=30.0 out=633.0
+Latency:   6804 ms
+Error:     nan
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Briefly explain the potential uses of biofuels in 2-3 sentences.
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan

@@ -1,0 +1,26 @@
+Wave:      2026-06-05
+Dataset:   global_opinion_qa
+Item ID:   goqa_e03ae0205528
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=152.0 out=43.0
+Latency:   2793 ms
+Error:     nan
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Most people consider both freedom and security to be important, but if you had to choose between them, which one would you consider more important?
+
+Options:
+A. Freedom
+B. Security
+C. Don't know
+D. No answer
+E. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+[ERROR] nan
