@@ -4,9 +4,9 @@ Item ID:   goqa_ef5127cb8e3a
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=209.0 out=83.0
+Tokens:    in=209 out=83
 Latency:   2823 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: All South Koreans are happy Or there is large gap among each person
@@ -28,4 +28,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.85, "B": 0.02, "C": 0.02, "D": 0.02, "E": 0.02, "F": 0.02, "G": 0.02, "H": 0.02, "I": 0.02, "J": 0.05}

@@ -4,9 +4,9 @@ Item ID:   goqa_69e542b036a4
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=144.0 out=849.0
+Tokens:    in=144 out=849
 Latency:   9786 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How satisfied are you with the following?
@@ -26,4 +26,11 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.0,
+  "B": 0.0,
+  "C": 0.0,
+  "D": 0.0,
+  "E": 0.0,
+  "F": 1.0
+}

@@ -4,9 +4,9 @@ Item ID:   goqa_95e237815fe4
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=183.0 out=51.0
+Tokens:    in=183 out=51
 Latency:   1359 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: People have different views about themselves and how they relate to the world. Using this card, would you tell me how strongly you agree or disagree with each of the following statements about how you see yourself?
@@ -26,4 +26,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.25, "B": 0.35, "C": 0.25, "D": 0.10, "E": 0.04, "F": 0.01}

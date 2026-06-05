@@ -4,9 +4,9 @@ Item ID:   goqa_399787dbcc6c
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=190.0 out=51.0
+Tokens:    in=190 out=51
 Latency:   1300 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Now I am going to read out a list of voluntary organizations; for each one, could you tell me whether you are a member, an active member, an inactive member or not a member of that type of organization?
@@ -26,4 +26,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.55, "B": 0.12, "C": 0.28, "D": 0.03, "E": 0.01, "F": 0.01}

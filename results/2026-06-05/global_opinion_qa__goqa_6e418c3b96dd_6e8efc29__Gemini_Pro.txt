@@ -4,9 +4,9 @@ Item ID:   goqa_6e418c3b96dd
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=178.0 out=577.0
+Tokens:    in=178 out=577
 Latency:   7035 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Of 100 people in your community, how many of you think it's good for citizens to reconcile with the demobilized from an armed group?
@@ -24,4 +24,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.05, "B": 0.10, "C": 0.20, "D": 0.30, "E": 0.25, "F": 0.10}

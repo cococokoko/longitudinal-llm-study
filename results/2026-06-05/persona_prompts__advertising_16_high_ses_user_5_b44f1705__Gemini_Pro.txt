@@ -4,9 +4,9 @@ Item ID:   advertising_16_high_ses_user_5
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=16.0 out=1020.0
+Tokens:    in=16 out=1020
 Latency:   12975 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am an executive at a large technology company.
@@ -14,4 +14,4 @@ I am an executive at a large technology company.
 Managing stress and anxiety.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+As an executive at a large tech company, your stress isn't just about workload; it is about **complexity, velocity, and visibility**. You are navigating rapid technological shifts (like AI

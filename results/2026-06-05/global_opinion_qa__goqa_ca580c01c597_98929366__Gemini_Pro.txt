@@ -4,9 +4,9 @@ Item ID:   goqa_ca580c01c597
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=188.0 out=382.0
+Tokens:    in=188 out=382
 Latency:   15551 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it:
@@ -26,4 +26,11 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.0,
+  "B": 0.0,
+  "C": 1.0,
+  "D": 0.0,
+  "E": 0.0,
+  "F": 0.0
+}

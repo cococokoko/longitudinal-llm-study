@@ -4,9 +4,9 @@ Item ID:   infinity_chat_56_high_ses_customer_5
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=35.0 out=142.0
+Tokens:    in=35 out=142
 Latency:   3376 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is an executive at a large technology company.
@@ -15,4 +15,12 @@ You know that the customer is an executive at a large technology company.
 Name an economic value of an additional year of schooling.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+One commonly cited economic value of an additional year of schooling is higher lifetime earnings.
+
+Research in labor economics often finds that each additional year of education is associated with an increase in wages and income because it can:
+- Improve skills and productivity
+- Increase access to higher-paying jobs
+- Reduce the likelihood of unemployment
+- Enhance career advancement opportunities
+
+At the individual level, the value can be measured as the increase in expected lifetime earnings attributable to that extra year of education. At the societal level, it can also contribute to higher economic growth and tax revenues.

@@ -4,9 +4,9 @@ Item ID:   goqa_16156df65335
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=125.0 out=740.0
+Tokens:    in=125 out=740
 Latency:   10300 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How have your perceptions of post materialism changed from the experience of Hurricane Maria?
@@ -23,4 +23,10 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.40,
+  "B": 0.30,
+  "C": 0.15,
+  "D": 0.10,
+  "E": 0.05
+}

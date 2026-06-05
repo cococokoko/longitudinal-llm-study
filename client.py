@@ -29,6 +29,7 @@ _PROVIDER_DEFAULTS: dict[str, dict[str, str]] = {
 }
 
 _RETRYABLE_STATUS = {429, 500, 502, 503, 504}
+_NO_CHOICES_RETRYABLE_CODES = {429, 500, 502, 503, 504, 529}
 
 
 # ── Data structures ───────────────────────────────────────────────────────────
@@ -149,9 +150,18 @@ class LLMClient:
                     if resp.status_code in _RETRYABLE_STATUS:
                         raise _RetryableHTTPError(resp.status_code, resp.text)
                     resp.raise_for_status()
+                    data = resp.json()
+                    # OpenRouter wraps provider errors as {"error": {...}} with HTTP 200.
+                    # Retry on known transient codes; surface others as a hard failure.
+                    if not data.get("choices"):
+                        err_obj = data.get("error", {})
+                        err_code = err_obj.get("code") if isinstance(err_obj, dict) else None
+                        err_msg  = err_obj.get("message", resp.text[:300]) if isinstance(err_obj, dict) else resp.text[:300]
+                        if err_code in _NO_CHOICES_RETRYABLE_CODES:
+                            raise _RetryableHTTPError(err_code, err_msg)
+                        raise _NoChoicesError(err_msg, raw=data)
 
             latency_ms = int((time.monotonic() - t0) * 1000)
-            data   = resp.json()
             choice = data["choices"][0]
             usage  = data.get("usage", {})
 
@@ -182,6 +192,17 @@ class LLMClient:
                 raw=data,
             )
 
+        except _NoChoicesError as exc:
+            latency_ms = int((time.monotonic() - t0) * 1000)
+            return LLMResponse(
+                response_text=None,
+                input_tokens=None,
+                output_tokens=None,
+                finish_reason=None,
+                latency_ms=latency_ms,
+                error=f"Provider error (no choices): {exc}",
+                raw=exc.raw,
+            )
         except Exception as exc:
             latency_ms = int((time.monotonic() - t0) * 1000)
             return LLMResponse(
@@ -209,6 +230,13 @@ class _RetryableHTTPError(Exception):
     def __init__(self, status: int, body: str) -> None:
         super().__init__(f"HTTP {status}: {body[:200]}")
         self.status = status
+
+
+class _NoChoicesError(Exception):
+    """Raised when the API returns HTTP 200 but omits the choices field (non-retryable provider error)."""
+    def __init__(self, message: str, raw: dict | None = None) -> None:
+        super().__init__(message)
+        self.raw = raw or {}
 
 
 # ── Model self-identification ─────────────────────────────────────────────────

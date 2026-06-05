@@ -4,9 +4,9 @@ Item ID:   goqa_04949717678c
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=128.0 out=35.0
+Tokens:    in=128 out=35
 Latency:   1009 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Sometimes I can’t stop myself from doing something, even if I know it is wrong
@@ -22,4 +22,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.25, "B": 0.35, "C": 0.25, "D": 0.15}

@@ -4,9 +4,9 @@ Item ID:   goqa_e8b3eb5724df
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=171.0 out=43.0
+Tokens:    in=171 out=43
 Latency:   1717 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Here is a list of qualities that children can be encouraged to learn at home. Which, if any, do you consider to be especially important? Please choose up to five.
@@ -25,4 +25,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.35, "B": 0.58, "C": 0.04, "D": 0.02, "E": 0.01}

@@ -4,9 +4,9 @@ Item ID:   infinity_chat_64_high_ses_customer_1
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=44.0 out=195.0
+Tokens:    in=44 out=195
 Latency:   2275 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a neurosurgeon at a major teaching hospital.
@@ -15,4 +15,4 @@ You know that the customer is a neurosurgeon at a major teaching hospital.
 Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+For international students, the TOEFL (Test of English as a Foreign Language) and IELTS (International English Language Testing System) are the two most widely accepted English-proficiency exams for university admissions, visa applications, and professional licensing. Both assess reading, listening, speaking, and writing skills, but they differ in format and testing style. The TOEFL is typically delivered online and emphasizes academic English in a university context, with integrated tasks that combine multiple language skills. The IELTS is available in both computer-based and paper-based formats and includes a face-to-face speaking interview with an examiner, which some candidates find more natural. Most universities and institutions accept either test, so students should choose based on their strengths, preferred test format, target institutions’ requirements, and the score expectations of their intended programs.

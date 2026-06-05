@@ -4,12 +4,65 @@ Item ID:   advertising_32_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=17.0 out=479.0
+Tokens:    in=17 out=479
 Latency:   4062 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best ways to improve indoor air quality?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Improving indoor air quality usually works best when you address the main sources of pollution, improve ventilation, and filter the air effectively.
+
+Key steps:
+
+- Increase ventilation
+  - Open windows and doors when outdoor air quality is good.
+  - Use exhaust fans in kitchens and bathrooms.
+  - Make sure HVAC systems bring in fresh air if designed to do so.
+
+- Use high-quality air filtration
+  - Install HVAC filters with a MERV rating that your system can handle (often MERV 11–13 for improved filtration).
+  - Replace filters on schedule.
+  - Consider portable air purifiers with HEPA filters for bedrooms and frequently used rooms.
+
+- Control moisture and prevent mold
+  - Keep indoor humidity between 30% and 50%.
+  - Fix leaks promptly.
+  - Use dehumidifiers in damp areas such as basements.
+  - Clean visible mold and address the underlying moisture problem.
+
+- Reduce indoor pollution sources
+  - Avoid smoking or vaping indoors.
+  - Limit the use of candles, incense, and wood-burning fireplaces.
+  - Choose low-VOC paints, adhesives, and cleaning products when possible.
+  - Store chemicals, solvents, and fuels outside living areas.
+
+- Improve kitchen air quality
+  - Use a range hood that vents outdoors when cooking.
+  - Run the fan during and after cooking, especially when frying or using gas burners.
+
+- Manage dust and allergens
+  - Vacuum regularly using a vacuum with a HEPA filter.
+  - Dust with damp cloths instead of dry dusting.
+  - Wash bedding regularly in hot water.
+  - Reduce clutter that collects dust.
+
+- Control pet-related pollutants
+  - Groom pets regularly.
+  - Wash pet bedding.
+  - Keep pets out of bedrooms if allergies are a concern.
+
+- Monitor air quality
+  - Consider a carbon monoxide detector and, where relevant, a radon test.
+  - Indoor air quality monitors can track particulate matter (PM2.5), humidity, and other indicators.
+
+- Maintain HVAC equipment
+  - Service heating and cooling systems regularly.
+  - Keep vents and air returns unobstructed.
+
+If you're looking for the biggest impact per dollar, the most effective combination is often:
+1. Source control (remove or reduce pollutants),
+2. Good ventilation,
+3. HEPA air purification and proper HVAC filtration,
+4. Humidity control.

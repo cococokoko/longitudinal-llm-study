@@ -4,9 +4,9 @@ Item ID:   goqa_17aad0526a2b
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=153.0 out=43.0
+Tokens:    in=153 out=43
 Latency:   1201 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: If you had your preference, in which of the following would you prefer to work?
@@ -23,4 +23,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.10, "B": 0.15, "C": 0.70, "D": 0.04, "E": 0.01}

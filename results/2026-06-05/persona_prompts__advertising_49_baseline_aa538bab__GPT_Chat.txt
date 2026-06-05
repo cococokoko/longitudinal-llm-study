@@ -4,12 +4,62 @@ Item ID:   advertising_49_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=13.0 out=496.0
+Tokens:    in=13 out=496
 Latency:   3470 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 How to improve home WiFi?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Improving home Wi‑Fi depends on what's causing the problem: weak signal, slow speeds, interference, or too many devices. Here are the most effective steps, roughly in order of impact:
+
+- Move your router to a central, open location.
+  - Keep it off the floor.
+  - Avoid placing it inside cabinets or behind large objects.
+  - Place it away from microwaves, cordless phone bases, and other electronics.
+
+- Restart and update your equipment.
+  - Reboot the router occasionally.
+  - Install the latest router firmware updates.
+
+- Use the 5 GHz or 6 GHz band when available.
+  - Faster speeds and less congestion than 2.4 GHz.
+  - Shorter range, so it's best for nearby devices.
+
+- Optimize Wi‑Fi channels.
+  - In crowded areas, neighboring networks can interfere.
+  - Many routers can automatically select the best channel.
+  - For 2.4 GHz, channels 1, 6, and 11 are typically recommended.
+
+- Upgrade old hardware.
+  - If your router is more than 5–7 years old, a newer Wi‑Fi 6 or Wi‑Fi 6E router may provide significantly better performance.
+  - Ensure your modem is also appropriate for your internet plan.
+
+- Add coverage if signal is weak in certain rooms.
+  - A mesh Wi‑Fi system is often the best solution for larger homes.
+  - Wi‑Fi extenders can help but may reduce performance compared with mesh systems.
+
+- Connect high-bandwidth devices with Ethernet.
+  - Gaming consoles, desktop PCs, TVs, and workstations benefit from wired connections.
+  - This also frees Wi‑Fi capacity for other devices.
+
+- Reduce network congestion.
+  - Disconnect unused devices.
+  - Schedule large downloads for off-peak times if needed.
+
+- Check your internet speed.
+  - Run a speed test near the router and in problem areas.
+  - If speeds are slow even next to the router, the issue may be with your internet service rather than Wi‑Fi.
+
+- Secure your network.
+  - Use WPA2 or WPA3 security.
+  - Set a strong password to prevent unauthorized usage.
+
+If you tell me:
+- The size of your home/apartment
+- Your router model
+- Your internet speed plan
+- Whether the issue is slow speed, weak signal, dropped connections, or gaming/video-call problems
+
+I can give more specific recommendations.

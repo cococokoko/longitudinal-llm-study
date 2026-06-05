@@ -4,9 +4,9 @@ Item ID:   goqa_8da11b082913
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=182.0 out=108.0
+Tokens:    in=182 out=108
 Latency:   1273 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Too much trust, too much confidence, or too little trust, or you never trust it, to what extent do you trust the following institutions? Do you trust "religious institutions"? To the researcher: You ask the listed items in the same way.
@@ -24,4 +24,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 1.0, "F": 0.0}

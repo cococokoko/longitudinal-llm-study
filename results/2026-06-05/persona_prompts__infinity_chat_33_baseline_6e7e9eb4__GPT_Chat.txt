@@ -4,12 +4,83 @@ Item ID:   infinity_chat_33_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=26.0 out=575.0
+Tokens:    in=26 out=575
 Latency:   5120 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+You can run Dolphin Emulator on a Microsoft Surface using only the touchpad and the on-screen keyboard, but you'll need to configure controls carefully because Dolphin expects a keyboard, mouse, gamepad, or Wii Remote.
+
+Here's a practical setup:
+
+1. Open the Windows On-Screen Keyboard
+- Press Win + Ctrl + O to toggle it on.
+- Or go to Settings → Accessibility → Keyboard → On-Screen Keyboard.
+
+2. Configure a Virtual Wii Remote in Dolphin
+- Open Dolphin.
+- Click Controllers.
+- Under "Wii Remotes," set Wii Remote 1 to "Emulated Wii Remote."
+- Click Configure.
+
+3. Map Wii Buttons to Keyboard Keys
+Assign keys that are easy to access from the on-screen keyboard. Example:
+
+- A → Z
+- B → X
+- 1 → 1
+- 2 → 2
+- Plus (+) → Enter
+- Minus (-) → Backspace
+- Home → H
+- D-Pad → Arrow Keys
+
+When playing, tap these keys on the on-screen keyboard.
+
+4. Use the Surface Touchpad as the Wii Pointer
+In the Emulated Wii Remote configuration:
+- Locate the "Point" section.
+- Map:
+  - Up → Mouse Y-
+  - Down → Mouse Y+
+  - Left → Mouse X-
+  - Right → Mouse X+
+
+This allows the cursor movement from the touchpad to control the Wii pointer.
+
+5. Simulate Wii Remote Motion
+Many Wii games require shaking or tilting.
+
+In the configuration window:
+- Map Shake X/Y/Z to keyboard keys (for example Q, W, E).
+- Map Tilt controls to other keys if needed.
+
+You can press these on the on-screen keyboard when required.
+
+6. For GameCube Games
+If you're playing GameCube titles:
+- Controllers → GameCube Port 1 → Standard Controller → Configure.
+- Map:
+  - Left Stick → WASD
+  - A → Z
+  - B → X
+  - X → C
+  - Y → V
+  - Start → Enter
+
+The touchpad can be used like a mouse for menu navigation.
+
+7. Enable Touch-Friendly Dolphin Features
+- View → Fullscreen (Alt + Enter).
+- In Dolphin's graphics settings, use a lower resolution if performance is limited.
+- You can pin the On-Screen Keyboard to stay visible while gaming.
+
+Potential limitations:
+- Games requiring precise Wii Remote motion can be difficult without a physical controller.
+- Wii Sports, Skyward Sword, and similar motion-heavy games are not ideal with only a touchpad and on-screen keyboard.
+- Many GameCube games and Wii games with Classic Controller support work much better.
+
+If you tell me which Wii game you're trying to play, I can suggest a specific Dolphin control layout for a Surface touchpad and on-screen keyboard.

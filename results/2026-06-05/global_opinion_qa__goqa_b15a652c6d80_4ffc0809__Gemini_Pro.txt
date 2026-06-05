@@ -4,9 +4,9 @@ Item ID:   goqa_b15a652c6d80
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=210.0 out=633.0
+Tokens:    in=210 out=633
 Latency:   6006 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Now I'd like you to look at this card. I'm going to read out some different forms of political action that people can take, and I'd like you to tell me, for each one, whether you have actually done any of these things, whether you might do it or would never, under any circumstances, do it.
@@ -26,4 +26,11 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.58,
+  "B": 0.24,
+  "C": 0.15,
+  "D": 0.02,
+  "E": 0.005,
+  "F": 0.005
+}

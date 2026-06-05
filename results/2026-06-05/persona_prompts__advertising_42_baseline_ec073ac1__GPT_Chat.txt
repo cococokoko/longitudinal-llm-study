@@ -4,12 +4,80 @@ Item ID:   advertising_42_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=17.0 out=505.0
+Tokens:    in=17 out=505
 Latency:   3792 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best apps for tracking fitness and nutrition?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+The best fitness and nutrition app depends on your goals, budget, and how much detail you want to track. Here are some of the strongest options by category:
+
+Fitness + Nutrition All-in-One
+- MyFitnessPal
+  - Large food database
+  - Tracks calories, macros, weight, and exercise
+  - Integrates with many fitness devices and apps
+  - Good for: weight loss, general health, macro tracking
+
+- Cronometer
+  - Detailed nutrition tracking, including vitamins and minerals
+  - More accurate food database than many competitors
+  - Syncs with wearables
+  - Good for: nutrition-focused users, athletes, people with specific dietary goals
+
+Workout Tracking
+- Strong
+  - Excellent for strength training
+  - Easy workout logging and progress tracking
+  - Good for: gym-goers and weightlifters
+
+- Hevy
+  - Clean interface with social features
+  - Tracks sets, reps, and personal records
+  - Good for: strength training and motivation
+
+- Nike Training Club
+  - Free guided workouts
+  - Strength, mobility, yoga, and cardio programs
+  - Good for: home workouts and beginners
+
+Running and Endurance
+- Strava
+  - Tracks running, cycling, hiking, and more
+  - Strong social and community features
+  - Good for: runners and cyclists
+
+- Garmin Connect
+  - Excellent if you use a Garmin device
+  - Detailed performance and recovery metrics
+  - Good for: endurance athletes
+
+Habit and Health Tracking
+- Apple Health (iPhone)
+  - Central hub for health data
+  - Integrates with many apps and devices
+
+- Google Fit (Android)
+  - Simple activity and health tracking
+  - Works with numerous fitness apps
+
+- Fitbit
+  - Tracks activity, sleep, heart rate, and readiness metrics
+  - Best when paired with a Fitbit device
+
+Best by Goal
+- Weight loss: MyFitnessPal, Lose It!, Cronometer
+- Building muscle: Strong, Hevy, MyFitnessPal
+- Improving nutrition quality: Cronometer
+- Running: Strava, Garmin Connect
+- General wellness: Apple Health, Fitbit
+- Free workouts: Nike Training Club
+
+If you tell me:
+- iPhone or Android
+- Weight loss, muscle gain, endurance, or general health
+- Whether you use a smartwatch or fitness tracker
+
+I can narrow it down to the best 2–3 apps for your situation.

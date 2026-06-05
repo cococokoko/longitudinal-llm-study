@@ -4,9 +4,9 @@ Item ID:   goqa_731cae9e3c79
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=165.0 out=594.0
+Tokens:    in=165 out=594
 Latency:   8189 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: If a woman works outside of the home for money, how likely is it that the following consequences might occur:
@@ -26,4 +26,11 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.15,
+  "B": 0.35,
+  "C": 0.45,
+  "D": 0.03,
+  "E": 0.01,
+  "F": 0.01
+}

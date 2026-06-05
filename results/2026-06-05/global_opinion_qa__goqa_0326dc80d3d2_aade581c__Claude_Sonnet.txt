@@ -4,9 +4,9 @@ Item ID:   goqa_0326dc80d3d2
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=122.0 out=27.0
+Tokens:    in=122 out=27
 Latency:   2767 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: If you received an employment opportunity in the last four weeks or during the next month, would you be interested and able to start working?
@@ -21,4 +21,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.05, "B": 0.90, "C": 0.05}

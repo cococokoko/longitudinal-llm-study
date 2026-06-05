@@ -4,9 +4,9 @@ Item ID:   goqa_96d2e23a0f2a
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=205.0 out=609.0
+Tokens:    in=205 out=609
 Latency:   7860 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?
@@ -27,4 +27,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.38, "B": 0.41, "C": 0.14, "D": 0.04, "E": 0.02, "F": 0.01, "G": 0.0}

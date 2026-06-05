@@ -4,9 +4,9 @@ Item ID:   goqa_e1d519acfa0b
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=107.0 out=27.0
+Tokens:    in=107 out=27
 Latency:   1390 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Between equality and security, what is more important?
@@ -21,4 +21,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.35, "B": 0.35, "C": 0.30}

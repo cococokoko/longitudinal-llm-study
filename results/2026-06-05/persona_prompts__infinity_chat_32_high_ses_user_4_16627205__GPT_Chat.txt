@@ -4,9 +4,9 @@ Item ID:   infinity_chat_32_high_ses_user_4
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=29.0 out=690.0
+Tokens:    in=29 out=690
 Latency:   5205 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,159 @@ I am a physician-scientist leading a research group.
 How can I make a zombie survivor game on Scratch?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+A zombie survivor game is a good Scratch project because it combines movement, spawning enemies, health, scoring, and simple AI. Here's a straightforward way to build one.
+
+Game concept:
+- Player moves around a map.
+- Zombies continuously spawn and chase the player.
+- Player can shoot zombies.
+- Player loses health when touched by zombies.
+- Score increases when zombies are defeated.
+- Game ends when health reaches zero.
+
+1. Create the player
+
+Add a player sprite.
+
+Player movement script:
+
+When green flag clicked
+- Forever
+  - If W key pressed → change y by 5
+  - If S key pressed → change y by -5
+  - If A key pressed → change x by -5
+  - If D key pressed → change x by 5
+
+Optional:
+- Point toward mouse-pointer for aiming.
+
+2. Add health and score variables
+
+Create variables:
+- Health
+- Score
+
+When green flag clicked:
+- Set Health to 100
+- Set Score to 0
+
+3. Create a bullet sprite
+
+When player clicks:
+
+Player sprite:
+- When space key pressed
+  - Create clone of Bullet
+
+Bullet sprite:
+
+When I start as a clone
+- Go to Player
+- Point toward mouse-pointer
+- Repeat 50
+  - Move 10 steps
+  - If touching Zombie
+    - Broadcast "ZombieHit"
+    - Delete this clone
+  - End
+- Delete this clone
+
+4. Create the zombie sprite
+
+Zombie spawning:
+
+When green flag clicked
+- Forever
+  - Wait 2 seconds
+  - Create clone of myself
+
+Zombie behavior:
+
+When I start as a clone
+- Go to random edge
+- Forever
+  - Point toward Player
+  - Move 2 steps
+
+5. Damage the player
+
+In Zombie clone:
+
+Forever
+- If touching Player
+  - Change Health by -1
+  - Wait 0.2 seconds
+
+6. Destroy zombies
+
+Simplest version:
+
+Zombie clone:
+
+Forever
+- If touching Bullet
+  - Change Score by 1
+  - Delete this clone
+
+You can also give zombies individual health.
+
+7. Add game over
+
+Create a Game Over backdrop.
+
+When green flag clicked
+- Forever
+  - If Health ≤ 0
+    - Switch backdrop to Game Over
+    - Stop all
+
+8. Add waves (optional)
+
+Create variable:
+- Wave
+
+Every wave:
+- Increase zombie spawn rate
+- Increase zombie speed
+
+Example:
+
+Set Wave to 1
+
+Every 30 seconds:
+- Change Wave by 1
+
+Zombie speed:
+- Move (1 + Wave) steps
+
+9. Add survival features
+
+Possible upgrades:
+- Ammo system
+- Different weapons
+- Faster zombies
+- Health packs
+- Barricades
+- Experience points and leveling
+- Day/night cycle
+
+10. Polish the game
+
+Add:
+- Zombie sounds
+- Gunshot sounds
+- Blood or hit effects
+- Animated walking costumes
+- Start menu
+- High score variable
+
+A minimal playable version only needs:
+- Player movement
+- Zombie spawning
+- Zombie chasing
+- Shooting
+- Health
+- Score
+- Game over
+
+Once those work, you can add more advanced mechanics such as weapon upgrades, wave systems, and boss zombies.

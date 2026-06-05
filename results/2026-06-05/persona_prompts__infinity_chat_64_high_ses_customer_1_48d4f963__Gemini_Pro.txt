@@ -4,9 +4,9 @@ Item ID:   infinity_chat_64_high_ses_customer_1
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=32.0 out=1020.0
+Tokens:    in=32 out=1020
 Latency:   13285 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a neurosurgeon at a major teaching hospital.
@@ -15,4 +15,4 @@ You know that the customer is a neurosurgeon at a major teaching hospital.
 Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+When evaluating international candidates for your neurosurgery residency, fellowship, or research programs, understanding the nuanced differences between the TOEFL and IELTS is critical for assessing their readiness for a high-stakes clinical environment. The TOEFL is heavily focused on academic American English and is entirely computer-based, making it an excellent predictor of a candidate's ability to navigate complex medical literature, draft research publications, and comprehend didactic lectures. Conversely, the IELTS incorporates a live, face-to-face speaking component and assesses a broader range of international English dialects. This makes the IELTS particularly valuable for gauging a candidate's real-world conversational fluency—a vital metric for determining how effectively they will communicate with patients at the bedside, present cases during surgical rounds or M&M conferences, and collaborate seamlessly with multidisciplinary teams in the OR. Ultimately,

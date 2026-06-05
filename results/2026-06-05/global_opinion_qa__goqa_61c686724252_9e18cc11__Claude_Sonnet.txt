@@ -4,9 +4,9 @@ Item ID:   goqa_61c686724252
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=210.0 out=59.0
+Tokens:    in=210 out=59
 Latency:   1659 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: I ‘d like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all?
@@ -27,4 +27,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.08, "B": 0.52, "C": 0.28, "D": 0.05, "E": 0.04, "F": 0.02, "G": 0.01}

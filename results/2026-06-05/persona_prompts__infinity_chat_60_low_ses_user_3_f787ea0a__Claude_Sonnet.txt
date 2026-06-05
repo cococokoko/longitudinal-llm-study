@@ -4,9 +4,9 @@ Item ID:   infinity_chat_60_low_ses_user_3
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: low_ses
 SES level: low  role: user
-Tokens:    in=33.0 out=328.0
+Tokens:    in=33 out=328
 Latency:   9658 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I recently started a new job and am still on probation.
@@ -14,4 +14,41 @@ I recently started a new job and am still on probation.
 Explain computational irreducibility like I'm 5.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Computational Irreducibility (Like You're 5)
+
+Imagine you want to know **where a bouncy ball will be after 1000 bounces**.
+
+You have two choices:
+
+## The Easy Way (if it existed)
+Use a magic shortcut formula - just plug in "1000" and get the answer instantly ✨
+
+## The Hard Way (computational irreducibility)
+**You just have to watch all 1000 bounces.** There's no shortcut. You can't skip ahead.
+
+---
+
+## The Simple Idea
+
+Some things you can **predict with a shortcut.**
+> "I save £5 every day - how much after 100 days?" Easy, just multiply.
+
+Some things you **have to actually run through every step** to find out. No shortcut exists. The only way to know the answer is to *do the whole thing*.
+
+That's computational irreducibility - **the process can't be compressed into a faster process.**
+
+---
+
+## Why It Matters
+
+- It's why **weather is hard to predict** - you basically have to simulate every moment
+- It's why **some simple rules create surprisingly unpredictable complexity**
+- It suggests some questions are **fundamentally unanswerable in advance**
+
+---
+
+## The Honest Summary
+
+> Sometimes the universe doesn't have a cheat code. You just have to watch it happen.
+
+The concept comes mainly from **Stephen Wolfram's** work on complex systems.

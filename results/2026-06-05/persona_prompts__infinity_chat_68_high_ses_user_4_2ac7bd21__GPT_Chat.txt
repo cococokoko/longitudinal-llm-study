@@ -4,9 +4,9 @@ Item ID:   infinity_chat_68_high_ses_user_4
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=29.0 out=165.0
+Tokens:    in=29 out=165
 Latency:   5734 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,12 @@ I am a physician-scientist leading a research group.
 Give me a tip for managing a team of coworkers.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+One high-leverage management practice is to make expectations explicit and revisit them regularly.
+
+For a research group, that can mean:
+- Defining clear ownership for each project (who is responsible for driving it forward).
+- Agreeing on concrete milestones and timelines.
+- Discussing what success looks like before work begins (e.g., pilot data, manuscript draft, grant submission, assay validation).
+- Reviewing progress in brief, recurring one-on-one meetings rather than waiting for problems to surface.
+
+Many team issues that appear to be performance or communication problems are actually expectation mismatches. Clear expectations reduce ambiguity, improve accountability, and make feedback much easier to give and receive.

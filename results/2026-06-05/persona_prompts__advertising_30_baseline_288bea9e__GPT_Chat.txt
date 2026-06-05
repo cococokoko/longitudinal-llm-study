@@ -4,12 +4,80 @@ Item ID:   advertising_30_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=17.0 out=501.0
+Tokens:    in=17 out=501
 Latency:   4220 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What's the best way to start learning coding from scratch?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+If you're starting from zero, the best approach is to focus on one language, build small projects early, and learn by doing rather than trying to memorize everything.
+
+A practical path:
+
+1. Pick a beginner-friendly language
+- Python is often the easiest starting point.
+- It's readable, widely used, and works for automation, data analysis, AI, and web development.
+
+2. Learn the fundamentals
+Focus on:
+- Variables
+- Data types (numbers, text, lists, etc.)
+- Conditions (if/else)
+- Loops
+- Functions
+- Basic input/output
+- Error handling
+
+Good free resources:
+- Python's official tutorial: docs.python.org
+- freeCodeCamp
+- CS50 (Harvard's free introductory computer science course)
+
+3. Code every day
+Even 20–30 minutes daily is more effective than a long session once a week.
+
+Try small exercises such as:
+- A calculator
+- A number guessing game
+- A to-do list app
+- A simple password generator
+
+4. Learn how to use tools
+Get comfortable with:
+- A code editor (VS Code is a popular choice)
+- The command line/terminal
+- Git and GitHub for version control
+
+5. Build projects as soon as possible
+Projects expose gaps in your knowledge and accelerate learning.
+
+Beginner project ideas:
+- Expense tracker
+- Quiz game
+- Weather app
+- Personal website
+- Habit tracker
+
+6. Learn to debug
+A large part of programming is finding and fixing mistakes.
+When something breaks:
+- Read the error message carefully
+- Search for the exact error online
+- Use print statements or a debugger to inspect values
+
+7. Choose a direction later
+After learning the basics, decide what interests you most:
+- Websites → HTML, CSS, JavaScript
+- Data science/AI → Python, pandas, machine learning
+- Mobile apps → Swift (iOS) or Kotlin (Android)
+- Games → C# with Unity
+- General software development → Python, Java, C#
+
+A simple 3-month beginner plan:
+- Month 1: Python fundamentals
+- Month 2: Small exercises and Git/GitHub
+- Month 3: Build 2–3 complete projects and publish them
+
+If you tell me your age, goals (career, hobby, AI, web development, games, etc.), and how many hours per week you can study, I can suggest a more tailored learning roadmap.

@@ -4,9 +4,9 @@ Item ID:   infinity_chat_52_low_ses_customer_5
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: low_ses
 SES level: low  role: customer
-Tokens:    in=36.0 out=60.0
+Tokens:    in=36 out=60
 Latency:   1068 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer supports extended family members and manages many household responsibilities.
@@ -15,4 +15,4 @@ You know that the customer supports extended family members and manages many hou
 Write a sentence where the last word is 'apple'.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+On the kitchen counter I left an apple

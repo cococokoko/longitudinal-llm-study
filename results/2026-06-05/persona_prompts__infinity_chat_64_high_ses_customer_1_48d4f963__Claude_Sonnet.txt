@@ -4,9 +4,9 @@ Item ID:   infinity_chat_64_high_ses_customer_1
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=48.0 out=320.0
+Tokens:    in=48 out=320
 Latency:   7957 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a neurosurgeon at a major teaching hospital.
@@ -15,4 +15,14 @@ You know that the customer is a neurosurgeon at a major teaching hospital.
 Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Here's a draft paragraph for you:
+
+---
+
+**TOEFL vs. IELTS: A Consultant's Perspective**
+
+When advising international students on English proficiency testing, the choice between the TOEFL (Test of English as a Foreign Language) and IELTS (International English Language Testing System) often comes down to destination, learning style, and institutional requirements. The TOEFL iBT is predominantly preferred by North American universities and emphasizes an integrated academic format, where reading, listening, speaking, and writing skills are frequently combined within single tasks — rewarding students who think analytically in English. The IELTS, available in Academic and General Training versions, is more widely accepted across the UK, Australia, Canada, and Europe, and many students find its conversational speaking component — conducted face-to-face with an examiner — more natural and less intimidating than TOEFL's computer-recorded responses. Scoring systems also differ meaningfully: TOEFL uses a 0–120 scale while IELTS uses a 0–9 band score, and institutions set their own thresholds accordingly. My general recommendation is that students first confirm which tests their target institutions accept, then consider their own strengths — those comfortable with technology and academic integration often favor TOEFL, while those who prefer interpersonal communication tend to perform better on IELTS.
+
+---
+
+Would you like me to adjust the tone, length, or focus?

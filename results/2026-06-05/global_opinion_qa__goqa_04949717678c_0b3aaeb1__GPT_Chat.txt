@@ -4,9 +4,9 @@ Item ID:   goqa_04949717678c
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=120.0 out=75.0
+Tokens:    in=120 out=75
 Latency:   1103 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Sometimes I can’t stop myself from doing something, even if I know it is wrong
@@ -22,4 +22,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 1.0, "B": 0.0, "C": 0.0, "D": 0.0}

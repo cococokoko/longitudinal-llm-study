@@ -4,9 +4,9 @@ Item ID:   goqa_bf87be75daeb
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=174.0 out=219.0
+Tokens:    in=174 out=219
 Latency:   2809 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Our society is well integrated
@@ -27,4 +27,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.05, "B": 0.08, "C": 0.12, "D": 0.16, "E": 0.2, "F": 0.16, "G": 0.1, "H": 0.08, "I": 0.05}

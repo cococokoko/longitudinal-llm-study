@@ -4,12 +4,14 @@ Item ID:   infinity_chat_03_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=7.0 out=699.0
+Tokens:    in=7 out=699
 Latency:   8828 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Generate a joke about electric vehicles.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Why do electric car owners never talk about gas vehicles?
+
+Because they find the whole topic exhausting!

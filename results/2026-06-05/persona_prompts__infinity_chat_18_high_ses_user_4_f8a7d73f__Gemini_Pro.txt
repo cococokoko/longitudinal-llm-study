@@ -4,9 +4,9 @@ Item ID:   infinity_chat_18_high_ses_user_4
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=26.0 out=1017.0
+Tokens:    in=26 out=1017
 Latency:   21950 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,8 @@ I am a physician-scientist leading a research group.
 Create a short review of a movie that doesn't exist yet.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+**Title:** *The Hayflick Limit* (2026)
+**Director:** Elena Rostova
+**Rating:** ★★★★½ 
+
+As someone who splits my week between rounding in the ICU and agonizing over NIH grant renewals, I usually avoid medical sci-fi. Hollywood’s idea of a "breakthrough" usually involves a lone genius staring at a glowing blue vial before curing cancer in a weekend. But Elena Rostova’s *The Hayflick Limit* is a rare, astonishing exception—a film that actually understands the grueling, unglamorous, and deeply

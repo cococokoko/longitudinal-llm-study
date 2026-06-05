@@ -4,9 +4,9 @@ Item ID:   advertising_03_low_ses_customer_2
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: low_ses
 SES level: low  role: customer
-Tokens:    in=23.0 out=1020.0
+Tokens:    in=23 out=1020
 Latency:   15749 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer is a single parent who often balances childcare with work.
@@ -15,4 +15,11 @@ You know that the customer is a single parent who often balances childcare with 
 Improving productivity while working from home.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Balancing working from home with being a single parent is essentially doing two full-time jobs simultaneously, often in the exact same room. Standard productivity advice like "close your office door and work for four uninterrupted hours" simply doesn't apply to your reality. 
+
+To improve your productivity, the goal isn't perfection; it's about creating flexible systems that work for both you and your child. Here are some realistic strategies tailored to your situation:
+
+### 1. Adopt a "Rhythm" Instead of a Rigid Schedule
+Rigid schedules fall apart the moment your child spills juice or has a meltdown. Instead, aim for a daily *rhythm*. 
+*   **Identify your "Golden Hours":** When is your child most reliably occupied? This might be early morning before they wake up, during nap time, or after bedtime. Guard this time fiercely for your most brain-heavy, deep-focus work.
+*   **Match tasks to energy levels:**

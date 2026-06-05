@@ -1,12 +1,12 @@
 Wave:      2026-06-05
 Dataset:   persona_prompts
 Item ID:   infinity_chat_81_high_ses_user_2
-Model:     nan (openrouter)
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=nan out=nan
-Latency:   10080 ms
-Error:     KeyError: 'choices'
+Tokens:    in=46 out=77
+Latency:   1437 ms
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a senior attorney at a well-established law firm.
@@ -14,4 +14,6 @@ I am a senior attorney at a well-established law firm.
 Write a funny two-sentence birthday card message for a teammate who is 50 years old and loves going to a Toby Carvery restaurant.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] KeyError: 'choices'
+Happy 50th Birthday! At this point, you’ve spent enough years perfecting your craft that even a Toby Carvery roast would need your legal review before being declared “well done.”
+
+Fifty is a major milestone—fortunately, like a Toby Carvery plate, you’ve proven that the best things come generously seasoned and with plenty of extras on the side.

@@ -4,9 +4,9 @@ Item ID:   goqa_caa42a653be8
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=111.0 out=90.0
+Tokens:    in=111 out=90
 Latency:   4934 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: I have a hard time breaking bad habits
@@ -22,4 +22,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.95, "B": 0.03, "C": 0.01, "D": 0.01}

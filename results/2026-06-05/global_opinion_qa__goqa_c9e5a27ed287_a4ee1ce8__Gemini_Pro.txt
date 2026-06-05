@@ -4,9 +4,9 @@ Item ID:   goqa_c9e5a27ed287
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=174.0 out=443.0
+Tokens:    in=174 out=443
 Latency:   6399 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: In your view, how often do the following things occur in this country’s elections?
@@ -27,4 +27,12 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.40,
+  "B": 0.35,
+  "C": 0.15,
+  "D": 0.05,
+  "E": 0.03,
+  "F": 0.01,
+  "G": 0.01
+}

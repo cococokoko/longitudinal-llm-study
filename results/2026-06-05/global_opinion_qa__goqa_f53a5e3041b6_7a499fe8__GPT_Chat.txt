@@ -4,9 +4,9 @@ Item ID:   goqa_f53a5e3041b6
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=183.0 out=159.0
+Tokens:    in=183 out=159
 Latency:   2182 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Can you tell me how strongly you agree or disagree with the following statement:
@@ -28,4 +28,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.75, "B": 0.02, "C": 0.1, "D": 0.1, "E": 0.02, "F": 0.01, "G": 0.0, "H": 0.0}

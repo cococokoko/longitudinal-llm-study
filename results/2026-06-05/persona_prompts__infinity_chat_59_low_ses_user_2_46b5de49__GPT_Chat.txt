@@ -4,9 +4,9 @@ Item ID:   infinity_chat_59_low_ses_user_2
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: low_ses
 SES level: low  role: user
-Tokens:    in=35.0 out=189.0
+Tokens:    in=35 out=189
 Latency:   2225 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a single parent who often balances childcare with work.
@@ -14,4 +14,14 @@ I am a single parent who often balances childcare with work.
 Give me a tip to be more organized at work. I'm a high school teacher.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+A useful organization strategy for a high school teacher is to create a single “next-action” list for each class you teach.
+
+At the end of each school day, spend 5 minutes writing down:
+- The next lesson task that must be prepared
+- Any grading that has a deadline within the next few days
+- Students who need follow-up (attendance, missing work, parent contact)
+- Materials you need to bring or print
+
+Keep this list in one place (a notebook, notes app, or task manager) rather than across emails, sticky notes, and lesson plans.
+
+As a single parent, this can be especially helpful because when you return to work after handling childcare responsibilities, you can immediately see what needs attention next instead of spending mental energy trying to remember where you left off.

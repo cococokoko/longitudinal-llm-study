@@ -4,9 +4,9 @@ Item ID:   goqa_6f462f4bb22a
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=156.0 out=27.0
+Tokens:    in=156 out=27
 Latency:   846 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: What about these forms of political action and social activism that people can take?. Please, tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it:
@@ -23,4 +23,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.0, "B": 0.0, "C": 0.0}

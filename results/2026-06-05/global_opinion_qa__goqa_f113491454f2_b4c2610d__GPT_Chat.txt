@@ -4,9 +4,9 @@ Item ID:   goqa_f113491454f2
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=101.0 out=55.0
+Tokens:    in=101 out=55
 Latency:   1150 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Suppose you could choose between working for different kinds of companies, which one would you prefer?
@@ -20,4 +20,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.5, "B": 0.5}

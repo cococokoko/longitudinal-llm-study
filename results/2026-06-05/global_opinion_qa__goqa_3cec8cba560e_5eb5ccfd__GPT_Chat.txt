@@ -4,9 +4,9 @@ Item ID:   goqa_3cec8cba560e
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=131.0 out=93.0
+Tokens:    in=131 out=93
 Latency:   1280 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How have your perceptions about social values, norms, stereotypes changed from the experience of Hurricane Maria?
@@ -23,4 +23,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 1.0}

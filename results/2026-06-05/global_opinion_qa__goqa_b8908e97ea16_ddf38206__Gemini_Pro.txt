@@ -4,9 +4,9 @@ Item ID:   goqa_b8908e97ea16
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=138.0 out=539.0
+Tokens:    in=138 out=539
 Latency:   6734 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: In which of the following things do you believe, if you believe in any?
@@ -25,4 +25,10 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.32,
+  "B": 0.56,
+  "C": 0.09,
+  "D": 0.02,
+  "E": 0.01
+}

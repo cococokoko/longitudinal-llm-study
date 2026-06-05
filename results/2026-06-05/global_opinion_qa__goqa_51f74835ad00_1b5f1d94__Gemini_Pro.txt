@@ -4,9 +4,9 @@ Item ID:   goqa_51f74835ad00
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=194.0 out=406.0
+Tokens:    in=194 out=406
 Latency:   4657 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Do you think that this country’s government should or should not have the right to do the following: Collect information about anyone living in this country without their knowledge
@@ -25,4 +25,12 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.25,
+  "B": 0.25,
+  "C": 0.25,
+  "D": 0.25,
+  "E": 0.0,
+  "F": 0.0,
+  "G": 0.0
+}

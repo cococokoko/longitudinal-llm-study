@@ -4,9 +4,9 @@ Item ID:   infinity_chat_60_high_ses_user_2
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=28.0 out=278.0
+Tokens:    in=28 out=278
 Latency:   3068 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a senior attorney at a well-established law firm.
@@ -14,4 +14,22 @@ I am a senior attorney at a well-established law firm.
 Explain computational irreducibility like I'm 5.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Imagine you have a very long line of dominoes set up in a special pattern.
+
+You ask, "What will the 1,000th domino look like after they all fall?"
+
+For some things, you can use a shortcut. It's like knowing that if you count by twos, you can jump straight to the answer without counting every number.
+
+But some domino patterns are different. The only way to know what happens at domino number 1,000 is to watch domino 1 fall, then domino 2, then domino 3, and so on, all the way to 1,000.
+
+Computational irreducibility means:
+
+- Some processes have no shortcut.
+- You can't predict the result faster than the process itself happens.
+- To find out what happens, you must let each step occur.
+
+A simple way to say it:
+
+"It's like a story where you can't skip to the middle and know exactly what happens. You have to read every page because each page changes what comes next."
+
+The idea comes from computer science. It suggests that for some systems—even if you know all the rules—the fastest way to know the future is to let the future unfold one step at a time.

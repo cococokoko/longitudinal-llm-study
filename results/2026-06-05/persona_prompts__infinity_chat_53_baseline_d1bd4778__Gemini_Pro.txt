@@ -4,12 +4,14 @@ Item ID:   infinity_chat_53_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=9.0 out=1007.0
+Tokens:    in=9 out=1007
 Latency:   14117 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Write a May the 4th joke.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+What do you say to a Jedi eating dinner on Star Wars Day?
+
+"May the *forks* be with you!"

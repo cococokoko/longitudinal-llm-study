@@ -4,9 +4,9 @@ Item ID:   goqa_7b6595711797
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=156.0 out=636.0
+Tokens:    in=156 out=636
 Latency:   8213 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: From your point of view, what have been the effects of immigrants on the development of [your country]?:
@@ -26,4 +26,11 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.15,
+  "B": 0.15,
+  "C": 0.65,
+  "D": 0.05,
+  "E": 0.0,
+  "F": 0.0
+}

@@ -4,12 +4,67 @@ Item ID:   advertising_24_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=16.0 out=537.0
+Tokens:    in=16 out=537
 Latency:   4944 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best ways to save for retirement?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+The best way to save for retirement depends on your income, age, tax situation, and whether you have access to employer-sponsored plans. In general, a strong retirement strategy includes the following:
+
+- Start as early as possible
+  - Time is one of the most powerful factors because of compound growth.
+  - Even modest contributions made consistently over decades can grow substantially.
+
+- Contribute to employer retirement plans
+  - If your employer offers a 401(k), 403(b), or similar plan, consider contributing regularly.
+  - If your employer offers a matching contribution, contributing enough to receive the full match is often a high-priority step.
+
+- Use tax-advantaged accounts
+  - Traditional retirement accounts may provide tax deductions today, with taxes paid in retirement.
+  - Roth accounts are typically funded with after-tax money, but qualified withdrawals in retirement are generally tax-free.
+  - Eligibility and contribution limits vary by country and account type.
+
+- Invest appropriately
+  - Retirement savings are usually invested rather than held entirely in cash.
+  - Broadly diversified, low-cost index funds and target-date funds are common choices.
+  - Your asset allocation should reflect your risk tolerance, age, and retirement timeline.
+
+- Increase contributions over time
+  - Consider raising your savings rate when you receive raises or bonuses.
+  - Many people aim to save 10%–20% of income for retirement, though individual needs differ.
+
+- Maintain diversification
+  - Avoid concentrating too much of your retirement savings in a single stock, industry, or asset.
+  - Diversification can help reduce risk.
+
+- Keep investment costs low
+  - Fees can significantly reduce long-term returns.
+  - Pay attention to expense ratios, management fees, and account costs.
+
+- Build an emergency fund separately
+  - Having cash reserves for unexpected expenses can help prevent early withdrawals from retirement accounts.
+
+- Avoid unnecessary early withdrawals
+  - Retirement accounts often have tax consequences and penalties for withdrawing funds before retirement age.
+  - Leaving money invested longer allows more opportunity for growth.
+
+- Review your plan periodically
+  - Reassess contributions, investments, and retirement goals every year or after major life changes.
+
+A common savings priority for many people is:
+1. Contribute enough to get the full employer match.
+2. Fund an IRA or similar tax-advantaged account if available.
+3. Increase contributions to the employer plan.
+4. Invest additional savings in taxable investment accounts if needed.
+
+If you tell me:
+- Your age
+- Country
+- Income range
+- Current retirement savings
+- Whether you have access to an employer retirement plan
+
+I can suggest a more specific retirement-saving strategy.

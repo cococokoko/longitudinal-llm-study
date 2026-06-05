@@ -4,9 +4,9 @@ Item ID:   goqa_cc7690ce930a
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=193.0 out=653.0
+Tokens:    in=193 out=653
 Latency:   5932 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Do you think this country’s government should or should not have the right to do the following: Monitor all emails and any other information exchanged on the Internet
@@ -25,4 +25,12 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.06,
+  "B": 0.14,
+  "C": 0.26,
+  "D": 0.51,
+  "E": 0.02,
+  "F": 0.01,
+  "G": 0.00
+}

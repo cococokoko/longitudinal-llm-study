@@ -4,9 +4,9 @@ Item ID:   goqa_caa42a653be8
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=108.0 out=561.0
+Tokens:    in=108 out=561
 Latency:   7647 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: I have a hard time breaking bad habits
@@ -22,4 +22,9 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.5,
+  "B": 0.3,
+  "C": 0.1,
+  "D": 0.1
+}

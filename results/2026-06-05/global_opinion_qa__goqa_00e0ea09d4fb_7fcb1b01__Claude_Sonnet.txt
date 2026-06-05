@@ -4,9 +4,9 @@ Item ID:   goqa_00e0ea09d4fb
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=198.0 out=59.0
+Tokens:    in=198 out=59
 Latency:   1410 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: For each of the following aspects, indicate how important it is in your life. Would you say it is very important, rather important, not very important or not important at all
@@ -27,4 +27,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.85, "B": 0.12, "C": 0.02, "D": 0.005, "E": 0.003, "F": 0.001, "G": 0.001}

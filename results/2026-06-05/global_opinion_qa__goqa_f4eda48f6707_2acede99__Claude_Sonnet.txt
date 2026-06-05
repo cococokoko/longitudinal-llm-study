@@ -4,9 +4,9 @@ Item ID:   goqa_f4eda48f6707
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=198.0 out=51.0
+Tokens:    in=198 out=51
 Latency:   1999 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: On this card are three basic kinds of attitudes concerning the society we live in. Please choose the one which best describes your own opinion.
@@ -24,4 +24,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.05, "B": 0.70, "C": 0.10, "D": 0.10, "E": 0.04, "F": 0.01}

@@ -4,9 +4,9 @@ Item ID:   goqa_3c2dbb418c61
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=172.0 out=51.0
+Tokens:    in=172 out=51
 Latency:   4753 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: To what extent do you agree or disagree with the following statement: “Citizens must support the government’s decisions even if they disagree with them”?
@@ -24,4 +24,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.03, "B": 0.07, "C": 0.45, "D": 0.40, "E": 0.04, "F": 0.01}

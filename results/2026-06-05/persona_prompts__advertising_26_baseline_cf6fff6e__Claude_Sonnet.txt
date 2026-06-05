@@ -4,12 +4,77 @@ Item ID:   advertising_26_baseline
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=19.0 out=569.0
+Tokens:    in=19 out=569
 Latency:   12252 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best practices for data security in small businesses?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Data Security Best Practices for Small Businesses
+
+## Foundation Essentials
+
+### Access Control
+- **Use strong, unique passwords** (12+ characters) for all accounts
+- Implement **multi-factor authentication (MFA)** everywhere possible
+- Apply **least privilege principle** - give employees only the access they need
+- Remove access immediately when employees leave
+
+### Software & Systems
+- Keep **all software updated** promptly (patches fix security vulnerabilities)
+- Use **reputable antivirus/anti-malware** software
+- Enable **firewalls** on networks and devices
+- Avoid unsupported/end-of-life software
+
+## Data Protection
+
+### Backups
+- Follow the **3-2-1 rule**: 3 copies, 2 different media types, 1 offsite
+- **Test your backups regularly** - untested backups often fail
+- Automate backup processes when possible
+
+### Encryption
+- Encrypt sensitive data **at rest and in transit**
+- Use HTTPS for any web presence
+- Encrypt laptops and mobile devices
+
+## Network Security
+- Use **separate WiFi networks** for business and guests
+- Secure your router (change default passwords)
+- Consider a **VPN** for remote workers
+
+## Human Factors
+
+### Training
+- Train employees to **recognize phishing emails**
+- Establish clear security policies
+- Create a culture where reporting mistakes is safe
+
+### Common Threats to Address
+- Phishing attacks
+- Ransomware
+- Insider threats (accidental or intentional)
+
+## Practical Planning
+
+| Priority | Action | Cost |
+|----------|--------|------|
+| High | MFA on email/banking | Free-Low |
+| High | Regular backups | Low |
+| Medium | Employee training | Low-Medium |
+| Medium | Incident response plan | Time investment |
+
+## Often Overlooked
+- **Physical security** - lock screens, secure devices
+- **Vendor/third-party risk** - assess security of tools you use
+- **Incident response plan** - know what to do if breached
+- **Cyber insurance** - worth considering for financial protection
+
+## Low-Cost Resources
+- **NIST Small Business Cybersecurity Corner** (free guides)
+- **CISA (cisa.gov)** - free tools and resources
+- **Google Workspace/Microsoft 365** - include many security features
+
+Would you like me to go deeper on any specific area, like employee training, backup strategies, or handling a specific type of threat?

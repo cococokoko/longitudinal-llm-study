@@ -4,9 +4,9 @@ Item ID:   goqa_e148087e8edf
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=285.0 out=112.0
+Tokens:    in=285 out=112
 Latency:   2454 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How satisfied are you with how the political system is functioning in your country these days? On the scale from 1 to 10 below, 1 means not satisfied at all and 10 means completely satisfied.
@@ -31,4 +31,6 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+```json
+{"A": 0.15, "B": 0.12, "C": 0.12, "D": 0.10, "E": 0.15, "F": 0.12, "G": 0.10, "H": 0.06, "I": 0.03, "J": 0.01, "K": 0.02, "L": 0.01, "M": 0.01}
+```

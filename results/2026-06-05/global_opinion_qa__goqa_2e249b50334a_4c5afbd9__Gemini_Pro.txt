@@ -4,9 +4,9 @@ Item ID:   goqa_2e249b50334a
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=134.0 out=606.0
+Tokens:    in=134 out=606
 Latency:   7325 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Which of the following things have you done for reasons of security?
@@ -25,4 +25,10 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.35,
+  "B": 0.60,
+  "C": 0.02,
+  "D": 0.01,
+  "E": 0.02
+}

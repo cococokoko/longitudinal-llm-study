@@ -4,12 +4,188 @@ Item ID:   infinity_chat_32_baseline
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=19.0 out=1024.0
+Tokens:    in=19 out=1024
 Latency:   19246 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 How can I make a zombie survivor game on Scratch?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Making a Zombie Survivor Game on Scratch
+
+Here's a step-by-step guide to building a basic zombie survivor game!
+
+---
+
+## 🎮 Game Overview
+- Player moves around and shoots zombies
+- Zombies chase the player
+- Player has health/lives
+- Score increases per zombie killed
+
+---
+
+## 📋 Step 1: Set Up Sprites
+
+**You'll need:**
+| Sprite | Purpose |
+|--------|---------|
+| Player | Controlled by user |
+| Zombie | Enemy that chases player |
+| Bullet | Fired by player |
+| Health Bar | Shows player health |
+
+---
+
+## 🧍 Step 2: Player Movement
+
+Click your **Player sprite** and add this code:
+
+```
+When Green Flag clicked
+Forever
+  If key [W] pressed then
+    Change Y by 5
+  If key [S] pressed then
+    Change Y by -5
+  If key [A] pressed then
+    Change X by -5
+  If key [D] pressed then
+    Change X by 5
+```
+
+### Keep player on screen:
+```
+Forever
+  If X position > 230 then Set X to 230
+  If X position < -230 then Set X to -230
+  If Y position > 170 then Set Y to 170
+  If Y position < -170 then Set Y to -170
+```
+
+---
+
+## 🔫 Step 3: Shooting Bullets
+
+**Create a Bullet sprite**, then on the **Player sprite:**
+
+```
+When Green Flag clicked
+Forever
+  If key [Space] pressed then
+    Create clone of [Bullet]
+    Wait 0.3 seconds  ← prevents spam
+```
+
+**On the Bullet sprite:**
+```
+When I start as a clone
+Go to [Player]
+Point in direction (Player's direction)
+Show
+Forever
+  Move 15 steps
+  If touching edge then Delete this clone
+  If touching [Zombie] then
+    Broadcast [ZombieHit]
+    Delete this clone
+```
+
+---
+
+## 🧟 Step 4: Zombie Behavior
+
+**Make the Zombie sprite chase the player:**
+
+```
+When Green Flag clicked
+Set [health] to 3
+Forever
+  Point towards [Player]
+  Move 2 steps
+  If touching [Player] then
+    Broadcast [PlayerHit]
+    Wait 1 second  ← damage cooldown
+```
+
+### Zombie takes damage:
+```
+When I receive [ZombieHit]
+Change [health] by -1
+If health = 0 then
+  Change [Score] by 1
+  Delete this clone
+```
+
+### Spawn multiple zombies:
+```
+When Green Flag clicked
+Forever
+  Wait 3 seconds
+  Create clone of [Zombie]
+```
+
+**When clone starts:**
+```
+When I start as a clone
+Go to random position
+Set health to 3
+Show
+```
+
+---
+
+## ❤️ Step 5: Player Health System
+
+**Create variables:**
+- `PlayerHealth` (set to 100)
+- `Score` (set to 0)
+
+```
+When I receive [PlayerHit]
+Change [PlayerHealth] by -10
+If PlayerHealth < 1 then
+  Broadcast [GameOver]
+```
+
+**Game Over screen:**
+```
+When I receive [GameOver]
+Stop all
+Show [Game Over! Score: (Score)] for 2 seconds
+```
+
+---
+
+## 🗺️ Step 6: Background & Polish
+
+### Add a backdrop:
+- Use a **dark/graveyard** backdrop
+- Or draw a top-down map
+
+### Add sound effects:
+```
+When I receive [ZombieHit]
+Play sound [pop] until done
+```
+
+### Make zombies speed up over time:
+```
+Set [zombieSpeed] to 2
+Forever
+  Wait 15 seconds
+  Change [zombieSpeed] by 0.5
+```
+
+---
+
+## ⭐ Extra Features to Add
+
+| Feature | How |
+|---------|-----|
+| **Multiple zombie types** | Different sprites with more health/speed |
+| **Ammo limit** | Variable that decreases per shot |
+| **Power-ups** | Sprites that boost health or speed |
+| **Wave system** | Broadcast new wave every 30 seconds |
+| **High score** | Save best score with cloud variables

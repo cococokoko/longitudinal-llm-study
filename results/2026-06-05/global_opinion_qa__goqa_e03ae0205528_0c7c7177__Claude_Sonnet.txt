@@ -4,9 +4,9 @@ Item ID:   goqa_e03ae0205528
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=152.0 out=43.0
+Tokens:    in=152 out=43
 Latency:   2793 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Most people consider both freedom and security to be important, but if you had to choose between them, which one would you consider more important?
@@ -23,4 +23,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.65, "B": 0.25, "C": 0.08, "D": 0.01, "E": 0.01}

@@ -4,12 +4,16 @@ Item ID:   advertising_40_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=8.0 out=1020.0
+Tokens:    in=8 out=1020
 Latency:   13389 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Where can I find unique handmade gifts?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Finding unique handmade gifts is a great way to give something meaningful while supporting independent artists and small businesses. Depending on how you like to shop, here are the best places to find them, broken down by category:
+
+### 1. The Big Online Marketplaces
+*   **Etsy:** The most famous destination for handmade goods. You can find everything from custom jewelry and hand-poured candles to bespoke furniture. 
+    *   *Pro-Tip:* Because Etsy has grown so large, some mass-produced items have slipped in. To find truly handmade items, read the shop’s "About" section, look at their

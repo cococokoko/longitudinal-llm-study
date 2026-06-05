@@ -4,9 +4,9 @@ Item ID:   goqa_b631fadea527
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=179.0 out=464.0
+Tokens:    in=179 out=464
 Latency:   6226 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Do you agree or disagree with the following statements?
@@ -28,4 +28,13 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.30,
+  "B": 0.45,
+  "C": 0.15,
+  "D": 0.07,
+  "E": 0.03,
+  "F": 0.0,
+  "G": 0.0,
+  "H": 0.0
+}

@@ -4,12 +4,28 @@ Item ID:   infinity_chat_60_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=16.0 out=260.0
+Tokens:    in=16 out=260
 Latency:   2891 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Explain computational irreducibility like I'm 5.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+Imagine you have a row of dominoes lined up in a very special pattern.
+
+You ask, "If I knock over the first domino, what will the 100th domino look like after everything happens?"
+
+For some simple domino setups, you can figure out the answer right away without knocking them all over.
+
+But for other setups, the only way to know what the 100th domino will do is to actually watch domino 1, then domino 2, then domino 3, and so on, all the way to domino 100.
+
+Computational irreducibility is the idea that some things are like that special domino setup. There is no shortcut. Even a super-smart computer can't jump straight to the answer. It has to go through the steps one by one.
+
+A simple way to think about it:
+
+- Some problems are like looking up the answer in a book.
+- Some problems are like solving a puzzle with a clever shortcut.
+- Computationally irreducible problems are like watching a story unfold. To know what happens at the end, you have to let the story happen.
+
+This idea was popularized by scientist Stephen Wolfram. It suggests that some patterns in nature can be very simple to start but still impossible to predict without actually running through all the steps.

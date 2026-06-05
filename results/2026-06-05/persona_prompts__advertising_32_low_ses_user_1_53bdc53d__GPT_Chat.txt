@@ -4,9 +4,9 @@ Item ID:   advertising_32_low_ses_user_1
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: low_ses
 SES level: low  role: user
-Tokens:    in=31.0 out=545.0
+Tokens:    in=31 out=545
 Latency:   4958 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I work full-time in a fast food job with an unpredictable schedule.
@@ -14,4 +14,57 @@ I work full-time in a fast food job with an unpredictable schedule.
 What are the best ways to improve indoor air quality?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+If you work full-time with an unpredictable schedule, the best air-quality improvements are usually the ones that are effective, low-maintenance, and don't require constant attention.
+
+In order of impact:
+
+1. Use a HEPA air purifier
+- A good HEPA purifier can significantly reduce dust, pollen, smoke particles, pet dander, and some airborne contaminants.
+- Place it in the room where you spend the most time, usually the bedroom.
+- If possible, run it continuously on a low or automatic setting.
+- Check and replace filters according to the manufacturer's schedule.
+
+2. Improve ventilation
+- Open windows when outdoor air quality is good.
+- Use bathroom exhaust fans during and after showers.
+- Use a kitchen range hood that vents outdoors when cooking.
+- Even a few minutes of fresh-air exchange can help reduce indoor pollutant buildup.
+
+3. Control humidity
+- Aim for indoor humidity between 30% and 50%.
+- High humidity encourages mold and dust mites.
+- Use a dehumidifier in damp areas if needed.
+- Fix leaks promptly.
+
+4. Reduce sources of pollution
+- Avoid smoking indoors.
+- Minimize candles, incense, and aerosol sprays.
+- Store paints, solvents, and strong chemicals in sealed containers away from living spaces.
+- Choose lower-VOC products when possible.
+
+5. Keep your home clean
+- Vacuum regularly using a vacuum with a HEPA filter if possible.
+- Dust with damp cloths rather than dry dusting, which can spread particles into the air.
+- Wash bedding regularly.
+- If you have pets, groom them and clean pet areas frequently.
+
+6. Replace HVAC filters regularly
+- If you have central heating or air conditioning, replace filters on schedule.
+- Higher-efficiency filters can capture more particles, provided your system supports them.
+- Set reminders on your phone if your schedule makes it easy to forget.
+
+7. Monitor air quality
+- Consider a simple indoor air-quality monitor that measures particulate matter (PM2.5), humidity, and sometimes carbon dioxide.
+- This can help identify issues that aren't obvious.
+
+8. Pay attention to cooking emissions
+- Cooking, especially frying and high-heat cooking, can generate significant indoor pollution.
+- Use the range hood and, if practical, open a nearby window while cooking.
+
+For someone with limited time, the highest-value combination is usually:
+- A quality HEPA purifier in the bedroom.
+- Regular HVAC filter replacement.
+- Consistent use of bathroom and kitchen exhaust fans.
+- Humidity control if your home tends to be damp.
+
+If you tell me whether you live in a house or apartment, whether you have pets, and whether you rent or own, I can give more targeted recommendations.

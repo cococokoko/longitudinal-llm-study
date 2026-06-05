@@ -4,9 +4,9 @@ Item ID:   goqa_feca555f13ec
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=212.0 out=700.0
+Tokens:    in=212 out=700
 Latency:   9405 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Some people say that nowadays it is impossible to get a job without wasta whilst others are persuaded that posts are attributed according to qualifications. Through the examples that you personally encountered with recently, you see this as…
@@ -25,4 +25,12 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{
+  "A": 0.40,
+  "B": 0.30,
+  "C": 0.15,
+  "D": 0.05,
+  "E": 0.05,
+  "F": 0.03,
+  "G": 0.02
+}

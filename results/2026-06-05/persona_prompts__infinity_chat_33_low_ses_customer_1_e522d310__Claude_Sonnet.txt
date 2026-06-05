@@ -4,9 +4,9 @@ Item ID:   infinity_chat_33_low_ses_customer_1
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: low_ses
 SES level: low  role: customer
-Tokens:    in=57.0 out=705.0
+Tokens:    in=57 out=705
 Latency:   14377 ms
-Error:     nan
+Error:     none
 
 ── System message ──────────────────────────────────────────────────
 You know that the customer works full-time in a fast food job with an unpredictable schedule.
@@ -15,4 +15,99 @@ You know that the customer works full-time in a fast food job with an unpredicta
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need
+- Microsoft Surface (with Windows)
+- Dolphin Emulator installed
+- Wii game ROMs (that you legally own)
+- Patience with touch controls
+
+---
+
+## Step 1: Download and Install Dolphin
+
+1. Go to **dolphin-emu.org** in your browser
+2. Tap **Download** and choose the latest stable version
+3. Tap the downloaded file to install it
+4. Follow the installation prompts
+
+---
+
+## Step 2: Configure the Touchpad for Navigation
+
+**Basic touchpad gestures in Dolphin:**
+- **Single tap** = left click (select options)
+- **Two-finger tap** = right click
+- **Two-finger scroll** = scroll through game lists
+- **Tap and drag** = move windows
+
+---
+
+## Step 3: Set Up On-Screen Keyboard
+
+**Enable the touch keyboard:**
+1. Right-tap the taskbar
+2. Select **Show touch keyboard button**
+3. The keyboard icon appears in the system tray
+
+---
+
+## Step 4: Configure Controllers in Dolphin
+
+This is the **most important step** for touch use:
+
+1. Open Dolphin
+2. Tap **Controllers** in the top menu
+3. Under Wii Remote, select **Emulated Wii Remote**
+4. Tap **Configure**
+
+**Map controls to keyboard keys** so the on-screen keyboard works:
+- A Button → **Z key**
+- B Button → **X key**
+- D-Pad → **Arrow keys**
+- Home → **Enter**
+- Minus/Plus → **Q/E keys**
+
+---
+
+## Step 5: Consider a Better Control Option
+
+Honestly, **pure touchpad + on-screen keyboard is difficult** for gaming. Better options:
+
+- **Connect a Bluetooth controller** (Xbox controller works great with Surface)
+- **Use a USB controller**
+- **Enable tablet mode** and use touch screen directly if your Surface has one
+
+---
+
+## Step 6: Loading a Game
+
+1. Tap **Open** in Dolphin
+2. Navigate to your ROM file using the touchpad
+3. Tap the file to select it
+4. Tap **Open** to launch
+
+---
+
+## Tips for Touch Use
+
+- **Increase UI scaling** in Windows display settings if buttons are too small
+- Use **two-finger zoom** on the touchpad to zoom in on small UI elements
+- Keep the **on-screen keyboard pinned** to the side of the screen
+- Consider **windowed mode** so you can see both the game and keyboard
+
+---
+
+## Troubleshooting
+
+| Problem | Solution |
+|---|---|
+| Touchpad not responding | Check touchpad is enabled in Settings |
+| On-screen keyboard won't appear | Search "touch keyboard" in Start menu |
+| Game runs slowly | Lower graphics settings in Dolphin |
+| Controls not working | Re-check controller mapping in settings |
+
+---
+
+Would you like more detail on any specific step, like controller mapping or graphics settings?

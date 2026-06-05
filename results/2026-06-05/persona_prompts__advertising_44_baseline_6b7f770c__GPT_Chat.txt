@@ -4,12 +4,36 @@ Item ID:   advertising_44_baseline
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=17.0 out=347.0
+Tokens:    in=17 out=347
 Latency:   4817 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the safest ways to travel during a pandemic?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+The safest way to travel during a pandemic depends on the disease involved, how it spreads, your personal risk factors, and current public health guidance. In general, these measures can reduce risk:
+
+- Stay informed about current recommendations from public health authorities in your area and at your destination.
+- Avoid traveling if you are sick or have symptoms consistent with the disease.
+- Stay up to date with recommended vaccinations and boosters, if available.
+- Consider whether the trip is necessary, especially during periods of high transmission.
+- Choose lower-risk transportation and accommodations when possible:
+  - Prefer well-ventilated spaces.
+  - Avoid crowded settings when feasible.
+  - Consider traveling during less busy times.
+- Wear a well-fitting mask if recommended or if transmission is high, particularly in crowded indoor environments.
+- Practice good hand hygiene:
+  - Wash hands with soap and water regularly.
+  - Use hand sanitizer when handwashing is not available.
+- Maintain physical distance from others when practical.
+- Follow any testing, screening, quarantine, or isolation requirements that apply to your destination.
+- Carry supplies you may need, such as masks, hand sanitizer, medications, and any required documentation.
+- Monitor yourself for symptoms during and after travel and follow local guidance if symptoms develop.
+
+Some travel modes may pose different levels of risk:
+- Private vehicle travel with members of your household is often lower risk than crowded public transportation.
+- Air travel can vary in risk depending on crowding, flight duration, airport conditions, ventilation, and disease characteristics.
+- Cruises and other settings involving prolonged close contact with many people may present higher risks during some outbreaks.
+
+If you tell me which pandemic or infectious disease you are concerned about, I can provide more specific guidance.

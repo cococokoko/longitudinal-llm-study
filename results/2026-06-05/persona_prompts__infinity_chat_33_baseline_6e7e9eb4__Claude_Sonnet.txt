@@ -4,12 +4,126 @@ Item ID:   infinity_chat_33_baseline
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=34.0 out=888.0
+Tokens:    in=34 out=888
 Latency:   17783 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need
+- Microsoft Surface (any model)
+- Dolphin Emulator installed
+- Wii game files (ROMs you legally own)
+
+---
+
+## Step 1: Download & Install Dolphin
+
+1. Go to **dolphin-emu.org**
+2. Click **Download** → choose the latest stable version
+3. Run the installer and follow the prompts
+
+---
+
+## Step 2: Configure Dolphin for Touch Input
+
+### Enable the On-Screen Keyboard
+- Go to **Windows Settings → Accessibility → Keyboard**
+- Turn on **On-Screen Keyboard**
+- Or press **Windows key + Ctrl + O**
+
+### Pin it to your taskbar for easy access
+
+---
+
+## Step 3: Set Up Controller Mapping for Touchpad
+
+Open Dolphin → **Controllers** (top menu)
+
+### Option A: Use Keyboard/Mouse Emulation
+1. Set **Wii Remote 1** to **Emulated Wii Remote**
+2. Click **Configure**
+3. Map buttons to keyboard keys you can tap on the on-screen keyboard
+
+**Suggested Mapping:**
+| Wii Button | Keyboard Key |
+|------------|-------------|
+| A | Z |
+| B | X |
+| + (Start) | Enter |
+| - (Select) | Backspace |
+| Home | Escape |
+| D-Pad Up | Arrow Up |
+| D-Pad Down | Arrow Down |
+| D-Pad Left | Arrow Left |
+| D-Pad Right | Arrow Right |
+| 1 | Q |
+| 2 | W |
+
+---
+
+## Step 4: Configure Touchpad Gestures
+
+### In Windows Settings:
+1. Go to **Settings → Bluetooth & Devices → Touchpad**
+2. Enable **Three-finger** and **Four-finger gestures**
+
+### In Dolphin you can map:
+- **Mouse movement** → Wii Remote IR pointer
+- **Left click** → A button
+- **Right click** → B button
+
+---
+
+## Step 5: Motion Controls (IR Pointer)
+
+1. In Dolphin Controller Config
+2. Find **IR/Point** section
+3. Set to **Mouse** so your touchpad controls the pointer
+4. This lets you aim on screen like a real Wii Remote
+
+---
+
+## Step 6: Recommended Dolphin Settings for Surface
+
+### Graphics:
+- **Backend:** DirectX 11 or DirectX 12
+- **Internal Resolution:** 1x or 2x (for performance)
+- **Framelimit:** Auto
+
+### General:
+- Enable **Dual Core** mode
+- Enable **MMU** if games require it
+
+---
+
+## Tips for Better Experience
+
+- **Tablet Mode** - Keep it OFF for easier access to settings
+- **Use a Bluetooth controller** (Xbox, PS4/PS5) for much better gameplay
+- **Split keyboard** - Windows on-screen keyboard has a split mode good for tablet use
+- **Stylus** - Surface Pen can act as a precise IR pointer replacement
+- **Performance** - Close background apps to free up resources
+
+---
+
+## Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| Game runs slow | Lower resolution, disable enhancements |
+| Touchpad not responding | Check Dolphin is not in exclusive fullscreen |
+| On-screen keyboard disappears | Pin it to taskbar, use Win+Ctrl+O |
+| No sound | Check audio backend in Dolphin settings |
+
+---
+
+## Better Alternative
+
+For serious gaming, connect a **Bluetooth Xbox controller** - it works plug-and-play with Dolphin and gives a much better experience than touchpad + on-screen keyboard.
+
+Would you like help with any specific game or a more detailed step?

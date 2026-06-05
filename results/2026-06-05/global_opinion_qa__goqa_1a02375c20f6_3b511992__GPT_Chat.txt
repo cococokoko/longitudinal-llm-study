@@ -4,9 +4,9 @@ Item ID:   goqa_1a02375c20f6
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=194.0 out=148.0
+Tokens:    in=194 out=148
 Latency:   1638 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: How about people from other countries coming here to work. Which one of the following do you think the government should do?
@@ -25,4 +25,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.2, "B": 0.7, "C": 0.09, "D": 0.01, "E": 0.0, "F": 0.0, "G": 0.0}

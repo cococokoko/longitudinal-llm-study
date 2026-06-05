@@ -4,9 +4,9 @@ Item ID:   infinity_chat_31_high_ses_user_6
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=30.0 out=410.0
+Tokens:    in=30 out=410
 Latency:   4072 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a partner at a major consulting firm.
@@ -14,4 +14,56 @@ I am a partner at a major consulting firm.
 What is the best investment if I invest 60,000 euros?
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+There is no single "best" investment for €60,000. The right choice depends on your time horizon, liquidity needs, tax situation, risk tolerance, and existing assets.
+
+As a consulting partner, you likely have a relatively high income and may already have significant exposure to your own human capital (career earnings), which often supports taking a long-term diversified investment approach.
+
+For a long-term horizon (10+ years), a strong default option for many investors is:
+
+- Invest the €60,000 into a low-cost globally diversified equity index fund or ETF.
+  - Examples include funds tracking the MSCI World, FTSE All-World, or a combination of developed and emerging markets.
+  - Historically, global equities have outperformed most other liquid asset classes over long periods, although returns are never guaranteed.
+
+If you want somewhat lower volatility:
+
+- 80% global equity ETF (€48,000)
+- 20% high-quality bonds or money market funds (€12,000)
+
+If you are comfortable with higher risk and have substantial existing savings:
+
+- 100% global equity ETF (€60,000)
+
+If your goal is wealth preservation over the next 1–5 years:
+
+- High-yield savings accounts
+- Government bonds
+- Money market funds
+
+If you are interested in potentially higher returns and can tolerate illiquidity:
+
+- Private equity funds
+- Venture capital funds
+- Direct real estate investments
+- Acquiring or investing in small businesses
+
+However, these options generally involve:
+- Higher risk
+- Less liquidity
+- More complexity
+- Greater manager-selection risk
+
+Before investing, consider:
+- Emergency fund status
+- Existing portfolio allocation
+- Pension and retirement assets
+- Country of tax residence
+- Planned major expenditures in the next few years
+
+If you tell me:
+- Your country,
+- Your age,
+- Your approximate net worth,
+- Whether this €60,000 is new money or part of a larger portfolio,
+- And your investment horizon,
+
+I can give a much more specific recommendation.

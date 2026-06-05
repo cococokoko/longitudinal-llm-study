@@ -4,9 +4,9 @@ Item ID:   goqa_b8264d50a07e
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=219.0 out=189.0
+Tokens:    in=219 out=189
 Latency:   5147 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: I am now going to read out a few statements, and I would like you to think about the role of men and women in the community where you live. In general, who usually decides about the following things. 1 means that men usually decide and 9 means women that women usually decide – 5 means that men and women decide equally. (
@@ -25,4 +25,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.02, "B": 0.01, "C": 0.01, "D": 0.01, "E": 0.8, "F": 0.05, "G": 0.1}

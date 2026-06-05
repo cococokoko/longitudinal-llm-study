@@ -4,9 +4,9 @@ Item ID:   goqa_feca555f13ec
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=212.0 out=124.0
+Tokens:    in=212 out=124
 Latency:   1368 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Some people say that nowadays it is impossible to get a job without wasta whilst others are persuaded that posts are attributed according to qualifications. Through the examples that you personally encountered with recently, you see this as…
@@ -25,4 +25,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 1.0, "G": 0.0}

@@ -4,9 +4,9 @@ Item ID:   goqa_3c0c0defb54b
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=152.0 out=103.0
+Tokens:    in=152 out=103
 Latency:   1481 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people?
@@ -23,4 +23,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.6, "B": 0.3, "C": 0.1, "D": 0.0, "E": 0.0}

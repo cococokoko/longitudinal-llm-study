@@ -4,9 +4,9 @@ Item ID:   goqa_940730896feb
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=188.0 out=59.0
+Tokens:    in=188 out=59
 Latency:   1370 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: In your view, how often do the following things occur in this country’s elections?
@@ -27,4 +27,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.04, "B": 0.08, "C": 0.28, "D": 0.48, "E": 0.08, "F": 0.02, "G": 0.02}

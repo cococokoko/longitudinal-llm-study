@@ -4,9 +4,9 @@ Item ID:   infinity_chat_46_high_ses_user_3
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=23.0 out=1020.0
+Tokens:    in=23 out=1020
 Latency:   10011 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a tenured professor at a prestigious university.
@@ -14,4 +14,4 @@ I am a tenured professor at a prestigious university.
 Give an example of a linear graph in graph theory.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+In graph theory literature, the term "linear graph" can occasionally be ambiguous, as it is historically used to refer to two distinct concepts: a **path graph** or a **line

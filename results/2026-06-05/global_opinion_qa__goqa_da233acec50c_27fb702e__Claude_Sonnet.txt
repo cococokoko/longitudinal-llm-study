@@ -4,9 +4,9 @@ Item ID:   goqa_da233acec50c
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=163.0 out=43.0
+Tokens:    in=163 out=43
 Latency:   3132 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: Of course, we all hope that there will not be another war, but if it were to come to that, would you be willing to fight for your country?
@@ -23,4 +23,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.45, "B": 0.25, "C": 0.20, "D": 0.07, "E": 0.03}

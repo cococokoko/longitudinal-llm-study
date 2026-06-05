@@ -4,9 +4,9 @@ Item ID:   goqa_b09f35200cc0
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=173.0 out=143.0
+Tokens:    in=173 out=143
 Latency:   1749 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: In your view, how often do the following things occur in this country’s elections?
@@ -27,4 +27,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.15, "B": 0.35, "C": 0.30, "D": 0.10, "E": 0.08, "F": 0.01, "G": 0.01}

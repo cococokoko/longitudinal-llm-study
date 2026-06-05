@@ -4,9 +4,9 @@ Item ID:   infinity_chat_42_high_ses_user_4
 Model:     openai/gpt-chat-latest-20260505 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=43.0 out=84.0
+Tokens:    in=43 out=84
 Latency:   1295 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 I am a physician-scientist leading a research group.
@@ -14,4 +14,4 @@ I am a physician-scientist leading a research group.
 Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+best Physician-Scientist Research Group Leadership and Innovation

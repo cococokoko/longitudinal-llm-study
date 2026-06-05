@@ -4,9 +4,9 @@ Item ID:   goqa_1262bc11e92f
 Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=168.0 out=51.0
+Tokens:    in=168 out=51
 Latency:   2130 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Question: From your point of view, what have been the effects of immigrants on the development of [your country]?:
@@ -26,4 +26,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+{"A": 0.45, "B": 0.25, "C": 0.20, "D": 0.08, "E": 0.01, "F": 0.01}

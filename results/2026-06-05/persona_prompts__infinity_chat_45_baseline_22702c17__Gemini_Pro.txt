@@ -4,12 +4,18 @@ Item ID:   infinity_chat_45_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=14.0 out=963.0
+Tokens:    in=14 out=963
 Latency:   10617 ms
-Error:     nan
+Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Create a sentence using a minimum of 2 R-colored vowels.
 
 ── Response ────────────────────────────────────────────────────────
-[ERROR] nan
+**The b*ir*d flew ov*er* the d*ar*k wat*er*.** 
+
+This sentence actually contains four R-colored (rhotic) vowels:
+*   b**ir**d (/ɝ/)
+*   ov**er** (/ɚ/)
+*   d**ar**k (/ɑr/)
+*   wat**er** (/ɚ/)
