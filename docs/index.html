@@ -277,6 +277,9 @@
     .chart-col-label { font-weight: 600; text-align: center; font-size: 12px; margin-bottom: 6px; }
 
     /* ── Analysis sub-panels ───────────────────────────── */
+    #page-analysis .main-wrap { overflow-x: hidden; }
+    .chart-row { width: 100%; }
+    .plotly-wrap { max-width: 100%; }
     .analysis-panel { display: none; }
     .analysis-panel.active { display: block; }
 
@@ -635,7 +638,7 @@ function navigate() {
   document.querySelectorAll('[data-nav]').forEach(a =>
     a.classList.toggle('active', a.dataset.nav === hash)
   );
-  if (hash === 'analysis') requestAnimationFrame(()=>requestAnimationFrame(resizeAll));
+  if (hash === 'analysis') setTimeout(resizeAll, 0);
 }
 window.addEventListener('hashchange', navigate);
 
@@ -652,6 +655,7 @@ function resizeAll() {
 
 function baseLayout(extra = {}) {
   return Object.assign({
+    autosize:      true,
     margin:        { l: 46, r: 12, t: 24, b: 46 },
     paper_bgcolor: '#FDFDF5',
     plot_bgcolor:  '#f8f8ef',
@@ -888,8 +892,8 @@ document.querySelectorAll('[data-analysis]').forEach(btn=>{
     document.querySelectorAll('.analysis-panel').forEach(p=>p.classList.remove('active'));
     btn.classList.add('active');
     document.getElementById('panel-'+btn.dataset.analysis).classList.add('active');
-    // Two-pass resize: first tick lets flex layout settle, second lets Plotly measure
-    requestAnimationFrame(()=>requestAnimationFrame(resizeAll));
+    // Let the grid finish computing column widths before Plotly measures the container
+    setTimeout(resizeAll, 0);
   });
 });
 window.addEventListener('resize', ()=>{ if(document.querySelector('#page-analysis.active')) resizeAll(); });
