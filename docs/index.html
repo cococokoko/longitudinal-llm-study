@@ -274,41 +274,11 @@
     .chart-row { display: grid; gap: 16px; }
     .chart-row.cols-2 { grid-template-columns: 1fr 1fr; }
     .chart-row.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
-    .chart-col-label { font-weight: 600; text-align: center; font-size: 12px; margin-bottom: 6px; flex-shrink: 0; }
+    .chart-col-label { font-weight: 600; text-align: center; font-size: 12px; margin-bottom: 6px; }
 
-    /* ── Analysis page: fill viewport, no scroll ───────── */
-    #page-analysis.active {
-      height: calc(100vh - 64px); /* 64px = sticky header */
-      overflow: hidden;
-    }
-    #page-analysis .main-wrap {
-      padding: 12px 24px;
-      overflow: hidden;
-      flex: 1;
-      min-height: 0;
-    }
+    /* ── Analysis sub-panels ───────────────────────────── */
     .analysis-panel { display: none; }
-    .analysis-panel.active {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      overflow: hidden;
-    }
-    .analysis-panel .section-note { flex-shrink: 0; margin-bottom: 10px; }
-    /* Charts wrapper fills remaining panel space */
-    .charts-area {
-      flex: 1; min-height: 0;
-      display: flex; flex-direction: column;
-    }
-    .charts-area .chart-row {
-      flex: 1; min-height: 0;
-    }
-    .charts-area .chart-row > div {
-      display: flex; flex-direction: column; min-height: 0;
-    }
-    .charts-area .plotly-wrap {
-      flex: 1; min-height: 0;
-    }
+    .analysis-panel.active { display: block; }
 
     /* ── Home page ─────────────────────────────────────── */
     .home-hero {
@@ -573,22 +543,20 @@
       <div id="versions-wrap"></div>
     </div>
 
-    <!-- Value Alignment -->
+    <!-- Value Alignment: 2 charts side by side -->
     <div class="analysis-panel" id="panel-alignment">
       <p class="section-note">
         <strong>Wasserstein</strong> = earth mover's distance vs the WVS global distribution (0 = perfect match).
         <strong>Entropy</strong> = Shannon entropy of the model's distribution; gray dashed = WVS human entropy.
       </p>
-      <div class="charts-area">
-        <div class="chart-row cols-2">
-          <div>
-            <div class="chart-title">Wasserstein Distance — Mean ± 1 SD</div>
-            <div class="plotly-wrap" id="chart-ws"></div>
-          </div>
-          <div>
-            <div class="chart-title">Shannon Entropy per Wave</div>
-            <div class="plotly-wrap" id="chart-ent"></div>
-          </div>
+      <div class="chart-row cols-2">
+        <div>
+          <div class="chart-title">Wasserstein Distance — Mean ± 1 SD</div>
+          <div class="plotly-wrap" id="chart-ws" style="height:calc(100vh - 300px)"></div>
+        </div>
+        <div>
+          <div class="chart-title">Shannon Entropy per Wave</div>
+          <div class="plotly-wrap" id="chart-ent" style="height:calc(100vh - 300px)"></div>
         </div>
       </div>
     </div>
@@ -596,10 +564,8 @@
     <!-- Prompt Lengths -->
     <div class="analysis-panel" id="panel-lengths">
       <p class="section-note">Total character count of each persona prompt (user text + system message when present).</p>
-      <div class="charts-area">
-        <div class="chart-title">Prompt Length Distribution by Condition × Framing</div>
-        <div class="plotly-wrap" id="chart-lengths"></div>
-      </div>
+      <div class="chart-title">Prompt Length Distribution by Condition × Framing</div>
+      <div class="plotly-wrap" id="chart-lengths" style="height:calc(100vh - 295px)"></div>
     </div>
 
     <!-- Output Diversity -->
@@ -611,13 +577,13 @@
       <div id="chart-4a-empty" style="text-align:center;padding:48px 0;color:var(--text-muted);font-size:13px;display:none">
         Not enough data yet — appears once at least two waves have been collected.
       </div>
-      <div class="charts-area" id="chart-4a-wrap">
+      <div id="chart-4a-wrap">
         <div class="chart-title">Baseline Response Stability — Consecutive Wave Pairs</div>
-        <div class="plotly-wrap" id="chart-4a"></div>
+        <div class="plotly-wrap" id="chart-4a" style="height:calc(100vh - 295px)"></div>
       </div>
     </div>
 
-    <!-- Steering Sensitivity -->
+    <!-- Steering Sensitivity: 3 charts side by side -->
     <div class="analysis-panel" id="panel-steering">
       <p class="section-note">
         Cosine similarity between SES-framed responses and matched baseline.
@@ -628,20 +594,20 @@
       <div id="chart-4b-empty" style="text-align:center;padding:48px 0;color:var(--text-muted);font-size:13px;display:none">
         Not enough data yet — appears once at least two waves have been collected.
       </div>
-      <div class="charts-area" id="chart-4b-wrap">
+      <div id="chart-4b-wrap">
         <div class="chart-title">Cosine Similarity to Baseline: Framing × SES per Wave</div>
-        <div class="chart-row cols-3">
+        <div class="chart-row cols-3" style="margin-top:6px">
           <div>
             <div class="chart-col-label" id="lbl-4b-0"></div>
-            <div class="plotly-wrap" id="chart-4b-0"></div>
+            <div class="plotly-wrap" id="chart-4b-0" style="height:calc(100vh - 330px)"></div>
           </div>
           <div>
             <div class="chart-col-label" id="lbl-4b-1"></div>
-            <div class="plotly-wrap" id="chart-4b-1"></div>
+            <div class="plotly-wrap" id="chart-4b-1" style="height:calc(100vh - 330px)"></div>
           </div>
           <div>
             <div class="chart-col-label" id="lbl-4b-2"></div>
-            <div class="plotly-wrap" id="chart-4b-2"></div>
+            <div class="plotly-wrap" id="chart-4b-2" style="height:calc(100vh - 330px)"></div>
           </div>
         </div>
       </div>
@@ -856,13 +822,15 @@ function renderPersonaRows(q='') {
   function framingBlock(e, sesClass) {
     if (!e) return '';
     if (e.framing === 'system_msg') {
-      const text = (e.system_text || e.persona_text || '').trim();
+      const sysText  = (e.system_text || e.persona_text || '').trim();
+      const userText = (e.prompt_text || '').trim();
       return `<div>
         <div class="framing-type">System message</div>
-        <div class="framing-block">${esc(text)}</div>
+        <div class="framing-block">${esc(sysText)}</div>
+        ${userText ? `<div class="framing-inline" style="margin-top:6px">${esc(userText)}</div>` : ''}
       </div>`;
     } else {
-      // Inline: show the full prompt_text (persona + query combined)
+      // Inline: prompt_text already contains persona + query combined
       const text = (e.prompt_text || '').trim();
       return `<div>
         <div class="framing-type">Inline</div>
