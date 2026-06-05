@@ -642,11 +642,12 @@ function resizeAll() {
 function baseLayout(extra = {}) {
   return Object.assign({
     autosize:      true,
-    margin:        { l: 46, r: 12, t: 24, b: 46 },
+    margin:        { l: 46, r: 12, t: 24, b: 80 },
     paper_bgcolor: '#FDFDF5',
     plot_bgcolor:  '#f8f8ef',
     font:          { family:"'Ubuntu',system-ui,sans-serif", size:11, color:'#374151' },
-    xaxis:         { showgrid:false, linecolor:'#d1d5db', linewidth:1, tickfont:{size:11} },
+    xaxis:         { type:'category', showgrid:false, linecolor:'#d1d5db', linewidth:1,
+                     tickfont:{size:11}, tickangle:-45 },
     yaxis:         { gridcolor:'#e8e8e1', linecolor:'#d1d5db', linewidth:1, tickfont:{size:11} },
     legend:        { bgcolor:'transparent', borderwidth:0, font:{size:11} },
   }, extra);
@@ -722,7 +723,7 @@ function renderLengths(persona_lengths) {
       name:g.label, boxpoints:'outliers',
       marker:{color:g.color,size:3,opacity:.7}, line:{color:g.color}, fillcolor:g.color+'44',
     })),
-    baseLayout({ yaxis:{title:'Characters',gridcolor:'#e8e8e1'}, xaxis:{tickangle:-20}, showlegend:false }), PCFG);
+    baseLayout({ yaxis:{title:'Characters',gridcolor:'#e8e8e1'}, showlegend:false }), PCFG);
 }
 
 function renderCosine4a(cosine_4a) {
@@ -753,8 +754,7 @@ function renderCosine4b(cosine_4b_ii) {
         line:{color:SES_CLR[s],dash:FD[f],width:2}, marker:{size:5,color:SES_CLR[s],symbol:FS[f]}, showlegend:false });
     }
     Plotly.newPlot(`chart-4b-${i}`, traces,
-      baseLayout({ yaxis:{range:[0,1],title:'Cosine Similarity',gridcolor:'#e8e8e1'},
-                   xaxis:{tickangle:-30} }), PCFG);
+      baseLayout({ yaxis:{range:[0,1],title:'Cosine Similarity',gridcolor:'#e8e8e1'} }), PCFG);
   });
 }
 
