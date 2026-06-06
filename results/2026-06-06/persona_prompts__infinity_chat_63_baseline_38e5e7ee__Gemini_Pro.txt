@@ -1,0 +1,15 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1020
+Latency:   9464 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+To understand a partial derivative, it helps to think of the core rule: **when you have a function with multiple variables, you look at how the output changes when you tweak just *one*

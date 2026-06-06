@@ -1,0 +1,135 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=57 out=963
+Latency:   20229 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need
+- Microsoft Surface (with Windows)
+- Dolphin Emulator installed
+- Wii game ROMs (that you legally own)
+- Patience with touch controls
+
+---
+
+## Step 1: Download and Install Dolphin
+
+1. Go to **dolphin-emu.org** in your browser
+2. Tap **Download** and choose the latest stable version
+3. Tap the downloaded file to install it
+4. Follow the installation prompts
+
+---
+
+## Step 2: Configure Dolphin for Touch Input
+
+### Opening Dolphin
+- Double-tap the Dolphin icon on your desktop
+- If the on-screen keyboard pops up unexpectedly, tap elsewhere to dismiss it
+
+### Basic Navigation in Dolphin
+- **Single tap** = left click
+- **Two-finger tap** = right click
+- **Two-finger scroll** = scroll through menus
+
+---
+
+## Step 3: Set Up Controller Mapping
+
+Since you're using the touchpad instead of a Wii Remote:
+
+1. Open Dolphin
+2. Tap **Controllers** in the top menu
+3. Under **Wii Remote 1**, select **Emulated Wii Remote**
+4. Tap **Configure**
+
+### Recommended Touch-Friendly Button Mapping
+
+Map controls to **keyboard keys** that are easy to reach on the on-screen keyboard:
+
+| Wii Button | Suggested Key |
+|------------|---------------|
+| A Button | Z |
+| B Button | X |
+| + (Start) | Enter |
+| - (Select) | Backspace |
+| Home | H |
+| D-Pad Up | Arrow Up |
+| D-Pad Down | Arrow Down |
+| D-Pad Left | Arrow Left |
+| D-Pad Right | Arrow Right |
+| 1 Button | Q |
+| 2 Button | W |
+
+---
+
+## Step 4: Enable the On-Screen Keyboard Efficiently
+
+### Keeping the Keyboard Accessible
+- **Pin the taskbar keyboard**: Tap the keyboard icon in the system tray (bottom right)
+- Or go to **Settings > Accessibility > Keyboard** and enable the toggle
+
+### Docking the Keyboard
+- Tap the keyboard icon and choose the **docked** layout so it stays at the bottom
+- This keeps the game visible at the top of the screen
+
+---
+
+## Step 5: Configure Graphics for Surface Performance
+
+1. Tap **Graphics** in Dolphin's menu
+2. Recommended settings for Surface:
+   - **Backend**: Direct3D 11 or Vulkan
+   - **Internal Resolution**: 1x Native (better performance)
+   - **Disable** unnecessary enhancements to save processing power
+
+---
+
+## Step 6: Loading a Game
+
+1. Tap **Open** in Dolphin
+2. Navigate to your ROM file
+3. Tap the file to select it
+4. Tap **Open** to start
+
+---
+
+## Tips for Better Touch Experience
+
+- **Rotate your Surface** to landscape mode for better screen space
+- **Use a stylus** if you have one for more precise tapping
+- Consider a **Bluetooth controller** if touch becomes frustrating
+- **Pause frequently** using the mapped key since touch controls can be imprecise
+- Enable **Save States** (Shift+F1 to save, F1 to load) for quick saving
+
+---
+
+## Troubleshooting Common Issues
+
+| Problem | Solution |
+|---------|----------|
+| On-screen keyboard covers game | Use docked keyboard mode or minimize it |
+| Touchpad too sensitive | Adjust in Windows Settings > Bluetooth & Devices > Touchpad |
+| Game runs slowly | Lower graphics settings, close background apps |
+| Controls not responding | Re-check button mapping in Controllers menu |
+
+---
+
+## Honest Note About Limitations
+
+Touch controls for Wii emulation can be **genuinely frustrating** for action games. If you find it too difficult, a cheap **Bluetooth controller** (around $20-30) would make the experience much better and work wirelessly with your Surface.
+
+Would you like help with any specific step or game type?

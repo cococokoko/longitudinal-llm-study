@@ -1,0 +1,31 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_low_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=46 out=315
+Latency:   8026 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+# TOEFL vs. IELTS: Expert Consultant Overview
+
+Here is a draft paragraph you can use or adapt:
+
+---
+
+As an international student navigating English proficiency requirements, understanding the distinction between TOEFL and IELTS is essential for making a strategic decision. The **TOEFL iBT** (Test of English as a Foreign Language) is predominantly preferred by universities in the **United States and Canada**, features an entirely computer-based format, and emphasizes academic English through integrated tasks that combine reading, listening, speaking, and writing skills simultaneously. The **IELTS** (International English Language Testing System), by contrast, is more widely accepted across **UK, Australian, and European institutions**, offers both Academic and General Training versions, and includes a face-to-face speaking component with a human examiner. From a practical standpoint, students who are comfortable with typing and computer-based testing often perform stronger on the TOEFL, while those who communicate more naturally in conversation may find the IELTS format more favorable. Both exams are globally recognized, so I strongly recommend **researching the specific score requirements** of your target institutions before committing to either test, as acceptance policies and minimum thresholds vary significantly by program and country.
+
+---
+
+**Would you like me to:**
+- Adjust the tone or length?
+- Add cost and preparation time comparisons?
+- Tailor this for a specific region or audience?

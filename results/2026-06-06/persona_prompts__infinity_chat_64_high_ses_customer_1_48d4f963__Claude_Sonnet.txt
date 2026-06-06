@@ -1,0 +1,28 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=48 out=308
+Latency:   10345 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+Here's a draft paragraph for you:
+
+---
+
+**TOEFL vs. IELTS: A Consultant's Perspective**
+
+When advising international students on English proficiency testing, the choice between the TOEFL (Test of English as a Foreign Language) and IELTS (International English Language Testing System) often comes down to destination, learning style, and institutional requirements. The TOEFL iBT is predominantly preferred by North American universities and emphasizes an integrated academic format, where reading, listening, speaking, and writing skills are frequently combined within single tasks — rewarding students who think analytically in English. The IELTS, available in Academic and General Training versions, is more widely accepted across the UK, Australia, Canada, and Europe, and features a more conversational speaking component conducted face-to-face with an examiner rather than into a microphone. Scoring systems also differ meaningfully: TOEFL uses a 0–120 scale while IELTS uses a 0–9 band score, and students should verify the specific score thresholds required by their target institutions. Generally speaking, students who are comfortable with technology-based testing and academic reading tend to favor the TOEFL, while those who prefer interpersonal communication and broader international flexibility often perform better on the IELTS.
+
+---
+
+Would you like me to adjust the tone, length, or focus of this paragraph?

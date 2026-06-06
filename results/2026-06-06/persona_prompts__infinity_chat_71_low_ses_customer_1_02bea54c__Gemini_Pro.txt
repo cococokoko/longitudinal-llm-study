@@ -1,0 +1,26 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_low_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=34 out=883
+Latency:   10722 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+One of the most common optimization techniques used in machine learning is called **Stochastic Gradient Descent (SGD)**. 
+
+To put it in a way that might feel pretty familiar to you: think about how you manage your fast food job with an unpredictable schedule. 
+
+If a machine learning model used standard "Gradient Descent," it would be like trying to plan out your exact routine for the entire month in advance. It looks at the *entire* dataset before making a single adjustment. But because your schedule is always changing and you never know when a massive lunch rush is going to hit, planning everything perfectly in advance is impossible. 
+
+Instead, you probably use a strategy more like **Stochastic Gradient Descent**. The word "stochastic" basically means random or unpredictable. In SGD, the algorithm doesn't wait to look at the whole picture; it takes one random data point at a time (like you taking on one unpredictable shift, or one sudden drive-thru order), makes a quick calculation, and adjusts its strategy on the fly. 
+
+Just like you adapt step-by-step to keep the restaurant running smoothly despite the chaos, SGD makes quick, continuous adjustments to help the machine learning model reach its ultimate goal efficiently!

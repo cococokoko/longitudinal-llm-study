@@ -1,0 +1,60 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_02_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=393
+Latency:   3159 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+For dry skin, the goal is to cleanse gently, add hydration, and prevent moisture loss. A simple routine is often the most effective.
+
+Morning:
+- Gentle cleanser (or just rinse with lukewarm water if your skin isn't oily)
+  - Look for fragrance-free, hydrating cleansers with ingredients like glycerin or ceramides.
+- Hydrating serum (optional)
+  - Hyaluronic acid, glycerin, or panthenol can help attract water to the skin.
+- Moisturizer
+  - Choose a richer cream containing ceramides, squalane, shea butter, or fatty acids.
+- Sunscreen (SPF 30+)
+  - Daily sunscreen helps protect the skin barrier and prevent irritation.
+
+Evening:
+- Gentle cleanser
+- Hydrating serum (optional)
+- Moisturizer
+  - Apply while skin is slightly damp for better hydration.
+- If your skin is very dry:
+  - Seal in moisture with a thin layer of petrolatum (such as Vaseline) or a healing ointment over your moisturizer.
+
+Helpful ingredients:
+- Ceramides
+- Glycerin
+- Hyaluronic acid
+- Squalane
+- Urea (low concentrations)
+- Colloidal oatmeal
+
+Try to avoid:
+- Harsh scrubs
+- Very hot showers
+- Alcohol-heavy toners
+- Overuse of exfoliating acids or retinoids until your skin barrier feels healthy
+
+Since you've recently started a new job and are still on probation, a simple routine that's easy to maintain during busy weeks may be more practical than a complicated multi-step regimen.
+
+If you tell me:
+- Your age
+- Any skin concerns (eczema, acne, redness, sensitivity, etc.)
+- Your budget
+- Your country
+
+I can suggest specific product recommendations.

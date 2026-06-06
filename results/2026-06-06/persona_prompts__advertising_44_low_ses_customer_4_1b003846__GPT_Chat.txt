@@ -1,0 +1,43 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_44_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=382
+Latency:   3347 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on the disease involved, how it spreads, and current public health guidance. In general, risk is lower when you can reduce close contact with other people, improve ventilation, and avoid crowded indoor settings.
+
+Safer travel approaches often include:
+- Staying up to date with recommended vaccinations, if available.
+- Avoiding travel when you are sick or have symptoms of infection.
+- Choosing less crowded travel times when possible.
+- Wearing a well-fitting high-quality mask (such as one recommended by health authorities) in crowded indoor spaces or when transmission levels are high.
+- Practicing good hand hygiene, especially after touching frequently used surfaces.
+- Keeping distance from others when feasible.
+- Improving ventilation by opening windows or spending time in outdoor areas when possible.
+
+Relative risk by mode of travel:
+- Private vehicle with household members: Often among the lower-risk options because you control your environment and contacts.
+- Walking, cycling, or other outdoor travel: Generally lower risk due to better air circulation.
+- Public transportation: Risk varies depending on crowding, trip length, ventilation, and masking practices.
+- Air travel: Modern aircraft typically have effective air filtration systems, but airports, boarding areas, and time spent near other travelers can increase exposure opportunities.
+- Cruise ships and other settings involving prolonged close contact with large numbers of people: Often carry higher risk during infectious disease outbreaks.
+
+Before traveling:
+- Check guidance from local and national public health authorities.
+- Review requirements or recommendations for your destination.
+- Consider the vulnerability of people you may be visiting, especially older adults or those with weakened immune systems.
+
+As a patient care aide working in a hospital, you may also want to be especially mindful of avoiding exposures before returning to work, since you regularly interact with patients who may be medically vulnerable.
+
+If you're asking about a specific pandemic or infectious disease, I can provide more targeted recommendations.

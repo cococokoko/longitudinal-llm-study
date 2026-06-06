@@ -1,0 +1,43 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=45 out=245
+Latency:   7794 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+## Analysis vs. Design
+
+**Analysis** answers *"What does the system need to do?"* — understanding requirements, problems, and constraints.
+
+**Design** answers *"How will the system do it?"* — defining architecture, components, and implementation approach.
+
+---
+
+## Can You Design Without Analysis?
+
+**Technically yes, practically no.**
+
+Skipping analysis means you risk:
+- **Building the wrong thing** — solving a misunderstood problem
+- **Costly rework** — defects found late are exponentially more expensive to fix
+- **Scope creep** — no baseline to evaluate change against
+
+---
+
+## The Executive Reality
+
+In fast-moving tech environments, teams often compress or parallelize analysis and design — this is acceptable **if you acknowledge the risk**. What's *not* acceptable is confusing speed with skipping rigor entirely.
+
+> **Design without analysis is just expensive guessing.**
+
+The most successful technology leaders treat analysis as risk reduction, not bureaucracy — the investment in understanding the problem upfront consistently outperforms the cost of redesigning a well-built solution to the wrong problem.

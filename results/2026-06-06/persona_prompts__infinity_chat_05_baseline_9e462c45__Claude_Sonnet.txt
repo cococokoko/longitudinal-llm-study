@@ -1,0 +1,59 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=21 out=325
+Latency:   8497 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens
+
+## 💊 **Intelligent Medication Management System**
+
+### Core Functionality
+A **comprehensive medication reminder and tracking system** that goes beyond simple alarms.
+
+---
+
+### Key Components
+
+**Smart Reminders**
+- Gentle vibration + audio alerts with large visual display
+- Escalating notifications if doses are missed
+- Simple one-tap confirmation ("I took my medication")
+
+**Caregiver Connection**
+- Automatically notifies family members or caregivers if doses are consistently missed
+- Shared dashboard accessible via smartphone app
+
+**Health Integration**
+- Tracks medication adherence over time
+- Syncs with doctor's appointments and prescription refill schedules
+- Alerts when supply is running low
+
+---
+
+### Why This Feature Makes Sense
+
+| Challenge | Solution |
+|-----------|----------|
+| Forgetting medications | Persistent, escalating reminders |
+| Complex schedules | Pre-programmed by family/pharmacist |
+| Independence concerns | Reduces need for constant caregiver check-ins |
+| Health outcomes | Improved adherence reduces hospitalizations |
+
+---
+
+### Design Considerations
+- **Large, readable text** on display
+- **Simple confirmation** requiring minimal dexterity
+- **Long battery life** to ensure reliability
+- **Loud enough alerts** for hearing impairment
+
+This feature directly addresses one of the **most critical daily health challenges** seniors face while supporting their independence.

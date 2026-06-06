@@ -1,0 +1,96 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=20 out=567
+Latency:   5071 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to stay relevant over the next 5–15 years, focus less on specific frameworks and more on durable skills that remain valuable as tools change.
+
+Priority areas:
+
+1. Strong computer science fundamentals
+- Data structures and algorithms
+- Networking basics (HTTP, TCP/IP, DNS)
+- Operating systems concepts
+- Databases (SQL, indexing, transactions, consistency)
+- Distributed systems fundamentals
+
+Why: Frameworks come and go, but systems still need to move data, store data, and scale.
+
+2. AI and machine learning literacy
+You don't necessarily need to become an ML researcher, but you should understand:
+- How modern AI systems work at a high level
+- LLMs, embeddings, vector databases, and RAG
+- Model evaluation and limitations
+- AI-assisted development workflows
+
+Why: AI is becoming part of nearly every software product and development process.
+
+3. Software architecture and system design
+- Designing scalable systems
+- API design
+- Event-driven architecture
+- Microservices and their tradeoffs
+- Reliability, observability, and fault tolerance
+
+Why: As AI automates more coding, the ability to design systems becomes increasingly valuable.
+
+4. Cloud and infrastructure
+- AWS, Azure, or Google Cloud
+- Containers (Docker)
+- Kubernetes fundamentals
+- CI/CD pipelines
+- Infrastructure as code
+
+Why: Modern software increasingly runs on cloud platforms.
+
+5. Security
+- Authentication and authorization
+- Common vulnerabilities (OWASP Top 10)
+- Secure coding practices
+- Data privacy and compliance
+
+Why: Security concerns continue to grow as systems become more interconnected.
+
+6. Data engineering
+- SQL mastery
+- Data pipelines
+- Streaming systems
+- Data modeling
+- Analytics infrastructure
+
+Why: Organizations continue to depend on data-driven decisions and AI systems.
+
+7. Human and business skills
+- Communication
+- Writing clear technical documents
+- Product thinking
+- Understanding user needs
+- Stakeholder management
+
+Why: These skills are difficult to automate and become more important as teams grow.
+
+Languages worth learning
+You don't need many, but having exposure to different paradigms helps:
+- Python (AI, automation, backend)
+- JavaScript/TypeScript (web development)
+- SQL (essential)
+- Go, Java, Rust, or C# for large-scale systems
+
+A practical roadmap for 2026+
+1. Learn Python and SQL well.
+2. Build web applications with TypeScript.
+3. Learn cloud fundamentals and Docker.
+4. Study system design and distributed systems.
+5. Learn how to build AI-powered applications.
+6. Develop strong communication and product skills.
+
+The developers most likely to thrive aren't necessarily the best coders. They're the people who can combine software engineering, AI tools, system design, and business understanding to solve real problems.

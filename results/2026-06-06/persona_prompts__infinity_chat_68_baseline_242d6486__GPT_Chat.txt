@@ -1,0 +1,23 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=117
+Latency:   1463 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+One effective tip: establish clear ownership for tasks and decisions.
+
+When multiple people are involved in a project, confusion about who is responsible can lead to delays, duplicated work, or missed tasks. For each major task, make sure everyone knows:
+- Who is responsible for completing it
+- What success looks like
+- When it is due
+- Who needs to be informed of progress
+
+A simple way to do this is to end meetings with a quick recap of action items, owners, and deadlines. This creates accountability and reduces misunderstandings without requiring micromanagement.

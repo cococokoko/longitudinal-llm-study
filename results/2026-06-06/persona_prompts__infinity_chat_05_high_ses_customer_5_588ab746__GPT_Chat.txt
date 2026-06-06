@@ -1,0 +1,37 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=255
+Latency:   2534 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A valuable feature for a smartwatch designed specifically for senior citizens would be an "Adaptive Safety Companion."
+
+How it works:
+- Continuously monitors movement patterns, heart rate, and activity levels.
+- Learns the user's typical daily routines over time.
+- Detects unusual situations, such as:
+  - A possible fall.
+  - Extended inactivity during normally active hours.
+  - Sudden changes in heart rate or walking gait.
+  - Missing regular routines (for example, not leaving the bedroom in the morning).
+- Prompts the wearer with a simple, large-button check-in: "Are you okay?"
+- If there is no response within a configurable time, it can notify designated family members, caregivers, or emergency services with the user's location and relevant health information.
+
+Why it stands out:
+- Goes beyond basic fall detection by identifying subtle signs of potential health or safety issues.
+- Reduces false alarms by adapting to the individual's habits rather than relying solely on fixed thresholds.
+- Supports independent living while providing reassurance to families and caregivers.
+- Can be designed with privacy controls so users decide what information is shared and with whom.
+
+For a technology company evaluating market differentiation, this feature combines health monitoring, AI-driven personalization, and caregiver connectivity into a compelling senior-focused offering.

@@ -1,0 +1,75 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_42_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=509
+Latency:   4894 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on whether you want detailed data, simplicity, coaching, or integration with wearables. Here are some of the strongest options:
+
+For nutrition tracking
+- MacroFactor
+  - Excellent food logging and calorie/macro tracking
+  - Uses your actual weight trends to adjust calorie targets automatically
+  - Strong choice if you want data-driven nutrition without constant guesswork
+  - Paid subscription
+
+- Cronometer
+  - Tracks vitamins, minerals, and other nutrients in much greater detail than most apps
+  - Good food database accuracy
+  - Great if you care about overall nutrition quality, not just calories
+
+- MyFitnessPal
+  - One of the largest food databases
+  - Barcode scanning and broad app integrations
+  - Easy to use and widely supported
+  - Some popular features require a paid plan
+
+For fitness/workout tracking
+- Strong
+  - Excellent for strength training
+  - Simple workout logging, progress tracking, and exercise history
+  - Good for gym-goers focused on lifting
+
+- Hevy
+  - Similar to Strong but with more social features
+  - Clean interface and easy workout tracking
+  - Popular among strength-training users
+
+- Fitbod
+  - Generates workouts based on your equipment, recovery, and training history
+  - Useful if you want guidance instead of building your own program
+
+For overall health and activity tracking
+- Apple Health (iPhone)
+  - Central hub for health, activity, sleep, and nutrition data
+  - Integrates with many third-party apps
+
+- Google Fit or Health Connect (Android)
+  - Helps synchronize data across fitness and health apps
+  - Useful for keeping everything in one place
+
+- Garmin Connect
+  - Excellent if you own a Garmin device
+  - Strong fitness, recovery, sleep, and training metrics
+
+For people with busy or unpredictable work schedules
+- MacroFactor (nutrition) + Hevy or Strong (workouts) is a practical combination because both are quick to use and don't require spending a lot of time logging.
+- If you wear a smartwatch, pairing it with Apple Health, Garmin Connect, or Health Connect can automate much of your tracking.
+
+If you tell me:
+- iPhone or Android
+- Weight loss, muscle gain, or general fitness
+- Whether you use a smartwatch
+
+I can narrow it down to the best 2–3 apps for your specific situation.

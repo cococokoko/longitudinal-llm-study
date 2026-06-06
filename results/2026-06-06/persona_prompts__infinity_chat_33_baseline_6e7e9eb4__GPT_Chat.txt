@@ -1,0 +1,85 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=26 out=566
+Latency:   4066 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You can use a Microsoft Surface touchpad and the Windows on-screen keyboard with Dolphin Emulator, but Wii games are designed around motion controls, so setup depends on the game.
+
+1. Open Dolphin and configure a virtual Wii Remote
+- Launch Dolphin.
+- Click "Controllers".
+- Under "Wii Remotes", set "Wii Remote 1" to "Emulated Wii Remote".
+- Click "Configure" next to it.
+
+2. Map the Wii Remote buttons to the on-screen keyboard
+In the Emulated Wii Remote configuration:
+- Click each Wii button (A, B, 1, 2, +, -, Home, D-Pad) and assign a keyboard key.
+- Example:
+  - A = Space
+  - B = Left Ctrl
+  - 1 = 1
+  - 2 = 2
+  - Plus = Enter
+  - Minus = Backspace
+  - D-Pad = Arrow keys
+
+You can then tap those keys on the Windows on-screen keyboard.
+
+3. Use the touchpad as the Wii pointer
+In the same configuration window:
+- Find the "Point" section.
+- Assign:
+  - Up = Mouse Y-
+  - Down = Mouse Y+
+  - Left = Mouse X-
+  - Right = Mouse X+
+
+This allows moving the Wii cursor using the Surface touchpad.
+
+4. Simulate Wii motion controls
+Many Wii games require shaking, tilting, or swinging.
+
+In the configuration:
+- Find sections labeled:
+  - Tilt
+  - Swing
+  - Shake
+
+Assign keyboard keys for these actions. Example:
+- Shake X = Q
+- Shake Y = W
+- Shake Z = E
+
+You can tap those keys on the on-screen keyboard when needed.
+
+5. Open the Windows on-screen keyboard
+- Press Win + Ctrl + O to toggle the On-Screen Keyboard.
+- Or open Settings → Accessibility → Keyboard → On-Screen Keyboard.
+
+Keep it visible while playing and tap the mapped keys.
+
+6. Consider Touchscreen Mouse Mode
+If your Surface has a touchscreen:
+- Use your finger directly on the game window for pointer-heavy games.
+- Dolphin still interprets the cursor position as the Wii pointer when configured correctly.
+
+Limitations
+- Games heavily dependent on motion controls (Skyward Sword, Wii Sports, Red Steel, etc.) can be difficult with only a touchpad and on-screen keyboard.
+- Games that primarily use buttons and pointer controls are usually much easier.
+- A Bluetooth controller, Xbox controller, or actual Wii Remote generally provides a better experience.
+
+If you tell me:
+- Which Surface model you have,
+- Whether you're using the touchpad, touchscreen, or both,
+- And which Wii game you want to play,
+
+I can suggest a specific control mapping for that game.

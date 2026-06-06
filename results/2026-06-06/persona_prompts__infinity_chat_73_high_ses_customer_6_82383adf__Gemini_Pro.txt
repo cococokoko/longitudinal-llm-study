@@ -1,0 +1,18 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_73_high_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=20 out=653
+Latency:   8698 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a metaphor involving time.
+
+── Response ────────────────────────────────────────────────────────
+Time is the ultimate fixed-capital fund. You cannot raise another round, and you cannot borrow against tomorrow's reserves. Every hour is a non-refundable allocation, and the true measure of your strategy isn't just where you deploy your bandwidth, but the opportunity cost of the engagements you choose to decline.

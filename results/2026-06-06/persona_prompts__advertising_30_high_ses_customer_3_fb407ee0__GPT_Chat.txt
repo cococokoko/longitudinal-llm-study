@@ -1,0 +1,77 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=471
+Latency:   3833 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+If you're starting from scratch, the most effective approach is usually to learn by building small things as early as possible rather than spending months on theory alone.
+
+A practical path:
+
+1. Start with one beginner-friendly language
+- Python is often the best choice for beginners because its syntax is relatively simple and it's used in many fields (science, data analysis, AI, web development, automation).
+- Don't try to learn multiple languages at first.
+
+2. Learn the fundamentals
+Focus on:
+- Variables and data types
+- Conditional statements (if/else)
+- Loops
+- Functions
+- Basic data structures (lists, dictionaries, sets)
+- Reading and writing files
+- Basic debugging
+
+3. Use an interactive course
+Some strong options:
+- Harvard's CS50 (excellent introduction to computer science)
+- Python for Everybody (University of Michigan)
+- freeCodeCamp
+- Codecademy (guided and interactive)
+
+4. Write code every day
+Even 20–30 minutes consistently is more effective than occasional marathon sessions.
+Examples:
+- Convert temperatures
+- Create a simple calculator
+- Analyze a text file
+- Build a number-guessing game
+- Automate a repetitive task on your computer
+
+5. Learn to use professional tools early
+- Install Python locally
+- Learn a code editor such as VS Code
+- Learn basic Git and GitHub
+- Get comfortable reading error messages
+
+6. Build progressively larger projects
+After the basics:
+- To-do list application
+- Personal website
+- Data analysis project
+- Simple web app
+- Research-related tool if it aligns with your interests
+
+7. Learn how to read documentation
+One of the most valuable skills in programming is finding and understanding technical documentation. Experienced programmers spend a significant amount of time consulting references rather than memorizing everything.
+
+8. Join a community
+- Stack Overflow
+- Programming subreddits
+- Discord or Slack communities
+- Local coding groups or university workshops
+
+A common mistake is spending too much time watching tutorials. A useful rule is: for every hour of instruction, spend at least an hour writing code yourself.
+
+If you tell me your field (e.g., humanities, social sciences, natural sciences, engineering, business, medicine), I can suggest a learning path tailored to the kinds of programming tasks you're most likely to encounter.

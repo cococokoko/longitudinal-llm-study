@@ -1,0 +1,31 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_30_low_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=1020
+Latency:   12552 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Given that you work long hours in a warehouse, your approach to learning to code needs to be tailored to your schedule. After a physically demanding shift, you likely won't have the energy for three-hour study marathons—and that is completely okay! 
+
+The "best" way for you to learn is going to be about **low-friction setup, consistency, and micro-learning**. Here is a realistic roadmap to get started from scratch:
+
+### 1. Focus on "Micro-Learning" (15–30 Minutes a Day)
+Don't try to cram on your days off. Instead, aim for just 15 to 30 minutes a day. Consistency builds the "muscle memory" of coding much better than binge-studying. If you only have 15 minutes after a long shift before you need to sleep, that is enough to make progress.
+
+### 2. Pick One Beginner-Friendly Language
+Don't get bogged down in the "which language is best" debate. Pick one of these two based on your interests and stick with it for at least 6 months:
+*   **Python:** Best for general programming, data, and automation. It reads a lot like plain English, making it very beginner-friendly.
+*   **HTML/CSS, then JavaScript:** Best if you are a visual person and want to build websites or web apps. 
+
+### 3. Use "Frictionless" Learning Platforms
+When you get home tired, the last thing you want to do is spend an hour trying to install software and configure a development environment. Use platforms that let you code directly in your web browser:

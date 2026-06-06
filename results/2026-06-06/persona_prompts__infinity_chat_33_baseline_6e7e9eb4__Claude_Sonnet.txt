@@ -1,0 +1,107 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=34 out=818
+Latency:   17734 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## Prerequisites
+
+### Download & Install Dolphin
+1. Go to **dolphin-emu.org**
+2. Download the latest stable or beta version
+3. Run the installer and follow the prompts
+
+---
+
+## Setting Up Touch Input
+
+### Enable the On-Screen Keyboard
+- **Swipe up** from the taskbar or search **"Touch Keyboard"** in Start
+- Pin it to the taskbar: Right-click taskbar → **Taskbar settings** → enable **Touch keyboard**
+
+### Touchpad Gestures in Dolphin
+The Surface touchpad works as a standard mouse/pointer, so:
+- **Single tap** = left click (menu navigation)
+- **Two-finger tap** = right click
+- **Two-finger scroll** = scroll menus
+- **Pinch** = may not work in-game without configuration
+
+---
+
+## Configuring Dolphin Controls
+
+### Option 1: Map Keyboard to Wii Controls
+1. Open Dolphin → **Controllers** (top menu)
+2. Select **Wiimote 1** → choose **Emulated Wiimote**
+3. Click **Configure**
+4. Map buttons to keyboard keys you can reach on the on-screen keyboard
+
+**Suggested basic mapping:**
+| Wii Button | Keyboard Key |
+|------------|-------------|
+| A | Z or Space |
+| B | X |
+| + (Plus) | Enter |
+| - (Minus) | Backspace |
+| Home | H |
+| D-Pad Up | Arrow Up |
+| D-Pad Down | Arrow Down |
+| D-Pad Left | Arrow Left |
+| D-Pad Right | Arrow Right |
+| 1 | Q |
+| 2 | W |
+
+### Option 2: Use Mouse as Wiimote Pointer
+1. In Wiimote config → **Point** section
+2. Set to **Mouse** input
+3. Your touchpad cursor will act as the Wiimote pointer
+4. Useful for **pointer-based games** like Wii Sports
+
+---
+
+## Motion Controls (Tilt/Shake)
+
+Since the Surface has an **accelerometer**, you can try:
+- **GyroDSU** or **BetterJoy** apps to pipe motion data to Dolphin
+- Or simply map shake/tilt actions to keyboard keys as a workaround
+
+---
+
+## Practical Tips
+
+- **Use Tablet Mode** for easier touch keyboard access
+- **Split-screen the keyboard** so it doesn't cover the game
+- Consider a **Bluetooth controller** (Xbox, PS4/5) for much better gameplay
+- Some games work better than others with keyboard-only input
+- Enable **"Always on Top"** for the touch keyboard in settings
+
+---
+
+## Recommended Games for Touch/Keyboard Play
+These work reasonably well without motion controls:
+- **Super Mario Galaxy** (limited)
+- **Mario Kart Wii** (with keyboard arrows)
+- **New Super Mario Bros. Wii** (mostly button-based)
+
+---
+
+## Quick Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| Keyboard not registering | Click inside Dolphin window first |
+| Game won't launch | Check you have a legal ROM/ISO |
+| Lag/performance issues | Lower graphics settings in Dolphin |
+| Touch keyboard disappears | Re-pin it to taskbar |
+
+Would you like help with any specific game or a more detailed control mapping?

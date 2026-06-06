@@ -1,0 +1,53 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_41_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=463
+Latency:   4050 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to improve your credit score as quickly as possible, focus on the factors that can change within one or two reporting cycles:
+
+- Lower your credit utilization ratio.
+  - Pay down revolving credit card balances before the statement closing date, not just before the payment due date.
+  - Many scoring models favor utilization below 30%, and the biggest gains often occur below 10%.
+
+- Make every payment on time.
+  - Payment history is typically the most important scoring factor.
+  - If you have any accounts that are currently past due, bringing them current can help.
+
+- Request a higher credit limit.
+  - If your issuer grants an increase without a hard inquiry, your utilization ratio may decrease immediately.
+  - Avoid increasing spending simply because the limit is higher.
+
+- Correct errors on your credit reports.
+  - Review reports from all major bureaus for inaccurate late payments, balances, collections, or account information.
+  - Disputing and correcting errors can sometimes produce meaningful score improvements.
+
+- Become an authorized user on a well-managed account.
+  - If a family member or trusted individual has a long-standing account with low utilization and perfect payment history, being added as an authorized user may help, depending on the scoring model and lender.
+
+- Avoid applying for unnecessary new credit.
+  - Multiple hard inquiries and new accounts can temporarily reduce scores.
+
+- Pay off collection accounts where appropriate.
+  - The impact varies by scoring model and the nature of the collection, but resolving collections may improve lending decisions even when the score effect is limited.
+
+- Use rapid rescore services if you're seeking imminent financing.
+  - If you're applying for a mortgage and have recently paid down debt or corrected an error, some lenders can use a rapid rescore process to update credit information more quickly than normal reporting cycles.
+
+The fastest score increases typically come from reducing credit card balances and correcting reporting errors. If you tell me:
+- Your current approximate score,
+- Whether you're carrying credit card balances,
+- Whether you have any late payments, collections, or charge-offs,
+- And whether you're preparing for a mortgage, business loan, or other financing,
+
+I can suggest the most effective steps for your specific situation.

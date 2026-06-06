@@ -1,0 +1,47 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=31 out=319
+Latency:   8368 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+# Remote Team Collaboration Tools for Healthcare/Neurosurgery Teams
+
+Here are well-regarded options across key categories:
+
+## Communication
+- **Microsoft Teams** - Popular in healthcare, HIPAA-compliant options
+- **Slack** - Good for organized channels by project/case type
+- **Zoom** - Video conferencing with healthcare tiers
+
+## Document Collaboration
+- **Microsoft 365** - Widely integrated in hospital systems
+- **Google Workspace** - Real-time document editing
+- **SharePoint** - Good for institutional knowledge management
+
+## Project Management
+- **Asana** - Task tracking for research or administrative projects
+- **Monday.com** - Visual workflow management
+- **Trello** - Simple board-based organization
+
+## Specialized Considerations for Your Context
+- **HIPAA compliance** is critical - verify any tool before use with patient data
+- **Epic/EMR integration** capabilities matter for clinical workflows
+- **IT department approval** is typically required at teaching hospitals
+- **Research collaboration** may benefit from tools like **REDCap** or **Mendeley**
+
+## Practical Advice
+- Your hospital likely has **approved vendor lists** already
+- Teaching hospital environments often need tools that work for **residents, fellows, and attendings** simultaneously
+- Consider what your **institution already licenses** to avoid redundancy
+
+Would you like recommendations focused on a specific use case - clinical coordination, research, or administrative work?

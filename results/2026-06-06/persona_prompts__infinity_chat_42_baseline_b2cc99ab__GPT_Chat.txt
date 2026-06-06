@@ -1,0 +1,15 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=31 out=75
+Latency:   1156 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
+
+── Response ────────────────────────────────────────────────────────
+best Guide to Everyday Productivity

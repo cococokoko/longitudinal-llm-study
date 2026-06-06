@@ -1,0 +1,26 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=137
+Latency:   2893 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+A common example of a linear graph is a path graph, where vertices are arranged in a single chain and each vertex (except the endpoints) is connected to exactly two neighbors.
+
+For example:
+
+V = {A, B, C, D, E}
+E = {(A,B), (B,C), (C,D), (D,E)}
+
+This graph looks like:
+
+A — B — C — D — E
+
+It is called a path graph P5 because it consists of five vertices connected in a straight sequence.

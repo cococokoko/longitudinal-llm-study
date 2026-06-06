@@ -1,0 +1,25 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_low_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=964
+Latency:   10765 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+**Analysis** is figuring out *what* needs to be done (understanding the problem). 
+**Design** is figuring out *how* to do it (planning the solution).
+
+Think of it like your warehouse: **Analysis** is reading the manifest to know exactly what items are shipping, their weights, and the truck's capacity. **Design** is planning how to safely stack those specific boxes on the pallets and route the forklifts.
+
+**Can you begin design without analysis?** No. 
+
+**Why?** If you just start stacking heavy boxes (design) without checking the manifest (analysis), you might load the wrong items, crush fragile goods, or build a pallet that won't fit on the truck. You’ll end up having to tear it all down and start over—which is the last thing you want to do at the end of a long 12-hour shift. You have to know what you're dealing with before you can build it.

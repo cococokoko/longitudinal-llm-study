@@ -1,0 +1,29 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_03_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=29 out=113
+Latency:   3646 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a joke about electric vehicles.
+
+── Response ────────────────────────────────────────────────────────
+Here's one that might resonate:
+
+**Why did the electric vehicle owner break up with their gas-powered car friend?**
+
+*There was just too much tension in the relationship — one was always charging, and the other was always exhausted.*
+
+---
+
+Or for a more boardroom-friendly version:
+
+**An EV walks into a meeting and says, "I have a lot of range anxiety."**
+*The consultant replies, "Don't worry — we'll charge you by the hour."* 😄

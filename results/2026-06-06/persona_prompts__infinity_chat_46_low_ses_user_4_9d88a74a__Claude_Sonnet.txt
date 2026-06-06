@@ -1,0 +1,50 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_low_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=32 out=282
+Latency:   6946 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Linear Graph Example in Graph Theory
+
+A **path graph** (also called a linear graph) is one of the simplest examples.
+
+### Example: P₄ (Path Graph with 4 vertices)
+
+```
+A --- B --- C --- D
+```
+
+### Properties:
+- **Vertices:** A, B, C, D
+- **Edges:** {A,B}, {B,C}, {C,D}
+- Each **end vertex** (A and D) has degree **1**
+- Each **middle vertex** (B and C) has degree **2**
+- The vertices connect in a single straight sequence
+
+### Why it's called "linear":
+The vertices are arranged in a **line**, where each vertex connects only to its immediate neighbor(s), with no branches or cycles.
+
+---
+
+### Simple Real-World Analogy
+Think of it like a **hospital hallway** with rooms connected in a straight line:
+
+```
+Room 1 --- Room 2 --- Room 3 --- Room 4
+```
+
+Each room only connects directly to the next one down the hall.
+
+---
+
+This is distinct from other graph types like **cyclic graphs** (which loop back) or **complete graphs** (where every vertex connects to every other vertex).

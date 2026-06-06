@@ -1,0 +1,61 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_50_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=426
+Latency:   5392 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Ways to save on travel.
+
+── Response ────────────────────────────────────────────────────────
+There are many ways to reduce travel costs without sacrificing too much convenience. The best strategies depend on whether you're traveling for business, research, conferences, or leisure, but some broadly effective approaches include:
+
+• Be flexible with dates
+  - Flying a day earlier or later can significantly reduce airfare.
+  - Midweek flights are often cheaper than weekend departures.
+
+• Book strategically
+  - For domestic trips, booking several weeks in advance often yields better prices.
+  - For major holidays or international travel, booking months ahead can help.
+
+• Compare transportation options
+  - Trains, buses, and driving may be cheaper than flying for shorter distances.
+  - Consider nearby airports, which sometimes offer substantially lower fares.
+
+• Reduce accommodation costs
+  - Compare hotels, university guest housing, vacation rentals, and short-term apartment options.
+  - Extended stays may qualify for discounted rates.
+
+• Use loyalty programs
+  - Airline, hotel, and credit-card rewards can offset travel expenses.
+  - If you travel frequently, concentrating spending within a few programs can increase benefits.
+
+• Travel light
+  - Avoid checked-baggage fees by using carry-on luggage when practical.
+  - Packing efficiently can also make ground transportation easier and cheaper.
+
+• Monitor prices
+  - Set fare alerts through travel search engines.
+  - Prices can fluctuate, and alerts help identify discounts.
+
+• Take advantage of institutional discounts
+  - Universities, professional associations, and conference organizers sometimes negotiate reduced rates for transportation and lodging.
+
+• Manage food expenses
+  - Lodging with a refrigerator or kitchenette can reduce meal costs.
+  - Dining slightly away from major tourist areas often lowers prices.
+
+• Use public transportation
+  - Trains, buses, and metro systems are often much cheaper than taxis or rideshares, especially in large cities.
+
+• Bundle when advantageous
+  - Sometimes booking flights, hotels, and rental cars together yields savings, though it's worth comparing against separate bookings.
+
+If you tell me where you travel most often (e.g., academic conferences, international research trips, family vacations, domestic business travel), I can suggest more targeted cost-saving strategies.

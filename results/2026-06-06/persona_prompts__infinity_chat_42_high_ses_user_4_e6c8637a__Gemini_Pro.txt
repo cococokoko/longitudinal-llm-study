@@ -1,0 +1,22 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=39 out=1020
+Latency:   14586 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
+
+── Response ────────────────────────────────────────────────────────
+9 spaces = 53 characters.
+    Contains only letters and spaces.
+    Fits all criteria perfectly.
+
+6.  **Final Polish:**
+    "Best physician scientist bridging bench to

@@ -1,0 +1,71 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=47 out=535
+Latency:   4847 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+A strong STEM fair idea that is affordable, relevant to Vietnam, and has a clear engineering/science component is:
+
+"Low-Cost Flood Warning System for Urban Streets"
+
+Why it matters in Vietnam:
+- Many Vietnamese cities and towns experience flooding during heavy rains and typhoons.
+- Flooded roads disrupt transportation, damage property, and create safety hazards.
+- Professional flood-monitoring systems can be expensive, making low-cost solutions valuable.
+
+Project concept:
+Build a small prototype that detects rising water levels and sends a warning through lights, a buzzer, or a phone notification.
+
+How it works:
+- A water-level sensor measures the height of water.
+- A microcontroller (such as an Arduino-compatible board) processes the data.
+- When the water reaches a dangerous level, the system activates an alarm.
+- Optionally, use a Wi-Fi-enabled board (ESP8266 or ESP32) to send alerts to a phone.
+
+Affordable materials:
+- ESP32 or Arduino Nano: $5–10
+- Water level sensor: $2–5
+- LEDs and buzzer: $1–3
+- Breadboard and wires: $3–5
+- Plastic container for testing: free or low cost
+
+Total estimated cost:
+- About $15–25 USD, depending on local prices.
+
+Experimental component:
+Instead of only building the device, test:
+- Sensor accuracy at different water levels
+- Response time of alerts
+- Performance under clean water vs. muddy water conditions
+- Battery life if powered by batteries
+
+Data you can collect:
+- Water height (cm)
+- Alert trigger accuracy (%)
+- Time required to send a warning
+- False alarm rate
+
+Ways to make it stand out:
+- Create a model of a Vietnamese street and demonstrate flooding.
+- Compare your system's cost to commercial solutions.
+- Add a solar-powered option.
+- Use recycled materials for the prototype.
+
+Alternative Vietnam-focused STEM ideas:
+- Low-cost air quality monitor for Hanoi or Ho Chi Minh City pollution.
+- Solar-powered water purifier for rural communities.
+- Smart irrigation system to reduce water waste in agriculture.
+- Saltwater intrusion detector for Mekong Delta farming areas.
+
+Of these, the flood warning system is often the best balance of affordability, engineering, data collection, and relevance to everyday challenges in Vietnam.

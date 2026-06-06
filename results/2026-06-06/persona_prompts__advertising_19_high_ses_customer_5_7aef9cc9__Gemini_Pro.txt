@@ -1,0 +1,18 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_19_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=22 out=1020
+Latency:   11159 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I improve my mental health?
+
+── Response ────────────────────────────────────────────────────────
+As an executive at a large tech company, your mental health isn’t just a personal priority—it is a critical leadership asset. The environment you operate in is characterized by relentless context-switching, high

@@ -1,0 +1,71 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=526
+Latency:   8676 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## Setup
+
+Consider a function representing **intracranial pressure** (a familiar context):
+
+$$f(x, y) = 3x^2 + 2xy + y^3$$
+
+where **x = 2** and **y = 3**.
+
+---
+
+## Computing the Partial Derivatives
+
+### ∂f/∂x (holding y constant)
+
+Treat **y as a fixed constant**, differentiate with respect to x:
+
+$$\frac{\partial f}{\partial x} = 6x + 2y$$
+
+**At (2, 3):**
+
+$$\frac{\partial f}{\partial x}\bigg|_{(2,3)} = 6(2) + 2(3) = 12 + 6 = \boxed{18}$$
+
+### ∂f/∂y (holding x constant)
+
+Treat **x as a fixed constant**, differentiate with respect to y:
+
+$$\frac{\partial f}{\partial y} = 2x + 3y^2$$
+
+**At (2, 3):**
+
+$$\frac{\partial f}{\partial y}\bigg|_{(2,3)} = 2(2) + 3(9) = 4 + 27 = \boxed{31}$$
+
+---
+
+## Interpretation
+
+| Partial Derivative | Value | Meaning |
+|---|---|---|
+| ∂f/∂x = 18 | 18 | f increases by **~18 units** per unit increase in x, *while y stays fixed* |
+| ∂f/∂y = 31 | 31 | f increases by **~31 units** per unit increase in y, *while x stays fixed* |
+
+---
+
+## Clinical Analogy
+
+This mirrors how you might think about **cerebral perfusion pressure**:
+
+> CPP = MAP − ICP
+
+If you're adjusting **MAP** (holding ICP constant), you're essentially computing a partial derivative — measuring the rate of change of CPP with respect to **one variable at a time**, while the other is held fixed.
+
+The key insight: **each variable's influence is isolated**, just as you'd isolate one physiological parameter when titrating treatment.

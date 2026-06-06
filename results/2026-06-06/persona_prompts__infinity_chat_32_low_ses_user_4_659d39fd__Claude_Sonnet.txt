@@ -1,0 +1,82 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_low_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=33 out=385
+Latency:   9010 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a breakdown of how to build it!
+
+## Basic Setup
+
+**Sprites you'll need:**
+- Player character
+- Zombie (enemy)
+- Bullet or weapon
+- Health bar
+- Game Over screen
+
+---
+
+## Core Components
+
+### 1. Player Movement
+```
+When [green flag] clicked
+Forever
+  If key [W] pressed → change y by 5
+  If key [S] pressed → change y by -5
+  If key [A] pressed → change x by -5
+  If key [D] pressed → change x by 5
+```
+
+### 2. Zombie AI (on Zombie sprite)
+```
+Forever
+  Point toward [Player]
+  Move 2 steps
+  If touching [Player] → broadcast "hit"
+```
+
+### 3. Shooting Mechanic
+```
+When [space] pressed
+  Create clone of bullet
+  Bullet clone → point toward mouse
+  Move until touching zombie or edge
+```
+
+### 4. Health System
+```
+Set [health] to 100
+When "hit" received
+  Change [health] by -10
+  If health = 0 → Game Over
+```
+
+---
+
+## Tips to Make It Fun
+- **Spawn zombies** using clones on a timer
+- **Increase difficulty** by speeding up zombies over time
+- Add a **score counter** for kills
+- Use **backdrop** as your map
+
+---
+
+## Good Scratch Resources
+- **scratch.mit.edu** has example platformer projects to remix
+- Search "zombie game tutorial" on YouTube for Scratch-specific guides
+
+Want help with any specific mechanic?

@@ -1,0 +1,27 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_08_low_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=24 out=202
+Latency:   1867 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+Finding the right hiking trail can be much easier when you have to balance work and childcare.
+
+A few things that can help narrow down good options:
+
+- Location: What city, region, or country are you in?
+- Children's ages: A trail that works for a toddler may be very different from one suitable for teenagers.
+- Time available: Do you need a quick 30–60 minute outing or a longer half-day hike?
+- Difficulty: Easy, moderate, or more challenging?
+- Features: Waterfalls, lakes, wildlife, stroller-friendly paths, shaded routes, playgrounds nearby, etc.
+
+If you tell me your location and the ages of your children, I can suggest specific hiking trails that fit your schedule and family needs.

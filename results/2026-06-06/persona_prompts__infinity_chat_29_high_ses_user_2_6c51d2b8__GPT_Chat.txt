@@ -1,0 +1,230 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=1024
+Latency:   6356 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+To build an online forum using a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP), you need several core components:
+
+- User authentication
+- Categories/boards
+- Discussion threads
+- Posts/replies
+- Moderation tools
+- Search and notifications (optional)
+
+A typical architecture looks like:
+
+- Apache serves PHP application
+- PHP handles business logic
+- MySQL stores users, forums, threads, and posts
+- Sessions manage user login state
+
+Database Design
+
+A minimal schema might include:
+
+users
+- id
+- username
+- email
+- password_hash
+- role
+- created_at
+
+forums
+- id
+- title
+- description
+
+threads
+- id
+- forum_id
+- user_id
+- title
+- created_at
+- updated_at
+
+posts
+- id
+- thread_id
+- user_id
+- content
+- created_at
+
+Example SQL:
+
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    role ENUM('user','moderator','admin') DEFAULT 'user',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE forums (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    forum_id INT NOT NULL,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (forum_id) REFERENCES forums(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT NOT NULL,
+    user_id INT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+Project Structure
+
+```text
+/forum
+├── public/
+│   ├── index.php
+│   ├── login.php
+│   ├── register.php
+│   ├── forum.php
+│   └── thread.php
+├── src/
+│   ├── Database.php
+│   ├── Auth.php
+│   └── Forum.php
+├── templates/
+├── config/
+└── vendor/
+```
+
+Database Connection
+
+Using PDO:
+
+```php
+<?php
+
+$pdo = new PDO(
+    "mysql:host=localhost;dbname=forum;charset=utf8mb4",
+    "dbuser",
+    "dbpass",
+    [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]
+);
+```
+
+User Registration
+
+Store hashed passwords:
+
+```php
+$passwordHash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+$stmt = $pdo->prepare(
+    "INSERT INTO users (username, email, password_hash)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['username'],
+    $_POST['email'],
+    $passwordHash
+]);
+```
+
+User Login
+
+```php
+$stmt = $pdo->prepare(
+    "SELECT * FROM users WHERE username = ?"
+);
+
+$stmt->execute([$_POST['username']]);
+
+$user = $stmt->fetch();
+
+if ($user && password_verify($_POST['password'], $user['password_hash'])) {
+    $_SESSION['user_id'] = $user['id'];
+}
+```
+
+Creating a Thread
+
+```php
+$stmt = $pdo->prepare(
+    "INSERT INTO threads (forum_id, user_id, title)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['forum_id'],
+    $_SESSION['user_id'],
+    $_POST['title']
+]);
+```
+
+Posting a Reply
+
+```php
+$stmt = $pdo->prepare(
+    "INSERT INTO posts (thread_id, user_id, content)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['thread_id'],
+    $_SESSION['user_id'],
+    $_POST['content']
+]);
+```
+
+Displaying Posts
+
+```php
+$stmt = $pdo->prepare(
+    "SELECT p.*, u.username
+     FROM posts p
+     JOIN users u ON p.user_id = u.id
+     WHERE p.thread_id = ?
+     ORDER BY p.created_at ASC"
+);
+
+$stmt->execute([$threadId]);
+
+$posts = $stmt->fetchAll();
+```
+
+Security Considerations
+
+- Use prepared statements everywhere.
+- Escape output with `htmlspecialchars()`.
+- Hash passwords with `password_hash()`.
+- Enable CSRF protection on forms.
+- Validate file uploads carefully if attachments are allowed.
+- Rate-limit posting and login attempts.
+-

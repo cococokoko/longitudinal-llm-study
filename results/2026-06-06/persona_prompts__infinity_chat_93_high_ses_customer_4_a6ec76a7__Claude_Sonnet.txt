@@ -1,0 +1,28 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_93_high_ses_customer_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=408
+Latency:   9405 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write 100-300 words on how stress affects the body and mind.
+
+── Response ────────────────────────────────────────────────────────
+# The Effects of Stress on Body and Mind
+
+Stress triggers a cascade of physiological responses originating in the hypothalamic-pituitary-adrenal (HPA) axis. When a perceived threat is detected, the hypothalamus signals the adrenal glands to release cortisol and catecholamines — epinephrine and norepinephrine — initiating the well-characterized "fight-or-flight" response. Heart rate and blood pressure elevate, glucose is mobilized, and immune function is transiently suppressed.
+
+While acute stress can be adaptive, chronic stress dysregulates these same systems with significant pathological consequences. Sustained cortisol elevation promotes systemic inflammation, impairs hippocampal neurogenesis, and contributes to metabolic dysfunction including insulin resistance. Cardiovascular risk increases substantially, with chronic stress independently associated with atherosclerotic progression and adverse cardiac events.
+
+Neurologically, prolonged stress remodels brain architecture. The prefrontal cortex — governing executive function and emotional regulation — shows reduced gray matter density, while the amygdala demonstrates hyperreactivity. This imbalance underlies the heightened anxiety, impaired decision-making, and emotional dysregulation commonly observed clinically.
+
+Psychologically, chronic stress is a well-established precipitant for major depressive disorder and anxiety disorders, likely mediated through glucocorticoid-driven disruption of serotonergic and dopaminergic signaling. Cognitive domains including working memory and attention are measurably compromised.
+
+Importantly, individual stress responses vary considerably based on genetic polymorphisms, early-life adversity, and social support networks — factors increasingly relevant to precision medicine approaches in stress-related disease management. Interventions targeting HPA axis regulation, including mindfulness-based practices and pharmacological agents, remain active areas of translational research.

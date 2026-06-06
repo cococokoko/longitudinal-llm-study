@@ -1,0 +1,32 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=16 out=251
+Latency:   2926 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a line of dominoes set up in a very special pattern.
+
+You ask, "If I knock over the first domino, what will the 100th domino be doing?"
+
+For some simple setups, you can figure it out right away. You don't need to watch all the dominoes fall.
+
+But for other setups, the only way to know what the 100th domino will be doing is to actually knock over the first one and watch all the dominoes fall, one after another, until you get to the 100th.
+
+Computational irreducibility is the idea that some things are like that. Even if you know all the rules, there is no shortcut. The fastest way to find out what happens is to let each step happen.
+
+A simple way to say it:
+
+- Some puzzles have shortcuts.
+- Some puzzles don't.
+- For those puzzles, you can't skip ahead to the answer.
+- You have to go through all the steps.
+
+It's a bit like asking, "What will happen on page 100 of a story?" Sometimes you can guess. But sometimes the only way to know is to read pages 1 through 99 first. Computational irreducibility says that some processes work like that.

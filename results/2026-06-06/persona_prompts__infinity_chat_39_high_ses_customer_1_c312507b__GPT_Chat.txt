@@ -1,0 +1,74 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=40 out=595
+Latency:   6881 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Given your background as a neurosurgeon at a major teaching hospital, I'd focus less on becoming a general software engineer and more on developing leverage at the intersection of medicine, data, and AI. The highest-value skills are likely to be those that allow you to understand, evaluate, and direct technical work rather than compete with full-time software developers.
+
+Areas worth learning:
+
+- Programming fundamentals
+  - Python is the best starting point.
+  - Learn data structures, algorithms, debugging, version control (Git), and testing.
+  - These concepts remain useful even as tools change.
+
+- AI and machine learning
+  - Understand how modern AI systems work, including large language models, deep learning, model evaluation, and limitations.
+  - Learn how to use AI APIs and build simple AI-powered applications.
+  - Focus on understanding model performance, bias, reliability, and safety in clinical settings.
+
+- Data science and statistics
+  - SQL for working with databases.
+  - Data analysis with Python (Pandas, NumPy).
+  - Experimental design, causal inference, and statistical reasoning.
+  - These skills are increasingly important in clinical research and quality improvement.
+
+- Healthcare informatics
+  - Electronic health record systems.
+  - HL7 and FHIR standards.
+  - Clinical data pipelines.
+  - Regulatory and privacy considerations (HIPAA and related frameworks).
+
+- Software engineering practices
+  - Git and collaborative development.
+  - APIs and web services.
+  - Cloud computing basics.
+  - Understanding how production systems are built and maintained.
+
+- Automation and workflow design
+  - Learn how to automate repetitive administrative, research, and clinical tasks.
+  - The ability to redesign workflows around AI may become more valuable than writing large amounts of code yourself.
+
+- Product and systems thinking
+  - Identify real clinical problems.
+  - Learn how software products are designed, validated, and deployed.
+  - Many successful physician-technologists create value by recognizing problems that engineers do not see.
+
+Topics that are less likely to provide the highest return unless you have a specific interest:
+- Competitive programming.
+- Advanced graphics programming.
+- Low-level operating system development.
+- Building everything from scratch instead of leveraging modern frameworks and AI tools.
+
+A practical roadmap:
+1. Learn Python.
+2. Learn SQL.
+3. Learn Git.
+4. Build small projects using AI APIs.
+5. Learn healthcare data standards (especially FHIR).
+6. Study machine learning evaluation and clinical AI validation.
+7. Build or collaborate on a clinical decision-support, research, or workflow-automation project.
+
+Over the next decade, domain experts who can combine deep medical expertise with AI, data, and software fluency are likely to be rarer and more valuable than pure programmers. Your medical expertise is already the difficult part; software skills can amplify it.

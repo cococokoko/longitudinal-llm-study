@@ -1,0 +1,43 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=296
+Latency:   10344 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+# Tip: Create Structured but Brief Regular Check-ins
+
+**Implement short, consistent one-on-one meetings** with each team member (even 15-20 minutes biweekly) rather than relying solely on ad-hoc communication.
+
+## Why this works particularly well in research settings:
+
+- Trainees and staff often **won't surface problems voluntarily** until they've compounded
+- It separates routine updates from deeper conversations about career development or obstacles
+- Helps you catch **project drift early** before experiments go too far in the wrong direction
+- Builds psychological safety, which is critical for honest scientific discussion
+
+## Practical suggestions:
+
+- Keep a **shared running document** for each person so meetings stay focused
+- Let *them* set the agenda - you learn more that way
+- Distinguish between mentoring conversations and project management conversations
+- Protect these meetings from cancellation, even when things get busy
+
+## The physician-scientist specific challenge:
+
+Your clinical duties create **unpredictable availability**, which can make trainees hesitant to approach you. Scheduled time signals that their work is a genuine priority.
+
+---
+
+The core principle is that **proactive communication prevents most management problems** before they require significant intervention.
+
+Would you like tips on a more specific challenge, like managing conflict or mentoring trainees at different career stages?

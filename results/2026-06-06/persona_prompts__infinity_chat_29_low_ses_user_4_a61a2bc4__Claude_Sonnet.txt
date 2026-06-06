@@ -1,0 +1,148 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_low_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=32 out=1024
+Latency:   10364 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+# Building an Online Forum with LAMP Stack
+
+LAMP = **L**inux, **A**pache, **M**ySQL, **P**HP
+
+## Basic Setup
+
+### 1. Install LAMP Components
+```bash
+# Ubuntu/Debian
+sudo apt update
+sudo apt install apache2 mysql-server php php-mysql libapache2-mod-php
+
+# Start services
+sudo systemctl start apache2
+sudo systemctl start mysql
+```
+
+## Database Setup (MySQL)
+
+```sql
+CREATE DATABASE forum_db;
+USE forum_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT,
+    user_id INT,
+    title VARCHAR(200) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT,
+    user_id INT,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+## PHP Files
+
+### Database Connection (config.php)
+```php
+<?php
+$host = 'localhost';
+$dbname = 'forum_db';
+$username = 'root';
+$password = 'your_password';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
+?>
+```
+
+### User Registration (register.php)
+```php
+<?php
+require 'config.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = htmlspecialchars($_POST['username']);
+    $email = htmlspecialchars($_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+    $stmt = $pdo->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+    $stmt->execute([$username, $email, $password]);
+    
+    header("Location: login.php");
+}
+?>
+
+<form method="POST">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Register</button>
+</form>
+```
+
+### Display Threads (index.php)
+```php
+<?php
+require 'config.php';
+session_start();
+
+$stmt = $pdo->query("
+    SELECT threads.*, users.username, categories.name as category_name,
+    COUNT(posts.id) as reply_count
+    FROM threads
+    JOIN users ON threads.user_id = users.id
+    JOIN categories ON threads.category_id = categories.id
+    LEFT JOIN posts ON threads.id = posts.thread_id
+    GROUP BY threads.id
+    ORDER BY threads.created_at DESC
+");
+$threads = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<!DOCTYPE html>
+<html>
+<head><title>Forum</title></head>
+<body>
+    <h1>Forum</h1>
+    <?php foreach ($threads as $thread): ?>
+        <div>
+            <a href="thread.php?id=<?= $thread['id'] ?>">
+                <?= htmlspecialchars($thread['title']) ?>
+            </a>
+            <span>by <?=

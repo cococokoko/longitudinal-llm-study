@@ -1,0 +1,33 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_43_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=24 out=1020
+Latency:   9578 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Paraphrase this: We're checking if the domain 'aspris.ae' is included in our scope.
+
+── Response ────────────────────────────────────────────────────────
+Here are a few ways to paraphrase the sentence, depending on the context and how formal you want to be:
+
+**Formal & Professional (Best for client emails or official updates)**
+* "We are currently verifying whether the domain 'aspris.ae' falls within our project scope."
+* "We are confirming if 'aspris.ae' is covered under our scope of work."
+* "Please allow us a moment to determine if the 'aspris.ae' domain is included in our purview."
+
+**Concise & Direct (Best for quick messages on Slack/Teams)**
+* "We're verifying if 'aspris.ae' is in-scope."
+* "We are checking whether 'aspris.ae' falls under our scope."
+* "We're confirming the scope status of 'aspris.ae'."
+
+**Cybersecurity / IT Specific (If this is for a pentest or bug bounty)**
+* "We are verifying if 'aspris.ae' is an in-scope asset."
+* "We're confirming whether 'aspris.ae' is an authorized target within our scope."
+
+**Slightly more casual**
+* "We're just looking into whether 'aspris.ae' is part of our coverage."
+* "Let me double-check

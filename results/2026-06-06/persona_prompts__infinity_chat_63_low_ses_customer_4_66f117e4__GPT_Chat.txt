@@ -1,0 +1,57 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=309
+Latency:   2293 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Example:
+
+Suppose the temperature in a room is modeled by
+
+T(x, y) = 2x² + 3xy + y²
+
+where:
+- x = distance east (meters)
+- y = distance north (meters)
+- T = temperature
+
+Partial derivative with respect to x:
+
+Treat y as a constant and differentiate with respect to x:
+
+∂T/∂x = 4x + 3y
+
+At the point (x, y) = (2, 1):
+
+∂T/∂x(2,1) = 4(2) + 3(1) = 11
+
+Interpretation:
+- If you move slightly east while staying at y = 1, the temperature increases at approximately 11 units per meter.
+
+Partial derivative with respect to y:
+
+Treat x as a constant and differentiate with respect to y:
+
+∂T/∂y = 3x + 2y
+
+At (2,1):
+
+∂T/∂y(2,1) = 3(2) + 2(1) = 8
+
+Interpretation:
+- If you move slightly north while staying at x = 2, the temperature increases at approximately 8 units per meter.
+
+This example shows that a function of several variables can have different rates of change depending on which variable you vary and which variables you hold fixed.

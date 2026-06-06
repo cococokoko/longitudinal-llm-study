@@ -1,0 +1,69 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=554
+Latency:   5231 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+For a neurosurgical service or academic medical center, the "best" remote collaboration tools depend on whether you're coordinating clinical care, research, education, or administrative work. A combination of tools is usually more effective than a single platform.
+
+Clinical collaboration (patient care)
+- Microsoft Teams (with healthcare integrations)
+  - Strong for multidisciplinary team communication, meetings, and document sharing.
+  - Often preferred in large hospital systems already using Microsoft 365.
+- Epic Secure Chat (if your institution uses Epic)
+  - Integrated directly into the electronic health record (EHR).
+  - Useful for patient-specific communication and reducing fragmented messaging.
+- TigerConnect
+  - Widely used in healthcare for secure messaging, call routing, and care-team coordination.
+  - Designed for HIPAA-compliant communication.
+- Vocera (now part of Stryker)
+  - Useful for rapid communication among clinical teams, especially in acute care settings.
+
+Research and academic collaboration
+- Microsoft Teams
+  - Good for lab groups, manuscript development, and project management.
+- Slack
+  - Excellent for ongoing discussions, research groups, and cross-institution collaborations.
+  - Particularly popular in academic research environments.
+- Zoom
+  - Still one of the strongest platforms for virtual conferences, case discussions, and teaching sessions.
+- Google Workspace
+  - Strong for collaborative writing and shared document editing, especially with external collaborators.
+
+Project and task management
+- Asana
+  - Good balance between simplicity and functionality.
+- Monday.com
+  - Useful for tracking projects, deadlines, and departmental initiatives.
+- Trello
+  - Simple and intuitive for smaller teams.
+- Jira
+  - Better suited for complex workflows, software, or data-science projects.
+
+Knowledge management and documentation
+- Notion
+  - Flexible workspace for protocols, onboarding materials, research notes, and meeting records.
+- Confluence
+  - Strong institutional knowledge repository, especially for larger organizations.
+- SharePoint
+  - Common in healthcare systems using Microsoft infrastructure.
+
+For multidisciplinary neurosurgery teams
+A common and effective stack is:
+- Epic Secure Chat or TigerConnect for patient-related communication
+- Microsoft Teams for meetings and department communication
+- Zoom for conferences, tumor boards, and external collaborations
+- SharePoint or Notion for protocols and educational materials
+- Asana or Monday.com for research and administrative projects
+
+One important consideration: if any communication involves protected health information (PHI), prioritize tools that are approved by your institution and configured for HIPAA (or local regulatory) compliance. Institutional governance often matters more than feature differences.

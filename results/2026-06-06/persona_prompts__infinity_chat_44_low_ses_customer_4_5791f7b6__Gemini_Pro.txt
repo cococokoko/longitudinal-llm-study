@@ -1,0 +1,20 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_44_low_ses_customer_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=808
+Latency:   9264 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Name a hot English word below 10 letters.
+
+── Response ────────────────────────────────────────────────────────
+How about **Feverish**? 
+
+It is 8 letters long, literally means "hot" (having a high body temperature), and since you work shifts as a patient care aide at the local hospital, it is a condition you probably help your patients through all the time!

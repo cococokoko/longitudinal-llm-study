@@ -1,0 +1,18 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_13_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=23 out=1020
+Latency:   11516 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Mastering the art of cooking steak.
+
+── Response ────────────────────────────────────────────────────────
+Doctor, mastering a steak is much like executing a flawless procedure in the OR: it requires a solid understanding of anatomy, precise thermal control, and impeccable timing. Furthermore, given your demanding schedule at the hospital

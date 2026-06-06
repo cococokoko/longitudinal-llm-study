@@ -1,0 +1,57 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=381
+Latency:   2879 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while holding the other variables constant.
+
+Example:
+
+Consider the function
+
+f(x, y) = x²y + 3y
+
+Suppose we want the partial derivative with respect to x.
+
+Treat y as a constant:
+
+∂f/∂x = 2xy
+
+Now evaluate it at the point (x, y) = (2, 4):
+
+∂f/∂x(2,4) = 2 × 2 × 4 = 16
+
+Interpretation:
+- Near the point (2,4), if x increases by a small amount while y remains fixed at 4, the function f increases by approximately 16 times that small amount.
+
+For example:
+- f(2,4) = 2²·4 + 3·4 = 28
+- Increase x from 2 to 2.01 while keeping y = 4:
+  - f(2.01,4) = (2.01)²·4 + 12 = 28.1604
+  - Actual change = 28.1604 − 28 = 0.1604
+- Using the partial derivative:
+  - Estimated change ≈ 16 × 0.01 = 0.16
+
+The estimate (0.16) is very close to the actual change (0.1604).
+
+Similarly, the partial derivative with respect to y is
+
+∂f/∂y = x² + 3
+
+and at (2,4):
+
+∂f/∂y(2,4) = 2² + 3 = 7
+
+This means that near (2,4), increasing y by a small amount while keeping x fixed causes f to increase by approximately 7 times that small amount.

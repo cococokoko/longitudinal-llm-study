@@ -1,0 +1,51 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=312
+Latency:   8875 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+Here are the safest ways to travel during a pandemic, based on general public health principles:
+
+## Before Traveling
+- **Check current guidance** from health authorities (CDC, WHO, local governments)
+- Get vaccinated and boosted if applicable
+- Consider travel insurance with pandemic coverage
+- Research healthcare availability at your destination
+
+## Transportation Options (Generally Ranked by Risk)
+1. **Private vehicle** - lowest exposure risk
+2. **Private charter** - controlled environment
+3. **Driving alone or with household members**
+4. **Flying** - HEPA filters help, but airports add risk
+5. **Train/bus** - higher contact with surfaces and people
+
+## Risk Reduction Strategies
+- **Wear high-quality masks** (N95/KN95) in crowded spaces
+- Choose **less crowded travel times**
+- Maintain **ventilation** when possible
+- Practice **hand hygiene** consistently
+- Keep **physical distance** where feasible
+- **Test before and after** travel when appropriate
+
+## Accommodation Considerations
+- Private rentals vs. hotels
+- Contactless check-in options
+- Ventilation quality of rooms
+
+## Practical Considerations
+- Have **flexible booking** arrangements
+- Know **cancellation policies**
+- Carry **essential supplies** (masks, sanitizer, tests)
+
+Would you like more specific guidance for a particular type of travel or destination context?

@@ -1,0 +1,20 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=32 out=939
+Latency:   9503 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+Here is a draft tailored to your perspective, focusing on how these exams translate to the high-stakes clinical and academic environments of a major teaching hospital:
+
+When evaluating international medical graduates or researchers for your residency, fellowship, or postdoc programs, understanding the nuanced differences between the TOEFL and IELTS can help you better predict a candidate's communication style in a high-stakes clinical environment. The TOEFL is entirely computer-based and heavily focused on North American academic English, making it an excellent predictor of a candidate's ability to comprehend complex medical literature, draft research manuscripts, and process didactic lectures. Conversely, the IELTS incorporates a live, face-to-face speaking component with a human examiner and embraces a broader range of international English dialects. This makes the IELTS particularly valuable for gauging a physician's bedside manner, their ability to navigate nuanced patient consultations, and their real-time communication skills within a fast-paced, multidisciplinary surgical team. Ultimately, while both are rigorous and widely accepted, you might weigh TOEFL scores more heavily for research-focused candidates, whereas strong IELTS speaking scores often translate more directly to the interpersonal demands of clinical neurosurgery.

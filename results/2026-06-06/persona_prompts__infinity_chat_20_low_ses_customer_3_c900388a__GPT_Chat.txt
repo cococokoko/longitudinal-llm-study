@@ -1,0 +1,38 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_20_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=40 out=426
+Latency:   3593 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Why is equal pay for equal work not worth imposing on an economy?
+
+── Response ────────────────────────────────────────────────────────
+Whether "equal pay for equal work" is worth imposing depends on how the policy is defined and enforced. Most modern economies already support the principle in some form, but there are debates about how far regulation should go.
+
+Arguments in favor:
+- Fairness: Workers doing substantially the same job under similar conditions are paid based on their work rather than characteristics such as sex, race, or other unrelated factors.
+- Better labor-market efficiency: Discrimination can cause employers to overlook qualified workers or allocate talent poorly.
+- Higher morale and trust: Employees may be more motivated when they believe compensation is fair.
+- Reduced inequality: Equal-pay rules can help narrow wage gaps caused by discrimination.
+
+Arguments against strict imposition:
+- Defining "equal work" can be difficult. Jobs that appear similar may differ in productivity, responsibilities, experience requirements, performance, working hours, risk, or market demand.
+- Reduced flexibility: Employers may want to offer different pay to attract scarce talent, reward exceptional performance, or respond to local labor-market conditions.
+- Administrative and compliance costs: Monitoring, reporting, and legal disputes can be expensive for firms and governments.
+- Risk of unintended consequences: If regulations are overly rigid, employers may restructure jobs, reduce hiring, or shift compensation into bonuses and benefits that are harder to regulate.
+
+A key distinction is between:
+- Equal pay for genuinely equivalent work, regardless of irrelevant personal characteristics.
+- Mandating identical pay whenever job titles are the same, regardless of productivity, experience, or performance.
+
+Many economists support the first principle but are more cautious about the second, because labor markets often rely on pay differences to reflect skills, experience, productivity, and supply-and-demand conditions.
+
+So the debate is usually not about whether discrimination should be allowed, but about how aggressively governments should define, measure, and enforce "equal work" and "equal pay."

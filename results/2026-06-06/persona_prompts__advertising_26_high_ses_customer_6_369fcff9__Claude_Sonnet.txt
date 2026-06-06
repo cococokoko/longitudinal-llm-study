@@ -1,0 +1,61 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=349
+Latency:   7663 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+Given your consulting background, I'll give you a structured view that's both practical and strategically sound.
+
+## Foundational Controls
+
+**Access Management**
+- Implement least-privilege access principles
+- Use multi-factor authentication (MFA) across all systems
+- Conduct regular access reviews and promptly revoke departing employee credentials
+
+**Data Classification**
+- Categorize data by sensitivity (public, internal, confidential, restricted)
+- Apply controls proportionate to classification level
+
+## Technical Measures
+
+- Keep software and systems patched and updated
+- Deploy endpoint protection (EDR rather than basic antivirus)
+- Encrypt data at rest and in transit
+- Maintain regular, tested backups following the **3-2-1 rule**
+
+## Organizational Measures
+
+- Conduct employee security awareness training regularly
+- Develop an incident response plan *before* you need it
+- Establish clear vendor/third-party risk management processes
+
+## Common Gaps Worth Highlighting to Clients
+
+- Assuming cloud providers handle *all* security responsibility
+- Neglecting mobile device management
+- No documented recovery time objectives
+- Treating compliance as equivalent to security
+
+## Practical Prioritization Framework
+
+| Priority | Action | Cost |
+|----------|--------|------|
+| Immediate | MFA, backups | Low |
+| Near-term | Employee training | Low-Medium |
+| Strategic | Formal security program | Medium |
+
+Would you like me to go deeper on any specific area, such as vendor risk or incident response planning?

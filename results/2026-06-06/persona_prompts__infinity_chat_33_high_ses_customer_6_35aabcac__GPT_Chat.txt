@@ -1,0 +1,90 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=44 out=568
+Latency:   5851 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You can run Dolphin on a Microsoft Surface using only the touchpad and the Windows on-screen keyboard, but Wii controls need some custom mapping because Dolphin expects a gamepad, keyboard, mouse, or real Wii Remote.
+
+A practical setup is:
+
+1. Enable the Windows on-screen keyboard
+- Press Win + Ctrl + O to toggle it.
+- Or go to Settings → Accessibility → Keyboard → On-Screen Keyboard.
+
+2. Open Dolphin
+- Launch Dolphin.
+- Use the touchpad to navigate the menus.
+
+3. Configure Wii controls
+- In Dolphin, select Controllers.
+- Under "Wii Remotes," choose:
+  - "Emulated Wii Remote" for Wii games.
+- Click Configure.
+
+4. Map touchpad and keyboard inputs
+For basic Wii gameplay, assign keyboard keys to Wii buttons:
+
+Suggested mapping:
+- A → Space
+- B → Left Shift
+- 1 → 1
+- 2 → 2
+- Plus (+) → Enter
+- Minus (-) → Backspace
+- Home → H
+- D-Pad → Arrow keys
+
+You can then tap those keys on the on-screen keyboard.
+
+5. Handle Wii pointer movement
+The Wii cursor normally uses infrared pointing.
+
+In the Emulated Wii Remote configuration:
+- Locate the "IR" section.
+- Bind:
+  - Up/Down/Left/Right to mouse movement or keyboard keys.
+- Alternatively, enable mouse control for the IR pointer and use the Surface touchpad to move the Wii cursor.
+
+6. Configure motion controls
+Many Wii games require shaking, tilting, or swinging.
+
+In the Emulated Wii Remote configuration:
+- Bind:
+  - Shake X/Y/Z to keyboard keys.
+  - Tilt directions to keyboard keys.
+
+Example:
+- Shake → S
+- Tilt Left/Right → Q/E
+- Tilt Forward/Back → W/X
+
+These keys can be pressed on the on-screen keyboard when needed.
+
+7. For Nunchuk-enabled games
+- In the Emulated Wii Remote configuration, set Extension → Nunchuk.
+- Map:
+  - Stick → WASD or arrow keys.
+  - C and Z buttons → nearby keyboard keys.
+
+Potential limitations:
+- Games heavily dependent on motion (Skyward Sword, Wii Sports Resort, etc.) can be cumbersome with only a touchpad and on-screen keyboard.
+- Simpler games (New Super Mario Bros. Wii, Kirby's Return to Dream Land, many Virtual Console titles) are generally easier to play this way.
+
+A better Surface-specific option is to use Dolphin's support for touch input and map Wii IR to the touchpad while keeping button presses on the on-screen keyboard. If you tell me:
+- Your Surface model
+- Windows version
+- The specific Wii game
+
+I can suggest an optimized control layout for that game.

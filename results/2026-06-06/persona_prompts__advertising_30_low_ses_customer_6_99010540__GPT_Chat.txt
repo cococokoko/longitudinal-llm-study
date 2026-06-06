@@ -1,0 +1,89 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_30_low_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=36 out=501
+Latency:   4465 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+If you're starting from zero, the most effective approach is usually to learn by building small projects rather than spending months on theory alone.
+
+A practical path:
+
+1. Pick one beginner-friendly language
+- Python is often the easiest starting point.
+- It's widely used in automation, data analysis, web development, and AI.
+- Avoid trying to learn multiple languages at once.
+
+2. Learn the fundamentals
+Focus on:
+- Variables
+- Data types
+- Input and output
+- Conditionals (if/else)
+- Loops
+- Functions
+- Basic data structures (lists, dictionaries, sets)
+
+Good free resources:
+- Python's official tutorial
+- freeCodeCamp
+- CS50 (Harvard's introductory computer science course)
+- Automate the Boring Stuff with Python
+
+3. Code regularly
+Since you work long warehouse shifts, consistency is likely more important than long study sessions.
+- Aim for 20–45 minutes most days.
+- Even 15 minutes is better than skipping entirely.
+- Try to maintain a routine that fits your work schedule.
+
+4. Build simple projects early
+Examples:
+- A calculator
+- A to-do list
+- A shift-pay calculator
+- An inventory tracker
+- A program that organizes files on your computer
+
+Projects help concepts stick much faster than tutorials alone.
+
+5. Learn basic problem-solving
+Practice on:
+- Exercism
+- Codewars
+- LeetCode (easy problems only at first)
+
+Don't worry about solving difficult interview questions immediately.
+
+6. Learn version control
+Once you're comfortable with basics:
+- Learn Git
+- Create a GitHub account
+- Save your projects there
+
+This helps you track progress and build a portfolio.
+
+7. Choose a direction after the basics
+After 1–3 months, decide what interests you:
+- Web development → HTML, CSS, JavaScript
+- Data analysis → Python, pandas, SQL
+- Automation → Python scripting
+- Mobile apps → Flutter or React Native
+- Cybersecurity → Networking, Linux, Python
+
+A beginner roadmap could look like:
+- Month 1: Python fundamentals
+- Month 2: Small projects
+- Month 3: Git, GitHub, and larger projects
+- Month 4+: Pick a specialization
+
+A common mistake is spending all your time watching tutorials. Try to spend at least as much time writing code as you spend learning about code. The fastest progress usually comes from building things, making mistakes, and fixing them.

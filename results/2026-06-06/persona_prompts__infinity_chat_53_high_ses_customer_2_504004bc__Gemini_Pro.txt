@@ -1,0 +1,20 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_53_high_ses_customer_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=26 out=1020
+Latency:   12258 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a May the 4th joke.
+
+── Response ────────────────────────────────────────────────────────
+Review against constraints:**
+    *   May the 4th joke? Yes.
+    *   Tailored to a senior attorney at a well-established firm? Yes, uses terms like "

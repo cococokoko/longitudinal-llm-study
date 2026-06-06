@@ -1,0 +1,60 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=29 out=401
+Latency:   3454 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The best remote collaboration tools depend on what your team needs to do together. For a hospital or healthcare-related environment, it's also important to consider privacy, security, and any compliance requirements your organization follows.
+
+Common categories and strong options include:
+
+- Team communication
+  - Microsoft Teams: Chat, video meetings, file sharing, and integration with Microsoft 365.
+  - Slack: Organized channels, messaging, and extensive app integrations.
+  - Google Chat: Works well for organizations using Google Workspace.
+
+- Video conferencing
+  - Microsoft Teams
+  - Zoom
+  - Google Meet
+  - Webex
+
+- Project and task management
+  - Asana: Good for tracking projects and responsibilities.
+  - Trello: Simple visual boards for tasks and workflows.
+  - Monday.com: Flexible project management and reporting.
+  - ClickUp: Combines tasks, documents, and collaboration features.
+
+- Document collaboration
+  - Microsoft 365 (Word, Excel, PowerPoint online)
+  - Google Workspace (Docs, Sheets, Slides)
+  - Notion: Combines notes, documents, and knowledge management.
+
+- Scheduling and shift coordination
+  - Microsoft Shifts (within Teams)
+  - When I Work
+  - Deputy
+  - UKG/Kronos (commonly used in healthcare organizations)
+
+- Knowledge sharing
+  - Confluence
+  - Notion
+  - SharePoint
+
+For a hospital team, a practical setup often looks like:
+- Microsoft Teams for messaging and meetings
+- SharePoint or OneDrive for documents
+- Microsoft Shifts or a workforce-management platform for scheduling
+- A project tool such as Asana or Trello for non-clinical initiatives
+
+If you're looking specifically for collaboration among patient care aides, nurses, and unit staff, I can suggest tools that fit healthcare workflows more closely.

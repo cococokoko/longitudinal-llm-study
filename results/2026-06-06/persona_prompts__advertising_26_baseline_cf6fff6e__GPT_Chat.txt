@@ -1,0 +1,93 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=682
+Latency:   5091 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Small businesses are frequent targets for cyberattacks because they often have fewer security resources than larger organizations. Effective data security focuses on reducing risk through a combination of technology, policies, and employee awareness.
+
+Key best practices include:
+
+- Use strong authentication
+  - Require strong, unique passwords for all accounts.
+  - Implement multi-factor authentication (MFA) wherever possible, especially for email, financial systems, and cloud services.
+  - Consider a password manager to help employees manage credentials securely.
+
+- Keep software updated
+  - Regularly update operating systems, applications, browsers, and firmware.
+  - Enable automatic updates when practical.
+  - Remove unsupported or unused software.
+
+- Back up data regularly
+  - Maintain automated backups of critical business data.
+  - Follow the "3-2-1" rule:
+    - 3 copies of data
+    - 2 different storage media
+    - 1 copy stored offsite or in the cloud
+  - Periodically test backup restoration procedures.
+
+- Protect devices and networks
+  - Use reputable antivirus or endpoint protection software.
+  - Configure firewalls on devices and network equipment.
+  - Secure Wi-Fi with strong encryption (WPA3 if available).
+  - Change default passwords on routers and connected devices.
+
+- Control access to data
+  - Apply the principle of least privilege: employees should only access the information necessary for their roles.
+  - Review user permissions regularly.
+  - Promptly disable access for departing employees and contractors.
+
+- Encrypt sensitive information
+  - Use encryption for data stored on laptops, mobile devices, and servers.
+  - Ensure sensitive data is encrypted during transmission using secure protocols such as HTTPS and VPNs.
+
+- Train employees
+  - Educate staff about phishing, social engineering, and suspicious attachments.
+  - Provide regular security awareness training.
+  - Establish clear procedures for reporting potential security incidents.
+
+- Secure cloud services
+  - Choose reputable cloud providers with strong security practices.
+  - Enable MFA and audit logging.
+  - Review security settings and sharing permissions regularly.
+
+- Develop security policies
+  - Create written policies covering passwords, device use, data handling, remote work, and incident reporting.
+  - Ensure employees understand and acknowledge these policies.
+
+- Monitor and log activity
+  - Enable logging on critical systems.
+  - Review alerts and unusual account activity.
+  - Consider managed security services if internal expertise is limited.
+
+- Prepare an incident response plan
+  - Define steps for detecting, containing, and recovering from security incidents.
+  - Identify key contacts, including IT support, legal counsel, and insurance providers.
+  - Practice the plan periodically.
+
+- Protect against ransomware
+  - Maintain offline or immutable backups.
+  - Restrict administrative privileges.
+  - Keep systems patched and train employees to recognize phishing attempts.
+
+- Address regulatory and legal requirements
+  - Understand any industry-specific obligations (e.g., HIPAA, PCI DSS, GDPR, CCPA).
+  - Collect and retain only the data necessary for business operations.
+
+For most small businesses, the highest-impact measures are:
+1. Enable MFA on all important accounts.
+2. Keep systems and software updated.
+3. Maintain tested backups.
+4. Train employees to recognize phishing.
+5. Limit access to sensitive data.
+6. Use endpoint protection and firewalls.
+
+These steps provide strong protection against the most common threats while remaining practical and cost-effective.

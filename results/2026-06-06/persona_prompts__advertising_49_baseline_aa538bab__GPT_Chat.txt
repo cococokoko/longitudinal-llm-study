@@ -1,0 +1,67 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=518
+Latency:   5043 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi depends on whether the issue is coverage, speed, reliability, or congestion. Here are the most effective steps, roughly in order of impact:
+
+- Place your router in a central, open location.
+  - Avoid closets, cabinets, basements, and locations behind large metal objects.
+  - Elevate it on a shelf or table.
+
+- Use the 5 GHz or 6 GHz band when available.
+  - 5 GHz and 6 GHz usually provide faster speeds and less interference than 2.4 GHz.
+  - 2.4 GHz may reach farther but is often more congested.
+
+- Update router firmware.
+  - Manufacturers frequently release performance and security improvements.
+
+- Optimize Wi‑Fi channels.
+  - On 2.4 GHz, use channels 1, 6, or 11.
+  - If neighbors' networks are crowded on the same channel, switching can help.
+
+- Upgrade old equipment.
+  - If your router is several years old, consider a Wi‑Fi 6 or Wi‑Fi 6E router.
+  - Newer devices often handle multiple connected devices more efficiently.
+
+- Reduce interference.
+  - Keep the router away from microwaves, cordless phone bases, baby monitors, and Bluetooth-heavy areas.
+  - Thick walls, concrete, brick, and metal can significantly weaken signals.
+
+- Use a mesh Wi‑Fi system for large homes.
+  - Mesh systems provide better whole-home coverage than a single router.
+  - Place mesh nodes where they still receive a strong signal from the main unit.
+
+- Consider wired backhaul.
+  - If possible, connect mesh nodes or access points with Ethernet for better performance.
+
+- Add access points instead of relying on repeaters.
+  - Access points connected by Ethernet generally outperform wireless extenders.
+
+- Limit bandwidth-heavy activities when troubleshooting.
+  - Streaming, gaming, cloud backups, and large downloads can affect performance.
+
+- Check your internet speed directly from the modem.
+  - Connect a computer via Ethernet and run a speed test.
+  - If wired speeds are slow, the issue may be your internet service rather than Wi‑Fi.
+
+- Enable modern security settings.
+  - Use WPA3 if supported (or WPA2/WPA3 mixed mode).
+  - Avoid older security standards that may reduce compatibility or performance.
+
+If you tell me:
+- The size of your home/apartment
+- Your router model
+- Your internet speed plan
+- Whether the issue is slow speed, weak signal, or dropped connections
+
+I can suggest more specific improvements.

@@ -1,0 +1,27 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=23 out=1020
+Latency:   11934 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+Here is a highly effective tip specifically tailored to the unique challenges of a physician-scientist:
+
+**Implement a "Tiered Mentorship and Delegation" structure.**
+
+As a physician-scientist, your biggest enemy is time. You are constantly pulled between clinical duties, grant writing, and the lab. Because you cannot be physically present in the lab at all times, being the sole bottleneck for every question or troubleshooting issue will stall your research and burn you out. 
+
+Here is how to implement this structure:
+
+*   **Pair Senior with Junior:** Explicitly assign your senior lab members (postdocs, senior PhD students, or experienced lab managers) to mentor junior members (undergrads, new grad students, or technicians). 
+*   **Define the Escalation Pathway:** Make it a rule that when a junior member hits a roadblock, they must first consult their senior mentor. If the senior mentor cannot solve it, *then* it comes to you. 
+*   **Reframe it as Career Development:** Don't present this as you "brushing off" junior members. Frame it correctly: you are giving your postdocs and senior students essential leadership and management

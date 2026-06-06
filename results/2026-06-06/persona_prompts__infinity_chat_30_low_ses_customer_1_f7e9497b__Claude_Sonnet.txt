@@ -1,0 +1,51 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_30_low_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=52 out=289
+Latency:   9026 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Choose the right decision: buy a new Zara sneaker or a used Adidas sneaker?
+
+── Response ────────────────────────────────────────────────────────
+## Sneaker Decision Analysis
+
+Given that you work **full-time in fast food with an unpredictable schedule**, here's my honest assessment:
+
+---
+
+### I'd recommend the **Used Adidas Sneaker** ✓
+
+**Key reasons:**
+
+- **Budget protection** - Unpredictable schedules mean unpredictable income; saving money matters
+- **Adidas durability** - Generally better build quality than Zara footwear for long shifts
+- **Comfort for standing** - Adidas athletic shoes are designed for extended wear
+- **Practical value** - Fast food work is hard on shoes anyway
+
+---
+
+### Concerns about the New Zara Sneaker:
+- Zara isn't known for footwear durability
+- "New" doesn't mean better for your specific needs
+- Higher price for potentially lower performance
+
+---
+
+### Before deciding, consider:
+- **Condition** of the used Adidas (minimal wear = great deal)
+- **Price difference** between the two
+- **Your current shoe situation** (urgent need changes priorities)
+
+---
+
+**Bottom line:** A quality used Adidas will likely serve you better both financially and physically for demanding work shifts.
+
+Would you like help evaluating the specific condition or price of the used pair?

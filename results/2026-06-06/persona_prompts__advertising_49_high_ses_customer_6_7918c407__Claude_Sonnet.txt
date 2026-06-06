@@ -1,0 +1,51 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=29 out=316
+Latency:   7994 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Here are some effective ways to improve your home WiFi:
+
+## Router Placement
+- Position it **centrally** in your home
+- Keep it **elevated** and in the open
+- Avoid walls, appliances, and metal objects nearby
+
+## Hardware Upgrades
+- **Upgrade your router** if it's more than 3-4 years old
+- Consider a **mesh network system** (Eero, Google Nest, Orbi) for larger homes
+- Add a **WiFi extender/repeater** for dead zones
+
+## Settings Optimization
+- **Change the WiFi channel** to reduce interference from neighbors
+- Use **5GHz band** for faster speeds nearby, **2.4GHz** for longer range
+- Keep **firmware updated**
+- Use a strong, unique password (security affects performance)
+
+## Connection Tips
+- Use **ethernet cables** for stationary devices (TVs, gaming consoles, computers)
+- **Restart your router** periodically
+- Limit bandwidth-heavy devices during peak use
+
+## Service Considerations
+- Check if your **internet plan** matches your actual needs
+- Contact your **ISP** if speeds are consistently below what you're paying for
+- Consider upgrading to a **fiber connection** if available
+
+## Quick Wins
+- Restart your router
+- Move closer to the router
+- Disconnect unused devices
+
+Would you like more detail on any of these?

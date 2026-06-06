@@ -1,0 +1,90 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=525
+Latency:   4397 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to stay relevant over the next 5–10 years, focus less on specific programming languages and more on skills that continue to matter as tools change.
+
+Key areas to learn:
+
+• Programming fundamentals
+  - Data structures and algorithms
+  - Object-oriented and functional programming concepts
+  - Debugging and testing
+  - Version control (Git)
+
+• AI and machine learning literacy
+  - How large language models work
+  - Prompt engineering
+  - Using AI coding tools effectively
+  - Basic machine learning concepts
+  - Building applications that integrate AI APIs
+
+• Backend development
+  - APIs (REST and GraphQL)
+  - Databases (SQL and NoSQL)
+  - Authentication and security
+  - Distributed systems basics
+
+• Cloud computing
+  - AWS, Azure, or Google Cloud
+  - Containers (Docker)
+  - Kubernetes fundamentals
+  - Serverless architecture
+
+• Cybersecurity
+  - Secure coding practices
+  - Identity and access management
+  - Common vulnerabilities (OWASP Top 10)
+  - Privacy and compliance concepts
+
+• Data skills
+  - SQL
+  - Data modeling
+  - Data pipelines
+  - Analytics fundamentals
+
+• Software engineering practices
+  - Automated testing
+  - CI/CD pipelines
+  - System design
+  - Monitoring and observability
+
+Languages worth learning today:
+• Python
+  - Excellent for AI, automation, scripting, and backend work.
+• JavaScript/TypeScript
+  - Dominates web development and increasingly backend development.
+• SQL
+  - Essential across nearly every software field.
+• One strongly typed language
+  - Java, C#, Go, or Rust are all good choices.
+
+Given that you work shifts at a hospital as a patient care aide, you may have an advantage in healthcare technology because you already understand clinical workflows. Areas where that experience could be especially valuable include:
+• Electronic health record (EHR) software
+• Healthcare data and interoperability (FHIR, HL7)
+• Medical device software
+• Healthcare analytics
+• AI tools for healthcare operations and documentation
+
+A practical learning path could be:
+1. Learn Python and Git.
+2. Learn SQL and databases.
+3. Build small web applications with JavaScript/TypeScript.
+4. Learn cloud basics and Docker.
+5. Learn how to integrate AI APIs into applications.
+6. Study healthcare technology standards such as FHIR if healthcare software interests you.
+
+Your clinical experience gives you domain knowledge that many developers lack. Combining software skills with healthcare knowledge can make you more valuable than competing solely as a generalist developer.

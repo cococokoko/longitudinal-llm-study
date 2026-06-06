@@ -1,0 +1,40 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_44_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=345
+Latency:   3784 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on the disease involved, how it spreads, your personal risk factors, and current public health guidance. In general, these measures can reduce risk:
+
+- Stay informed about current recommendations from public health authorities in your area and destination.
+- Avoid traveling if you are sick, have symptoms, or have recently tested positive for the infectious disease in question.
+- Keep vaccinations and boosters up to date when available and recommended.
+- Consider whether the trip is necessary, especially during periods of high transmission.
+
+During travel:
+- Choose less crowded travel times and routes when possible.
+- Wear a well-fitting, high-quality mask (such as a respirator-style mask) in crowded indoor settings or when recommended by health authorities.
+- Improve ventilation when possible by spending time outdoors, opening windows, or choosing well-ventilated spaces.
+- Wash your hands regularly with soap and water or use hand sanitizer if handwashing is not available.
+- Avoid touching your face with unwashed hands.
+- Maintain physical distance from others when feasible.
+
+For specific modes of travel:
+- Private vehicles generally allow more control over exposure than shared transportation.
+- If flying, follow airline and airport health guidance, minimize time in crowded areas, and pay attention to ventilation and masking recommendations.
+- On trains, buses, or ships, avoid crowded sections when possible and follow any health protocols in place.
+
+Before and after travel:
+- Check destination entry requirements and local health regulations.
+- Consider testing before departure and after arrival if recommended or if you develop symptoms.
+- Monitor yourself for symptoms after travel and seek medical advice if needed.
+
+If you tell me which pandemic or infectious disease you're concerned about, I can provide more specific guidance.

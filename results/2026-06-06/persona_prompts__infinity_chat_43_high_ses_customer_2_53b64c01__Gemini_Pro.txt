@@ -1,0 +1,32 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   infinity_chat_43_high_ses_customer_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=41 out=1010
+Latency:   8848 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Paraphrase this: We're checking if the domain 'aspris.ae' is included in our scope.
+
+── Response ────────────────────────────────────────────────────────
+Here are a few ways to paraphrase the sentence, tailored to the formal, precise, and professional tone expected in legal correspondence:
+
+**Option 1 (Direct and professional - Recommended):**
+> "We are currently verifying whether the domain 'aspris.ae' falls within the scope of our engagement."
+
+**Option 2 (Slightly more formal):**
+> "We are in the process of confirming whether the domain 'aspris.ae' is encompassed within our current scope of work."
+
+**Option 3 (Focuses on the review process):**
+> "We are currently determining whether the domain 'aspris.ae' falls under the purview of our review." 
+
+**Key adjustments made for a legal audience:**
+*   Changed the contraction "We're" to "We are" for appropriate formality.
+*   Upgraded "checking if" to "verifying whether" or "determining whether" for greater precision.
+*   Replaced "in our scope" with standard legal/corporate phrasing like "scope of our engagement," "scope of work," or "purview."

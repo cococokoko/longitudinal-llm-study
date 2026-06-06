@@ -1,0 +1,25 @@
+Wave:      2026-06-06
+Dataset:   global_opinion_qa
+Item ID:   goqa_6ea4c309f561
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=117 out=19
+Latency:   1166 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?:
+
+Demobilized from armed groups
+
+Options:
+A. Mentioned
+B. Not mentioned
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.35, "B": 0.65}

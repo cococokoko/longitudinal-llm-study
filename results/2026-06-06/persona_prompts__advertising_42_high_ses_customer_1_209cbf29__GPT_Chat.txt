@@ -1,0 +1,94 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=37 out=609
+Latency:   5477 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on whether your priority is calorie tracking, performance training, habit building, or integration with wearables. Here are some of the strongest options as of 2026:
+
+Nutrition Tracking
+
+• MacroFactor
+  - Excellent for calorie and macronutrient tracking
+  - Uses weight trends and intake data to estimate energy expenditure
+  - Strong for body composition goals
+  - No ads and a clean interface
+
+• Cronometer
+  - Best for detailed nutrient analysis
+  - Tracks vitamins, minerals, amino acids, and other micronutrients
+  - Popular among clinicians, athletes, and people with specific dietary goals
+
+• MyFitnessPal
+  - Largest food database
+  - Easy barcode scanning and restaurant entries
+  - Good all-around choice, though some features require a subscription
+
+Fitness and Exercise Tracking
+
+• Strava
+  - Excellent for running, cycling, hiking, and endurance sports
+  - Strong social and community features
+  - Works with most GPS watches and bike computers
+
+• Garmin Connect
+  - One of the most comprehensive platforms if you use Garmin devices
+  - Tracks training load, recovery, sleep, HRV, and performance metrics
+
+• Apple Fitness / Apple Health
+  - Best for Apple Watch users
+  - Integrates activity, workouts, heart rate, sleep, and third-party apps
+
+• TrainingPeaks
+  - Ideal for serious endurance athletes
+  - Advanced training planning and coach-athlete collaboration
+
+All-in-One Health Tracking
+
+• Athlytic (Apple ecosystem)
+  - Recovery, strain, sleep, and readiness metrics derived from Apple Watch data
+  - Similar philosophy to WHOOP
+
+• WHOOP
+  - Subscription-based wearable and app
+  - Strong focus on recovery, sleep, strain, and behavioral insights
+
+• Oura
+  - Excellent sleep and recovery tracking
+  - Less focused on workout tracking than Garmin or Apple Watch
+
+Habit and Lifestyle Tracking
+
+• Habitify
+  - Clean habit-building app
+  - Useful for nutrition, exercise, sleep, and other routines
+
+• Streaks
+  - Simple habit tracking for Apple users
+  - Good for maintaining consistency
+
+Recommended combinations
+
+• General health: Apple Health + Cronometer
+• Weight loss/body composition: MacroFactor + Apple Health or Garmin Connect
+• Endurance athlete: Garmin Connect + TrainingPeaks + Cronometer
+• Sleep/recovery focus: Oura or WHOOP + Cronometer
+• Beginner seeking simplicity: MyFitnessPal + Apple Health
+
+If you tell me:
+- iPhone or Android
+- Whether you use an Apple Watch, Garmin, WHOOP, Oura, or another wearable
+- Your goal (weight loss, muscle gain, endurance training, general health, etc.)
+
+I can narrow it down to the 2–3 best options for your situation.

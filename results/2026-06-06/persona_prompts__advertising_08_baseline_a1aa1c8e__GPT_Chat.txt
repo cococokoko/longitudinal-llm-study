@@ -1,0 +1,43 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_08_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=220
+Latency:   1957 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+Finding the perfect hiking trail depends on a few factors. If you tell me your location and preferences, I can recommend specific trails.
+
+Some things that help narrow it down:
+- Location (country, state/province, or city)
+- Desired distance (e.g., 2 miles, 10 miles, all-day hike)
+- Difficulty level (easy, moderate, strenuous)
+- Elevation gain you're comfortable with
+- Trail type (loop, out-and-back, point-to-point)
+- Features you're interested in:
+  - Mountain views
+  - Waterfalls
+  - Lakes
+  - Forests
+  - Wildflowers
+  - Wildlife viewing
+  - Coastal scenery
+- Whether you're hiking with:
+  - Children
+  - Dogs
+  - Beginners
+- Time of year and expected weather
+
+You can also use popular trail-finding apps and websites:
+- AllTrails
+- Hiking Project
+- Gaia GPS
+- Komoot
+
+If you share your location and what kind of scenery or challenge you're looking for, I can suggest some excellent trails nearby.

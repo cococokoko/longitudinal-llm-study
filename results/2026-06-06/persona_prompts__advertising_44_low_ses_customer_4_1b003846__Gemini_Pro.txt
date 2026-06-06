@@ -1,0 +1,29 @@
+Wave:      2026-06-06
+Dataset:   persona_prompts
+Item ID:   advertising_44_low_ses_customer_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=1020
+Latency:   11357 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+Given your work as a patient care aide at the local hospital, you already know a great deal about infection control, and your priority is likely a balance between protecting yourself, your family, and your vulnerable patients. 
+
+Because you work shifts, your travel strategies might look a little different than someone working a standard 9-to-5. Here are the safest ways to travel during a pandemic, tailored to your specific situation:
+
+**1. Driving Your Own Vehicle (The Safest Option)**
+Traveling alone in your personal car is the safest way to avoid airborne viruses. Since you are transitioning between a high-exposure hospital environment and your home, focus on your vehicle's hygiene:
+*   **The "Clean/Dirty" Routine:** Keep hand sanitizer in your car door. Sanitize your hands the second you get in, *before* touching the steering wheel. 
+*   **Work Gear:** Consider keeping a dedicated bag in your trunk for your work shoes or scrubs so you aren't bringing hospital germs into the main cabin of your car or your home.
+
+**2. Taking Public Transit**
+If you rely on buses or trains, your shift schedule might actually work to your advantage. 
+*   **Off-Peak Commuting:** Traveling early in
