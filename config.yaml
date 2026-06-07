@@ -47,8 +47,8 @@ experiment_models:
 # ── Datasets ──────────────────────────────────────────────────────────────────
 # Each dataset entry is loaded, sampled, and sent as prompts to all models.
 #
-# type: local_json   — path to a local JSON file (list of objects)
-# type: huggingface  — HuggingFace dataset (no token required for public sets)
+# type: local_json   — path to a local JSON file 
+# type: huggingface  — HuggingFace dataset 
 #
 # prompt_field:      column/key whose value becomes the prompt sent to the LLM
 # id_field:          column/key used as the stable item ID (null = auto-index)

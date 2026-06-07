@@ -2,12 +2,12 @@ name: Daily pipeline run
 
 on:
   schedule:
-    - cron: "0 7 * * *"    # 09:00 CEST / 08:00 CET  (GitHub Actions runs in UTC)
-  workflow_dispatch:         # allow manual trigger from GitHub UI
+    - cron: "0 7 * * *"   # 7:00 UTC --> 09:00 CEST / 08:00 CET  
+  workflow_dispatch:         
 
 concurrency:
   group: daily-run
-  cancel-in-progress: false   # queue rather than cancel — don't lose a run
+  cancel-in-progress: false   
 
 jobs:
   run:
@@ -36,7 +36,7 @@ jobs:
 
       - name: Generate dashboard data
         run: python generate_dashboard_data.py
-        continue-on-error: true   # don't block DB commit if embeddings fail
+        continue-on-error: true   
 
       - name: Commit results
         run: |

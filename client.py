@@ -250,7 +250,7 @@ async def identify_model(client: "LLMClient", model_id: str) -> str | None:
         model=model_id,
         prompt=(
             "What is the exact model version you are running on? "
-            "Reply in one short sentence, e.g. 'I am GPT-5.5' or 'I am Claude 4 Sonnet'. "
+            "Reply details only, e.g. 'GPT-5.5' or 'Claude 4 Sonnet'. "
             "Do not add any other text."
         ),
         temperature=0.0,

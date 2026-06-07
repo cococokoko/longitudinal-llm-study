@@ -4,16 +4,16 @@ pipeline.py — CLI entry point for the LLM dataset longitudinal study.
 
 Usage
 ─────
-  # Run today's wave across main models (Gemini, Claude, ChatGPT):
+  # Run today's wave across main models defined in config.yaml
   python pipeline.py run
 
-  # Also include the experiment model:
+  # Run on cheaper experiment model only
   python pipeline.py run --experiment
 
-  # Export all responses to CSV:
+  # Export all responses to CSV
   python pipeline.py export --format csv --out results/
 
-  # Print a statistical report:
+  # Print a statistical report
   python pipeline.py report
 """
 
@@ -67,10 +67,10 @@ def load_config(path: str = "config.yaml") -> dict:
 def seed_models(
     conn,
     cfg: dict,
-    include_experiment: bool = False,
+    experiment: bool = False,
     temperature_override: float | None = None,
 ) -> None:
-    if include_experiment:
+    if experiment:
         models = [dict(em, provider=em.get("provider", "openrouter")) for em in cfg.get("experiment_models", [])]
     else:
         models = list(cfg.get("models", []))
@@ -146,7 +146,7 @@ def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
     conn    = open_db(db_path)
 
     temperature_override = getattr(args, "temperature", None)
-    seed_models(conn, cfg, include_experiment=include_exp, temperature_override=temperature_override)
+    seed_models(conn, cfg, experiment=include_exp, temperature_override=temperature_override)
 
     today    = datetime.date.today().isoformat()
     wave_tag = getattr(args, "wave_tag", None)

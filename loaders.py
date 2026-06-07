@@ -17,7 +17,7 @@ class DatasetItem:
     item_id: str
     prompt_text: str
     dataset_name: str
-    system_text: Optional[str] = None     # customer-persona system message, if any
+    system_text: Optional[str] = None     
     metadata: dict[str, Any] = field(default_factory=dict)
 
 
