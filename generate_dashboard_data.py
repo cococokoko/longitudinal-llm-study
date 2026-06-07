@@ -35,7 +35,7 @@ MODEL_LABELS = {
 
 # Waves before this date are excluded from all analyses.
 # Update when the study configuration changes significantly.
-STUDY_START = "2026-06-03"
+STUDY_START = "2026-06-04"
 
 # Cosine similarity requires at least this many waves.
 MIN_WAVES_FOR_COSINE = 2
