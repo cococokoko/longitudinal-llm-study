@@ -1,0 +1,28 @@
+Wave:      2026-06-07
+Dataset:   global_opinion_qa
+Item ID:   goqa_0326dc80d3d2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=111 out=558
+Latency:   6219 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: If you received an employment opportunity in the last four weeks or during the next month, would you be interested and able to start working?
+
+Options:
+A. Yes
+B. No
+C. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{
+  "A": 0.4,
+  "B": 0.5,
+  "C": 0.1
+}

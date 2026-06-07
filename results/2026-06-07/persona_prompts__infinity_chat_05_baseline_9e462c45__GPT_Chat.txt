@@ -1,0 +1,26 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=171
+Latency:   2535 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A valuable feature for a smartwatch designed specifically for senior citizens would be an "Intelligent Safety Check-In" system.
+
+How it works:
+- The watch learns the user's typical daily activity patterns (walking, sleeping, movement around the home).
+- If it detects an unusual lack of movement, a possible fall, or behavior that differs significantly from normal routines, it gently prompts the wearer to confirm they are okay.
+- If there is no response within a set time, the watch automatically alerts designated family members, caregivers, or emergency services and shares the user's location.
+- The system can also provide medication reminders and notify caregivers if reminders are repeatedly missed.
+
+Benefits:
+- Enhances safety while supporting independence.
+- Reduces anxiety for family members and caregivers.
+- Provides assistance during emergencies, especially when the wearer may be unable to call for help manually.

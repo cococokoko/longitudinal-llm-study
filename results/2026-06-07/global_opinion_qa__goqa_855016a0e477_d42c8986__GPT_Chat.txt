@@ -1,0 +1,37 @@
+Wave:      2026-06-07
+Dataset:   global_opinion_qa
+Item ID:   goqa_855016a0e477
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=310 out=292
+Latency:   2715 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Please tell me for each of the following things how essential you think it is as a characteristic of democracy. Use this scale where 1 means “not at all an essential characteristic of democracy” and 10 means it definitely is “an essential characteristic of democracy
+
+Religious authorities interpret the laws
+
+Options:
+A. It is against democracy (spontaneous)
+B. Not an essential characteristic of democracy
+C. 2
+D. 3
+E. 4
+F. 5
+G. 6
+H. 7
+I. 8
+J. 9
+K. An essential characteristic of democracy
+L. Don't know
+M. No answer
+N. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.61, "B": 0.25, "C": 0.06, "D": 0.03, "E": 0.02, "F": 0.01, "G": 0.01, "H": 0.005, "I": 0.005, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0}

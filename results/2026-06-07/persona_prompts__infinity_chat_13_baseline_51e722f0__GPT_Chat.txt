@@ -1,0 +1,32 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_13_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=23 out=224
+Latency:   2438 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I have an apartment that costs about $100 a month. How do I survive?
+
+── Response ────────────────────────────────────────────────────────
+If your apartment really costs only about $100 per month, that's actually an unusually low housing expense in most places. Whether you can "survive" depends on your other costs and your income.
+
+A simple way to think about it:
+
+- Housing: $100/month
+- Food: often $150–$500+/month depending on location and habits
+- Utilities: electricity, water, internet, phone, etc.
+- Transportation: public transit, gas, car expenses, etc.
+- Healthcare and medications (if applicable)
+- Emergency savings
+
+To figure out whether your situation is workable, tell me:
+- What country or city you're in
+- Your monthly income (or whether you currently have none)
+- Whether the $100 includes utilities
+- Your age and whether you're working, studying, or unemployed
+
+With those details, I can help you build a realistic survival budget.

@@ -1,0 +1,18 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_52_low_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=27 out=710
+Latency:   8505 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a sentence where the last word is 'apple'.
+
+── Response ────────────────────────────────────────────────────────
+After a long day of managing the household and caring for your extended family, you finally took a quiet moment for yourself to enjoy a fresh apple.

@@ -1,0 +1,18 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_73_high_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=20 out=789
+Latency:   8044 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a metaphor involving time.
+
+── Response ────────────────────────────────────────────────────────
+Time is the ultimate, strictly depreciating asset in your portfolio. It has zero salvage value and cannot be hedged, banked, or rolled over into the next fiscal quarter. Every morning, you are granted a fixed, non-negotiable allocation; by midnight, any unutilized balance is written off entirely. The only variable you control is the leverage you apply to it—whether you burn it on low-yield operational friction, or invest it to compound into high-margin strategic dividends.

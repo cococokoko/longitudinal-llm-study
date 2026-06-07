@@ -1,0 +1,22 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_03_high_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=21 out=1020
+Latency:   11112 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a joke about electric vehicles.
+
+── Response ────────────────────────────────────────────────────────
+Why do consulting partners love electric vehicles?
+
+Because it’s the only thing on the road that loves *charging* as much as they do! 
+
+*(Though to be fair, the

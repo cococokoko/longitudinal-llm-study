@@ -1,0 +1,68 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_02_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=514
+Latency:   4348 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+For dry skin, the goal is to support the skin barrier, reduce water loss, and keep the skin comfortably hydrated. A simple, consistent routine is usually more effective than a complicated one.
+
+Morning:
+1. Gentle cleanser (or just rinse with water if your skin isn't oily)
+   - Look for a fragrance-free, non-foaming cleanser.
+   - Examples: CeraVe Hydrating Cleanser, La Roche-Posay Toleriane Hydrating Gentle Cleanser.
+
+2. Hydrating serum (optional)
+   - Ingredients like hyaluronic acid, glycerin, or panthenol can help attract moisture.
+
+3. Moisturizer
+   - Choose a cream rather than a lightweight lotion if your skin is very dry.
+   - Look for ceramides, glycerin, squalane, and shea butter.
+
+4. Sunscreen (daily)
+   - SPF 30 or higher.
+   - Dry skin often does well with moisturizing sunscreen formulations.
+
+Evening:
+1. Gentle cleanser
+   - Remove sunscreen and makeup without stripping the skin.
+
+2. Treatment (optional)
+   - If you're targeting aging, uneven tone, or acne, consider a retinoid, but start slowly (1–2 nights per week) since retinoids can increase dryness.
+
+3. Moisturizer
+   - Apply generously while skin is still slightly damp.
+
+4. Occlusive layer (if very dry)
+   - A thin layer of petrolatum (e.g., Vaseline) or a healing ointment over moisturizer can significantly reduce overnight moisture loss.
+
+Key ingredients that tend to work well for dry skin:
+- Ceramides (support skin barrier)
+- Glycerin (humectant)
+- Hyaluronic acid (humectant)
+- Squalane (emollient)
+- Urea (hydrating, especially for very dry skin)
+- Petrolatum (excellent at preventing water loss)
+
+Things to avoid if dryness is a concern:
+- Harsh scrubs
+- Over-cleansing
+- Alcohol-heavy toners
+- Strong exfoliating acids used too frequently
+- Very hot showers or face washing
+
+A practical, low-complexity routine:
+- AM: Gentle cleanser → moisturizer → SPF 30+
+- PM: Gentle cleanser → moisturizer → thin layer of petrolatum if needed
+
+If your dryness is accompanied by significant redness, itching, flaking, or irritation that doesn't improve with moisturization, it may be worth consulting a dermatologist to evaluate conditions such as eczema, rosacea, or seborrheic dermatitis.

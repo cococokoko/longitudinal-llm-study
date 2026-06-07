@@ -1,0 +1,22 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_03_low_ses_customer_3
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=23 out=697
+Latency:   7048 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a joke about electric vehicles.
+
+── Response ────────────────────────────────────────────────────────
+Why did the electric car get a little nervous at the office? 
+
+Because it was still on probation and didn't want to get *discharged*! 
+
+(Hope the new job is going great and you're staying fully charged during your own probation period!) 😉⚡

@@ -1,0 +1,107 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=16 out=790
+Latency:   6360 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The best remote team collaboration tools depend on your team's size, workflow, and priorities. Here are some of the strongest options by category:
+
+Communication
+- Slack
+  - Best for: Real-time messaging and integrations
+  - Strengths: Channels, threads, app integrations, automation
+  - Considerations: Can become noisy without good channel management
+- Microsoft Teams
+  - Best for: Organizations using Microsoft 365
+  - Strengths: Chat, video meetings, file sharing, Office integration
+  - Considerations: Interface can feel complex for some users
+
+Video Conferencing
+- Zoom
+  - Best for: Reliable video meetings and webinars
+  - Strengths: High-quality video, breakout rooms, webinar features
+  - Considerations: Advanced features may require paid plans
+- Google Meet
+  - Best for: Teams using Google Workspace
+  - Strengths: Simple, browser-based, easy scheduling
+  - Considerations: Fewer advanced meeting features than Zoom
+
+Project Management
+- Asana
+  - Best for: Task tracking and workflow management
+  - Strengths: Timelines, automation, reporting
+  - Considerations: Can be overwhelming for very small teams
+- ClickUp
+  - Best for: Teams wanting an all-in-one workspace
+  - Strengths: Tasks, docs, goals, dashboards
+  - Considerations: Large feature set creates a learning curve
+- Trello
+  - Best for: Simple project tracking
+  - Strengths: Easy-to-use Kanban boards
+  - Considerations: Less powerful for complex projects
+- Monday.com
+  - Best for: Custom workflows and team coordination
+  - Strengths: Flexible views and automations
+  - Considerations: Costs can rise as teams grow
+
+Documentation and Knowledge Management
+- Notion
+  - Best for: Combining documents, databases, and project information
+  - Strengths: Flexible and highly customizable
+  - Considerations: Requires structure to stay organized
+- Confluence
+  - Best for: Larger teams and technical documentation
+  - Strengths: Strong collaboration and Jira integration
+  - Considerations: Can become cluttered without governance
+- Google Docs/Drive
+  - Best for: Simple, real-time collaboration
+  - Strengths: Familiar and easy to use
+  - Considerations: Less structured knowledge management
+
+Whiteboarding and Brainstorming
+- Miro
+  - Best for: Workshops, planning, and visual collaboration
+  - Strengths: Extensive templates and collaboration features
+  - Considerations: Large boards can become difficult to navigate
+- FigJam
+  - Best for: Design and product teams
+  - Strengths: Easy collaboration and Figma integration
+  - Considerations: Less comprehensive than Miro for some use cases
+
+File Sharing and Cloud Storage
+- Google Drive
+  - Best for: Google Workspace users
+  - Strengths: Real-time collaboration and sharing
+- OneDrive
+  - Best for: Microsoft 365 users
+  - Strengths: Deep Office integration
+- Dropbox
+  - Best for: Simple file synchronization across devices
+  - Strengths: Reliable file management
+
+Best Tool Stacks by Team Type
+- Small startup:
+  - Slack + Notion + Trello + Google Meet
+- Growing company:
+  - Slack + Asana + Notion + Zoom
+- Enterprise:
+  - Microsoft Teams + SharePoint/OneDrive + Asana or Jira + Zoom
+- Product and engineering teams:
+  - Slack + Jira + Confluence + Zoom + Miro
+
+If you're choosing from scratch and want a broadly effective setup, a common combination is:
+- Slack for communication
+- Asana or ClickUp for project management
+- Notion for documentation
+- Zoom for meetings
+- Miro for brainstorming
+
+That stack covers most remote collaboration needs without excessive overlap.

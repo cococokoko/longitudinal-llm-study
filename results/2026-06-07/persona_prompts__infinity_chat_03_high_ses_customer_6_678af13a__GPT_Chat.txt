@@ -1,0 +1,20 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_03_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=71
+Latency:   1508 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a joke about electric vehicles.
+
+── Response ────────────────────────────────────────────────────────
+Why did the electric vehicle get promoted?
+
+Because every time there was a tough problem, it was the first to step up and provide a charge of leadership. The gas cars were exhausted.

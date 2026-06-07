@@ -1,0 +1,44 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=329
+Latency:   9782 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Great question. Given your background as a neurosurgeon, you have some genuinely valuable context that could shape which direction makes the most sense.
+
+## High-Value Areas to Consider
+
+### Most Relevant to Medicine/Neuroscience
+- **Python** - dominant in medical AI/ML research
+- **Machine learning fundamentals** - especially neural networks (directly applicable to brain imaging, diagnostics)
+- **Medical imaging processing** - tools like ITK, SimpleITK, 3D Slicer
+- **Clinical data analysis** - working with EHR data, FHIR standards
+
+### Broadly Future-Proof Skills
+- **AI/ML literacy** - understanding what models can and can't do
+- **Data science basics** - statistics you likely already know translate well
+- **Cloud platforms** - AWS, Google Cloud (healthcare data infrastructure)
+- **Version control** - Git is essentially non-negotiable
+
+## Honest Considerations
+
+- You probably don't need to become a full software engineer
+- **Your real advantage** is domain expertise + technical literacy, which is rare and valuable
+- Clinician-developers who can bridge medicine and technology are genuinely scarce
+- Research applications may matter more than production coding
+
+## Practical Starting Point
+Python + basic ML concepts would likely give you the **highest return on time invested** given your specific background.
+
+**What's your actual goal?** Research, clinical tools, entrepreneurship, or just staying informed? That would sharpen the recommendation considerably.

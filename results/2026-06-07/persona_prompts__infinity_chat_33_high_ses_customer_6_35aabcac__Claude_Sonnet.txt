@@ -1,0 +1,59 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=49 out=331
+Latency:   8842 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface
+
+Here's a practical guide for your setup:
+
+## Installation First
+
+1. Go to **dolphin-emu.org**
+2. Download the latest stable release (Windows x64)
+3. Run the installer - no admin rights typically needed
+
+## Touchpad Setup
+
+**Basic navigation works well:**
+- Single tap = left click
+- Two-finger tap = right click
+- Two-finger scroll = navigate menus
+- Pinch = zoom in Dolphin's interface
+
+**Key touchpad settings to adjust:**
+- Go to Windows Settings → Bluetooth & Devices → Touchpad
+- Enable **three-finger gestures** for flexibility
+- Increase pointer speed for easier navigation
+
+## On-Screen Keyboard
+
+- Access via taskbar system tray or **Windows + Ctrl + O**
+- Pin it to taskbar for quick access
+- Use **floating mode** so it doesn't push Dolphin off screen
+
+## Controller Configuration in Dolphin
+
+Since you're using touchpad/keyboard:
+1. Open Dolphin → **Controllers**
+2. Select **Emulated Wii Remote**
+3. Map keyboard keys to Wii buttons
+4. Consider mapping frequently used buttons to **touchpad gestures**
+
+## Honest Recommendation
+
+For a consulting partner's time efficiency, a **$20-30 USB controller** would dramatically improve the experience over touchpad gaming.
+
+Want help with specific game configuration or performance settings?

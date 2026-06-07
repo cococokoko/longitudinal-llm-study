@@ -1,0 +1,28 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=23 out=1020
+Latency:   11012 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, your biggest leadership challenge is likely **time fragmentation**. Because you are splitting your time between clinical duties, grant writing, and the lab, you cannot always be physically present to oversee daily operations. 
+
+Therefore, the most impactful tip for managing your research group is to **shift from managing by presence to managing by predictable cadence.**
+
+Here is how to implement this through a **Tiered Communication System**:
+
+Because you are often on clinical service or in the hospital, your team needs to know exactly *when* and *how* they can get your attention so research doesn't bottleneck while you are away. 
+
+**1. The Weekly Lab Meeting (The Macro)**
+Use this time strictly for big-picture alignment. Rotate who presents data, but also dedicate 10 minutes to "roadblocks." This prevents multiple people from struggling with the same assay or equipment issue in silos. 
+
+**2. Bi-Weekly 1-on-1s (The Micro)**

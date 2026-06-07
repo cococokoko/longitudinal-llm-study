@@ -1,0 +1,67 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=445
+Latency:   7669 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## Setup
+
+Suppose a hospital patient care aide's **weekly earnings** depend on two variables:
+
+- **x** = regular hours worked
+- **y** = overtime hours worked
+
+The earnings function is:
+
+$$E(x, y) = 15x + 22y + 0.5xy$$
+
+*(The 0.5xy term reflects a small bonus when both regular and overtime hours are high)*
+
+---
+
+## Finding the Partial Derivatives
+
+### ∂E/∂x (rate of change with respect to regular hours)
+
+$$\frac{\partial E}{\partial x} = 15 + 0.5y$$
+
+*Treat y as a constant, differentiate with respect to x*
+
+### ∂E/∂y (rate of change with respect to overtime hours)
+
+$$\frac{\partial E}{\partial y} = 22 + 0.5x$$
+
+*Treat x as a constant, differentiate with respect to y*
+
+---
+
+## Numerical Evaluation
+
+Suppose you worked **x = 36 regular hours** and **y = 8 overtime hours**:
+
+| Partial Derivative | Calculation | Result |
+|---|---|---|
+| ∂E/∂x | 15 + 0.5(8) | **$19/hour** |
+| ∂E/∂y | 22 + 0.5(36) | **$40/hour** |
+
+---
+
+## Interpretation
+
+- **∂E/∂x = 19** → Each additional regular hour adds **$19** to earnings (holding overtime fixed at 8)
+- **∂E/∂y = 40** → Each additional overtime hour adds **$40** to earnings (holding regular hours fixed at 36)
+
+> The key idea: a partial derivative measures the effect of **one variable at a time**, while holding all others **constant**.

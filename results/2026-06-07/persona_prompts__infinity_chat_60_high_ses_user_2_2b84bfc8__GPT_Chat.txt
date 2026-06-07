@@ -1,0 +1,42 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=337
+Latency:   3505 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a line of dominoes set up in a very complicated pattern.
+
+You ask: "Can I know exactly which domino will fall last without knocking them over?"
+
+For some patterns, the answer is yes. You can look at them and figure it out.
+
+But for other patterns, the only way to know what happens is to actually knock over the first domino and watch every step.
+
+Computational irreducibility is the idea that some processes are like that.
+
+Even if you have a very smart computer, there is no shortcut that lets you jump straight to the answer. The fastest way to find out what happens at step 1,000 is to go through steps 1, 2, 3, 4, and so on until you reach 1,000.
+
+A simple kid version:
+
+- Some puzzles have shortcuts.
+- Some puzzles don't.
+- For puzzles without shortcuts, you must play them out to see the result.
+- That's computational irreducibility.
+
+A slightly more grown-up example:
+
+Suppose you plant a magic seed and want to know exactly what shape the plant will have after 10,000 days. If the plant's growth is computationally irreducible, even the smartest scientist can't just calculate the final shape instantly. They have to simulate day 1, then day 2, then day 3, all the way to day 10,000.
+
+The core idea is:
+
+"Sometimes the future can't be predicted faster than it can happen."

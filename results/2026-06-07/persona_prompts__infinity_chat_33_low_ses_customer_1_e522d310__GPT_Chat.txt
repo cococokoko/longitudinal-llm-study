@@ -1,0 +1,83 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=48 out=533
+Latency:   5243 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You can run Wii games in Dolphin using only a Microsoft Surface touchpad and the Windows on-screen keyboard, but you'll need to map the Wii Remote controls to keyboard keys and use the touchpad as the Wii pointer.
+
+Basic setup in Dolphin:
+
+1. Open Dolphin.
+2. Go to Controllers.
+3. Under "Wii Remotes," set Wii Remote 1 to "Emulated Wii Remote."
+4. Click Configure.
+
+Recommended mapping for touchpad + on-screen keyboard:
+
+Wii Remote buttons:
+- A → Enter
+- B (trigger) → Space
+- 1 → 1
+- 2 → 2
+- Plus (+) → =
+- Minus (-) → -
+- Home → H
+
+D-Pad:
+- Up → Up Arrow
+- Down → Down Arrow
+- Left → Left Arrow
+- Right → Right Arrow
+
+Pointer:
+- In the "Point" section, bind:
+  - Up → Mouse Y-
+  - Down → Mouse Y+
+  - Left → Mouse X-
+  - Right → Mouse X+
+
+This allows the Surface touchpad to move the Wii cursor.
+
+Motion controls:
+Many Wii games require shaking or tilting the remote.
+
+Suggested bindings:
+- Shake X → S
+- Shake Y → D
+- Shake Z → F
+
+For tilt:
+- Tilt Forward → W
+- Tilt Backward → X
+- Tilt Left → A
+- Tilt Right → E
+
+You can tap these keys on the on-screen keyboard when needed.
+
+If a game uses the Nunchuk:
+1. In the Wii Remote configuration window, enable Nunchuk.
+2. Map:
+   - Stick → WASD
+   - C → C
+   - Z → Z
+
+Using the Windows on-screen keyboard:
+- Press Win + Ctrl + O to open it.
+- Or search for "On-Screen Keyboard" in the Start menu.
+- Keep it docked to one side of the screen while Dolphin runs.
+
+For games that mostly use pointing (such as Wii Menu, point-and-click games, or some light-gun titles), the touchpad works reasonably well. Games that rely heavily on motion controls (Wii Sports, Skyward Sword, etc.) are much easier with a real Wii Remote or a gamepad that supports motion input.
+
+If you tell me the specific Wii game you're trying to play, I can suggest a control layout tailored to that game.

@@ -1,0 +1,30 @@
+Wave:      2026-06-07
+Dataset:   global_opinion_qa
+Item ID:   goqa_75b3d1afdc06
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=199 out=59
+Latency:   2439 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Please tell us if you strongly agree, agree, disagree, or strongly disagree with the following statements:
+
+It is acceptable to have sex with someone in exchange for gifts and favors
+
+Options:
+A. Strongly agree
+B. Agree
+C. Disagree
+D. Strongly disagree
+E. Don't know
+F. No answer/refused
+G. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.03, "B": 0.10, "C": 0.35, "D": 0.42, "E": 0.07, "F": 0.02, "G": 0.01}

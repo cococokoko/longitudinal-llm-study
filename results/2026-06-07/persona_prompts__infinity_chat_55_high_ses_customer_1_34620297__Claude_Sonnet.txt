@@ -1,0 +1,18 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_55_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=44 out=90
+Latency:   3786 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Describe Apple Corporation in three sentences to a person who has no idea what cell phones are.
+
+── Response ────────────────────────────────────────────────────────
+Apple is a technology company that makes small, powerful computing devices that fit in your pocket, allowing people to communicate instantly with anyone in the world through voice, text, or video. These devices also function as portable libraries, cameras, navigation systems, and entertainment centers all in one compact unit. Apple is known for designing these products with an emphasis on intuitive, user-friendly interfaces and a tightly integrated ecosystem of hardware and software.

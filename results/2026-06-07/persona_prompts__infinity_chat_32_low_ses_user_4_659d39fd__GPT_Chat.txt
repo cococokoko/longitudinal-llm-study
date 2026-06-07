@@ -1,0 +1,178 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_low_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=30 out=761
+Latency:   6107 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+You can make a surprisingly fun zombie survivor game in Scratch by starting with a simple version and then adding features over time.
+
+Basic game idea:
+- The player moves around the screen.
+- Zombies chase the player.
+- The player can shoot zombies.
+- Survive as long as possible and earn points.
+
+Sprites you'll need:
+- Player
+- Zombie
+- Bullet
+- Optional: walls, health packs, background
+
+Step 1: Player movement
+
+On your Player sprite:
+
+When green flag clicked
+- Go to x:0 y:0
+- Forever
+  - If key (W) pressed → change y by 5
+  - If key (S) pressed → change y by -5
+  - If key (A) pressed → change x by -5
+  - If key (D) pressed → change x by 5
+
+You can also use arrow keys if preferred.
+
+Step 2: Create zombies
+
+Make a Zombie sprite.
+
+When green flag clicked
+- Hide
+
+Create a clone-spawning script:
+
+When green flag clicked
+- Forever
+  - Wait 2 seconds
+  - Create clone of myself
+
+For clones:
+
+When I start as a clone
+- Go to random edge
+- Show
+- Forever
+  - Point towards Player
+  - Move 2 steps
+  - If touching Player
+    - Change Health by -1
+    - Wait 0.5 seconds
+
+Step 3: Add health
+
+Create a variable:
+- Health
+
+When green flag clicked
+- Set Health to 100
+
+Game over:
+
+Forever
+- If Health ≤ 0
+  - Broadcast "Game Over"
+  - Stop all
+
+Step 4: Shooting
+
+Create a Bullet sprite.
+
+In Player:
+
+When space key pressed
+- Create clone of Bullet
+
+In Bullet:
+
+When I start as a clone
+- Go to Player
+- Point in Player's direction
+- Show
+- Repeat 50
+  - Move 10 steps
+  - If touching Zombie
+    - Change Score by 1
+    - Delete zombie clone
+    - Delete this clone
+- Delete this clone
+
+Step 5: Score
+
+Create variable:
+- Score
+
+When green flag clicked
+- Set Score to 0
+
+Every zombie killed:
+- Change Score by 1
+
+Step 6: Increase difficulty
+
+As score rises:
+- Spawn zombies faster
+- Make zombies move faster
+
+Example:
+
+Forever
+- Wait (max of 0.5 and 2 - Score/20) seconds
+- Create clone
+
+Step 7: Add waves
+
+Create variable:
+- Wave
+
+Start:
+- Wave = 1
+
+Each wave:
+- Spawn more zombies
+- Increase zombie speed
+
+Example:
+- Wave 1 = 5 zombies
+- Wave 2 = 10 zombies
+- Wave 3 = 15 zombies
+
+Step 8: Add polish
+
+Ideas:
+- Ammo system
+- Reloading
+- Different zombie types
+  - Fast zombies
+  - Tank zombies
+- Health kits
+- Sound effects
+- Day/night cycle
+- High score saving
+- Particle effects when zombies die
+
+Simple game loop:
+1. Spawn zombies.
+2. Zombies chase player.
+3. Player shoots zombies.
+4. Score increases.
+5. Waves get harder.
+6. Survive as long as possible.
+
+Since you work in a hospital and may have irregular free time, a good approach is:
+- Day 1: Player movement
+- Day 2: Zombie chasing
+- Day 3: Shooting
+- Day 4: Health and score
+- Day 5: Waves and polish
+
+That way you'll have a playable game very quickly and can keep improving it whenever you have time between shifts.

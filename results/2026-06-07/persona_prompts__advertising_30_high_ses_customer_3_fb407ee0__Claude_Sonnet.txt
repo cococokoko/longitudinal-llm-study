@@ -1,0 +1,43 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35 out=310
+Latency:   7922 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Here are some practical recommendations for starting to learn coding:
+
+## Choose a First Language
+- **Python** is widely recommended for beginners - readable syntax, versatile, strong job market
+- **JavaScript** is good if you're interested in web development specifically
+
+## Structured Starting Points
+- **Free options:** freeCodeCamp, The Odin Project, CS50 (Harvard's free course)
+- **Paid platforms:** Codecademy, Coursera, Udemy (often on sale)
+- **Books:** "Automate the Boring Stuff with Python" is genuinely excellent
+
+## Key Principles
+- **Build things** rather than just following tutorials - projects stick better
+- **Expect frustration** - debugging is a normal part of the process, not a sign you're failing
+- **Consistency matters more than intensity** - 30 minutes daily beats occasional marathons
+
+## Practical Tips
+- Start with problems you actually care about solving
+- Learn to read error messages rather than just copying solutions
+- Find a community (Reddit's r/learnprogramming, local meetups)
+
+## Honest Expectations
+- Basic competency takes months of regular practice
+- The learning curve is real but manageable
+
+Given your academic background, you might find CS50 particularly engaging - it's rigorous and well-structured. What draws you to coding? That might help narrow down the best approach.

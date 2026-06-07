@@ -1,0 +1,100 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_low_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=33 out=456
+Latency:   9449 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a breakdown of how to build it!
+
+## Basic Setup
+
+**Sprites you'll need:**
+- Player character
+- Zombie (enemy)
+- Bullet/projectile
+- Health bar or hearts
+- Game Over screen
+
+---
+
+## Core Components
+
+### 1. Player Movement
+```
+When [Green Flag] clicked
+Forever
+  If [W key pressed] → change y by 5
+  If [S key pressed] → change y by -5
+  If [A key pressed] → change x by -5
+  If [D key pressed] → change x by 5
+```
+
+### 2. Zombie AI (on Zombie sprite)
+```
+When [Green Flag] clicked
+Forever
+  Point toward [Player]
+  Move 2 steps
+  If touching [Player] → broadcast "damage"
+```
+
+### 3. Shooting Mechanic
+```
+When [Space] pressed
+Create clone of [Bullet]
+
+When I start as clone
+Point toward [mouse pointer]
+Forever
+  Move 10 steps
+  If touching [Zombie] → 
+    broadcast "zombie hit"
+    delete clone
+```
+
+### 4. Health System
+```
+Set [health] to 100
+
+When I receive "damage"
+  Change [health] by -10
+  If health = 0 → broadcast "Game Over"
+```
+
+---
+
+## Tips to Make It Better
+
+- **Use clones** for multiple zombies
+- **Add a score** that increases per zombie killed
+- **Spawn zombies** from screen edges using random positions
+- **Add waves** that get harder over time
+
+---
+
+## Zombie Spawning Example
+```
+When [Green Flag] clicked
+Forever
+  Wait 3 seconds
+  Create clone of [Zombie]
+
+When I start as clone
+Go to x: (random edge) y: (random edge)
+```
+
+---
+
+Want help with any specific part like the health bar display or wave system?

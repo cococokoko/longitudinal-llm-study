@@ -1,0 +1,89 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=528
+Latency:   5012 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to stay relevant over the next 5–10 years, focus less on a specific programming language and more on skills that remain valuable even as tools change.
+
+Key areas to learn:
+
+• Programming fundamentals
+  - Data structures and algorithms
+  - Object-oriented and functional programming concepts
+  - Debugging and testing
+  - Version control (Git)
+
+• AI and automation
+  - How large language models (LLMs) work at a practical level
+  - Using AI APIs and AI-assisted development tools
+  - Prompt engineering
+  - Building applications that integrate AI features
+
+• Web development
+  - HTML, CSS, JavaScript
+  - A modern frontend framework (React is currently the most common choice)
+  - Backend development (Node.js, Python, Java, C#, or Go)
+  - REST APIs and databases
+
+• Cloud computing
+  - AWS, Azure, or Google Cloud
+  - Containers (Docker)
+  - Basic Kubernetes concepts
+  - Serverless architecture
+
+• Data and databases
+  - SQL
+  - Database design
+  - Data analysis fundamentals
+  - Basic data engineering concepts
+
+• Cybersecurity
+  - Secure coding practices
+  - Authentication and authorization
+  - Privacy and compliance
+  - Common vulnerabilities and how to prevent them
+
+• System design
+  - Scalability
+  - Reliability
+  - Distributed systems basics
+  - Performance optimization
+
+• Soft skills
+  - Communication
+  - Writing documentation
+  - Working with stakeholders
+  - Understanding business requirements
+
+Given that you work as a patient care aide in a hospital, you also have an advantage many new developers don't: domain knowledge. Healthcare technology is a large and growing field. If software development interests you, consider learning:
+- Electronic Health Record (EHR) systems
+- Healthcare interoperability standards (HL7, FHIR)
+- Healthcare data privacy (HIPAA, if you're in the U.S.)
+- Clinical workflow and healthcare operations software
+
+A developer who understands both software and healthcare can be particularly valuable because they can build solutions that solve real problems clinicians and patients face.
+
+If you're starting from scratch, a practical learning path would be:
+1. Python
+2. Git and GitHub
+3. SQL
+4. Web development (HTML/CSS/JavaScript)
+5. React
+6. APIs and backend development
+7. Cloud fundamentals
+8. AI application development
+9. Healthcare technology standards (FHIR/HL7)
+
+What is your current experience level with programming—completely new, some self-taught experience, or already working in tech?

@@ -1,0 +1,30 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1020
+Latency:   9541 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+In graph theory, a "linear graph" is most commonly referred to as a **Path Graph** (denoted as $P_n$). It is a graph where all the vertices are connected in a single, straight line, with no branches or loops. 
+
+Here is a clear example of a Path Graph with 4 vertices, denoted as **$P_4$**:
+
+### 1. Visual Representation
+**(A) —— (B) —— (C) —— (D)**
+
+### 2. Mathematical Definition
+*   **Vertices (Nodes):** $V = \{A, B, C, D\}$
+*   **Edges (Connections):** $E = \{(A,B), (B,C), (C,D)\}$
+
+### 3. Real-World Example
+Imagine a single train track with four stations. 
+*   Station A is the start of the line.
+*   To get to Station C, a train *must* pass through Station B.
+*   Station D is the end of the line

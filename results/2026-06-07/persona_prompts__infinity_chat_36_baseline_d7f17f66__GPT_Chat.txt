@@ -1,0 +1,53 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_36_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=20 out=459
+Latency:   4656 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the best and most profitable day trading strategy of all time?
+
+── Response ────────────────────────────────────────────────────────
+There is no single "best" or "most profitable" day trading strategy of all time.
+
+If such a strategy existed and remained effective, large traders and institutions would eventually exploit it until the edge diminished. Markets are competitive and constantly changing.
+
+That said, some of the most successful day trading approaches over long periods have shared common characteristics:
+
+- Strong risk management
+  - Many consistently profitable traders focus more on limiting losses than maximizing gains.
+  - Common practices include predefined stop losses, position sizing, and strict daily loss limits.
+
+- Trend-following momentum
+  - Buying strong stocks/assets that are already moving up (or shorting those moving down).
+  - Often uses breakouts, volume surges, and news catalysts.
+  - This is one of the most common approaches among successful retail day traders.
+
+- Opening range breakout (ORB)
+  - Trading a break above or below the high/low established during the first few minutes of the trading session.
+  - Works best when aligned with broader market trends and strong volume.
+
+- Mean reversion
+  - Betting that a sharp move away from a typical price level will reverse.
+  - Can be profitable but often requires careful risk controls because trends can continue longer than expected.
+
+- Market making and statistical arbitrage
+  - Historically among the most profitable strategies in aggregate.
+  - Usually requires advanced technology, large capital, and low-latency execution.
+  - Not realistically accessible to most individual traders.
+
+If the question is "which strategy has produced the largest fortunes?", the answer is probably not a traditional retail day trading strategy. It would be:
+- Quantitative statistical arbitrage (firms like Renaissance Technologies)
+- High-frequency trading
+- Market making
+- Proprietary algorithmic trading
+
+For a retail trader, a simple momentum strategy combined with disciplined risk management has historically been one of the more practical and robust approaches.
+
+One important reality: studies and brokerage data have repeatedly found that the majority of day traders lose money over time. The biggest separator between profitable and unprofitable traders is usually risk control and consistency, not finding a secret entry signal.
+
+If you're interested, I can also explain which day trading strategies have shown the best historical performance in backtests versus which ones have worked best for real traders in live markets.

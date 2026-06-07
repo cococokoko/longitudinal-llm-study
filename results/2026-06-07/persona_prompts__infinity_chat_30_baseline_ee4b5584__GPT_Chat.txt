@@ -1,0 +1,32 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_30_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=22 out=211
+Latency:   2493 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Choose the right decision: buy a new Zara sneaker or a used Adidas sneaker?
+
+── Response ────────────────────────────────────────────────────────
+If the used Adidas sneaker is in good condition, I would generally choose the Adidas.
+
+Reasons:
+- Adidas sneakers are often built with better materials and cushioning than Zara sneakers.
+- A higher-quality used shoe can outlast a lower-quality new shoe.
+- You may get better comfort and support for the same money.
+- Buying used is usually more environmentally friendly.
+
+Choose the new Zara sneaker instead if:
+- The Adidas pair shows significant sole wear, damaged cushioning, or poor hygiene.
+- You strongly prefer the Zara design.
+- The price difference is small and you want a completely new product.
+
+A simple rule:
+- Good-condition used Adidas > new Zara.
+- Worn-out used Adidas < new Zara.
+
+If you share the exact models, condition, and prices, I can give a more specific recommendation.

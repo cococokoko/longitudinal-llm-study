@@ -1,0 +1,83 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=468
+Latency:   3937 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Example:
+
+Suppose a patient's daily fluid intake score is modeled by
+
+f(x, y) = 2x + 3y²
+
+where:
+- x = liters of water consumed
+- y = liters of other fluids consumed
+
+Let's find the partial derivatives.
+
+1. Partial derivative with respect to x
+
+Treat y as a constant:
+
+∂f/∂x = 2
+
+Interpretation:
+- If water intake increases by 1 liter while other fluid intake stays the same, the score increases by 2 units.
+
+For example, at x = 4 and y = 2:
+
+f(4, 2) = 2(4) + 3(2²) = 8 + 12 = 20
+
+If x increases to 5 and y remains 2:
+
+f(5, 2) = 2(5) + 12 = 22
+
+The score increases by 2, matching ∂f/∂x = 2.
+
+2. Partial derivative with respect to y
+
+Treat x as a constant:
+
+∂f/∂y = 6y
+
+At the point (4, 2):
+
+∂f/∂y = 6(2) = 12
+
+Interpretation:
+- Near y = 2, increasing other fluid intake by about 1 liter (while keeping x fixed) increases the score by about 12 units.
+
+Checking numerically:
+
+f(4, 2) = 20
+
+Increase y from 2 to 2.1:
+
+f(4, 2.1) = 2(4) + 3(2.1²)
+           = 8 + 3(4.41)
+           = 21.23
+
+Change in score:
+21.23 − 20 = 1.23
+
+Since y increased by 0.1, the rate of change is approximately
+
+1.23 / 0.1 = 12.3
+
+which is close to the partial derivative value 12.
+
+This illustrates that a partial derivative gives the rate of change of a multivariable function with respect to one variable while holding the others constant.

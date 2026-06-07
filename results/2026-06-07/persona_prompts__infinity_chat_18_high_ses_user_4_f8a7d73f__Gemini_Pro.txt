@@ -1,0 +1,23 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=26 out=1020
+Latency:   11531 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Create a short review of a movie that doesn't exist yet.
+
+── Response ────────────────────────────────────────────────────────
+**Title:** *The Null Hypothesis* (2026)
+**Director:** Denis Villeneuve
+**Rating:** ★★★★½ 
+
+**Review: Finally, a Sci-Fi Thriller That Understands the True Terror of Peer Review**
+
+As a physician-scientist who spends half my week agonizing over patient outcomes and the other half begging the NIH for grant money, I usually avoid medical sci-fi. Hollywood’s idea of a laboratory usually involves glowing blue liquids, scientists working alone in the dark, and cures developed over a

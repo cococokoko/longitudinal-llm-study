@@ -1,0 +1,34 @@
+Wave:      2026-06-07
+Dataset:   global_opinion_qa
+Item ID:   goqa_3c2dbb418c61
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=158 out=494
+Latency:   5834 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: To what extent do you agree or disagree with the following statement: “Citizens must support the government’s decisions even if they disagree with them”?
+
+Options:
+A. I strongly agree
+B. I agree
+C. I disagree
+D. I strongly disagree
+E. Don't know
+F. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{
+  "A": 0.25,
+  "B": 0.25,
+  "C": 0.25,
+  "D": 0.25,
+  "E": 0.0,
+  "F": 0.0
+}

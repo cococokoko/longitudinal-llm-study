@@ -1,0 +1,37 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_44_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=354
+Latency:   3699 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on the disease involved, how it spreads, and current public health guidance. In general, these measures help reduce risk:
+
+- Stay informed about current outbreaks and travel advisories from public health authorities.
+- Avoid travel if you are sick, have symptoms, or have recently been exposed to an infectious disease.
+- Get recommended vaccinations or preventive medications before traveling, if available.
+- Choose less crowded travel options when possible.
+- Wear a well-fitting mask in crowded indoor settings or when recommended by health authorities.
+- Practice good hand hygiene by washing hands frequently or using hand sanitizer.
+- Maintain physical distance from others when feasible.
+- Improve ventilation by spending time outdoors, opening windows, or choosing well-ventilated spaces.
+- Avoid unnecessary time in crowded indoor areas such as packed waiting rooms, terminals, or vehicles.
+- Carry essential health supplies, including masks, hand sanitizer, medications, and any required medical documents.
+- Follow local health regulations and guidance at your destination.
+- Consider travel insurance that covers illness-related disruptions if appropriate.
+
+Risk can vary by mode of transportation:
+
+- Private vehicle: Often reduces exposure to large numbers of people, especially for shorter trips.
+- Air travel: Airports and planes can involve close contact with many people; masking, hand hygiene, and minimizing time in crowded areas can help reduce risk.
+- Trains and buses: Risk depends on crowding, trip duration, ventilation, and disease transmission characteristics.
+- Cruise ships: Historically associated with rapid spread of some infectious diseases due to shared indoor spaces and close contact among passengers.
+
+If you tell me which pandemic or infectious disease you have in mind (for example, COVID-19, influenza, or another outbreak), I can provide more specific recommendations.

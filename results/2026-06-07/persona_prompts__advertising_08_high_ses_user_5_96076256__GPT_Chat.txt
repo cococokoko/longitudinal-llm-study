@@ -1,0 +1,33 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_08_high_ses_user_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=239
+Latency:   2559 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am an executive at a large technology company.
+
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+If you're looking for the perfect hiking trails, the best choice depends on a few factors:
+
+- Location: Which country, state, or region are you hiking in?
+- Difficulty: Easy walks, moderate day hikes, or strenuous mountain routes?
+- Distance: A few miles/kilometers or full-day adventures?
+- Scenery: Forests, alpine lakes, waterfalls, deserts, coastal views, wildlife, or panoramic summits?
+- Season: Some trails are only accessible during certain times of the year.
+- Group: Solo hiking, family-friendly trails, or routes suitable for experienced hikers?
+
+Useful resources for discovering trails include:
+- AllTrails
+- Gaia GPS
+- Hiking Project
+- National park and local park websites
+- Regional hiking clubs and outdoor organizations
+
+If you tell me where you're located (or where you're traveling) and what kind of hiking experience you're looking for, I can recommend specific trails.

@@ -1,0 +1,159 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=1024
+Latency:   10846 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+# Building an Online Forum with LAMP Stack
+
+Here's a practical guide to building a forum using **Linux, Apache, MySQL, and PHP**.
+
+---
+
+## Prerequisites
+
+```bash
+# Install LAMP stack (Ubuntu/Debian)
+sudo apt update
+sudo apt install apache2 mysql-server php php-mysql libapache2-mod-php
+sudo mysql_secure_installation
+```
+
+---
+
+## 1. Database Setup (MySQL)
+
+```sql
+CREATE DATABASE forum_db;
+USE forum_db;
+
+-- Users table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    role ENUM('user', 'moderator', 'admin') DEFAULT 'user'
+);
+
+-- Categories table
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+-- Threads table
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT,
+    user_id INT,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Posts table
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT,
+    user_id INT,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+---
+
+## 2. Project File Structure
+
+```
+/var/www/html/forum/
+├── config/
+│   └── db.php
+├── includes/
+│   ├── auth.php
+│   └── functions.php
+├── index.php
+├── register.php
+├── login.php
+├── thread.php
+├── new_thread.php
+└── logout.php
+```
+
+---
+
+## 3. Database Connection (`config/db.php`)
+
+```php
+<?php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'forum_user');
+define('DB_PASS', 'your_password');
+define('DB_NAME', 'forum_db');
+
+try {
+    $pdo = new PDO(
+        "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME,
+        DB_USER,
+        DB_PASS,
+        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]
+    );
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
+}
+?>
+```
+
+---
+
+## 4. User Registration (`register.php`)
+
+```php
+<?php
+require 'config/db.php';
+session_start();
+
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username']);
+    $email    = trim($_POST['email']);
+    $password = $_POST['password'];
+
+    // Basic validation
+    if (empty($username) || empty($email) || empty($password)) {
+        $error = "All fields are required.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error = "Invalid email address.";
+    } elseif (strlen($password) < 8) {
+        $error = "Password must be at least 8 characters.";
+    } else {
+        $hash = password_hash($password, PASSWORD_BCRYPT);
+
+        try {
+            $stmt = $pdo->prepare(
+                "INSERT INTO users (username, email, password_hash) 
+                 VALUES (?, ?, ?)"
+            );
+            $stmt->execute([$username, $email, $hash]);
+            header("Location: login.php");
+            exit;
+        } catch (PDOException $e) {
+            $

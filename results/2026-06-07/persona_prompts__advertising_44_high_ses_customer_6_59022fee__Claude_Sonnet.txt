@@ -1,0 +1,52 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=304
+Latency:   7827 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+During a pandemic, here are the safest travel approaches based on public health guidance:
+
+## Before Traveling
+- Check current transmission rates at your destination
+- Verify entry requirements and health protocols
+- Ensure vaccinations are up to date
+- Purchase travel insurance with health coverage
+- Consult travel advisories from health authorities
+
+## Transportation Options (Generally Ranked by Risk)
+- **Driving privately** - lowest exposure risk
+- **Flying** - HEPA filters reduce airborne risk, though airports add exposure
+- **Train/bus** - ventilation varies considerably
+- **Cruise ships** - historically higher risk in outbreaks
+
+## Risk Reduction Strategies
+- Wear high-quality masks (N95/KN95) in crowded spaces
+- Choose less crowded travel times
+- Maintain distance from others when possible
+- Use contactless check-in and payment
+- Carry hand sanitizer
+- Book direct routes to minimize transit points
+
+## Practical Considerations
+- Book flexible/refundable tickets
+- Have a contingency plan if you test positive at destination
+- Know local healthcare options at your destination
+- Consider travel timing relative to outbreak waves
+
+## For Business Travel Specifically
+- Evaluate whether virtual meetings can substitute
+- Prioritize essential trips only
+- Follow your firm's travel policies
+
+Would you like more specific guidance for a particular type of trip or destination?

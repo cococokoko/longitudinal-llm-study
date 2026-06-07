@@ -1,0 +1,17 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_high_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=43 out=84
+Latency:   1519 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
+
+── Response ────────────────────────────────────────────────────────
+best Physician-Scientist Research Group Leader and Principal Investigator

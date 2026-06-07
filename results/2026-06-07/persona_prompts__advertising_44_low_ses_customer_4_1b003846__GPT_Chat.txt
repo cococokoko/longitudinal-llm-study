@@ -1,0 +1,38 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_44_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=390
+Latency:   4003 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on the disease involved, how it spreads, and current public health guidance. In general, risk can be reduced by combining several precautions:
+
+- Consider whether travel is necessary. Delaying nonessential trips during periods of high transmission is often the lowest-risk option.
+- Stay up to date on recommended vaccinations and boosters, if available.
+- Avoid traveling if you have symptoms, have recently tested positive, or have been advised to isolate.
+- Choose lower-risk transportation when possible:
+  - Private vehicles are generally lower risk than crowded public transportation because you have more control over your environment.
+  - If flying, direct flights reduce time spent in airports and on multiple planes.
+- Wear a well-fitting, high-quality mask (such as an N95, KN95, or equivalent) in crowded indoor settings, especially during periods of high transmission.
+- Improve ventilation:
+  - Open windows when possible in cars, buses, or trains.
+  - In airplanes, use the overhead air vent directed toward your face.
+- Avoid crowded indoor areas such as packed waiting rooms, airport lounges, or transit stations when possible.
+- Practice good hand hygiene:
+  - Wash hands regularly with soap and water.
+  - Use hand sanitizer when handwashing is unavailable.
+- Keep distance from others when practical, especially in crowded indoor spaces.
+- Check destination requirements and local public health recommendations before traveling.
+- Consider testing before and after travel if recommended or if you will be around people at higher risk of severe illness.
+
+If you tell me what kind of pandemic disease you're concerned about (for example, COVID-19, influenza, or something else) and how you plan to travel (plane, train, car, etc.), I can give more specific guidance.

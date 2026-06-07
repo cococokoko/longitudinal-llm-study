@@ -1,0 +1,27 @@
+Wave:      2026-06-07
+Dataset:   global_opinion_qa
+Item ID:   goqa_6e418c3b96dd
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=166 out=135
+Latency:   11132 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Of 100 people in your community, how many of you think it's good for citizens to reconcile with the demobilized from an armed group?
+
+Options:
+A. 0
+B. 1-20
+C. 21-40
+D. 41-60
+E. 61-80
+F. 81-100
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.02, "B": 0.08, "C": 0.15, "D": 0.25, "E": 0.30, "F": 0.20}

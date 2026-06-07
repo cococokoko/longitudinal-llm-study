@@ -1,0 +1,113 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=569
+Latency:   4947 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+The best way is to learn coding by building a small number of increasingly ambitious projects rather than trying to master all the theory first.
+
+A practical path from zero experience:
+
+1. Start with Python
+- Python is widely used in science, data analysis, AI, automation, and web development.
+- Its syntax is relatively easy to read.
+- Install Python and use an environment such as VS Code.
+
+2. Learn the core concepts
+Focus on:
+- Variables and data types
+- Conditionals (if/else)
+- Loops
+- Functions
+- Lists and dictionaries
+- Basic file input/output
+
+At this stage, write many tiny programs:
+- A calculator
+- A unit converter
+- A grade tracker
+- A text-based game
+
+3. Use an interactive course
+Good beginner resources:
+- Harvard CS50 (excellent introduction to computer science)
+- Python for Everybody (University of Michigan)
+- freeCodeCamp
+- Codecademy (if you prefer a guided environment)
+
+4. Build projects immediately
+After learning each concept, apply it.
+Examples:
+- Personal budget tracker
+- To-do list application
+- Data visualization of a dataset that interests you
+- Website scraper
+- Simple research tool related to your field
+
+Projects reveal gaps in understanding much faster than tutorials.
+
+5. Learn basic computer science ideas
+You do not need deep theory initially, but it helps to understand:
+- Algorithms
+- Data structures
+- How the internet works
+- Databases
+- Version control (Git)
+
+CS50 is particularly good for this.
+
+6. Learn Git and GitHub
+These are standard tools for managing code.
+Learn to:
+- Create repositories
+- Commit changes
+- Push code to GitHub
+- Read other people's code
+
+7. Pick a direction after the basics
+Different goals require different skills:
+
+- Data science / research:
+  - Python
+  - NumPy
+  - pandas
+  - Jupyter notebooks
+
+- AI / machine learning:
+  - Python
+  - NumPy
+  - scikit-learn
+  - PyTorch
+
+- Web development:
+  - HTML
+  - CSS
+  - JavaScript
+  - A framework such as React
+
+- Automation:
+  - Python scripting
+  - APIs
+  - Web scraping
+
+8. Code consistently
+A common mistake is studying for hours once a week. Thirty to sixty minutes most days is usually more effective than a single long session.
+
+A simple 12-week plan:
+- Weeks 1–4: Python fundamentals
+- Weeks 5–8: Small projects
+- Weeks 9–10: Git and GitHub
+- Weeks 11–12: One larger project of personal interest
+
+If you tell me your academic field or professional goals, I can suggest a more specialized learning path.

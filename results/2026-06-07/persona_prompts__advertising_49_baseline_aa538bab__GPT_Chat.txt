@@ -1,0 +1,64 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=515
+Latency:   4421 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi depends on what's causing the problem: weak signal, slow speeds, interference, or too many devices. Here are the most effective steps, roughly in order of impact:
+
+- Move your router to a better location:
+  - Place it centrally in your home.
+  - Keep it elevated (on a shelf rather than the floor).
+  - Avoid closets, cabinets, and behind large furniture.
+  - Keep it away from microwaves, cordless phone bases, and other electronics.
+
+- Use the right Wi‑Fi band:
+  - 5 GHz (or 6 GHz if available) offers higher speeds but shorter range.
+  - 2.4 GHz offers better range but lower speeds and more interference.
+  - Use 5/6 GHz for nearby devices and 2.4 GHz for distant devices.
+
+- Update your equipment:
+  - Install router firmware updates.
+  - If your router is several years old, consider upgrading to a Wi‑Fi 6 or Wi‑Fi 6E model.
+
+- Optimize wireless channels:
+  - In crowded areas, neighboring networks can interfere.
+  - Use a Wi‑Fi analyzer app to find less congested channels.
+  - For 2.4 GHz, channels 1, 6, and 11 are usually best.
+
+- Improve security:
+  - Use WPA2 or WPA3 encryption.
+  - Set a strong password.
+  - Remove unknown devices from your network.
+
+- Reduce congestion:
+  - Disconnect devices you don't use.
+  - Use wired Ethernet for gaming PCs, desktop computers, TVs, or other bandwidth-heavy devices.
+
+- Add coverage if needed:
+  - For larger homes, use a mesh Wi‑Fi system.
+  - A mesh system is usually better than a traditional Wi‑Fi extender for maintaining speed and reliability.
+
+- Check your internet connection:
+  - Connect a device directly to the router via Ethernet and run a speed test.
+  - If wired speeds are also slow, the issue may be with your internet service rather than Wi‑Fi.
+
+- Adjust router settings:
+  - Enable Quality of Service (QoS) if available to prioritize important traffic such as video calls or gaming.
+  - Ensure the router is using modern standards (Wi‑Fi 5, 6, or newer).
+
+If you tell me:
+- The size of your home/apartment,
+- Your router model,
+- Your internet speed plan,
+- Whether the issue is weak signal, slow speed, gaming lag, or dropped connections,
+
+I can give more specific recommendations.

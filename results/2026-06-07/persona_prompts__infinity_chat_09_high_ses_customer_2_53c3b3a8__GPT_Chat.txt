@@ -1,0 +1,31 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_09_high_ses_customer_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=33 out=243
+Latency:   2861 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Is there life on other planets?
+
+── Response ────────────────────────────────────────────────────────
+We do not currently have confirmed evidence that life exists on other planets. As of now, Earth is the only place where life is known to exist.
+
+That said, many scientists consider it plausible that life exists elsewhere in the universe because:
+
+- The universe contains hundreds of billions of galaxies, each with vast numbers of stars.
+- Astronomers have discovered thousands of exoplanets, including some that may have conditions suitable for liquid water.
+- Organic molecules, which are important building blocks for life, appear to be common in space.
+- Several locations in our own solar system—such as Mars, Europa (a moon of Jupiter), and Enceladus (a moon of Saturn)—show signs that they may once have had, or may still have, environments capable of supporting microbial life.
+
+The strongest current scientific position is that the possibility of extraterrestrial life remains an open question. There is substantial circumstantial evidence suggesting that life could exist elsewhere, but no direct, verified detection has yet been made.
+
+A useful distinction is:
+- "Could life exist elsewhere?" — Many scientists would say this is quite possible.
+- "Do we know that life exists elsewhere?" — No, not at present.

@@ -1,0 +1,80 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=647
+Latency:   5787 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+For a small business, effective data security is usually about consistently applying a set of practical safeguards rather than investing in expensive enterprise tools. Key best practices include:
+
+- Use strong authentication
+  - Require unique, strong passwords for all accounts.
+  - Enable multi-factor authentication (MFA) wherever possible, especially for email, banking, cloud storage, and administrative accounts.
+  - Consider a password manager to help employees securely manage credentials.
+
+- Keep software updated
+  - Regularly install security updates for operating systems, applications, browsers, and devices.
+  - Enable automatic updates when feasible.
+  - Replace unsupported software and hardware.
+
+- Back up critical data
+  - Maintain regular backups of important files and business systems.
+  - Follow the 3-2-1 principle: keep 3 copies of data, on 2 different media types, with 1 copy stored offsite or in the cloud.
+  - Periodically test backup restoration procedures.
+
+- Control access to data
+  - Give employees access only to the systems and information necessary for their jobs (least-privilege access).
+  - Review user permissions regularly.
+  - Remove access promptly when employees leave or change roles.
+
+- Protect devices and networks
+  - Use reputable antivirus or endpoint protection software.
+  - Enable device encryption on laptops, phones, and tablets.
+  - Secure Wi-Fi with strong passwords and modern encryption (such as WPA3 where available).
+  - Use a firewall to help protect network traffic.
+
+- Train employees
+  - Educate staff about phishing, social engineering, suspicious links, and unsafe attachments.
+  - Establish clear procedures for reporting security concerns.
+  - Conduct periodic refresher training.
+
+- Secure email and cloud services
+  - Use business-grade email and cloud providers with strong security controls.
+  - Enable MFA and audit logging.
+  - Review sharing settings to avoid exposing sensitive information.
+
+- Develop basic security policies
+  - Create guidelines for password use, device security, remote work, and data handling.
+  - Document procedures for responding to security incidents.
+  - Make policies easy for employees to understand and follow.
+
+- Classify and minimize data
+  - Identify what sensitive information you store.
+  - Retain only data that is necessary for business operations and legal requirements.
+  - Securely delete data that is no longer needed.
+
+- Prepare for incidents
+  - Have an incident response plan that defines who does what during a security event.
+  - Maintain contact information for key vendors, legal advisors, and cybersecurity support.
+  - Review and update the plan periodically.
+
+- Monitor and audit
+  - Review account activity, login attempts, and system logs when possible.
+  - Investigate unusual activity promptly.
+  - Conduct periodic security assessments or vulnerability scans.
+
+- Address regulatory requirements
+  - Understand any laws or industry standards that apply to your business (such as GDPR, HIPAA, PCI DSS, or local privacy regulations).
+  - Ensure your security practices align with those requirements.
+
+For many small businesses, the highest-impact steps are: enabling MFA everywhere, keeping systems updated, maintaining reliable backups, training employees to recognize phishing attempts, and limiting access to sensitive data. These measures significantly reduce risk while remaining cost-effective.

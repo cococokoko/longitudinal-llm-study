@@ -1,0 +1,113 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=803
+Latency:   8185 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+For small businesses, effective data security is less about deploying every available tool and more about implementing a disciplined set of controls that address the most common risks: phishing, ransomware, insider mistakes, lost devices, and third-party breaches.
+
+Key best practices include:
+
+1. Establish a Security Baseline
+- Inventory critical data, systems, applications, and devices.
+- Classify data (e.g., public, internal, confidential, regulated).
+- Identify where sensitive information is stored and who can access it.
+- Document basic security policies and procedures.
+
+2. Implement Strong Access Controls
+- Enforce multi-factor authentication (MFA) for email, cloud services, VPNs, and administrative accounts.
+- Apply the principle of least privilege: employees should only have access to the data and systems needed for their roles.
+- Regularly review user access and remove unused accounts promptly.
+- Use unique passwords and a password manager.
+
+3. Maintain Robust Endpoint Security
+- Deploy endpoint protection/antivirus solutions on all devices.
+- Enable automatic updates for operating systems, applications, and browsers.
+- Encrypt laptops, desktops, and mobile devices.
+- Use mobile device management (MDM) if employees use smartphones or tablets for work.
+
+4. Secure Cloud Services
+- Review security settings for SaaS platforms such as Microsoft 365, Google Workspace, Salesforce, and collaboration tools.
+- Enable MFA and audit logging.
+- Restrict file-sharing permissions and monitor external sharing.
+- Understand the provider's shared responsibility model.
+
+5. Create Reliable Backup and Recovery Processes
+- Follow the 3-2-1 backup rule:
+  - 3 copies of data
+  - 2 different storage media
+  - 1 copy stored offline or offsite
+- Test backups regularly to ensure successful recovery.
+- Develop a ransomware recovery plan.
+
+6. Train Employees Regularly
+- Conduct security awareness training on:
+  - Phishing emails
+  - Social engineering
+  - Password hygiene
+  - Safe internet usage
+- Run periodic phishing simulations.
+- Establish a clear process for reporting suspicious activity.
+
+7. Protect Networks
+- Secure Wi-Fi with strong encryption and passwords.
+- Change default credentials on network devices.
+- Segment critical systems from general user networks where practical.
+- Use firewalls and monitor network traffic.
+
+8. Manage Third-Party Risk
+- Assess vendors that handle sensitive data.
+- Review contractual security obligations.
+- Verify vendors' security certifications or controls where appropriate.
+- Limit data sharing to what is necessary.
+
+9. Monitor and Log Security Events
+- Enable logging on critical systems.
+- Review alerts for suspicious activity.
+- Consider managed detection and response (MDR) services if internal expertise is limited.
+- Retain logs for incident investigation and compliance needs.
+
+10. Prepare for Incidents
+- Develop a simple incident response plan covering:
+  - Roles and responsibilities
+  - Escalation procedures
+  - Communication protocols
+  - Recovery steps
+- Maintain contact information for legal counsel, cybersecurity providers, insurers, and key vendors.
+- Conduct tabletop exercises annually.
+
+11. Address Compliance Requirements
+Depending on the industry and geography, ensure alignment with applicable regulations such as:
+- GDPR
+- CCPA/CPRA
+- HIPAA
+- PCI DSS
+- Industry-specific requirements
+
+12. Prioritize High-Impact Controls
+For many small businesses, the highest-return investments are:
+- MFA everywhere possible
+- Automated patch management
+- Endpoint protection
+- Secure backups
+- Employee phishing training
+- Least-privilege access controls
+- Incident response planning
+
+A practical roadmap for a small business with limited resources is:
+- First 30 days: MFA, password manager, endpoint protection, backups.
+- First 90 days: access reviews, employee training, patch management, security policies.
+- First 6–12 months: vendor risk management, incident response testing, network segmentation, continuous monitoring.
+
+Organizations that consistently execute these fundamentals typically reduce the majority of common cyber risks without requiring enterprise-scale security budgets.

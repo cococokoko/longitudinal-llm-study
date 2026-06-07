@@ -1,0 +1,18 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_55_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=44 out=110
+Latency:   1532 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Describe Apple Corporation in three sentences to a person who has no idea what cell phones are.
+
+── Response ────────────────────────────────────────────────────────
+Apple is a company that designs and sells tools people use to communicate, create, learn, and be entertained. One of its most famous products is a small handheld computer that can send messages, access information from around the world, take pictures, and run many different programs. Apple also makes larger computers, wearable devices, and software that help these products work together.

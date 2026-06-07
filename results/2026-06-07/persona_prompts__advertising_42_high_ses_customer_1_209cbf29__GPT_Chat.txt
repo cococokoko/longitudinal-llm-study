@@ -1,0 +1,70 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=37 out=506
+Latency:   5078 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on whether your priority is nutrition, training, endurance sports, body composition, or overall health integration. Among the current options:
+
+Nutrition tracking
+- MacroFactor
+  - Excellent for calorie and macronutrient tracking.
+  - Uses your weight trend and intake data to estimate energy expenditure and adjust recommendations.
+  - Strong analytics and minimal focus on streaks or gamification.
+- Cronometer
+  - Best for detailed nutrient analysis.
+  - Tracks vitamins, minerals, amino acids, and other micronutrients better than most competitors.
+  - Popular among people interested in evidence-based nutrition.
+- MyFitnessPal
+  - Largest food database.
+  - Easy barcode scanning and restaurant food lookup.
+  - Less rigorous nutrient analysis than Cronometer.
+
+Workout and strength training
+- Strong
+  - Simple, reliable strength-training log.
+  - Great for tracking progressive overload.
+- Hevy
+  - Similar to Strong but with social features and a modern interface.
+  - Increasingly popular among lifters.
+- Fitbod
+  - Generates workouts based on equipment, recovery, and training history.
+
+Running and endurance sports
+- Strava
+  - The dominant platform for running and cycling.
+  - Excellent community features and route tracking.
+- TrainingPeaks
+  - Best for structured endurance training and coaching.
+  - Particularly useful for serious runners, cyclists, and triathletes.
+
+Wearable ecosystem apps
+- Garmin Connect
+  - One of the most comprehensive health and training platforms.
+  - Strong metrics for training load, recovery, HRV, sleep, and endurance.
+- Apple Fitness / Apple Health
+  - Excellent integration if you're in the Apple ecosystem.
+  - Works well as a central repository for health data.
+
+Overall health dashboard
+- Apple Health (iPhone) or Health Connect (Android)
+  - Useful for aggregating data from multiple fitness, nutrition, sleep, and wearable apps into one place.
+
+If I were building a high-quality setup today:
+- Nutrition: MacroFactor or Cronometer
+- Strength training: Hevy or Strong
+- Endurance: Strava
+- Health data aggregation: Apple Health (iPhone) or Health Connect (Android)
+
+If you tell me your primary goal (fat loss, muscle gain, endurance performance, metabolic health, or general fitness), I can narrow the recommendations further.

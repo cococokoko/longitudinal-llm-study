@@ -1,0 +1,121 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=34 out=909
+Latency:   20687 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need
+- Microsoft Surface (any model)
+- Dolphin Emulator installed
+- Windows 10/11
+- Your legally obtained Wii game files (ISO/WBFS)
+
+---
+
+## Step 1: Download & Install Dolphin
+
+1. Go to **dolphin-emu.org**
+2. Click **Download** → choose the latest stable version
+3. Run the installer or extract the portable version
+4. Launch **Dolphin.exe**
+
+---
+
+## Step 2: Configure Touch/Touchpad Input
+
+### Enable Touch Input in Windows
+- Go to **Settings → Bluetooth & devices → Touchpad**
+- Make sure touchpad gestures are enabled
+
+### In Dolphin - Set Up Controllers
+1. Open Dolphin → click **Controllers** at the top
+2. Under **Wiimote 1** → select **Emulated Wiimote**
+3. Click **Configure**
+
+### Map Touchpad Gestures to Wiimote Buttons
+| Wiimote Input | Touchpad/Keyboard Action |
+|---------------|--------------------------|
+| A Button | Left click / Enter |
+| B Button | Right click |
+| D-Pad | Arrow keys |
+| Home | H key |
+| + / - | + / - keys |
+| Shake/Motion | Can be mapped to keys |
+
+---
+
+## Step 3: Set Up On-Screen Keyboard
+
+### Enable Windows On-Screen Keyboard
+1. Press **Windows key + Ctrl + O**
+2. Or go to **Settings → Accessibility → Keyboard → On-Screen Keyboard**
+3. Pin it to your taskbar for easy access
+
+### Tips for Using OSK with Dolphin
+- **Resize the OSK** to sit below the game window
+- Use **Snap layouts** (Windows + Z) to split screen between game and keyboard
+- Enable **hover mode** in OSK settings so you don't need to tap each key
+
+---
+
+## Step 4: Configure Dolphin Graphics for Surface
+
+1. Go to **Graphics** in Dolphin
+2. Set **Backend** to **Direct3D 12** (best for Surface)
+3. **Internal Resolution** → try **1x Native** first for performance
+4. Enable **Auto-Adjust Window Size**
+
+---
+
+## Step 5: Load a Game
+
+1. Click **Open** in Dolphin or add your game folder via **Config → Paths**
+2. Double-tap the game in the list to launch
+3. Use your touchpad and OSK to play
+
+---
+
+## Recommended Settings for Better Touch Experience
+
+### Dolphin Settings
+- Go to **Config → Interface**
+- Check **"Render to Main Window"** so the game stays in one window
+- Enable **"Keep Window on Top"** if using OSK overlay
+
+### Windows Settings
+- **Disable** touchpad palm rejection if inputs are being missed
+- Increase **touchpad sensitivity** in Settings
+
+---
+
+## Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| OSK disappears behind Dolphin | Use Windows snap to separate windows |
+| Touchpad clicks not registering | Re-map buttons in Dolphin controller config |
+| Game runs slowly | Lower resolution, disable enhancements |
+| Can't see OSK while playing | Set Dolphin to windowed mode, not fullscreen |
+
+---
+
+## Pro Tips
+
+- **Consider a Bluetooth controller** (Xbox, PS4/5) for a much better experience
+- Some games work better with **mouse pointer** mapped to Wiimote IR
+- Use **Dolphin's built-in touch overlay** if available in newer versions
+- **Save states** frequently (Shift + F1 to save, F1 to load) since touch controls can be tricky
+
+---
+
+Would you like help configuring a specific game or setting up IR pointer controls for pointer-based Wii games?

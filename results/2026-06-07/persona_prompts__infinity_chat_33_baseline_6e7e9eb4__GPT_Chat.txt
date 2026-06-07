@@ -1,0 +1,87 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=26 out=627
+Latency:   6532 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You can run Dolphin Emulator on a Microsoft Surface using only the touchpad and the Windows on-screen keyboard, but you'll need to configure controls carefully because Wii games expect motion controls and buttons.
+
+1. Open the Windows On-Screen Keyboard
+- Press Win + Ctrl + O to toggle the on-screen keyboard.
+- Or open Start and search for "On-Screen Keyboard."
+
+2. Open Dolphin Controller Settings
+- Launch Dolphin.
+- Select Controllers.
+- Under "Wii Remotes," choose Emulated Wii Remote for Player 1.
+- Click Configure.
+
+3. Map Wii Remote Buttons to Keyboard Keys
+Assign Wii buttons to keys that are easy to press on the on-screen keyboard:
+- A → Space
+- B → Left Shift
+- 1 → 1
+- 2 → 2
+- Plus (+) → Enter
+- Minus (-) → Backspace
+- Home → H
+- D-Pad → Arrow Keys
+
+To map:
+- Click a control field.
+- Press the desired key on the physical keyboard if available, or use the on-screen keyboard.
+
+4. Simulate Wii Pointer with the Touchpad
+In the Emulated Wii Remote configuration:
+- Find the Point section.
+- Bind:
+  - Up → Mouse Y-
+  - Down → Mouse Y+
+  - Left → Mouse X-
+  - Right → Mouse X+
+- Enable relative mouse input if available.
+
+This allows touchpad movement to control the Wii pointer.
+
+5. Simulate Wii Motion Controls
+For games that require shaking or tilting:
+- In the Motion Simulation section:
+  - Assign Shake X, Y, and Z to keyboard keys such as Q, W, and E.
+  - Assign Tilt directions to keys such as I, J, K, and L.
+
+You can trigger these keys from the on-screen keyboard when needed.
+
+6. Configure Nunchuk (If Required)
+- In Extensions, select Nunchuk.
+- Configure:
+  - Control Stick → Arrow keys or WASD.
+  - C and Z buttons → convenient keys such as C and Z.
+
+7. Improve Touchpad Usability
+- In Windows Settings > Bluetooth & devices > Touchpad:
+  - Increase pointer speed.
+  - Enable tap-to-click if preferred.
+- For pointer-heavy Wii games, a higher sensitivity often helps.
+
+8. Consider Dolphin's Touch Support
+Some recent Dolphin builds have improved touch and pointer handling. If you are using a Surface touchscreen, touching the screen may work better than using the touchpad for games that rely heavily on Wii pointing.
+
+Limitations:
+- Games that depend heavily on Wii motion (Skyward Sword, Wii Sports Resort, etc.) can be difficult to play with only a touchpad and on-screen keyboard.
+- Standard Wii games that use buttons and occasional pointing generally work much better.
+- A Bluetooth Wii Remote or compatible gamepad will provide a significantly better experience if available.
+
+If you tell me:
+- Your Surface model,
+- Whether you have a touchscreen available,
+- And the specific Wii game you want to play,
+
+I can suggest a control layout tailored to that game.

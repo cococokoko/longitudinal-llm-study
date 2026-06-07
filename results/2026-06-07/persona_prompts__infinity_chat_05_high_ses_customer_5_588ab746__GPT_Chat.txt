@@ -1,0 +1,44 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=273
+Latency:   3274 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A valuable feature for a smartwatch designed specifically for senior citizens would be an "Adaptive Wellness and Safety Companion."
+
+Key capabilities:
+- Passive health monitoring:
+  - Tracks heart rate, sleep quality, activity levels, and fall events continuously.
+  - Detects unusual patterns (e.g., prolonged inactivity, elevated heart rate, disrupted sleep).
+
+- Context-aware alerts:
+  - Sends simple, easy-to-understand notifications such as:
+    - "You haven't moved much today. Would you like to take a short walk?"
+    - "It's time for your medication."
+  - Adjusts alert frequency based on the user's habits and preferences.
+
+- Family and caregiver connectivity:
+  - Allows trusted contacts to receive alerts when significant health or safety concerns are detected.
+  - Provides optional location sharing during emergencies.
+
+- One-touch assistance:
+  - A large, easily accessible emergency button.
+  - Voice-activated help requests for users with limited mobility or dexterity.
+
+- Cognitive support:
+  - Reminders for appointments, medications, hydration, and daily routines.
+  - Simple spoken prompts and confirmations.
+
+Why it stands out:
+Rather than focusing on a single function, this feature combines health monitoring, safety, and independence into a unified experience. It helps seniors remain self-sufficient while giving family members and caregivers greater peace of mind, without requiring constant interaction with the device.

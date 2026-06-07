@@ -1,0 +1,27 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_45_low_ses_user_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=37 out=131
+Latency:   3628 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Create a sentence using a minimum of 2 R-colored vowels.
+
+── Response ────────────────────────────────────────────────────────
+Here is a sentence using R-colored vowels:
+
+"**Your** performance at work will determine your future **career**."
+
+The R-colored vowels (vowels influenced by the "r" sound) appear in:
+- **Your** (the "our" sound)
+- **work** (the "ur/er" sound)
+- **determine** (the "er" sound)
+- **career** (the "er" sound)
+
+This gives you several R-colored vowels, well above the minimum of 2! Good luck with your probation period! 😊

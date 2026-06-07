@@ -1,0 +1,38 @@
+Wave:      2026-06-07
+Dataset:   global_opinion_qa
+Item ID:   goqa_e1b8c1648cec
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=159 out=526
+Latency:   5375 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How frequently do the following things occur in your neighborhood?
+
+Racist behavior
+
+Options:
+A. Very Frequently
+B. Quite frequently
+C. Not frequently
+D. Not at all frequently
+E. Don't know
+F. No answer
+G. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{
+  "A": 0.04,
+  "B": 0.08,
+  "C": 0.30,
+  "D": 0.55,
+  "E": 0.02,
+  "F": 0.01,
+  "G": 0.00
+}

@@ -1,0 +1,61 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=461
+Latency:   4491 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi usually comes down to placement, coverage, interference, and equipment quality. A practical approach:
+
+- Place the router centrally
+  - Put it near the middle of the home rather than at one end.
+  - Keep it elevated (on a shelf or table).
+  - Avoid cabinets, closets, and behind TVs.
+
+- Reduce interference
+  - Keep the router away from microwaves, cordless phone bases, baby monitors, and large metal objects.
+  - If possible, use the 5 GHz or 6 GHz band for devices that need higher speeds and lower interference.
+
+- Optimize router settings
+  - Update the router firmware.
+  - Use WPA2 or WPA3 security.
+  - Check whether the router can automatically select the best channel, or manually choose a less congested channel.
+
+- Consider a mesh Wi‑Fi system
+  - For larger homes, multiple floors, or homes with thick walls, a mesh system often provides much better coverage than a single router.
+  - Place mesh nodes where they still receive a strong signal from the main unit.
+
+- Upgrade older equipment
+  - If your router is more than 4–5 years old, a newer Wi‑Fi 6 or Wi‑Fi 6E router may significantly improve performance.
+  - Ensure devices also support newer Wi‑Fi standards where possible.
+
+- Use wired connections strategically
+  - Connect bandwidth-heavy devices (gaming PCs, streaming boxes, workstations) via Ethernet if feasible.
+  - Wired backhaul between mesh nodes can improve performance substantially.
+
+- Check internet service versus Wi‑Fi performance
+  - Run a speed test while connected directly to the modem/router via Ethernet.
+  - If wired speeds are slow, the issue may be with the internet service rather than Wi‑Fi.
+
+- Measure and diagnose
+  - Use a Wi‑Fi analyzer app to identify weak-signal areas and channel congestion.
+  - Test speeds in different rooms to determine whether the issue is coverage, interference, or ISP performance.
+
+If you share:
+- Home size (square footage or square meters)
+- Number of floors
+- Router model
+- Internet speed plan
+- Main problem (slow speeds, dead zones, video-call issues, etc.)
+
+I can recommend a more tailored setup.

@@ -1,0 +1,49 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=29 out=312
+Latency:   7687 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Here are some effective ways to improve your home WiFi:
+
+## Router Placement
+- Position it **centrally** in your home
+- Keep it **elevated** and in the open
+- Avoid walls, appliances, and metal objects nearby
+
+## Hardware Upgrades
+- **Replace an old router** (technology improves significantly every few years)
+- Consider a **mesh network system** (Eero, Google Nest, Orbi) for larger homes
+- Add a **WiFi extender or access point** for dead zones
+
+## Settings Optimization
+- Use the **5GHz band** for faster speeds at shorter range
+- Use **2.4GHz** for better range and older devices
+- **Change your WiFi channel** to avoid neighbor interference
+- Keep **firmware updated**
+
+## Reduce Interference
+- Move away from microwaves, cordless phones, baby monitors
+- Minimize competing networks on the same channel
+
+## Connection Tips
+- Use **ethernet cables** for stationary devices (TVs, gaming consoles, computers)
+- **Limit bandwidth-heavy devices** or use QoS settings to prioritize traffic
+- **Restart your router** periodically
+
+## Service-Level Check
+- Confirm you're getting the speeds you're **paying for**
+- Consider **upgrading your internet plan** if bandwidth is the bottleneck
+
+Would you like more detail on any specific area?

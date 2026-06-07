@@ -1,0 +1,28 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_low_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=861
+Latency:   9148 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+**Analysis** is defining *what* the problem is and what needs to be done. **Design** is planning *how* to solve it. 
+
+Think of it like setting up a new warehouse floor:
+*   **Analysis:** Figuring out the pallet dimensions, weight limits, and forklift traffic flow.
+*   **Design:** Drawing the floor plan and choosing where to bolt the racks.
+
+**Can you begin design without analysis?** 
+No. 
+
+**Why?** 
+If you just start bolting racks to the floor (design) without knowing your equipment's turning radius (analysis), you’ll end up with aisles that are too narrow for your forklifts. Skipping analysis means you'll spend your long shifts tearing down and rebuilding a broken system instead of getting the job done right the first time.

@@ -1,0 +1,92 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=638
+Latency:   6268 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The best remote collaboration tools depend on what your team needs to do together. For a hospital, academic department, or research group, it often helps to think in categories rather than look for a single platform.
+
+For communication:
+- Microsoft Teams
+  - Strong integration with Microsoft 365
+  - Chat, video meetings, file sharing, channels
+  - Common in healthcare organizations due to enterprise administration and compliance features
+- Slack
+  - Excellent for fast team communication and integrations
+  - Strong search and channel organization
+  - Often preferred by research and innovation teams
+
+For video conferencing:
+- Zoom
+  - Reliable, easy to use, strong meeting quality
+  - Good webinar and large-group capabilities
+- Microsoft Teams Meetings
+  - Convenient if your organization already uses Microsoft 365
+
+For project and task management:
+- Asana
+  - Good balance of simplicity and power
+  - Useful for research projects, committee work, and departmental initiatives
+- Monday.com
+  - Highly customizable workflows and dashboards
+- Jira
+  - Best for technical, software, and data teams
+
+For document collaboration:
+- Microsoft 365 (Word, Excel, PowerPoint, SharePoint)
+  - Real-time coauthoring
+  - Strong enterprise governance
+- Google Workspace
+  - Extremely smooth collaborative editing
+  - Often popular in academic settings
+
+For knowledge management:
+- Notion
+  - Flexible combination of documents, databases, and project tracking
+  - Useful for protocols, onboarding, and research coordination
+- Confluence
+  - Strong structured documentation, especially alongside Jira
+
+For whiteboarding and brainstorming:
+- Miro
+  - Excellent virtual whiteboard
+  - Useful for strategic planning, research design, and educational sessions
+- Microsoft Whiteboard
+  - Simpler option integrated into Teams
+
+For healthcare-specific collaboration:
+- Epic Secure Chat (if using Epic)
+  - Integrated clinical communication
+  - Better suited for patient-care coordination than general collaboration platforms
+- TigerConnect
+  - Widely used for secure clinical messaging
+- Vocera
+  - Common for hospital communication workflows
+
+For research and academic collaboration:
+- Overleaf
+  - Collaborative manuscript writing for scientific publications
+- Zotero
+  - Shared reference management
+- REDCap
+  - Research data collection and collaboration
+
+If I were setting up a neurosurgery department today, I would typically consider:
+- Microsoft Teams for communication and meetings
+- SharePoint/Microsoft 365 for document management
+- Asana or Monday.com for projects and committee work
+- Miro for planning and education
+- REDCap and Zotero for research collaboration
+- Epic Secure Chat or TigerConnect for clinical communication
+
+One important consideration in healthcare is ensuring any platform used for patient-related information aligns with your institution's privacy, security, and regulatory requirements. General collaboration tools may be appropriate for administrative and academic work but not for transmitting protected health information unless specifically configured and approved by your organization.

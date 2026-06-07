@@ -1,0 +1,20 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_03_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=79
+Latency:   1607 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a joke about electric vehicles.
+
+── Response ────────────────────────────────────────────────────────
+Why did the electric vehicle get promoted?
+
+Because it always stayed positive under pressure and never ran out of charge during meetings. The gas cars said it was just conducting itself professionally. 😄

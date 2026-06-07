@@ -1,0 +1,22 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_low_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=34 out=741
+Latency:   8382 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+A very common optimization technique used in machine learning is called **Stochastic Gradient Descent (SGD)**. 
+
+The word "stochastic" actually means random or unpredictable. In a way, it's a lot like managing a full-time job in fast food with a schedule that's always changing—you can't always predict what your shifts or the daily lunch rush will look like, so you just have to adapt on the fly! 
+
+In machine learning, instead of trying to process a massive, overwhelming amount of data all at once, SGD looks at random, bite-sized pieces of data one at a time. It makes quick, continuous adjustments based on those unpredictable samples until it eventually finds the best, most optimal solution.

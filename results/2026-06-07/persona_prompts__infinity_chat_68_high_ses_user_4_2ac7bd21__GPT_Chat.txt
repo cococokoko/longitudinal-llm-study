@@ -1,0 +1,24 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=142
+Latency:   2266 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+One high-impact practice is to make expectations explicit and revisit them regularly.
+
+For a physician-scientist leading a research group, that can mean:
+- Defining each person's responsibilities, priorities, and decision-making authority.
+- Setting clear milestones for projects (e.g., experiments, manuscripts, grants).
+- Holding brief, recurring one-on-one meetings to identify obstacles early and realign priorities as needed.
+
+Many team problems that appear to be performance or interpersonal issues are actually expectation mismatches. Clear expectations reduce ambiguity, improve accountability, and help team members work more independently.

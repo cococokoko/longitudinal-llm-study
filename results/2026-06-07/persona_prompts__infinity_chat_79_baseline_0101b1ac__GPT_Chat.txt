@@ -1,0 +1,89 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=25 out=526
+Latency:   4954 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+Yes. A strong STEM fair project is one that:
+- Solves a real local problem.
+- Uses measurable data.
+- Is affordable to build.
+- Demonstrates science, technology, engineering, and math clearly.
+
+One idea that stands out for Vietnam is:
+
+Title:
+"Low-Cost Solar Water Purifier for Rural and Flood-Affected Communities"
+
+Why it matters in Vietnam:
+- Flooding is common in many regions, especially the Mekong Delta and central provinces.
+- Floods can contaminate drinking water with bacteria and sediment.
+- Many rural communities need affordable water treatment solutions.
+- Climate change and saltwater intrusion are increasing water challenges.
+
+Project Goal:
+Design and test a simple solar-powered water purification system that uses sunlight to produce cleaner drinking water.
+
+How it works:
+- Build a small solar still using:
+  - Plastic container or basin
+  - Clear plastic wrap or transparent lid
+  - Collection cup
+  - Black paper or paint to absorb heat
+- Dirty water evaporates.
+- Water vapor condenses on the clear cover.
+- Clean water drips into the collection cup.
+
+STEM Components:
+- Science:
+  - Evaporation and condensation.
+  - Water quality testing.
+- Technology:
+  - Water quality sensors (optional).
+- Engineering:
+  - Designing the most efficient purifier.
+- Mathematics:
+  - Measure water output per hour.
+  - Calculate purification efficiency.
+  - Compare designs statistically.
+
+Experiments:
+- Compare different cover angles.
+- Compare black vs. reflective bottoms.
+- Compare sunny and cloudy conditions.
+- Measure daily water production.
+
+Cost:
+- Approximately $10–25 USD depending on materials.
+
+Ways to make it more impressive:
+- Test turbidity (water cloudiness) before and after purification.
+- Add a simple Arduino temperature sensor if available.
+- Create a model for emergency flood-relief use.
+
+Another very competitive Vietnam-focused idea:
+
+"Smart System to Detect Saltwater Intrusion in the Mekong Delta"
+
+Problem:
+- Saltwater intrusion threatens rice farming and freshwater supplies.
+
+Project:
+- Build a low-cost salinity monitoring device using an Arduino and conductivity sensor.
+- Test different water samples.
+- Create an alert system when salinity exceeds safe levels.
+
+Why judges love it:
+- Directly addresses one of Vietnam's biggest environmental challenges.
+- Combines environmental science, electronics, coding, and data analysis.
+- Can be built for roughly $20–40 USD.
+
+If you're aiming for a regional or national STEM competition, the saltwater intrusion detector is likely the more advanced and unique project, while the solar water purifier is easier and cheaper to build.

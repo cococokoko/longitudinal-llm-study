@@ -1,0 +1,232 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=1024
+Latency:   6694 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+A basic online forum on a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP) can be built with the following components:
+
+1. Set up the environment
+
+On Ubuntu:
+
+```bash
+sudo apt update
+sudo apt install apache2 mysql-server php php-mysql
+```
+
+Verify:
+
+```bash
+php -v
+mysql --version
+```
+
+2. Create the database
+
+Example schema:
+
+```sql
+CREATE DATABASE forum_db;
+
+USE forum_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT NOT NULL,
+    user_id INT NOT NULL,
+    body TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+3. Create a database connection
+
+`db.php`
+
+```php
+<?php
+
+$host = "localhost";
+$dbname = "forum_db";
+$user = "forum_user";
+$pass = "strong_password";
+
+$pdo = new PDO(
+    "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
+    $user,
+    $pass,
+    [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]
+);
+```
+
+4. User registration
+
+Example registration logic:
+
+```php
+<?php
+require 'db.php';
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+$hash = password_hash($password, PASSWORD_DEFAULT);
+
+$stmt = $pdo->prepare(
+    "INSERT INTO users (username, password_hash)
+     VALUES (?, ?)"
+);
+
+$stmt->execute([$username, $hash]);
+
+echo "User created";
+```
+
+5. User login
+
+```php
+<?php
+session_start();
+require 'db.php';
+
+$stmt = $pdo->prepare(
+    "SELECT * FROM users WHERE username = ?"
+);
+
+$stmt->execute([$_POST['username']]);
+
+$user = $stmt->fetch();
+
+if ($user && password_verify($_POST['password'], $user['password_hash'])) {
+    $_SESSION['user_id'] = $user['id'];
+    echo "Logged in";
+} else {
+    echo "Invalid credentials";
+}
+```
+
+6. Create a thread
+
+```php
+<?php
+session_start();
+require 'db.php';
+
+$stmt = $pdo->prepare(
+    "INSERT INTO threads (user_id, title)
+     VALUES (?, ?)"
+);
+
+$stmt->execute([
+    $_SESSION['user_id'],
+    $_POST['title']
+]);
+
+echo "Thread created";
+```
+
+7. Add a post
+
+```php
+<?php
+session_start();
+require 'db.php';
+
+$stmt = $pdo->prepare(
+    "INSERT INTO posts (thread_id, user_id, body)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['thread_id'],
+    $_SESSION['user_id'],
+    $_POST['body']
+]);
+
+echo "Post added";
+```
+
+8. Display threads
+
+```php
+<?php
+require 'db.php';
+
+$stmt = $pdo->query(
+    "SELECT t.id, t.title, u.username
+     FROM threads t
+     JOIN users u ON t.user_id = u.id
+     ORDER BY t.created_at DESC"
+);
+
+foreach ($stmt as $row) {
+    echo "<a href='thread.php?id={$row['id']}'>";
+    echo htmlspecialchars($row['title']);
+    echo "</a> by ";
+    echo htmlspecialchars($row['username']);
+    echo "<br>";
+}
+```
+
+9. Display posts in a thread
+
+```php
+<?php
+require 'db.php';
+
+$stmt = $pdo->prepare(
+    "SELECT p.body, u.username, p.created_at
+     FROM posts p
+     JOIN users u ON p.user_id = u.id
+     WHERE p.thread_id = ?
+     ORDER BY p.created_at"
+);
+
+$stmt->execute([$_GET['id']]);
+
+foreach ($stmt as $post) {
+    echo "<p>";
+    echo "<strong>" . htmlspecialchars($post['username']) . "</strong><br>";
+    echo nl2br(htmlspecialchars($post['body']));
+    echo "</p>";
+}
+```
+
+10. Security considerations
+
+- Use prepared statements everywhere.
+- Store passwords only with `password_hash()`.
+- Escape user output using `htmlspecialchars()`.
+- Add CSRF protection to forms.
+- Validate and sanitize all input.
+- Use HTTPS

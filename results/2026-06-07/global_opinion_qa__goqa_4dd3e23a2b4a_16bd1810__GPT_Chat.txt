@@ -1,0 +1,28 @@
+Wave:      2026-06-07
+Dataset:   global_opinion_qa
+Item ID:   goqa_4dd3e23a2b4a
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=147 out=126
+Latency:   1797 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?
+
+Unmarried couples living together
+
+Options:
+A. Mentioned
+B. Not mentioned
+C. Don't know
+D. No answer
+E. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 1.0, "C": 0.0, "D": 0.0, "E": 0.0}

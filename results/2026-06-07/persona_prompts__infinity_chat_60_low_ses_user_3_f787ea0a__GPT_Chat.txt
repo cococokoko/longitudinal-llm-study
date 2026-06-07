@@ -1,0 +1,36 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_low_ses_user_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=28 out=326
+Latency:   3665 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a very long line of dominoes set up in a special pattern.
+
+You ask, "If I knock over the first domino, what will the 1,000th domino be doing later?"
+
+For some things, you can do a shortcut. Like if I ask, "What is 2 + 2?" you don't need to count from 1 every time. You can jump straight to the answer.
+
+But with some domino patterns, there is no shortcut. The only way to know what happens to the 1,000th domino is to knock over the first one and watch all the dominoes fall, one after another.
+
+Computational irreducibility is the idea that some things are like those special dominoes:
+- You can't skip ahead.
+- You can't use a clever trick to get the answer faster.
+- The only way to know what happens is to let every step happen.
+
+A kid-friendly example:
+- Imagine a magic plant that grows in a strange way every day.
+- You ask, "What will it look like in 100 days?"
+- For some plants, there might be a rule that lets you figure it out quickly.
+- For this magic plant, the only way is to watch Day 1, then Day 2, then Day 3... all the way to Day 100.
+
+That's computational irreducibility: sometimes the future can't be predicted faster than it takes for the future to happen.

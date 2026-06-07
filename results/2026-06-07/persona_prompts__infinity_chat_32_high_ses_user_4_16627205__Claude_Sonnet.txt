@@ -1,0 +1,191 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=31 out=933
+Latency:   17762 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a straightforward guide to build a functional zombie survivor game!
+
+---
+
+## Basic Game Concept
+- Player moves and shoots zombies
+- Zombies chase the player
+- Score increases per kill
+- Game ends when zombies catch you
+
+---
+
+## Step 1: Set Up Your Sprites
+
+**You'll need:**
+- Player sprite
+- Zombie sprite
+- Bullet sprite
+- (Optional) Health bar, score display
+
+---
+
+## Step 2: Player Movement
+
+Add this to your **Player sprite:**
+
+```
+when green flag clicked
+forever
+  if <key [w] pressed?> then
+    change y by (5)
+  end
+  if <key [s] pressed?> then
+    change y by (-5)
+  end
+  if <key [a] pressed?> then
+    change x by (-5)
+  end
+  if <key [d] pressed?> then
+    change x by (5)
+  end
+end
+```
+
+---
+
+## Step 3: Player Shooting
+
+```
+when green flag clicked
+forever
+  if <mouse down?> then
+    broadcast [shoot v]
+    wait (0.3) seconds
+  end
+end
+```
+
+**On Bullet sprite:**
+```
+when I receive [shoot v]
+create clone of [myself v]
+
+when I start as a clone
+go to [Player v]
+point towards (mouse-pointer v)
+show
+repeat until <touching [edge v]>
+  move (10) steps
+  if <touching [Zombie v]?> then
+    broadcast [hit zombie v]
+    delete this clone
+  end
+end
+delete this clone
+```
+
+---
+
+## Step 4: Zombie AI
+
+**On Zombie sprite:**
+```
+when green flag clicked
+set [zombie speed v] to (2)
+forever
+  point towards [Player v]
+  move (zombie speed) steps
+  if <touching [Player v]?> then
+    broadcast [game over v]
+  end
+end
+```
+
+### Spawning Multiple Zombies
+```
+when green flag clicked
+forever
+  wait (3) seconds
+  create clone of [myself v]
+
+when I start as a clone
+go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
+show
+forever
+  point towards [Player v]
+  move (zombie speed) steps
+  if <touching [Player v]?> then
+    broadcast [game over v]
+  end
+end
+```
+
+---
+
+## Step 5: Score & Hit Detection
+
+```
+when I receive [hit zombie v]
+change [score v] by (1)
+delete this clone  ← (on zombie sprite)
+```
+
+---
+
+## Step 6: Game Over Screen
+
+```
+when I receive [game over v]
+stop [all v]
+```
+*(Switch to a Game Over backdrop or show a sprite)*
+
+---
+
+## Step 7: Health System (Optional)
+
+```
+set [health v] to (3)
+
+when touching [Zombie v]  ← check in zombie script
+change [health v] by (-1)
+wait (1) seconds  ← invincibility frames
+if <(health) = (0)> then
+  broadcast [game over v]
+end
+```
+
+---
+
+## Tips to Make It Better
+
+| Feature | How |
+|---|---|
+| Increasing difficulty | Increase zombie speed over time |
+| Multiple zombie types | Different clone costumes |
+| Walls/maze | Use color-touching blocks |
+| Sound effects | Add sound blocks on shoot/hit |
+| Animations | Switch costumes in a loop |
+
+---
+
+## Quick Checklist
+- [ ] Player moves with WASD
+- [ ] Player shoots toward mouse
+- [ ] Zombies spawn and chase
+- [ ] Bullets delete zombies
+- [ ] Score tracks kills
+- [ ] Game over on contact
+
+---
+
+Want me to go deeper on any specific mechanic, like **pathfinding, health bars, or wave systems?**

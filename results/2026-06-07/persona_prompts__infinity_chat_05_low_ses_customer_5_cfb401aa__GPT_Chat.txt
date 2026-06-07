@@ -1,0 +1,31 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=212
+Latency:   2748 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A useful feature would be a "Family Check-In and Assistance" system.
+
+How it works:
+- The watch automatically detects unusual patterns, such as a missed daily walk, a long period of inactivity, or a possible fall.
+- It first prompts the wearer with a simple, large-button message: "Are you okay?"
+- If there is no response, the watch can notify selected family members or caregivers through an app.
+- Family members can then send a voice message directly to the watch or initiate a one-touch call.
+- The wearer can also press a dedicated help button to instantly alert their support network.
+
+Why it helps:
+- Many seniors rely on extended family for support.
+- It balances independence with safety.
+- It reduces the need for constant monitoring while giving families peace of mind.
+- Large text, voice prompts, and simple controls make it easy to use even for people with limited vision or dexterity.

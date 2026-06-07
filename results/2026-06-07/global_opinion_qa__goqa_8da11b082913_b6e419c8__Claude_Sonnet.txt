@@ -1,0 +1,27 @@
+Wave:      2026-06-07
+Dataset:   global_opinion_qa
+Item ID:   goqa_8da11b082913
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=193 out=51
+Latency:   1515 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Too much trust, too much confidence, or too little trust, or you never trust it, to what extent do you trust the following institutions? Do you trust "religious institutions"? To the researcher: You ask the listed items in the same way.
+
+Options:
+A. A great deal
+B. Quite a lot
+C. Not very much
+D. None at all
+E. Don't know
+F. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.08, "B": 0.17, "C": 0.35, "D": 0.30, "E": 0.08, "F": 0.02}

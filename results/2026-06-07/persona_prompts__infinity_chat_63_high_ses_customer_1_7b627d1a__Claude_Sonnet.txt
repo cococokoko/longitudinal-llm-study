@@ -1,0 +1,65 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=521
+Latency:   9031 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## Setup
+
+Consider a patient's **intracranial pressure (ICP)** modeled as a function of two variables:
+
+$$P(V, R) = \frac{V \cdot R}{4}$$
+
+where:
+- **V** = cerebrospinal fluid volume (mL)
+- **R** = cerebrovascular resistance (mmHg·min/mL)
+
+*(This is a simplified illustrative model, not a clinical formula)*
+
+---
+
+## Specific Point of Evaluation
+
+Let **V = 10 mL** and **R = 8 mmHg·min/mL**, giving:
+
+$$P(10, 8) = \frac{10 \times 8}{4} = 20 \text{ mmHg}$$
+
+---
+
+## Computing the Partial Derivatives
+
+### ∂P/∂V (holding R constant at 8)
+
+$$\frac{\partial P}{\partial V} = \frac{R}{4} = \frac{8}{4} = \boxed{2 \text{ mmHg/mL}}$$
+
+> **Interpretation:** If resistance stays fixed, each additional **1 mL** of CSF volume raises ICP by **2 mmHg**
+
+### ∂P/∂R (holding V constant at 10)
+
+$$\frac{\partial P}{\partial R} = \frac{V}{4} = \frac{10}{4} = \boxed{2.5 \text{ mmHg per unit resistance}}$$
+
+> **Interpretation:** If volume stays fixed, each unit increase in resistance raises ICP by **2.5 mmHg**
+
+---
+
+## Why "Partial"?
+
+| Derivative | What's frozen | What's measured |
+|---|---|---|
+| ∂P/∂V = 2 | R held at 8 | Effect of volume alone |
+| ∂P/∂R = 2.5 | V held at 10 | Effect of resistance alone |
+
+The **partial** derivative isolates **one variable's contribution** while treating all others as constants — analogous to changing one physiological parameter at a time in a controlled experiment.

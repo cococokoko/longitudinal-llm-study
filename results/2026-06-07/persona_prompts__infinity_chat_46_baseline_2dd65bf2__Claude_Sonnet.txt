@@ -1,0 +1,52 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=300
+Latency:   6185 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Example of a Linear Graph (Path Graph)
+
+### Definition
+A **linear graph** (also called a **path graph**) is a graph where vertices are connected in a single straight sequence, with each vertex connected to the next by exactly one edge.
+
+---
+
+### Example: P₄ (Path Graph with 4 vertices)
+
+```
+A --- B --- C --- D
+```
+
+**Vertices:** {A, B, C, D}
+
+**Edges:** {AB, BC, CD}
+
+---
+
+### Properties of this example:
+| Property | Value |
+|----------|-------|
+| Number of vertices | 4 |
+| Number of edges | 3 |
+| Degree of endpoints (A, D) | 1 |
+| Degree of interior vertices (B, C) | 2 |
+| Is it connected? | Yes |
+| Contains a cycle? | No |
+
+---
+
+### Key Characteristics
+- **Two endpoints** (degree 1) — vertices A and D
+- **Interior vertices** have degree 2
+- It is a **tree** (connected, acyclic)
+- Exactly **one path** exists between any two vertices
+
+This is the simplest form of a linear/path graph, commonly denoted **Pₙ** where *n* is the number of vertices.

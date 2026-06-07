@@ -1,0 +1,27 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=27 out=1020
+Latency:   9016 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Since I know you’re working long hours in a warehouse, I’ll keep this straightforward and easy to digest. You can actually think of data security a lot like warehouse security and inventory management—it’s all about controlling who has access, keeping things locked down, and knowing what to do if something goes wrong. 
+
+Here are the best practices for data security in a small business, broken down into practical steps:
+
+**1. Control Access (The "High-Value Cage" Rule)**
+*   **Principle of Least Privilege:** Just like you wouldn't give every employee the keys to the high-value inventory cage or the loading dock, don't give everyone access to all company data. Employees should only have access to the specific data they need to do their jobs.
+*   **Revoke Access Promptly:** When someone leaves the company, immediately disable their accounts. 
+
+**2. Lock the Doors (Passwords & MFA)**
+*   **Multi-Factor Authentication (MFA):** This is like needing both a keycard and a PIN to enter a building. Even if a hacker steals a password, they can't get in without the second step (usually a code sent to a phone). Require MFA for all email and business accounts.

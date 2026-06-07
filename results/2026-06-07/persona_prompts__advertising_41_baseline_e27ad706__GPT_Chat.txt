@@ -1,0 +1,57 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   advertising_41_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=478
+Latency:   4920 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+If you're trying to improve your credit score as quickly as possible, focus on the factors that have the biggest short-term impact:
+
+1. Lower your credit card balances
+- Credit utilization (how much of your available credit you're using) is a major scoring factor.
+- Aim to keep each card below 30% of its limit, and ideally below 10%.
+- Paying down revolving debt can sometimes improve scores within a month or two, once lenders report updated balances.
+
+2. Make every payment on time
+- Payment history is the most important component of most credit scores.
+- Set up automatic payments or reminders to avoid missing due dates.
+- If you've recently missed a payment, bringing the account current is important, though the late mark may remain on your report.
+
+3. Check your credit reports for errors
+- Review your reports from the major credit bureaus and dispute any inaccuracies.
+- Incorrect late payments, balances, or accounts can hurt your score.
+- Successful disputes can lead to score improvements.
+
+4. Ask for a credit limit increase
+- If approved and you don't increase spending, your utilization ratio will decrease.
+- Some lenders perform a hard inquiry for limit increase requests, while others don't. Ask first.
+
+5. Become an authorized user
+- If a trusted family member has a long-standing credit card with a strong payment history and low utilization, being added as an authorized user may help your credit profile.
+
+6. Avoid applying for multiple new accounts
+- New applications can generate hard inquiries and reduce the average age of your accounts.
+- Unless there's a specific reason, avoid opening several new accounts in a short period.
+
+7. Pay down collections or delinquent accounts strategically
+- Newer scoring models may treat paid collections more favorably, but not all lenders use those models.
+- If you have collections, review the details before paying and consider asking whether the collector will remove the account from your report if permitted.
+
+Expected timeline:
+- Utilization improvements: often 1–2 billing cycles.
+- Error corrections: typically several weeks to a few months.
+- Late payments and serious delinquencies: improvement takes longer, often many months or years.
+
+If you tell me:
+- Your current score range,
+- Whether you have credit card debt,
+- Any missed payments, collections, or high balances,
+
+I can suggest the fastest actions likely to help in your specific situation.

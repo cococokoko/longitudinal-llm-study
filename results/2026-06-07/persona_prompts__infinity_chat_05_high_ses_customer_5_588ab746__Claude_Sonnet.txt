@@ -1,0 +1,58 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=317
+Latency:   8021 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens: **Medication Management with Smart Reminders**
+
+## Core Concept
+An intelligent medication tracking system that goes beyond simple alarms.
+
+---
+
+## Key Capabilities
+
+### Reminders & Confirmation
+- **Gentle escalating alerts** (vibration → sound → voice prompt)
+- **One-tap confirmation** with large, clear buttons
+- **Voice acknowledgment** option ("I took my pill")
+
+### Safety Monitoring
+- Alerts family members or caregivers if medication is **missed after a set window**
+- Tracks **patterns over time** for caregiver reporting
+- Integrates with pharmacy refill schedules
+
+### Accessibility Design
+- **High-contrast display** with large text
+- Simple interface requiring **minimal steps**
+- Works even with limited dexterity
+
+---
+
+## Business Considerations
+
+| Factor | Opportunity |
+|--------|-------------|
+| Market size | 55M+ Americans over 65 |
+| Differentiation | Few competitors focus here seriously |
+| Revenue model | Premium subscription for family dashboard |
+| Partnership potential | Healthcare systems, pharmacies, insurers |
+
+---
+
+## Why This Matters
+Medication non-adherence costs the US healthcare system **~$300 billion annually**, making this both a genuine human need and a compelling market opportunity.
+
+Would you like me to explore the technical implementation or go-to-market strategy further?

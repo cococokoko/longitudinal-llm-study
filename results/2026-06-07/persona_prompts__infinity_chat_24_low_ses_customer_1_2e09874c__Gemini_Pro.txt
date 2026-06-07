@@ -1,0 +1,38 @@
+Wave:      2026-06-07
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_low_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=874
+Latency:   9727 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+Subject: Time for a quick catch-up? 
+
+Hi [Referral Partner's Name],
+
+I hope you’re having a great week! 
+
+It’s been a little while since we last connected, and I’d love to schedule a time to catch up. I'd love to hear how things are going on your end and discuss how we can continue to support each other with referrals this year. 
+
+As a heads-up on my end, I am currently working full-time in the fast-food industry, which means my shift schedule is quite unpredictable from week to week. 
+
+To make scheduling as easy as possible, could you let me know a few days or time windows that generally work best for you over the next couple of weeks? Once I get my upcoming roster, I can match it against your availability and lock in a time for us. 
+
+Whether you prefer to grab a quick coffee or just hop on a brief phone call, let me know what works best for you. 
+
+Looking forward to reconnecting!
+
+Best regards,
+
+[Your Name]
+[Your Contact Information]
+[Your LinkedIn Profile - Optional]
