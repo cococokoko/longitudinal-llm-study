@@ -44,7 +44,6 @@ from db import (
     add_wave_item,
     fetch_responses,
     get_or_create_wave,
-    list_models,
     open_db,
     upsert_dataset_item,
     upsert_model,
@@ -136,7 +135,7 @@ def seed_wave_items(conn, wave_id: str, cfg: dict, seed: int) -> int:
 
 def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
     openrouter_key = os.environ.get("OPENROUTER_API_KEY")
-    include_exp    = getattr(args, "experiment", False)
+    experiment_only    = getattr(args, "experiment", False)
 
     if not openrouter_key:
         console.print("[red]OPENROUTER_API_KEY not set in .env or environment.[/]")
@@ -146,7 +145,7 @@ def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
     conn    = open_db(db_path)
 
     temperature_override = getattr(args, "temperature", None)
-    seed_models(conn, cfg, experiment=include_exp, temperature_override=temperature_override)
+    seed_models(conn, cfg, experiment=experiment_only, temperature_override=temperature_override)
 
     today    = datetime.date.today().isoformat()
     wave_tag = getattr(args, "wave_tag", None)

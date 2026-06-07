@@ -99,22 +99,7 @@ def open_db(path: str | Path) -> sqlite3.Connection:
     conn = sqlite3.connect(str(path), check_same_thread=False)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
-    _migrate(conn)
     return conn
-
-
-def _migrate(conn: sqlite3.Connection) -> None:
-    """Apply additive schema migrations that CREATE TABLE IF NOT EXISTS cannot handle."""
-    di_cols = {row[1] for row in conn.execute("PRAGMA table_info(dataset_items)")}
-    if "system_text" not in di_cols:
-        conn.execute("ALTER TABLE dataset_items ADD COLUMN system_text TEXT")
-        conn.commit()
-
-    rr_cols = {row[1] for row in conn.execute("PRAGMA table_info(response_records)")}
-    if "cost_usd" not in rr_cols:
-        conn.execute("ALTER TABLE response_records ADD COLUMN cost_usd REAL")
-        conn.commit()
-
 
 @contextmanager
 def transaction(conn: sqlite3.Connection) -> Generator[sqlite3.Connection, None, None]:

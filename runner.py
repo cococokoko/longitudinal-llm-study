@@ -106,7 +106,7 @@ async def _run_job(
             params: dict[str, Any] = json.loads(model["parameters"] or "{}")
             temperature = params.pop("temperature", 0.0)
             max_tokens  = params.pop("max_tokens", 1024)
-            top_p       = params.pop("top_p", 0.0)
+            top_p       = params.pop("top_p", 0.1)
 
             # Extend call_params with the actual parameters used
             call_params.update({
