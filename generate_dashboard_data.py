@@ -23,14 +23,14 @@ OUT_DIR  = Path("docs/data")
 METRICS  = OUT_DIR / "metrics.json"
 PROMPTS  = OUT_DIR / "prompts.json"
 
-OPT_LETTERS = list("ABCDEFGH")
+OPT_LETTERS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 MAIN_MODELS = ["Claude Sonnet", "Gemini Pro", "GPT Chat"]   # DB display_name keys
 
 # Display labels used in the dashboard (mirrors MODEL_LABELS in index.html)
 MODEL_LABELS = {
-    "Claude Sonnet":    "Claude Sonnet",
-    "Gemini Pro":       "Gemini Pro",
-    "GPT Chat": "GPT Chat",
+    "Claude Sonnet": "Claude Sonnet",
+    "Gemini Pro":    "Gemini Pro",
+    "GPT Chat":      "GPT Chat",
 }
 
 # Waves before this date are excluded from all analyses.
