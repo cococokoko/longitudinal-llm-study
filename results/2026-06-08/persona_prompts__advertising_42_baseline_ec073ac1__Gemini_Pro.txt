@@ -4,12 +4,61 @@ Item ID:   advertising_42_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=11 out=1020
-Latency:   10435 ms
+Tokens:    in=11 out=2020
+Latency:   20210 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best apps for tracking fitness and nutrition?
 
 ── Response ────────────────────────────────────────────────────────
-The "best" app for tracking fitness and nutrition depends heavily on your specific goals—whether you want to lose weight, build muscle, track micronutrients, or train for a marathon
+Because fitness and nutrition goals are highly personal, the "best" app depends entirely on what you want to achieve (e.g., weight loss, muscle gain, marathon training, or general health). 
+
+Here is a breakdown of the best fitness and nutrition apps available right now, categorized by their strengths.
+
+---
+
+### 1. Best for Nutrition & Calorie Tracking
+
+**MacroFactor**
+*   **Best for:** People who want a science-based, dynamic approach to dieting without the guilt.
+*   **How it works:** Created by fitness researchers, this app uses an algorithm that constantly adjusts your daily calorie and macro targets based on your logged food and weight trends. It is "adherence-neutral," meaning it never shames you or turns red if you go over your calories.
+*   **Pros:** The fastest food logger on the market; highly accurate database; adjusts to your metabolism.
+*   **Cons:** No free version (subscription only); can be too data-heavy for casual users.
+
+**Cronometer**
+*   **Best for:** Health optimizers, vegans, keto dieters, and those who care about *micronutrients*.
+*   **How it works:** While most apps just track calories and macros (protein, carbs, fat), Cronometer tracks up to 82 micronutrients (vitamins, minerals, amino acids). 
+*   **Pros:** Every food entry is verified by staff, meaning the database is incredibly accurate; excellent free version.
+*   **Cons:** The interface is a bit clinical and less "fun" than other apps.
+
+**Lose It!**
+*   **Best for:** Beginners and people whose primary goal is weight loss.
+*   **How it works:** A highly visual, user-friendly app that sets a daily calorie budget based on your weight loss goals. 
+*   **Pros:** Very intuitive interface; the barcode scanner is included in the free version; cheaper premium subscription than competitors.
+*   **Cons:** The food database contains user-generated entries, which can sometimes be inaccurate.
+
+**MyFitnessPal**
+*   **Best for:** People who want the largest food database and integration with almost every fitness device.
+*   **Pros:** Massive database (including restaurant meals); connects to almost every smartwatch and fitness app.
+*   **Cons:** The free version is heavily ad-supported, and the barcode scanner is now locked behind a very expensive Premium paywall in many countries.
+
+---
+
+### 2. Best for Workout & Fitness Tracking
+
+**Hevy** (or **Strong**)
+*   **Best for:** Weightlifters, bodybuilders, and gym-goers.
+*   **How it works:** These apps replace your paper workout journal. You build your routine, log your sets, reps, and weight, and the app tracks your progressive overload over time.
+*   **Pros:** Excellent Apple Watch/WearOS integration; built-in rest timers; visualizes which muscle groups you are hitting. (Hevy has a great social feature; Strong is more private).
+*   **Cons:** Does not track nutrition or cardio well.
+
+**Strava**
+*   **Best for:** Runners, cyclists, and swimmers.
+*   **How it works:** Strava tracks your GPS data for outdoor cardio. It is famous for its "Segments" feature, which allows you to compete against other people's times on specific stretches of road or trail.
+*   **Pros:** The best social network for athletes; excellent route tracking; integrates with Garmin, Apple, and Wahoo.
+*   **Cons:** Privacy settings need to be managed carefully (so strangers don't see where you live); premium is required for advanced analytics.
+
+**Nike Training Club (NTC)**
+*   **Best for:** Free, guided home workouts.
+*   **How

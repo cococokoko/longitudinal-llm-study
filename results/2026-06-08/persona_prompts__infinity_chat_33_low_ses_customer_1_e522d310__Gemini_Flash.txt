@@ -4,8 +4,8 @@ Item ID:   infinity_chat_33_low_ses_customer_1
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: low_ses
 SES level: low  role: customer
-Tokens:    in=39 out=1020
-Latency:   7930 ms
+Tokens:    in=39 out=2020
+Latency:   15972 ms
 Error:     none
 
 ── System message ──────────────────────────────────────────────────
@@ -15,4 +15,46 @@ You know that the customer works full-time in a fast food job with an unpredicta
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-Running Dolphin Emulator on a Microsoft Surface using just the touchpad and the Windows On-Screen Keyboard (OSK) is absolutely possible, but because you are playing without a physical controller, **game selection and control
+Playing Wii games on a Microsoft Surface using just the touchpad and the on-screen keyboard is absolutely possible, but because Wii games originally used motion controls, we need to set things up carefully to make it comfortable and playable. 
+
+Since your time is valuable and you want to get straight to playing, here is a streamlined, step-by-step guide to getting Dolphin set up, optimized for Surface hardware, and configured for touch/keyboard controls.
+
+---
+
+### Step 1: Download the Right Version of Dolphin
+1. Go to the official [Dolphin Emulator website](https://dolphin-emu.org/download/).
+2. **Do not download the "Stable" 5.0 version** (it is years out of date). Download the latest **Beta** or **Development** version. These have much better touchscreen and Windows integration.
+3. Extract the folder and run `Dolphin.exe`.
+
+---
+
+### Step 2: Configure the Controls (Touchpad & Keyboard)
+Because the Windows On-Screen Keyboard (OSK) can sometimes disappear when a game goes full-screen, **you must play Dolphin in "Windowed Mode"** (not full screen) so you can see both the game and your keyboard.
+
+#### A. Set up the On-Screen Keyboard
+1. In Windows, go to **Settings > Time & Language > Typing > Touch keyboard** and ensure it is set to show when no keyboard is attached.
+2. Open the Touch Keyboard. (Tip: You can dock it to the bottom of your screen so it doesn't float over the game window).
+
+#### B. Map the Controls in Dolphin
+For the best experience, we will emulate a **Wii Classic Controller** rather than a standard Wiimote, as it maps perfectly to keyboard keys and doesn't require motion controls.
+
+1. In Dolphin, click **Controllers** on the top toolbar.
+2. Under **Wii Remotes**, set *Wii Remote 1* to **Emulated Wii Remote**, then click **Configure**.
+3. At the top right of the configuration window, look for the **Extension** dropdown menu and select **Classic Controller**.
+4. Click the **Extension** tab next to the "General" tab.
+5. Now, map the buttons to keys on your keyboard that are close together (so you can easily tap them on your screen). 
+   * *Example layout:* 
+     * **D-Pad / Left Stick:** `W` (Up), `A` (Left), `S` (Down), `D` (Right)
+     * **A Button:** `Space` or `J`
+     * **B Button:** `K`
+     * **X/Y Buttons:** `I` / `U`
+     * **L/R Triggers:** `Q` / `E`
+6. **Using the Touchpad as a Pointer (if needed):** If a game requires you to point at the screen, go to the **General** tab in the controller settings. Under **IR (Infrared)**, map Up, Down, Left, and Right to your touchpad/mouse movement.
+
+---
+
+### Step 3: Optimize Graphics for Surface Hardware
+Surface devices are compact and can get warm during gaming. These settings will keep your frame rates high and your device cool:
+
+1. Click **Graphics** on the Dolphin toolbar.
+2. **Backend:** Change this to **Direct3

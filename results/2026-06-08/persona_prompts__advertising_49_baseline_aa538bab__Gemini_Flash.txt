@@ -4,8 +4,8 @@ Item ID:   advertising_49_baseline
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=6 out=1020
-Latency:   6828 ms
+Tokens:    in=6 out=1818
+Latency:   11121 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
@@ -23,4 +23,49 @@ Improving your home WiFi can range from simple, free tweaks to upgrading your ha
    * **How:** Unplug the power cable from your router and modem, wait **30 seconds**, and plug them back in. Doing this once a month can prevent slowdowns.
 
 2. **Move Your Router to the Perfect Spot**
-   * **Centralize it
+   * **Centralize it:** Put the router in the center of your home, not in a corner or closet.
+   * **Elevate it:** WiFi signals travel downward and outward. Place the router on a shelf or table, not on the floor.
+   * **Avoid obstacles:** Keep it away from thick concrete walls, metal objects, and large mirrors.
+   * **Avoid interference:** Keep it away from microwaves, baby monitors, cordless phones, and Bluetooth devices, which use the same wireless frequency.
+
+3. **Adjust the Antennas**
+   * If your router has external antennas, point **one vertically (straight up) and one horizontally (flat)**. Devices receive signals best when their internal antennas are parallel to the router’s antennas.
+
+4. **Disconnect Unused Devices**
+   * Smart TVs, old phones, tablets, and smart home gadgets idle in the background and hog bandwidth. Disconnect devices you aren't actively using.
+
+---
+
+### Phase 2: Optimize Your Settings (Intermediate)
+
+5. **Switch to the 5 GHz Band**
+   * Most modern routers are "dual-band," meaning they broadcast two signals: **2.4 GHz** and **5 GHz**.
+   * **2.4 GHz:** Slower, but travels farther and through walls.
+   * **5 GHz:** Much faster, but has a shorter range.
+   * *Tip:* Connect your work laptop, gaming console, and streaming TV to the **5 GHz** network, and leave smart home devices on the 2.4 GHz network.
+
+6. **Change the WiFi Channel**
+   * If you live in an apartment, your neighbors' WiFi might be crowding your channel.
+   * Log into your router’s admin page (the web address is usually printed on a sticker on the router) and change the channel.
+   * For **2.4 GHz**, use channels **1, 6, or 11**.
+   * For **5 GHz**, use channels **36, 40, 44, or 48**. (Many modern routers have an "Auto" setting that does this for you).
+
+7. **Update Your Router’s Firmware**
+   * Manufacturers constantly release software updates to fix bugs and improve speed. Log into your router’s admin portal and click "Update Firmware."
+
+---
+
+### Phase 3: Hardware Upgrades (If you are willing to spend money)
+
+8. **Buy a Mesh WiFi System (Best for large homes)**
+   * If you have "dead zones" in a large or multi-story house, a single router won't cut it.
+   * **Mesh WiFi** (like Google Nest WiFi, Eero, or Netgear Orbi) uses multiple small stations placed around your house to create one seamless, powerful network.
+
+9. **Use Powerline Adapters**
+   * If you can't run Ethernet cables through your walls, a Powerline adapter sends internet data through your home's existing electrical wiring. You plug one adapter near your router and the other near your device (like a gaming PC or TV).
+
+10. **Upgrade to a Wi-Fi 6 or Wi-Fi 7 Router**
+    * If your router is more than 4–5 years old, it is likely outdated. Newer routers (Wi-Fi 6, 6E, or 7) are designed to handle dozens of smart devices simultaneously without slowing down.
+
+11. **Use an Ethernet Cable for Stationary Devices**
+    * The best way to improve your WiFi is to stop using it where you don't have to. Plug your gaming console, smart TV, and desktop PC directly into the router using an **Ethernet cable (Cat6 or Cat8)**. This frees up wireless bandwidth for your phones and laptops.

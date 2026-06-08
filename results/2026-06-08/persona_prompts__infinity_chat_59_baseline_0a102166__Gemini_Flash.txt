@@ -4,22 +4,33 @@ Item ID:   infinity_chat_59_baseline
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=19 out=1020
-Latency:   6855 ms
+Tokens:    in=19 out=1191
+Latency:   9499 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Give me a tip to be more organized at work. I'm a high school teacher.
 
 ── Response ────────────────────────────────────────────────────────
-As a high school teacher, you are managing multiple preps, hundreds of students, and a mountain of both physical and digital paperwork. 
+As a high school teacher, you are managing multiple preps, hundreds of students, and a constant influx of both physical and digital paperwork. 
 
-The single most effective tip to streamline your day is to implement a **"One Color per Period" System** that bridges both your physical classroom and your digital workspace.
+The single most effective tip to streamline your day is to **implement a strict "One Color per Period" system.**
+
+Assign a specific color to each class period (or each "prep" if you teach multiple sections of the same class) and apply it to **both** your physical and digital spaces.
 
 Here is how to set it up:
 
-### 1. Assign Your Colors
-Assign a specific color to each class period you teach (e.g., Period 1 is Red, Period 2 is Blue, Period 3 is Green, etc.). 
+### 1. The Physical Space
+* **Turn-in Bins:** Have a stack of plastic trays where students submit paper assignments. Period 1 is Red, Period 2 is Blue, Period 3 is Green, etc. Students will automatically know exactly where their papers go.
+* **Teacher Folders:** Keep your master copies, extra handouts, and graded-but-not-yet-returned papers in matching colored folders. 
+* **Whiteboard/Agenda:** Write the daily agenda or homework on your board using the dry-erase marker that matches that class's color.
 
-### 2. Apply it to the Physical Classroom
-*   **Turn-in Bins:** Buy cheap plastic paper trays in your designated colors. Students *only* submit paper assignments into their period’s color
+### 2. The Digital Space
+* **Google Drive / Desktop Folders:** Color-code your digital folders to match your physical ones. (In Google Drive, you can right-click a folder and change its color).
+* **Google Classroom / Canvas:** Change the banner or theme color of each digital classroom to match its designated color.
+* **Digital Planner / Calendar:** Color-code your lesson planning calendar. At a glance, you’ll know exactly what you are teaching and when.
+
+### Why this works so well for High School:
+* **It eliminates decision fatigue:** When a student asks, "Where do I turn this in?" or "Do you have an extra copy of yesterday's worksheet?", you don't have to think. You just look for the color.
+* **It prevents grading mix-ups:** It is incredibly easy to accidentally file Period 3's essays in Period 5's stack. Visual color cues act as a speed-bump for your brain, preventing these tedious mistakes.
+* **It trains the students:** High schoolers are visual. They will quickly learn that "Blue = Period 2" and will start self-policing where they turn in work and where they look for absent work.

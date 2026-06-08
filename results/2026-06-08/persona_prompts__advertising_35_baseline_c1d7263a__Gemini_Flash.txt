@@ -4,12 +4,68 @@ Item ID:   advertising_35_baseline
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=9 out=1020
-Latency:   7503 ms
+Tokens:    in=9 out=2020
+Latency:   26047 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 How to create a successful podcast from home?
 
 ── Response ────────────────────────────────────────────────────────
-Starting a successful podcast from home is highly achievable. Today, the barrier to entry is low, but the barrier to *success* is high. To stand out, you need a mix of good planning,
+Starting a successful podcast from home is highly achievable today. With the right planning, affordable equipment, and a consistent strategy, you can produce a show that sounds professional and builds a loyal audience. 
+
+Here is a step-by-step guide to launching a successful podcast from home.
+
+---
+
+### Phase 1: Planning and Concept (The Foundation)
+Before buying any gear, you need a clear blueprint. 
+
+*   **Define Your Niche:** Don't try to appeal to everyone. Pick a specific topic you are passionate about and knowledgeable in (e.g., "Vegan baking" instead of just "Food").
+*   **Identify Your Target Listener:** Create a mental profile of your ideal listener. What are their pain points? Why would they listen to you?
+*   **Choose Your Format:** 
+    *   *Solo:* Just you sharing expertise.
+    *   *Co-hosted:* Natural conversation and chemistry.
+    *   *Interview:* Bringing on guests (great for leveraging other people's audiences).
+    *   *Narrative/Storytelling:* Highly edited, documentary-style.
+*   **Determine Frequency and Length:** Consistency is more important than frequency. Whether it’s weekly or bi-weekly, pick a schedule and stick to it. Aim for 20 to 45 minutes per episode.
+
+---
+
+### Phase 2: Setting Up Your Home Studio
+You do not need a professional soundproof booth, but you do need to control your environment.
+
+*   **The "Studio" Space:** Avoid rooms with hardwood floors, high ceilings, and lots of windows (they cause echo). Choose a carpeted room with lots of soft furniture. **Pro-tip:** Recording in a walk-in closet surrounded by clothes is one of the best free acoustic treatments you can get.
+*   **The Microphone (Crucial):** 
+    *   *Do not use your computer’s built-in mic.*
+    *   **Dynamic Mics** are best for home recording because they reject background noise (like AC, traffic, or family members).
+    *   *Entry-level:* **Audio-Technica ATR2100x-USB** or **Samson Q2U** (both can connect via USB directly to your computer).
+    *   *Pro-level:* **Shure MV7** or **Shure SM7B** (requires an audio interface like the Focusrite Scarlett Solo).
+*   **Essential Accessories:**
+    *   **Headphones:** Any closed-back headphones (to prevent sound from leaking back into the mic).
+    *   **Pop Filter:** Prevents harsh "P" and "B" sounds (plosives).
+    *   **Boom Arm/Mic Stand:** Keeps the mic stable and off your desk (which absorbs vibrations).
+
+---
+
+### Phase 3: Recording and Editing
+*   **Recording Software (DAW):**
+    *   *Audacity* (Free, PC/Mac) – Great for beginners.
+    *   *GarageBand* (Free, Mac) – Very user-friendly.
+    *   *Descript* (Paid/Free tier) – Revolutionary tool that lets you edit audio by editing a text transcript.
+    *   *Riverside.fm* or *Zencastr* – Best for recording high-quality remote interviews.
+*   **Editing Best Practices:**
+    *   Cut out long pauses, heavy breathing, and excessive "ums" and "ahs," but keep it sounding natural.
+    *   Add intro and outro music. Use royalty-free music sites like **Epidemic Sound**, **Pixabay**, or **Free Music Archive**.
+    *   Keep your audio levels consistent (aim for -16 LUFS for stereo, -19 LUFS for mono).
+
+---
+
+### Phase 4: Hosting and Distribution
+You cannot upload audio files directly to Spotify or Apple Podcasts. You need a podcast host to store your files and generate an **RSS Feed**.
+
+*   **Choose a Podcast Host:** Popular options include **Buzzsprout**, **Libsyn**, **Podbean**, or **Spotify for Podcasters** (free).
+*   **Create Eye-Catching Cover Art:** Your artwork is the first thing people see. Use **Canva** to design a 3000 x 3000 px image. Keep it simple, bold, and readable even at a very small size.
+*   **Submit to Directories:** Once you upload your first episode (or a trailer) to your host, submit your RSS feed to:
+    *   Apple Podcasts
+    *   

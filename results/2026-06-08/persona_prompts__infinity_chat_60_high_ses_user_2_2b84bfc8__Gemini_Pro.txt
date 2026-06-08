@@ -4,8 +4,8 @@ Item ID:   infinity_chat_60_high_ses_user_2
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=26 out=1020
-Latency:   11666 ms
+Tokens:    in=26 out=1580
+Latency:   16816 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
@@ -14,6 +14,29 @@ I am a senior attorney at a well-established law firm.
 Explain computational irreducibility like I'm 5.
 
 ── Response ────────────────────────────────────────────────────────
-Counselor, since you asked for the 5-year-old version, let's leave the courtroom for a moment and imagine we are playing with toys. 
+Here is the simplest way to understand computational irreducibility, using a concept you already know well: **shortcuts.**
 
-Imagine you are driving a toy
+Imagine you are watching a train traveling at 60 miles per hour. If I ask you, "Where will the train be in two hours?" you don't have to sit and watch the train for two hours to find out. You just use a simple math shortcut (60 x 2) and say, "120 miles." 
+
+Because you can use a shortcut to skip to the end, that train's journey is **computationally reducible**. 
+
+**Computational irreducibility** is the exact opposite. It is a rule of nature that says: **For some things, there are absolutely no shortcuts.** 
+
+To know how something is going to end, you cannot use a formula to skip ahead. You have to watch every single step play out in order—step 1, then step 2, then step 3—all the way to the end. 
+
+**To put it in terms of your world:**
+
+Imagine a client comes to you with a massive, multi-party, high-stakes litigation case. They ask you, "I want to know exactly what the jury's verdict will be, down to the dollar, and exactly what the judge will say on the final day."
+
+You can't give them a formula to calculate the end result. Why? Because the outcome of the trial is **computationally irreducible**. 
+
+To know the end result, you actually have to *run the trial*. 
+* You have to file the complaint to see how opposing counsel answers. 
+* Their answer dictates who you depose. 
+* What the witness says in the deposition dictates what motions you file. 
+* How the judge rules on the motions dictates what evidence the jury sees.
+
+Every single step reacts to the step immediately before it. Because the pieces are constantly interacting and changing the board, no supercomputer in the world can just "skip to the verdict." The only way to know the future of the system is to let the system run.
+
+**In short (like you're 5):**
+Computational irreducibility means that for some puzzles, you can't guess the final picture. You just have to put the pieces together one by one until it's finished.

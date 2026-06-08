@@ -4,8 +4,8 @@ Item ID:   advertising_26_baseline
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=12 out=1020
-Latency:   7328 ms
+Tokens:    in=12 out=2020
+Latency:   11983 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
@@ -18,4 +18,64 @@ Here are the best practices for data security in small businesses, categorized f
 
 ---
 
-### 1. The "Quick Wins
+### 1. The "Quick Wins" (Highest Impact, Lowest Cost)
+If you do nothing else, implement these three measures immediately. They block the vast majority of common cyberattacks.
+
+*   **Enable Multi-Factor Authentication (MFA):** Require MFA (usually a code sent to a phone or authenticator app) for all business accounts, especially email, financial portals, and cloud storage. This stops up to 99% of account takeover attacks.
+*   **Use a Password Manager:** Ban the use of weak or reused passwords. Implement a business password manager (like Bitwarden, 1Password, or Dashlane) so employees can generate and securely store strong, unique passwords.
+*   **Implement the 3-2-1 Backup Rule:** Data loss can ruin a business. Follow this rule for backups:
+    *   Keep **3** copies of your data (one primary, two backups).
+    *   Use **2** different types of media (e.g., local external drive and cloud storage).
+    *   Keep **1** copy offsite (in the cloud or a different physical location).
+    *   *Test your backups regularly to ensure they actually work.*
+
+---
+
+### 2. Employee Training and Culture
+Human error is the leading cause of data breaches. Your employees are your first line of defense.
+
+*   **Conduct Security Awareness Training:** Train employees to recognize phishing emails, suspicious links, and social engineering tactics. Run simulated phishing tests to keep them sharp.
+*   **Establish a "No-Blame" Culture:** Encourage employees to report mistakes immediately (e.g., "I clicked a weird link"). Early detection can prevent a minor slip-up from becoming a major breach.
+*   **Create a Clean Desk Policy:** Ensure physical documents containing sensitive information (like tax forms or customer credit cards) are locked away when not in use.
+
+---
+
+### 3. Device and Software Hygiene
+Keeping your technology up to date is critical for closing security loopholes.
+
+*   **Turn on Automatic Updates:** Ensure all operating systems (Windows, macOS, iOS, Android) and software (browsers, Microsoft 365, Adobe) are set to update automatically.
+*   **Use Endpoint Protection:** Install reputable antivirus/anti-malware software on all work devices. Windows Defender (built-in) is good, but paid solutions like Malwarebytes or SentinelOne offer more robust business protection.
+*   **Encrypt All Devices:** Enable built-in encryption on all laptops and mobile devices (BitLocker for Windows, FileVault for Mac). If a laptop is stolen, encryption prevents the thief from accessing the data on the hard drive.
+
+---
+
+### 4. Access Control (The Principle of Least Privilege)
+Not every employee needs access to every piece of data.
+
+*   **Limit Access:** Only give employees access to the specific files, folders, and software they need to do their jobs. 
+*   **Use Individual Accounts:** Never share logins (e.g., a shared "info@company.com" email or a single QuickBooks login). Every employee should have their own credentials so actions can be audited.
+*   **Offboard Promptly:** When an employee leaves the company, immediately revoke their access to all systems, email accounts, and physical buildings.
+
+---
+
+### 5. Network Security
+Protect the pipelines through which your data travels.
+
+*   **Secure Your Wi-Fi:** Change the default admin password on your office router. Set up a separate "Guest" Wi-Fi network for visitors so they cannot access your main business network.
+*   **Use a VPN for Remote Work:** If employees work from home or public places (like coffee shops), require them to use a Virtual Private Network (VPN) to encrypt their internet connection.
+*   **Firewalls:** Ensure the built-in firewalls on Windows and Mac computers are turned on.
+
+---
+
+### 6. Compliance and Vendor Management
+You are responsible for the data you collect, and the vendors you use.
+
+*   **Know Your Regulatory Requirements:** Depending on your industry and location, you may need to comply with regulations like HIPAA (healthcare), PCI-DSS (credit cards), GDPR (European customers), or CCPA (California residents).
+*   **Vet Third-Party Vendors:** If you use cloud services (like Slack, Salesforce, or Google Workspace), ensure they have strong security certifications (like SOC 2 Type II).
+*   **Secure Payment Processing:** Never store credit card numbers on your own servers or on paper. Use trusted, PCI-compliant third-party processors (like Stripe, Square, or PayPal).
+
+---
+
+### Where to Start? (A 30-Day Plan)
+If this feels overwhelming, tackle it in phases:
+*   **Week 1:** Turn on

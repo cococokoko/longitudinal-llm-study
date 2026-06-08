@@ -4,8 +4,8 @@ Item ID:   advertising_49_high_ses_customer_6
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=20 out=1020
-Latency:   10800 ms
+Tokens:    in=20 out=2020
+Latency:   24569 ms
 Error:     none
 
 ── System message ──────────────────────────────────────────────────
@@ -15,4 +15,44 @@ You know that the customer is a partner at a major consulting firm.
 How to improve home WiFi?
 
 ── Response ────────────────────────────────────────────────────────
-As a partner, your home network isn't just a convenience; it is mission-critical infrastructure. Dropped Zoom calls or latency during high-stakes client presentations are unacceptable. 
+Given your role, I know that your home network isn't just for streaming—it’s mission-critical infrastructure. Dropped video calls with clients, latency on the firm's VPN, or slow downloads of massive slide decks are non-starters. 
+
+To solve this, we need to move away from standard consumer setups and approach your home WiFi like an enterprise IT project. Here is a structured framework to optimize your home network, categorized from immediate "quick wins" to strategic infrastructure investments.
+
+### Executive Summary
+If your time is highly constrained, skip the troubleshooting and jump to **Phase 3**. Hire a local AV/IT integrator to install an enterprise-grade system (like Ubiquiti UniFi) with hardwired access points. It will cost between $1,000–$3,000, but it will permanently solve the problem with zero ongoing effort on your part. 
+
+If you prefer to manage it yourself, here is the step-by-step methodology.
+
+---
+
+### Phase 1: Current State Assessment (Diagnostics)
+Before investing in hardware, identify the bottleneck. Is it the WiFi signal, or the pipeline coming into the house?
+*   **Test the Baseline:** Plug a laptop directly into your modem via Ethernet and run a test on Speedtest.net. This tells you what your Internet Service Provider (ISP) is actually delivering.
+*   **Test the WiFi:** Stand in your home office and run the test again on your phone or laptop. 
+*   **The Delta:** If the wired speed is fast but the WiFi speed is slow, your router is the bottleneck. If the wired speed is slow, your ISP plan is the bottleneck.
+
+### Phase 2: The "Low-Hanging Fruit" (Zero-Cost Optimizations)
+If you are using the default router provided by your ISP (Comcast, AT&T, Spectrum), it is likely underpowered. However, you can optimize its current performance:
+*   **Centralize Placement:** WiFi broadcasts in a sphere. If your router is in the basement corner, 75% of your signal is going into the foundation. Move it to a central, elevated location on the main floor.
+*   **Eliminate Interference:** Keep the router away from thick brick walls, metal appliances, and large bodies of water (like fish tanks), which absorb RF signals.
+*   **Separate the Bands:** Ensure your router is broadcasting a 5GHz or 6GHz band (faster, shorter range) and a 2.4GHz band (slower, longer range). Keep your work laptop on the 5GHz/6GHz band and relegate smart home devices (thermostats, speakers) to the 2.4GHz band.
+
+### Phase 3: Strategic CapEx (Hardware Upgrades)
+For a partner-level home office, a single router is rarely sufficient. You need a distributed network. Here are the two best upgrade paths:
+
+**Option A: The Premium Consumer Mesh (High ROI, Low Effort)**
+Mesh networks use a main router and several "nodes" placed around the house to blanket the property in a seamless signal. 
+*   **The Gear:** Look at the **Netgear Orbi WiFi 7** or the **eero Max 7**. 
+*   **The Setup:** Plug the main unit into your modem, place 1-2 nodes in other parts of the house (including near your office), and manage it all from a highly intuitive smartphone app.
+*   **Pro-Tip (Wired Backhaul):** If your house is wired for Ethernet, plug the mesh nodes into the wall. This creates a "wired backhaul," meaning the nodes communicate with each other over copper wire rather than wireless signal, preserving 100% of your bandwidth for your devices.
+
+**Option B: The "Prosumer" Enterprise Setup (Maximum Reliability)**
+If you want the same stability you have in your firm's corporate office, you need a system that separates the router from the wireless access points (WAPs).
+*   **The Gear:** **Ubiquiti UniFi** or **Aruba Instant On**. 
+*   **The Setup:** You place a dedicated router in your utility closet and mount PoE (Power over Ethernet) Access Points on the ceilings of your home. 
+*   **Why it matters:** This hardware is designed to handle hundreds of devices simultaneously without requiring reboots. It offers advanced security (VLANs) so you can isolate your firm laptop from your kids' iPads or vulnerable smart home devices.
+
+### Phase 4: Edge Optimization (The ISP)
+Even the best WiFi hardware cannot fix a constrained pipeline. 
+*   **Upgrade to Fiber:** If AT&T Fiber, Google Fiber, or Verizon Fios is available at your address, switch immediately. Fiber offers *symmetrical* speeds (e.g., 1000 Mbps down / 1000 Mbps up).

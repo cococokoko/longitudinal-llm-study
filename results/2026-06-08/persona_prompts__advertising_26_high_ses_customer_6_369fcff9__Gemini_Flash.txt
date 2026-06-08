@@ -4,8 +4,8 @@ Item ID:   advertising_26_high_ses_customer_6
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=26 out=1020
-Latency:   7778 ms
+Tokens:    in=26 out=2020
+Latency:   119788 ms
 Error:     none
 
 ── System message ──────────────────────────────────────────────────
@@ -23,4 +23,47 @@ Below is a strategic, high-impact roadmap for establishing robust data security 
 
 ---
 
-### 1. Establish the Fundamentals: Identity &
+### 1. Establish the Fundamentals: Identity & Access Management (IAM)
+The vast majority of breaches exploit weak credentials. Implementing strict access controls is the single highest-ROI security measure a small business can take.
+
+*   **Enforce Multi-Factor Authentication (MFA):** Mandate MFA across all systems, especially email, VPNs, and financial portals. This alone mitigates over 90% of common cyber attacks.
+*   **Implement the Principle of Least Privilege (PoLP):** Employees should only have access to the specific data and systems required to perform their roles. Limit administrative privileges strictly.
+*   **Centralize Identity:** Use a cloud-based Identity Provider (IdP) like Microsoft Entra ID (formerly Azure AD) or Okta to manage user lifecycles (onboarding, role changes, and immediate offboarding).
+
+### 2. Protect the Data Asset (Data-Centric Security)
+SMEs must identify what data they hold, where it resides, and how it is protected.
+
+*   **Data Discovery and Classification:** Categorize data into tiers (e.g., Public, Internal, Confidential, Restricted/PII). You cannot protect what you do not know exists.
+*   **Encryption at Rest and in Transit:** Ensure all laptops and mobile devices use full-disk encryption (e.g., BitLocker or FileVault). Ensure all web traffic and data transfers use secure protocols (HTTPS, SFTP).
+*   **Secure Cloud Configuration:** Since most SMEs rely heavily on SaaS (Microsoft 365, Google Workspace, Salesforce), ensure these platforms are configured securely. Default settings are rarely secure. Disable legacy protocols and restrict external sharing permissions.
+
+### 3. Secure the Infrastructure & Endpoints
+With hybrid work now standard, the traditional network perimeter has dissolved. Security must follow the endpoint.
+
+*   **Next-Gen Endpoint Detection and Response (EDR):** Replace legacy antivirus with EDR solutions (e.g., CrowdStrike, SentinelOne, or Microsoft Defender for Business). EDR uses behavioral analysis to detect and isolate ransomware before it spreads.
+*   **Automated Patch Management:** Unpatched software is a primary vector for exploitation. Implement automated patching for operating systems and third-party applications (browsers, Adobe, etc.).
+*   **Secure Wi-Fi and Remote Access:** Ban the use of public Wi-Fi without a secure, company-approved Virtual Private Network (VPN) or a Zero Trust Network Access (ZTNA) solution.
+
+### 4. Build Ransomware Resilience (Backup & Recovery)
+Ransomware is the most existential threat to small businesses. Prevention is critical, but recovery capability is the ultimate safety net.
+
+*   **The 3-2-1-1 Backup Rule:** Keep at least **three** copies of data, on **two** different types of media, with **one** copy stored off-site, and **one** copy kept offline or immutable (cannot be deleted or altered by ransomware).
+*   **Regular Testing:** A backup is only as good as its restore capability. Conduct quarterly restoration drills to ensure business continuity objectives (RTO/RPO) can be met.
+
+### 5. Cultivate a Security-First Culture
+Technology is only as strong as the human element. Social engineering (phishing, business email compromise) remains the primary entry point for attackers.
+
+*   **Continuous Security Awareness Training:** Move away from annual "tick-the-box" training. Implement monthly, bite-sized training modules coupled with simulated phishing campaigns to keep security top-of-mind.
+*   **Establish Clear Policies:** Document simple, enforceable policies regarding password hygiene, acceptable use of assets, and clean desk practices.
+
+### 6. Manage Third-Party & Supply Chain Risk
+SMEs often rely on external vendors (accounting, IT support, marketing agencies) who may have access to their networks.
+
+*   **Vendor Due Diligence:** Assess the security posture of key vendors. Ensure they adhere to basic security standards and have clear data-handling policies.
+*   **Managed Service Provider (MSP) Governance:** If the SME outsources IT to an MSP, ensure the MSP’s access is secured (e.g., dedicated admin accounts, MFA) and that their SLA includes specific security deliverables and incident response times.
+
+### 7. Prepare for the Inevitable (Incident Response & Insurance)
+Assuming a breach will occur allows a business to minimize the blast radius and recovery time.
+
+*   **Create an Incident Response Plan (IRP):** This should be a simple, one-page document detailing "who to call" in the event of a breach (IT lead, legal counsel, PR, insurance broker).
+*   **Cyber Liability Insurance:** A robust cyber insurance policy is essential for SMEs to cover the costs of forensic investigations, legal fees, notification costs,

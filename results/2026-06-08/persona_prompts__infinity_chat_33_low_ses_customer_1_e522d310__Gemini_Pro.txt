@@ -4,8 +4,8 @@ Item ID:   infinity_chat_33_low_ses_customer_1
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: low_ses
 SES level: low  role: customer
-Tokens:    in=39 out=1020
-Latency:   12401 ms
+Tokens:    in=39 out=2020
+Latency:   34400 ms
 Error:     none
 
 ── System message ──────────────────────────────────────────────────
@@ -15,4 +15,36 @@ You know that the customer works full-time in a fast food job with an unpredicta
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-Working a full-time fast-food job with an unpredictable schedule is exhausting, so having a way to quickly jump into a game on your Surface during a break, a commute, or right after a
+Given your unpredictable schedule and full-time hours in fast food, I imagine your gaming time is precious. You’re likely trying to squeeze in some gameplay during breaks, commutes, or right after a tiring shift, which makes the portability of your Microsoft Surface perfect. 
+
+However, I want to be completely honest with you: **playing Wii games using the default Windows On-Screen Keyboard (OSK) and a touchpad is going to be very frustrating.** The Windows OSK doesn't handle pressing multiple keys at once very well (which you need for running and jumping), and using a touchpad to mimic a Wiimote pointer is tough. 
+
+That said, if you want to make this work right now without buying anything extra, here is exactly how to set it up, followed by a few tips to make it much more enjoyable for your schedule.
+
+### Step 1: Configure Dolphin for the Touchpad and OSK
+You need to tell Dolphin to treat your keyboard and touchpad like a Wiimote.
+
+1. Open Dolphin and click on **Controllers**.
+2. Under "Wii Remotes," set Port 1 to **Emulated Wii Remote** and click **Configure**.
+3. **Device:** At the top left, make sure your Keyboard/Mouse is selected (usually `Keyboard Mouse`).
+4. **Buttons:** Map your main buttons (A, B, 1, 2, +, -) to keys that are close together on the left side of your On-Screen Keyboard (like Q, W, E, R, T, Y). 
+5. **D-Pad:** Map this to WASD or the Arrow Keys.
+6. **Motion Simulation (Crucial Step):** Wii games constantly ask you to "shake" the remote. You do *not* want to do this with a touchpad. Go to the **Motion Simulation** tab, find the **Shake** section, and map X, Y, and Z to a single, easy-to-hit key on your OSK (like the `Spacebar`). Now, hitting Spacebar counts as shaking the Wiimote.
+7. **IR (The Pointer):** Go to the **Motion Input** or **IR** tab. Map Up, Down, Left, and Right to your mouse cursor. This allows your touchpad to act as the Wiimote pointer. 
+
+### Step 2: Setting up your Surface Screen
+Because you are using the Windows OSK, you cannot play in Full-Screen mode, or the game will hide the keyboard.
+
+1. Open Dolphin's **Graphics** settings and ensure **Start in Fullscreen** is *unchecked*.
+2. Open your Windows On-Screen Keyboard (you can search for it in the Windows Start menu and pin it to your taskbar for quick access).
+3. Resize the Dolphin game window to sit on the top half of your screen, and place the OSK on the bottom half. 
+
+***
+
+### 💡 How to actually make this enjoyable (Highly Recommended)
+
+Since your free time is limited and unpredictable, you don't want to spend your 30-minute break fighting with clunky controls. Here are three ways to drastically improve your Surface gaming experience:
+
+**1. Play the right games**
+With a touchpad and OSK, action games like *Super Mario Galaxy* or *Zelda* will be nearly unplayable. Instead, use this setup for games you can easily pause if you get called back to work, and that don't require fast reflexes. 
+*   **Recommendations:** *Fire Emblem: Radiant Dawn*, *Paper Mario*, *Animal Crossing: City Folk*, or

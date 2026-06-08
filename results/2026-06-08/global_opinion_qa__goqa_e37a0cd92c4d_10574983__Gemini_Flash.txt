@@ -4,8 +4,8 @@ Item ID:   goqa_e37a0cd92c4d
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: nan
 SES level: nan  role: nan
-Tokens:    in=211 out=1020
-Latency:   7675 ms
+Tokens:    in=211 out=1778
+Latency:   11847 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
@@ -26,11 +26,4 @@ Respond ONLY in JSON format — no explanation, no other text:
 {"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
 
 ── Response ────────────────────────────────────────────────────────
-```json
-{
-  "A": 0.20,
-  "B": 0.50,
-  "C": 0.15,
-  "D": 0.10,
-  "E": 0.03,
-  "F":
+{"A": 0.0, "B": 0.0, "C": 0.9, "D": 0.05, "E": 0.05, "F": 0.0}

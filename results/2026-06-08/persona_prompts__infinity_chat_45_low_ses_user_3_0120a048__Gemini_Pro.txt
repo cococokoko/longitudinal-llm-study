@@ -4,8 +4,8 @@ Item ID:   infinity_chat_45_low_ses_user_3
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: low_ses
 SES level: low  role: user
-Tokens:    in=27 out=1020
-Latency:   9452 ms
+Tokens:    in=27 out=1244
+Latency:   11930 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
@@ -14,6 +14,14 @@ I recently started a new job and am still on probation.
 Create a sentence using a minimum of 2 R-colored vowels.
 
 ── Response ────────────────────────────────────────────────────────
-Congratulations on the new job! Here is a sentence related to your situation that uses several R-colored vowels:
+Here is a sentence related to your new job that contains several R-colored vowels (well over the minimum of two):
 
-"I am w**or**king h**ar**d
+"I will **work** **hard** to **learn** everything I can during this probationary **term**."
+
+**Here are the R-colored vowels (also known as rhotic vowels) used in the sentence:**
+*   w**or**k (/ɝ/)
+*   h**ar**d (/ɑr/)
+*   l**ear**n (/ɝ/)
+*   t**er**m (/ɝ/)
+
+Congratulations on the new job, and good luck with the rest of your probation period!

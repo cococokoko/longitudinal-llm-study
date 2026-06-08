@@ -4,8 +4,8 @@ Item ID:   advertising_24_high_ses_user_2
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=24 out=1020
-Latency:   12131 ms
+Tokens:    in=24 out=2020
+Latency:   32945 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
@@ -14,4 +14,23 @@ I am a senior attorney at a well-established law firm.
 What are the best ways to save for retirement?
 
 ── Response ────────────────────────────────────────────────────────
-As a senior attorney at a well-established law firm, your retirement planning landscape is vastly different from the average investor's. You likely have a high income, which means you are phased out of basic
+As a senior attorney at a well-established law firm, your retirement planning looks fundamentally different from the average investor's. Because you are in a high tax bracket, your primary hurdles are **tax mitigation** and **contribution limits**. 
+
+At your income level, standard advice like "contribute to a Roth IRA" doesn't directly apply due to income phase-outs. Instead, your strategy should focus on maximizing high-limit tax-deferred vehicles, utilizing advanced conversion strategies, and building tax-efficient taxable portfolios.
+
+Here is a tiered strategy for the best ways to save for retirement, tailored to a high-earning legal professional.
+
+---
+
+### Tier 1: Maximize Firm-Sponsored Qualified Plans
+Your firm likely offers robust retirement architecture. Maximizing these is your first line of defense against high current-year taxes.
+
+*   **The 401(k) / Profit-Sharing Plan:** Max out your personal contribution ($23,000 in 2024, plus a $7,500 catch-up if you are 50 or older). If you are an equity partner, ensure the firm is maximizing the profit-sharing component. The total combined limit (employee + employer) for 2024 is $69,000 ($76,500 if 50+). Given your tax bracket, **Traditional (pre-tax)** contributions are almost always preferable to Roth 401(k) contributions to reduce your current taxable income.
+*   **Cash Balance Plans (The "Super Pension"):** If your firm offers a Cash Balance Plan, this is arguably your most powerful tool. It is a defined benefit plan that allows high earners (especially those over 45) to stash away massive amounts of pre-tax money—often **$100,000 to $300,000+ per year**, depending on your age and income. If your firm does not have one, and you are an equity partner, you should strongly advocate for the partnership to adopt one. 
+
+### Tier 2: Advanced "Backdoor" Strategies
+Because your income disqualifies you from direct Roth IRA contributions, you must use "backdoor" methods to access tax-free growth.
+
+*   **The Backdoor Roth IRA:** You can contribute $7,000 ($8,000 if 50+) in after-tax money to a Traditional IRA, and then immediately convert it to a Roth IRA. 
+    *   *Caution (The Pro-Rata Rule):* This only works cleanly if you have **zero** existing pre-tax money in any Traditional, SEP, or SIMPLE IRAs. If you do, you will face a hefty tax bill upon conversion. You can usually avoid this by rolling existing IRAs into your firm’s 401(k) before doing the backdoor conversion.
+*   **The "Mega" Backdoor Roth:** Check your firm’s 401(k) plan document. If it allows for *after-tax non-Roth contributions* and *in-service withdrawals/conversions*, you can funnel up to an additional $46,000 (for 2024) into a Roth IRA or Roth 401(k) annually. This is

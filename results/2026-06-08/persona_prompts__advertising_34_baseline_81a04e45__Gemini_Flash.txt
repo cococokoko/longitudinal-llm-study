@@ -4,14 +4,60 @@ Item ID:   advertising_34_baseline
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=10 out=1020
-Latency:   6071 ms
+Tokens:    in=10 out=1979
+Latency:   12000 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best techniques for effective online teaching?
 
 ── Response ────────────────────────────────────────────────────────
-Effective online teaching is not about replicating a physical classroom on a screen; it is about redesigning the learning experience to leverage digital tools while maintaining human connection. 
+Effective online teaching requires a shift from traditional classroom methods. Because online students face more distractions and a higher sense of isolation, the best online teaching techniques focus on **engagement, structure, presence, and active learning**. 
 
-Here are the best, research-backed techniques
+Here are the best techniques for effective online teaching, categorized by phase and function:
+
+---
+
+### 1. Course Design & Structure (The Foundation)
+Before the course even begins, the way you organize your material dictates student success.
+
+*   **The "Chunking" Method:** Break long lectures into short, digestible pieces. Research shows student attention drops significantly after 6–9 minutes of video. Aim for 5- to 10-minute micro-lectures, each focusing on a single concept.
+*   **The Flipped Classroom Model:** Deliver direct instruction asynchronously (via pre-recorded videos or readings) before class. Use synchronous live sessions exclusively for discussion, problem-solving, and collaborative work.
+*   **Clear and Consistent Navigation:** Use a logical, modular structure in your Learning Management System (LMS) like Canvas or Moodle. Organize by week or unit, and ensure students can find assignments, rubrics, and deadlines in three clicks or less.
+
+### 2. Fostering Active Learning (The "During")
+Passive listening leads to disengagement. Active learning keeps students focused and processing information.
+
+*   **The 10:2 Rule:** For every 10 minutes of direct instruction, provide 2 minutes for students to reflect, write, or interact with the material.
+*   **Collaborative Digital Workspaces:** Use tools like Google Docs, Padlet, or Miro. During live sessions, put students in breakout rooms and have them co-create a document or mind map that they must present to the class.
+*   **Low-Stakes Retrieval Practice:** Use frequent, ungraded (or low-stakes) quizzes, polls (using Zoom polls, Mentimeter, or Kahoot), and "exit tickets" to help students test their own understanding without the anxiety of a major exam.
+
+### 3. Establishing Teacher Presence (The Human Element)
+In an online environment, students can feel like they are learning from a computer rather than a human. Building "instructor presence" is crucial for retention.
+
+*   **Video Introductions and Weekly Updates:** Start the course with a warm introductory video showing your face and workspace. Send a weekly 2-minute video announcement summarizing the upcoming week and reflecting on the previous week's work.
+*   **Multimodal Feedback:** Instead of just typing comments on essays or assignments, use audio or video feedback (using tools like Loom or Canvas SpeedGrader). Hearing your voice and tone makes feedback feel more supportive and personalized.
+*   **Active Discussion Board Facilitation:** Don't just assign discussion prompts and walk away. Jump into the forums to highlight great points, ask guiding questions, and connect different students' ideas.
+
+### 4. Building a Learning Community
+Students who feel connected to their peers are more likely to persist and succeed.
+
+*   **Structured Icebreakers:** Start the term with low-stakes, non-academic introductions. Ask students to share a photo of their workspace, a GIF representing their mood, or a short video introducing themselves.
+*   **The "Three Before Me" Rule:** Encourage peer-to-peer support. Create a "Help Desk" discussion forum where students must ask questions to their peers before emailing the instructor. Often, other students will answer faster and build community in the process.
+*   **Group Roles in Breakout Rooms:** When using breakout rooms, assign specific roles to students (e.g., Facilitator, Scribe, Timekeeper, Presenter) to ensure everyone participates and the group stays on task.
+
+### 5. Assessment and Accessibility
+Online assessment should be flexible, accessible, and designed to prevent academic dishonesty naturally.
+
+*   **Authentic Assessments:** Instead of high-stakes, multiple-choice exams (which invite cheating and test anxiety), use authentic assessments. Ask students to create a podcast, write a policy brief, analyze a real-world case study, or build a portfolio.
+*   **Universal Design for Learning (UDL):** Ensure your course is accessible to all learners. 
+    *   Provide captions and transcripts for all videos.
+    *   Offer information in multiple formats (e.g., a video *and* a written article).
+    *   Allow students to demonstrate knowledge in different ways (e.g., choosing between writing an essay or recording a video presentation).
+*   **Clear Rubrics:** Provide detailed rubrics for every assignment. In online learning, students cannot easily raise their hand to ask for clarification, so explicit expectations are vital.
+
+### Summary of Essential Online Teaching Tools:
+*   **For Interactive Lectures:** Mentimeter, Kahoot, Nearpod.
+*   **For Collaboration:** Padlet, Google Workspace, Miro, Jamboard.
+*   **For Video/Feedback:** Loom, Flip (formerly Flipgrid), Screencastify.
+*   **For Organization:** Canvas, Blackboard, Google Classroom.

@@ -235,20 +235,20 @@
     {
       "wave": "2026-06-08",
       "model": "Gemini Flash",
-      "ws_mean": 1.4763,
-      "ws_std": 1.4258,
-      "entropy_mean": 0.5899,
-      "entropy_global_mean": 1.8333,
-      "n": 265
+      "ws_mean": 1.573,
+      "ws_std": 1.5475,
+      "entropy_mean": 0.6848,
+      "entropy_global_mean": 1.9503,
+      "n": 349
     },
     {
       "wave": "2026-06-08",
       "model": "Gemini Pro",
-      "ws_mean": 1.0551,
-      "ws_std": 1.1881,
-      "entropy_mean": 0.896,
-      "entropy_global_mean": 1.9474,
-      "n": 336
+      "ws_mean": 1.0289,
+      "ws_std": 1.1754,
+      "entropy_mean": 0.9117,
+      "entropy_global_mean": 1.9522,
+      "n": 349
     }
   ],
   "truncation_rates": [
@@ -340,13 +340,13 @@
       "wave": "2026-06-08",
       "model": "Gemini Flash",
       "total": 781,
-      "truncated": 413
+      "truncated": 178
     },
     {
       "wave": "2026-06-08",
       "model": "Gemini Pro",
       "total": 781,
-      "truncated": 357
+      "truncated": 152
     }
   ],
   "persona_lengths": [

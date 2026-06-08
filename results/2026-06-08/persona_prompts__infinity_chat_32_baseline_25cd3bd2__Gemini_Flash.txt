@@ -4,14 +4,123 @@ Item ID:   infinity_chat_32_baseline
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=11 out=1020
-Latency:   6469 ms
+Tokens:    in=11 out=2020
+Latency:   68095 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 How can I make a zombie survivor game on Scratch?
 
 ── Response ────────────────────────────────────────────────────────
-Making a zombie survivor game on Scratch is a fantastic project! It teaches you about player movement, shooting mechanics, cloning (for enemies), and game loops. 
+Making a top-down zombie survivor game is one of the most fun and rewarding projects you can build on Scratch. 
 
-Here is a step-by-step
+Here is a step-by-step guide to building a basic **Top-Down Zombie Shooter**.
+
+---
+
+### Step 1: Create Your Sprites
+You will need four main sprites. You can draw these yourself or find them in the Scratch library:
+1. **Player:** A top-down view of a person (a circle with two hands holding a gun works best).
+2. **Bullet:** A small yellow rectangle or circle.
+3. **Zombie:** A green version of the player.
+4. **Crosshair (Optional):** A custom mouse pointer, or just use the default mouse.
+
+---
+
+### Step 2: Player Movement & Aiming
+We want the player to move with the **WASD** keys and point toward the mouse pointer.
+
+**Code for the Player Sprite:**
+* Create a variable called `Player Health` (for all sprites).
+
+```scratch
+when green flag clicked
+set [Player Health v] to [100]
+go to x: (0) y: (0)
+forever
+    point towards [mouse-pointer v]
+    if <key [w v] pressed?> then
+        change y by (4)
+    end
+    if <key [s v] pressed?> then
+        change y by (-4)
+    end
+    if <key [d v] pressed?> then
+        change x by (4)
+    end
+    if <key [a v] pressed?> then
+        change x by (-4)
+    end
+    if <(Player Health) < [1]> then
+        say [Game Over!] for (2) seconds
+        stop [all v]
+    end
+end
+```
+
+---
+
+### Step 3: Shooting Bullets
+The bullet needs to spawn at the player, point in the same direction, and fly forward until it hits an edge or a zombie.
+
+**Code for the Bullet Sprite:**
+```scratch
+when green flag clicked
+hide
+
+when green flag clicked // This controls the shooting rate
+forever
+    if <mouse down?> then
+        create clone of [myself v]
+        wait (0.2) seconds // Cooldown between shots
+    end
+end
+
+when I start as a clone
+go to [Player v]
+point in direction ([direction v] of [Player v])
+show
+repeat until <<touching [edge v]?> or <touching [Zombie v]?>>
+    move (15) steps
+end
+delete this clone
+```
+
+---
+
+### Step 4: Zombie AI & Spawning
+We want zombies to spawn off-screen, walk toward the player, and die when hit by a bullet.
+
+* Create a variable called `Score` (for all sprites).
+
+**Code for the Zombie Sprite:**
+```scratch
+when green flag clicked
+hide
+forever
+    wait (2) seconds // Spawns a zombie every 2 seconds
+    create clone of [myself v]
+end
+
+when I start as a clone
+// Spawn at a random edge of the screen
+go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
+// Prevent them from spawning right on top of the player
+if <(distance to [Player v]) < [100]> then
+    delete this clone
+end
+show
+forever
+    point towards [Player v]
+    move (1.5) steps // Zombie speed
+    
+    // If hit by bullet
+    if <touching [Bullet v]?> then
+        change [Score v] by (1)
+        wait (0.01) seconds // Brief delay so bullet register touch too
+        delete this clone
+    end
+    
+    // If touching the player
+    if <touching [Player v]?> then
+        change [Player Health v] by (-10

@@ -4,8 +4,8 @@ Item ID:   infinity_chat_32_low_ses_user_4
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: low_ses
 SES level: low  role: user
-Tokens:    in=25 out=1020
-Latency:   10104 ms
+Tokens:    in=25 out=2020
+Latency:   19891 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
@@ -14,4 +14,61 @@ I work shifts at a local hospital as a patient care aide.
 How can I make a zombie survivor game on Scratch?
 
 ── Response ────────────────────────────────────────────────────────
-First off, thank you for your hard work as a Patient Care Aide. Healthcare shifts can be incredibly exhausting, both physically and mentally. Learning to code on Scratch is actually a fantastic way to decompress because
+First of all, thank you for your work as a Patient Care Aide. Hospital shifts are physically and mentally exhausting, so having a creative outlet like game design is a fantastic way to decompress on your days off! 
+
+Scratch is the perfect engine for this because you can easily save your progress and work on it in short 20-minute bursts whenever you have the energy.
+
+Here is a step-by-step guide to making a top-down **Zombie Survival Game** in Scratch.
+
+### Step 1: Set Up Your Survivor
+Since it’s a top-down game, we want to look at the characters from above.
+1. Go to Scratch (scratch.mit.edu) and click **Create**.
+2. Delete the default Scratch Cat.
+3. Click the **Choose a Sprite** button (the cat face with a plus) and click **Paint**. Draw a simple circle for a head and a rectangle for shoulders/a gun. *Make sure the "gun" is pointing to the right (Scratch's default forward direction).* Name this sprite **Player**.
+4. Add this code to the **Player**:
+   * `When [Green Flag] clicked`
+   * `Forever`
+     * `Point towards [mouse-pointer]` *(This makes your player aim!)*
+     * `If key [w] pressed? then` -> `Change y by 5`
+     * `If key [s] pressed? then` -> `Change y by -5`
+     * `If key [a] pressed? then` -> `Change x by -5`
+     * `If key [d] pressed? then` -> `Change x by 5`
+
+### Step 2: Make the Bullets
+1. Create a new Sprite (Paint it as a small yellow circle). Name it **Bullet**.
+2. We are going to use "Clones" so you can shoot multiple bullets. Add this code to the **Bullet**:
+   * `When [Green Flag] clicked`
+   * `Hide` *(Hides the original bullet)*
+3. Now, go back to your **Player** sprite and add a shooting script:
+   * `When [Green Flag] clicked`
+   * `Forever`
+     * `If <mouse down?> then`
+       * `Create clone of [Bullet]`
+       * `Wait 0.2 seconds` *(This is your fire rate!)*
+4. Go back to the **Bullet** sprite and tell the clones what to do:
+   * `When I start as a clone`
+   * `Go to [Player]`
+   * `Point towards [mouse-pointer]`
+   * `Show`
+   * `Repeat until <touching [edge]?>`
+     * `Move 15 steps`
+   * `Delete this clone` *(Deletes the bullet when it misses and hits the wall)*
+
+### Step 3: Release the Zombies!
+1. Create a new Sprite. Paint a green circle with arms reaching out (pointing to the right). Name it **Zombie**.
+2. Add this code to make them spawn endlessly:
+   * `When [Green Flag] clicked`
+   * `Hide`
+   * `Forever`
+     * `Wait 1.5 seconds` *(Change this to make the game harder/easier)*
+     * `Create clone of [myself]`
+3. Now, tell the Zombie clones how to hunt you:
+   * `When I start as a clone`
+   * `Go to [random position]`
+   * `Show`
+   * `Forever`
+     * `Point towards [Player]`
+     * `Move 2 steps` *(Zombie speed)*
+
+### Step 4: Combat (Shooting the Zombies)
+Right now, the zombies and bullets pass right through each other.

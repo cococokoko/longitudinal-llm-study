@@ -4,12 +4,51 @@ Item ID:   infinity_chat_33_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=20 out=1020
-Latency:   11627 ms
+Tokens:    in=20 out=2020
+Latency:   21433 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
-Using a Microsoft Surface touchpad and the Windows On-Screen Keyboard (OSK) to play Wii games on Dolphin is a unique challenge. Because the Wii relied heavily on motion controls and simultaneous
+Using a Microsoft Surface touchpad and the Windows On-Screen Keyboard (OSK) to play Wii games on Dolphin is a unique challenge. Because the Wii Remote relies heavily on motion and pointing, you will need to split your hands: **one hand on the touchpad to control the Wii pointer (mouse), and the other hand tapping the On-Screen Keyboard for buttons.**
+
+Here is the step-by-step guide to setting this up so it is actually playable.
+
+### Step 1: Open the Correct On-Screen Keyboard
+Windows has two touch keyboards. You need the **legacy On-Screen Keyboard**, as it stays on the screen permanently and acts exactly like a physical keyboard.
+1. Press the **Windows Key**, type `On-Screen Keyboard`, and hit Enter (or press `Win + Ctrl + O`).
+2. Resize this keyboard and drag it to the bottom half of your screen.
+3. *Tip:* Click the **Options** key on the OSK and check **"Turn on numeric key pad"** if you want extra keys to map.
+
+### Step 2: Configure Dolphin for Windowed Mode
+If you play in Fullscreen, the game will cover your On-Screen Keyboard.
+1. Open Dolphin.
+2. Click **Graphics** at the top.
+3. Under the **General** tab, ensure **Fullscreen** is *unchecked*.
+4. You can adjust the window size later to fit perfectly above your On-Screen Keyboard.
+
+### Step 3: Map the Emulated Wii Remote
+Now we need to tell Dolphin to use your touchpad for aiming and your OSK for buttons.
+1. On the main Dolphin window, click **Controllers**.
+2. Under "Wii Remotes," set Port 1 to **Emulated Wii Remote**.
+3. Click the **Configure** button next to it.
+4. In the top left corner, ensure the **Device** dropdown is set to `Keyboard Mouse`.
+
+#### A. Mapping the Buttons (Use the OSK)
+Click the box next to each button in Dolphin, then tap the corresponding key on your On-Screen Keyboard. Here is a recommended layout that keeps your hand on the left side of the screen:
+*   **A Button:** `X`
+*   **B Button (Trigger):** `Z`
+*   **1 Button:** `1`
+*   **2 Button:** `2`
+*   **- (Minus):** `Q`
+*   **+ (Plus):** `E`
+*   **Home:** `Enter`
+*   **D-Pad:** Map to the `Up, Down, Left, Right` arrow keys on the OSK.
+
+#### B. Mapping the Pointer (Use the Touchpad)
+This allows you to use your touchpad to point at the screen like a real Wii Remote.
+1. In the controller config window, click the **Motion Simulation** tab.
+2. Look at the **Point** section.
+3. Right-click the **Up** box

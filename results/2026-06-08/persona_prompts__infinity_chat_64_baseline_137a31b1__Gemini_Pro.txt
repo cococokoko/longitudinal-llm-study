@@ -4,12 +4,26 @@ Item ID:   infinity_chat_64_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=17 out=1041
-Latency:   17286 ms
+Tokens:    in=17 out=1742
+Latency:   18609 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
 
 ── Response ────────────────────────────────────────────────────────
-nan
+Here are three options, depending on the specific tone and context of your communication. 
+
+**Option 1: Comprehensive & Strategic (Best for a guide, blog post, or formal email)**
+"As an international student deciding between the TOEFL and IELTS, your choice should ultimately hinge on your target universities and your personal test-taking style. While both are globally recognized English proficiency exams, they differ significantly in format and feel. The TOEFL is traditionally favored by US institutions and relies on a fully computer-based format with integrated tasks—meaning you will often read, listen, and speak about the same academic topic, speaking directly into a microphone. Conversely, the IELTS—historically preferred in the UK, Canada, and Australia—offers both paper and computer options and features a face-to-face speaking interview, which many students find more conversational and natural. As a consultant, my primary advice is to first verify the specific requirements of your target programs, and then take a practice test for both to determine whether you prefer the TOEFL’s highly structured, academic format or the IELTS’s varied question types and in-person interaction."
+
+**Option 2: Concise & Action-Oriented (Best for a quick FAQ, brochure, or social media)**
+"When choosing between the TOEFL and IELTS, the best decision comes down to your preferred testing style. While both exams are universally accepted by top universities, they measure your English differently. TOEFL is a fully computerized, American-centric exam that tests your ability to synthesize information through integrated reading, listening, and speaking tasks. IELTS leans toward British and Commonwealth English, offering a mix of question types (like fill-in-the-blanks and matching) and a unique face-to-face speaking interview with a live examiner. My rule of thumb is simple: if you are comfortable typing, speaking into a microphone, and navigating multiple-choice questions, TOEFL is a great fit; if you prefer interacting with a real person and answering varied question formats, you will likely score higher on the IELTS."
+
+**Option 3: Focus on Test Mechanics (Best for a one-on-one advising follow-up)**
+"Navigating the choice between TOEFL and IELTS requires understanding how each test actually feels to take. Both will satisfy admissions requirements for the vast majority of global universities, but they assess your skills using very different mechanics. The TOEFL is a highly structured, digital exam that simulates an American university classroom, heavily testing your ability to combine skills—for example, listening to a lecture and then writing a summary. The IELTS separates reading, writing, and listening more distinctly, and it removes the awkwardness of speaking to a screen by providing a live, conversational interview with an examiner. To maximize your score, I recommend evaluating your own strengths: choose TOEFL if you excel in a standardized, digital environment, or opt for IELTS if you perform better with face-to-face communication and a wider variety of question formats."
+
+**Key elements included in these drafts that establish your "expert" tone:**
+*   **Reassurance:** Confirming that *both* are widely accepted (a common anxiety for students).
+*   **Clear Differentiators:** Highlighting the computer vs. paper/face-to-face aspect, which is the biggest practical difference.
+*   **Actionable Advice:** Telling them *how* to make the choice (taking practice tests, checking university requirements).

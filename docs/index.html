@@ -601,7 +601,9 @@
         <div class="chart-col-label" id="lbl-4b-1"></div>
         <div class="plotly-wrap" id="chart-4b-1" style="height:320px;margin-bottom:16px"></div>
         <div class="chart-col-label" id="lbl-4b-2"></div>
-        <div class="plotly-wrap" id="chart-4b-2" style="height:320px"></div>
+        <div class="plotly-wrap" id="chart-4b-2" style="height:320px;margin-bottom:16px"></div>
+        <div class="chart-col-label" id="lbl-4b-3"></div>
+        <div class="plotly-wrap" id="chart-4b-3" style="height:320px"></div>
       </div>
     </div>
 
@@ -637,7 +639,7 @@ document.querySelectorAll('[data-nav]').forEach(el => {
 });
 
 // ── Plotly helpers ─────────────────────────────────────────────
-const CHART_IDS = ['chart-ws','chart-ent','chart-lengths','chart-4a','chart-4b-0','chart-4b-1','chart-4b-2'];
+const CHART_IDS = ['chart-ws','chart-ent','chart-lengths','chart-4a','chart-4b-0','chart-4b-1','chart-4b-2','chart-4b-3'];
 function resizeAll() {
   CHART_IDS.forEach(id => { const el = document.getElementById(id); if (el && el._fullLayout) Plotly.Plots.resize(el); });
 }

@@ -4,14 +4,26 @@ Item ID:   infinity_chat_60_baseline
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=12 out=1020
-Latency:   7159 ms
+Tokens:    in=12 out=1506
+Latency:   10770 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Explain computational irreducibility like I'm 5.
 
 ── Response ────────────────────────────────────────────────────────
-Imagine you have a superpower that lets you see into the future. 
+Imagine you are playing with a toy wind-up car. 
 
-For some things, your superpower is really easy to use. If I drop a ball, you can easily guess that it will hit
+Sometimes, things are easy to predict. If I ask you, "Where will the car be if you push it straight?" you can easily point to the spot. You don't even have to push the car to know the answer. You can "cheat" and skip to the end in your mind.
+
+But now, imagine a different game. 
+
+You have a toy robot. It has one simple rule: **"If you bump into a red block, turn left. If you bump into a blue block, turn right."**
+
+Now, I put 100 red and blue blocks all over the floor in a big messy pile and let the robot go. 
+
+If I ask you, "Where will the robot be in five minutes?" **you cannot guess.** 
+
+There is no magic shortcut. You can't do a quick math problem in your head to find the answer. The *only* way to find out where the robot ends up is to sit on the floor and watch it take every single turn, step-by-step, until the timer goes off.
+
+**"Computational Irreducibility"** is just a big science phrase that means: **Some things are so full of steps and surprises that there are no shortcuts. To see what happens, you just have to watch them happen.**

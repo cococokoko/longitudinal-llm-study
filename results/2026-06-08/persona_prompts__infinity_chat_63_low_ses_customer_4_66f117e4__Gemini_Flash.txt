@@ -4,8 +4,8 @@ Item ID:   infinity_chat_63_low_ses_customer_4
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: low_ses
 SES level: low  role: customer
-Tokens:    in=29 out=1020
-Latency:   7628 ms
+Tokens:    in=29 out=2020
+Latency:   18227 ms
 Error:     none
 
 ── System message ──────────────────────────────────────────────────
@@ -15,6 +15,14 @@ You know that the customer works shifts at a local hospital as a patient care ai
 Give a numerical example to illustrate the concept of partial derivative.
 
 ── Response ────────────────────────────────────────────────────────
-thoughtTo understand a **partial derivative**, it helps to think of a situation where an outcome depends on *more than one* factor. 
+To understand a **partial derivative**, it helps to start with a simple idea: in the real world, things usually depend on more than one factor. 
 
-In a hospital setting, we can think about
+A regular derivative tells you how fast one thing changes when another thing changes. A **partial derivative** does the exact same thing, but for situations with multiple factors. It measures how fast the outcome changes when you **change just one factor and hold all the other factors completely constant**.
+
+Here is a practical, numerical example to illustrate this.
+
+---
+
+### The Scenario: Shift Fatigue
+Imagine you are tracking your physical fatigue level ($F$) during a busy 12-hour hospital shift. Your fatigue (on a scale of 0 to 100) depends on two main variables:
+1.

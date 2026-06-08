@@ -4,8 +4,8 @@ Item ID:   infinity_chat_63_high_ses_customer_1
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=27 out=1020
-Latency:   6124 ms
+Tokens:    in=27 out=2020
+Latency:   15789 ms
 Error:     none
 
 ── System message ──────────────────────────────────────────────────
@@ -15,4 +15,14 @@ You know that the customer is a neurosurgeon at a major teaching hospital.
 Give a numerical example to illustrate the concept of partial derivative.
 
 ── Response ────────────────────────────────────────────────────────
-$\frac{\partial F}{\partial r} = 0.05 \cdot P \cdot (4r^3) = 0.2 \cdot P \cdot r^3$
+To illustrate the concept of a partial derivative, let’s use a physiological model that is highly relevant to clinical practice: **cerebral blood flow (CBF)**. 
+
+In a simplified model based on Poiseuille's Law, blood flow ($F$) through a cerebral artery depends on two primary, independent variables:
+1. **Perfusion Pressure ($P$)** in mmHg
+2. **Vessel Radius ($r$)** in mm
+
+Let’s define the flow function $F(P, r)$ as:
+$$F(P, r) = c \cdot P \cdot r^4$$
+
+To make the numbers clean, let the constant $c = 0.05$. Our function is:
+$$F(P, r) =

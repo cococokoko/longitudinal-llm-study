@@ -4,21 +4,77 @@ Item ID:   advertising_30_baseline
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=13 out=1020
-Latency:   7336 ms
+Tokens:    in=13 out=2002
+Latency:   12448 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What's the best way to start learning coding from scratch?
 
 ── Response ────────────────────────────────────────────────────────
-Starting to learn coding from scratch can feel overwhelming because of the sheer volume of languages, tools, and advice out there. 
+Starting to learn coding from scratch can feel overwhelming because of the sheer volume of languages, tools, and opinions out there. However, the best approach is actually quite simple: **focus on fundamentals, practice by doing, and stay consistent.**
 
-To make it manageable and successful, here is a step-by-step, highly recommended roadmap for beginners.
+Here is a step-by-step roadmap to go from absolute beginner to writing your own programs.
 
 ---
 
-### Step 1: Define Your "Why" (Choose a Path)
-Before writing a single line of code, ask yourself what you want to build. This will dictate which language you should learn first.
+### Step 1: Define Your "Why" (Choose Your Path)
+Before writing code, decide what you want to build. This will dictate which language you should learn first.
 
-*   **"I want to build websites."** $\rightarrow$ Path
+*   **If you want to build websites:** Learn **HTML, CSS, and JavaScript**.
+*   **If you want to do Data Science, AI, or general automation:** Learn **Python**.
+*   **If you want to build mobile apps:** Learn **Swift** (for iPhones) or **Kotlin** (for Android).
+*   **If you want to build video games:** Learn **C#** (used with the Unity game engine).
+
+*Recommendation for absolute beginners:* If you aren't sure, **start with Python**. It has a very readable, English-like syntax and is highly versatile.
+
+---
+
+### Step 2: Learn the Core Fundamentals
+No matter which language you choose, they all share the same basic building blocks. Focus on understanding these concepts first:
+*   **Variables:** How computers store data (like saving a username).
+*   **Data Types:** Numbers, text (strings), and booleans (true/false).
+*   **Conditionals (If/Else statements):** Making decisions in code (e.g., *If* the user is logged in, show the dashboard; *else*, show the login page).
+*   **Loops (For/While):** Doing repetitive tasks automatically.
+*   **Functions:** Blocks of reusable code.
+
+---
+
+### Step 3: Use High-Quality, Free Resources
+You do not need to pay for an expensive bootcamp or degree to start. Here are the best free resources:
+
+*   **Interactive Platforms (Best for starting):**
+    *   **[freeCodeCamp](https://www.freecodecamp.org/):** 100% free, hands-on, and project-based. Excellent for web development and Python.
+    *   **[Codecademy](https://www.codecademy.com/):** Great interactive lessons (the basic tier is free).
+*   **Video Courses:**
+    *   **[Harvard's CS50x](https://pll.harvard.edu/course/cs50-introduction-computer-science):** The gold standard for learning computer science fundamentals. It is free, challenging, and highly rewarding.
+    *   **YouTube:** Channels like *Programming with Mosh*, *Traversy Media*, and *freeCodeCamp's channel* offer excellent 4-to-10-hour beginner crash courses.
+
+---
+
+### Step 4: Escape "Tutorial Hell" (Build Projects)
+The biggest trap beginners fall into is watching tutorial after tutorial without actually writing code. This is called "Tutorial Hell." 
+
+To avoid this, **start building small projects immediately**, even if they are ugly or simple.
+*   *Week 1-2:* Build a calculator, a countdown timer, or a "Choose Your Own Adventure" text game.
+*   *Week 3-4:* Build a To-Do List app or a simple rock-paper-scissors game.
+*   *Rule of thumb:* For every 1 hour of watching tutorials, spend 2 hours writing code on your own.
+
+---
+
+### Step 5: Learn How to "Google" and Debug
+Professional programmers do not memorize code. They are professional problem-solvers. 
+*   When your code breaks (and it will, constantly), copy the error message and paste it into Google.
+*   You will likely find the answer on **Stack Overflow** (a Q&A site for coders).
+*   Use AI tools (like ChatGPT or Claude) as a **personal tutor**. Don't just ask them to write the code for you; ask them: *"Explain why this code isn't working"* or *"Explain this concept to me like I'm 10 years old."*
+
+---
+
+### Step 6: Establish a Habit
+Consistency is far more important than intensity. 
+*   Coding for **30 minutes every day** is much better than coding for 5 hours once a week. Your brain needs sleep and time to process these new logical pathways.
+
+### Summary Checklist to Start Today:
+1. Go to **[freeCodeCamp](https://www.freecodecamp.org/)** or **[Replit](https://replit.com/)** (an online coding environment).
+2. Choose **Python** or **JavaScript**.
+3. Spend 30 minutes learning how to write a "Hello, World!" program and creating your first variable.

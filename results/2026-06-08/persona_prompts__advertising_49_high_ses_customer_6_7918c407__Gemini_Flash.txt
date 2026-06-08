@@ -4,8 +4,8 @@ Item ID:   advertising_49_high_ses_customer_6
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=20 out=1020
-Latency:   8282 ms
+Tokens:    in=20 out=2020
+Latency:   14449 ms
 Error:     none
 
 ── System message ──────────────────────────────────────────────────
@@ -15,6 +15,46 @@ You know that the customer is a partner at a major consulting firm.
 How to improve home WiFi?
 
 ── Response ────────────────────────────────────────────────────────
-To optimize your home Wi-Fi for maximum productivity, reliability, and speed, we can approach this using a standard diagnostic and implementation framework: **Diagnose, Optimize (Quick Wins), and Upgrade (Strategic Investment).**
+To optimize your home WiFi for seamless video conferencing, high-speed data transfers, and multi-device reliability, it helps to approach the problem systematically. 
 
-Here
+WiFi performance is governed by three variables: **bandwidth** (what you pay your ISP for), **coverage** (how far the signal travels), and **congestion** (interference from walls or other devices).
+
+Here is a structured framework to diagnose and resolve your WiFi bottlenecks, ranging from zero-cost quick wins to premium, "set-it-and-forget-it" enterprise solutions.
+
+---
+
+### Phase 1: Diagnostic (Identify the Bottleneck)
+Before spending money, run a quick diagnostic to isolate the issue:
+1. **Test the Source:** Stand next to your main router and run a speed test (e.g., Speedtest.net or Fast.com). Compare this to your contracted ISP speed. If this is slow, the issue is your incoming internet service, not your WiFi.
+2. **Test the Drop-off:** Run the same test in your primary workspace. If the speed drops by more than 50% or latency (ping) spikes above 30ms, you have a coverage or interference issue.
+
+---
+
+### Phase 2: Low-Cost Optimization (Quick Wins)
+If your hardware is relatively modern but underperforming, optimize your current setup:
+
+* **Elevate and Centralize the Router:** WiFi signals travel outward and downward. Placing your router in a closet, on the floor, or behind a TV severely degrades performance. Move it to a central, elevated location (e.g., on top of a bookshelf).
+* **Separate the Bands (Band Steering):** 
+  * **5 GHz / 6 GHz bands** are incredibly fast but have shorter range. Use these for your work laptop and video conferencing.
+  * **2.4 GHz band** is slower but travels further. Relegate smart home devices (smart plugs, bulbs) to this band to free up bandwidth.
+* **Avoid Physical Obstructions:** Concrete, brick, plaster with metal lath, and large mirrors are "WiFi killers." Position your workspace to minimize the number of heavy walls between you and the router.
+
+---
+
+### Phase 3: Hardware Upgrades (The Strategic Solutions)
+
+If your home is larger than 1,500 sq. ft., or has multiple floors, a single router will rarely suffice. Depending on your budget and desired level of involvement, choose one of the following paths:
+
+#### Option A: The "Turnkey" Premium Solution (Mesh WiFi)
+*Best for: Large homes, ease of use, and seamless roaming.*
+Instead of one router trying to blast a signal through the whole house, a Mesh system uses multiple nodes that work together to create a single, blanket network.
+* **The Tech to Look For:** **Wi-Fi 6E** or **Wi-Fi 7**. These utilize the newly opened 6 GHz spectrum, which acts like an empty express lane free from neighbor interference.
+* **Top Recommendations:** 
+  * **Eero Max 7 or Eero Pro 6E:** Extremely user-friendly, self-optimizing, and excellent app-based management.
+  * **Netgear Orbi (970 or 860 Series):** High-end, massive coverage, and dedicated wireless backhaul (meaning the nodes talk to each other on a private channel, preserving 100% of your speed for your devices).
+
+#### Option B: The "No-Compromise" Enterprise Solution (Wired Access Points)
+*Best for: Absolute reliability, zero latency, and high-stakes virtual meetings.*
+If you want a bulletproof network that mimics a corporate office, you need a wired infrastructure. Wireless mesh nodes still lose some speed communicating with each other wirelessly. 
+* **Wired Backhaul:** Use existing Cat6 Ethernet wiring in your home to connect your mesh nodes directly to the main router. This ensures 100% speed at every node.
+* **Enterprise-Grade Hardware (Ubiquiti UniFi):

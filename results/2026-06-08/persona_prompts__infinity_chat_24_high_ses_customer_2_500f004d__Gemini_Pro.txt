@@ -4,8 +4,8 @@ Item ID:   infinity_chat_24_high_ses_customer_2
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=31 out=1020
-Latency:   10914 ms
+Tokens:    in=31 out=1296
+Latency:   28666 ms
 Error:     none
 
 ── System message ──────────────────────────────────────────────────
@@ -15,10 +15,25 @@ You know that the customer is a senior attorney at a well-established law firm.
 Write an email to organize a catch-up with a referral partner.
 
 ── Response ────────────────────────────────────────────────────────
-Subject: Catching up / [Your Firm Name] & [Partner's Firm Name]
+Subject: Catching up / [Your Firm Name] & [Partner's Firm/Company Name]
 
 Dear [Referral Partner's Name],
 
 I hope this email finds you well. 
 
-It has been a little while since we last connected, and I wanted to reach out to see how
+It has been a little while since we last connected, and I wanted to reach out to see how things are going with you and the team at [Partner's Firm/Company Name]. 
+
+I have always valued our relationship and the excellent work you do for the clients we share. I also want to express my continued appreciation for the trust you’ve placed in us with your referrals; it is always a pleasure collaborating with you. 
+
+I would love to schedule a time for us to catch up in the coming weeks. It would be great to hear what trends you are seeing in your practice right now, share a few updates from our end here at [Your Firm Name], and discuss how we can continue to best support each other's clients moving forward. 
+
+Would you be open to grabbing lunch or coffee sometime the week of [Date] or [Date]? If your schedule is currently too packed for an in-person meeting, I would be more than happy to set up a brief phone or Zoom call instead. 
+
+Let me know what works best for you, or please feel free to pass this along to your assistant to coordinate the details. 
+
+Best regards,
+
+**[Your Name]**
+[Your Title, e.g., Partner / Senior Counsel]
+[Your Law Firm Name]
+[Your Contact Information]

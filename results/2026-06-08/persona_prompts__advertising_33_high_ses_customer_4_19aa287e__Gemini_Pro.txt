@@ -4,8 +4,8 @@ Item ID:   advertising_33_high_ses_customer_4
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: high_ses
 SES level: high  role: customer
-Tokens:    in=24 out=1020
-Latency:   10903 ms
+Tokens:    in=24 out=2020
+Latency:   22233 ms
 Error:     none
 
 ── System message ──────────────────────────────────────────────────
@@ -15,4 +15,34 @@ You know that the customer is a physician-scientist leading a research group.
 How to make my own natural beauty products?
 
 ── Response ────────────────────────────────────────────────────────
-Given your background as a physician-scientist, you will likely appreciate approaching cosmetic formulation not as a standard "DIY" project, but as an exercise in applied biochemistry, pharmacology, and formulation science
+Given your background as a physician-scientist, you will likely find making your own skincare products highly intuitive. Cosmetic formulation is essentially applied biochemistry, pharmacology, and physical chemistry. 
+
+Instead of the typical "DIY" approach of using kitchen measurements, you can approach this exactly as you would a laboratory protocol: using weight-by-weight percentages (% w/w), precision equipment, and a focus on thermodynamic stability, microbial safety, and evidence-based active ingredients.
+
+Here is a structured guide to formulating your own natural beauty products, tailored to a scientific mindset.
+
+### 1. The "Bench" Setup (Equipment)
+You likely already know the importance of a sterile and precise environment. You will need:
+*   **Precision Scale:** Accurate to at least 0.01g. Formulations are always done by weight, never by volume.
+*   **Glassware:** Borosilicate glass beakers (50ml, 100ml, 250ml).
+*   **Homogenizer:** A high-shear mixer or a simple immersion blender to create stable emulsions.
+*   **pH Meter:** Or high-quality pH strips. The skin’s acid mantle is around pH 4.5–5.5; your products must match this to maintain barrier function.
+*   **Sanitization:** 70% Isopropyl alcohol for all surfaces and tools.
+
+### 2. Formulation Architecture
+Most skincare products (lotions, creams, serums) are emulsions—thermodynamically unstable mixtures of water and oil forced into stability by surfactants (emulsifiers). A standard formulation is divided into three phases:
+
+*   **Phase A (Aqueous):** Distilled water, hydrosols, and water-soluble humectants (e.g., Glycerin, Hyaluronic Acid, Panthenol).
+*   **Phase B (Lipid):** Plant oils (triglycerides), butters (e.g., Shea), waxes, and your emulsifier. 
+*   **Phase C (Cool-down/Therapeutics):** Heat-sensitive active ingredients, antioxidants, and preservatives. Added only when the emulsion cools below 40°C.
+
+### 3. The Science of "Natural" Ingredients
+"Natural" has no strict regulatory definition, so formulators usually look to standards like COSMOS or ECOCERT. 
+*   **Emulsifiers:** Look for naturally derived, liquid-crystal emulsifiers that mimic the skin's lipid bilayer. *Olivem 1000* (Cetearyl Olivate, Sorbitan Olivate) is an excellent, Ecocert-approved choice.
+*   **Evidence-Based Actives:** As a physician, you'll want ingredients with clinical backing. Consider *Bakuchiol* (a plant-derived retinol analogue), *Niacinamide* (Vitamin B3 - highly stable), *Centella Asiatica* extract (wound healing/anti-inflammatory), and *Licorice Root Extract* (glabridin for tyrosinase inhibition).
+*   **Antioxidants:** To prevent lipid peroxidation (rancidity) in your oils, always include 0.5% mixed tocopherols (Vitamin E) or Rosemary Oleoresin Extract (ROE).
+
+### 4. The Crucial Step: Preservation
+This is where amateur formulators fail. **Any product containing water must have a broad-spectrum preservative.** Without it, you are culturing *Pseudomonas*, *E. coli*, and various fungi.
+*   Since you want "natural" products, avoid parabens and formaldehyde releasers, and opt for Ecocert-approved broad-spectrum systems. 
+*   **

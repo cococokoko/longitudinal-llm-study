@@ -4,12 +4,48 @@ Item ID:   advertising_26_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=12 out=1020
-Latency:   11292 ms
+Tokens:    in=12 out=2020
+Latency:   25118 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 What are the best practices for data security in small businesses?
 
 ── Response ────────────────────────────────────────────────────────
-Small businesses are prime targets for cybercriminals because they often have valuable data but lack the enterprise-level security budgets of larger corporations. In fact, a significant percentage of cyberattacks are aimed directly at
+Small businesses are prime targets for cybercriminals. Because they often lack the massive IT budgets of large enterprises, hackers view them as "low-hanging fruit." A single data breach can result in devastating financial losses, reputational damage, and even business closure.
+
+To protect your business, you don't need an enterprise-level budget, but you do need a proactive approach. Here are the best practices for data security in small businesses, broken down into five key areas:
+
+### 1. Secure the Human Element (Your Employees)
+Employees are often the weakest link in data security, usually by accident. 
+*   **Regular Security Training:** Conduct mandatory, ongoing training on how to spot phishing emails, malicious links, and social engineering tactics. 
+*   **Establish a "No-Blame" Culture:** If an employee accidentally clicks a malicious link, they should feel safe reporting it immediately rather than hiding it out of fear of being fired. Speed is critical in stopping a breach.
+*   **Clear BYOD Policy:** If employees use personal phones or laptops for work (Bring Your Own Device), establish strict rules. Require them to use PINs/biometrics and keep their operating systems updated.
+
+### 2. Lock Down Access and Authentication
+Control exactly *who* has access to *what*.
+*   **Enforce Multi-Factor Authentication (MFA):** This is the single most effective way to prevent unauthorized access. Require MFA (like a code sent to a phone or an authenticator app) for all email accounts, financial software, and cloud storage.
+*   **Use a Password Manager:** Stop employees from using "Password123" or reusing passwords across multiple sites. Provide a business password manager (like 1Password, Dashlane, or Bitwarden) to generate and store complex passwords securely.
+*   **Principle of Least Privilege (PoLP):** Employees should only have access to the data and systems necessary to do their specific jobs. A marketing intern does not need access to the payroll database.
+*   **Strict Offboarding:** The moment an employee leaves the company, revoke all their access to company accounts, software, and facilities.
+
+### 3. Protect Devices and Networks
+Your hardware and internet connections are the doors and windows to your data.
+*   **Automate Updates and Patching:** Cybercriminals exploit known flaws in outdated software. Set operating systems (Windows, macOS), web browsers, and all software to update automatically.
+*   **Install Endpoint Protection:** Go beyond basic antivirus. Use modern Endpoint Detection and Response (EDR) software to monitor laptops and desktops for suspicious behavior.
+*   **Secure Your Wi-Fi:** Ensure your office Wi-Fi is encrypted (WPA3 is best). Always create a separate, isolated "Guest Network" for visitors and customers so they cannot access your internal business network.
+*   **Use VPNs for Remote Work:** If employees work from coffee shops or airports, require them to use a Virtual Private Network (VPN) to encrypt their internet connection.
+
+### 4. Data Backup and Encryption
+If a hacker gets in, or a laptop is stolen, you need to ensure your data is safe and recoverable.
+*   **Follow the 3-2-1 Backup Rule:** Keep **3** copies of your data, on **2** different types of media, with **1** copy stored offsite (usually in a secure cloud). 
+*   **Test Your Backups:** A backup is useless if it’s corrupted. Regularly test your backups to ensure you can actually restore your data in the event of a ransomware attack.
+*   **Encrypt Devices:** Turn on full-disk encryption for all company laptops and mobile devices (BitLocker for Windows, FileVault for Mac). If a device is lost or stolen, the data remains unreadable.
+
+### 5. Planning and Policies
+Security is not just about software; it’s about having a plan.
+*   **Create an Incident Response Plan:** If you are hacked tomorrow, what is the first thing you do? Who do you call? Write down a step-by-step plan for isolating infected computers, notifying stakeholders, and contacting IT professionals.
+*   **Vet Your Vendors:** Your security is only as strong as your weakest vendor. If you use third-party software for accounting, HR, or marketing, ensure they have strict security certifications (like SOC 2).
+*   **Invest in Cyber Liability Insurance:** Standard business insurance rarely covers data breaches. Cyber insurance can help cover the costs of data recovery, legal fees, and customer notification in the event of a hack.
+
+**Where to start?**

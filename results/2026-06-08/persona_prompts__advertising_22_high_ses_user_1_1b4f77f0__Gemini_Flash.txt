@@ -4,8 +4,8 @@ Item ID:   advertising_22_high_ses_user_1
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: high_ses
 SES level: high  role: user
-Tokens:    in=22 out=1020
-Latency:   8508 ms
+Tokens:    in=22 out=2020
+Latency:   118682 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
@@ -14,4 +14,58 @@ I am a neurosurgeon at a major teaching hospital.
 What are the best tools for remote team collaboration?
 
 ── Response ────────────────────────────────────────────────────────
-As a neurosurgeon at a major teaching hospital, your collaboration needs are uniquely complex. You must balance **strict HIPAA/GDPR compliance** with the need for high-fidelity imaging sharing, academic research collaboration
+As a neurosurgeon at a major teaching hospital, your collaboration needs are highly specialized. You require tools that not only facilitate communication but also handle high-resolution imaging (DICOM), support resident education, streamline research, and—most importantly—strictly adhere to **HIPAA and GDPR compliance**. 
+
+Here are the best remote collaboration tools tailored for a neurosurgical department, categorized by clinical, educational, and research needs.
+
+---
+
+### 1. Clinical Case Collaboration & Imaging (Tumor Boards & Surgical Planning)
+Discussing complex spine or cranial cases remotely requires high-fidelity image sharing and 3D reconstruction capabilities.
+
+*   **Brainlab Co-Pilot / Brainlab Cloud:** 
+    *   *What it is:* A secure, cloud-based platform designed specifically for surgical teams.
+    *   *Why it’s great:* It allows you to share and view DICOM data, plan trajectories, and collaborate on surgical plans remotely with residents or colleagues. It integrates directly with Brainlab navigation systems in the OR.
+*   **Ambra Health (by Intelerad):**
+    *   *What it is:* A cloud-based PACS and image-management platform.
+    *   *Why it’s great:* It allows for instant, secure sharing of MRIs and CT scans with external referrers or remote team members. You can view diagnostic-quality images on any device (including iPads) without needing a VPN.
+*   **Proximie:**
+    *   *What it is:* An augmented reality (AR) platform for the operating room.
+    *   *Why it’s great:* Perfect for a teaching hospital. It allows you to virtually "scrub in" to an OR from home, guide a resident through a procedure, draw on the screen in real-time, and point to anatomical landmarks using AR.
+
+---
+
+### 2. Secure Communication & Daily Operations (HIPAA-Compliant)
+Standard tools like WhatsApp or standard Slack are compliance risks. You need secure, instant communication for patient handovers and urgent consults.
+
+*   **Epic Haiku / Canto (or your EHR’s mobile equivalent):**
+    *   *What it is:* The mobile/tablet companion to Epic.
+    *   *Why it’s great:* If your hospital uses Epic, this is the safest way to access patient charts, view imaging, and securely chat with residents (via Epic Secure Chat) about active patients.
+*   **TigerConnect:**
+    *   *What it is:* A dedicated, secure clinical communication platform.
+    *   *Why it’s great:* It allows for encrypted texting, voice calls, and video. You can create specific channels (e.g., "Spine Call Team" or "Neuro-Oncology Board") to streamline handovers and consults.
+*   **Microsoft Teams (Healthcare Edition):**
+    *   *What it is:* A secure version of MS Teams.
+    *   *Why it’s great:* Most major hospital IT departments already support Microsoft 365. The healthcare version is HIPAA-compliant, integrates with EHRs, and is excellent for hosting virtual multidisciplinary tumor boards.
+
+---
+
+### 3. Academic & Research Collaboration
+Managing clinical trials, writing papers, and collaborating with international co-authors.
+
+*   **REDCap (Research Electronic Data Capture):**
+    *   *What it is:* A secure web application for building and managing online databases.
+    *   *Why it’s great:* The gold standard for academic medicine. It is ideal for tracking patient outcomes, managing clinical trials, and collaborating on retrospective studies across institutions.
+*   **Overleaf:**
+    *   *What it is:* A collaborative, cloud-based LaTeX editor.
+    *   *Why it’s great:* If your department writes highly technical papers with complex formatting, equations, or heavy bibliography lists, Overleaf allows multiple neurosurgeons and researchers to write and edit the manuscript simultaneously.
+*   **Mendeley / EndNote Web:**
+    *   *What it is:* Reference management software.
+    *   *Why it’s great:* Allows your research team to build a shared library of neurosurgical literature, making it easy for residents to cite papers when drafting manuscripts.
+
+---
+
+### 4. Resident Education & Training
+Teaching hospitals require tools to manage resident schedules, track milestones, and host journal clubs.
+
+*   **Slack (Enterprise Grid with HIPAA BAA):

@@ -4,12 +4,22 @@ Item ID:   infinity_chat_60_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=12 out=1020
-Latency:   10644 ms
+Tokens:    in=12 out=1345
+Latency:   15341 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Explain computational irreducibility like I'm 5.
 
 ── Response ────────────────────────────────────────────────────────
-Imagine you have a piggy bank, and you put one coin in it every single day. If I ask you, "How many coins will you have in 10 days?" you don'
+Imagine you set up a giant, crazy track of dominoes all over your playroom. They go up ramps, under chairs, and around your toys. 
+
+Before you push the first domino, I ask you: **"Will the very last domino by the door fall over?"**
+
+If the dominoes were just in one short, straight line, you could easily say, "Yes!" You can guess the ending in your head without even pushing them. That’s called taking a **shortcut**.
+
+But because your track is so big and crazy, with pieces splitting off and bumping into toys, you can't just guess. Even the smartest computer in the world couldn't just *guess* the ending. 
+
+The **only** way to know for sure what happens to the last domino is to push the first one and watch every single domino fall, one by one, until the very end. 
+
+**Computational irreducibility** is just a big, fancy word for grown-ups that means: **There are no shortcuts.** For some things in the world, you can't skip to the end of the story—you just have to watch the whole thing happen step-by-step to see how it finishes!

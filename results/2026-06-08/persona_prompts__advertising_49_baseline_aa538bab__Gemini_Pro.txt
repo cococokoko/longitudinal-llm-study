@@ -4,12 +4,46 @@ Item ID:   advertising_49_baseline
 Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=6 out=1020
-Latency:   9914 ms
+Tokens:    in=6 out=2020
+Latency:   20295 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 How to improve home WiFi?
 
 ── Response ────────────────────────────────────────────────────────
-Improving your home WiFi can range from completely free, simple tweaks to investing in new hardware. Here is a step-by-step guide to boosting your signal, starting with the easiest and
+Improving your home WiFi can range from completely free, simple tweaks to investing in new hardware. Here is a step-by-step guide to boosting your WiFi signal, organized from the easiest free fixes to hardware upgrades.
+
+---
+
+### Phase 1: Free & Easy Fixes (Placement)
+The physical location of your router is the #1 cause of bad WiFi. 
+
+*   **Put it in the center of your home:** WiFi signals broadcast outward in a circle. If your router is in a corner room, half your signal is going outside.
+*   **Elevate it:** Routers send signals slightly downward. Place your router on a high shelf or mount it on a wall, rather than leaving it on the floor.
+*   **Avoid physical obstacles:** WiFi struggles to pass through brick, concrete, metal, and water. Keep the router away from thick walls, metal filing cabinets, and large fish tanks.
+*   **Avoid electronic interference:** Keep your router away from microwaves, cordless phones, baby monitors, and Bluetooth devices, which can scramble the signal.
+*   **Adjust the antennas:** If your router has external antennas, point one vertically (straight up) and one horizontally (flat). This helps cover devices in different orientations.
+
+### Phase 2: Tweak Your Settings (Software)
+Log into your router’s settings (usually by typing `192.168.1.1` or `10.0.0.1` into your web browser) or use your router's mobile app to make these changes:
+
+*   **Switch to the 5GHz or 6GHz band:** Most modern routers are "dual-band." 
+    *   **2.4 GHz:** Reaches further, but is much slower and prone to interference. Use this for smart home devices (bulbs, plugs).
+    *   **5 GHz / 6 GHz:** Much faster, but shorter range. Connect your phones, laptops, and TVs to this band.
+*   **Change your WiFi Channel:** If you live in an apartment or dense neighborhood, your neighbors' WiFi might be interfering with yours. Use a free app like **WiFi Analyzer** (Android) or **NetSpot** (Mac/PC) to find the least crowded channel, then change your router to that channel in the settings. *(For 2.4GHz, only use channels 1, 6, or 11).*
+*   **Update the Firmware:** Just like your phone, your router needs software updates to fix bugs and improve performance. Check the settings for a "Firmware Update" button.
+*   **Set up QoS (Quality of Service):** If your router has this feature, it allows you to prioritize certain traffic. You can tell the router to always give priority to your work laptop or gaming console over someone else watching Netflix.
+
+### Phase 3: Hardware Upgrades
+If your router is more than 4 or 5 years old, it might be time to spend a little money.
+
+*   **Upgrade to a Mesh WiFi System:** If you have a large home (over 2,000 sq ft) or multiple floors, a single router won't cut it. Mesh systems (like Amazon Eero, Google Nest, or Netgear Orbi) use multiple "nodes" placed around the house to create one massive, seamless WiFi network.
+*   **Buy a new WiFi 6 or WiFi 7 Router:** If you have a smaller home but lots of devices, upgrading to a modern standard (WiFi 6 or newer) will drastically improve how your network handles multiple devices at once.
+*   **Ditch the ISP Router:** The modem/router combo unit your Internet Service Provider rents to you is usually low quality. Buying your own standalone router will almost always give you better range and speed (and save you the monthly rental fee).
+*   **WiFi Extenders (Use with caution):** These are cheap plug-in devices that catch your WiFi signal and repeat it. They are okay for fixing a single "dead zone" (like a garage), but they usually cut your internet speed in half. Mesh is a much better option.
+
+### Phase 4: Take the Load Off the WiFi
+WiFi is a shared resource. The fewer devices using it, the faster it is for everyone else.
+
+*   **Use Ethernet cables:** Plug stationary devices—like smart TVs, gaming

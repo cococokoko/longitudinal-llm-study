@@ -4,14 +4,72 @@ Item ID:   infinity_chat_33_baseline
 Model:     google/gemini-3.5-flash-20260519 (openrouter)
 Condition: baseline
 SES level: nan  role: nan
-Tokens:    in=20 out=1020
-Latency:   6988 ms
+Tokens:    in=20 out=2020
+Latency:   12102 ms
 Error:     none
 
 ── Prompt ──────────────────────────────────────────────────────────
 Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
 
 ── Response ────────────────────────────────────────────────────────
+Running Dolphin Emulator on a Microsoft Surface using only the touchpad and the Windows On-Screen Keyboard (OSK) is a unique challenge, but it is entirely possible—especially for games that don't require fast reflexes or heavy motion controls. 
 
-        *   *Windowed Mode:* Run Dolphin in windowed mode so the OSK doesn't get hidden behind a full-screen game.
-        *   *Game Selection:*
+Here is a complete guide on how to set up, configure, and play Wii games using this specific setup.
+
+---
+
+### Phase 1: Prepare Windows and Dolphin
+Because you are using the On-Screen Keyboard, you need to make sure Dolphin doesn't hide the keyboard when the game starts.
+
+1. **Open Dolphin Emulator.**
+2. Go to **Graphics** -> **General** tab.
+3. Under **Basic**, ensure **Start in Fullscreen** is **unchecked**. (You need to run in Windowed mode so you can see the keyboard).
+4. Check the box for **Render to Main Window** (this keeps the game inside the Dolphin interface, making it easier to manage with the keyboard).
+
+---
+
+### Phase 2: Open the Correct Windows Keyboard
+Windows has two touch keyboards. You want the **Legacy On-Screen Keyboard**, as it behaves more like a physical keyboard and stays on top of other windows.
+
+1. Press the Windows Search bar and type **OSK**.
+2. Click **On-Screen Keyboard** (the desktop app).
+3. A physical-looking keyboard will appear on your screen. You can resize this and drag it to the bottom of your screen.
+4. Position your Dolphin game window on the top half of your screen.
+
+---
+
+### Phase 3: Configure Dolphin Controls
+Wii games usually require a Wii Remote (Wiimote) and sometimes a Nunchuk. We will map these to your keyboard keys and touchpad.
+
+1. In Dolphin, click **Controllers**.
+2. Under **Wii Remote 1**, select **Emulated Wii Remote** and click **Configure**.
+3. At the top right, set the **Device** to `Keyboard/0/MS Keyboard` (or similar).
+
+#### Recommended Key Mapping:
+Since you are using an On-Screen Keyboard, you want keys that are grouped closely together.
+
+* **Buttons:**
+  * **A:** Map to `Space` or `Z`
+  * **B:** Map to `X`
+  * **1:** Map to `1`
+  * **2:** Map to `2`
+  * **Minus / Plus:** Map to `-` and `+`
+* **D-Pad (The directional pad on the Wiimote):**
+  * Map to `Up`, `Down`, `Left`, `Right` arrow keys.
+* **IR (The Wii Pointer - Crucial for Touchpad):**
+  * Map **Up/Down/Left/Right** to **Cursor Y-**, **Cursor Y+**, **Cursor X-**, and **Cursor X+**. 
+  * *This allows your Surface touchpad to act as the Wii pointer.*
+* **Shake (For games like Mario Galaxy/New Super Mario Bros):**
+  * Map **X**, **Y**, and **Z** to a single key, like `C`. Pressing `C` on your OSK will simulate shaking the controller.
+
+*If the game requires a Nunchuk:*
+1. In the **Extension** dropdown menu, select **Nunchuk**.
+2. Click the **Extension** tab next to the General tab.
+3. Map the Nunchuk **Stick** (movement) to `W`, `A`, `S`, `D`.
+4. Map Nunchuk **C** and **Z** buttons to `C` and `Z` (or other keys you haven't used).
+
+---
+
+### Phase 4: How to Play
+1. Launch your Wii game in Dolphin.
+2. Use your **left hand** on the touchscreen to tap the keys on the On-Screen Keyboard (e.g., tapping `W
