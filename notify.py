@@ -65,32 +65,27 @@ def fetch_github_stats() -> dict | None:
     size_kb    = repo_data.get("size", 0)
     is_private = repo_data.get("private", False)
 
-    # Workflow runs for this repo — sum durations of today's completed runs
+    # Workflow runs this month — sum durations of all completed runs
     from datetime import datetime, timezone
-    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    now = datetime.now(timezone.utc)
+    month_start = now.strftime("%Y-%m-01")
     runs_data = _github_get(
-        f"/repos/{repo}/actions/runs?per_page=20&status=completed", token
+        f"/repos/{repo}/actions/runs?per_page=100&status=completed", token
     )
-    todays_runs = []
+    minutes_this_month = 0
     if runs_data:
         for run in runs_data.get("workflow_runs", []):
-            if run.get("run_started_at", "").startswith(today_str):
-                start = datetime.fromisoformat(run["run_started_at"].replace("Z", "+00:00"))
+            started = run.get("run_started_at", "")
+            if started >= month_start:
+                start = datetime.fromisoformat(started.replace("Z", "+00:00"))
                 end   = datetime.fromisoformat(run["updated_at"].replace("Z", "+00:00"))
-                todays_runs.append({
-                    "name":       run.get("display_title") or run.get("name", ""),
-                    "minutes":    max(1, round((end - start).total_seconds() / 60)),
-                    "conclusion": run.get("conclusion", ""),
-                })
-
-    total_minutes_today = sum(r["minutes"] for r in todays_runs)
+                minutes_this_month += max(1, round((end - start).total_seconds() / 60))
 
     return {
-        "repo":                 repo,
-        "size_kb":              size_kb,
-        "is_private":           is_private,
-        "todays_runs":          todays_runs,
-        "total_minutes_today":  total_minutes_today,
+        "repo":                repo,
+        "size_kb":             size_kb,
+        "is_private":          is_private,
+        "minutes_this_month":  minutes_this_month,
     }
 
 
@@ -243,40 +238,18 @@ def build_body(data: dict, balance: dict | None, github: dict | None = None) -> 
         size_pct     = round(100 * size_mb / GITHUB_REPO_SIZE_LIMIT_MB)
         size_color   = "#c62828" if size_pct >= 80 else ("#f57c00" if size_pct >= 50 else "#2e7d32")
 
-        # Today's workflow runs
-        runs = github.get("todays_runs", [])
-        total_min = github.get("total_minutes_today", 0)
-        if runs:
-            def _run_row(r: dict) -> str:
-                c = "#2e7d32" if r["conclusion"] == "success" else "#c62828"
-                return (
-                    f"<tr>"
-                    f"<td style='padding:2px 12px;color:#666;font-size:13px'>{r['name'][:60]}</td>"
-                    f"<td style='padding:2px 12px;font-size:13px'>{r['minutes']} min</td>"
-                    f"<td style='padding:2px 12px;font-size:13px;color:{c}'>{r['conclusion']}</td>"
-                    f"</tr>"
-                )
-            run_rows = "".join(_run_row(r) for r in runs)
-            minutes_html = f"""
-            <tr><td style='padding:3px 12px;color:#666'>Workflow runs today</td>
-                <td style='padding:3px 12px' colspan='2'>
-                  <table border='0' cellspacing='0' style='width:100%'>
-                    {run_rows}
-                    <tr style='border-top:1px solid #eee'>
-                      <td style='padding:2px 12px;font-size:13px'><b>Total</b></td>
-                      <td style='padding:2px 12px;font-size:13px'><b>{total_min} min</b></td>
-                      <td style='padding:2px 12px;font-size:13px;color:#999'>
-                        {'unlimited (public)' if not github['is_private'] else f'of {GITHUB_MINUTES_FREE_PLAN:,}/mo free'}
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-            </tr>"""
-        else:
-            minutes_html = (
-                "<tr><td style='padding:3px 12px;color:#666'>Workflow runs today</td>"
-                "<td style='padding:3px 12px;color:#999'>none found</td></tr>"
-            )
+        # Monthly workflow minutes — single summary row
+        total_min = github.get("minutes_this_month", 0)
+        limit_note = (
+            "unlimited (public)"
+            if not github["is_private"]
+            else f"of {GITHUB_MINUTES_FREE_PLAN:,} free/mo"
+        )
+        minutes_html = (
+            f"<tr><td style='padding:3px 12px;color:#666'>Workflow minutes this month</td>"
+            f"<td style='padding:3px 12px'><b>{total_min} min</b>"
+            f"<span style='color:#999;font-size:12px'>&nbsp;{limit_note}</span></td></tr>"
+        )
 
         github_html = f"""
         <h3>GitHub</h3>
