@@ -48,7 +48,7 @@ experiment_models:
 # Each dataset entry is loaded, sampled, and sent as prompts to all models.
 #
 # type: local_json   — path to a local JSON file 
-# type: huggingface  — HuggingFace dataset 
+# type: huggingface  — HuggingFace dataset --> potential future extension 
 #
 # prompt_field:      column/key whose value becomes the prompt sent to the LLM
 # id_field:          column/key used as the stable item ID (null = auto-index)
@@ -65,7 +65,7 @@ datasets:
     max_prompt_length: 0
     # All WVS questions sent every wave — sample_n: null means no limit.
     sampling_strategy: fixed
-    sample_n: null
+    sample_n: null #no sampling cap
 
   - name: persona_prompts
     type: local_json
@@ -76,4 +76,4 @@ datasets:
     max_prompt_length: 0
     # All 429 items sent every wave — sample_n: null means no limit.
     sampling_strategy: fixed
-    sample_n: null
+    sample_n: null #no sampling cap

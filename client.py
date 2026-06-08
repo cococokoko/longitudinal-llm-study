@@ -260,15 +260,3 @@ async def identify_model(client: "LLMClient", model_id: str) -> str | None:
         return None
     return resp.response_text.strip()
 
-
-# ── OpenRouter model catalogue ────────────────────────────────────────────────
-
-async def list_openrouter_models(api_key: str | None = None) -> list[dict[str, Any]]:
-    key = api_key or os.environ["OPENROUTER_API_KEY"]
-    async with httpx.AsyncClient(timeout=30) as hc:
-        resp = await hc.get(
-            "https://openrouter.ai/api/v1/models",
-            headers={"Authorization": f"Bearer {key}"},
-        )
-        resp.raise_for_status()
-        return resp.json().get("data", [])
