@@ -1,0 +1,29 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_low_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=961
+Latency:   9912 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+**Analysis** is figuring out *what* needs to be done. 
+**Design** is planning *how* to do it. 
+
+Think of it like loading a truck at the warehouse:
+*   **Analysis** is reviewing the shipping manifest to understand the size, weight, and delivery order of the pallets.
+*   **Design** is planning exactly where each pallet goes inside the trailer so everything fits safely and efficiently.
+
+**Can you begin design without analysis?** 
+Technically yes, but it is a terrible idea. 
+
+**Why?** 
+If you just start throwing boxes into a truck without looking at the manifest (skipping analysis), you will likely crush fragile items, run out of space, or bury the first delivery at the very nose of the trailer. In any project, designing without analyzing first leads to solving the wrong problem, causing massive rework, and forcing you to work even longer hours to fix avoidable mistakes.

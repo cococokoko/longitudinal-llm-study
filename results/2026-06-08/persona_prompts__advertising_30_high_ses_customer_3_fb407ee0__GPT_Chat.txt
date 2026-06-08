@@ -1,0 +1,78 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=498
+Latency:   4307 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+The best way to learn coding from scratch is to combine three things from the beginning:
+
+1. Learn one beginner-friendly language
+2. Build small projects immediately
+3. Practice consistently over time
+
+For most people, Python is the best starting language because its syntax is relatively straightforward and it is widely used in data science, research, automation, web development, and artificial intelligence.
+
+A practical roadmap:
+
+- Week 1–2: Learn fundamentals
+  - Variables
+  - Data types (numbers, strings, lists)
+  - Conditionals (if/else)
+  - Loops
+  - Functions
+  - Basic input/output
+
+  Resources:
+  - Python's official tutorial: docs.python.org
+  - Harvard CS50 (free)
+  - "Automate the Boring Stuff with Python" (free online)
+
+- Week 3–4: Write simple programs
+  - Calculator
+  - To-do list
+  - Number guessing game
+  - Text analysis tool
+  - Unit converter
+
+- Month 2: Learn core programming concepts
+  - File handling
+  - Error handling
+  - Modules and libraries
+  - Basic data structures
+  - Debugging
+
+- Month 3 and beyond: Pick a direction
+  - Data science/research: Python, pandas, NumPy, Jupyter
+  - Web development: HTML, CSS, JavaScript
+  - AI/machine learning: Python, scikit-learn, PyTorch
+  - Software development: Python, Git, testing
+  - Scientific computing: Python, NumPy, SciPy
+
+A few principles that matter more than the specific resources:
+
+- Code every day if possible, even 20–30 minutes.
+- Type code yourself rather than just reading it.
+- Expect confusion; debugging is a central part of learning.
+- Build projects that interest you personally or professionally.
+- Learn to use version control (Git) early.
+
+Given that you're a professor, one particularly effective approach is to connect coding to your research or teaching. For example, you might:
+- Analyze datasets from your field.
+- Automate repetitive administrative tasks.
+- Create simulations or visualizations.
+- Build tools for students or collaborators.
+
+Learning tends to accelerate when programming serves a concrete intellectual goal rather than remaining an abstract exercise.
+
+If you tell me your discipline (e.g., economics, physics, history, biology, philosophy, etc.), I can suggest a more tailored learning path.

@@ -1,0 +1,31 @@
+Wave:      2026-06-08
+Dataset:   global_opinion_qa
+Item ID:   goqa_c839c01af488
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=241 out=159
+Latency:   2142 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: And finally, if today were the elections for President of the Republic, by whom would you vote?
+
+Options:
+A. Ricardo Anaya, Frente PAN-PRD-MC
+B. José Antonio Meade, PRI-PVEM-PANAL
+C. Andrés Manuel López Obrador, Morena-PT-PES
+D. Margarita Zavala, Independent
+E. Jaime Rodríguez, El Bronco, Independent
+F. Armando Ríos Piter, Independent
+G. Null vote
+H. None
+I. Don't know
+J. No answer
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 1.0, "J": 0.0}

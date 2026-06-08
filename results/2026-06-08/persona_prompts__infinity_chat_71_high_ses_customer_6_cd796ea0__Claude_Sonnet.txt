@@ -1,0 +1,22 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=106
+Latency:   2839 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+A common example is **Gradient Descent**, an iterative optimization algorithm used to minimize a loss function by updating model parameters in the direction of the steepest descent.
+
+Variants include **Stochastic Gradient Descent (SGD)** and **Adam (Adaptive Moment Estimation)**, the latter being widely used in deep learning for its efficiency in handling sparse gradients and adaptive learning rates.
+
+Would you like a deeper dive into any specific optimization technique or its business applications?

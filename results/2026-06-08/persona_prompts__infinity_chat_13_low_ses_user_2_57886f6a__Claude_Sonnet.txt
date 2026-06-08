@@ -1,0 +1,52 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_13_low_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=40 out=320
+Latency:   8428 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+I have an apartment that costs about $100 a month. How do I survive?
+
+── Response ────────────────────────────────────────────────────────
+I want to make sure I'm helping you effectively. Let me ask a clarifying question first:
+
+**Did you mean:**
+- Your apartment costs **$100/month** (very unusual, possibly subsidized housing or a typo)
+- You have **$100/month** left over after rent
+- Something else?
+
+**Assuming you mean you're extremely tight on money overall, here are honest suggestions:**
+
+## Immediate Resources
+- **Food banks** - can significantly reduce grocery costs
+- **WIC** (if children are young) - food assistance for mothers/children
+- **SNAP** - food stamp benefits
+- **Medicaid/CHIP** - healthcare for you and children
+
+## Income Help
+- **Child support** if applicable
+- **TANF** - temporary cash assistance for families
+- **Earned Income Tax Credit** - significant refund if working
+
+## Childcare Specifically
+- **Childcare subsidy programs** through your state
+- **Head Start** programs
+- Family or community help
+
+## Practical Steps
+- Call **211** - connects you to local resources
+- Local community action agencies
+- Church/community organizations often help regardless of religion
+
+## What Would Help Me Help You Better
+- What state are you in?
+- Ages of your children?
+- Are you currently working?
+
+You're dealing with a genuinely difficult situation and **there's no shame in using available resources.** What's your biggest immediate challenge?

@@ -1,0 +1,120 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=31 out=584
+Latency:   13066 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a practical guide to build a functional zombie survivor game!
+
+---
+
+## Core Game Elements You'll Need
+
+- **Player sprite** (survivor)
+- **Zombie sprites** (enemies)
+- **Backdrop** (arena/map)
+- **Variables** (health, score, wave)
+
+---
+
+## Step 1: Set Up the Player
+
+```
+When [Green Flag] clicked
+Set x to (0) Set y to (0)
+
+Forever:
+  If [W key pressed] → change y by (5)
+  If [S key pressed] → change y by (-5)
+  If [A key pressed] → change x by (-5)
+  If [D key pressed] → change x by (5)
+```
+
+---
+
+## Step 2: Create Zombie Movement
+
+On your **Zombie sprite:**
+```
+When [Green Flag] clicked
+Forever:
+  Point toward [Player sprite]
+  Move (2) steps
+  If touching [Player] then:
+    Change [Health] by (-1)
+    Wait (0.5) seconds
+```
+
+---
+
+## Step 3: Shooting Mechanic
+
+Create a **Bullet sprite:**
+```
+When [Space pressed]:
+  Go to [Player x/y position]
+  Point in direction [Player's direction]
+  Repeat until touching edge:
+    Move (10) steps
+    If touching [Zombie]:
+      Change [Score] by (1)
+      Delete this clone
+```
+
+Use **clones** for multiple bullets.
+
+---
+
+## Step 4: Spawning Waves
+
+```
+When [Green Flag] clicked
+Set [Wave] to (1)
+
+Repeat:
+  Create (Wave × 3) zombie clones
+  Wait until [all zombies gone]
+  Change [Wave] by (1)
+  Wait (2) seconds
+```
+
+---
+
+## Step 5: Health & Game Over
+
+```
+When [Health] < 1:
+  Stop all
+  Show "GAME OVER" sprite
+```
+
+---
+
+## Tips for Polish
+
+| Feature | How |
+|---|---|
+| Zombie animations | Multiple costumes + switch |
+| Sound effects | Add from Scratch sound library |
+| Difficulty scaling | Increase zombie speed each wave |
+| Power-ups | Sprites that boost health/speed |
+
+---
+
+## Recommended Starting Point
+
+**scratch.mit.edu** has existing zombie game examples you can **remix** to learn from existing code structures.
+
+Want me to go deeper on any specific mechanic?

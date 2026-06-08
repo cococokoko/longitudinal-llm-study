@@ -1,0 +1,98 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=40 out=708
+Latency:   6544 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Given your background as a neurosurgeon at a major teaching hospital, I would focus less on becoming a general-purpose software engineer and more on learning the parts of software development that amplify your clinical, research, and leadership impact.
+
+Areas likely to remain valuable for many years:
+
+• AI and machine learning literacy
+  - Understand how modern AI systems work, including large language models, multimodal models, and clinical AI.
+  - Learn concepts such as training, validation, bias, calibration, explainability, and model drift.
+  - You do not need to become an AI researcher, but you should be able to critically evaluate AI tools used in medicine.
+
+• Python
+  - Python has become the dominant language for data science, AI, and scientific computing.
+  - Useful libraries include:
+    - Pandas (data analysis)
+    - NumPy (numerical computing)
+    - Scikit-learn (machine learning)
+    - PyTorch (deep learning)
+  - Python skills transfer across research, automation, and AI development.
+
+• Data engineering and databases
+  - Learn SQL well.
+  - Understand healthcare data structures, data pipelines, and interoperability.
+  - Familiarity with FHIR, HL7, DICOM, and EHR data is particularly valuable in medicine.
+
+• Clinical informatics
+  - This may be one of the highest-leverage areas for physicians.
+  - Learn:
+    - EHR architecture
+    - Clinical decision support systems
+    - Health data standards
+    - Workflow design
+    - Regulatory considerations
+
+• AI-assisted software development
+  - Learn how to use coding copilots and AI coding agents effectively.
+  - The future may involve clinicians directing AI systems that generate substantial portions of code.
+  - Knowing how to specify requirements, validate outputs, and test systems will remain important.
+
+• Cloud computing
+  - Basic familiarity with AWS, Azure, or Google Cloud is increasingly useful.
+  - Many healthcare AI and research systems run in cloud environments.
+  - Focus on concepts rather than memorizing platform-specific details.
+
+• Software architecture and systems thinking
+  - Understand APIs, microservices, security, authentication, and system design.
+  - These concepts tend to remain relevant even as specific technologies change.
+
+• Medical imaging and computational neuroscience
+  - Particularly relevant to neurosurgery.
+  - Learn:
+    - Image processing
+    - Computer vision
+    - Segmentation
+    - Surgical navigation technologies
+    - Neuroinformatics
+  - These areas are likely to see major advances through AI.
+
+• Cybersecurity and privacy
+  - Healthcare remains a major target for cyberattacks.
+  - Understanding security principles, data governance, and patient privacy is increasingly important.
+
+A practical learning path:
+
+1. Learn Python.
+2. Learn SQL.
+3. Learn data analysis with real clinical datasets.
+4. Learn machine learning fundamentals.
+5. Learn modern AI and large language models.
+6. Learn healthcare informatics standards (FHIR, DICOM, HL7).
+7. Build a project involving clinical or imaging data.
+8. Learn cloud and deployment basics.
+
+If your goal is maximizing long-term relevance rather than becoming a full-time software engineer, the strongest combination is likely:
+
+- Python
+- SQL
+- AI/ML literacy
+- Clinical informatics
+- Healthcare data standards (FHIR/DICOM)
+- AI-assisted development workflows
+
+That combination sits at the intersection of medicine, data, and AI, where physicians with technical fluency are likely to have disproportionate influence over the next decade.

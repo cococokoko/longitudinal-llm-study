@@ -1,0 +1,37 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=298
+Latency:   3124 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a line of dominoes set up in a very special pattern.
+
+You ask: "If I knock over the first domino, what will the 100th domino look like when it's done falling?"
+
+For some domino setups, you can figure it out right away without watching all the dominoes fall.
+
+But for other setups, there's no shortcut. The only way to know what happens to the 100th domino is to watch domino 1, then domino 2, then domino 3, and so on until you get there.
+
+Computational irreducibility is the idea that some processes are like that.
+
+Even if you have a very smart computer, there may be no faster way to know the result than to let the process play out step by step.
+
+A simple way to think about it:
+
+- Some problems are like reading the last page of a book to find out the ending.
+- Computationally irreducible problems are like a book where the ending only makes sense if every page changes what happens next.
+- There is no shortcut to page 100. You have to read pages 1 through 99 first.
+
+So, in "5-year-old" terms:
+
+"Sometimes the only way to find out what happens is to actually let it happen. You can't skip ahead, even if you're really smart."

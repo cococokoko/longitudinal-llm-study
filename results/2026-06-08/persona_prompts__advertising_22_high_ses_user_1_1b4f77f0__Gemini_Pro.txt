@@ -1,0 +1,17 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=1020
+Latency:   10836 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon at a major teaching hospital, your collaboration needs are uniquely demanding. You operate at the intersection of high-stakes clinical care, resident education, and academic research. Therefore, any tool you

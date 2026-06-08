@@ -1,0 +1,48 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=322
+Latency:   5765 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Example of a Linear Graph
+
+A **linear graph** (also called a **path graph**) is a graph where vertices are connected in a single straight sequence, with each vertex connected to the next by exactly one edge.
+
+### Example: P₄ (Path Graph with 4 vertices)
+
+```
+A ——— B ——— C ——— D
+```
+
+### Components:
+| Element | Details |
+|---------|---------|
+| **Vertices** | A, B, C, D |
+| **Edges** | {A,B}, {B,C}, {C,D} |
+| **Degree sequence** | A=1, B=2, C=2, D=1 |
+
+### Key Properties:
+- **Vertices:** 4
+- **Edges:** 3 (n − 1 edges for n vertices)
+- The **two endpoints** (A and D) have degree **1**
+- All **interior vertices** (B and C) have degree **2**
+- It is **acyclic** (no loops or cycles)
+- It is a special case of a **tree**
+
+### Simplest Example: P₂
+```
+A ——— B
+```
+Just **two vertices** connected by a **single edge** — the most basic linear graph.
+
+---
+
+Linear graphs are commonly used to model **sequences**, **chains**, or **pipelines** in network problems.

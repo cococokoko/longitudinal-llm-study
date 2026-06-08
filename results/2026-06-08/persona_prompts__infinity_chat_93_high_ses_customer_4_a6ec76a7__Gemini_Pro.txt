@@ -1,0 +1,22 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_93_high_ses_customer_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=1020
+Latency:   11508 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write 100-300 words on how stress affects the body and mind.
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, you are well aware that the ramifications of stress extend far beyond transient psychological discomfort, fundamentally altering systemic homeostasis. At the core of this response is the activation of the hypothalamic-pituitary-adrenal (HPA) axis and the sympathetic nervous system. While acute activation is a necessary evolutionary survival mechanism, chronic stress induces a state of high allostatic load, driving profound pathophysiological changes.
+
+Systemically, sustained elevations in glucocorticoids and catecholamines disrupt metabolic and cardiovascular regulation, contributing to hypertension, endothelial dysfunction, and insulin resistance. Furthermore, chronic stress profoundly modulates the immune system. It shifts the body toward a pro-inflammatory state, increasing circulating cytokines like IL-6 and TNF-alpha. This not only exacerbates autoimmune and cardiovascular pathologies but also accelerates cellular aging via oxidative stress and telomere shortening.
+
+Neurologically and psychologically, the impact is equally severe. Chronic cortisol exposure induces structural remodeling within the brain—specifically, dendritic atrophy and suppressed neuro

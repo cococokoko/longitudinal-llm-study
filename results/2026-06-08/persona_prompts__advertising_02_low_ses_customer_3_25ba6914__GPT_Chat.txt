@@ -1,0 +1,53 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_02_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=379
+Latency:   3981 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+For dry skin, the goal is to cleanse gently, add hydration, and prevent moisture loss.
+
+Morning:
+- Cleanser: Use a gentle, fragrance-free hydrating cleanser (or rinse with lukewarm water if your skin isn't oily in the morning).
+- Hydrating serum (optional): Look for ingredients such as hyaluronic acid, glycerin, or panthenol.
+- Moisturizer: Choose a cream containing ceramides, squalane, shea butter, or other nourishing ingredients.
+- Sunscreen: Apply a broad-spectrum SPF 30 or higher every day. Many moisturizing sunscreens work well for dry skin.
+
+Evening:
+- Cleanser: Use the same gentle cleanser to remove sunscreen and impurities.
+- Treatment (optional): If you want to address concerns like aging, acne, or pigmentation, introduce active ingredients gradually and avoid overusing them, as they can worsen dryness.
+- Moisturizer: Apply a richer cream than you use in the morning if needed.
+- Occlusive layer (optional): If your skin is very dry, apply a thin layer of petrolatum-based ointment or a balm over moisturizer to lock in hydration.
+
+Helpful ingredients:
+- Ceramides
+- Glycerin
+- Hyaluronic acid
+- Squalane
+- Urea (low concentrations)
+- Colloidal oatmeal
+
+Things to avoid if your skin is dry:
+- Harsh scrubs
+- Over-cleansing
+- Very hot water
+- High-alcohol or heavily fragranced products
+- Starting multiple active ingredients at once
+
+If you tell me:
+- Your age
+- Whether your skin is only dry or also sensitive/acne-prone
+- Your budget
+- Your country
+
+I can suggest specific products.

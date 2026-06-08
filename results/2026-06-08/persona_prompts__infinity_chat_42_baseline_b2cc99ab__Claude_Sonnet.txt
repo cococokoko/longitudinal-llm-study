@@ -1,0 +1,17 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=34 out=24
+Latency:   1400 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
+
+── Response ────────────────────────────────────────────────────────
+```python
+title = 'best Python Programming Tips and Tricks for Beginners'
+```

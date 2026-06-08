@@ -1,0 +1,45 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=21 out=328
+Latency:   8061 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens
+
+## 🏥 "Wellness Check-In" with Passive Fall Detection & Smart Escalation
+
+### How It Works:
+
+**1. Continuous Passive Monitoring**
+- Tracks movement patterns, heart rate, and activity levels throughout the day
+- Learns the user's normal daily routine over time
+
+**2. Gentle Check-In Prompts**
+- If unusual inactivity is detected (e.g., no movement for 2 hours), the watch **softly vibrates** and displays a simple "Are you okay?" with two large buttons: ✅ **Yes** / 🆘 **Need Help**
+
+**3. Smart Escalation System**
+If there's no response within 60 seconds:
+- → Notifies a **designated family member**
+- → Alerts a **secondary contact**
+- → Optionally contacts **emergency services**
+
+### Additional Design Considerations:
+| Feature | Benefit |
+|---|---|
+| Large, high-contrast display | Easy readability |
+| One-button SOS | Simple emergency access |
+| Medication reminders | Supports independence |
+| GPS location sharing | Family peace of mind |
+
+### Why This Matters:
+> Many seniors live alone. A **non-intrusive but responsive** system balances **dignity and safety** — avoiding the stigma of traditional medical alert devices.
+
+Would you like me to expand on any specific aspect?

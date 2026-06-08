@@ -1,0 +1,21 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_18_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=26 out=1020
+Latency:   12888 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Create a short review of a movie that doesn't exist yet.
+
+── Response ────────────────────────────────────────────────────────
+**Film Review: *Null Hypothesis* (2026)**
+**Director:** Alex Garland
+**Starring:** Florence Pugh, Jeffrey Wright, Steven Yeun
+
+As a physician-scientist, I usually approach Hollywood’s take on biomedical research with a heavy dose of prophylactic cynicism. I am entirely used to watching impossibly glamorous actors cure complex polygenic diseases in a single weekend using brightly colored liquids and

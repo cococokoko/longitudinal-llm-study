@@ -1,0 +1,37 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=16 out=309
+Latency:   4650 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a row of dominoes.
+
+You ask, "If I knock over the first domino, what will the 100th domino do?"
+
+Sometimes it's easy to know. If all the dominoes are lined up the same way, you can quickly say, "The 100th domino will fall."
+
+But imagine each domino follows a tiny rule, and the way one domino moves affects the next in complicated ways. Now, to find out what the 100th domino does, you can't use a shortcut. You have to watch domino 1, then domino 2, then domino 3, all the way to domino 100.
+
+Computational irreducibility is the idea that some things are like that. There is no faster way to know what happens than to let each step happen, one by one.
+
+Another way to think about it:
+
+- If I ask, "What is 2 + 2?" you can jump straight to the answer: 4.
+- If I ask, "What will this very complicated game look like after a million moves?" sometimes there is no shortcut.
+- The only way to know is to play all million moves.
+
+So computational irreducibility means:
+
+- Some processes can't be predicted with a clever shortcut.
+- To know the result, you must follow the process step by step.
+- Even a super-smart computer may have to do all the work rather than skip ahead.
+
+It's like reading a mystery book where nobody can tell you the ending without actually reading through the story.

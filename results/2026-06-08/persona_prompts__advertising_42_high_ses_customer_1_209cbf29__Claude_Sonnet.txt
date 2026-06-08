@@ -1,0 +1,45 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=296
+Latency:   8139 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+Here are some well-regarded options across different needs:
+
+## Fitness Tracking
+- **Strava** - excellent for running/cycling with GPS
+- **Garmin Connect** - pairs well with Garmin devices
+- **Apple Fitness+** - integrated workouts if you're in the Apple ecosystem
+- **Strong** - popular for weightlifting/strength training
+
+## Nutrition Tracking
+- **MyFitnessPal** - large food database, very comprehensive
+- **Cronometer** - more detailed micronutrient tracking
+- **Lose It!** - user-friendly calorie tracking
+- **Noom** - behavioral approach with coaching
+
+## All-in-One Options
+- **Whoop** - recovery and strain focused (subscription + device)
+- **Apple Health** - good central hub if you use iPhone
+- **Fitbit app** - pairs with Fitbit devices
+
+## Things Worth Considering
+- How much manual logging you're willing to do
+- Whether you want device integration
+- Specific goals (weight, performance, recovery)
+- Privacy preferences around health data
+
+Given your demanding schedule, you might particularly value apps with **quick logging features** or ones that sync automatically with wearables to minimize manual input.
+
+Do you have specific fitness goals in mind? That might help narrow down the best fit.

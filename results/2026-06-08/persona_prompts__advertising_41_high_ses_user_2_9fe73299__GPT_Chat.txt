@@ -1,0 +1,59 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_41_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=523
+Latency:   4617 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+The fastest ways to improve a credit score depend on what's currently affecting it, but these are generally the highest-impact actions:
+
+- Lower your credit utilization ratio
+  - If you have revolving credit card balances, paying them down can produce one of the quickest score increases.
+  - Aim for overall utilization below 30%, and ideally below 10% for maximum scoring benefit.
+  - If possible, make payments before the statement closing date so lower balances are reported to the credit bureaus.
+
+- Check your credit reports for errors
+  - Obtain reports from the major credit bureaus and review them for:
+    - Incorrect late payments
+    - Accounts that do not belong to you
+    - Incorrect balances
+    - Outdated negative information
+  - Disputing and correcting errors can improve scores if inaccurate information is removed.
+
+- Bring any past-due accounts current
+  - If you have accounts that are currently delinquent, becoming current can help prevent further damage.
+  - Recent payment history is an important scoring factor.
+
+- Request a credit limit increase
+  - If approved without a hard inquiry (ask first), a higher limit can reduce your utilization ratio without requiring additional payments.
+  - Do not increase spending simply because more credit is available.
+
+- Become an authorized user
+  - If a trusted family member or spouse has a long-established account with excellent payment history and low utilization, being added as an authorized user may help some scoring models.
+
+- Avoid new credit applications unless necessary
+  - Multiple hard inquiries and newly opened accounts can temporarily lower scores.
+
+- Use rapid rescore (in specific lending situations)
+  - If you're applying for a mortgage or certain other loans, a lender may be able to use a rapid rescore process after you've paid down balances or corrected errors. This can update information faster than the normal reporting cycle.
+
+What generally does not improve scores quickly:
+- Closing old credit cards (often hurts utilization and account age).
+- Paying off installment loans alone (the effect is usually less dramatic than reducing revolving credit card balances).
+- Opening several new accounts.
+
+If you share:
+- Your current score range,
+- Whether the issue is high balances, late payments, collections, or something else,
+- And your time frame (e.g., 30 days, 90 days, 6 months),
+
+I can identify the actions most likely to produce the largest increase in that period.

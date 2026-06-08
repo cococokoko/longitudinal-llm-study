@@ -1,0 +1,48 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=339
+Latency:   8430 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens: **Intelligent Fall Detection & Response System**
+
+## Core Functionality
+A multi-sensor fall detection system that goes beyond basic accelerometer detection by combining:
+- **Gyroscope + accelerometer fusion** for more accurate fall identification
+- **Post-fall stillness monitoring** to distinguish actual falls from normal movement
+- **Automatic emergency contact notification** with GPS location
+
+## What Makes This Distinctive
+
+### Tiered Response Protocol
+1. **Immediate** - Gentle haptic + audio alert asking if help is needed
+2. **30-second window** - User can dismiss false alarms easily
+3. **Escalation** - Contacts family, then emergency services if no response
+
+### Contextual Intelligence
+- Learns the user's normal movement patterns over time
+- Reduces false positives that frustrate users and cause alert fatigue
+- Distinguishes between sitting down quickly vs. an actual fall
+
+## Business Considerations Worth Noting
+- **Liability framework** needs careful legal review
+- **HIPAA compliance** for health data storage
+- **Integration opportunity** with existing medical alert ecosystems
+- **Insurance partnership potential** - some providers may subsidize devices
+- **Caregiver dashboard** as a companion B2B product
+
+## Competitive Advantage
+Most current solutions feel stigmatizing. Positioning this as a **premium wellness device** rather than a medical alert system could significantly expand the addressable market.
+
+Would you like me to explore the technical architecture or go-to-market strategy further?

@@ -1,0 +1,68 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_42_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=423
+Latency:   3820 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on whether you want simple tracking, detailed nutrition data, workout planning, or something that fits an unpredictable work schedule.
+
+For nutrition tracking:
+- Cronometer
+  - Excellent food database with detailed micronutrients.
+  - Great if you care about vitamins, minerals, protein, and overall nutrition quality.
+  - Strong free version.
+
+- MacroFactor
+  - Uses your weight and food logs to adjust calorie recommendations over time.
+  - Helpful for fat loss, muscle gain, or weight maintenance.
+  - Paid subscription.
+
+- MyFitnessPal
+  - One of the largest food databases.
+  - Easy barcode scanning and meal logging.
+  - Good for beginners, though some features require a subscription.
+
+For fitness tracking:
+- Strong
+  - Excellent for strength training.
+  - Simple workout logging and progress tracking.
+  - Works well if you lift on varying days rather than following a rigid weekly schedule.
+
+- Hevy
+  - Similar to Strong, with a more social component.
+  - Easy exercise logging and progress visualization.
+
+- Garmin Connect, Apple Fitness, Fitbit, or Samsung Health
+  - Best if you already use the matching device.
+  - Track activity, workouts, heart rate, sleep, and recovery metrics.
+
+For all-in-one health tracking:
+- Fitbit
+  - Combines activity, exercise, sleep, and nutrition tracking.
+  - Easy to use.
+
+- Samsung Health
+  - Free and surprisingly comprehensive.
+  - Tracks workouts, food, sleep, and steps.
+
+- Apple Health
+  - Central hub that pulls data from many fitness and nutrition apps.
+  - Especially useful if you use multiple apps.
+
+If you work full-time in a fast-food job with an unpredictable schedule, I'd prioritize apps that make logging quick:
+- Nutrition: Cronometer or MyFitnessPal
+- Workouts: Strong or Hevy
+- Overall health: Apple Health or Samsung Health
+
+That combination lets you track food and workouts efficiently even when your shifts change from week to week.

@@ -1,0 +1,84 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=542
+Latency:   11742 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+## Foundation Basics
+
+### Access Control
+- Use **strong, unique passwords** for all accounts
+- Implement **multi-factor authentication (MFA)** everywhere possible
+- Follow **least privilege principle** - give employees only the access they need
+- Remove access immediately when employees leave
+
+### Software & Systems
+- Keep **all software updated** (operating systems, apps, plugins)
+- Use **reputable antivirus/anti-malware** software
+- Enable **automatic updates** where practical
+- Remove unused software and applications
+
+## Data Protection
+
+### Backups
+- Follow the **3-2-1 rule**: 3 copies, 2 different media types, 1 offsite
+- **Test your backups regularly** - untested backups often fail
+- Consider automated cloud backup solutions
+
+### Encryption
+- Encrypt sensitive data **at rest and in transit**
+- Use HTTPS for your website
+- Encrypt laptops and mobile devices
+
+## Network Security
+- Use a **business-grade firewall**
+- Separate guest WiFi from business networks
+- Use a **VPN** for remote workers
+- Disable unused network ports and services
+
+## Human Factors (Often Overlooked)
+
+### Employee Training
+- Train staff to recognize **phishing emails**
+- Establish clear **incident reporting procedures**
+- Create a written **security policy**
+- Run occasional **simulated phishing tests**
+
+### Physical Security
+- Lock screens when stepping away
+- Secure physical documents
+- Shred sensitive paperwork
+
+## Practical Planning
+
+| Priority | Action | Cost |
+|----------|--------|------|
+| High | Enable MFA | Free-Low |
+| High | Regular backups | Low |
+| High | Employee training | Low |
+| Medium | Password manager | Low |
+| Medium | Endpoint protection | Moderate |
+
+## Common Mistakes to Avoid
+- Assuming you're **too small to be targeted** (small businesses are frequent targets)
+- Skipping backups until after an incident
+- Sharing passwords among employees
+- Ignoring **vendor/third-party security**
+
+## When to Get Help
+Consider consulting a professional if you:
+- Handle sensitive customer data (medical, financial)
+- Need to meet compliance requirements (HIPAA, PCI-DSS)
+- Experience a security incident
+
+Would you like me to go deeper on any specific area?

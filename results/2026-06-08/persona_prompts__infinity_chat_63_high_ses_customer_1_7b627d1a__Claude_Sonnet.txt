@@ -1,0 +1,72 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=598
+Latency:   9000 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## Setup
+
+Consider a function representing **intracranial pressure** (or simply a multivariable function):
+
+$$f(x, y) = 3x^2y + 2xy^3$$
+
+where **x = 2** and **y = 3**.
+
+---
+
+## Computing the Partial Derivatives
+
+### Partial derivative with respect to x
+*"How does f change as x changes, holding y constant?"*
+
+$$\frac{\partial f}{\partial x} = 6xy + 2y^3$$
+
+**At (x=2, y=3):**
+
+$$\frac{\partial f}{\partial x}\bigg|_{(2,3)} = 6(2)(3) + 2(3)^3 = 36 + 54 = \boxed{90}$$
+
+→ f increases by approximately **90 units** per unit increase in x
+
+---
+
+### Partial derivative with respect to y
+*"How does f change as y changes, holding x constant?"*
+
+$$\frac{\partial f}{\partial y} = 3x^2 + 6xy^2$$
+
+**At (x=2, y=3):**
+
+$$\frac{\partial f}{\partial y}\bigg|_{(2,3)} = 3(2)^2 + 6(2)(3)^2 = 12 + 108 = \boxed{120}$$
+
+→ f increases by approximately **120 units** per unit increase in y
+
+---
+
+## Numerical Verification
+
+Confirm ∂f/∂x ≈ 90 by incrementing x by a small amount (Δx = 0.001):
+
+| | Value |
+|---|---|
+| f(2, 3) | 3(4)(3) + 2(2)(27) = 36 + 108 = **144** |
+| f(2.001, 3) | 3(4.004)(3) + 2(2.001)(27) = 36.036 + 108.054 = **144.090** |
+| **Difference/Δx** | 0.090/0.001 = **≈ 90** ✓ |
+
+---
+
+## Key Insight
+
+> The partial derivative isolates the effect of **one variable at a time** — analogous to how you might assess the independent contribution of a single factor (e.g., ICP vs. cerebral perfusion pressure) while controlling for others in a clinical model.

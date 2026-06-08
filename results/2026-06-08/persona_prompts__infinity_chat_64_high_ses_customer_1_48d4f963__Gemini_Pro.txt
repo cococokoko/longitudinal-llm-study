@@ -1,0 +1,20 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=32 out=932
+Latency:   9427 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+Here is a draft tailored to your context, focusing on how these exams translate to clinical and academic performance in a high-stakes medical environment:
+
+When evaluating international medical graduates or research fellows for your department, understanding the nuanced differences between the TOEFL and IELTS is crucial for assessing their clinical and academic readiness. The TOEFL is heavily focused on North American academic English and utilizes a fully computerized format where speaking skills are recorded into a microphone; consequently, it is an excellent predictor of a candidate's ability to comprehend complex medical literature, write research papers, and follow didactic lectures. Conversely, the IELTS incorporates a broader range of international English dialects and features a live, face-to-face speaking interview. From a clinical standpoint, the IELTS often provides a more accurate reflection of a physician's bedside manner, their ability to navigate high-stakes patient consultations, and their real-time communication skills within a fast-paced surgical team. Ultimately, while both are rigorous, you may find it beneficial to weigh IELTS scores more heavily for patient-facing clinical fellowships, whereas TOEFL scores are highly reliable for purely research-oriented roles in your lab.

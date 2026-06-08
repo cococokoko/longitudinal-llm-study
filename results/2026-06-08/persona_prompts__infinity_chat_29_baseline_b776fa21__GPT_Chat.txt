@@ -1,0 +1,237 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=1024
+Latency:   6394 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+A LAMP forum (Linux, Apache, MySQL/MariaDB, PHP) can be built from scratch or by using an existing forum package like phpBB. If you're coding it yourself, start with a minimal feature set and expand gradually.
+
+Core features of a basic forum:
+- User registration and login
+- Categories (e.g., General, Support)
+- Threads/topics within categories
+- Posts/replies within threads
+- User profiles
+- Moderation tools
+
+1. Set up the LAMP environment
+
+On Ubuntu:
+
+```bash
+sudo apt update
+sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql
+```
+
+Verify PHP:
+
+```bash
+php -v
+```
+
+2. Create the database
+
+Example schema:
+
+```sql
+CREATE DATABASE forum_db;
+USE forum_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT NOT NULL,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT NOT NULL,
+    user_id INT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+3. Create a database connection
+
+db.php:
+
+```php
+<?php
+
+$host = "localhost";
+$dbname = "forum_db";
+$user = "forum_user";
+$pass = "strong_password";
+
+try {
+    $pdo = new PDO(
+        "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
+        $user,
+        $pass
+    );
+
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+} catch (PDOException $e) {
+    die("Database connection failed");
+}
+```
+
+4. User registration
+
+register.php:
+
+```php
+<?php
+require 'db.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $username = trim($_POST['username']);
+    $email = trim($_POST['email']);
+
+    $passwordHash = password_hash(
+        $_POST['password'],
+        PASSWORD_DEFAULT
+    );
+
+    $stmt = $pdo->prepare(
+        "INSERT INTO users(username,email,password_hash)
+         VALUES(?,?,?)"
+    );
+
+    $stmt->execute([
+        $username,
+        $email,
+        $passwordHash
+    ]);
+
+    echo "Account created";
+}
+?>
+
+<form method="post">
+    <input name="username" required>
+    <input name="email" type="email" required>
+    <input name="password" type="password" required>
+    <button>Create Account</button>
+</form>
+```
+
+5. User login
+
+```php
+<?php
+session_start();
+require 'db.php';
+
+$stmt = $pdo->prepare(
+    "SELECT * FROM users WHERE username=?"
+);
+
+$stmt->execute([$_POST['username']]);
+
+$user = $stmt->fetch();
+
+if ($user &&
+    password_verify(
+        $_POST['password'],
+        $user['password_hash']
+    )) {
+
+    $_SESSION['user_id'] = $user['id'];
+
+    echo "Logged in";
+}
+```
+
+6. Create threads
+
+```php
+<?php
+session_start();
+require 'db.php';
+
+$stmt = $pdo->prepare(
+    "INSERT INTO threads
+    (category_id, user_id, title)
+    VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['category_id'],
+    $_SESSION['user_id'],
+    $_POST['title']
+]);
+```
+
+7. Create posts
+
+```php
+<?php
+session_start();
+require 'db.php';
+
+$stmt = $pdo->prepare(
+    "INSERT INTO posts
+    (thread_id, user_id, content)
+    VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['thread_id'],
+    $_SESSION['user_id'],
+    $_POST['content']
+]);
+```
+
+8. Display threads
+
+```php
+<?php
+require 'db.php';
+
+$stmt = $pdo->query("
+    SELECT
+        t.id,
+        t.title,
+        u.username,
+        t.created_at
+    FROM threads t
+    JOIN users u
+      ON t.user_id = u.id
+    ORDER BY t.created_at DESC
+");
+
+foreach ($stmt as $thread) {
+    echo "<a href='thread.php?id={$thread['id']}'>";
+    echo htmlspecialchars

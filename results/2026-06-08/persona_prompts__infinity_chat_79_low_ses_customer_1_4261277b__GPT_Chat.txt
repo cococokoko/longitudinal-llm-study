@@ -1,0 +1,94 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=47 out=576
+Latency:   5995 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+A strong STEM fair project is one that:
+- Solves a real local problem
+- Is affordable to build and test
+- Uses clear scientific or engineering methods
+- Produces measurable results
+
+For Vietnam, one excellent idea is:
+
+"Low-Cost Water Quality Monitoring System for Rural Communities"
+
+Why it matters:
+- Water pollution is a significant issue in parts of Vietnam due to agricultural runoff, industrial waste, and flooding.
+- Many rural communities depend on rivers, canals, and wells for water.
+- Professional water-monitoring equipment can be expensive.
+
+Project concept:
+Build a low-cost system that measures basic indicators of water quality and alerts users when water may be unsafe.
+
+What you could measure:
+- pH level
+- Water turbidity (cloudiness)
+- Temperature
+- Electrical conductivity (indicates dissolved substances)
+
+Materials:
+- Arduino Uno or ESP32 microcontroller
+- Low-cost sensors (pH, turbidity, temperature)
+- Breadboard and wires
+- Small display or smartphone connection
+- Water samples from different sources
+
+Estimated cost:
+- Around $30–$70 USD depending on sensor quality.
+
+Scientific investigation:
+- Collect water samples from different locations.
+- Record sensor readings.
+- Compare readings between tap water, river water, rainwater, and filtered water.
+- Analyze which indicators are most useful for detecting poor water quality.
+
+Engineering challenge:
+- Design the most accurate system possible while keeping costs low.
+- Test sensor reliability over multiple days.
+
+Possible extensions:
+- Add a solar-powered battery.
+- Create a mobile app dashboard.
+- Develop a simple warning system using LEDs.
+
+Other Vietnam-focused STEM ideas:
+
+1. Flood Prediction Using Rainfall and Water-Level Sensors
+- Flooding affects many regions of Vietnam.
+- Build a miniature flood warning system.
+- Use inexpensive ultrasonic water-level sensors.
+
+2. Solar Dryer for Farmers
+- Farmers often lose crops due to humidity and rain.
+- Design a solar-powered dryer for fruits, herbs, or rice.
+- Compare drying efficiency with open-air drying.
+
+3. Microplastic Detection in Local Water Sources
+- Investigate microplastic pollution.
+- Collect and filter water samples.
+- Quantify particles under a low-cost microscope.
+
+4. Air Quality Monitoring Near Busy Roads
+- Motorbike and traffic emissions affect urban air quality.
+- Build a particulate matter monitoring station.
+- Compare readings at different times of day.
+
+5. Rice Husk Water Filtration System
+- Vietnam produces large amounts of rice husks.
+- Test whether rice-husk-based charcoal can improve water filtration.
+- Compare effectiveness against sand and activated carbon filters.
+
+If you're aiming for a project that can win at a regional or national STEM fair, the flood prediction system or the low-cost water quality monitoring system are particularly strong because they address major challenges in Vietnam, involve both engineering and data analysis, and can be built on a student budget.

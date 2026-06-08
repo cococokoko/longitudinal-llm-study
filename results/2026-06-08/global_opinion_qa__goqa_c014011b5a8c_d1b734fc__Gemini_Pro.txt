@@ -1,0 +1,32 @@
+Wave:      2026-06-08
+Dataset:   global_opinion_qa
+Item ID:   goqa_c014011b5a8c
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=158 out=888
+Latency:   8018 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How frequently do the following things occur in your neighborhood?:
+
+Sexual harassment
+
+Options:
+A. Very Frequently
+B. Quite frequently
+C. Not frequently
+D. Not at all frequently
+E. Don't know
+F. No answer
+G. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.07, "B": 0.12, "C": 0.28, "D": 0.48, "E": 0.04, "F": 0.01, "G": 0.00}
+```

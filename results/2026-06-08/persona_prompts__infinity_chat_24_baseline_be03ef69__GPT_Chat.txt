@@ -1,0 +1,33 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=147
+Latency:   1782 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+Subject: Catch-Up Meeting
+
+Hi [Referral Partner Name],
+
+I hope you're doing well. It's been a while since we last connected, and I'd love to schedule some time to catch up.
+
+It would be great to hear how things are going on your end, share updates from our side, and discuss any opportunities to continue supporting each other and our clients.
+
+Would you be available for a 30-minute call or coffee sometime in the next couple of weeks? Please let me know what works best for you, or feel free to suggest a few times that fit your schedule.
+
+Looking forward to reconnecting.
+
+Best regards,
+
+[Your Name]
+[Your Title]
+[Company Name]
+[Phone Number]
+[Email Address]

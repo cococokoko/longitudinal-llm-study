@@ -1,0 +1,68 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_32_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=536
+Latency:   4321 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best ways to improve indoor air quality?
+
+── Response ────────────────────────────────────────────────────────
+Improving indoor air quality usually involves reducing pollution sources, increasing ventilation, filtering the air, and controlling humidity.
+
+Some of the most effective steps are:
+
+- Improve ventilation
+  - Open windows and doors when outdoor air quality is good.
+  - Use exhaust fans in kitchens and bathrooms.
+  - Consider a mechanical ventilation system (such as an HRV or ERV) if your home is tightly sealed.
+
+- Use high-quality air filtration
+  - Replace HVAC filters regularly.
+  - Use filters with an appropriate MERV rating (often MERV 11–13 if your system can handle it).
+  - Run the HVAC fan as recommended to circulate filtered air.
+
+- Add portable air purifiers
+  - Choose units with a true HEPA filter for particles such as dust, pollen, smoke, and pet dander.
+  - Size the purifier appropriately for the room.
+  - Avoid devices that intentionally generate ozone.
+
+- Control humidity
+  - Aim for indoor humidity between about 30% and 50%.
+  - Use dehumidifiers in damp areas.
+  - Fix leaks and water intrusion promptly to prevent mold growth.
+
+- Reduce indoor pollution sources
+  - Avoid smoking or vaping indoors.
+  - Minimize the use of candles, incense, and wood-burning appliances.
+  - Choose low-VOC paints, finishes, and cleaning products when possible.
+  - Store chemicals, solvents, and fuels outside living spaces.
+
+- Keep the home clean
+  - Vacuum regularly, ideally with a HEPA-filter vacuum.
+  - Dust with damp cloths to avoid stirring particles into the air.
+  - Wash bedding frequently to reduce dust mites and allergens.
+
+- Improve kitchen air quality
+  - Use a vented range hood that exhausts outdoors whenever cooking.
+  - Cooking, especially frying and gas cooking, can generate significant indoor pollutants.
+
+- Manage pets and allergens
+  - Groom pets regularly.
+  - Keep pets out of bedrooms if allergies are a concern.
+  - Consider allergen-resistant bedding covers.
+
+- Test for specific hazards
+  - Test for radon if it is a concern in your region.
+  - Install carbon monoxide detectors.
+  - Address mold promptly if you notice musty odors or visible growth.
+
+- Monitor air quality
+  - Indoor air quality monitors can track particulate matter (PM2.5), carbon dioxide (CO₂), humidity, and sometimes volatile organic compounds (VOCs).
+  - Monitoring helps identify whether ventilation or filtration needs improvement.
+
+If you tell me whether you're concerned about allergies, smoke, mold, pet dander, odors, or general air quality, I can suggest the most effective solutions for that specific issue.

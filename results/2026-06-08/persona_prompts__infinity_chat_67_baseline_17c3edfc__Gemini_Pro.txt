@@ -1,0 +1,16 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_67_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=23 out=1020
+Latency:   9044 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a Google ad with 2 sentences and a 30-character limit per sentence for mobile car detailing.
+
+── Response ────────────────────────────────────────────────────────
+r-e.(28) -> 28 chars.
+        *Check S2:* M-a-k-e(4) (5) i-t(7) (8

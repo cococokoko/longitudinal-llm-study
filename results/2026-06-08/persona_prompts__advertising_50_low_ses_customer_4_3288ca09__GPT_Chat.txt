@@ -1,0 +1,33 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_50_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=275
+Latency:   3116 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Ways to save on travel.
+
+── Response ────────────────────────────────────────────────────────
+If you're looking to reduce travel costs, a few strategies can make a big difference:
+
+- Be flexible with dates. Traveling midweek and outside peak holiday periods is often cheaper.
+- Book flights and accommodations early for popular destinations, but compare prices over time using fare-tracking tools.
+- Use price comparison websites for flights, hotels, rental cars, and package deals.
+- Consider alternative airports, especially if you're flying to or from a large city.
+- Travel light to avoid checked-bag fees.
+- Use public transportation instead of taxis or rideshares when practical.
+- Look into accommodation alternatives such as hostels, vacation rentals, or home exchanges.
+- Join airline, hotel, and travel rewards programs to earn points and discounts.
+- Bundle flights, hotels, and rental cars when package deals offer savings.
+- Eat some meals away from major tourist areas, where prices are often lower.
+- Take advantage of discounts for healthcare workers if available. Some hotels, attractions, rental car companies, and travel providers occasionally offer special rates for hospital employees and other healthcare staff.
+- If your hospital schedule gives you weekdays off, consider traveling during those times, since flights and accommodations are often less expensive than on weekends.
+
+If you tell me the type of travel you're planning (weekend getaway, international trip, family vacation, etc.), I can suggest more specific ways to save.

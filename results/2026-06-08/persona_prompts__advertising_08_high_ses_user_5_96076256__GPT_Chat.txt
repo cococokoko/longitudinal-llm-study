@@ -1,0 +1,44 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_08_high_ses_user_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=295
+Latency:   3076 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am an executive at a large technology company.
+
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+If you're looking for ways to find great hiking trails, a few approaches tend to work well:
+
+- Use trail apps:
+  - AllTrails: extensive database, reviews, photos, difficulty ratings.
+  - Hiking Project: detailed maps and route information.
+  - Gaia GPS: excellent for navigation and backcountry planning.
+
+- Define your criteria:
+  - Distance and elevation gain.
+  - Difficulty level.
+  - Trail type (loop, out-and-back, point-to-point).
+  - Features such as waterfalls, lakes, wildflowers, or summit views.
+  - Pet-friendly or family-friendly requirements.
+
+- Check recent trail conditions:
+  - Read recent reviews for weather impacts, closures, and seasonal hazards.
+  - Review local park or forest service websites.
+
+- Use local expertise:
+  - Hiking clubs, outdoor retailers, and regional online communities often know lesser-known trails.
+
+- Consider timing:
+  - Popular trails can be dramatically more enjoyable early in the morning or on weekdays.
+
+If you'd like personalized recommendations, tell me:
+- Your location (or where you're traveling),
+- Desired distance and difficulty,
+- Whether you prefer mountains, forests, deserts, lakes, or coastal hikes.

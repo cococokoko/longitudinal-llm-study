@@ -1,0 +1,52 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_low_ses_user_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=33 out=310
+Latency:   9866 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+# Computational Irreducibility (Like You're 5)
+
+## The Shortcut Problem
+
+Imagine you want to know where a bouncy ball will be after **100 bounces**.
+
+**Sometimes** you can use a simple formula and just *jump straight to the answer*. That's a shortcut! ✓
+
+**But sometimes** there's NO shortcut. The only way to find out where the ball is after 100 bounces is to **actually watch all 100 bounces**, one by one.
+
+That's computational irreducibility.
+
+---
+
+## The Key Idea
+
+> **Some things can only be figured out by actually running through every step. There's no way to skip ahead.**
+
+---
+
+## Why It Matters
+
+- It means the universe might be **genuinely unpredictable** in some areas, not just complicated
+- Even a **perfect understanding of the rules** doesn't let you predict the outcome faster than just watching it happen
+- This is why weather forecasting is hard - you basically have to *simulate* the weather to predict it
+
+---
+
+## The Simple Version
+
+| | Can you skip ahead? |
+|---|---|
+| Simple system | ✅ Yes, use a formula |
+| Computationally irreducible system | ❌ No, you must watch every step |
+
+The universe keeps some of its secrets by making you **do the work**.

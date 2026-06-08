@@ -1,0 +1,42 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=250
+Latency:   6020 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A valuable feature for a smartwatch designed specifically for senior citizens would be a "Proactive Wellness & Safety Companion."
+
+Key capabilities:
+- Fall detection with context awareness:
+  - Detects falls and automatically checks whether the wearer is responsive.
+  - If no response is detected, it can alert designated family members or emergency services with location information.
+
+- Daily routine monitoring:
+  - Learns normal patterns such as waking up, walking activity, medication times, and sleep habits.
+  - Flags significant deviations that may indicate a health issue and sends optional alerts to caregivers.
+
+- Medication assistance:
+  - Provides simple, large-text reminders.
+  - Confirms medication intake through a single tap or voice response.
+  - Escalates reminders if doses are missed.
+
+- One-touch help:
+  - A highly visible physical button that immediately contacts preselected emergency contacts.
+  - Works even if the user is unfamiliar with smartphone apps.
+
+- Senior-friendly interface:
+  - Large fonts, high-contrast display, simplified menus, and voice-first interactions.
+  - Hearing-aid-friendly notifications through vibration patterns and audio customization.
+
+What makes this feature compelling is that it combines safety, independence, and caregiver peace of mind without requiring the user to learn complex technology.

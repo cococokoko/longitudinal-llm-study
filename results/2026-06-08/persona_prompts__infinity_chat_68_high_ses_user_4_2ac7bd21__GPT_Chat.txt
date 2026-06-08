@@ -1,0 +1,27 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=195
+Latency:   5406 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+One high-impact practice is to make expectations explicit and revisit them regularly.
+
+In research groups, many conflicts arise not from lack of effort but from different assumptions about priorities, authorship, timelines, communication, or decision-making. Consider:
+
+- Setting clear goals for each team member with defined milestones.
+- Discussing authorship and project ownership early, before major work begins.
+- Holding brief, predictable one-on-one meetings to identify obstacles before they become problems.
+- Distinguishing between urgent clinical/research tasks and important long-term work such as manuscript preparation, grant development, and mentoring.
+- Summarizing key decisions in writing so everyone leaves with the same understanding.
+
+A useful question in one-on-ones is: "What is the biggest thing slowing your progress right now?" It often surfaces issues that would otherwise remain hidden until they affect productivity.

@@ -1,0 +1,38 @@
+Wave:      2026-06-08
+Dataset:   global_opinion_qa
+Item ID:   goqa_0d1c53830136
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=172 out=632
+Latency:   6438 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: In your view, how often do the following things occur in this country’s elections?:
+
+Women have equal opportunities to run the office
+
+Options:
+A. Very often
+B. Fairly often
+C. Not often
+D. Not at all often
+E. Don't know
+F. No answer
+G. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{
+  "A": 0.31,
+  "B": 0.42,
+  "C": 0.18,
+  "D": 0.07,
+  "E": 0.02,
+  "F": 0.00,
+  "G": 0.00
+}

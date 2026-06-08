@@ -1,0 +1,57 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=299
+Latency:   8543 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+Great question. Here are the safest approaches, based on public health guidance:
+
+## Lowest Risk Options
+- **Stay local** - avoiding travel entirely remains safest during high transmission periods
+- **Private vehicle travel** - limits exposure to others significantly
+- **Outdoor activities** - walking, cycling where feasible
+
+## If Travel is Necessary
+**General principles:**
+- Check current transmission rates at origin and destination
+- Verify vaccination/testing requirements
+- Have a contingency plan if you test positive
+
+**Air Travel**
+- Choose direct flights when possible
+- Consider timing (less crowded flights)
+- HEPA filtration on most commercial aircraft is actually quite effective
+- Masking adds meaningful protection
+
+**Ground Transportation**
+- Private car over public transit when feasible
+- If using trains/buses, less crowded times and good ventilation matter
+
+**Accommodations**
+- Private rentals vs. hotels can reduce shared space exposure
+- Outdoor dining options at destination
+
+## Practical Considerations
+- Travel insurance with pandemic coverage
+- Know healthcare options at your destination
+- Flexible booking policies
+
+## Key Variables
+The right answer depends on:
+- Current variant characteristics
+- Your personal health situation
+- Vaccination status
+- Purpose and urgency of travel
+
+Is there a specific type of travel or destination context you're thinking about? I can give more targeted guidance.

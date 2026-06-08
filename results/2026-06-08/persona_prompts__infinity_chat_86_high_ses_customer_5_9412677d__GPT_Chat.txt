@@ -1,0 +1,24 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_86_high_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=43 out=115
+Latency:   1797 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me the names of 3 instrumental songs that best match the mood of a rainy night.
+
+── Response ────────────────────────────────────────────────────────
+Three instrumental pieces that fit the mood of a rainy night:
+
+- "Blade Runner Blues" — Vangelis
+- "An Ending (Ascent)" — Brian Eno
+- "Nuvole Bianche" — Ludovico Einaudi
+
+These each evoke a different shade of a rainy evening: neon-lit and reflective, spacious and atmospheric, and intimate and melancholic.

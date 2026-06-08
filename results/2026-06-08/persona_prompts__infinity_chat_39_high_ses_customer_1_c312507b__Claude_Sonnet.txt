@@ -1,0 +1,46 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=328
+Latency:   8526 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Great question. Given your background as a neurosurgeon, you have some genuinely valuable context that could shape which direction makes the most sense.
+
+## High-Value Areas to Consider
+
+### Most Relevant to Medicine/Neurosurgery
+- **Python** - widely used in medical research, data analysis, AI
+- **Machine learning/AI fundamentals** - directly applicable to imaging, diagnostics
+- **Medical imaging processing** - tools like ITK, 3D Slicer
+- **Clinical data analysis** - working with EHR data, research datasets
+
+### Broadly Future-Proof Skills
+- **AI/ML literacy** - understanding models even without building them
+- **Data literacy** - SQL, statistics, visualization
+- **APIs and integration** - how systems talk to each other
+- **Prompt engineering** - effectively using AI tools
+
+## Honest Considerations
+
+**Your time is extremely limited**, so I'd suggest being strategic:
+- You likely don't need to become a full developer
+- Understanding enough to **collaborate with and evaluate** technical teams may be more valuable
+- Your domain expertise is genuinely rare and valuable combined with even moderate technical skills
+
+## Practical Starting Points
+- Python basics (Coursera, fast.ai)
+- A specific problem in your practice you want to solve
+- Medical AI courses (Stanford, MIT have good ones)
+
+**What's your actual goal?** Research, clinical tools, entrepreneurship, or just staying informed? That would sharpen the recommendation significantly.

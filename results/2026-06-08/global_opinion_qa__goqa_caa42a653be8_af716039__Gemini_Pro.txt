@@ -1,0 +1,25 @@
+Wave:      2026-06-08
+Dataset:   global_opinion_qa
+Item ID:   goqa_caa42a653be8
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=108 out=380
+Latency:   4350 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I have a hard time breaking bad habits
+
+Options:
+A. Not at all
+B. 2
+C. 3
+D. Very Much
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.15, "B": 0.30, "C": 0.35, "D": 0.20}

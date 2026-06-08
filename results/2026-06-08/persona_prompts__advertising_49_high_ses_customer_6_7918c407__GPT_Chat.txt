@@ -1,0 +1,77 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=594
+Latency:   8610 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi usually comes down to optimizing placement, reducing interference, upgrading equipment where needed, and tuning settings.
+
+Start with the highest-impact actions:
+
+- Move the router to a central, open location.
+  - Place it as close as possible to where devices are used.
+  - Keep it elevated (e.g., on a shelf), not on the floor.
+  - Avoid closets, cabinets, and corners of the house.
+
+- Reduce interference.
+  - Keep the router away from microwaves, cordless phones, baby monitors, and large metal objects.
+  - In apartment buildings, neighboring Wi‑Fi networks can cause congestion.
+
+- Use the right Wi‑Fi band.
+  - 5 GHz: Faster speeds, shorter range.
+  - 2.4 GHz: Longer range, slower speeds.
+  - 6 GHz (Wi‑Fi 6E/7): Fastest and least congested, but shorter range and requires compatible devices.
+
+- Check router placement relative to walls.
+  - Concrete, brick, stone, and metal can significantly weaken signals.
+  - If coverage is poor on another floor, place the router as close as practical to that area.
+
+- Update firmware.
+  - Router manufacturers regularly release updates that improve performance, stability, and security.
+
+- Optimize channels.
+  - On 2.4 GHz, channels 1, 6, and 11 are typically best.
+  - Many modern routers automatically select channels, but manual optimization can help in crowded environments.
+
+If your home is larger:
+
+- Consider a mesh Wi‑Fi system.
+  - Often the best solution for homes with multiple floors or more than ~2,000 sq ft (185 sq m).
+  - Systems from eero, Google Nest, TP-Link Deco, Asus ZenWiFi, and others can provide seamless coverage.
+
+- Use wired backhaul when possible.
+  - Connecting mesh nodes with Ethernet dramatically improves performance.
+
+- Add Ethernet for fixed devices.
+  - TVs, gaming consoles, desktop PCs, and home office equipment often perform better on wired connections and free up Wi‑Fi capacity.
+
+Evaluate whether the router itself is the bottleneck:
+
+- If the router is more than 4–5 years old, upgrading can provide substantial improvements.
+- Look for Wi‑Fi 6 or Wi‑Fi 7 models if many devices are connected simultaneously.
+
+A practical diagnostic approach:
+1. Run a speed test next to the router.
+2. Run the same test in problem areas.
+3. If speeds drop sharply only in distant rooms, coverage is the issue (mesh/access points).
+4. If speeds are poor even next to the router, investigate ISP speed, router age, or device limitations.
+
+If you tell me:
+- Home size (sq ft / sq m)
+- Number of floors
+- Router model
+- Internet speed from your ISP
+- Where Wi‑Fi is weak
+
+I can suggest a more specific setup.

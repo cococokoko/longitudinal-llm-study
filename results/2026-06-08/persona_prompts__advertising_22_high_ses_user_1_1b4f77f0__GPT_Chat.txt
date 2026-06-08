@@ -1,0 +1,75 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=504
+Latency:   5477 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The best remote collaboration tools depend on whether your priority is communication, project coordination, document collaboration, or clinical/research compliance requirements.
+
+For a major teaching hospital environment, these are commonly considered:
+
+• Communication and meetings
+  - Microsoft Teams
+    - Strong integration with Microsoft 365
+    - Enterprise security and compliance features
+    - Chat, video meetings, file sharing, channels
+    - Widely used in healthcare organizations
+  - Zoom
+    - Excellent video conferencing quality
+    - Webinar and large-meeting capabilities
+    - Often used for multidisciplinary conferences and education
+  - Slack
+    - Fast, flexible messaging
+    - Extensive integrations with other software
+    - Particularly popular for research groups and technology-focused teams
+
+• Project and task management
+  - Asana
+    - Good balance of usability and structure
+    - Useful for research projects, quality-improvement initiatives, and administrative work
+  - Monday.com
+    - Highly customizable workflows and dashboards
+    - Useful for cross-department coordination
+  - Jira
+    - Strong for complex projects and technical teams
+    - Common in software, data, and innovation groups
+
+• Document collaboration
+  - Microsoft 365 (Word, Excel, PowerPoint, SharePoint, OneDrive)
+    - Real-time co-authoring
+    - Enterprise-grade governance
+    - Often preferred in healthcare systems
+  - Google Workspace
+    - Excellent real-time collaboration
+    - Simple sharing and editing workflows
+
+• Whiteboarding and brainstorming
+  - Miro
+    - Virtual whiteboards for planning, workflow mapping, and educational sessions
+  - Microsoft Whiteboard
+    - Integrates well with Teams
+
+• Knowledge management
+  - Confluence
+    - Central repository for protocols, project documentation, and team knowledge
+  - Notion
+    - Flexible workspace combining notes, databases, and documentation
+
+For healthcare-specific environments, additional considerations are important:
+• HIPAA or equivalent regulatory compliance
+• Institutional security policies
+• Single sign-on (SSO) integration
+• Audit logging and access controls
+• Integration with hospital IT infrastructure
+
+If your team is primarily clinical, research-focused, administrative, or multidisciplinary (e.g., neurosurgery, radiology, oncology, and research staff working together), I can provide a more tailored recommendation stack.

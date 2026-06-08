@@ -1,0 +1,89 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=518
+Latency:   4348 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to stay relevant over the next 5–10 years, focus less on specific programming languages and more on skills that remain valuable as tools change.
+
+Key areas worth learning:
+
+- Programming fundamentals
+  - Data structures and algorithms
+  - Object-oriented and functional programming concepts
+  - Debugging and problem-solving
+  - Writing maintainable code
+
+- AI and machine learning literacy
+  - Understanding how AI systems work
+  - Using AI coding assistants effectively
+  - Prompt engineering
+  - Working with APIs from AI providers
+  - Basic machine learning concepts, even if you don't become an ML engineer
+
+- Cloud computing
+  - AWS, Azure, or Google Cloud
+  - Containers (Docker)
+  - Basic Kubernetes concepts
+  - Serverless architectures
+
+- Data skills
+  - SQL
+  - Data modeling
+  - Data analysis
+  - Data pipelines and ETL processes
+
+- Cybersecurity
+  - Secure coding practices
+  - Authentication and authorization
+  - Common vulnerabilities
+  - Privacy and compliance fundamentals
+
+- Software architecture
+  - Designing scalable systems
+  - Microservices and distributed systems
+  - API design
+  - Event-driven architectures
+
+- DevOps and automation
+  - Git and version control
+  - CI/CD pipelines
+  - Infrastructure as code
+  - Automated testing
+
+Languages with strong long-term prospects:
+- Python (AI, automation, backend, data)
+- JavaScript/TypeScript (web development)
+- Java (enterprise systems)
+- C# (business software, cloud development)
+- Go (cloud infrastructure and backend services)
+
+Given that you work as a patient care aide in a hospital, you may have a unique advantage if you're interested in healthcare technology. Areas such as:
+- Healthcare software development
+- Electronic medical record (EMR/EHR) systems
+- Health data analytics
+- Medical AI applications
+- Healthcare interoperability standards (FHIR, HL7)
+
+can benefit from someone who understands clinical workflows and patient care environments. Domain knowledge is often harder to acquire than technical skills, and healthcare technology is expected to continue growing.
+
+A practical learning path could be:
+1. Learn Python and Git.
+2. Learn SQL and databases.
+3. Build small projects and use AI tools to assist your development.
+4. Learn web development (JavaScript/TypeScript).
+5. Learn cloud fundamentals (AWS or Azure).
+6. Explore healthcare tech concepts such as FHIR if that interests you.
+
+This combination would position you well for both general software roles and healthcare-focused technology careers.

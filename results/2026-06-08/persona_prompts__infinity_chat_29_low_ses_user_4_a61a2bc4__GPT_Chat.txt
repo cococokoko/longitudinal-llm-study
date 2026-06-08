@@ -1,0 +1,200 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_low_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=30 out=968
+Latency:   7365 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+A LAMP stack (Linux, Apache, MySQL/MariaDB, PHP) is a common way to build an online forum. At a high level, you'll need:
+
+- User accounts (registration, login, password hashing)
+- Categories and discussion boards
+- Topics (threads)
+- Posts (replies)
+- Permissions/moderation
+- Search and notifications (optional)
+
+Basic architecture
+
+1. Linux
+- Host your application on a Linux server.
+
+2. Apache
+- Serve PHP files.
+- Configure virtual hosts and HTTPS.
+
+3. MySQL/MariaDB
+- Store users, forums, topics, and posts.
+
+4. PHP
+- Handle requests, business logic, authentication, and database access.
+
+Example database schema
+
+Users:
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+Forums:
+```sql
+CREATE TABLE forums (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+```
+
+Topics:
+```sql
+CREATE TABLE topics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    forum_id INT NOT NULL,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (forum_id) REFERENCES forums(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+Posts:
+```sql
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    topic_id INT NOT NULL,
+    user_id INT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (topic_id) REFERENCES topics(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+Database connection in PHP
+
+```php
+<?php
+$pdo = new PDO(
+    "mysql:host=localhost;dbname=forum;charset=utf8mb4",
+    "dbuser",
+    "dbpassword",
+    [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]
+);
+?>
+```
+
+User registration
+
+Use PHP's built-in password hashing:
+
+```php
+$passwordHash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+$stmt = $pdo->prepare(
+    "INSERT INTO users (username, password_hash)
+     VALUES (?, ?)"
+);
+
+$stmt->execute([
+    $_POST['username'],
+    $passwordHash
+]);
+```
+
+User login
+
+```php
+$stmt = $pdo->prepare(
+    "SELECT id, password_hash
+     FROM users
+     WHERE username = ?"
+);
+
+$stmt->execute([$_POST['username']]);
+$user = $stmt->fetch();
+
+if ($user && password_verify($_POST['password'], $user['password_hash'])) {
+    $_SESSION['user_id'] = $user['id'];
+}
+```
+
+Creating a topic
+
+```php
+$stmt = $pdo->prepare(
+    "INSERT INTO topics (forum_id, user_id, title)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['forum_id'],
+    $_SESSION['user_id'],
+    $_POST['title']
+]);
+```
+
+Creating a post
+
+```php
+$stmt = $pdo->prepare(
+    "INSERT INTO posts (topic_id, user_id, content)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['topic_id'],
+    $_SESSION['user_id'],
+    $_POST['content']
+]);
+```
+
+Displaying posts
+
+```php
+$stmt = $pdo->prepare(
+    "SELECT p.content, p.created_at, u.username
+     FROM posts p
+     JOIN users u ON p.user_id = u.id
+     WHERE p.topic_id = ?
+     ORDER BY p.created_at"
+);
+
+$stmt->execute([$topicId]);
+$posts = $stmt->fetchAll();
+```
+
+Security considerations
+
+- Use prepared statements everywhere.
+- Hash passwords with `password_hash()`.
+- Escape output using `htmlspecialchars()`.
+- Enable HTTPS.
+- Add CSRF protection for forms.
+- Rate-limit login attempts.
+- Validate and sanitize user input.
+
+Alternative approach
+
+If your goal is simply to run a forum rather than build one from scratch, consider installing:
+- phpBB
+- MyBB
+- Flarum
+
+These are mature PHP forum platforms that run on a LAMP stack and provide user management, moderation, extensions, and security features out of the box. Building your own forum is a useful learning project, but deploying a proven forum package is usually faster and safer.

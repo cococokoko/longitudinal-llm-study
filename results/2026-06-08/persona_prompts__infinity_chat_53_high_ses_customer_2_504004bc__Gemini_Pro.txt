@@ -1,0 +1,20 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_53_high_ses_customer_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=26 out=1020
+Latency:   9550 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a May the 4th joke.
+
+── Response ────────────────────────────────────────────────────────
+Why did the senior partner advise their client against signing a joint venture with the Galactic Empire?
+
+Because Darth Vader’s standard modification clause is just, *"I am altering the deal.

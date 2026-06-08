@@ -1,0 +1,50 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=31 out=329
+Latency:   7751 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+# Remote Team Collaboration Tools for Healthcare/Neurosurgery Teams
+
+Here are well-regarded options across key categories:
+
+## Communication
+- **Microsoft Teams** - Popular in healthcare, HIPAA-compliant options
+- **Slack** - Good for organized channels by project/case type
+- **Zoom** - Video conferencing with healthcare tiers
+
+## Document Collaboration
+- **Microsoft 365** - Widely integrated in hospital systems
+- **Google Workspace** - Real-time document editing
+- **SharePoint** - Good for institutional knowledge management
+
+## Project Management
+- **Asana** - Task tracking for research or administrative projects
+- **Monday.com** - Visual workflow management
+- **Trello** - Simple board-based organization
+
+## Specialized for Medical/Research Teams
+- **Doximity** - Physician-specific, HIPAA-compliant messaging
+- **Solutionreach / TigerConnect** - Clinical communication platforms
+- **REDCap** - Research data collaboration
+
+## Key Considerations for Your Context
+- **HIPAA compliance** is critical for any patient-related communication
+- **EHR integration** compatibility matters
+- **IT department approval** - your hospital likely has preferred/approved platforms
+- **Security certifications** should be verified
+
+## Practical Tip
+Your hospital's IT department likely already has approved tools that meet compliance requirements - that's often the best starting point.
+
+Would you like more detail on any specific use case?

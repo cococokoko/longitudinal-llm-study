@@ -1,0 +1,170 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=25 out=753
+Latency:   6858 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+Yes. A strong STEM fair project is one that:
+- Solves a real local problem
+- Uses science and engineering, not just a demonstration
+- Is affordable to build
+- Produces measurable results
+
+Here are several ideas related to issues in Vietnam, ranked by impact and feasibility.
+
+1. Solar-Powered Water Quality Monitoring System (Excellent STEM Fair Project)
+
+Issue in Vietnam:
+Many rivers and canals are affected by pollution from agriculture, industry, and household waste.
+
+Project:
+Build a low-cost device that measures water quality indicators such as:
+- Temperature
+- Turbidity (water cloudiness)
+- pH
+
+Use:
+- Arduino Nano or ESP32
+- Cheap sensors
+- Small solar panel
+
+Research Question:
+"Can a low-cost solar-powered monitoring system accurately detect changes in water quality?"
+
+Experiments:
+- Test clean water vs. polluted samples.
+- Compare sensor readings over several days.
+
+Why judges like it:
+- Environmental relevance
+- Engineering design
+- Data collection
+- Real-world application
+
+Approximate Cost:
+$25–60 USD
+
+2. Rice Husk Water Filter
+
+Issue in Vietnam:
+Vietnam produces millions of tons of rice husks each year, much of which becomes waste.
+
+Project:
+Create a water filter using:
+- Rice husk charcoal
+- Sand
+- Gravel
+
+Research Question:
+"How effective is rice husk biochar at removing impurities from water?"
+
+Experiments:
+- Compare filtered and unfiltered water.
+- Measure turbidity and pH.
+
+Why it's strong:
+- Uses local agricultural waste
+- Sustainable solution
+- Easy to build
+
+Cost:
+$10–30 USD
+
+3. Flood Prediction and Warning Model
+
+Issue in Vietnam:
+Flooding is a major problem in the Mekong Delta and central provinces.
+
+Project:
+Build a miniature flood-monitoring system using:
+- Water level sensors
+- Arduino
+- Buzzer or LED alerts
+
+Research Question:
+"Can a low-cost sensor system provide early flood warnings?"
+
+Extensions:
+- Add SMS notifications using ESP32.
+- Use historical rainfall data.
+
+Cost:
+$20–50 USD
+
+4. Smart Irrigation System for Rice Farms
+
+Issue in Vietnam:
+Water management is increasingly important due to droughts and climate change.
+
+Project:
+Create a system that waters plants only when soil moisture is low.
+
+Components:
+- Soil moisture sensor
+- Arduino
+- Water pump
+
+Research Question:
+"How much water can be saved using automated irrigation compared with traditional watering?"
+
+Cost:
+$20–50 USD
+
+5. Floating Plastic Waste Collector
+
+Issue in Vietnam:
+Plastic pollution in rivers and canals.
+
+Project:
+Design a small floating device that guides trash into a collection area using:
+- Recycled materials
+- Small motor or water current
+
+Research Question:
+"What design collects the greatest amount of floating plastic waste?"
+
+Cost:
+$10–40 USD
+
+6. Cooling Roof Materials for Hot Urban Areas
+
+Issue in Vietnam:
+Cities like Ho Chi Minh City and Hanoi experience urban heat island effects.
+
+Project:
+Test different roof coatings:
+- White paint
+- Reflective foil
+- Clay coating
+- Standard roofing material
+
+Research Question:
+"Which affordable roofing treatment reduces indoor temperatures most effectively?"
+
+Measurements:
+- Temperature sensors
+- Miniature model houses
+
+Cost:
+$15–40 USD
+
+This project often scores highly because it involves controlled experiments and clear quantitative data.
+
+Best Overall Choice
+
+If your goal is to impress judges while keeping costs reasonable:
+
+1. Solar-Powered Water Quality Monitoring System
+2. Flood Prediction and Warning Model
+3. Smart Irrigation System
+4. Rice Husk Water Filter
+
+The solar-powered water quality monitor is especially compelling because it combines environmental science, electronics, renewable energy, and a significant issue affecting many communities in Vietnam.

@@ -1,0 +1,18 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_35_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=40 out=1020
+Latency:   12513 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me a 3-day plan for Osaka with a flight leaving on the 3rd day at 7pm.
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon at a major teaching hospital, your day-to-day life demands intense focus, precision, and high-stakes decision-making. For your 3 days in Osaka, I have

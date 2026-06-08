@@ -1,0 +1,28 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=48 out=299
+Latency:   7301 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+Here's a draft paragraph for you:
+
+---
+
+**TOEFL vs. IELTS: Guidance for International Students**
+
+When advising international students on English proficiency examinations, the choice between the TOEFL (Test of English as a Foreign Language) and the IELTS (International English Language Testing System) warrants careful consideration. The TOEFL, administered by ETS, is predominantly computer-based and favors an academic, North American English framework, making it particularly well-suited for students targeting universities in the United States and Canada. The IELTS, co-owned by British Council, IDP, and Cambridge Assessment, offers both Academic and General Training formats and is widely accepted across the UK, Australia, and increasingly in North America as well. From a performance standpoint, the TOEFL emphasizes integrated tasks that combine reading, listening, and writing simultaneously, while the IELTS features a face-to-face speaking component that some candidates find more natural and less intimidating. Both examinations are broadly accepted by most major institutions globally, so the optimal choice ultimately depends on the student's target destination, learning style, and comfort with technology-based testing environments.
+
+---
+
+Would you like me to adjust the **tone, length, or focus** of this paragraph? For example, I could emphasize specific score comparisons or tailor it toward a particular audience.

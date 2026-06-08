@@ -1,0 +1,95 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=57 out=618
+Latency:   14538 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need First
+- Dolphin Emulator installed (from **dolphin-emu.org**)
+- Your legally owned Wii game files (ISOs/ROMs)
+- Microsoft Surface (any recent model should work)
+
+---
+
+## Setting Up Dolphin for Touch Use
+
+### Making the Interface Touch-Friendly
+1. Open Dolphin
+2. Go to **View** in the menu bar
+3. Increase toolbar size if available
+4. Consider enabling **fullscreen mode** for more screen space
+
+### Configuring the On-Screen Keyboard
+- Windows on-screen keyboard: **Start → Settings → Accessibility → Keyboard → On-Screen Keyboard**
+- Or press **Windows key + Ctrl + O**
+
+---
+
+## Setting Up Touch Controls in Dolphin
+
+### Option 1: Keyboard Mapping (Recommended)
+1. Open Dolphin → **Controllers**
+2. Select **Emulated Wii Remote**
+3. Click **Configure**
+4. Map buttons to keyboard keys you can easily tap on the on-screen keyboard
+
+### Suggested Key Mappings
+| Wii Button | Keyboard Key |
+|------------|-------------|
+| A Button | Space |
+| B Button | Z |
+| + (Plus) | Enter |
+| D-Pad Up | Arrow Up |
+| Home | H |
+
+---
+
+## Touchpad Tips for Navigation
+
+- **Single tap** = left click
+- **Two-finger tap** = right click
+- **Two-finger scroll** = navigate menus
+- **Pinch** = zoom (limited use in Dolphin)
+
+### Improving Touchpad Sensitivity
+1. **Settings → Bluetooth & devices → Touchpad**
+2. Increase sensitivity
+3. Enable **three-finger gestures** for shortcuts
+
+---
+
+## Performance Tips for Surface
+
+- **Lower graphics settings** in Dolphin (Graphics → General)
+- Set **backend to Direct3D 11 or 12**
+- Lower internal resolution to **1x Native**
+- Enable **Dual Core** in Config → General
+- Plug in your Surface (battery saving modes hurt performance)
+
+---
+
+## Honest Limitations to Know
+
+- **On-screen keyboard gaming is difficult** - it blocks screen space and has input lag
+- Motion controls (Wiimote shaking etc.) won't work well without a real controller
+- Some games requiring precise timing will be frustrating
+
+---
+
+## Better Alternative If Possible
+A **Bluetooth controller** (Xbox controller works plug-and-play with Windows) would make this much more enjoyable and is relatively affordable.
+
+Would you like help with any specific step or game?

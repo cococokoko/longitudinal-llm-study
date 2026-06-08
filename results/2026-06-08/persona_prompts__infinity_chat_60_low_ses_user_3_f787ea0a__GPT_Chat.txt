@@ -1,0 +1,35 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_low_ses_user_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=28 out=260
+Latency:   2716 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a very long line of dominoes set up in a special pattern.
+
+You ask, "What will the 1,000th domino look like after they all fall?"
+
+For some things, you can use a shortcut. It's like being able to count ahead and instantly know the answer without watching every domino.
+
+But computational irreducibility means there is no shortcut.
+
+The only way to know what happens to the 1,000th domino is to let the 1st fall, then the 2nd, then the 3rd, and so on, all the way up to the 1,000th. You have to watch the whole process happen step by step.
+
+So, computational irreducibility is the idea that:
+
+- Some systems are so complicated that you can't predict the result with a clever trick.
+- The fastest way to find out what happens is to actually let the process run.
+- Even a very smart computer can't skip ahead if no shortcut exists.
+
+A simple way to say it:
+
+"Sometimes the only way to see the future is to wait for it to happen, one step at a time."

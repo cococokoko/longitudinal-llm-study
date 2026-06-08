@@ -1,0 +1,204 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=1024
+Latency:   20357 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a step-by-step guide to building a basic zombie survivor game!
+
+---
+
+## 🎮 Game Overview
+- Player moves around and shoots zombies
+- Zombies chase the player
+- Player has health/lives
+- Score increases per zombie killed
+
+---
+
+## 📋 Step 1: Set Up Your Project
+
+**Sprites you'll need:**
+- Player (survivor)
+- Zombie
+- Bullet
+- Health bar or hearts
+
+**Backdrops:**
+- Game screen (dark/city background)
+- Game Over screen
+
+---
+
+## 🕹️ Step 2: Player Movement
+
+Click your **Player sprite** and add this code:
+
+```
+When [Green Flag] clicked
+Forever
+  If [W key pressed] → Change Y by 5
+  If [S key pressed] → Change Y by -5
+  If [A key pressed] → Change X by -5
+  If [D key pressed] → Change X by 5
+```
+
+**Or use arrow keys** - same idea, different keys.
+
+**Make player face the mouse:**
+```
+When [Green Flag] clicked
+Forever
+  Point towards [mouse pointer]
+```
+
+---
+
+## 🔫 Step 3: Shooting Bullets
+
+On the **Bullet sprite:**
+```
+When I receive [shoot]
+Go to [Player]
+Point towards [mouse pointer]
+Show
+Repeat until touching edge
+  Move 15 steps
+Hide
+```
+
+On the **Player sprite**, add shooting:
+```
+When [space key] pressed
+  (or: When mouse clicked)
+Broadcast [shoot]
+```
+
+---
+
+## 🧟 Step 4: Zombie Sprite
+
+```
+When [Green Flag] clicked
+Go to [random position]
+Show
+Forever
+  Point towards [Player]
+  Move 2 steps
+  If touching [Player]
+    Change [Player Health] by -1
+    Wait 1 second  ← prevents instant health drain
+```
+
+**When hit by bullet:**
+```
+When [Green Flag] clicked
+Forever
+  If touching [Bullet]
+    Change [Score] by 1
+    Hide  (or delete clone)
+    Stop this script
+```
+
+---
+
+## 👾 Step 5: Spawning Multiple Zombies
+
+Use **clones** to create many zombies!
+
+```
+When [Green Flag] clicked
+Forever
+  Create clone of [Zombie]
+  Wait 2 seconds   ← spawn rate
+```
+
+```
+When I start as a clone
+Go to random position
+Show
+Forever
+  Point towards [Player]
+  Move 2 steps
+  If touching [Player]
+    Change [Player Health] by -1
+    Wait 1 second
+```
+
+---
+
+## ❤️ Step 6: Health System
+
+**Create a variable:** `Player Health` = 3
+
+```
+When [Green Flag] clicked
+Set [Player Health] to 3
+Forever
+  If [Player Health] < 1
+    Broadcast [Game Over]
+    Stop all
+```
+
+**On Game Over:**
+```
+When I receive [Game Over]
+Switch backdrop to [Game Over]
+Stop all
+```
+
+---
+
+## 📊 Step 7: Score & Difficulty
+
+```
+When [Green Flag] clicked
+Set [Score] to 0
+Set [spawn rate] to 2
+
+Forever
+  If [Score] > 10
+    Set [spawn rate] to 1.5
+  If [Score] > 25
+    Set [spawn rate] to 1
+```
+
+---
+
+## ✨ Extra Features to Add
+
+| Feature | How |
+|---|---|
+| **Sound effects** | Add gunshot/zombie sounds |
+| **Animations** | Multiple costumes for walking |
+| **Power-ups** | Sprites that boost health/speed |
+| **Waves** | Spawn zombies in rounds |
+| **Obstacles** | Walls the player can hide behind |
+| **High score** | Save best score with variables |
+
+---
+
+## 💡 Tips
+
+- Use **clones** instead of copying sprites manually
+- Use **broadcasts** to communicate between sprites
+- Test often and adjust speed numbers
+- Keep variables organized with clear names
+- Use **layers** (go to front/back) so sprites appear correctly
+
+---
+
+## 🚀 Getting Started Quickly
+
+1. Go to **scratch.mit.edu**
+2. Click

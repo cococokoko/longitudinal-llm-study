@@ -1,0 +1,79 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_17_high_ses_user_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=588
+Latency:   5394 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+How can I make my home more energy efficient?
+
+── Response ────────────────────────────────────────────────────────
+Making a home more energy efficient usually comes down to reducing heat loss, improving the efficiency of major systems, and lowering unnecessary electricity use. The highest-impact measures often depend on the age, size, and climate location of your home, but generally:
+
+- Improve insulation
+  - Add or upgrade attic insulation.
+  - Insulate exterior walls where practical.
+  - Insulate floors over unheated spaces (crawl spaces, garages).
+  - Seal and insulate ductwork if you have forced-air heating/cooling.
+
+- Air seal the home
+  - Seal gaps around windows, doors, plumbing penetrations, and electrical outlets on exterior walls.
+  - Weatherstrip doors and windows.
+  - Address drafts around attic hatches, recessed lighting, and chimney penetrations.
+
+- Upgrade heating and cooling systems
+  - Replace older furnaces, boilers, or air conditioners with high-efficiency models.
+  - Consider a heat pump for heating and cooling if suitable for your climate.
+  - Maintain HVAC equipment regularly and replace filters as recommended.
+
+- Use a smart or programmable thermostat
+  - Adjust temperatures automatically when the home is unoccupied or during sleeping hours.
+  - Avoid excessive heating or cooling of unused spaces.
+
+- Improve window performance
+  - Install energy-efficient double- or triple-pane windows if existing windows are poor performers.
+  - Alternatively, use storm windows, window films, or cellular shades for a lower-cost improvement.
+
+- Reduce water-heating energy use
+  - Install a high-efficiency water heater or heat-pump water heater.
+  - Insulate hot-water pipes.
+  - Use low-flow showerheads and fixtures.
+  - Lower water-heater temperature if safe and appropriate.
+
+- Upgrade lighting
+  - Replace incandescent or halogen bulbs with LEDs.
+  - Use occupancy sensors in infrequently used spaces.
+
+- Improve appliance efficiency
+  - Choose ENERGY STAR–rated appliances when replacing old units.
+  - Unplug or manage electronics that draw standby power.
+
+- Consider renewable energy
+  - Install rooftop solar panels if the economics and site conditions are favorable.
+  - Add battery storage if backup power or time-of-use electricity pricing makes it worthwhile.
+
+- Monitor energy use
+  - Review utility bills and usage trends.
+  - Consider a home energy monitor to identify major loads and inefficiencies.
+
+For many homes, the best return on investment comes from:
+1. Air sealing.
+2. Attic insulation.
+3. HVAC optimization or heat-pump upgrades.
+4. Smart thermostat installation.
+5. LED lighting.
+
+If you tell me:
+- Your country/region,
+- Approximate home size,
+- Age of the house,
+- Main heating fuel (gas, oil, electric, etc.),
+- And whether you own or rent,
+
+I can suggest the highest-impact improvements for your specific situation.

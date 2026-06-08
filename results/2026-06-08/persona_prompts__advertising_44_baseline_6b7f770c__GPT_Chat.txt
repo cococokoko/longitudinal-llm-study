@@ -1,0 +1,35 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_44_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=300
+Latency:   3271 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on the disease involved, how it spreads, and current public health guidance. In general, these measures can reduce risk:
+
+- Stay informed about current outbreaks, travel advisories, and entry requirements at your destination.
+- Avoid travel if you are sick or have symptoms associated with the illness.
+- Stay up to date with recommended vaccinations or preventive medications.
+- Choose less crowded travel options when possible.
+- Wear a well-fitting mask in crowded indoor spaces or when recommended by health authorities.
+- Practice good hand hygiene by washing hands regularly or using hand sanitizer.
+- Improve ventilation when possible, such as opening windows or spending more time outdoors.
+- Maintain physical distance from others when feasible, especially in crowded settings.
+- Consider testing before and after travel if recommended for the specific disease.
+- Carry essential health supplies, such as masks, hand sanitizer, medications, and any required documentation.
+- Follow local public health rules and guidance at both your departure point and destination.
+- Consider travel insurance that covers illness-related disruptions.
+
+Risk can vary by mode of transportation:
+- Private vehicle travel generally limits contact with strangers.
+- Air travel can involve crowded airports and boarding areas, though modern aircraft often use high-efficiency air filtration systems during flight.
+- Trains, buses, and cruise ships may involve prolonged close contact with others and can carry higher risk depending on conditions.
+
+If you tell me which pandemic or infectious disease you're concerned about, I can provide more specific guidance.

@@ -1,0 +1,20 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_41_low_ses_customer_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=36 out=103
+Latency:   2151 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a single parent who often balances childcare with work.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write me 3 short tips for self-development.
+
+── Response ────────────────────────────────────────────────────────
+- Spend 10 minutes a day learning something new—consistency matters more than long study sessions.
+- Set one clear priority each morning so you can make progress even on busy days.
+- Take a few minutes each week to reflect on what went well and what you want to improve next.

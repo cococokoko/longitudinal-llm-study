@@ -1,0 +1,32 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_67_low_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=49 out=164
+Latency:   3779 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a Google ad with 2 sentences and a 30-character limit per sentence for mobile car detailing.
+
+── Response ────────────────────────────────────────────────────────
+Here are two Google ad options for mobile car detailing:
+
+**Option 1:**
+"We Come To You, You Shine!" ✓ (26)
+"Book Your Detail Today!" ✓ (23)
+
+**Option 2:**
+"Mobile Detailing At Your Door" ✓ (29)
+"Fast, Affordable & Spotless!" ✓ (28)
+
+**Option 3:**
+"Car Detailing, We Come To You" ✓ (29)
+"Get A Sparkling Clean Today!" ✓ (28)
+
+Each sentence stays within the **30-character limit** and is designed to be punchy and action-driven for mobile ad display.

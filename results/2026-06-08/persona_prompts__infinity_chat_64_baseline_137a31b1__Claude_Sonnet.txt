@@ -1,0 +1,25 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=30 out=319
+Latency:   9280 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+# TOEFL vs. IELTS: A Consultant's Perspective
+
+Here is a draft paragraph you can use or adapt:
+
+---
+
+When advising international students on English proficiency testing, the choice between the **TOEFL (Test of English as a Foreign Language)** and the **IELTS (International English Language Testing System)** ultimately depends on several key factors, including destination country, target institution, and individual test-taking strengths. The TOEFL iBT is predominantly preferred by universities in the **United States and Canada**, features an entirely computer-based format, and emphasizes academic English with an integrated skills approach — meaning tasks often require combining reading, listening, and writing simultaneously. The IELTS, available in both **Academic and General Training** versions, is more widely accepted across **UK, Australian, and European institutions**, and includes a face-to-face speaking component that some students find more natural and less intimidating. Scoring systems also differ significantly — TOEFL uses a **0–120 point scale**, while IELTS uses a **0–9 band score** — so students should carefully verify the specific score requirements of their target programs before committing to either exam. My general recommendation is to **research your destination institutions first**, then consider taking a practice test for both to identify which format aligns better with your strengths.
+
+---
+
+Would you like me to adjust the **tone, length, or focus** of this paragraph?

@@ -1,0 +1,123 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=34 out=835
+Latency:   18638 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need
+- Microsoft Surface (any model)
+- Dolphin Emulator installed (from **dolphin-emu.org**)
+- Wii game files (ISO/WBFS format - you must own the games)
+
+---
+
+## Step 1: Install Dolphin
+1. Go to **dolphin-emu.org/download**
+2. Download the **Windows x64** version
+3. Run the installer and follow the prompts
+
+---
+
+## Step 2: Configure Dolphin for Touch/Keyboard Input
+
+### Open Controller Settings
+1. Launch Dolphin
+2. Tap **Controllers** in the top toolbar
+3. Under **Wii Remotes**, select **Emulated Wii Remote**
+4. Tap **Configure**
+
+### Map Your Controls
+You'll need to assign keyboard keys to Wii Remote buttons:
+
+| Wii Button | Suggested Key |
+|------------|---------------|
+| A Button | Z |
+| B Button | X |
+| 1 Button | C |
+| 2 Button | V |
+| D-Pad Up | Arrow Up |
+| D-Pad Down | Arrow Down |
+| Home | F1 |
+| + / - | Q / E |
+
+---
+
+## Step 3: Enable the On-Screen Keyboard
+
+### Windows On-Screen Keyboard
+1. Go to **Settings → Accessibility → Keyboard**
+2. Toggle **On-Screen Keyboard** to ON
+3. Or press **Windows + Ctrl + O**
+
+### Keep It Accessible
+- Resize and position the keyboard so it doesn't cover the game
+- Consider using **tablet mode** for easier touch access
+
+---
+
+## Step 4: Configure the Touchpad as a Pointer
+
+### For Wii Pointer/Motion Controls
+1. In Dolphin Controller settings
+2. Under **Motion Simulation**, map mouse movement to pointer
+3. Enable **Use Mouse for IR** if available
+
+### Touchpad Tips
+- The Surface touchpad acts as a **mouse** by default
+- Use it to simulate the **Wii Remote pointer**
+- Two-finger scroll can be mapped to tilt controls
+
+---
+
+## Step 5: Performance Tips for Surface
+
+### Graphics Settings
+1. Go to **Graphics → General**
+2. Set backend to **Direct3D 12** or **Vulkan**
+3. Lower internal resolution if needed (1x Native)
+
+### Power Settings
+- Plug in your Surface for best performance
+- Set Windows power mode to **Best Performance**
+- Close background apps
+
+---
+
+## Step 6: Loading a Game
+1. Tap **Open** or add your game folder via **Config → Paths**
+2. Double-tap a game to launch it
+3. Use your mapped keyboard keys and touchpad to play
+
+---
+
+## Helpful Shortcuts
+
+| Action | Shortcut |
+|--------|----------|
+| Pause game | **F10** |
+| Full screen | **Alt + Enter** |
+| Save state | **Shift + F1-F8** |
+| Load state | **F1-F8** |
+
+---
+
+## Troubleshooting
+
+- **Laggy performance?** Lower graphics settings or resolution
+- **On-screen keyboard blocking game?** Use a Bluetooth keyboard instead
+- **Controls not responding?** Re-check controller mapping in Dolphin settings
+- **Game won't load?** Verify your ROM format is supported (ISO, WBFS, RVZ)
+
+---
+
+Would you like help with a **specific game** or more detail on any of these steps?

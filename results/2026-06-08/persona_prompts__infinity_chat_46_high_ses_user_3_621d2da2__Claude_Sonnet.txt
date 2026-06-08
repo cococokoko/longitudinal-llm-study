@@ -1,0 +1,47 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_high_ses_user_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=277
+Latency:   5957 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a tenured professor at a prestigious university.
+
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Linear Graph Example
+
+A simple example of a **linear graph** (also called a **path graph**) is:
+
+**P₄** — a path with 4 vertices:
+
+```
+A — B — C — D
+```
+
+### Properties:
+| Property | Value |
+|----------|-------|
+| Vertices | 4 |
+| Edges | 3 |
+| Degree of A, D | 1 (endpoints) |
+| Degree of B, C | 2 (interior vertices) |
+
+### Formally:
+- **Vertex set:** V = {A, B, C, D}
+- **Edge set:** E = {AB, BC, CD}
+
+### Key Characteristics:
+- Each vertex connects to **at most 2 neighbors**
+- Forms a single **chain** with no branching
+- Two **endpoints** of degree 1
+- No cycles
+
+This is the most straightforward example of a linear/path graph. More generally, **Pₙ** denotes a path graph on *n* vertices with *n*−1 edges.
+
+Would you like to discuss related concepts such as Hamiltonian paths, graph connectivity, or spectral properties of path graphs?

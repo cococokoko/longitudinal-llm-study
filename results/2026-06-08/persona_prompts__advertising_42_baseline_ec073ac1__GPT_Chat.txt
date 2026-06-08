@@ -1,0 +1,122 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=673
+Latency:   4928 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best fitness and nutrition app depends on your goals, budget, and whether you want an all-in-one platform or separate tools. Here are some of the strongest options:
+
+For nutrition tracking
+
+- MacroFactor
+  - Best for: Evidence-based nutrition and weight management
+  - Pros:
+    - Adjusts calorie targets based on your actual progress
+    - Strong macro tracking
+    - No pressure tactics or calorie "punishments"
+  - Cons:
+    - Subscription required
+    - Less focused on social features
+
+- Cronometer
+  - Best for: Detailed nutrition tracking
+  - Pros:
+    - Tracks vitamins, minerals, and micronutrients
+    - Accurate food database
+    - Good free version
+  - Cons:
+    - More data-heavy than some users want
+
+- MyFitnessPal
+  - Best for: Large food database and ease of use
+  - Pros:
+    - Massive food library
+    - Barcode scanning
+    - Integrates with many fitness apps
+  - Cons:
+    - Some features require a subscription
+    - User-generated database can contain inaccuracies
+
+For workout tracking
+
+- Strong
+  - Best for: Strength training
+  - Pros:
+    - Simple workout logging
+    - Progress tracking
+    - Easy to build routines
+  - Cons:
+    - Limited coaching features
+
+- Hevy
+  - Best for: Strength training with a social component
+  - Pros:
+    - Clean interface
+    - Workout analytics
+    - Community features
+  - Cons:
+    - Some advanced features are paid
+
+- Fitbod
+  - Best for: Automated workout planning
+  - Pros:
+    - Generates workouts based on equipment and recovery
+    - Good exercise library
+  - Cons:
+    - Subscription required
+
+For running and endurance sports
+
+- Strava
+  - Best for: Running, cycling, and community engagement
+  - Pros:
+    - Excellent activity tracking
+    - Social features and challenges
+    - Works with most wearables
+  - Cons:
+    - Many advanced features are behind a paywall
+
+- Garmin Connect
+  - Best for: Garmin users
+  - Pros:
+    - Detailed training and health metrics
+    - Free with Garmin devices
+  - Cons:
+    - Most valuable if you own Garmin hardware
+
+For all-in-one fitness ecosystems
+
+- Apple Fitness
+  - Best for: Apple users
+  - Pros:
+    - Workout classes
+    - Integration with Apple Watch
+    - User-friendly experience
+  - Cons:
+    - Best within the Apple ecosystem
+
+- Google Fit / Fitbit
+  - Best for: General activity and health tracking
+  - Pros:
+    - Tracks steps, activity, sleep, and heart rate
+    - Good wearable integration
+  - Cons:
+    - Less detailed workout tracking than specialized apps
+
+Recommended combinations
+
+- Weight loss: MacroFactor + Strong
+- Muscle gain: MacroFactor or Cronometer + Hevy
+- General health: Cronometer + Fitbit
+- Running: Strava + Cronometer
+- Budget-friendly: Cronometer (free) + Hevy (free tier)
+
+If you tell me your primary goal (weight loss, muscle gain, endurance training, general fitness, etc.) and whether you use iPhone or Android, I can narrow it down further.

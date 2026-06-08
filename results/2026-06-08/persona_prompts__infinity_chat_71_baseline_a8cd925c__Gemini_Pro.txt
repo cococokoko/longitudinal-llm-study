@@ -1,0 +1,17 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=414
+Latency:   5433 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+An example of a widely used optimization technique in machine learning is **Stochastic Gradient Descent (SGD)**. 
+
+Another very popular example, especially in deep learning, is **Adam** (Adaptive Moment Estimation).

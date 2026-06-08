@@ -1,0 +1,44 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_42_low_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=306
+Latency:   6541 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+Here are some popular and well-regarded options:
+
+## Fitness Tracking
+- **MyFitnessPal** - comprehensive calorie and exercise tracking
+- **Strava** - great for running and cycling
+- **Nike Training Club** - workout plans and guided sessions
+- **Fitbit app** - pairs with wearables but works standalone too
+- **Strong** - solid for weightlifting tracking
+
+## Nutrition Focused
+- **Cronometer** - detailed micronutrient tracking
+- **Lose It!** - user-friendly calorie counting
+- **Noom** - coaching and behavior-focused approach
+
+## All-in-One
+- **Apple Health / Google Fit** - good for consolidating data from other apps
+
+## Practical Considerations for Your Situation
+Since your schedule can vary week to week, you might prioritize apps that:
+- **Allow quick logging** (barcode scanners for food)
+- **Don't require fixed workout times** - on-demand workouts you can do when available
+- **Sync automatically** with minimal manual input
+- **Work offline** in case you're busy and log later
+
+**MyFitnessPal** and **Cronometer** are probably the most flexible for irregular schedules since you can log whenever you have a moment rather than following a strict program.
+
+Would you like recommendations focused on any specific goal?

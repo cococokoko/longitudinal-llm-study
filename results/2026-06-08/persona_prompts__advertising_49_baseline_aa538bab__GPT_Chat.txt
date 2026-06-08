@@ -1,0 +1,60 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=449
+Latency:   5585 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi depends on what problem you're experiencing (slow speeds, weak signal, dropped connections, congestion), but these steps help most homes:
+
+- Place the router centrally
+  - Put it in an open area, elevated on a shelf or table.
+  - Avoid closets, cabinets, basements, and corners of the house.
+  - Keep it away from large metal objects and appliances.
+
+- Use the 5 GHz or 6 GHz band when available
+  - 2.4 GHz travels farther but is often more crowded.
+  - 5 GHz and 6 GHz typically provide higher speeds and less interference over shorter distances.
+
+- Update router firmware
+  - Install firmware updates from the router manufacturer to improve performance and security.
+
+- Optimize Wi‑Fi channels
+  - In crowded neighborhoods, neighboring networks can interfere.
+  - Use your router's automatic channel selection or manually choose a less congested channel.
+
+- Upgrade old equipment
+  - If your router is several years old, consider a Wi‑Fi 6 or Wi‑Fi 6E router.
+  - Older devices may limit overall performance.
+
+- Reduce interference
+  - Keep the router away from microwaves, cordless phones, baby monitors, and Bluetooth-heavy devices when possible.
+
+- Use a mesh Wi‑Fi system for larger homes
+  - Mesh systems provide better coverage than a single router in many multi-room or multi-story homes.
+
+- Add wired connections where possible
+  - Connect stationary devices (PCs, TVs, game consoles) via Ethernet to reduce wireless congestion.
+
+- Check internet speed separately
+  - Run a speed test near the router and compare it to your internet plan.
+  - If speeds are poor even next to the router, the issue may be with your internet service rather than Wi‑Fi coverage.
+
+- Secure your network
+  - Use WPA3 (or WPA2 if WPA3 isn't available).
+  - A strong password prevents unauthorized users from consuming bandwidth.
+
+If you tell me:
+- Your home size (apartment, house, number of floors)
+- Router model
+- Internet speed plan
+- Whether the issue is slow speed, weak signal, or disconnects
+
+I can give more specific recommendations.

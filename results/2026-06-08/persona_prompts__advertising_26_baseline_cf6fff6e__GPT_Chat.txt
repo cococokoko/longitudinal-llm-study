@@ -1,0 +1,89 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=709
+Latency:   5577 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Small businesses are frequent targets for cyberattacks because they often have fewer security resources than larger organizations. Effective data security focuses on reducing risk through a combination of technology, policies, and employee awareness.
+
+Key best practices include:
+
+- Use strong authentication
+  - Require unique, strong passwords for all accounts.
+  - Use a password manager to generate and store passwords.
+  - Enable multi-factor authentication (MFA) wherever possible, especially for email, banking, and administrative accounts.
+
+- Keep software updated
+  - Regularly update operating systems, applications, browsers, and firmware.
+  - Enable automatic updates when practical.
+  - Remove unsupported or unused software.
+
+- Back up data regularly
+  - Follow the 3-2-1 rule: keep three copies of data, on two different media types, with one copy stored offsite or in the cloud.
+  - Test backups periodically to ensure recovery works.
+  - Protect backups from ransomware by keeping some backups immutable or offline.
+
+- Control access to data
+  - Give employees access only to the information they need to do their jobs (principle of least privilege).
+  - Review user permissions regularly.
+  - Promptly disable accounts when employees leave.
+
+- Protect devices and networks
+  - Use reputable antivirus or endpoint protection software.
+  - Enable device encryption on laptops, phones, and desktops.
+  - Secure Wi-Fi with strong encryption (WPA3 if available).
+  - Change default passwords on routers and network devices.
+  - Use firewalls to monitor and restrict traffic.
+
+- Train employees
+  - Educate staff about phishing, social engineering, and suspicious links or attachments.
+  - Provide regular security awareness training.
+  - Establish clear procedures for reporting security incidents.
+
+- Secure email and cloud services
+  - Use business-grade email and cloud providers with strong security features.
+  - Enable MFA on all cloud accounts.
+  - Configure email protections such as SPF, DKIM, and DMARC to reduce email spoofing.
+
+- Develop policies and procedures
+  - Create policies for password management, acceptable device use, data handling, and remote work.
+  - Document how sensitive information should be stored, shared, and disposed of.
+  - Establish an incident response plan so employees know what to do during a breach.
+
+- Classify and protect sensitive data
+  - Identify what data is most critical (customer information, financial records, employee data, intellectual property).
+  - Encrypt sensitive data both in transit and at rest.
+  - Minimize data collection and retention when possible.
+
+- Monitor and audit systems
+  - Review security logs and alerts.
+  - Conduct periodic security assessments or vulnerability scans.
+  - Address identified weaknesses promptly.
+
+- Manage vendors and third parties
+  - Evaluate the security practices of service providers who handle your data.
+  - Limit third-party access to only what is necessary.
+  - Include security requirements in contracts where appropriate.
+
+- Prepare for compliance requirements
+  - Understand any applicable regulations such as GDPR, HIPAA, PCI DSS, or local privacy laws.
+  - Maintain documentation and controls needed for compliance.
+
+For most small businesses, the highest-impact steps are:
+1. Enable MFA everywhere.
+2. Use a password manager.
+3. Keep systems patched and updated.
+4. Back up data regularly and test recovery.
+5. Train employees to recognize phishing attacks.
+6. Encrypt devices and sensitive data.
+7. Limit user access based on job responsibilities.
+
+These measures provide a strong foundation and significantly reduce the likelihood and impact of common security incidents.

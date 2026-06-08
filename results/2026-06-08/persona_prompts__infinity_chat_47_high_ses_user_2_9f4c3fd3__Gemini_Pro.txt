@@ -1,0 +1,25 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_47_high_ses_user_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=864
+Latency:   10359 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Give me a trivia question about blue birds and its corresponding answer.
+
+── Response ────────────────────────────────────────────────────────
+Counselor, here is a piece of ornithological trivia that relies on a fascinating technicality—something a seasoned attorney might appreciate. 
+
+**Question:**
+Unlike birds with red or yellow plumage, birds with blue feathers—such as the Blue Jay or the Eastern Bluebird—do not actually possess a single drop of blue pigment. What is the scientific phenomenon responsible for their blue appearance?
+
+**Answer:**
+**Structural coloration** (specifically, light scattering). 
+
+Rather than using pigment, the feathers contain microscopic keratin structures and tiny air pockets. When light hits the feather, the underlying melanin absorbs the longer wavelengths (like red and yellow), while the microscopic structures scatter the shorter blue wavelengths back to the observer's eye. Because it is an optical illusion based on structure rather than pigment, if you were to grind up a blue feather or look at it backlit without direct light, it would actually appear brown or gray!

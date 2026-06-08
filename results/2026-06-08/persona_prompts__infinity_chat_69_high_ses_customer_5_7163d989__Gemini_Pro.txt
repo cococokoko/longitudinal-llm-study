@@ -1,0 +1,26 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=994
+Latency:   10182 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+**The Difference**
+*   **Analysis** defines the *Problem Space* ("What" and "Why"). It focuses on understanding business objectives, user requirements, and system constraints. 
+*   **Design** defines the *Solution Space* ("How"). It is the architectural blueprint, workflows, and technical strategy created to solve the analyzed problem.
+
+**Can you begin design without analysis?**
+Technically yes, but strategically it is a massive risk. 
+
+**Why?**
+Designing without analysis guarantees you are operating on assumptions, which usually leads to solving the *wrong problem*. For a tech organization, this results in wasted engineering cycles, poor product-market fit, and expensive technical debt. It is the equivalent of provisioning and scaling infrastructure without knowing the workload requirements—you may build something functional, but it will be useless to the business.

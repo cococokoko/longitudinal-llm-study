@@ -1,0 +1,212 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=885
+Latency:   7457 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+A zombie survivor game is a good fit for Scratch because it can be built from a few core systems: player movement, enemies that chase the player, health, and waves of zombies.
+
+Here's a step-by-step approach.
+
+1. Plan the game
+
+Core features:
+- Player moves with WASD or arrow keys.
+- Zombies spawn and chase the player.
+- Player can shoot bullets.
+- Zombies lose health and disappear when defeated.
+- Player has health.
+- Survive as long as possible.
+- Score increases for each zombie defeated.
+
+Sprites:
+- Player
+- Zombie
+- Bullet
+- Health bar (optional)
+- Background
+
+Variables:
+- Health
+- Score
+- Wave
+- ZombieSpeed
+- GameOver
+
+2. Create player movement
+
+For the Player sprite:
+
+When green flag clicked:
+- Go to x: 0 y: 0
+- Forever:
+  - If up arrow pressed → change y by 5
+  - If down arrow pressed → change y by -5
+  - If right arrow pressed → change x by 5
+  - If left arrow pressed → change x by -5
+
+You can also use WASD keys.
+
+3. Add aiming
+
+If using mouse aiming:
+
+Forever:
+- Point towards mouse-pointer
+
+This creates a twin-stick shooter style feel.
+
+4. Create bullets
+
+Make a Bullet sprite.
+
+Player script:
+
+When space key pressed:
+- Create clone of Bullet
+
+Bullet clone:
+
+When I start as clone:
+- Go to Player
+- Point in direction of Player
+- Repeat 50:
+  - Move 10 steps
+  - If touching Zombie:
+    - Broadcast "HitZombie"
+    - Delete clone
+  - If touching edge:
+    - Delete clone
+- Delete clone
+
+5. Create zombies
+
+Zombie sprite:
+
+When green flag clicked:
+- Hide
+- Forever:
+  - Wait 2 seconds
+  - Create clone of myself
+
+Zombie clone:
+
+When I start as clone:
+- Show
+- Spawn at random edge
+- Forever:
+  - Point towards Player
+  - Move 2 steps
+  - If touching Player:
+    - Change Health by -1
+    - Wait 0.5 seconds
+
+Spawning from an edge:
+
+Pick random side:
+- Top → y=180, random x
+- Bottom → y=-180, random x
+- Left → x=-240, random y
+- Right → x=240, random y
+
+6. Damage zombies
+
+The easiest Scratch method is to give each clone its own health variable.
+
+Zombie clone:
+
+When I start as clone:
+- Set ZombieHealth to 3
+
+Forever:
+- If touching Bullet:
+  - Change ZombieHealth by -1
+  - Wait 0.1 seconds
+  - If ZombieHealth ≤ 0:
+    - Change Score by 1
+    - Delete this clone
+
+7. Add game over
+
+Create variable Health.
+
+When green flag clicked:
+- Set Health to 100
+
+Game controller:
+
+Forever:
+- If Health ≤ 0:
+  - Set GameOver to 1
+  - Broadcast "Game Over"
+  - Stop all
+
+Display:
+- Show "Game Over"
+- Show final score
+
+8. Add waves
+
+Game controller:
+
+When green flag clicked:
+- Set Wave to 1
+
+Forever:
+- Wait 20 seconds
+- Change Wave by 1
+- Change ZombieSpeed by 0.5
+
+Zombie movement:
+
+Move ZombieSpeed steps
+
+Each wave becomes harder.
+
+9. Add polish
+
+Possible upgrades:
+- Different zombie types
+  - Fast zombies
+  - Tank zombies
+  - Ranged zombies
+- Weapon upgrades
+  - Shotgun
+  - Rapid fire
+  - Explosive bullets
+- Health pickups
+- Sound effects
+- Blood splatter animation
+- Day/night cycle
+- Boss zombies every 5 waves
+
+10. Recommended Scratch structure
+
+Sprites:
+- Player
+- Zombie
+- Bullet
+- UI/Game Manager
+
+Variables:
+- Health
+- Score
+- Wave
+- ZombieSpeed
+- GameOver
+
+Lists (optional):
+- High scores
+- Upgrade inventory
+
+A simple version with movement, bullets, chasing zombies, health, and score can usually be built in Scratch in a few hours. Once that works, focus on wave progression and upgrades, since those mechanics tend to make survivor-style games engaging.

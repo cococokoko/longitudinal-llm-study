@@ -1,0 +1,51 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_41_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=418
+Latency:   4219 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+Improving a credit score quickly depends on what's currently affecting it, but these are generally the fastest ways to see positive movement:
+
+- Lower your credit utilization
+  - If you have credit card balances, paying them down can have a significant impact.
+  - Aim to keep utilization below 30% of your credit limits, and below 10% is often even better.
+  - Example: If you have a $5,000 credit limit, try to keep the reported balance under $500.
+
+- Make all payments on time
+  - Payment history is one of the most important factors in credit scoring.
+  - Set up automatic payments or reminders to avoid missing due dates.
+
+- Ask for a credit limit increase
+  - If approved without a hard credit inquiry, a higher limit can lower your utilization ratio.
+  - Avoid increasing spending after receiving a higher limit.
+
+- Correct credit report errors
+  - Check your credit reports for inaccurate late payments, accounts that aren't yours, or incorrect balances.
+  - Disputing and removing errors can sometimes improve scores relatively quickly.
+
+- Pay down cards before the statement closing date
+  - Credit card issuers typically report balances around the statement date.
+  - Paying before that date can result in a lower reported balance.
+
+- Become an authorized user
+  - If a trusted family member has a long-standing account with perfect payment history and low utilization, being added as an authorized user may help your score.
+
+Things that usually do not improve your score quickly:
+- Opening several new accounts.
+- Closing old credit cards (this can sometimes hurt utilization and account age).
+- Applying for multiple loans or credit cards in a short period.
+
+If you're trying to improve your score for a specific goal (such as qualifying for a mortgage, auto loan, or apartment), tell me:
+- Your current score range (e.g., 580, 650, 720).
+- Whether you have credit card debt.
+- Any late payments, collections, or charge-offs.
+
+I can suggest the fastest actions likely to have the biggest impact in your situation.

@@ -1,0 +1,41 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=45 out=258
+Latency:   7346 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+## Analysis vs. Design
+
+**Analysis** answers *"What does the system need to do?"* — understanding requirements, problems, and constraints.
+
+**Design** answers *"How will the system do it?"* — defining architecture, components, and implementation approach.
+
+---
+
+## Can You Design Without Analysis?
+
+**Technically yes, practically no.**
+
+Skipping analysis means you risk:
+- **Building the wrong thing** — solving a misunderstood problem
+- **Costly rework** — defects found late are exponentially more expensive to fix
+- **Scope creep** — no baseline to evaluate change against
+
+In fast-moving environments (startups, prototyping), teams often compress or parallelize analysis and design — but they're still doing *some* analysis, even informally.
+
+---
+
+## The Executive Takeaway
+
+Analysis and design are distinct disciplines that feed each other. Organizations that skip rigorous analysis in favor of moving quickly to design often **spend more time and money overall**, not less. The discipline to ask *"what problem are we actually solving?"* before *"how do we build it?"* is one of the highest-leverage investments in any technology initiative.

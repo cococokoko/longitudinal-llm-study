@@ -1,0 +1,57 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=357
+Latency:   2794 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Example:
+
+Suppose the number of patients needing assistance during a shift is modeled by
+
+f(x, y) = 2x² + 3xy + y²
+
+where:
+- x = number of hours into the shift
+- y = number of patients currently assigned
+- f(x, y) = workload score
+
+Partial derivative with respect to x:
+
+Treat y as a constant:
+
+∂f/∂x = 4x + 3y
+
+Evaluate at x = 2 and y = 5:
+
+∂f/∂x(2,5) = 4(2) + 3(5) = 8 + 15 = 23
+
+Interpretation:
+- At the point (2,5), increasing x by a small amount increases the workload score at a rate of about 23 units per additional hour, assuming the number of assigned patients stays fixed at 5.
+
+Partial derivative with respect to y:
+
+Treat x as a constant:
+
+∂f/∂y = 3x + 2y
+
+Evaluate at x = 2 and y = 5:
+
+∂f/∂y(2,5) = 3(2) + 2(5) = 6 + 10 = 16
+
+Interpretation:
+- At the point (2,5), increasing the number of assigned patients by a small amount increases the workload score at a rate of about 16 units per additional patient, assuming the shift time stays fixed at 2 hours.
+
+This illustrates the key idea: each partial derivative measures the effect of changing one variable while holding the others constant.

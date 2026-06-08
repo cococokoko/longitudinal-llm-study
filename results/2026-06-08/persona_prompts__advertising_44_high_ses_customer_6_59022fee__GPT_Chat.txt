@@ -1,0 +1,47 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35 out=352
+Latency:   3550 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest approach during a pandemic depends on the specific disease, how it spreads, and current public health guidance. In general, risk can be reduced substantially by combining multiple precautions:
+
+- Avoid nonessential travel during periods of high transmission.
+- Stay up to date on recommended vaccinations and boosters, if available.
+- Do not travel if you are sick, have symptoms, or have recently tested positive for the disease in question.
+- Check destination-specific health advisories, entry requirements, and healthcare availability.
+
+When choosing a mode of travel:
+
+- Private vehicle travel is often lower risk than shared transportation because it limits close contact with others.
+- Air travel can be made safer by:
+  - Wearing a well-fitting high-quality mask (such as an N95, KN95, or equivalent) when respiratory transmission is a concern.
+  - Minimizing time in crowded airport areas.
+  - Using online check-in and electronic boarding passes where possible.
+- Trains, buses, and cruises generally involve prolonged contact with larger numbers of people and may present higher risk, particularly during outbreaks.
+
+During the trip:
+
+- Prefer outdoor activities and well-ventilated indoor spaces.
+- Maintain physical distance where feasible.
+- Practice good hand hygiene.
+- Consider testing before and after travel if recommended for the disease involved.
+- Be aware of local public health rules and healthcare resources.
+
+For lodging:
+
+- Choose accommodations with good ventilation and clear hygiene practices.
+- Consider less crowded lodging options when transmission rates are high.
+
+If you tell me which pandemic or infectious disease you're concerned about (for example, COVID-19, influenza, or another outbreak), I can provide more specific guidance.

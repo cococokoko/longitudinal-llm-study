@@ -1,0 +1,72 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=433
+Latency:   3295 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Example:
+
+Consider the function
+
+f(x, y) = x²y + 3xy
+
+Find the partial derivatives.
+
+1. Partial derivative with respect to x
+
+Treat y as a constant:
+
+∂f/∂x = 2xy + 3y
+
+At the point (x, y) = (2, 4):
+
+∂f/∂x = 2(2)(4) + 3(4)
+       = 16 + 12
+       = 28
+
+Interpretation:
+When y = 4 is held fixed, a small increase of x near x = 2 increases the function by about 28 times that small change.
+
+2. Partial derivative with respect to y
+
+Treat x as a constant:
+
+∂f/∂y = x² + 3x
+
+At the point (2, 4):
+
+∂f/∂y = 2² + 3(2)
+       = 4 + 6
+       = 10
+
+Interpretation:
+When x = 2 is held fixed, a small increase of y near y = 4 increases the function by about 10 times that small change.
+
+Numerical check:
+
+f(2,4) = (2²)(4) + 3(2)(4)
+       = 16 + 24
+       = 40
+
+Increase x slightly from 2 to 2.01 while keeping y = 4:
+
+f(2.01,4) = (2.01²)(4) + 3(2.01)(4)
+          = 40.2804
+
+Change in f = 40.2804 − 40 = 0.2804
+
+Since Δx = 0.01,
+
+Change in f / Δx = 0.2804 / 0.01 = 28.04
+
+This is very close to the partial derivative ∂f/∂x = 28, illustrating the concept numerically.

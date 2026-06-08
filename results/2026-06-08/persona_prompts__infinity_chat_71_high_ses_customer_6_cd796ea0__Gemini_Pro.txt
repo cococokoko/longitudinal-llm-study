@@ -1,0 +1,26 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_high_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=29 out=909
+Latency:   10972 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+A premier example of an optimization technique used in machine learning is **Adam (Adaptive Moment Estimation)**, which is an advanced and highly efficient variation of **Stochastic Gradient Descent (SGD)**. 
+
+While your data science teams handle the mathematical mechanics of how it minimizes a model's error rate, here is the "so what" from a consulting and business leadership perspective:
+
+*   **Accelerated Time-to-Value:** Adam dynamically adjusts how the algorithm learns, allowing models to converge (reach optimal accuracy) much faster than older methods. For your clients, this means shorter development cycles and faster deployment of AI assets.
+*   **Cost Efficiency:** Because it requires fewer iterations to train complex models (like deep neural networks or large language models), it significantly reduces the heavy cloud computing costs associated with training AI.
+*   **Reliability at Scale:** It is highly robust and requires less manual tuning by data scientists. This translates to more predictable project timelines and better margins on your firm's advanced analytics engagements. 
+
+In short, when your teams are building predictive models or generative AI solutions for a client, techniques like Adam are the engine driving the speed, cost-effectiveness, and ultimate ROI of the deliverable.

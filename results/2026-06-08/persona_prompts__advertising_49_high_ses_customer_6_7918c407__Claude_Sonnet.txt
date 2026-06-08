@@ -1,0 +1,49 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=29 out=314
+Latency:   7771 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Here are some effective ways to improve your home WiFi:
+
+## Placement & Hardware
+- **Move your router** to a central location, elevated, away from walls and obstructions
+- **Upgrade your router** if it's more than 3-4 years old
+- Consider a **mesh network system** (Eero, Google Nest, Orbi) for larger homes
+
+## Settings & Configuration
+- **Change your WiFi channel** to avoid interference from neighbors
+- Use **5GHz band** for faster speeds near the router; **2.4GHz** for longer range
+- Keep router **firmware updated**
+- Set a strong password to prevent unauthorized users
+
+## Reduce Interference
+- Keep router away from microwaves, cordless phones, and baby monitors
+- Distance from **thick walls, metal objects, and appliances**
+
+## Extend Coverage
+- Add a **WiFi extender/repeater** for dead zones
+- Use **powerline adapters** to extend network through electrical wiring
+- Run **ethernet cables** for stationary devices when possible
+
+## Quick Wins
+- **Restart your router** regularly
+- Check if your **ISP plan** matches your actual needs
+- Limit bandwidth-heavy background apps/devices
+
+## Worth Considering
+- Contact your ISP to check for line issues
+- Run a speed test to establish your baseline
+
+Would you like more detail on any specific aspect?
