@@ -1,0 +1,25 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=1020
+Latency:   7717 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A standout feature for a senior-focused smartwatch—designed not just for the wearer, but to **significantly ease the mental load of the family members managing their care**—is the **"Care-Sync Hub."**
+
+Rather than just tracking health metrics, this feature acts as a bridge between the senior’s daily routine and the primary caregiver’s busy schedule, streamlining communication and coordination without stripping the senior of their independence.
+
+Here is how the **Care-Sync Hub** would work:
+
+### 1. Closed-Loop Medication & Task Verification
+*   **For the Senior:** The watch displays a simplified, high-contrast prompt with a gentle vibration: *"Time for morning medicine (blue pill)."* The senior simply taps

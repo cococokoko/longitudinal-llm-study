@@ -160,6 +160,18 @@ def check_run(db_path: str, date: str) -> dict:
     """, (wave_id,))
     error_types = [dict(r) for r in cur.fetchall()]
 
+    cur.execute("""
+        SELECT
+            json_extract(call_params, '$.model_id_requested') AS model,
+            SUM(CASE WHEN finish_reason = 'length' THEN 1 ELSE 0 END) AS truncated,
+            COUNT(*) AS total
+        FROM response_records
+        WHERE wave_id = ? AND error IS NULL
+        GROUP BY model
+        ORDER BY model
+    """, (wave_id,))
+    truncation_rows = [dict(r) for r in cur.fetchall()]
+
     conn.close()
 
     total  = sum(r["total"]  for r in rows)
@@ -168,15 +180,16 @@ def check_run(db_path: str, date: str) -> dict:
     cost   = sum(r["cost"]   for r in rows)
 
     return {
-        "ran":         True,
-        "date":        date,
-        "wave_id":     wave_id,
-        "models":      rows,
-        "total":       total,
-        "ok":          ok,
-        "errors":      errors,
-        "cost":        round(cost, 4),
-        "error_types": error_types,
+        "ran":            True,
+        "date":           date,
+        "wave_id":        wave_id,
+        "models":         rows,
+        "total":          total,
+        "ok":             ok,
+        "errors":         errors,
+        "cost":           round(cost, 4),
+        "error_types":    error_types,
+        "truncation":     truncation_rows,
     }
 
 
@@ -199,6 +212,39 @@ def build_subject(data: dict, balance: dict | None) -> str:
         return f"{emoji} LLM Study — no run on {data['date']}"
     pct = round(100 * data["ok"] / data["total"]) if data["total"] else 0
     return f"{emoji} LLM Study {data['date']} — {data['ok']}/{data['total']} OK ({pct}%)"
+
+
+def _build_truncation_html(data: dict) -> str:
+    rows = data.get("truncation", [])
+    if not rows:
+        return ""
+    row_html = ""
+    for r in rows:
+        trunc = r["truncated"] or 0
+        total = r["total"] or 0
+        pct   = round(100 * trunc / total) if total else 0
+        color = "#c62828" if pct >= 20 else ("#f57c00" if pct >= 5 else "#2e7d32")
+        row_html += (
+            f"<tr>"
+            f"<td style='padding:4px 12px'>{r['model'] or 'unknown'}</td>"
+            f"<td style='padding:4px 12px;text-align:center'>{total}</td>"
+            f"<td style='padding:4px 12px;text-align:center;color:{color}'><b>{trunc}</b></td>"
+            f"<td style='padding:4px 12px;text-align:center;color:{color}'>{pct}%</td>"
+            f"</tr>"
+        )
+    return f"""
+    <h3>Output token limit hits (finish_reason=length)</h3>
+    <table border='0' cellspacing='0' cellpadding='0'
+           style='border-collapse:collapse;font-size:14px'>
+      <tr style='background:#1f4e79;color:white'>
+        <th style='padding:6px 12px;text-align:left'>Model</th>
+        <th style='padding:6px 12px'>Calls</th>
+        <th style='padding:6px 12px'>Truncated</th>
+        <th style='padding:6px 12px'>Rate</th>
+      </tr>
+      {row_html}
+    </table>
+    """
 
 
 def build_body(data: dict, balance: dict | None, github: dict | None = None) -> str:
@@ -335,6 +381,8 @@ def build_body(data: dict, balance: dict | None, github: dict | None = None) -> 
       </table>
 
       {error_html}
+
+      {_build_truncation_html(data)}
 
       {balance_html}
 

@@ -24,12 +24,13 @@ METRICS  = OUT_DIR / "metrics.json"
 PROMPTS  = OUT_DIR / "prompts.json"
 
 OPT_LETTERS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-MAIN_MODELS = ["Claude Sonnet", "Gemini Pro", "GPT Chat"]   # DB display_name keys
+MAIN_MODELS = ["Claude Sonnet", "Gemini Pro", "Gemini Flash", "GPT Chat"]   # DB display_name keys
 
 # Display labels used in the dashboard (mirrors MODEL_LABELS in index.html)
 MODEL_LABELS = {
     "Claude Sonnet": "Claude Sonnet",
     "Gemini Pro":    "Gemini Pro",
+    "Gemini Flash":  "Gemini Flash",
     "GPT Chat":      "GPT Chat",
 }
 
@@ -143,6 +144,27 @@ def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
         }
         for (wave, model), v in sorted(acc.items())
     ]
+
+
+# ── Output truncation rates ───────────────────────────────────────────────────
+
+def compute_truncation_rates(conn, waves) -> list[dict]:
+    """Per (wave, model): calls and finish_reason=length count."""
+    if not waves:
+        return []
+    return _rows(conn, f"""
+        SELECT sw.name AS wave, mc.display_name AS model,
+               COUNT(*) AS total,
+               SUM(CASE WHEN rr.finish_reason = 'length' THEN 1 ELSE 0 END) AS truncated
+        FROM response_records rr
+        JOIN study_waves sw    ON sw.id = rr.wave_id
+        JOIN model_configs mc  ON mc.id = rr.model_config_id
+        WHERE sw.name IN {_sql_in(waves)}
+          AND mc.display_name IN {_sql_in(MAIN_MODELS)}
+          AND rr.error IS NULL
+        GROUP BY sw.name, mc.display_name
+        ORDER BY sw.name, mc.display_name
+    """)
 
 
 # ── Model versions per wave ───────────────────────────────────────────────────
@@ -468,6 +490,9 @@ def main():
     print("Wave versions…")
     wave_versions = compute_wave_versions(conn, waves)
 
+    print("Truncation rates…")
+    truncation_rates = compute_truncation_rates(conn, waves)
+
     print("Persona prompt lengths…")
     persona_lengths = compute_persona_lengths(conn)
 
@@ -498,11 +523,12 @@ def main():
             cosine_4b_ii = existing_4b
 
     metrics = {
-        "generated":      datetime.date.today().isoformat(),
-        "waves":          waves,
-        "wave_versions":  wave_versions,
-        "wvs_metrics":    wvs_metrics,
-        "persona_lengths": persona_lengths,
+        "generated":        datetime.date.today().isoformat(),
+        "waves":            waves,
+        "wave_versions":    wave_versions,
+        "wvs_metrics":      wvs_metrics,
+        "truncation_rates": truncation_rates,
+        "persona_lengths":  persona_lengths,
         "cosine_4a":      cosine_4a,
         "cosine_4b_ii":   cosine_4b_ii,
     }

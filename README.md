@@ -45,6 +45,8 @@ Configured in `config.yaml`. Main models are called via [OpenRouter](https://ope
 - **GPT Chat** (`openai/gpt-chat-latest` — resolves to the current GPT chat release)
 - **Claude Sonnet** (`~anthropic/claude-sonnet-latest` - redirects to the latest model in the Anthropic Claude Sonnet family)
 - **Gemini Pro** (`~google/gemini-pro-latest` - redirects to the latest model in the Google Gemini Pro family)
+- **Gemini Flash** (`~google/gemini-flash-latest` - redirects to the latest model in the Google Gemini Flash family)
+
 
 ---
 

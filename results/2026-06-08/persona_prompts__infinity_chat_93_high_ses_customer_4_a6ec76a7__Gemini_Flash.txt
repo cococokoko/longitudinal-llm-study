@@ -1,0 +1,24 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_93_high_ses_customer_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=1020
+Latency:   6336 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write 100-300 words on how stress affects the body and mind.
+
+── Response ────────────────────────────────────────────────────────
+At the intersection of physiology and psychology, chronic stress represents a systemic disruption of homeostasis, mediated primarily by the sustained activation of the sympathoadrenal medullary (SAM) pathway and the hypothalamic-pituitary-adrenal (HPA) axis. While the acute stress response is evolutionarily adaptive, chronic allostatic load precipitates profound somatic and neurobiological sequelae.
+
+Peripherally, persistent elevation of glucocorticoids and catecholamines drives endothelial dysfunction, arterial stiffness, and elevated cardiovascular risk. Concurrently, chronic cortisol exposure induces glucocorticoid receptor resistance, triggering a systemic pro-inflammatory state characterized by elevated circulating cytokines (such as IL-6 and TNF-α). This low-grade inflammation impairs metabolic homeostasis, exacerbating insulin resistance and visceral adiposity.
+
+Centrally, this neuroendocrine cascade remodels key neural circuits. Prolonged glucocorticoid exposure suppresses hippocampal neurogenesis and induces dendritic atrophy in the prefrontal cortex, directly impairing working memory, cognitive flexibility, and executive function. Conversely, it promotes dendritic hypertrophy in the basolateral amygdala, shifting the neural architecture toward hypervigilance, emotional dysregulation, and heightened fear conditioning. 
+
+Ultimately, this systemic wear-and-tear

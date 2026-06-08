@@ -34,6 +34,12 @@ models:
       temperature: 0.0
       max_tokens: 1024
 
+  - model_id: "~google/gemini-flash-latest"
+    display_name: "Gemini Flash"
+    parameters:
+      temperature: 0.0
+      max_tokens: 1024
+
 # ── Experiment models ─────────────────────────────────────────────────────────
 
 experiment_models:

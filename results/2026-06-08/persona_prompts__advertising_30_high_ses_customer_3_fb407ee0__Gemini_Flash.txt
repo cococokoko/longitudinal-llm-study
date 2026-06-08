@@ -1,0 +1,30 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_customer_3
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=28 out=1020
+Latency:   7973 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+For someone accustomed to rigorous intellectual pursuits, learning to code is best approached not merely as memorizing syntax, but as acquiring a new mode of thinking—specifically, **computational thinking**. It is the process of breaking down complex, abstract problems into discrete, logical steps that a machine can execute.
+
+Here is a structured, pedagogically sound roadmap to learning programming from scratch, tailored for a systematic learner.
+
+---
+
+### 1. Define Your Objective (The "Research Question")
+Before writing a single line of code, identify what you want to achieve. Programming is a vast discipline, and your goal dictates your starting point:
+*   **Data Analysis & Research:** If you want to analyze datasets, automate data collection, or build statistical models, your path will lean toward data science.
+*   **Automation:** If you want to streamline repetitive tasks (e.g., sorting files, scraping websites, parsing PDFs).
+*   **Software/Web Development:** If you want to build interactive tools, databases, or web applications.
+
+### 2. Choose Your First Language

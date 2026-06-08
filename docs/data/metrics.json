@@ -94,6 +94,12 @@
     },
     {
       "wave": "2026-06-08",
+      "model": "Gemini Flash",
+      "model_used": "google/gemini-3.5-flash-20260519",
+      "n_calls": 781
+    },
+    {
+      "wave": "2026-06-08",
       "model": "Gemini Pro",
       "model_used": "google/gemini-3.1-pro-preview-20260219",
       "n_calls": 781
@@ -228,12 +234,119 @@
     },
     {
       "wave": "2026-06-08",
+      "model": "Gemini Flash",
+      "ws_mean": 1.4763,
+      "ws_std": 1.4258,
+      "entropy_mean": 0.5899,
+      "entropy_global_mean": 1.8333,
+      "n": 265
+    },
+    {
+      "wave": "2026-06-08",
       "model": "Gemini Pro",
       "ws_mean": 1.0551,
       "ws_std": 1.1881,
       "entropy_mean": 0.896,
       "entropy_global_mean": 1.9474,
       "n": 336
+    }
+  ],
+  "truncation_rates": [
+    {
+      "wave": "2026-06-04",
+      "model": "Claude Sonnet",
+      "total": 781,
+      "truncated": 13
+    },
+    {
+      "wave": "2026-06-04",
+      "model": "GPT Chat",
+      "total": 781,
+      "truncated": 7
+    },
+    {
+      "wave": "2026-06-04",
+      "model": "Gemini Pro",
+      "total": 781,
+      "truncated": 370
+    },
+    {
+      "wave": "2026-06-05",
+      "model": "Claude Sonnet",
+      "total": 781,
+      "truncated": 13
+    },
+    {
+      "wave": "2026-06-05",
+      "model": "GPT Chat",
+      "total": 781,
+      "truncated": 7
+    },
+    {
+      "wave": "2026-06-05",
+      "model": "Gemini Pro",
+      "total": 781,
+      "truncated": 355
+    },
+    {
+      "wave": "2026-06-06",
+      "model": "Claude Sonnet",
+      "total": 781,
+      "truncated": 12
+    },
+    {
+      "wave": "2026-06-06",
+      "model": "GPT Chat",
+      "total": 781,
+      "truncated": 8
+    },
+    {
+      "wave": "2026-06-06",
+      "model": "Gemini Pro",
+      "total": 781,
+      "truncated": 353
+    },
+    {
+      "wave": "2026-06-07",
+      "model": "Claude Sonnet",
+      "total": 781,
+      "truncated": 12
+    },
+    {
+      "wave": "2026-06-07",
+      "model": "GPT Chat",
+      "total": 781,
+      "truncated": 9
+    },
+    {
+      "wave": "2026-06-07",
+      "model": "Gemini Pro",
+      "total": 781,
+      "truncated": 355
+    },
+    {
+      "wave": "2026-06-08",
+      "model": "Claude Sonnet",
+      "total": 781,
+      "truncated": 11
+    },
+    {
+      "wave": "2026-06-08",
+      "model": "GPT Chat",
+      "total": 781,
+      "truncated": 7
+    },
+    {
+      "wave": "2026-06-08",
+      "model": "Gemini Flash",
+      "total": 781,
+      "truncated": 413
+    },
+    {
+      "wave": "2026-06-08",
+      "model": "Gemini Pro",
+      "total": 781,
+      "truncated": 357
     }
   ],
   "persona_lengths": [
@@ -3449,6 +3562,42 @@
       "ses": "low",
       "sim_mean": 0.4924,
       "sim_std": 0.3633,
+      "n": 106
+    },
+    {
+      "wave": "2026-06-08",
+      "model": "Gemini Flash",
+      "framing": "system_msg",
+      "ses": "high",
+      "sim_mean": 0.4245,
+      "sim_std": 0.3343,
+      "n": 137
+    },
+    {
+      "wave": "2026-06-08",
+      "model": "Gemini Flash",
+      "framing": "system_msg",
+      "ses": "low",
+      "sim_mean": 0.4322,
+      "sim_std": 0.3424,
+      "n": 137
+    },
+    {
+      "wave": "2026-06-08",
+      "model": "Gemini Flash",
+      "framing": "inline_prompt",
+      "ses": "high",
+      "sim_mean": 0.2502,
+      "sim_std": 0.2493,
+      "n": 106
+    },
+    {
+      "wave": "2026-06-08",
+      "model": "Gemini Flash",
+      "framing": "inline_prompt",
+      "ses": "low",
+      "sim_mean": 0.29,
+      "sim_std": 0.2673,
       "n": 106
     }
   ]

@@ -1,0 +1,23 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=22 out=566
+Latency:   4028 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+**The Difference**
+*   **Analysis** focuses on understanding the problem and defining **what** the system must do (requirements and constraints).
+*   **Design** focuses on planning the solution and defining **how** the system will do it (architecture and implementation).
+
+**Can you design without analysis?**
+No, not effectively. 
+
+**Why?**
+You cannot build a correct solution to an undefined problem. Designing without analysis leads to "solving the wrong problem," resulting in wasted resources, missed requirements, and system failure.

@@ -1,0 +1,23 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_87_high_ses_customer_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=32 out=950
+Latency:   7346 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me the name of an instrumental song that matches the mood of a rainy night.
+
+── Response ────────────────────────────────────────────────────────
+**"Flight from the City"** by **Jóhann Jóhannsson** (from the album *Orphée*).
+
+### Why it matches the mood:
+This piece is built on a minimalist, repeating piano motif that feels like the steady, hypnotic rhythm of rain falling against a window. As the track progresses, warm, ambient strings and subtle electronic textures slowly layer in. 
+
+It is intellectually elegant, deeply calming, and provides an ideal backdrop for quiet reflection, deep focus, or unwinding after a demanding day.

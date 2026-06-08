@@ -562,7 +562,10 @@
     <div class="analysis-panel" id="panel-lengths">
       <p class="section-note">Total character count of each persona prompt (user text + system message when present).</p>
       <div class="chart-title">Prompt Length Distribution by Condition × Framing</div>
-      <div class="plotly-wrap" id="chart-lengths" style="height:calc(100vh - 295px)"></div>
+      <div class="plotly-wrap" id="chart-lengths" style="height:360px;margin-bottom:24px"></div>
+      <div class="chart-title">Output Truncation Rate per Wave (finish_reason = length)</div>
+      <div class="plotly-wrap" id="chart-truncation" style="height:260px;margin-bottom:16px"></div>
+      <div id="truncation-table"></div>
     </div>
 
     <!-- Output Diversity -->
@@ -610,9 +613,9 @@
 'use strict';
 
 // ── Palette ────────────────────────────────────────────────────
-const MODEL_CLR = { 'Claude Sonnet':'#e07b54', 'Gemini Pro':'#40ABC9', 'GPT Chat':'#34A853' };
-const MODEL_LABELS = { 'Claude Sonnet':'Claude Sonnet', 'Gemini Pro':'Gemini Pro', 'GPT Chat':'GPT Chat' };
-const MAIN_MODELS  = ['Claude Sonnet','Gemini Pro','GPT Chat'];
+const MODEL_CLR = { 'Claude Sonnet':'#e07b54', 'Gemini Pro':'#40ABC9', 'Gemini Flash':'#F4B400', 'GPT Chat':'#34A853' };
+const MODEL_LABELS = { 'Claude Sonnet':'Claude Sonnet', 'Gemini Pro':'Gemini Pro', 'Gemini Flash':'Gemini Flash', 'GPT Chat':'GPT Chat' };
+const MAIN_MODELS  = ['Claude Sonnet','Gemini Pro','Gemini Flash','GPT Chat'];
 const DIST_PALETTE = ['#40ABC9','#34A853','#e07b54','#9b59b6','#e74c3c','#1abc9c','#e67e22','#2c3e50'];
 
 // ── Hash routing ───────────────────────────────────────────────
@@ -725,6 +728,54 @@ function renderLengths(persona_lengths) {
     })),
     baseLayout({ yaxis:{title:'Characters',gridcolor:'#e8e8e1'}, showlegend:false }), PCFG);
 }
+
+function renderTruncation(truncation_rates) {
+  if (!truncation_rates?.length) return;
+
+  // Line chart: truncation % per wave per model
+  const traces = MAIN_MODELS.map(model => {
+    const d = truncation_rates.filter(r => r.model === model).sort((a,b) => a.wave < b.wave ? -1 : 1);
+    return {
+      x: d.map(r => r.wave),
+      y: d.map(r => r.total ? round2(100 * r.truncated / r.total) : 0),
+      mode: 'lines+markers', name: MODEL_LABELS[model],
+      line: {color: MODEL_CLR[model], width: 2.5}, marker: {size: 6, color: MODEL_CLR[model]},
+    };
+  });
+  Plotly.newPlot('chart-truncation', traces,
+    baseLayout({ yaxis: {title: 'Truncated (%)', gridcolor: '#e8e8e1', rangemode: 'tozero'} }), PCFG);
+
+  // Summary table: latest wave per model
+  const latest = {};
+  for (const r of truncation_rates) {
+    if (!latest[r.model] || r.wave > latest[r.model].wave) latest[r.model] = r;
+  }
+  const rows = MAIN_MODELS.map(model => {
+    const r = latest[model];
+    if (!r) return '';
+    const pct = r.total ? round2(100 * r.truncated / r.total) : 0;
+    const color = pct >= 20 ? '#c62828' : (pct >= 5 ? '#e65100' : '#2e7d32');
+    return `<tr>
+      <td style="padding:5px 12px">${MODEL_LABELS[model]}</td>
+      <td style="padding:5px 12px;text-align:center">${r.total}</td>
+      <td style="padding:5px 12px;text-align:center;color:${color}"><b>${r.truncated}</b></td>
+      <td style="padding:5px 12px;text-align:center;color:${color}">${pct}%</td>
+      <td style="padding:5px 12px;color:#999;font-size:12px">${r.wave}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('truncation-table').innerHTML = `
+    <div class="table-wrap" style="margin-top:8px">
+      <table class="data-table">
+        <thead><tr>
+          <th style="text-align:left">Model</th>
+          <th>Calls</th><th>Truncated</th><th>Rate</th><th style="text-align:left">Latest wave</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
+function round2(x) { return Math.round(x * 100) / 100; }
 
 function renderCosine4a(cosine_4a) {
   Plotly.newPlot('chart-4a',
@@ -928,6 +979,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
     renderVersions(metrics);
     renderWVSCharts(metrics.wvs_metrics);
     renderLengths(metrics.persona_lengths);
+    renderTruncation(metrics.truncation_rates);
 
     if (metrics.cosine_4a?.length) { renderCosine4a(metrics.cosine_4a); }
     else { document.getElementById('chart-4a-wrap').style.display='none'; document.getElementById('chart-4a-empty').style.display='block'; }

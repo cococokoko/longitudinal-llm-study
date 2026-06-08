@@ -1,0 +1,27 @@
+Wave:      2026-06-08
+Dataset:   persona_prompts
+Item ID:   infinity_chat_47_high_ses_user_2
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=987
+Latency:   7255 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Give me a trivia question about blue birds and its corresponding answer.
+
+── Response ────────────────────────────────────────────────────────
+Here is a trivia question tailored for an analytical mind, focusing on the fascinating science behind these birds:
+
+**Question:** 
+While birds like northern cardinals and flamingos derive their vibrant red and pink hues from carotenoid pigments in the food they eat, bluebirds are a biological anomaly. What physical phenomenon explains why bluebirds—and indeed almost all blue-feathered birds—possess absolutely no blue pigment in their feathers?
+
+**Answer:** 
+**Structural Coloration (specifically, light scattering).** 
+
+The brilliant blue of a bluebird is actually an optical illusion. Instead of pigment, their feathers contain microscopic structures made of keratin and air pockets. These structures act like tiny prisms, scattering light and reflecting only the blue wavelengths back to our eyes (a phenomenon similar to Rayleigh scattering, which makes the sky look blue). 
+
+As "evidence" of this phenomenon, if you were to crush a bluebird feather, destroying its physical structure, the blue color would vanish entirely, leaving behind only the dull brown or grey of the underlying melanin pigment.
