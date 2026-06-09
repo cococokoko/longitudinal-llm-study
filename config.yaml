@@ -32,13 +32,15 @@ models:
     display_name: "Gemini Pro"
     parameters:
       temperature: 0.0
-      max_tokens: 2024
+      max_tokens: 5024
+      reasoning: {effort: "minimal"}
 
   - model_id: "~google/gemini-flash-latest"
     display_name: "Gemini Flash"
     parameters:
       temperature: 0.0
-      max_tokens: 2024
+      max_tokens: 5024
+      reasoning: {effort: "minimal"}
 
 # ── Experiment models ─────────────────────────────────────────────────────────
 

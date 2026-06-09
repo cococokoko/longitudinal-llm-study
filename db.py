@@ -74,6 +74,9 @@ CREATE TABLE IF NOT EXISTS response_records (
     finish_reason    TEXT,
     latency_ms       INTEGER,
     cost_usd         REAL,    -- upstream inference cost in USD (from OpenRouter usage.cost)
+    reasoning_text   TEXT,    -- plaintext thinking content if provided by model
+    reasoning_tokens INTEGER, -- thinking token count
+    raw_response     TEXT,    -- full JSON payload returned by the API
     error            TEXT,
     created_at       TEXT NOT NULL,
     UNIQUE(wave_id, item_id, model_config_id)
@@ -95,10 +98,26 @@ def _uid() -> str:
     return str(uuid.uuid4())
 
 
+def _migrate(conn: sqlite3.Connection) -> None:
+    """Add columns introduced after initial schema without dropping existing data."""
+    new_columns = [
+        ("response_records", "reasoning_text",   "TEXT"),
+        ("response_records", "reasoning_tokens",  "INTEGER"),
+        ("response_records", "raw_response",      "TEXT"),
+    ]
+    for table, col, coltype in new_columns:
+        try:
+            conn.execute(f"ALTER TABLE {table} ADD COLUMN {col} {coltype}")
+            conn.commit()
+        except sqlite3.OperationalError:
+            pass  # column already exists
+
+
 def open_db(path: str | Path) -> sqlite3.Connection:
     conn = sqlite3.connect(str(path), check_same_thread=False)
     conn.row_factory = sqlite3.Row
     conn.executescript(SCHEMA)
+    _migrate(conn)
     return conn
 
 @contextmanager
@@ -265,6 +284,9 @@ def save_response(
     finish_reason: str | None = None,
     latency_ms: int | None = None,
     cost_usd: float | None = None,
+    reasoning_text: str | None = None,
+    reasoning_tokens: int | None = None,
+    raw_response: dict[str, Any] | None = None,
     error: str | None = None,
 ) -> str:
     rid = _uid()
@@ -275,24 +297,32 @@ def save_response(
                 (id, wave_id, item_id, model_config_id,
                  model_used, call_params,
                  response_text, input_tokens, output_tokens,
-                 finish_reason, latency_ms, cost_usd, error, created_at)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                 finish_reason, latency_ms, cost_usd,
+                 reasoning_text, reasoning_tokens, raw_response,
+                 error, created_at)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             ON CONFLICT(wave_id, item_id, model_config_id) DO UPDATE SET
-                model_used    = excluded.model_used,
-                call_params   = excluded.call_params,
-                response_text = excluded.response_text,
-                input_tokens  = excluded.input_tokens,
-                output_tokens = excluded.output_tokens,
-                finish_reason = excluded.finish_reason,
-                latency_ms    = excluded.latency_ms,
-                cost_usd      = excluded.cost_usd,
-                error         = excluded.error,
-                created_at    = excluded.created_at
+                model_used       = excluded.model_used,
+                call_params      = excluded.call_params,
+                response_text    = excluded.response_text,
+                input_tokens     = excluded.input_tokens,
+                output_tokens    = excluded.output_tokens,
+                finish_reason    = excluded.finish_reason,
+                latency_ms       = excluded.latency_ms,
+                cost_usd         = excluded.cost_usd,
+                reasoning_text   = excluded.reasoning_text,
+                reasoning_tokens = excluded.reasoning_tokens,
+                raw_response     = excluded.raw_response,
+                error            = excluded.error,
+                created_at       = excluded.created_at
             """,
             (rid, wave_id, item_id, model_config_id,
              model_used, json.dumps(call_params or {}),
              response_text, input_tokens, output_tokens,
-             finish_reason, latency_ms, cost_usd, error, _now()),
+             finish_reason, latency_ms, cost_usd,
+             reasoning_text, reasoning_tokens,
+             json.dumps(raw_response) if raw_response else None,
+             error, _now()),
         )
     return rid
 

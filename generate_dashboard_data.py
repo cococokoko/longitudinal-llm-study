@@ -237,25 +237,18 @@ def _cosine(a: np.ndarray, b: np.ndarray) -> float:
     return float(np.dot(a, b) / (na * nb))
 
 
-# ── Output Diversity: day-over-day baseline stability ────────────────────────
+# ── Output Diversity: similarity to time-averaged mean ───────────────────────
 
-def compute_cosine_4a(conn, waves, existing) -> list[dict]:
+def compute_cosine_4a(conn, waves, _existing) -> list[dict]:
     """
-    Mean cosine similarity of baseline persona responses on consecutive wave pairs.
-    Same item_id on wave_N vs wave_N+1, per model.
+    Per-wave cosine similarity of baseline persona responses to the time-averaged
+    mean embedding across all waves, per model and item_id.
+    Always recomputed from scratch so the mean stays current as waves accumulate.
     """
     if len(waves) < MIN_WAVES_FOR_COSINE:
         print(f"  4a: skipping — need {MIN_WAVES_FOR_COSINE}+ waves, have {len(waves)}")
         return []
-    existing_keys = {(r["wave_from"], r["wave_to"], r["model"]) for r in existing}
-    pairs = [(waves[i], waves[i + 1]) for i in range(len(waves) - 1)]
-    new_pairs = [p for p in pairs
-                 if any((p[0], p[1], m) not in existing_keys for m in MAIN_MODELS)]
-    if not new_pairs:
-        print("  4a: up to date")
-        return []
 
-    needed = {w for p in new_pairs for w in p}
     rows = _rows(conn, f"""
         SELECT sw.name AS wave, mc.display_name AS model,
                di.item_id, rr.response_text
@@ -264,7 +257,7 @@ def compute_cosine_4a(conn, waves, existing) -> list[dict]:
         JOIN model_configs mc  ON mc.id = rr.model_config_id
         JOIN dataset_items di  ON di.id = rr.item_id
         WHERE di.dataset_name = 'persona_prompts'
-          AND sw.name IN {_sql_in(needed)}
+          AND sw.name IN {_sql_in(waves)}
           AND mc.display_name IN {_sql_in(MAIN_MODELS)}
           AND json_extract(di.metadata, '$.condition') = 'baseline'
           AND rr.error IS NULL
@@ -282,24 +275,35 @@ def compute_cosine_4a(conn, waves, existing) -> list[dict]:
     for i, r in enumerate(rows):
         idx[(r["wave"], r["model"], r["item_id"])] = embs[i]
 
+    # Build time-averaged mean embedding per (model, item_id) across all waves
+    mean_emb: dict[tuple, np.ndarray] = {}
+    for model in MAIN_MODELS:
+        item_ids = {k[2] for k in idx if k[1] == model}
+        for iid in item_ids:
+            vecs = [idx[(w, model, iid)] for w in waves if (w, model, iid) in idx]
+            if vecs:
+                mean_emb[(model, iid)] = np.mean(vecs, axis=0)
+
+    # For each wave, compute cosine similarity of each response to its mean
     results = []
-    for w1, w2 in new_pairs:
+    for wave in waves:
         for model in MAIN_MODELS:
-            if (w1, w2, model) in existing_keys:
-                continue
-            items1 = {k[2] for k in idx if k[0] == w1 and k[1] == model}
-            items2 = {k[2] for k in idx if k[0] == w2 and k[1] == model}
-            sims = [
-                _cosine(idx[(w1, model, iid)], idx[(w2, model, iid)])
-                for iid in items1 & items2
-            ]
-            sims = [s for s in sims if not np.isnan(s)]
+            sims = []
+            for (m, iid), mean_vec in mean_emb.items():
+                if m != model:
+                    continue
+                key = (wave, model, iid)
+                if key not in idx:
+                    continue
+                s = _cosine(idx[key], mean_vec)
+                if not np.isnan(s):
+                    sims.append(s)
             if sims:
                 results.append({
-                    "wave_from": w1, "wave_to": w2, "model": model,
+                    "wave":     wave, "model": model,
                     "sim_mean": round(float(np.mean(sims)), 4),
                     "sim_std":  round(float(np.std(sims)),  4),
-                    "n": len(sims),
+                    "n":        len(sims),
                 })
     return results
 
@@ -503,17 +507,16 @@ def main():
         cosine_4a     = []
         cosine_4b_ii  = []
     else:
-        existing_4a = [r for r in existing.get("cosine_4a", [])
-                       if r.get("wave_from", "") >= STUDY_START]
         existing_4b = [r for r in existing.get("cosine_4b_ii", [])
                        if r.get("wave", "") >= STUDY_START]
 
-        print("Cosine 4a — Output Diversity (incremental)…")
+        print("Cosine 4a — Output Diversity (time-averaged mean)…")
         try:
-            cosine_4a = existing_4a + compute_cosine_4a(conn, waves, existing_4a)
+            cosine_4a = compute_cosine_4a(conn, waves, [])
         except Exception as e:
             print(f"  4a failed: {e} — keeping existing data")
-            cosine_4a = existing_4a
+            cosine_4a = [r for r in existing.get("cosine_4a", [])
+                         if r.get("wave", "") >= STUDY_START]
 
         print("Cosine 4b-ii — Steering Sensitivity (incremental)…")
         try:

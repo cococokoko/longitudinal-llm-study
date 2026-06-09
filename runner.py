@@ -140,6 +140,9 @@ async def _run_job(
                 finish_reason=result.finish_reason,
                 latency_ms=result.latency_ms,
                 cost_usd=result.cost_usd,
+                reasoning_text=result.reasoning_text,
+                reasoning_tokens=result.reasoning_tokens,
+                raw_response=result.raw or None,
                 error=result.error,
             )
 

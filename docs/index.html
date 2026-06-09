@@ -571,14 +571,14 @@
     <!-- Output Diversity -->
     <div class="analysis-panel" id="panel-diversity">
       <p class="section-note">
-        Day-over-day cosine similarity of <strong>baseline</strong> persona responses (MiniLM-L6-v2 embeddings).
-        High values = consistent answers; drops signal response drift.
+        Cosine similarity of each wave's <strong>baseline</strong> persona responses to the time-averaged mean embedding across all waves (MiniLM-L6-v2).
+        High values = responses close to the overall mean; drops signal drift away from the study-wide average.
       </p>
       <div id="chart-4a-empty" style="text-align:center;padding:48px 0;color:var(--text-muted);font-size:13px;display:none">
         Not enough data yet — appears once at least two waves have been collected.
       </div>
       <div id="chart-4a-wrap">
-        <div class="chart-title">Baseline Response Stability — Consecutive Wave Pairs</div>
+        <div class="chart-title">Baseline Response Stability — Similarity to Time-Averaged Mean</div>
         <div class="plotly-wrap" id="chart-4a" style="height:calc(100vh - 295px)"></div>
       </div>
     </div>
@@ -782,13 +782,13 @@ function round2(x) { return Math.round(x * 100) / 100; }
 function renderCosine4a(cosine_4a) {
   Plotly.newPlot('chart-4a',
     MAIN_MODELS.map(model => {
-      const d = cosine_4a.filter(r=>r.model===model).sort((a,b)=>a.wave_from<b.wave_from?-1:1);
-      return { x:d.map(r=>`${r.wave_from.slice(5)}→${r.wave_to.slice(5)}`), y:d.map(r=>r.sim_mean),
+      const d = cosine_4a.filter(r=>r.model===model).sort((a,b)=>a.wave<b.wave?-1:1);
+      return { x:d.map(r=>r.wave.slice(5)), y:d.map(r=>r.sim_mean),
                error_y:{type:'data',array:d.map(r=>r.sim_std),visible:true,thickness:1.5,width:4,color:MODEL_CLR[model]+'99'},
                mode:'lines+markers', name:MODEL_LABELS[model],
                line:{color:MODEL_CLR[model],width:2.5}, marker:{size:6,color:MODEL_CLR[model]} };
     }),
-    baseLayout({ yaxis:{range:[0,1],title:'Mean Cosine Similarity',gridcolor:'#e8e8e1'}, xaxis:{title:'Wave transition'} }), PCFG);
+    baseLayout({ yaxis:{range:[0,1],title:'Mean Cosine Similarity',gridcolor:'#e8e8e1'}, xaxis:{title:'Wave'} }), PCFG);
 }
 
 function renderCosine4b(cosine_4b_ii) {

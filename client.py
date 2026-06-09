@@ -43,6 +43,8 @@ class LLMResponse:
     latency_ms: int
     model_used: Optional[str] = None   # exact model ID returned by the API
     cost_usd: Optional[float] = None   # upstream inference cost in USD (OpenRouter)
+    reasoning_text: Optional[str] = None    # plaintext thinking content if provided by model
+    reasoning_tokens: Optional[int] = None  # thinking token count from usage
     error: Optional[str] = None
     raw: dict[str, Any] = field(default_factory=dict)
 
@@ -162,14 +164,15 @@ class LLMClient:
                         raise _NoChoicesError(err_msg, raw=data)
 
             latency_ms = int((time.monotonic() - t0) * 1000)
-            choice = data["choices"][0]
-            usage  = data.get("usage", {})
+            choice  = data["choices"][0]
+            usage   = data.get("usage", {})
+            message = choice["message"]
 
-            text = choice["message"]["content"]
+            text = message["content"]
 
             # Append OpenRouter web-search citations if present
             if self._provider == "openrouter":
-                annotations = choice["message"].get("annotations") or []
+                annotations = message.get("annotations") or []
                 sources = []
                 for ann in annotations:
                     if ann.get("type") == "url_citation":
@@ -181,6 +184,12 @@ class LLMClient:
                 if sources:
                     text = text + "\n\n**Sources:**\n" + "\n".join(f"- {s}" for s in sources)
 
+            # Extract reasoning/thinking content
+            reasoning_text = message.get("reasoning") or None
+            reasoning_tokens = (
+                usage.get("completion_tokens_details", {}).get("reasoning_tokens") or None
+            )
+
             return LLMResponse(
                 response_text=text,
                 input_tokens=usage.get("prompt_tokens"),
@@ -189,6 +198,8 @@ class LLMClient:
                 latency_ms=latency_ms,
                 model_used=data.get("model"),
                 cost_usd=usage.get("cost"),
+                reasoning_text=reasoning_text,
+                reasoning_tokens=reasoning_tokens,
                 raw=data,
             )
 
