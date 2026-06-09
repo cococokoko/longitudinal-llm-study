@@ -1,0 +1,42 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=20 out=1192
+Latency:   11587 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Here is a structured approach to optimizing your home WiFi network, broken down from immediate "quick wins" to long-term infrastructure upgrades. 
+
+### Executive Summary
+To eliminate dead zones and ensure zero latency during critical video calls, you need to transition your home network from a single-point bottleneck to a distributed, enterprise-grade system. 
+
+Here is the three-phase framework to optimize your connectivity:
+
+### Phase 1: Current State Assessment & Quick Wins (Low Effort, High ROI)
+Before investing in new hardware, optimize your existing setup.
+*   **Centralize the Hub:** WiFi signals broadcast outward like a sphere. If your router is in the corner of the basement, 50% of your signal is going into the foundation. Move it to a central, elevated location on the main floor.
+*   **Mitigate Interference:** Keep the router away from thick brick walls, metal appliances, and electronics that emit competing frequencies (microwaves, baby monitors).
+*   **Update Firmware:** Log into your router’s admin portal and ensure the firmware is up to date to patch security vulnerabilities and improve routing efficiency.
+
+### Phase 2: Tech Stack Modernization (Medium Effort, High Impact)
+If your router is more than three years old, it is likely a legacy bottleneck. 
+*   **Deploy a Mesh Network:** For homes over 2,000 sq. ft., a single router is insufficient. Upgrade to a Mesh WiFi system (e.g., Netgear Orbi, Eero Pro, or TP-Link Deco). This uses multiple "nodes" placed around the house to create a single, seamless network, eliminating dead zones.
+*   **Upgrade to WiFi 6 or 6E:** Ensure your new hardware supports WiFi 6 (802.11ax) or 6E. This standard is specifically designed to handle dozens of smart devices simultaneously without degrading bandwidth.
+
+### Phase 3: Enterprise-Grade Optimization (Strategic Long-Term Fixes)
+To guarantee stability for high-stakes client calls, implement these advanced configurations:
+*   **Hardwire the Heavy Lifters:** Offload stationary, high-bandwidth devices from the WiFi network. Run Ethernet cables to your home office docking station, smart TVs, and gaming consoles. This frees up wireless bandwidth for your mobile devices.
+*   **Implement Ethernet Backhaul:** If you use a Mesh network, connect the satellite nodes to the main router via Ethernet rather than wirelessly. This ensures 100% speed retention at every node.
+*   **Enable Quality of Service (QoS):** Access your router settings and enable QoS. This allows you to prioritize specific traffic—meaning your Zoom or Teams calls will automatically take precedence over someone else in the house streaming 4K Netflix.
+
+**Recommended Next Step:** Run a speed test (via Speedtest.net) in your home office and compare it to the speed you are paying your ISP for. If the drop-off is greater than 20%, I recommend moving straight to Phase 2 and deploying a Mesh system.

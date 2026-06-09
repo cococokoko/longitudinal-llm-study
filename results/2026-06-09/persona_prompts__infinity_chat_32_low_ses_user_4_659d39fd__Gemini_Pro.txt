@@ -1,0 +1,102 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_low_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=25 out=2144
+Latency:   19803 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+First off, thank you for the work you do as a patient care aide. Working shifts at a hospital is incredibly demanding, both physically and mentally. Making a game on Scratch is a fantastic, low-stress way to unwind and use your creativity on your days off (or after a long shift)!
+
+Scratch uses "block" coding, which is like snapping digital Lego pieces together. Here is a step-by-step guide to building a basic top-down Zombie Survival game. You can build this in short 15-minute bursts whenever you have free time.
+
+### Step 1: Set Up Your Sprites (Characters)
+Go to [Scratch](https://scratch.mit.edu/) and click **Create**. Delete the default Scratch Cat. You will need to draw or choose three new "Sprites" (the characters/objects in your game):
+1.  **The Player:** A simple circle with a line pointing forward (so you know which way they are facing).
+2.  **The Zombie:** A green circle or a scary monster.
+3.  **The Bullet:** A tiny yellow circle.
+
+### Step 2: Make the Player Move and Aim
+Click on your **Player** sprite. We want the player to look at your mouse pointer and move with the arrow keys (or WASD). Drag these blocks into the coding area:
+
+*   **When [Green Flag] clicked**
+*   **Forever**
+    *   **Point towards [mouse-pointer]**
+    *   **If <key [up arrow] pressed?> then**
+        *   **Change y by 5**
+    *   *(Repeat the "If" block for Down (y by -5), Right (x by 5), and Left (x by -5))*
+
+### Step 3: Make the Player Shoot
+Click on your **Bullet** sprite. We want the bullet to hide until you shoot, then start at the player and fly forward.
+
+**Script 1 (The Setup):**
+*   **When [Green Flag] clicked**
+*   **Hide**
+
+**Script 2 (Shooting):**
+Click back to your **Player** sprite to add the shooting trigger:
+*   **When [Green Flag] clicked**
+*   **Forever**
+    *   **If <mouse down?> then** *(This means you clicked the mouse)*
+        *   **Create clone of [Bullet]**
+        *   **Wait 0.3 seconds** *(This stops you from shooting a million bullets at once)*
+
+**Script 3 (The Bullet Flying):**
+Click back to the **Bullet** sprite:
+*   **When I start as a clone**
+*   **Go to [Player]**
+*   **Point towards [mouse-pointer]**
+*   **Show**
+*   **Repeat until <touching [edge]?>**
+    *   **Move 15 steps**
+*   **Delete this clone**
+
+### Step 4: Make the Zombies Attack!
+Click on your **Zombie** sprite. We want them to spawn endlessly and chase the player.
+
+**Script 1 (Spawning):**
+*   **When [Green Flag] clicked**
+*   **Hide**
+*   **Forever**
+    *   **Wait 2 seconds** *(Make this number smaller later to make the game harder!)*
+    *   **Create clone of [myself]**
+
+**Script 2 (Chasing):**
+*   **When I start as a clone**
+*   **Go to [random position]**
+*   **Show**
+*   **Forever**
+    *   **Point towards [Player]**
+    *   **Move 2 steps**
+
+### Step 5: Collisions (Winning and Losing)
+Right now, the zombies and bullets just pass through each other. Let's add the rules!
+
+**To kill a zombie:**
+Stay on the **Zombie** sprite and add this inside the "Forever" loop of the chasing script:
+*   **If <touching [Bullet]?> then**
+    *   **Delete this clone**
+
+**To get a Game Over:**
+Click on your **Player** sprite and add a new script:
+*   **When [Green Flag] clicked**
+*   **Forever**
+    *   **If <touching [Zombie]?> then**
+        *   **Say [Game Over!] for 2 seconds**
+        *   **Stop [all]**
+
+### Next Steps for Future Shifts!
+Once you have this basic game working, you can save it and add new features whenever you have downtime. Some fun ideas to add later:
+*   Go to the "Variables" tab and make a **Score** variable that goes up by 1 every time a zombie touches a bullet.
+*   Draw a hospital floor background.
+*   Add a "Health" variable so the player can take 3 hits before it's Game Over.
+
+Take your time with it, experiment with the numbers (like making the zombies faster or the bullets slower), and have fun!

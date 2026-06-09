@@ -1,0 +1,18 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_62_high_ses_customer_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=25 out=551
+Latency:   6552 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide a few sentences on Sisu Cinema Robotics.
+
+── Response ────────────────────────────────────────────────────────
+Sisu Cinema Robotics is a technology company that designs and manufactures highly precise, programmable motion-control camera robots for the film and video production industry. Their robotic arms are engineered to execute complex, high-speed camera movements with exact repeatability, akin to the precision instrumentation often utilized in advanced laboratory research. By pairing these industrial-grade robots with an intuitive software interface, Sisu enables creators to easily program intricate, dynamic shots without requiring specialized engineering expertise.

@@ -1,0 +1,90 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_42_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=569
+Latency:   5864 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on what you want to track and how much effort you're willing to put into logging. If you're working full-time with an unpredictable schedule, apps that are quick to use and have good automation features can be especially helpful.
+
+Fitness + nutrition all-in-one:
+- MyFitnessPal
+  - Large food database
+  - Barcode scanning (availability depends on subscription/region)
+  - Tracks calories, macros, weight, and exercise
+  - Integrates with many fitness devices and apps
+  - Good overall choice for most people
+
+- Cronometer
+  - More accurate nutrition data than many competitors
+  - Tracks vitamins and minerals in detail
+  - Great if you care about nutrition quality, not just calories
+  - Less focused on social features
+
+Nutrition-focused:
+- MacroFactor
+  - Uses your logged food and weight trends to adjust calorie targets
+  - Strong for fat loss, muscle gain, or maintenance
+  - Premium app with no free version
+  - Reduces guesswork about calorie needs
+
+- Lose It!
+  - Simple interface
+  - Fast food logging
+  - Good weight-loss tools and goal setting
+  - Often easier for beginners than more data-heavy apps
+
+Fitness/workout tracking:
+- Strong
+  - Excellent for strength training
+  - Easy workout logging
+  - Tracks progress over time
+  - Good for gym-based lifting
+
+- Hevy
+  - Similar to Strong
+  - Includes social and community features
+  - Clean interface and strong exercise library
+
+- Nike Training Club
+  - Free workouts
+  - Good for home workouts and limited equipment
+  - Helpful if your schedule makes it hard to follow a fixed gym routine
+
+Activity and habit tracking:
+- Apple Fitness (Apple users)
+  - Works well with Apple Watch
+  - Tracks activity, workouts, and trends
+
+- Fitbit
+  - Good for daily activity, sleep, and heart-rate tracking
+  - Easy-to-understand health metrics
+
+- Garmin Connect
+  - Excellent for runners, cyclists, and endurance athletes
+  - Detailed performance analytics
+
+Best choices by goal:
+- Overall fitness and nutrition: MyFitnessPal
+- Most accurate nutrition tracking: Cronometer
+- Fat loss with data-driven calorie targets: MacroFactor
+- Beginner-friendly weight loss: Lose It!
+- Strength training: Strong or Hevy
+- Home workouts and flexibility: Nike Training Club
+
+If you tell me:
+- Your main goal (lose fat, build muscle, improve fitness, maintain weight, etc.)
+- Whether you use iPhone or Android
+- Whether you want free apps only
+
+I can narrow it down to the top 2–3 options for your situation.

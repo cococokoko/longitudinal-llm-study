@@ -1,0 +1,40 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=6 out=1623
+Latency:   20673 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving your home WiFi can range from simple, free tweaks to upgrading your hardware. Here is a step-by-step guide to getting a faster, more reliable connection, starting with the easiest solutions.
+
+### 1. Free & Easy Fixes (Do these first)
+*   **Move your router:** WiFi signals struggle to pass through metal, concrete, and water. Place your router in a **central location**, ideally **high up** (like on a shelf), and away from thick walls, microwaves, cordless phones, and large metal appliances. 
+*   **Reboot your router:** The classic "turn it off and on again" works. Unplug your router, wait 30 seconds, and plug it back in. This clears the router's memory and allows it to install pending updates.
+*   **Switch frequency bands:** Most modern routers are "dual-band." 
+    *   Use the **2.4 GHz band** for devices far away from the router (it reaches further but is slower).
+    *   Use the **5 GHz band** for devices close to the router (it is much faster but has a shorter range).
+*   **Disconnect unused devices:** Smart home devices, old tablets, and phones constantly draw bandwidth. Disconnect devices you no longer use.
+
+### 2. Tweak Your Settings (Slightly more technical)
+*   **Change your WiFi channel:** If you live in a crowded apartment building, your neighbors' WiFi might be interfering with yours. You can use a free app like *WiFi Analyzer* (Android) or *AirPort Utility* (iOS) to find the least crowded channel, then log into your router's settings to switch to that channel.
+*   **Update your router’s firmware:** Just like your phone, your router needs software updates to run efficiently and securely. Check your router’s mobile app or web interface for updates.
+*   **Secure your network:** If your WiFi doesn't have a strong password, neighbors might be stealing your bandwidth. Ensure your security is set to **WPA2 or WPA3** and use a complex password.
+
+### 3. Hardware Upgrades (If the free fixes don't work)
+*   **Upgrade to a Mesh WiFi System:** If you have a large home (over 2,000 sq ft) or a house with brick/concrete walls, a mesh system (like Amazon Eero, Google Nest WiFi, or TP-Link Deco) is the best solution. It uses multiple "nodes" placed around the house to create one seamless, strong network.
+*   **Buy a new router:** If your router is more than 4 or 5 years old, it is likely outdated. Look for a router that supports **WiFi 6 or WiFi 6E**, which are designed to handle dozens of devices at once without slowing down.
+*   **Use a WiFi Extender:** If you only have one specific "dead zone" in your house, a cheap WiFi extender can help. *Note: Extenders usually cut your internet speed in half, so they are best for basic web browsing, not heavy gaming or 4K streaming.*
+
+### 4. Use Wires Where Possible
+WiFi is convenient, but a wired connection is always faster and more stable. 
+*   **Ethernet:** Plug stationary, high-bandwidth devices (like Smart TVs, gaming consoles, and desktop computers) directly into the router using an Ethernet cable.
+*   **Powerline Adapters:** If your router is in the living room but your PC is upstairs, you can buy a Powerline Adapter. This clever device plugs into your wall outlets and routes your internet through your home's existing electrical wiring. 
+
+**Summary recommendation:** Start by moving your router to a central, elevated location. If your home is large and you still have dead zones, investing in a **Mesh WiFi system** is the most effective long-term solution.

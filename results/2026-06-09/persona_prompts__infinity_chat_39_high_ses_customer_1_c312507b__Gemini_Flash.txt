@@ -1,0 +1,71 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=29 out=1134
+Latency:   8767 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon at a major teaching hospital, your time is exceptionally valuable, and your cognitive load is already immense. You do not need to learn how to write boilerplate code or build standard web applications. 
+
+To remain highly relevant—and indeed, to lead—at the intersection of medicine and technology over the next decade, your focus should be on **computational medicine, human-machine interfaces, and clinical AI integration**. 
+
+Here is a tailored roadmap of what you should learn, categorized by conceptual understanding and practical application, designed to leverage your unique domain expertise.
+
+---
+
+### 1. Deep Learning & Computer Vision (The "Eyes" of AI)
+In neurosurgery, spatial precision is everything. AI is rapidly transforming neuroradiology and intraoperative navigation.
+*   **What to learn:** 
+    *   **Convolutional Neural Networks (CNNs) and Transformers:** Understand how these architectures process 3D medical imaging (MRI, CT, fMRI).
+    *   **Image Segmentation:** How algorithms delineate tumor margins, vascular structures, or white matter tracts (tractography).
+    *   **Generative AI in Imaging:** How latent diffusion models are used for synthetic data generation or image-to-image translation (e.g., translating a low-field MRI to look like a high-field MRI).
+*   **Why it matters:** You will be the one validating these models for clinical use. Understanding how they "see" allows you to identify edge cases where the AI might fail during a resection.
+
+### 2. Brain-Computer Interfaces (BCIs) & Signal Processing
+As a neurosurgeon, you are uniquely positioned at the physical interface of hardware and the human nervous system. 
+*   **What to learn:**
+    *   **Digital Signal Processing (DSP):** How to filter, analyze, and interpret raw electrophysiological data (EEG, ECOG, single-unit recordings).
+    *   **Neural Decoding Algorithms:** How machine learning models translate neural firing patterns into motor commands or synthesized speech (e.g., the software powering modern implants like Neuralink, Synchron, or Blackrock).
+    *   **Closed-Loop Systems:** How software processes real-time neural feedback to trigger therapeutic stimulation (e.g., responsive neurostimulation for epilepsy or deep brain stimulation for Parkinson's).
+
+### 3. Medical Robotics & Spatial Computing
+The operating room is becoming a software-defined environment.
+*   **What to learn:**
+    *   **Kinematics and Path Planning:** The software principles behind robotic-assisted surgery (e.g., stereotactic robots).
+    *   **Augmented/Virtual Reality (AR/VR) Development:** Basic concepts of Unity or Unreal Engine. Understand how pre-operative 3D models are projected onto the patient’s anatomy in real-time during surgery.
+    *   **Digital Twins:** The concept of creating a virtual, dynamically updated software model of a patient’s specific cerebrovascular system to simulate endovascular procedures before making an incision.
+
+### 4. Clinical LLMs & Healthcare Data Standards
+The administrative burden in medicine is a primary driver of burnout. Software is solving this, but it requires clinical oversight.
+*   **What to learn:**
+    *   **Large Language Models (LLMs) in Healthcare:** How models like Med-PaLM or clinical GPTs are fine-tuned on medical literature and electronic health records (EHR).
+    *   **FHIR (Fast Healthcare Interoperability Resources):** The modern API standard for exchanging healthcare data. Understanding FHIR allows you to understand how a software tool can actually integrate with Epic or Cerner.
+    *   **Retrieval-Augmented Generation (RAG):** How AI can query a hospital's internal database to provide real-time, evidence-based clinical decision support.
+
+---
+
+### How to Approach Learning (Without Getting Bogged Down)
+
+As a surgeon, you do not need to be a "code monkey." Your goal is to achieve **conceptual literacy and architectural understanding** so you can direct engineers, lead research, and evaluate commercial technologies.
+
+1.  **Skip the Basics, Start with Python:** Do not waste time on HTML/CSS or JavaScript. Start directly with **Python**. It is the lingua franca of AI, data science, and neuroscience.
+2.  **Focus on High-Level Frameworks:** 
+    *   Learn **PyTorch** (the dominant framework for AI research).
+    *   Explore **MONAI** (Medical Open Network for AI), an open-source, PyTorch-based framework specifically designed for deep learning in medical imaging.
+3.  **Learn "Prompt Engineering" and Agentic Workflows:** Learn how to orchestrate AI agents to automate clinical workflows, draft operative notes, or synthesize research.
+4.  **Understand AI Ethics and Regulation:** Familiarize yourself with Software as a Medical Device (SaMD) regulations, FDA approval pathways for AI, and the ethics of algorithmic bias in clinical decision-making.
+
+### Your Ultimate Value Proposition
+The tech world is full of brilliant software engineers who do not understand the difference between a subdural and an epidural hematoma, let alone the tactile feedback of a micro-dissector. 
+
+By learning the high-level architecture of software development, machine learning, and data pipelines, you become the ultimate translator: **the clinician-innovator who can bridge the gap between the silicon valley and the operating theatre.**

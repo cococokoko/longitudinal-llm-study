@@ -1,0 +1,45 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_high_ses_user_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=281
+Latency:   5712 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a tenured professor at a prestigious university.
+
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Example of a Linear Graph (Path Graph)
+
+A simple example is the **path graph P₄**, consisting of 4 vertices connected in a line:
+
+```
+A --- B --- C --- D
+```
+
+### Formally:
+- **Vertices:** V = {A, B, C, D}
+- **Edges:** E = {AB, BC, CD}
+
+### Key Properties:
+| Property | Value |
+|----------|-------|
+| Number of vertices | 4 |
+| Number of edges | 3 |
+| Degree of endpoints (A, D) | 1 |
+| Degree of interior vertices (B, C) | 2 |
+
+### Notes:
+- Each vertex connects to at most **two neighbors**
+- The graph is **acyclic** (no cycles)
+- It has exactly **two vertices of degree 1** (the endpoints)
+- Generally, a path graph **Pₙ** has *n* vertices and *n−1* edges
+
+This is one of the most fundamental structures in graph theory and serves as a building block for trees and other more complex graphs.
+
+Would you like me to discuss related concepts such as **Hamiltonian paths** or **graph traversal algorithms**?

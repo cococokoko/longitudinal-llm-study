@@ -1,0 +1,35 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_high_ses_customer_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=307
+Latency:   3954 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+As a technology executive, you can think of the distinction through the lens of **problem definition versus solution architecture**.
+
+### 1. The Difference
+*   **Analysis (The "What" and "Why"):** The process of understanding the business domain, identifying user needs, and defining the problem. It establishes the requirements and constraints.
+*   **Design (The "How"):** The process of conceptualizing and planning the technical solution. It translates requirements into architecture, data models, workflows, and user interfaces.
+
+### 2. Can you begin to design without analysis?
+**Technically yes, but strategically no.** 
+
+While a team can immediately start writing code or drawing wireframes (designing), they are operating on assumptions rather than data. 
+
+### 3. Why?
+Designing without analysis introduces severe business risks:
+*   **Building the Wrong Thing:** You risk perfectly executing a solution to a problem that doesn't exist or isn't a priority for the business.
+*   **Scope Creep & High Costs:** Without analytical boundaries, design becomes a moving target. Fixing a design flaw during development is exponentially more expensive than refining a requirement during analysis.
+*   **Technical Debt:** Designing without understanding scale, integration points, and long-term business goals leads to fragile architecture that must be rebuilt later.
+
+**Executive Summary:** Analysis mitigates risk and aligns engineering with business value; design executes that alignment. You must define the target before you can architect the arrow.

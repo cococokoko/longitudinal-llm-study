@@ -1,0 +1,48 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_44_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=378
+Latency:   3696 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on how the disease spreads, but in general the lowest-risk options are those that minimize close contact with other people and reduce time spent in crowded indoor spaces.
+
+Some practical ways to reduce risk:
+
+- Avoid nonessential travel during periods of high transmission if public health authorities recommend doing so.
+- Stay up to date with recommended vaccinations and boosters for the disease in question.
+- Do not travel if you are sick, have symptoms, or have recently tested positive for an infectious disease.
+- Consider testing before and after travel when appropriate.
+
+Lower-risk travel choices:
+- Traveling alone or with members of your household is generally safer than traveling with large groups.
+- Driving in a private vehicle is often lower risk than crowded public transportation because you can control your environment.
+- Outdoor activities and destinations are generally lower risk than crowded indoor attractions.
+
+If using public transportation (planes, trains, buses):
+- Wear a well-fitting, high-quality mask when recommended, especially in crowded or poorly ventilated settings.
+- Choose less crowded travel times when possible.
+- Limit time spent in crowded terminals, stations, or waiting areas.
+- Use hand hygiene regularly, particularly after touching shared surfaces.
+
+Accommodation considerations:
+- Prefer places with good ventilation.
+- Avoid crowded indoor common areas when transmission is high.
+- Follow any local public health guidance.
+
+Before traveling:
+- Check public health recommendations for your destination.
+- Understand local testing, vaccination, or entry requirements if they exist.
+- Have a plan in case you become ill while away from home.
+
+Because you work in a hospital environment, you may also want to be especially cautious about bringing infections home or back to vulnerable patients and coworkers. Following your employer's infection-control guidance and local public health recommendations can help reduce that risk.

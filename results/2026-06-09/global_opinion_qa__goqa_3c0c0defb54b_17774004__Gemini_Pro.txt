@@ -1,0 +1,26 @@
+Wave:      2026-06-09
+Dataset:   global_opinion_qa
+Item ID:   goqa_3c0c0defb54b
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=153 out=268
+Latency:   4058 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people?
+
+Options:
+A. Most people can be trusted
+B. Need to be very careful
+C. Don't know
+D. No answer
+E. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.40, "B": 0.55, "C": 0.04, "D": 0.01, "E": 0.00}

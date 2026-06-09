@@ -1,0 +1,58 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=324
+Latency:   8493 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Given your background as a neurosurgeon, here's a practical and honest breakdown:
+
+## High-Value Areas to Focus On
+
+**Most Relevant to Your Field**
+- Python (data analysis, AI/ML applications)
+- Medical imaging and computer vision basics
+- Clinical data analysis and biostatistics tools
+- Understanding AI model outputs and limitations
+
+**Broadly Valuable**
+- SQL and database fundamentals
+- Basic understanding of APIs
+- Data visualization
+
+## What's Actually Worth Your Time
+
+**Strong priorities:**
+- AI/ML literacy - you'll be evaluating tools that affect patient care
+- Understanding how surgical planning software works
+- Neuroimaging data pipelines (FSL, FreeSurfer concepts)
+- Clinical trial data analysis
+
+**Be realistic about:**
+- You don't need to become a full developer
+- Your value is the **domain expertise combined with technical literacy**
+- Collaborating intelligently with engineers matters more than coding everything yourself
+
+## Practical Suggestion
+
+Focus on being able to:
+- **Critically evaluate** AI diagnostic tools
+- **Communicate precisely** with your technical team
+- **Identify problems** that software could solve in neurosurgery
+- **Understand limitations** of algorithms in clinical settings
+
+## The Honest Reality
+
+A neurosurgeon who understands data and AI well enough to **guide development and spot flaws** is more valuable than one who can code but lacks clinical judgment.
+
+What specific problems are you trying to solve?

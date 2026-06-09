@@ -1,0 +1,87 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=1163
+Latency:   8482 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+Running Dolphin Emulator on a Microsoft Surface using only the touchpad and the on-screen keyboard can be a bit tricky, but it is absolutely possible with the right settings. 
+
+Because your schedule is unpredictable and you might only have quick pockets of time to play, setting this up correctly the first time will save you from wasting your free time troubleshooting later.
+
+Here is a step-by-step guide to getting Dolphin running smoothly with your setup.
+
+---
+
+### Step 1: Optimize the Windows On-Screen Keyboard
+The default Windows touch keyboard sometimes minimizes when you click back into a game. To fix this, we want to use the classic **On-Screen Keyboard (OSK)**, which stays pinned on top of your game.
+
+1. Press the **Windows Start Menu**.
+2. Type **"On-Screen Keyboard"** and open the app (it looks like a traditional keyboard on your screen).
+3. Click the **Options** key on this keyboard (bottom right).
+4. Check the box for **"Turn on numeric key pad"** (this gives you more keys to map to Wii controls) and make sure **"Fade"** is turned off so it stays visible.
+5. Drag the keyboard to the bottom or top of your screen, and resize it so you can still see your game window.
+
+---
+
+### Step 2: Configure Dolphin’s Graphics for a Surface
+Surface devices are great, but they can run hot and drain battery quickly. To get the smoothest performance:
+
+1. Open Dolphin and click **Graphics** on the top toolbar.
+2. **Backend:** Change this to **Direct3D 11** or **Direct3D 12** (these usually run best on Surface integrated graphics).
+3. **Adapter:** Ensure it is set to your Intel or AMD graphics card.
+4. **Aspect Ratio:** Set to **Auto** or **Force 16:9**.
+5. Go to the **Enhancements** tab and set **Internal Resolution** to **1x Native (640x528)** or **Auto (Window Size)**. Keeping this low ensures your Surface won't lag or overheat.
+
+---
+
+### Step 3: Map the Touchpad and Keyboard to Wii Controls
+Since you don't have a physical controller, we need to map the Wii Remote (Wiimote) to your keyboard keys and touchpad. 
+
+1. In Dolphin, click **Controllers** on the top toolbar.
+2. Under **Wiimote 1**, select **Emulated Wiimote** and click **Configure**.
+3. In the configuration window:
+   * **Device:** Select **Keyboard/Mouse** (this is crucial).
+   * **Extension:** If you are playing a game that requires a Nunchuk (like *Super Mario Galaxy* or *Zelda*), select **Nunchuk** from the dropdown menu.
+
+#### Recommended Key Bindings for Touchpad & OSK:
+Since you are using a touchpad, you want to avoid complex mouse-dragging while trying to press keys. 
+
+* **D-Pad (The Wiimote directional pad):** Map to **W, A, S, D** on your keyboard.
+* **Buttons:**
+  * **A Button (Primary action):** Map to **Spacebar** (easy to hit on the OSK) or **Left Click** on your touchpad.
+  * **B Button (Trigger):** Map to **Shift** or **Right Click**.
+  * **1 & 2 Buttons:** Map to **1** and **2** on your keyboard.
+  * **Minus (-) and Plus (+):** Map to **Q** and **E**.
+* **Shake (Simulating shaking the Wiimote):**
+  * Map **X, Y, and Z Shake** to a single, easy-to-reach key, like **F** or **C**. When you press this key, Dolphin will simulate a physical shake.
+
+#### If using a Nunchuk:
+* **Nunchuk Stick:** Map to **Arrow Keys** (Up, Down, Left, Right).
+* **C and Z Buttons:** Map to **Ctrl** and **Alt**.
+
+---
+
+### Step 4: Adjust Touchpad Settings (Crucial for Windows)
+Windows touchpads have a feature called "accidental activation prevention" which disables the touchpad for a split second after you press a key. This will ruin your gameplay if you try to move and click at the same time.
+
+1. Open your Windows **Settings** (Windows Key + I).
+2. Go to **Bluetooth & devices** > **Touchpad**.
+3. Look for **Taps** or **Touchpad sensitivity**.
+4. Set the sensitivity to **Most Sensitive**. This disables the delay so you can use the touchpad and the on-screen keyboard simultaneously.
+
+---
+
+### Quick Tips for Quick Gaming Sessions:
+* **Use Save States:** Since you might need to close the game at a moment's notice, don't rely only on in-game save points. In Dolphin, go to **Options > Hotkey Settings**. Map **Save State** to a key (like `F1`) and **Load State** to another (like `F2`). This lets you freeze your game instantly and pick up exactly where you left off later.
+* **Play in Windowed Mode:** Do not play in Fullscreen. Keeping Dolphin in a window allows you to keep the On-Screen Keyboard visible on the side or bottom of your screen.

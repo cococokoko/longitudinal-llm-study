@@ -1,0 +1,88 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=476
+Latency:   9468 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+A good way to learn coding from scratch is to focus on building understanding through practice rather than trying to absorb everything at once.
+
+A simple path:
+
+1. Pick one beginner-friendly language
+- Python is usually the best choice for most beginners.
+- It has relatively simple syntax and is used in data science, AI, automation, research, and web development.
+
+2. Learn the fundamentals
+Focus on:
+- Variables and data types
+- Conditionals (if/else)
+- Loops
+- Functions
+- Lists, dictionaries, and other basic data structures
+- Reading and writing files
+- Basic debugging
+
+Good free resources:
+- Harvard's CS50 (excellent introduction to computer science)
+- Python's official tutorial
+- freeCodeCamp
+- Automate the Boring Stuff with Python
+
+3. Write code every day
+Even 20–30 minutes daily is more effective than occasional long sessions.
+Try small exercises such as:
+- A calculator
+- A number-guessing game
+- A to-do list program
+- A script that organizes files on your computer
+
+4. Learn to debug
+A large part of programming is figuring out why code does not work.
+Practice:
+- Reading error messages
+- Using print statements or a debugger
+- Looking up documentation
+
+5. Build small projects
+Projects create context for concepts.
+Examples:
+- Personal website
+- Data-analysis script
+- Simple game
+- Research workflow automation
+- Web scraper
+
+6. Learn basic computer science concepts
+Once you're comfortable coding, study:
+- Algorithms
+- Data structures
+- Computational complexity
+- Version control (Git)
+
+7. Use AI as a tutor, not a replacement
+AI can:
+- Explain concepts
+- Review code
+- Suggest improvements
+- Generate examples
+
+But try solving problems yourself before asking for complete solutions. The learning happens in the struggle to formulate and test ideas.
+
+If you're a university professor, it may also be useful to tailor the learning path to your discipline. For example:
+- Humanities: text analysis, digital humanities, web applications
+- Social sciences: data analysis, statistics, surveys
+- Natural sciences: scientific computing, simulation, data processing
+- Business/economics: analytics, forecasting, optimization
+
+What field are you in, and what would you like to do with coding? That would help narrow the recommendations considerably.

@@ -1,0 +1,52 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_02_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=392
+Latency:   4005 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+For dry skin, the goal is to cleanse gently, replenish moisture, and protect the skin barrier.
+
+Morning:
+- Cleanser: Use a gentle, non-foaming cleanser or simply rinse with lukewarm water if your skin isn't oily.
+- Hydrating serum (optional): Look for ingredients such as hyaluronic acid, glycerin, or panthenol.
+- Moisturizer: Choose a richer cream containing ceramides, cholesterol, fatty acids, shea butter, or squalane.
+- Sunscreen: Apply a broad-spectrum SPF 30 or higher every day. Many moisturizing sunscreens work well for dry skin.
+
+Evening:
+- Cleanser: Use a gentle cleanser to remove sunscreen and impurities.
+- Hydrating serum (optional): Apply to slightly damp skin.
+- Moisturizer: Use a richer moisturizer than you might use during the day.
+- Occlusive layer (if very dry): A thin layer of petrolatum-based ointment over moisturizer can help lock in hydration overnight.
+
+Helpful ingredients for dry skin:
+- Ceramides
+- Glycerin
+- Hyaluronic acid
+- Squalane
+- Urea (low concentrations)
+- Colloidal oatmeal
+- Shea butter
+
+Things to avoid or limit:
+- Harsh scrubs
+- Over-cleansing
+- Very hot showers
+- Alcohol-heavy skincare products
+- Strong exfoliating acids if your skin is irritated or flaky
+
+Example simple routine:
+- Morning: Gentle cleanser → Moisturizer → SPF 30+
+- Night: Gentle cleanser → Moisturizer → Thin layer of ointment if needed
+
+If your skin is persistently dry, itchy, red, or cracked despite moisturizing, it may be worth seeing a dermatologist to rule out conditions such as eczema or dermatitis.

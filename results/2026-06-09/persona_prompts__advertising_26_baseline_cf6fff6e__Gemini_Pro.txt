@@ -1,0 +1,44 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1537
+Latency:   16008 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Small businesses are frequent targets for cyberattacks because they often have valuable data but lack the robust security infrastructure of large corporations. 
+
+Here are the best practices for data security in small businesses, broken down into actionable categories:
+
+### 1. Secure Access and Authentication
+*   **Enforce Multi-Factor Authentication (MFA):** Require MFA (or 2FA) for all employee accounts, especially email, financial software, and cloud storage. This is one of the most effective ways to stop unauthorized access.
+*   **Use a Password Manager:** Discourage employees from reusing passwords or writing them down. Provide a business-class password manager (like 1Password, Bitwarden, or Dashlane) to generate and store complex passwords.
+*   **Implement the Principle of Least Privilege (PoLP):** Employees should only have access to the data and systems necessary to do their specific jobs. If someone doesn't need access to HR or financial files, restrict them.
+
+### 2. Protect Devices and Networks
+*   **Automate Software Updates:** Cybercriminals exploit known vulnerabilities in outdated software. Set operating systems, web browsers, and applications to update automatically.
+*   **Secure Your Wi-Fi:** Ensure your business Wi-Fi is encrypted (WPA2 or WPA3). Create a separate, isolated "Guest" network for customers and visitors so they cannot access your internal systems.
+*   **Install Endpoint Protection:** Use reputable antivirus and anti-malware software on all company computers and devices. 
+*   **Manage Mobile Devices (BYOD):** If employees use personal phones for work (Bring Your Own Device), require them to have screen locks, and consider using Mobile Device Management (MDM) software to separate work data from personal data and allow for remote wiping if a device is lost.
+
+### 3. Backup and Encrypt Data
+*   **Follow the 3-2-1 Backup Rule:** Keep **3** copies of your data, on **2** different types of media, with **1** copy stored securely offsite (like in the cloud). 
+*   **Test Your Backups:** A backup is useless if it is corrupted. Regularly test your backups to ensure you can actually restore your data in the event of a ransomware attack or hardware failure.
+*   **Encrypt Sensitive Data:** Ensure that sensitive customer and employee data is encrypted both "at rest" (stored on hard drives) and "in transit" (when being emailed or uploaded). 
+
+### 4. Educate Your Employees
+*   **Conduct Regular Security Training:** Human error is the leading cause of data breaches. Train employees on how to spot phishing emails, suspicious links, and social engineering tactics.
+*   **Establish Clear Policies:** Create a written cybersecurity policy that outlines acceptable use of company devices, how to handle sensitive data, and what to do if they suspect a security incident.
+
+### 5. Prepare for the Worst
+*   **Create an Incident Response Plan:** If a breach happens, you need to know exactly what to do. Create a step-by-step plan detailing who to contact (IT support, legal counsel, law enforcement), how to contain the breach, and how to notify customers.
+*   **Vet Third-Party Vendors:** Your security is only as strong as your weakest vendor. Ensure that any third-party software or service providers you use have strict data security standards.
+*   **Consider Cyber Liability Insurance:** Traditional business insurance rarely covers data breaches. Cyber insurance can help cover the costs of data recovery, legal fees, and customer notification in the event of a hack.
+
+**Where to start?** If you are overwhelmed, start with the "Big Three": **Turn on MFA everywhere, train your employees to spot phishing, and set up automated cloud backups.** These three steps alone will drastically reduce your risk.

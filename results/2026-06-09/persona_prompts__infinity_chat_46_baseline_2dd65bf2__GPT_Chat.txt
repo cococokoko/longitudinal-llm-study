@@ -1,0 +1,28 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=189
+Latency:   2154 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+In graph theory, the term "linear graph" is often used to mean a path graph: a graph whose vertices form a single chain.
+
+Example:
+
+- Vertices: {A, B, C, D, E}
+- Edges: {(A,B), (B,C), (C,D), (D,E)}
+
+Visualized:
+
+A — B — C — D — E
+
+This graph is linear because each internal vertex (B, C, D) has degree 2, and the two end vertices (A, E) have degree 1, forming a single straight path with no branches or cycles.
+
+If you meant "line graph" (a different concept in graph theory), I can give an example of that as well.

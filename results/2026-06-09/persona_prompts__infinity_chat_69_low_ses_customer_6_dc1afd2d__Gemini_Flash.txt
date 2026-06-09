@@ -1,0 +1,39 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_low_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=317
+Latency:   2971 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+Here is the concise breakdown, keeping in mind the demands of a long, busy workday:
+
+### 1. The Difference
+*   **Analysis (The "What"):** Understanding the problem, gathering requirements, and figuring out *what* the system or product needs to do. 
+*   **Design (The "How"):** Planning the solution, creating blueprints, and figuring out *how* to build it to meet those requirements.
+
+*Think of it like warehouse logistics: **Analysis** is figuring out what inventory is coming in and how much space you need. **Design** is drawing the layout of the racks and deciding where the forklifts will run.*
+
+---
+
+### 2. Can you begin to design without analysis?
+**Yes, but it is highly risky and inefficient.** 
+
+---
+
+### 3. Why?
+If you skip analysis and jump straight to design:
+*   **You build the wrong thing:** You waste time designing a solution for a problem you don't actually have.
+*   **Wasted effort:** You will constantly have to stop, backtrack, and redesign when unexpected requirements pop up. 
+*   **Higher costs:** Fixing a mistake on a blueprint (design) is cheap; fixing a mistake after you’ve already started building (or working) is incredibly expensive and exhausting. 
+
+**Bottom line:** Doing design without analysis is like trying to organize a warehouse before you even know what products are arriving. You need to know the *what* before you can plan the *how*.

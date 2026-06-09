@@ -1,0 +1,65 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=29 out=473
+Latency:   5993 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The best remote team collaboration tools depend on your team's size, workflow, and security requirements. Commonly used options include:
+
+- Communication
+  - Microsoft Teams: Chat, video meetings, file sharing, and integration with Microsoft 365.
+  - Slack: Team messaging with channels, direct messages, and extensive app integrations.
+  - Google Chat: Integrated with Google Workspace.
+
+- Video Conferencing
+  - Zoom: Reliable video meetings, webinars, and screen sharing.
+  - Microsoft Teams: Strong option if your organization uses Microsoft 365.
+  - Google Meet: Simple meetings within Google Workspace.
+
+- Project and Task Management
+  - Asana: Task tracking, project planning, and workflow automation.
+  - Trello: Visual Kanban boards that are easy to use.
+  - Monday.com: Flexible project and work management.
+  - Jira: Popular for software development teams.
+
+- Document Collaboration
+  - Google Workspace: Real-time collaboration on documents, spreadsheets, and presentations.
+  - Microsoft 365: Word, Excel, PowerPoint, and OneDrive with collaborative editing.
+  - Notion: Combines notes, documentation, and project tracking.
+
+- Knowledge Management
+  - Confluence: Team documentation and knowledge sharing.
+  - Notion: Useful for wikis, procedures, and team information.
+
+- File Storage and Sharing
+  - OneDrive: Integrated with Microsoft 365.
+  - Google Drive: Cloud storage and document collaboration.
+  - Dropbox: Simple file sharing and synchronization.
+
+For a healthcare environment such as a hospital, it's important to consider:
+- Compliance requirements (such as HIPAA in the United States, if applicable).
+- Data security and access controls.
+- Organization-approved tools and policies.
+- Audit logging and secure file sharing.
+
+A common healthcare-friendly setup is:
+- Microsoft Teams for communication and meetings.
+- Microsoft 365/OneDrive for documents and file storage.
+- A project management tool such as Asana or Monday.com for non-clinical projects.
+
+If you tell me:
+- The size of your team,
+- Whether you're collaborating on patient care, scheduling, training, or administrative work,
+- And whether you're required to use healthcare-compliant tools,
+
+I can give more specific recommendations.

@@ -1,0 +1,42 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=24 out=1170
+Latency:   12109 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Because you work as a patient care aide on a shift schedule, your needs for "remote collaboration" are likely very different from someone working a standard desk job. For frontline healthcare workers, collaboration usually revolves around **secure communication, shift scheduling, and handoffs** rather than project management. 
+
+Here are the best tools broken down by how you might use them, starting with those most relevant to your field:
+
+### 1. Healthcare-Specific & Secure Communication (HIPAA Compliant)
+If you need to communicate with nurses, doctors, or other aides about patient care while on different floors or before a shift, the tools *must* be HIPAA compliant.
+* **TigerConnect:** One of the most popular secure texting apps for healthcare. It allows you to securely message care teams, see who is on call, and share patient updates without violating privacy laws.
+* **Spok / Halo Health:** Similar to TigerConnect, these are clinical communication platforms designed specifically for hospitals to replace outdated pagers and unsecured texting.
+* **Microsoft Teams (Healthcare Edition):** Many hospitals use Teams because it has specific features for frontline workers, including secure messaging, a "Walkie Talkie" feature, and shift management.
+
+### 2. Shift Scheduling & Team Management
+If your goal is to coordinate with your team regarding shift swaps, time-off requests, or general hospital announcements:
+* **When I Work:** Excellent for shift workers. It allows you to easily view your schedule, request time off, and chat with coworkers to swap shifts.
+* **Connecteam:** A great "all-in-one" app for deskless workers. It handles scheduling, time tracking, and has an internal chat feature for team updates.
+* **Homebase or Sling:** Both are very popular for shift scheduling and team messaging, making it easy to see who is working which shift and communicate with them directly.
+
+### 3. General Remote Collaboration 
+If you are asking for a side hustle, going to nursing school, or doing committee work for the hospital, these are the standard gold-standard tools for general remote work:
+* **Messaging:** **Slack** or **Discord** (Great for quick, organized text communication).
+* **Video Conferencing:** **Zoom** or **Google Meet** (Best for virtual meetings).
+* **Task/Project Management:** **Trello** or **Asana** (Great for tracking the progress of projects, assignments, or administrative tasks).
+* **Document Sharing:** **Google Workspace** (Docs, Sheets, Drive) or **Microsoft 365**.
+
+**A quick tip for your hospital:** If you are looking to introduce a tool to your care team to discuss *patients*, you must consult your hospital's IT or compliance department first to ensure the tool meets HIPAA regulations. 
+
+Were you looking for tools to use at the hospital with your fellow aides and nurses, or for a different project outside of work?

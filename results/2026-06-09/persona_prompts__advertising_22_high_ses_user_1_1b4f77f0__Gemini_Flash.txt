@@ -1,0 +1,80 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=1253
+Latency:   9233 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon at a major teaching hospital, your collaboration needs are uniquely complex. You operate in a high-stakes environment that demands absolute data security (HIPAA compliance), rapid communication, high-fidelity imaging sharing, and coordination across multidisciplinary teams (neuroradiology, oncology, neuropathology, and residency programs). 
+
+Standard corporate tools like Slack or Zoom are often insufficient on their own because they lack the security protocols required for Protected Health Information (PHI) or the resolution needed for neuroimaging.
+
+Here are the best remote team collaboration tools categorized by your specific clinical, educational, and administrative needs.
+
+---
+
+### 1. Clinical Collaboration & Case Discussion (HIPAA-Compliant)
+For discussing active cases, sharing intraoperative findings, or consulting with colleagues remotely.
+
+*   **OhMD / TigerConnect:** 
+    *   **What it is:** Secure, HIPAA-compliant clinical messaging platforms.
+    *   **Why it’s best for you:** They replace standard SMS/iMessage for discussing patient care. You can securely text colleagues, send photos of pathology reports, or coordinate resident coverage. TigerConnect integrates with EHRs (like Epic) to deliver real-time patient alerts directly to your phone.
+*   **Microsoft Teams (Healthcare Edition):**
+    *   **What it is:** A secure hub for chat, video calls, and document sharing.
+    *   **Why it’s best for you:** If your hospital uses Microsoft 365, Teams can be configured to be fully HIPAA-compliant. It allows you to set up specific "channels" for different services (e.g., Spine, Pediatric Neurosurgery, Vascular) to share protocols, call schedules, and non-PHI updates.
+
+### 2. Remote Tumor Boards & Multidisciplinary Meetings
+For presenting complex cases to neuroradiology, neuropathology, and oncology teams remotely.
+
+*   **Zoom for Healthcare:**
+    *   **What it is:** The healthcare-specific, HIPAA-compliant version of Zoom (requires a Business Associate Agreement/BAA).
+    *   **Why it’s best for you:** It offers the high-definition video and screen-sharing capabilities required to present MRI/CT scans and pathology slides clearly. It also allows for secure breakout rooms if a subset of the team needs to discuss a case privately.
+*   **Barco Synergi / Demetra:**
+    *   **What it is:** Specialized multidisciplinary team (MDT) workflow software.
+    *   **Why it’s best for you:** It streamlines tumor boards by consolidating patient data, pathology, and PACS images into a single, remote-accessible dashboard, ensuring everyone is looking at the same high-resolution data during virtual meetings.
+
+### 3. Remote Imaging Review & Surgical Planning
+For reviewing DICOM files and planning surgeries with colleagues or residents from home or another campus.
+
+*   **Ambra Health (by Intelerad):**
+    *   **What it is:** A cloud-based PACS and DICOM viewer.
+    *   **Why it’s best for you:** It allows you to securely view, share, and collaborate on complex neuroimaging (MRIs, CTs, angiograms) from any device (iPad, home computer) without needing a VPN into the hospital’s main PACS. You can annotate scans and share them with referring physicians instantly.
+*   **Brainlab Brainlab.Org / Elements (Cloud Services):**
+    *   **What it is:** Cloud-based surgical planning software.
+    *   **Why it’s best for you:** Brainlab allows for remote, collaborative pre-operative planning. You can segment tumors, plan trajectories for stereotactic biopsies or DBS, and share these plans with co-surgeons or residents remotely before stepping into the OR.
+
+### 4. Residency Training & Education
+For managing a major teaching hospital’s neurosurgery residency program.
+
+*   **Slack (Enterprise Grid with HIPAA Compliance):**
+    *   **What it is:** A channel-based messaging platform.
+    *   **Why it’s best for you:** Excellent for organizing a residency program. You can have channels for `#journal-club`, `#morbidity-mortality`, `#call-schedule`, and `#research`. *Note: Ensure your institution has signed a BAA with Slack before any patient-related data is discussed.*
+*   **Trello or Asana:**
+    *   **What it is:** Visual project management boards.
+    *   **Why it’s best for you:** Ideal for tracking academic research projects, grant applications, and resident milestone progress. You can see who is writing which paper, what stage the IRB approval is in, and target submission dates.
+
+### 5. Secure Document Collaboration & Research
+For co-authoring papers, clinical trials, and department protocols.
+
+*   **Box for Healthcare:**
+    *   **What it is:** Cloud content management and file sharing.
+    *   **Why it’s best for you:** Unlike standard Dropbox or Google Drive, Box offers robust HIPAA compliance and data encryption. It is the gold standard for storing and collaborating on research datasets, clinical trial protocols, and high-resolution surgical videos.
+*   **Overleaf:**
+    *   **What it is:** A collaborative, cloud-based LaTeX editor.
+    *   **Why it’s best for you:** If your academic team writes highly technical papers with complex formatting, equations, or heavy bibliography needs, Overleaf allows multiple neurosurgeons and researchers to write and edit the same paper simultaneously.
+
+### Summary Recommendation for Your Department:
+To build the ultimate remote collaboration stack, you should ideally combine:
+1.  **Microsoft Teams (Healthcare)** or **Zoom for Healthcare** for virtual meetings and tumor boards.
+2.  **Ambra Health** for remote imaging review.
+3.  **TigerConnect** for rapid, secure clinical texting.
+4.  **Box for Healthcare** for research and administrative document sharing.

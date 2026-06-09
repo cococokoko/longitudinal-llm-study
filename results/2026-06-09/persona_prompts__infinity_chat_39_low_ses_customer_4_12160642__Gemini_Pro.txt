@@ -1,0 +1,43 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_low_ses_customer_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=31 out=966
+Latency:   10106 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Transitioning into software development is a fantastic goal, and your current experience as a patient care aide gives you a massive, unique advantage. The **HealthTech** industry is booming, and developers who actually understand clinical workflows, patient needs, and hospital environments are incredibly rare and highly valued.
+
+To be relevant in the future of software development, especially with your background, here is a strategic roadmap of what you should learn:
+
+### 1. The Core Foundations (Start Here)
+Before jumping into futuristic tech, you need a solid base. 
+* **Python:** This is arguably the most future-proof language right now. It is beginner-friendly, widely used in healthcare data, and is the primary language for Artificial Intelligence (AI).
+* **JavaScript, HTML, and CSS:** If you want to build user interfaces (like patient portals or hospital dashboard apps), JavaScript is the undisputed king of the web. 
+
+### 2. Future-Proof Technologies (The Next 5-10 Years)
+Once you have the basics down, focus on these areas that are shaping the future:
+* **Artificial Intelligence (AI) & Machine Learning:** You don't need a PhD to use AI. Learn how to integrate AI APIs (like OpenAI) into applications. In healthcare, AI is being used for everything from predicting patient falls to automating charting.
+* **Cloud Computing:** Hospitals and businesses are moving their data to the cloud. Learning the basics of **AWS (Amazon Web Services)** or **Microsoft Azure** will make your resume stand out.
+* **Data Privacy & Security:** Because you work in a hospital, you already know about HIPAA. Learning how to build *secure* software and manage data privacy is a highly sought-after skill that will never go out of style.
+
+### 3. The "Healthcare Tech" Niche (Your Secret Weapon)
+If you want to leverage your PCA experience, look into these specific areas once you know how to code:
+* **FHIR and HL7:** These are the standard protocols for how electronic health records (EHRs like Epic or Cerner) talk to each other. Developers who know FHIR are in massive demand.
+* **Wearable Tech Integration:** Learning how software interacts with devices like Apple Watches or continuous glucose monitors is a huge growth area in preventative patient care.
+
+### How to balance this with hospital shifts:
+Since you work shifts, traditional bootcamps might be tough to schedule. 
+* **Micro-learning:** Focus on platforms like FreeCodeCamp, Codecademy, or Udemy where you can code for 30–45 minutes before a shift or on your days off. 
+* **Consistency over intensity:** Coding is like learning a spoken language. Doing 20 minutes a day is much better than doing 5 hours once a week.
+
+**Where to start today:** I highly recommend starting with **Python**. It’s logical, reads almost like English, and will open doors to both general software development and the AI/data side of healthcare.

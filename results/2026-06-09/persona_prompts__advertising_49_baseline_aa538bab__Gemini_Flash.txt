@@ -1,0 +1,71 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=6 out=995
+Latency:   7032 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving your home WiFi doesn’t always require buying expensive new equipment. Often, simple adjustments to your current setup can yield massive improvements. 
+
+Here is a step-by-step guide to improving your home WiFi, ranked from easiest/free methods to hardware upgrades.
+
+---
+
+### Phase 1: Optimize What You Have (Free & Easy)
+
+#### 1. Relocate Your Router
+*   **Centralize it:** Place the router in the center of your home, not in a corner, closet, or behind the TV. WiFi signals travel outward in all directions.
+*   **Elevate it:** Put the router on a shelf or table. Signals travel better downward and horizontally than upward through floors.
+*   **Avoid obstacles:** Keep it away from thick concrete walls, brick chimneys, metal fixtures, and large mirrors.
+
+#### 2. Change the Channel and Band
+Modern routers have two main "bands": **2.4 GHz** and **5 GHz**.
+*   **Use 5 GHz for speed:** It is much faster and has less interference, but has a shorter range. Use this for gaming, streaming, and work computers.
+*   **Use 2.4 GHz for range:** It is slower but travels farther and through walls better. Use this for smart home devices (smart plugs, bulbs) and devices far from the router.
+*   **Avoid interference:** Keep your router away from microwaves, baby monitors, and Bluetooth devices, which also use the 2.4 GHz frequency.
+
+#### 3. Adjust the Antennas
+*   If your router has external antennas, angle them. If you have two, point **one vertically and one horizontally**. Device antennas inside laptops and phones are oriented differently; this ensures a good connection regardless of how you hold your device.
+
+#### 4. Reboot Regularly
+*   Like computers, routers get bogged down with cache and background processes. Set a schedule to reboot your router once a month, or buy a cheap outlet timer to automatically reboot it at 4:00 AM once a week.
+
+---
+
+### Phase 2: Software & Settings Tweaks
+
+#### 1. Update the Firmware
+*   Log into your router’s admin page (the address is usually printed on a sticker on the router, e.g., `192.168.1.1`) and check for firmware updates. Manufacturers release updates that patch security holes and improve performance.
+
+#### 2. Kick Off Unwanted Guests
+*   **Change your password:** If your WiFi is open or has an easy password, neighbors might be stealing your bandwidth. Use WPA2 or WPA3 encryption.
+*   **Set up a Guest Network:** Put visitors and smart home devices (which are easily hacked) on a separate guest network to free up bandwidth on your main network.
+
+#### 3. Enable Quality of Service (QoS)
+*   If your router has QoS settings (found in the admin panel), turn it on. This allows you to prioritize certain traffic. For example, you can tell the router to prioritize Zoom calls and gaming over Netflix downloads.
+
+---
+
+### Phase 3: Hardware Upgrades (If the above fails)
+
+#### 1. Upgrade to a Mesh WiFi System
+*   If you live in a large home (over 2,000 sq. ft.) or a home with concrete walls, a single router won't cut it. 
+*   **Mesh systems** (like Eero, Google Nest WiFi, or TP-Link Deco) use multiple nodes placed around the house to create one seamless, high-speed network.
+
+#### 2. Use Powerline Adapters or MoCA
+*   If you can't run Ethernet cables through your walls, use your home's existing wiring:
+    *   **Powerline Adapters:** Send internet signals through your home's electrical outlets.
+    *   **MoCA Adapters:** Send internet signals through your home's coaxial (cable TV) outlets. This is incredibly fast and stable.
+
+#### 3. Buy a New Router
+*   If your router is more than 4–5 years old, it’s time for an upgrade. Look for a router that supports **Wi-Fi 6 (802.11ax)** or **Wi-Fi 6E/7**. These standards handle crowded households with dozens of smart devices much better than older Wi-Fi 5 (802.11ac) routers.
+
+#### 4. Use a Wired Connection (Ethernet)
+*   For stationary devices that require maximum speed and zero latency (gaming consoles, desktop PCs, smart TVs), **always use a physical Ethernet cable** if possible. This frees up wireless bandwidth for your phones and laptops.

@@ -1,0 +1,52 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=10 out=1407
+Latency:   13273 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The "best" tools for remote team collaboration depend heavily on your team's size, workflow, and budget. However, the industry standards generally fall into a few key categories. 
+
+Here is a breakdown of the best remote collaboration tools, categorized by their primary function:
+
+### 1. Real-Time Communication (Chat)
+*   **Slack:** The undisputed king of channel-based messaging. It integrates with almost every other tool on the market, allows for easy file sharing, and features "Huddles" for quick, informal voice chats.
+*   **Microsoft Teams:** Best if your company already uses the Microsoft ecosystem. It combines chat, video meetings, and file storage into one robust (though sometimes clunky) platform.
+*   **Discord:** Originally for gamers, many startups and tech teams use Discord for its always-on voice channels, which simulate the feeling of sitting in an open office.
+
+### 2. Video Conferencing
+*   **Zoom:** The standard for reliable, high-quality video calls. It handles large groups exceptionally well and offers great breakout room features.
+*   **Google Meet:** The best frictionless option. If you use Google Calendar, joining a Meet link takes one click, with no software downloads required.
+
+### 3. Project & Task Management
+*   **Asana:** Excellent for general project management. It offers list, board, and timeline views, making it easy to track who is doing what and by when.
+*   **Trello:** The best tool for simple, visual task management. It uses a Kanban board system (cards and columns) that is incredibly intuitive for beginners.
+*   **Monday.com:** Highly customizable and visually appealing. It’s great for teams that need to build custom workflows, track CRM data, or manage complex projects.
+*   **Jira:** The gold standard for software development and engineering teams using Agile or Scrum methodologies.
+*   **Notion:** An all-in-one workspace. It acts as a company wiki, document editor, and project tracker. It is highly customizable but has a slight learning curve.
+
+### 4. File Sharing & Document Collaboration
+*   **Google Workspace (Docs, Sheets, Drive):** The best for real-time, simultaneous editing. Multiple people can work on a document at the exact same time without version-control issues.
+*   **Microsoft 365 (Word, Excel, OneDrive):** The best choice for enterprise teams that require advanced formatting, heavy data processing (Excel), and strict security compliance.
+
+### 5. Asynchronous Communication
+*   **Loom:** A massive time-saver for remote teams. Loom allows you to record your screen and your face simultaneously to explain a concept, give feedback, or present a report without having to schedule a live meeting.
+
+### 6. Brainstorming & Whiteboarding
+*   **Miro:** An infinite digital whiteboard. It is perfect for remote brainstorming, mind-mapping, user journey mapping, and agile planning.
+*   **FigJam (by Figma):** A slightly simpler, highly collaborative whiteboard tool that is especially popular among design and product teams.
+
+### 7. Design Collaboration
+*   **Figma:** The absolute standard for UI/UX design. Multiple designers and copywriters can work on the same design file simultaneously, and developers can easily pull code snippets from it.
+
+### How to choose the right "Stack"
+To avoid **"tool fatigue"** (where your team spends more time managing apps than doing actual work), try to keep your stack lean. A standard, highly effective remote stack looks like this:
+*   **The Google Stack:** Slack (Chat) + Google Workspace (Email/Docs/Video) + Asana (Projects) + Loom (Async video).
+*   **The Microsoft Stack:** Microsoft Teams (Chat/Video) + Microsoft 365 (Email/Docs) + Monday.com (Projects).

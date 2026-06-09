@@ -1,0 +1,72 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=20 out=1988
+Latency:   25234 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+Playing Wii games on Dolphin Emulator using only a Microsoft Surface touchpad and the Windows On-Screen Keyboard (OSK) is entirely possible, though it requires some specific setup. Because Wii games rely heavily on motion controls and pointing, you will need to map these functions carefully.
+
+Here is a step-by-step guide to setting this up for the best possible experience.
+
+### Step 1: Prepare Your Surface
+1. **Enable the On-Screen Keyboard:** Press **Windows Key + Ctrl + O** to bring up the built-in Windows On-Screen Keyboard. 
+2. **Keep it visible:** You will need to run Dolphin in **Windowed Mode** (not fullscreen). If you run it in fullscreen, the game will cover the keyboard.
+3. **Touchpad settings:** Ensure "Tap to click" is enabled in your Windows Touchpad settings for easier clicking.
+
+### Step 2: Open Dolphin Controller Settings
+1. Open Dolphin Emulator.
+2. Click on the **Controllers** button at the top.
+3. Under "Wii Remotes," look at **Wii Remote 1**.
+4. Change the dropdown menu to **Emulated Wii Remote**.
+5. Click the **Configure** button next to it.
+6. At the top left of the new window, ensure the **Device** is set to `Keyboard Mouse` (it might look something like `DInput/0/Keyboard Mouse`).
+
+### Step 3: Map the Controls
+Here is the most efficient way to map a Wiimote to a touchpad and OSK. Click the box next to each input in Dolphin, then press the corresponding key on your OSK or click your touchpad.
+
+**Buttons:**
+*   **A Button:** Map this to **Left Click** on your touchpad.
+*   **B Button (Trigger):** Map this to **Right Click** on your touchpad.
+*   **D-Pad (Up, Down, Left, Right):** Map these to **W, A, S, D** or the **Arrow Keys** on your OSK.
+*   **- (Minus) / + (Plus):** Map to **Q** and **E**.
+*   **1 and 2 Buttons:** Map to **1** and **2** on the OSK number row.
+*   **Home:** Map to **Enter** or **Backspace**.
+
+**Motion Simulation (Crucial for Wii Games):**
+Many Wii games require you to "shake" the remote.
+1. Go to the **Motion Simulation** tab.
+2. Look for the **Shake** section (X, Y, and Z).
+3. Map all three (X, Y, and Z) to the **Spacebar** on your OSK. Now, whenever a game asks you to shake the controller, just tap the Spacebar.
+
+**IR Pointer (The Wii Screen Cursor):**
+You want your touchpad to act as the Wii pointer.
+1. Go to the **Motion Input** tab (or **Point** tab, depending on your Dolphin version).
+2. Under **Point**, map them as follows:
+    *   **Up:** `Cursor Y-` (Move your finger up on the touchpad)
+    *   **Down:** `Cursor Y+` (Move your finger down)
+    *   **Left:** `Cursor X-` (Move your finger left)
+    *   **Right:** `Cursor X+` (Move your finger right)
+3. *Note:* Check the "Relative Input" box if your cursor feels like it's flying off the screen too easily.
+
+### Step 4: Nunchuk Setup (If your game requires it)
+If you are playing a game like *Super Mario Galaxy* or *Zelda*, you need a Nunchuk.
+1. On the main configuration screen, look at the **Extension** dropdown on the right side.
+2. Select **Nunchuk**.
+3. Click the **Configure** button next to it.
+4. **Stick (Movement):** Map Up/Down/Left/Right to **I, J, K, L** (since WASD is your D-Pad).
+5. **C and Z buttons:** Map to **U** and **O**.
+
+### Important Tips for Playing This Way
+*   **Multi-touch limitations:** The Windows On-Screen Keyboard does not handle pressing multiple keys at the exact same time very well. Games that require you to hold a button while pressing another might be frustrating.
+*   **Game Selection:** This setup works best for games that don't require fast reflexes. Turn-based RPGs (like *Fire Emblem*), puzzle games, or point-and-click games will work great. Fast-paced platformers will be very difficult.
+*   **Profile Saving:** Once you map all these keys, type a name (like "Surface Touchpad") into the **Profile** box at the top right of the controller config screen and click **Save**. This way, you don't have to remap it if you accidentally change a setting.
+
+*Alternative Suggestion:* Because the Surface has built-in Bluetooth, if you find the OSK too frustrating, you can easily pair a standard Xbox, PlayStation, or Nintendo Switch Pro controller to your Surface and map the Dolphin controls to that instead!

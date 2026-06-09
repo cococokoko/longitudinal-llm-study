@@ -1,0 +1,53 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=301
+Latency:   6256 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Example of a Linear Graph (Path Graph)
+
+### Definition
+A **linear graph** (also called a **path graph**) is a graph where vertices are connected in a single straight sequence, with each vertex connected to the next by exactly one edge.
+
+---
+
+### Simple Example: P₄ (Path Graph with 4 vertices)
+
+```
+A ——— B ——— C ——— D
+```
+
+**Vertices:** {A, B, C, D}
+
+**Edges:** {AB, BC, CD}
+
+---
+
+### Properties of this example:
+
+| Property | Value |
+|----------|-------|
+| Number of vertices | 4 |
+| Number of edges | 3 |
+| Degree of endpoints (A, D) | 1 |
+| Degree of interior vertices (B, C) | 2 |
+| Is it connected? | Yes |
+| Contains a cycle? | No |
+
+---
+
+### Key Characteristics
+- **Two endpoints** (degree 1) — A and D
+- **Interior vertices** have degree 2
+- It is a **tree** (connected, acyclic)
+- Exactly **n − 1 edges** for *n* vertices
+
+This is one of the most fundamental structures in graph theory, used in modeling roads, pipelines, and network chains.

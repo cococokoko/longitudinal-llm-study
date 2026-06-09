@@ -1,0 +1,25 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=149
+Latency:   2071 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+One high-impact tip: create a predictable cadence for communication and decision-making.
+
+For example:
+- Hold a brief weekly meeting focused on priorities, obstacles, and decisions needed.
+- Clearly assign ownership for each action item.
+- Document key decisions and their rationale in a shared location.
+- Revisit outstanding items at the next meeting.
+
+In research groups, many problems that appear to be performance or motivation issues are actually coordination problems. A consistent system for communication reduces duplicated work, prevents misunderstandings between clinical and research responsibilities, and helps team members make progress without waiting for your direct input on every issue.

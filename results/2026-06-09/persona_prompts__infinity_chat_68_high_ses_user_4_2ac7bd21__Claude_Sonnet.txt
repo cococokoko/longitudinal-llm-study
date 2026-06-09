@@ -1,0 +1,41 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=267
+Latency:   8092 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+# Tip: Create Structured but Brief Regular Check-ins
+
+**One-on-one meetings** with each team member (even 20-30 minutes biweekly) can be remarkably effective because they:
+
+- Surface problems **before they escalate**
+- Give trainees/staff dedicated time to raise concerns without competing for your attention
+- Let you track progress on individual projects more accurately
+- Build trust and psychological safety
+
+## Practical suggestion:
+Use a simple shared document where both you and the team member add agenda items beforehand. This keeps meetings focused and ensures neither side wastes the other's time.
+
+---
+
+**Why this matters specifically in a physician-scientist context:**
+
+Your team likely includes people at very different career stages (students, postdocs, research coordinators, clinical staff) with **very different needs and pressures**. A structured check-in helps you avoid the common trap of only engaging with whoever is loudest or whose deadline is most immediate, while quieter or more independent members drift.
+
+---
+
+Would you like tips on a more specific challenge, such as:
+- Managing conflict
+- Motivating people during slow research phases
+- Balancing clinical vs. lab team dynamics
+- Giving difficult feedback

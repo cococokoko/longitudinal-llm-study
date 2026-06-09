@@ -1,0 +1,101 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=544
+Latency:   4393 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+The best way to start coding from scratch is to focus on building things while learning the fundamentals. A simple path looks like this:
+
+1. Pick one beginner-friendly language
+- Python is often the easiest starting point.
+- It's widely used in automation, data analysis, AI, web development, and more.
+
+2. Learn the basics
+Focus on:
+- Variables
+- Data types (numbers, text, lists)
+- Conditionals (if/else)
+- Loops (for, while)
+- Functions
+- Basic input/output
+
+Free resources:
+- Python.org tutorial
+- freeCodeCamp
+- Harvard's CS50 (excellent introduction to computer science)
+- Automate the Boring Stuff with Python (free online)
+
+3. Practice every day
+Even 20–30 minutes consistently is more effective than occasional long sessions.
+
+Try small exercises such as:
+- A calculator
+- A number guessing game
+- A to-do list program
+- A unit converter
+
+4. Learn how to solve problems
+Coding is largely about breaking big problems into smaller steps.
+Before writing code:
+- Describe the task in plain language.
+- List the steps.
+- Then translate those steps into code.
+
+5. Start small projects early
+Projects help knowledge stick.
+
+Beginner project ideas:
+- Expense tracker
+- Password generator
+- Quiz game
+- Weather app (using a free API)
+- Simple website
+
+6. Learn essential tools
+Once you're comfortable with basics:
+- VS Code (code editor)
+- Git and GitHub (version control)
+- Command line basics
+
+7. Get comfortable with debugging
+Every programmer spends time fixing errors.
+Learn to:
+- Read error messages
+- Use print statements or debuggers
+- Search documentation and technical forums
+
+8. Choose a direction after the basics
+Different goals lead to different technologies:
+
+- Websites:
+  - HTML, CSS, JavaScript
+  - Then React and backend technologies
+
+- Data science / AI:
+  - Python
+  - NumPy, Pandas, Matplotlib
+  - Machine learning libraries
+
+- Mobile apps:
+  - Swift (iPhone)
+  - Kotlin (Android)
+  - Flutter (cross-platform)
+
+- Automation:
+  - Python scripts
+  - APIs
+
+A practical 3-month beginner plan:
+- Month 1: Python fundamentals and small exercises
+- Month 2: Functions, files, debugging, and Git basics
+- Month 3: Build 2–3 small projects and publish them on GitHub
+
+If you tell me your age, experience level, and what you want to build (websites, games, apps, AI, etc.), I can suggest a more specific learning path.

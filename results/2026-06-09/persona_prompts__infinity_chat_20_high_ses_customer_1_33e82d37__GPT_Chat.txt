@@ -1,0 +1,55 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_20_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=40 out=463
+Latency:   4447 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Why is equal pay for equal work not worth imposing on an economy?
+
+── Response ────────────────────────────────────────────────────────
+Whether "equal pay for equal work" is worth imposing depends on what exactly is meant and how it is enforced.
+
+If the phrase means that workers doing substantially the same job with the same qualifications and performance should not be paid differently because of characteristics such as sex, race, or ethnicity, many economists and policymakers argue that enforcing it has benefits:
+- Reduces discrimination.
+- Improves labor-market efficiency by matching pay more closely to productivity.
+- Expands opportunities for talented workers.
+- May increase workforce participation and economic output.
+
+However, there are arguments against strict government-imposed equal-pay rules, especially if they are applied rigidly:
+
+- Difficulty defining "equal work":
+  - Jobs that appear similar may differ in productivity, experience, responsibility, risk, working hours, or scarce skills.
+  - Employers often need flexibility to reward performance and negotiate compensation individually.
+
+- Administrative and compliance costs:
+  - Audits, reporting requirements, and legal disputes can be expensive.
+  - Smaller firms may face a disproportionate burden.
+
+- Reduced wage flexibility:
+  - Firms may be less able to respond to market conditions.
+  - Pay differences can sometimes reflect retention needs, geographic differences, or recruitment challenges.
+
+- Potential unintended consequences:
+  - Employers may standardize pay in ways that reduce incentives for exceptional performance.
+  - Fear of litigation may make compensation decisions more cautious or bureaucratic.
+
+- Information problems:
+  - Regulators may not have enough information to determine whether two workers truly contribute equal value.
+
+Most modern economies do not choose between complete pay freedom and perfectly enforced pay equality. Instead, they typically try to prohibit discriminatory pay differences while allowing compensation to vary for legitimate reasons such as:
+- Experience.
+- Education and training.
+- Productivity and performance.
+- Seniority.
+- Market demand for specific skills.
+- Working conditions and responsibilities.
+
+As a result, the debate is usually not whether equal pay for equal work is desirable in principle, but how aggressively governments should intervene to identify and correct unjustified pay differences without undermining labor-market flexibility.

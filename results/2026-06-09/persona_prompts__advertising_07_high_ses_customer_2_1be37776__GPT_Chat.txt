@@ -1,0 +1,64 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_07_high_ses_customer_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=501
+Latency:   4711 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Effective ways to reduce household energy use.
+
+── Response ────────────────────────────────────────────────────────
+Reducing household energy use is often most effective when you focus on the largest energy consumers first: heating and cooling, water heating, appliances, and lighting.
+
+Some of the highest-impact measures include:
+
+- Improve insulation and air sealing
+  - Seal gaps around doors, windows, pipes, and attic openings.
+  - Add or upgrade attic and wall insulation where practical.
+  - Use weatherstripping and door sweeps to reduce drafts.
+
+- Optimize heating and cooling
+  - Install a programmable or smart thermostat.
+  - Adjust temperature settings when the home is unoccupied or during sleeping hours.
+  - Replace HVAC filters regularly.
+  - Schedule periodic maintenance to ensure efficient operation.
+  - Consider high-efficiency heat pumps when replacing older systems.
+
+- Reduce water-heating energy
+  - Lower the water heater temperature to a safe, efficient setting (commonly around 120°F/49°C, subject to household needs and local guidance).
+  - Insulate hot-water pipes and, if appropriate, the water heater tank.
+  - Install low-flow showerheads and faucets.
+  - Wash clothes with cold water when suitable.
+
+- Upgrade lighting
+  - Replace incandescent and halogen bulbs with LEDs.
+  - Turn off lights in unoccupied rooms.
+  - Use occupancy sensors or timers where beneficial.
+
+- Use appliances efficiently
+  - Choose ENERGY STAR® or other high-efficiency models when replacing appliances.
+  - Run dishwashers and washing machines with full loads.
+  - Air-dry dishes or clothes when practical.
+  - Clean refrigerator coils and maintain proper temperature settings.
+
+- Reduce standby power consumption
+  - Unplug infrequently used electronics.
+  - Use advanced power strips to cut "phantom" energy loads from devices that remain on standby.
+
+- Improve window efficiency
+  - Use insulated curtains or blinds.
+  - Consider energy-efficient windows if existing windows are old or inefficient.
+  - Manage solar heat gain by closing blinds during hot periods and allowing sunlight in during colder periods when advantageous.
+
+- Monitor energy use
+  - Review utility bills for trends.
+  - Use smart meters, energy-monitoring devices, or utility-provided dashboards to identify major sources of consumption.
+
+For many households, the measures with the strongest return on investment are air sealing, thermostat management, LED lighting, HVAC maintenance, and reducing water-heating costs. If you share your climate region and housing type (e.g., apartment, detached home, age of home), I can provide more targeted recommendations.

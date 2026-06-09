@@ -1,0 +1,50 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_49_low_ses_customer_3
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=22 out=891
+Latency:   6599 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving your home WiFi is a great way to ensure your remote work or study setup is rock-solid, especially when you need reliable connectivity for important video calls, uploading documents, and staying responsive. 
+
+Here is a step-by-step guide to getting the fastest, most reliable connection possible, ranging from quick free fixes to hardware upgrades.
+
+---
+
+### 1. Quick & Free Fixes (Do These First)
+*   **Reposition Your Router:** 
+    *   **Centralize it:** Place the router in the center of your home rather than in a corner or closet.
+    *   **Elevate it:** Put it on a shelf or table. WiFi signals travel outward and downward; placing it on the floor limits its range.
+    *   **Avoid obstacles:** Keep it away from thick concrete walls, metal objects, and large appliances (like microwaves, which operate on the same 2.4GHz frequency).
+*   **Adjust the Antennas:** If your router has external antennas, point one vertically (straight up) and one horizontally (flat). This helps cover devices with different antenna alignments (like laptops vs. phones).
+*   **Restart Your Router:** It sounds simple, but rebooting clears the router’s memory and forces it to select the least congested wireless channel. Doing this once a month (or before a big presentation) is a great habit.
+
+### 2. Optimize Your Settings
+*   **Choose the Right Band (2.4 GHz vs. 5 GHz):** Most modern routers are "dual-band."
+    *   **5 GHz:** Much faster and has less interference, but shorter range. **Use this for your work laptop** and video calls when you are relatively close to the router.
+    *   **2.4 GHz:** Slower, but reaches much farther and goes through walls better. Use this for smart home devices or when you are far from the router.
+*   **Change the Channel:** If you live in an apartment or crowded neighborhood, your neighbors' WiFi might be crowding your channel. You can log into your router’s admin page and switch the channel from "Auto" to a less crowded one (for 2.4 GHz, channels 1, 6, and 11 are best).
+
+### 3. The Ultimate Reliability Fix: Go Wired
+If you absolutely cannot afford to lose connection during an important meeting or file transfer, **wireless is always second-best to a physical wire.**
+*   **Ethernet Cable:** Run a Cat6 Ethernet cable directly from your router to your laptop. This bypasses WiFi interference entirely, giving you 100% of your internet speed with zero lag.
+*   **Powerline Adapters:** If your router is in another room and you can't run a long cable, a Powerline Adapter kit is a great alternative. It sends your internet signal through your home's existing electrical wiring. You plug one adapter near the router and the other near your desk.
+
+### 4. Hardware Upgrades (If Budget Allows)
+If your router is more than 4–5 years old, it might be time for an upgrade.
+*   **Wi-Fi 6 (802.11ax) Router:** If you have a lot of devices connected at once (phones, TVs, smart devices), a Wi-Fi 6 router handles heavy traffic much better without slowing down your work computer.
+*   **Mesh WiFi System:** If you have a larger home or "dead zones" where the signal drops, a Mesh system (like Eero, Google Nest, or TP-Link Deco) is the best solution. It uses multiple small nodes placed around the house to create one seamless, strong WiFi network.
+
+### 5. Manage Your Bandwidth
+*   **Prioritize Your Work Device (QoS):** Many routers have a feature called **Quality of Service (QoS)** in their settings. This allows you to designate your work laptop as the "priority device," ensuring it gets bandwidth first, even if someone else in the house is streaming 4K video or gaming.
+*   **Limit Background Apps:** Close heavy bandwidth-hogging apps (like cloud syncing, torrents, or game downloads) on other devices while you are working.

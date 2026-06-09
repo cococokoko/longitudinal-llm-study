@@ -1,0 +1,80 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=1178
+Latency:   8212 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Starting to learn coding from scratch can feel overwhelming because of the sheer number of languages, tools, and opinions out there. 
+
+To make it simple, the best way to start is by **focusing on one specific goal, choosing one language, and building things immediately.**
+
+Here is a step-by-step roadmap to take you from absolute beginner to writing your first programs.
+
+---
+
+### Step 1: Choose Your "Why" (This dictates your first language)
+Before writing code, decide what you want to build. This will help you choose your first programming language.
+
+*   **If you want to build websites:** Learn **HTML, CSS, and JavaScript**. (This is the most common starting point because you can see your results instantly in a web browser).
+*   **If you want to analyze data, do AI/Machine Learning, or just want the easiest syntax:** Learn **Python**. (Highly recommended for absolute beginners).
+*   **If you want to build mobile apps:** Learn **Swift** (for iPhones) or **Kotlin** (for Android).
+*   **If you want to build video games:** Learn **C#** (used with the Unity game engine).
+
+*Recommendation: If you aren't sure, **start with Python**. It reads like English and is incredibly versatile.*
+
+---
+
+### Step 2: Use Interactive, Free Resources
+Don't buy expensive courses or textbooks yet. Start with free, interactive platforms that let you write code directly in your browser.
+
+*   **For Web Development (HTML/CSS/JavaScript):**
+    *   **[freeCodeCamp](https://www.freecodecamp.org/):** Completely free, hands-on, and project-based. One of the best resources on the internet.
+    *   **[The Odin Project](https://www.theodinproject.com/):** A highly-regarded, free, open-source curriculum that teaches you how to code using real-world tools.
+*   **For Python & General Programming:**
+    *   **[Harvard's CS50 (on edX)](https://www.edx.org/course/introduction-to-computer-science):** The gold standard of introductory computer science courses. It is free, challenging, and highly engaging.
+    *   **[Replit 100 Days of Code (Python)](https://replit.com/learn/100-days-of-python):** A great, interactive way to build a daily coding habit.
+*   **For Gamified Learning:**
+    *   **[Scrimba](https://scrimba.com/):** Interactive video tutorials where you can pause the video and edit the instructor's code directly.
+
+---
+
+### Step 3: Learn the "Core Concepts" (They apply to all languages)
+No matter which language you choose, you will need to master these fundamental concepts. Focus on understanding these before moving to advanced topics:
+*   **Variables:** How computers store data (like saving a username).
+*   **Data Types:** Numbers, text (strings), and booleans (true/false).
+*   **Conditionals (If/Else statements):** Making decisions in code (e.g., *If* the password is correct, log the user in; *Else*, show an error).
+*   **Loops (For/While):** Doing repetitive tasks automatically.
+*   **Functions:** Blocks of reusable code.
+
+---
+
+### Step 4: Shift from "Reading" to "Doing" (The 20/80 Rule)
+The biggest trap beginners fall into is **"Tutorial Hell"**—watching hours of videos without actually writing code. 
+
+Use the **20/80 Rule**: Spend 20% of your time learning a concept, and 80% of your time building something with it.
+*   If you learn about "Variables," write a program that asks for a user's name and greets them.
+*   If you learn about "Conditionals," build a simple text-based adventure game or a calculator.
+*   **Build "ugly" projects.** They don't need to be perfect; they just need to work.
+
+---
+
+### Step 5: Learn How to Search and Debug
+Professional programmers do not memorize everything. In fact, 50% of coding is searching for answers.
+*   **Learn to Google:** If your code throws an error, copy and paste the error message directly into Google.
+*   **Use Stack Overflow:** This is a Q&A site where almost every coding question has already been answered.
+*   **Use AI as a Tutor (not a crutch):** You can use ChatGPT to explain concepts. Instead of asking it to *"write this code for me,"* ask it to *"explain why this code isn't working"* or *"explain this concept like I am 10 years old."*
+
+---
+
+### Golden Rules for Beginners:
+1.  **Consistency over intensity:** Coding for 30 minutes every day is 10x better than coding for 5 hours once a week. Your brain needs sleep to process the logic.
+2.  **Expect to feel stupid:** Coding is the process of failing repeatedly until it suddenly works. Feeling frustrated is a normal part of the process, not a sign that you aren't cut out for it.
+3.  **Don't try to learn everything:** You don't need to know how the whole engine works to drive the car. Learn just enough to build your next project.

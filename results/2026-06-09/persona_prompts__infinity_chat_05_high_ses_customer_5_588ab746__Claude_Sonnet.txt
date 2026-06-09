@@ -1,0 +1,55 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=319
+Latency:   8693 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens: **Intelligent Fall Detection & Response System**
+
+## Core Functionality
+A multi-sensor fall detection system that goes beyond basic accelerometer detection to reduce false alarms while ensuring genuine emergencies get immediate response.
+
+---
+
+## Key Components
+
+### Detection
+- Combines accelerometer, gyroscope, and heart rate data for **accurate fall identification**
+- Distinguishes between sitting down quickly versus an actual fall
+
+### Response Protocol
+- Gentle haptic + audio prompt: *"Are you okay? Tap to confirm"*
+- **Configurable countdown** (15-30 seconds) before escalating
+- Automatic emergency contact notification with GPS location
+
+### Smart Context Awareness
+- Learns the user's normal movement patterns over time
+- Reduces false positives during exercise or normal activity
+
+---
+
+## Additional Value-Adds
+- **One-tap "I'm okay" dismissal** with large, accessible button
+- Family dashboard showing response history
+- Integration with existing emergency services APIs
+- **Medication reminder** pairing to track if a fall correlates with dosage timing
+
+---
+
+## Business Considerations
+- Potential **insurance partnership opportunities** (reduced premiums)
+- HIPAA-compliant data handling
+- Differentiates from consumer smartwatches in a **growing $50B+ senior care market**
+
+Would you like me to explore the technical architecture or go-to-market strategy further?

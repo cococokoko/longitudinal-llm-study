@@ -1,0 +1,44 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=26 out=1233
+Latency:   14429 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+Given your vantage point as a partner at a major firm, you likely view small business data security through one of two lenses: either evaluating the risk profile of an SMB target for a Private Equity client, or assessing third-party vendor risk for a large enterprise client. 
+
+Small businesses are increasingly targeted by threat actors because they often serve as the "weakest link" in the supply chain of larger enterprises. To mitigate this, best practices for SMB data security should be structured around a scalable framework of **Governance, Human Capital, and Technical Controls**.
+
+Here is a strategic blueprint for SMB data security:
+
+### 1. Governance & Strategy (Process)
+*   **Baseline Risk Assessment:** SMBs must first identify their "crown jewels" (e.g., customer PII, intellectual property, financial data) and map where this data lives. Security investments should be strictly prioritized based on value-at-risk.
+*   **Incident Response (IR) Planning:** It is not a matter of *if*, but *when*. SMBs need a lightweight, actionable IR plan that dictates exactly who to call (legal, PR, forensic IT, insurance) and what steps to take in the first 24 hours of a breach to minimize business interruption.
+*   **Cyber Liability Insurance:** A critical risk-transfer mechanism. However, insurers now require strict adherence to baseline security controls (like MFA and backups) before underwriting policies or paying out claims.
+
+### 2. Human Capital & Access (People)
+*   **Principle of Least Privilege (PoLP):** Employees should only have access to the data and systems absolutely necessary for their roles. This limits the blast radius if a single account is compromised.
+*   **Continuous Security Awareness Training:** Phishing remains the primary attack vector. Annual compliance-checkbox training is insufficient; SMBs should implement short, quarterly training modules combined with randomized, simulated phishing tests.
+*   **Offboarding Protocols:** A formalized checklist to immediately revoke access to all systems, physical premises, and third-party apps the moment an employee or contractor departs.
+
+### 3. Core Technical Controls (Technology)
+*   **Multi-Factor Authentication (MFA):** This is the single highest-ROI security control. MFA must be strictly enforced across all email accounts, VPNs, and critical SaaS applications. 
+*   **Endpoint Detection and Response (EDR):** Legacy antivirus is no longer sufficient. SMBs should deploy EDR solutions (often managed by a third-party MSP) to actively monitor and isolate compromised laptops and servers in real-time.
+*   **Immutable, Air-Gapped Backups:** To survive ransomware, backups must be automated, encrypted, and stored off-site or in a cloud environment that cannot be accessed or deleted from the primary network (immutability).
+*   **Automated Patch Management:** Unpatched software is a massive vulnerability. SMBs must automate the patching of operating systems and third-party applications to close known exploits.
+
+### 4. Third-Party & Supply Chain Risk
+*   **Vendor Vetting:** SMBs rely heavily on SaaS tools and external vendors. They must establish a basic vetting process (e.g., requesting SOC 2 Type II reports) to ensure their partners take security as seriously as they do.
+
+**The Consulting Takeaway:**
+For an SMB, building an enterprise-grade Security Operations Center (SOC) is financially unviable. The most effective strategy is to outsource the technical execution to a reputable Managed Security Service Provider (MSSP) while keeping the risk-management and governance decisions in-house at the executive level.

@@ -1,0 +1,29 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=984
+Latency:   11202 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+I suggest a feature called the **"FamilySync Command Center."** 
+
+Since this customer is the backbone of their family—juggling household management and supporting extended family members—this feature would turn their smartwatch into an accessible, wrist-based personal assistant tailored for family coordination.
+
+Here is how it would work:
+
+*   **Voice-Activated Task Delegation:** Instead of typing on a tiny screen, the user can simply tap a large button and say, *"Add milk to the grocery list,"* or *"Remind Sarah to pick up the kids at 3 PM."* The watch automatically routes these voice memos as text notifications or list updates to the connected smartphones of specific family members.
+*   **Shared Family Calendar Alerts:** The watch face can display color-coded, gentle reminders for the whole family's schedule. They can easily see at a glance if they have a doctor's appointment, if a grandchild has soccer practice, or if it's time to take something out of the freezer for dinner.
+*   **One-Touch "Broadcast" Intercom:** A simple walkie-talkie feature that connects directly to the phones or smart speakers of their extended family. With one tap, they can broadcast a quick message like, *"Dinner is ready,"* *"Can someone come help me move this heavy box?"* or simply send a daily *"I'm up and doing well"* check-in.
+*   **Smart Home Integration for Chores:** Pre-programmed, large-icon shortcuts to manage the house without getting up—such as locking the front door, turning off downstairs lights, or checking a smart doorbell when family arrives.
+
+**Why it works for them:** It respects their active, caregiving role by giving them tools to manage their busy household and delegate tasks effortlessly, while keeping the interface senior-friendly through voice commands and large, simple visuals.

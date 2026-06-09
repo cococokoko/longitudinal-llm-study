@@ -1,0 +1,18 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=32 out=720
+Latency:   8029 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+As an expert consultant guiding your prospective international clinical fellows and researchers, I recommend framing the choice between the TOEFL and IELTS around their specific academic destinations and communication strengths. Both are premier English proficiency exams, but they differ significantly in format and regional preference. The TOEFL is heavily favored by US institutions and evaluates academic English through a fully computerized, integrated format—ideal for candidates accustomed to rigorous, screen-based academic environments and data synthesis. Conversely, the IELTS is the gold standard for the UK, Canada, and Australia (though widely accepted by US programs) and features a face-to-face speaking component. This in-person evaluation can be highly advantageous for international medical graduates who excel in direct, interpersonal clinical communication and bedside manner. Ultimately, I advise your candidates to first verify the specific requirements of the medical boards or residency/fellowship programs they are targeting, and then choose the exam that best aligns with their natural testing and communication style.

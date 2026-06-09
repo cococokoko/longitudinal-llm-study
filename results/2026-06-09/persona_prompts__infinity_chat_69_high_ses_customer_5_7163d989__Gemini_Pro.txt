@@ -1,0 +1,28 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_high_ses_customer_5
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=739
+Latency:   9009 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+**The Difference:**
+*   **Analysis** defines the *problem* (the "What" and "Why"). It focuses on understanding business objectives, user requirements, and market constraints. 
+*   **Design** defines the *solution* (the "How"). It focuses on the architecture, technical blueprints, and user experience required to solve the problem.
+
+**Can you design without analysis?**
+Technically yes, but strategically no. 
+
+**Why?**
+Designing without analysis means building a solution before understanding the problem. While rapid prototyping (designing first) can be used to test assumptions, committing to a design without formal analysis usually results in building the *wrong product*. It wastes capital, creates technical debt, and fails to deliver ROI. 
+
+In short: Analysis ensures you build the *right thing*; design ensures you build it *right*.

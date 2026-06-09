@@ -1,0 +1,61 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=395
+Latency:   5835 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Numerical example:
+
+Suppose
+
+f(x, y) = x²y + 3y
+
+Let's compute the partial derivative with respect to x.
+
+Treat y as a constant:
+
+∂f/∂x = 2xy
+
+Now evaluate it at the point (x, y) = (2, 5):
+
+∂f/∂x(2,5) = 2 × 2 × 5 = 20
+
+Interpretation:
+- Near the point (2,5), if y is held fixed at 5, increasing x by a small amount Δx changes f by approximately 20Δx.
+- For example, if x increases from 2.00 to 2.01 (so Δx = 0.01), then f increases by about 20 × 0.01 = 0.20.
+
+We can verify numerically:
+
+- f(2,5) = 2²·5 + 3·5 = 35
+- f(2.01,5) = 2.01²·5 + 15 = 35.2005
+
+Actual change:
+- 35.2005 − 35 = 0.2005
+
+Approximation from the partial derivative:
+- 0.20
+
+The values are very close, illustrating that the partial derivative gives the local rate of change with respect to x while y remains fixed.
+
+Similarly, the partial derivative with respect to y is
+
+∂f/∂y = x² + 3
+
+and at (2,5):
+
+∂f/∂y(2,5) = 2² + 3 = 7
+
+Meaning that near (2,5), if x is held fixed, a small increase Δy changes f by approximately 7Δy.

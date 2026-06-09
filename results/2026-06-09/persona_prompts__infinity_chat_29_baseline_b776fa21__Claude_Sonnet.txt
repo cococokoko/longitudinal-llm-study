@@ -1,0 +1,175 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=1024
+Latency:   11504 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+# Building an Online Forum with LAMP Stack
+
+## Prerequisites
+- Linux server
+- Apache web server
+- MySQL database
+- PHP (7.4+)
+
+---
+
+## 1. Project Structure
+
+```
+forum/
+├── config/
+│   └── database.php
+├── includes/
+│   ├── header.php
+│   └── footer.php
+├── css/
+│   └── style.css
+├── index.php
+├── register.php
+├── login.php
+├── logout.php
+├── create_post.php
+├── view_post.php
+└── category.php
+```
+
+---
+
+## 2. Database Setup
+
+```sql
+-- Create database
+CREATE DATABASE forum_db;
+USE forum_db;
+
+-- Users table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('user', 'moderator', 'admin') DEFAULT 'user',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Categories table
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Threads table
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT,
+    user_id INT,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Posts table
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT,
+    user_id INT,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Insert sample categories
+INSERT INTO categories (name, description) VALUES
+('General Discussion', 'Talk about anything'),
+('Technology', 'Tech news and help'),
+('Off Topic', 'Random conversations');
+```
+
+---
+
+## 3. Database Connection
+
+```php
+<?php
+// config/database.php
+
+define('DB_HOST', 'localhost');
+define('DB_USER', 'your_username');
+define('DB_PASS', 'your_password');
+define('DB_NAME', 'forum_db');
+
+function getConnection() {
+    $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    
+    return $conn;
+}
+?>
+```
+
+---
+
+## 4. Header & Footer
+
+```php
+<?php
+// includes/header.php
+session_start();
+require_once '../config/database.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Forum</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav>
+    <a href="/index.php">Home</a>
+    <?php if (isset($_SESSION['user_id'])): ?>
+        <a href="/create_post.php">New Thread</a>
+        <a href="/logout.php">Logout (<?= htmlspecialchars($_SESSION['username']) ?>)</a>
+    <?php else: ?>
+        <a href="/login.php">Login</a>
+        <a href="/register.php">Register</a>
+    <?php endif; ?>
+</nav>
+```
+
+```php
+<?php
+// includes/footer.php
+?>
+<footer>
+    <p>&copy; <?= date('Y') ?> My Forum</p>
+</footer>
+</body>
+</html>
+```
+
+---
+
+## 5. Registration Page
+
+```php
+<?php
+// register.php
+require_once 'includes

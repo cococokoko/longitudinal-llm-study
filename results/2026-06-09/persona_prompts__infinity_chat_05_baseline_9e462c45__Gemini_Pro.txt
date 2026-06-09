@@ -1,0 +1,38 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1614
+Latency:   16551 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+Here is a feature suggestion tailored specifically for a senior citizen smartwatch:
+
+### Feature Name: **"Guide Me Home" & Safe-Wander System**
+
+**The Problem it Solves:** 
+Many seniors, particularly those in the early stages of cognitive decline, dementia, or Alzheimer's, experience sudden disorientation or forgetfulness while out on a walk or running errands. This causes panic for the senior and immense anxiety for their family members. Furthermore, navigating a tiny touchscreen map on a standard smartwatch is too complex and visually demanding for older eyes.
+
+**How it Works:**
+The smartwatch features a distinct, brightly colored, and textured **physical button** on the side of the watch face (no swiping or touchscreen navigation required). 
+
+When the senior feels lost or disoriented, they simply press and hold this button for three seconds. This triggers the following sequence:
+
+1. **Voice-Guided Navigation:** The watch uses its built-speaker to say, *"I am guiding you home."* It then uses GPS to provide simple, loud, turn-by-turn audio directions back to their pre-programmed home address (e.g., *"Walk straight to the corner, then turn left."*). It also displays a massive, high-contrast directional arrow on the screen.
+2. **Caregiver Loop-In:** The moment the button is activated, a silent notification is sent to a designated family member or caregiver's smartphone. It alerts them that the "Guide Me Home" feature was used and provides a live-tracking map of the senior's location.
+3. **Two-Way Audio Drop-In:** If the senior deviates from the path home or stops moving for an extended period, the caregiver can initiate a "drop-in" audio call. The watch automatically answers on speakerphone, allowing the caregiver to gently ask, *"Hi Mom, I see you're on Elm Street, do you need me to come pick you up?"*
+
+**Key Benefits for Seniors:**
+* **Promotes Independence:** Seniors can confidently go for daily walks knowing they have a foolproof way to get back, keeping them active and healthy.
+* **Zero Tech-Literacy Required:** Bypasses confusing menus, apps, and touchscreens. A single physical button is all that is needed.
+* **Reduces Panic:** The immediate, calm voice guidance helps de-escalate the anxiety of feeling lost.
+
+**Key Benefits for Caregivers:**
+* **Peace of Mind:** Family members don't have to constantly track the senior's location; they are only alerted when the senior actively indicates they need help or guidance. 
+* **Proactive Intervention:** Allows caregivers to step in before a moment of confusion turns into a dangerous missing-person situation.

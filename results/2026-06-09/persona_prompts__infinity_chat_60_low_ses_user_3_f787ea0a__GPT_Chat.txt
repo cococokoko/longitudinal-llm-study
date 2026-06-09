@@ -1,0 +1,36 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_low_ses_user_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=28 out=275
+Latency:   2942 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a very long line of dominoes.
+
+You ask, "If I knock over the first domino, will the last domino fall?"
+
+For some things, you can look at the setup and know the answer right away.
+
+But for other things, the only way to find out is to actually knock over the first domino and watch every domino fall, one after another, until you reach the end.
+
+Computational irreducibility means some processes are like that. Even a very smart computer can't skip ahead and instantly know what will happen. It has to go through the steps one by one.
+
+A simple way to think about it:
+
+- Easy problem: "What's 2 + 2?" → You can get the answer immediately.
+- Computationally irreducible problem: "What will this complicated pattern look like after 10,000 steps?" → The fastest way may be to actually do all 10,000 steps.
+
+It's like reading a story:
+- You can sometimes guess the ending.
+- But for some stories, the only way to know what happens on page 100 is to read pages 1 through 99 first.
+
+That's computational irreducibility: some things can't be predicted faster than they happen.

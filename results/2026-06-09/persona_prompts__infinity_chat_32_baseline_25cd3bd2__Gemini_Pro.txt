@@ -1,0 +1,96 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=2260
+Latency:   20096 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+Creating a top-down zombie survival game in Scratch is a fantastic project! Here is a step-by-step guide to building the core mechanics: Player movement, shooting, and chasing zombies.
+
+### Step 1: Create Your Sprites
+Delete the default Scratch cat. You will need to draw or import three sprites:
+1.  **Player:** A top-down view of a person (e.g., a circle with a smaller circle for a gun). **Make sure the gun is pointing to the right (the 90-degree direction in Scratch).**
+2.  **Bullet:** A small yellow or black circle.
+3.  **Zombie:** A top-down view of a zombie (e.g., a green circle).
+
+### Step 2: Player Movement & Aiming
+Select the **Player** sprite. We want the player to move with WASD or Arrow keys and always look at the mouse pointer.
+
+Add this code to the **Player**:
+*   `When [Green Flag] clicked`
+*   `Go to x: 0 y: 0`
+*   `Forever`
+    *   `Point towards [mouse-pointer]`
+    *   `If <key [w] pressed?> then` -> `Change y by 5`
+    *   `If <key [s] pressed?> then` -> `Change y by -5`
+    *   `If <key [a] pressed?> then` -> `Change x by -5`
+    *   `If <key [d] pressed?> then` -> `Change x by 5`
+
+### Step 3: Shooting Mechanics
+Select the **Bullet** sprite. The bullet should hide until the player clicks, at which point it creates a clone that flies forward.
+
+Add this code to the **Bullet**:
+*   `When [Green Flag] clicked`
+*   `Hide`
+*   `Forever`
+    *   `If <mouse down?> then`
+        *   `Create clone of [myself]`
+        *   `Wait 0.2 seconds` *(This is your fire rate)*
+
+Now, tell the clone what to do when it spawns:
+*   `When I start as a clone`
+*   `Go to [Player]`
+*   `Point in direction ([direction] of [Player])` *(You can find this in the Sensing category: `[backdrop #] of [Stage]`, change Stage to Player, and backdrop to direction)*
+*   `Show`
+*   `Repeat until <touching [edge]?>`
+    *   `Move 15 steps`
+*   `Delete this clone`
+
+### Step 4: Spawning the Zombies
+Select the **Zombie** sprite. We want them to spawn continuously and chase the player.
+
+Add this code to the **Zombie**:
+*   `When [Green Flag] clicked`
+*   `Hide`
+*   `Forever`
+    *   `Wait 1 seconds` *(Make this number smaller to spawn zombies faster)*
+    *   `Create clone of [myself]`
+
+Now, make the zombie clones chase the player:
+*   `When I start as a clone`
+*   `Go to x: (pick random -240 to 240) y: 180` *(This spawns them at the top of the screen)*
+*   `Show`
+*   `Forever`
+    *   `Point towards [Player]`
+    *   `Move 2 steps` *(Zombie speed)*
+
+### Step 5: Collisions (Killing and Dying)
+We need a score, and we need zombies to die when shot. 
+Go to the **Variables** tab, click "Make a Variable", and name it `Score`.
+
+**Add this inside the Zombie's `Forever` loop (under `Move 2 steps`):**
+*   `If <touching [Bullet]?> then`
+    *   `Change [Score] by 1`
+    *   `Delete this clone`
+
+**Now, let's make the Player take damage.** Go back to the **Player** sprite and add this inside its `Forever` loop:
+*   `If <touching [Zombie]?> then`
+    *   `Say [Game Over!] for 2 seconds`
+    *   `Stop [all]`
+
+### Step 6: Resetting the Game
+Make sure your score resets when you start a new game. Add this to the very top of your **Player** script, right under `When [Green Flag] clicked`:
+*   `Set [Score] to 0`
+
+### Next Steps to Make it Better:
+Once you have this basic game working, try adding these features:
+*   **Better Spawning:** Make zombies spawn from all 4 edges of the screen, not just the top.
+*   **Health System:** Give the player a "Health" variable so they can take 3 hits before dying instead of 1.
+*   **Wave System:** Make the `Wait 1 seconds` block for zombie spawning get faster as your score gets higher!

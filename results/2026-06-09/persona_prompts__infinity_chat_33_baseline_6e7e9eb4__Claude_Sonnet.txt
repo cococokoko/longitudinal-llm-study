@@ -1,0 +1,144 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=34 out=916
+Latency:   19438 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need
+- Microsoft Surface (any model)
+- Dolphin Emulator installed
+- Wii game ROM/ISO files (that you legally own)
+
+---
+
+## Step 1: Install Dolphin Emulator
+
+1. Go to **dolphin-emu.org**
+2. Click **Download** → choose the latest stable version
+3. Run the installer and follow the prompts
+
+---
+
+## Step 2: Configure the Touchpad as a Controller
+
+Open Dolphin and go to **Controllers** in the top menu
+
+### Set Up Emulated Wiimote
+1. Under **Wii Remotes**, set Port 1 to **Emulated Wii Remote**
+2. Click **Configure**
+3. Map buttons to keyboard keys that you'll use
+
+### Recommended Keyboard Mappings
+| Wii Button | Keyboard Key |
+|------------|-------------|
+| A Button | Z |
+| B Button | X |
+| + (Plus) | Enter |
+| - (Minus) | Backspace |
+| Home | Escape |
+| D-Pad | Arrow Keys |
+| 1 Button | Q |
+| 2 Button | W |
+
+---
+
+## Step 3: Enable the On-Screen Keyboard
+
+### Method 1 - Taskbar
+- Right-click the taskbar → **Show touch keyboard button**
+- Tap the keyboard icon near the system clock
+
+### Method 2 - Settings
+- Go to **Settings → Accessibility → Keyboard**
+- Toggle **On-screen keyboard** to On
+
+### Method 3 - Quick Access
+- Press **Windows + Ctrl + O**
+
+---
+
+## Step 4: Configure Touchpad Gestures
+
+### In Windows Settings
+1. Go to **Settings → Bluetooth & Devices → Touchpad**
+2. Enable **Three-finger** and **Four-finger gestures**
+
+### Useful Touchpad Tips for Gaming
+- **Two-finger scroll** can simulate analog stick movement
+- **Tap to click** acts as button presses
+- Consider enabling **precision touchpad** settings
+
+---
+
+## Step 5: Configure Motion Controls (Optional)
+
+Since the Surface has **gyroscope/accelerometer**:
+
+1. In Dolphin Controller settings
+2. Look for **Motion Input** options
+3. You may be able to map Surface tilt to Wiimote motion
+
+> **Note:** This feature varies by Dolphin version and may require additional setup
+
+---
+
+## Step 6: Load a Game
+
+1. Click **Open** in Dolphin
+2. Navigate to your ROM/ISO file
+3. Double-click to launch
+
+---
+
+## Practical Tips
+
+### On-Screen Keyboard Positioning
+- Drag the keyboard to the **bottom or side** of the screen
+- Keep game visible while typing/pressing buttons
+- Use **compact mode** if available
+
+### Touchpad Sensitivity
+- Adjust in **Settings → Bluetooth & Devices → Touchpad → Advanced gestures**
+- Lower sensitivity helps avoid accidental inputs
+
+### Performance Tips
+- Close background apps
+- Plug in your Surface (gaming drains battery fast)
+- Lower Dolphin's internal resolution if needed
+
+---
+
+## Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| Keyboard not appearing | Check Accessibility settings |
+| Touchpad not responding | Update touchpad drivers |
+| Poor performance | Lower graphics settings in Dolphin |
+| Controls not registering | Re-map buttons in Controller settings |
+| Game won't load | Check file format (ISO, RVZ, WBFS) |
+
+---
+
+## Better Alternative: Connect a Controller
+
+For a much better experience, consider:
+- **Xbox controller** via Bluetooth
+- **USB gamepad**
+- **Nintendo Switch Pro Controller** via Bluetooth
+
+These will give you a far more comfortable gaming experience than the touchpad alone.
+
+---
+
+Would you like more detail on any specific step?

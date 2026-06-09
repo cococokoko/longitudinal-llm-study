@@ -1,0 +1,67 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_user_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=24 out=957
+Latency:   7065 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+As a patient care aide in a hospital, your shift-based schedule means you are rarely in the same room at the same time as your colleagues. You need tools that facilitate **asynchronous communication** (leaving messages that others can read when their shift starts) and **quick, secure updates** that comply with healthcare privacy laws (like HIPAA in the US).
+
+Here are the best tools for remote and shift-based team collaboration, categorized by how they can help your hospital team.
+
+---
+
+### 1. Best for Shift Handovers & Daily Communication
+Because you work shifts, a central "digital bulletin board" is essential so the night shift knows what the day shift did.
+
+*   **Slack or Microsoft Teams**
+    *   **How it helps:** Instead of messy group texts, you can create "channels" for different topics (e.g., `#shift-handover`, `#equipment-issues`, `#general-announcements`).
+    *   **Key Feature:** You can pin important messages (like a change in ward policy) to the top of a channel so everyone rotating through sees it.
+    *   **Healthcare Note:** Both have enterprise versions that are HIPAA-compliant, which is crucial if you are discussing patient-related logistics.
+*   **Spok Mobile or Halo Health**
+    *   **How it helps:** These are clinical communication platforms designed specifically for hospitals. They allow secure, encrypted texting, alerting, and paging.
+    *   **Key Feature:** You can see who is currently "on-duty" and message them directly, rather than guessing who is covering which zone.
+
+### 2. Best for Scheduling & Shift Swapping
+Managing who is on what shift is one of the biggest headaches in hospital work.
+
+*   **Deputy or When I Work**
+    *   **How it helps:** These apps allow managers to post schedules online. As a patient care aide, you can use them to clock in/out, request time off, and put shifts up for grabs.
+    *   **Key Feature:** **Shift Swapping.** If you need to trade a Saturday night shift, you can post it in the app, and a coworker can claim it. The manager just has to click "approve."
+*   **7shifts**
+    *   **How it helps:** While originally designed for restaurants, many shift-based healthcare teams use it because of its highly intuitive mobile app and built-in team chat.
+
+### 3. Best for Training, SOPs, and "How-To" Guides
+As a patient care aide, you have specific protocols to follow (e.g., how to safely transfer a patient, where specific PPE is stored).
+
+*   **Notion or Confluence**
+    *   **How it helps:** These act as a "Team Wiki." Instead of digging through dusty binders at the nurse's station, you can search the app on your phone.
+    *   **Key Feature:** You can create simple, visual checklists for daily tasks (e.g., "End of Shift Cleaning Checklist") that anyone on the team can access.
+*   **Loom**
+    *   **How it helps:** If a new piece of equipment arrives (like a new patient lift), the educator can record a quick 2-minute video showing how to use it. Staff can watch it on their phones during their shift rather than attending an in-person meeting.
+
+### 4. Best for Task Management & Ward Logistics
+If your team needs to track non-clinical tasks (e.g., restocking supply closets, maintenance requests, deep cleaning schedules).
+
+*   **Trello**
+    *   **How it helps:** It uses a visual "card" system (To Do, Doing, Done).
+    *   **Key Feature:** You can create a card called "Restock Room 402." When you finish it during your shift, you drag it to "Done." The incoming shift instantly knows it’s been taken care of.
+
+---
+
+### Summary Recommendation for a Hospital Team:
+
+If you want to propose a setup to your nurse manager or department head, here is the ideal "tech stack" for a shift-based clinical team:
+
+1.  **For Scheduling:** **Deputy** (makes swapping shifts incredibly easy).
+2.  **For Daily Chat & Handovers:** **Microsoft Teams** (usually already paid for by hospital IT departments, making it free and secure to use).
+3.  **For Procedures & Checklists:** **Notion** (clean, easy to read on a phone while walking the halls).

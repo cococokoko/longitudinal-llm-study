@@ -1,0 +1,81 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=1129
+Latency:   8783 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+Running Dolphin Emulator on a Microsoft Surface using only the touchpad and the on-screen keyboard is a highly portable setup, but it requires some specific configurations to be playable. Since you don't have a physical controller or mouse, we need to map the Surface's inputs to mimic a Wii Remote (Wiimote) and Nunchuk.
+
+Here is a streamlined guide to optimizing Dolphin for your Surface's hardware.
+
+---
+
+### Step 1: Optimize the On-Screen Keyboard (OSK)
+The default Windows touch keyboard can be clunky for gaming because it often minimizes when you click outside of it. 
+
+1. **Switch to the Traditional Layout:** Open the touch keyboard, tap the **Settings gear icon** (top-left of the keyboard), and select the **Traditional/Standard layout** (the one that includes the `Fn`, `Ctrl`, `Alt`, and arrow keys).
+2. **Enable "Make Touch Keyboard Float":** This allows you to drag the keyboard to the bottom or top of the screen so it doesn't block your view of the game.
+3. *Alternative (Recommended):* If you find the default Windows keyboard too restrictive, download **Virtual Gamepad** or **Tablet Pro**. These third-party apps overlay transparent, customizable virtual joysticks and buttons directly onto your Surface screen.
+
+---
+
+### Step 2: Configure Dolphin’s Controller Settings
+Since you are using a touchpad and keyboard, we will configure Dolphin to treat these inputs as an **Emulated Wii Remote**.
+
+1. Open Dolphin and click on **Controllers** in the top toolbar.
+2. Under **Wii Remotes**, set *Wii Remote 1* to **Emulated Wii Remote**, then click **Configure**.
+3. In the **Device** dropdown at the top left, select **Keyboard/Mouse** (it may appear as `WGInput/0/Keyboard Mouse`).
+
+---
+
+### Step 3: Map the Inputs for Touchpad + Keyboard
+Because a touchpad makes simultaneous moving and aiming difficult, we want to map the keys so your **left hand uses the keyboard** for movement/actions, and your **right hand uses the touchpad** for pointer controls.
+
+#### **1. General Buttons (Wii Remote)**
+Map these to easily reachable keys on your left hand:
+*   **A Button:** `Spacebar` or `F` (Your main action button)
+*   **B Button:** `Left Shift` or `D` (Usually trigger/shoot)
+*   **1 Button:** `1`
+*   **2 Button:** `2`
+*   **Minus / Plus:** `Q` / `E`
+*   **Home:** `H`
+
+#### **2. Motion Simulation (Crucial for Wii)**
+Many Wii games require pointing at the screen. We will map the Wii pointer to your Surface touchpad.
+*   Go to the **Motion Simulation** tab in the configuration window.
+*   Under **Point**, map the Up, Down, Left, and Right directions to your **Cursor** (Mouse/Touchpad movement). 
+*   *Tip:* Set the **Total Pitch/Yaw** sensitivity slightly higher so you don't have to swipe across the entire touchpad repeatedly to move the cursor across the screen.
+
+#### **3. Extension (Nunchuk)**
+Most Wii games require the Nunchuk for movement.
+*   In the **Extension** dropdown, select **Nunchuk**.
+*   Go to the **Extension** tab that appears next to the General tab.
+*   **Nunchuk Stick (Movement):** Map this to the standard **W, A, S, D** keys.
+*   **C Button:** `Left Ctrl`
+*   **Z Button:** `Left Alt` or `C`
+
+---
+
+### Step 4: Surface-Specific Performance Tweaks
+Surface devices are highly capable but can thermal throttle (slow down when they get hot). To ensure smooth gameplay:
+
+1. **Graphics Backend:** Go to **Options > Graphics Settings**. Set the *Backend* to **Direct3D 12** or **Vulkan**. These APIs perform significantly better on Intel Iris Xe / Microsoft SQ processors than OpenGL.
+2. **Resolution:** Keep the *Internal Resolution* (under the Enhancements tab) at **1x Native (640x528)** or **2x Native (720p)**. Pushing it to 1080p or higher on a fanless Surface Pro can cause stuttering.
+3. **Aspect Ratio:** Set to **Auto** or **Force 16:9** to match your Surface's screen aspect ratio.
+
+---
+
+### Pro-Tips for this Setup:
+*   **Turn off "Tap to Click" temporarily:** If you find yourself accidentally clicking while trying to aim with the touchpad, go to *Windows Settings > Bluetooth & devices > Touchpad* and temporarily disable "Tap with a single finger to single-click." Use the physical click of the touchpad instead.
+*   **Turn-Based / Slow-Paced Games Work Best:** This setup is highly efficient for games like *Fire Emblem: Radiant Dawn*, *Super Paper Mario*, *Animal Crossing: City Folk*, or *Pokemon Battle Revolution*. Fast-paced action games like *Super Mario Galaxy* or *Metroid Prime* will be challenging without a physical controller.

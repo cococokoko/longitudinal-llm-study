@@ -1,0 +1,49 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_34_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1847
+Latency:   16645 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What is a good secondhand market laptop for learning Python?
+
+── Response ────────────────────────────────────────────────────────
+For learning Python, you don’t need a powerful or expensive machine. Python is highly optimized and runs well on almost anything. Because you will be typing a lot and reading documentation, your main priorities should be a **great keyboard, a decent screen, and reliability.**
+
+Here are the best secondhand laptops for learning Python, categorized by budget and preference:
+
+### 1. The Developer’s Favorite: Lenovo ThinkPad T480 or T490
+* **Estimated Used Price:** $150 – $250
+* **Why it’s great:** ThinkPads are the gold standard for programmers. They have the best keyboards on the market, are built like tanks, and are incredibly easy to upgrade or repair. They are also highly compatible with Linux, which is a great operating system to learn alongside Python.
+* **What to look for:** Make sure it has an **8th Generation Intel Core i5** processor (like the i5-8250U) or newer. This ensures it officially supports Windows 11. 
+
+### 2. The Best Overall Investment: Apple MacBook Air M1 (2020)
+* **Estimated Used Price:** $450 – $600
+* **Why it’s great:** If you have a slightly higher budget, a used M1 MacBook Air is arguably the best value laptop in the world right now. It has all-day battery life, a great screen, and is completely silent (no fan). Furthermore, macOS is Unix-based, which makes setting up Python environments and using the command line much easier than on standard Windows.
+* **What to look for:** The base model (8GB RAM, 256GB SSD) is more than enough for learning Python.
+
+### 3. The Corporate Workhorses: Dell Latitude 7400 or HP EliteBook 840 G5/G6
+* **Estimated Used Price:** $150 – $300
+* **Why it’s great:** Like ThinkPads, these are business-class laptops. Companies buy them by the thousands and sell them off cheaply after 3 years. They have premium metal chassis, good keyboards, and are much more durable than cheap consumer laptops you’d buy new at Best Buy for the same price.
+* **What to look for:** Again, look for an 8th Gen Intel Core i5 or i7 processor.
+
+---
+
+### The "Cheat Sheet" for Buying Any Used Laptop
+If you find a laptop not listed above, just make sure it meets these **minimum specs** for a smooth coding experience:
+
+* **Processor (CPU):** Intel Core i5 (8th Gen or newer) OR AMD Ryzen 5 (3000 series or newer). *Avoid Intel Celeron or Pentium processors.*
+* **RAM:** **8GB is the absolute minimum**, but **16GB is highly recommended**. When coding, you will often have an IDE (like VS Code), a terminal, and 15 Google Chrome tabs open looking for solutions. 16GB makes this seamless.
+* **Storage:** **256GB SSD** (Solid State Drive). *Never buy a laptop with an HDD (Hard Disk Drive)*—it will be unbearably slow.
+* **Screen:** 1080p (FHD) resolution. Do not buy a 768p screen; the text will be blurry and hard to read for long hours.
+
+### Where to buy safely:
+* **eBay:** Look for sellers with 98%+ positive feedback who offer a 30-day return policy. Search for "Refurbished ThinkPad T480".
+* **BackMarket / Amazon Renewed:** Slightly more expensive than eBay, but they offer standardized warranties and easy returns.
+* **Swappa:** Great for buying used MacBooks directly from other users.
+
+**A quick tip for Windows users:** Once you get your laptop, look into installing **WSL (Windows Subsystem for Linux)**. It allows you to run a Linux terminal right inside Windows, which is the industry standard way to write and run Python code!

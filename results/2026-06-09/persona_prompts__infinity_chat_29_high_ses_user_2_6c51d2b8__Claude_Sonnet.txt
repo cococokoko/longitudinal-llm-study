@@ -1,0 +1,149 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_user_2
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=32 out=1024
+Latency:   11570 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+# Building an Online Forum with LAMP Stack
+
+Here's a practical guide to building a forum using **Linux, Apache, MySQL, and PHP**.
+
+---
+
+## Prerequisites
+
+```bash
+# Install LAMP stack (Ubuntu/Debian)
+sudo apt update
+sudo apt install apache2 mysql-server php php-mysql libapache2-mod-php
+sudo apt install php-mbstring php-xml php-curl
+```
+
+---
+
+## 1. Database Setup (MySQL)
+
+```sql
+-- Create database and user
+CREATE DATABASE forum_db;
+CREATE USER 'forum_user'@'localhost' IDENTIFIED BY 'strong_password';
+GRANT ALL PRIVILEGES ON forum_db.* TO 'forum_user'@'localhost';
+FLUSH PRIVILEGES;
+
+-- Core tables
+USE forum_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    role ENUM('member', 'moderator', 'admin') DEFAULT 'member',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    display_order INT DEFAULT 0
+);
+
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT NOT NULL,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    is_locked TINYINT(1) DEFAULT 0,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT NOT NULL,
+    user_id INT NOT NULL,
+    body TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+---
+
+## 2. Project File Structure
+
+```
+/var/www/html/forum/
+├── config/
+│   └── db.php
+├── includes/
+│   ├── auth.php
+│   ├── header.php
+│   └── footer.php
+├── index.php          # Category listing
+├── thread.php         # View thread/posts
+├── new_thread.php     # Create thread
+├── register.php
+├── login.php
+└── logout.php
+```
+
+---
+
+## 3. Database Connection (config/db.php)
+
+```php
+<?php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'forum_user');
+define('DB_PASS', 'strong_password');
+define('DB_NAME', 'forum_db');
+
+function getDB() {
+    static $pdo = null;
+    if ($pdo === null) {
+        try {
+            $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
+            $pdo = new PDO($dsn, DB_USER, DB_PASS, [
+                PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                PDO::ATTR_EMULATE_PREPARES   => false,
+            ]);
+        } catch (PDOException $e) {
+            // Log error - never expose details publicly
+            error_log($e->getMessage());
+            die("Database connection failed.");
+        }
+    }
+    return $pdo;
+}
+?>
+```
+
+---
+
+## 4. Authentication (includes/auth.php)
+
+```php
+<?php
+session_start();
+
+function registerUser($username, $email, $password) {
+    $db = getDB();
+    $hash = password_hash($password, PASSWORD_BCRYPT);
+    $stmt = $db->prepare(
+        "INSERT INTO users (username, email, password_

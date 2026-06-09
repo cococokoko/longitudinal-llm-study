@@ -1,0 +1,115 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=23 out=2391
+Latency:   20163 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, you are already highly trained in logical deduction, systems thinking, and experimental design—skills that translate perfectly into programming. 
+
+Creating a top-down "Zombie Survivor" game in Scratch is an excellent way to learn the platform. We will build this using a "systems biology" approach: creating individual agents (sprites) and defining how they interact.
+
+Here is your step-by-step protocol to build a working prototype.
+
+### Phase 1: The Lab Setup (Creating Sprites)
+In Scratch, objects are called **Sprites**. You will need three basic Sprites. Delete the default Scratch Cat and create/draw three new ones:
+1.  **The Player:** A simple circle with a line pointing out (so you know which way it's facing).
+2.  **The Zombie:** A circle of a different color (e.g., green).
+3.  **The Projectile (Antibody/Bullet):** A small yellow dot.
+
+### Phase 2: Player Movement (The Host)
+We want the player to move using the WASD keys and aim using the mouse.
+Select the **Player Sprite** and add these blocks:
+
+**1. Aiming:**
+*   `When [Green Flag] clicked`
+*   `Forever`
+    *   `Point towards [mouse-pointer]`
+
+**2. Movement:**
+*   `When [Green Flag] clicked`
+*   `Forever`
+    *   `If <key [w] pressed?> then` -> `Change y by 5`
+    *   `If <key [s] pressed?> then` -> `Change y by -5`
+    *   `If <key [d] pressed?> then` -> `Change x by 5`
+    *   `If <key [a] pressed?> then` -> `Change x by -5`
+
+### Phase 3: The Zombies (Viral Replication)
+Instead of making 50 individual zombie sprites, we will use **Clones** (cellular replication). 
+Select the **Zombie Sprite**:
+
+**1. The Spawner (Original Zombie):**
+*   `When [Green Flag] clicked`
+*   `Hide` *(We only want the clones to be seen)*
+*   `Forever`
+    *   `Wait 1.5 seconds`
+    *   `Create clone of [myself]`
+
+**2. The Clone Behavior (Chemotaxis towards Player):**
+*   `When I start as a clone`
+*   `Go to x: (pick random -240 to 240) y: 180` *(Spawns them at the top of the screen)*
+*   `Show`
+*   `Forever`
+    *   `Point towards [Player]`
+    *   `Move 2 steps`
+
+### Phase 4: Defense Mechanism (Shooting)
+Select the **Projectile Sprite**. We will use clones here, too.
+
+**1. Firing the Projectile (Put this script in the PLAYER sprite):**
+*   `When [Green Flag] clicked`
+*   `Forever`
+    *   `If <mouse down?> then`
+        *   `Create clone of [Projectile]`
+        *   `Wait 0.2 seconds` *(This is your fire rate)*
+
+**2. Projectile Behavior (Put this script in the PROJECTILE sprite):**
+*   `When [Green Flag] clicked`
+*   `Hide`
+*   `When I start as a clone`
+*   `Go to [Player]`
+*   `Point in direction ([direction] of [Player])` *(You find this in the Sensing category)*
+*   `Show`
+*   `Repeat until <touching [edge]?>`
+    *   `Move 15 steps`
+*   `Delete this clone`
+
+### Phase 5: Clinical Outcomes (Collision & Health)
+Now we need variables (your vital signs). Go to the Variables tab and make two: **Health** and **Score**.
+
+**1. Setting the Baseline (Put in the Player sprite):**
+*   `When [Green Flag] clicked`
+*   `Set [Health] to 100`
+*   `Set [Score] to 0`
+
+**2. Zombie Interactions (Put this inside the Zombie's "When I start as a clone" Forever loop):**
+*   *Taking Damage:*
+    *   `If <touching [Player]?> then`
+        *   `Change [Health] by -10`
+        *   `Delete this clone`
+*   *Being Defeated:*
+    *   `If <touching [Projectile]?> then`
+        *   `Change [Score] by 1`
+        *   `Delete this clone`
+
+**3. Game Over Condition (Put in the Player sprite):**
+*   `When [Green Flag] clicked`
+*   `Forever`
+    *   `If <(Health) < 1> then`
+        *   `Say [Game Over!] for 2 seconds`
+        *   `Stop [all]`
+
+### Next Steps for the Principal Investigator
+Once you have this prototype running, you can iterate on your design:
+*   **Mutations:** Make a variable called "Zombie Speed" that increases as the Score increases.
+*   **Vaccine Drops:** Create a new sprite that occasionally spawns and restores Health when the player touches it.
+*   **Environment:** Draw a background in the "Stage" area to make it look like a ruined hospital or laboratory.

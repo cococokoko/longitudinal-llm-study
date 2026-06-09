@@ -1,0 +1,38 @@
+Wave:      2026-06-09
+Dataset:   global_opinion_qa
+Item ID:   goqa_e59e611a0dd4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=206 out=70
+Latency:   1580 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I'm going to read out a list of various changes in our way of life that might take place in the near future. Please tell me for each one, if it were to happen, whether you think it would be a good thing, a bad thing, or don't you mind?
+
+Less importance placed on work in our lives
+
+Options:
+A. Good thing
+B. Don't mind
+C. Bad thing
+D. Don't know
+E. No answer
+F. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{
+  "A": 0.4,
+  "B": 0.3,
+  "C": 0.2,
+  "D": 0.05,
+  "E": 0.02,
+  "F": 0.03
+}
+```

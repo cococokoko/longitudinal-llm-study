@@ -1,0 +1,70 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_33_high_ses_customer_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=24 out=1943
+Latency:   19548 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to make my own natural beauty products?
+
+── Response ────────────────────────────────────────────────────────
+Given your background as a physician-scientist, you will likely find that formulating your own natural beauty products is a highly rewarding extension of applied chemistry and dermatology. You already possess the bench skills, understanding of skin physiology, and experimental rigor required to create products that are both safe and efficacious.
+
+Here is a guide to setting up your personal skincare formulation "lab," structured much like a research protocol.
+
+### Phase 1: The "Lab" Setup and Equipment
+You can bypass the standard DIY advice and treat this like a small-scale formulation lab. 
+*   **Measurement:** A precision digital scale (accurate to 0.01g). Formulations are always done by weight (percentages), never by volume.
+*   **Vessels:** Borosilicate glass beakers (50ml, 100ml, 250ml).
+*   **Mixing:** A glass stirring rod, a mini homogenizer, or an overhead stirrer (a milk frother works for very small, simple batches, but introduces too much air for professional emulsions).
+*   **pH Testing:** A digital pH meter or high-quality pH strips. Skin pH is slightly acidic (4.5–5.5), and your products should match this to maintain the acid mantle.
+*   **Sanitation:** 70% Isopropyl alcohol for sterilizing all equipment and workspaces.
+
+### Phase 2: Understanding the Reagents (Ingredients)
+Skincare formulations generally fall into two categories: **Anhydrous** (no water, e.g., balms, facial oils) and **Aqueous/Emulsions** (water-based, e.g., lotions, serums).
+
+1.  **The Water Phase:** Distilled water, floral waters (hydrosols), aloe vera juice, and water-soluble humectants (Glycerin, Hyaluronic Acid).
+2.  **The Oil Phase:** Plant oils (Squalane, Jojoba, Rosehip), butters (Shea, Mango), and waxes.
+3.  **Emulsifiers:** Necessary to bind the water and oil phases. Natural-derived options include Olivem 1000 (Cetearyl Olivate, Sorbitan Olivate) or Montanov 68.
+4.  **Active Ingredients:** As a physician, you'll want evidence-based actives. Niacinamide (Vitamin B3), L-ascorbic acid (Vitamin C), Bakuchiol (a plant-derived retinol alternative), and Allantoin are excellent, well-researched additions.
+5.  **Preservatives (Crucial):** If your product contains *any* water, it requires a broad-spectrum preservative to prevent bacterial and fungal overgrowth. "Natural" does not mean preservative-free. Look into naturally derived, broad-spectrum options like Geogard ECT (Benzyl Alcohol, Salicylic Acid, Glycerin, Sorbic Acid) or Euxyl PE 9010 (Phenoxyethanol and Ethylhexylglycerin—synthetic but highly safe and effective).
+
+### Phase 3: A Starter Protocol (Basic Hydrating Emulsion)
+Here is a standard protocol for a 100g batch of a simple, elegant Oil-in-Water (O/W) moisturizer.
+
+**Formula (by weight %):**
+*   **Phase A (Water Phase):**
+    *   Distilled Water: 73%
+    *   Glycerin (Humectant): 4%
+*   **Phase B (Oil Phase):**
+    *   Jojoba Oil (Biomimetic lipid): 10%
+    *   Squalane (Emollient): 5%
+    *   Olivem 1000 (Emulsifier): 5%
+*   **Phase C (Cool Down Phase):**
+    *   Niacinamide (Active): 2%
+    *   Geogard ECT (Preservative): 1%
+
+**Methodology:**
+1.  **Prep:** Sanitize all equipment with 70% IPA.
+2.  **Heat:** Weigh Phase A into one beaker and Phase B into another. Place both in a water bath and heat to 70–75°C. Ensure the emulsifier in Phase B is completely melted.
+3.  **Emulsify:** Remove from heat. Slowly pour Phase B into Phase A while mixing with high shear (using your homogenizer or stirrer) for 1–2 minutes until a milky emulsion forms.
+4.  **Cool:** Switch to gentle stirring as the mixture cools to prevent air bubbles. The viscosity will increase as the temperature drops.
+5.  **Actives & Preservation:** Once the emulsion cools below 40°C, add Phase C. (Niacinamide is heat-sensitive, and preservatives have specific temperature tolerances).
+6.  **Quality Control:** Test the pH. It should be around 5.0 - 5.5. If it is too high, adjust with a drop of 10% citric acid solution; if too low, use a 10% L-arginine or sodium bicarbonate solution.
+
+### Phase 4: Quality Control and "Clinical" Testing
+*   **Stability Testing:** Keep a sample of your product in a clear glass jar. Observe it over a few weeks for phase separation, changes in color, or shifts in odor. You can also run a freeze-thaw cycle to test emulsion stability.
+*   **Microbial Challenge:** While you likely won't run a full USP <51> challenge test at home, you can purchase simple dip-slides (microbial test kits) to swab your product after a month to ensure your preservative system is holding up.
+*   **Patch Testing:** Always patch-test new formulations on your inner forearm for 24-48 hours before applying them to the face.
+
+**Recommended Resources for the Scientist-Formulator:**
+*   *SwiftCraftyMonkey (Point of Interest):* An incredibly detailed, science-based blog on cosmetic chemistry.
+*   *Formula Botanica:* Offers rigorous courses on organic cosmetic science.
+*   *Making Skincare:* A great resource for free, chemically sound formulation advice and preservative calculators.

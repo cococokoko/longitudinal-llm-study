@@ -1,0 +1,34 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_low_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=918
+Latency:   9067 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+Subject: Catching up / Quick update on our mutual customer
+
+Hi [Referral Partner Name],
+
+I hope you’ve been having a great week! 
+
+It’s been a little while since we last connected, and I’d love to schedule a quick call or grab a coffee sometime next week to catch up and see how things are going on your end. 
+
+I also wanted to briefly touch base regarding our mutual customer, [Customer Name]. Since I know they work full-time in a fast-food job with a highly unpredictable schedule, I'm hoping we can brainstorm the best way to coordinate our communication with them. I want to make sure we're accommodating their shifts and making the process as smooth as possible for them. 
+
+Let me know what days or times work best for you next week to connect!
+
+Best regards,
+
+[Your Name] 
+[Your Title/Company] 
+[Your Contact Information]

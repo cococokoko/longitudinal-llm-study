@@ -1,0 +1,21 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_45_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=26 out=869
+Latency:   9539 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Create a sentence using a minimum of 2 R-colored vowels.
+
+── Response ────────────────────────────────────────────────────────
+Here is a sentence fitting your role that contains several R-colored vowels:
+
+"Our **research** team will **further** observe the clinical **cohort** to uncover new therapies."
+
+*(The R-colored vowels in this sentence include the "er" sound in r**e**search, both the "ur" and "er" in f**u**rth**e**r, the "er" in obs**e**rve, the "or" in coh**o**rt, and the "er" in uncov**e**r.)*

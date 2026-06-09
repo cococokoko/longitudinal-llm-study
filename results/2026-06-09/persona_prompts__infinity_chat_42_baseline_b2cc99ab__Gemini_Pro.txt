@@ -1,0 +1,15 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=27 out=356
+Latency:   3982 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
+
+── Response ────────────────────────────────────────────────────────
+Best hidden gems for weekend getaways

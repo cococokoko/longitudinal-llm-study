@@ -1,0 +1,39 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=910
+Latency:   9385 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+In graph theory, a "linear graph" is most commonly referred to as a **Path Graph** (denoted as $P_n$, where *n* is the number of vertices). 
+
+In a path graph, all vertices are arranged in a single line, connected one after the other, with no branches and no loops (cycles).
+
+Here is a clear example of a **Path Graph with 4 vertices ($P_4$)**:
+
+### 1. Visual Representation
+```text
+(A) —— (B) —— (C) —— (D)
+```
+
+### 2. Mathematical Definition
+*   **Vertices (Nodes):** $V = \{A, B, C, D\}$
+*   **Edges (Connections):** $E = \{(A, B), (B, C), (C, D)\}$
+
+### 3. Real-World Example
+Imagine a single train line with four consecutive stops. 
+*   **A** is the starting station.
+*   To get to station **C**, the train must first travel through station **B**.
+*   **D** is the end of the line. 
+There are no intersecting train lines and no circular tracks.
+
+### Key Properties of this Graph:
+*   **Degrees:** The endpoints (A and D) have a degree of 1 (they are only connected to one other node). The internal nodes (B and C) have a degree of 2 (they connect to the node before and after them).
+*   **Acyclic:** There are no cycles; you cannot start at A, travel along the edges without backtracking, and end up back at A.

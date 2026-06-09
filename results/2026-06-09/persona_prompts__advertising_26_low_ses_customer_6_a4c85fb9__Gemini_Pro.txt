@@ -1,0 +1,48 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=27 out=1021
+Latency:   9997 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+I know you’re pulling long hours on your feet in the warehouse, so I’ll keep this clear, practical, and straight to the point so you don't have to spend your limited downtime reading a textbook. 
+
+Whether you're looking to help out your current employer, stepping into a new role, or starting a side business, here are the most effective data security best practices for small businesses:
+
+**1. Enforce Strong Passwords and MFA**
+*   **What it is:** Require complex passwords and Multi-Factor Authentication (MFA), which requires a second step (like a text code or app approval) to log in.
+*   **Why it matters:** Even if a hacker guesses a password, MFA stops them in their tracks. 
+
+**2. Train Employees Regularly**
+*   **What it is:** Teach staff how to spot phishing emails, suspicious links, and social engineering scams.
+*   **Why it matters:** Human error is the #1 cause of data breaches. Just like warehouse safety training prevents physical accidents, cybersecurity training prevents digital ones.
+
+**3. Limit Access (Principle of Least Privilege)**
+*   **What it is:** Only give employees access to the specific data and systems they need to do their jobs. 
+*   **Why it matters:** If an employee's account is compromised, the hacker only gets access to a small portion of the company's data, not the whole system. Think of it like locking certain high-value inventory cages in the warehouse.
+
+**4. Keep Software Updated**
+*   **What it is:** Turn on automatic updates for operating systems, antivirus software, and web browsers.
+*   **Why it matters:** Hackers exploit known weaknesses in old software. Updates contain the "patches" to fix those holes.
+
+**5. Back Up Data Frequently**
+*   **What it is:** Use the 3-2-1 rule: Keep **3** copies of your data, on **2** different types of media, with **1** copy stored securely offsite (like in the cloud).
+*   **Why it matters:** If the business gets hit by ransomware or a server crashes, you can restore the data without paying a ransom or losing everything.
+
+**6. Secure Your Wi-Fi**
+*   **What it is:** Ensure the business Wi-Fi is encrypted (WPA3 is best), hide the network name if possible, and set up a completely separate "Guest" network for visitors.
+*   **Why it matters:** It prevents outsiders sitting in the parking lot from snooping on company traffic.
+
+If you're looking to implement these at your current job, starting with MFA and employee training gives you the biggest security boost for the least amount of money. 
+
+Get some good rest after your shift, and let me know if you want to dig deeper into any of these!

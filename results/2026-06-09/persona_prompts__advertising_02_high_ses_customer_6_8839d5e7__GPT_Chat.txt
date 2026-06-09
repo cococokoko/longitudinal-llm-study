@@ -1,0 +1,54 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_02_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=405
+Latency:   3248 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+For dry skin, the goal is to cleanse gently, replenish moisture, and protect the skin barrier. A simple, consistent routine is usually more effective than a complicated one.
+
+Morning:
+- Gentle cleanser (or rinse with lukewarm water if your skin is very dry)
+  - Look for cream or hydrating cleansers.
+- Moisturizer
+  - Choose one containing ingredients such as ceramides, glycerin, hyaluronic acid, squalane, or shea butter.
+- Sunscreen (SPF 30 or higher)
+  - Daily sunscreen is important, even on cloudy days. Many moisturizing sunscreens work well for dry skin.
+
+Evening:
+- Gentle cleanser
+  - Avoid hot water and harsh scrubs.
+- Moisturizer
+  - Apply while skin is slightly damp to help lock in hydration.
+- Optional: occlusive layer
+  - If your skin is very dry, a thin layer of petrolatum-based ointment over moisturizer can reduce overnight water loss.
+
+Helpful ingredients:
+- Ceramides: support the skin barrier.
+- Glycerin: attracts water to the skin.
+- Hyaluronic acid: helps retain moisture.
+- Squalane: lightweight moisturizing oil.
+- Urea (low concentrations): hydrates and softens skin.
+- Niacinamide: can support barrier function.
+
+What to avoid:
+- Harsh foaming cleansers.
+- Overuse of exfoliating acids (AHAs/BHAs) or retinoids without adequate moisturization.
+- Fragranced products if your skin is sensitive.
+- Very hot showers.
+
+Example routine:
+- AM: Hydrating cleanser → ceramide moisturizer → SPF 30+ sunscreen.
+- PM: Hydrating cleanser → rich moisturizer → petrolatum ointment (if needed).
+
+If your dryness is accompanied by significant redness, itching, cracking, or persistent flaking, it may be worth consulting a dermatologist, as conditions such as eczema, psoriasis, or seborrheic dermatitis can require more targeted treatment.

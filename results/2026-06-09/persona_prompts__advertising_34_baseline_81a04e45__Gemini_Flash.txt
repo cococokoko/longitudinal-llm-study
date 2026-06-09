@@ -1,0 +1,67 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_34_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=10 out=1170
+Latency:   7467 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best techniques for effective online teaching?
+
+── Response ────────────────────────────────────────────────────────
+Effective online teaching requires a shift from traditional classroom methods. Because you are separated by a screen, the biggest challenges are **maintaining engagement, building community, and ensuring clarity.** 
+
+Here are the best, research-backed techniques for effective online teaching, categorized by phase and function.
+
+---
+
+### 1. Course Design & Structure (The Foundation)
+Before the first live session or module begins, the course must be structured for self-navigation.
+
+*   **The "Chunking" Method:** Break lectures and content into bite-sized pieces. Instead of a 60-minute recorded lecture, create four 10-to-15-minute videos, each focusing on one specific concept. This matches the shorter attention spans of online learners.
+*   **Consistent Navigation:** Use a clean, predictable layout in your Learning Management System (LMS) like Canvas or Google Classroom. Every module should have the same structure (e.g., Introduction $\rightarrow$ Read/Watch $\rightarrow$ Discuss $\rightarrow$ Submit).
+*   **Mobile-Friendly Design:** Many students access course materials on their phones. Ensure PDFs, videos, and quizzes are easily viewable on smaller screens.
+
+### 2. Synchronous (Live) Teaching Techniques
+If you teach live via Zoom, Teams, or Google Meet, your goal is to combat "Zoom fatigue" and passive listening.
+
+*   **The "Rule of 10":** Never speak for more than 10 minutes without requiring student action. Every 10 minutes, insert a poll, ask a question in the chat, or do a quick breakout activity.
+*   **Active Chat Management:** Use the chat box as a tool, not a distraction. 
+    *   *Waterfall/Chat Waterfall:* Ask a question, tell students to type their answer in the chat but **not** hit enter yet. Count down "3, 2, 1, Go!" and have everyone submit at once. This prevents students from just copying the first person's answer.
+*   **Purposeful Breakout Rooms:** Don't just send students to breakout rooms with a vague prompt. Give them:
+    *   A specific, tangible deliverable (e.g., "Write three bullet points on this shared Google Doc").
+    *   Assigned roles (e.g., Facilitator, Note-taker, Presenter).
+    *   A strict time limit (5–7 minutes is often sweet spot).
+*   **The "Guided Notes" Strategy:** Provide a skeletal outline of your lecture slides with blanks. Students must fill in the blanks as you teach, which keeps them focused on the screen.
+
+### 3. Asynchronous (Self-Paced) Engagement
+When students are learning on their own time, you must design ways to keep them motivated.
+
+*   **Interactive Video (e.g., Edpuzzle):** Don't just upload a video. Use tools like Edpuzzle or Playposit to embed questions *inside* the video. The video pauses, and students must answer a question to continue.
+*   **Structured Discussion Boards:** Standard "Post once and reply to two peers" prompts usually result in dry, forced interactions. Instead:
+    *   *Role-Play:* Assign students different perspectives to defend.
+    *   *The "3-2-1" Method:* Ask students to post 3 things they learned, 2 things they found interesting, and 1 question they still have.
+*   **Gamification:** Use tools like Kahoot!, Quizizz, or Gimkit for low-stakes retrieval practice. Students love competition, even asynchronously.
+
+### 4. Building Presence and Community
+In online learning, isolation is the enemy of retention. Students need to feel the "human" on the other side of the screen.
+
+*   **The "Warm Welcome" Video:** Before the course starts, send a short, informal video introducing yourself, your dog, or your workspace. This humanizes you immediately.
+*   **High-Impact Feedback:** Instead of just typing "Good job," use audio or video feedback (using tools like Loom or Mote). Hearing your tone of voice makes feedback feel more supportive and less critical.
+*   **Virtual Office Hours (Rebranded):** Students rarely attend "Office Hours" because it sounds intimidating. Rebrand them as "Study Sessions," "Coffee Chats," or "Q&A Hangouts."
+
+### 5. Assessment and Feedback
+Online assessment requires a shift away from high-stakes, easily-cheated exams toward authentic assessment.
+
+*   **Authentic Assessments:** Instead of multiple-choice tests (where students can easily Google answers), ask them to apply knowledge. Have them create a podcast, write a policy brief, analyze a real-world case study, or record a video explaining a concept.
+*   **Frequent, Low-Stakes Quizzes:** Use weekly, automated, low-stakes quizzes. This utilizes the "retrieval effect" (testing helps memory) without causing high anxiety.
+*   **Clear Rubrics:** Because you aren't there to clarify instructions in real-time, provide highly detailed rubrics. Show students examples of "Excellent," "Average," and "Poor" work.
+
+### Summary Checklist for Online Teachers:
+1. **Keep it short:** Chunk videos into 10-minute segments.
+2. **Keep them active:** Interactivity every 10 minutes during live sessions.
+3. **Be visible:** Use video/audio feedback and weekly announcement videos.
+4. **Be organized:** Keep the LMS layout identical week-to-week.

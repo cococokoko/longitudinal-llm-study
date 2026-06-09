@@ -1,0 +1,57 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_17_high_ses_user_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=1148
+Latency:   9419 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+How can I make my home more energy efficient?
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon at a major teaching hospital, your professional life is defined by high cognitive load, demanding schedules, and a reliance on precise, data-driven systems. When translating this to home energy efficiency, the goal is to achieve maximum impact with minimal daily cognitive friction. You want a home that operates like a well-run ICU: automated, highly efficient, monitored, and resilient.
+
+Here is a strategic, tiered approach to optimizing your home’s energy efficiency, categorized by effort, investment, and ROI.
+
+---
+
+### Phase 1: Automation & Cognitive Offloading (Low Effort, High Impact)
+Your time is highly valuable. The first step is to remove human error from your home’s energy consumption.
+
+*   **Smart Thermostats with Geofencing:** Install devices like the Nest Learning Thermostat or Ecobee. Use geofencing linked to your phone. When you leave for a 28-hour call shift, the house should automatically enter "eco-mode." It should begin cooling or heating only when you are within a 5-mile radius of home.
+*   **Smart Lighting Ecosystem (Lutron Caséta or Philips Hue):** Integrate these with motion sensors in high-traffic areas (hallways, closets, pantry) and set schedules. If you leave for the hospital at 5:00 AM, all non-essential lights should automatically shut off by 5:30 AM.
+*   **Smart Power Strips (Advanced Power Strips):** Your home entertainment center and home office have "vampire loads" (standby power). Use smart strips that cut power to peripheral devices (monitors, game consoles, printers) when the primary device (TV or computer) is turned off.
+
+### Phase 2: The "Envelope" and Diagnostics (The Physical Exam)
+Just as you wouldn't operate without an MRI, you shouldn't retrofitting your home without diagnostic data.
+
+*   **Professional Home Energy Audit:** Hire a certified RESNET or BPI analyst to perform a **blower door test** and **thermal imaging**. This will pinpoint exactly where your home is losing conditioned air (the "pathology").
+*   **Air Sealing and Insulation (The highest ROI upgrade):** 
+    *   **Attic:** Ensure your attic is insulated to at least R-49 to R-60 (depending on your climate). 
+    *   **Air Sealing:** Seal penetrations around plumbing stacks, light fixtures, and top plates. This prevents the "stack effect" (warm air escaping out the top of the house, pulling cold air in from the bottom).
+*   **Window Glazing/Treatments:** Replacing windows is rarely cost-effective purely for energy savings. Instead, opt for cellular shades (which have a high R-value) or low-E window films if you live in a hot climate.
+
+### Phase 3: Infrastructure Upgrades (The Major Surgery)
+If your HVAC or water heater is nearing the end of its lifespan (10–15 years), proactively upgrade to high-efficiency electric alternatives.
+
+*   **Heat Pump HVAC Systems:** Modern cold-climate heat pumps (like Mitsubishi Hyper-Heat) are up to 3-4 times more efficient than standard gas furnaces or baseboard heaters. They move heat rather than creating it.
+*   **Hybrid Heat Pump Water Heater:** Water heating is typically the second-largest energy expense in a home. A hybrid heat pump water heater pulls heat from the surrounding air to heat your water, operating at roughly 300-400% efficiency.
+*   **Energy Recovery Ventilator (ERV) / Heat Recovery Ventilator (HRV):** As you seal your home tighter, indoor air quality (IAQ) becomes critical for cognitive recovery and sleep. An ERV/HRV continuously exchanges stale indoor air for fresh outdoor air while pre-heating or pre-cooling the incoming air using the energy of the outgoing air.
+
+### Phase 4: Microgrid & Resilience (The ICU Backup)
+Given your critical role, your home needs to be a resilient sanctuary, especially during extreme weather events or grid instability.
+
+*   **Solar PV with Battery Storage (Tesla Powerwall, Enphase, etc.):** 
+    *   **Time-of-Use (TOU) Arbitrage:** If your utility provider charges more during peak hours (usually 4 PM–9 PM), your battery can power your home during these hours, recharging from the solar panels or cheap overnight grid power.
+    *   **Resilience:** In a blackout, the system seamlessly switches to battery power, ensuring your refrigeration, security, and HVAC remain operational.
+*   **Level 2 EV Charger:** If you drive an electric vehicle, install a smart charger (like a Wallbox or ChargePoint) that can be programmed to charge only during super-off-peak hours (e.g., 12 AM to 6 AM).
+
+### The "Prescription" for Next Steps:
+1.  **Week 1:** Order a **Sense** or **Emporia Vue** home energy monitor. This clamps onto your main electrical panel and uses machine learning to identify the "signature" of every appliance in your home, giving you a real-time "ECG" of your energy use.
+2.  **Week 2:** Schedule a professional home energy audit.
+3.  **Month 1:** Implement air sealing, attic insulation, and smart thermostat programming based on the audit results.

@@ -1,0 +1,66 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=382
+Latency:   4463 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Example:
+
+Suppose the temperature T in a room depends on two variables:
+- x = hours the heater has been running
+- y = number of people in the room
+
+Let
+
+T(x, y) = 20 + 2x + 3y
+
+where T is measured in °C.
+
+Partial derivative with respect to x:
+
+∂T/∂x = 2
+
+Interpretation:
+- Keep the number of people y fixed.
+- For each additional hour the heater runs, the temperature increases by 2°C.
+
+Partial derivative with respect to y:
+
+∂T/∂y = 3
+
+Interpretation:
+- Keep the heater running time x fixed.
+- Each additional person increases the temperature by 3°C.
+
+Numerical illustration:
+
+At x = 4 hours and y = 5 people,
+
+T(4,5) = 20 + 2(4) + 3(5) = 43°C
+
+If only x increases from 4 to 5 while y stays at 5:
+
+T(5,5) = 20 + 2(5) + 3(5) = 45°C
+
+Temperature increases by 45 − 43 = 2°C, matching ∂T/∂x = 2.
+
+If only y increases from 5 to 6 while x stays at 4:
+
+T(4,6) = 20 + 2(4) + 3(6) = 46°C
+
+Temperature increases by 46 − 43 = 3°C, matching ∂T/∂y = 3.
+
+This demonstrates that a partial derivative tells you the rate of change of a function with respect to one variable while all other variables are held constant.

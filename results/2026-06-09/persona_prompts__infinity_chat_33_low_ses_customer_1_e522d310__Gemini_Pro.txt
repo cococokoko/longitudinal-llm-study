@@ -1,0 +1,48 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=1522
+Latency:   14969 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+Since you’re working full-time in fast food with an unpredictable schedule, your downtime is incredibly valuable. You don't want to spend your limited free time fighting with complicated setups, and you need to be able to pause or save your game at a moment's notice if you get called into a shift. 
+
+Playing Wii games on a Surface using an on-screen keyboard and touchpad is a bit tricky because Wii games were designed for motion controls, but it is absolutely doable. Here is a quick, no-fuss guide to getting it set up so you can jump right into playing.
+
+### Step 1: Get the Right On-Screen Keyboard
+The default Windows touch keyboard (the one that pops up from the bottom) doesn't always play nice with emulators. You want the **traditional On-Screen Keyboard**.
+1. Press the Windows Start button and type **On-Screen Keyboard**, then open the app. 
+2. This version stays on your screen and acts exactly like a physical keyboard, which Dolphin will recognize.
+
+### Step 2: Configure Dolphin for Touchpad & Keyboard
+Open Dolphin and click on the **Controllers** button at the top. Under "Wii Remotes," set Wii Remote 1 to **Emulated Wii Remote**, then click **Configure**.
+
+Here is the best way to map your controls for a touchpad and on-screen keyboard:
+
+*   **Device:** Set this to `Keyboard Mouse`.
+*   **Buttons:** Map **A** to the `Spacebar` and **B** to `Shift` or `Z`. Map **1** and **2** to the actual `1` and `2` keys.
+*   **D-Pad:** Map this to `W, A, S, D` (Up, Left, Down, Right).
+*   **Motion Simulation (The Pointer):** This is where your touchpad comes in. Go to the **Motion Simulation** tab. Under **Point**, map Up/Down/Left/Right to your mouse cursor. This allows you to use your Surface touchpad to aim at the screen just like a real Wii remote!
+*   **Shake:** Map "Shake" (X, Y, and Z) to a single easily reachable key, like `Q`. Many Wii games require you to shake the remote, and pressing `Q` will trick the game into thinking you just shook it.
+
+### Step 3: Choose the Right Games
+Because you are using a touchpad and a screen keyboard, games that require intense, fast-paced motion controls (like *Skyward Sword*) will be very frustrating. 
+*   **Best games for this setup:** *New Super Mario Bros. Wii*, *Mario Kart Wii*, *Paper Mario*, or *Fire Emblem: Radiant Dawn*. These require very little pointing and can be played mostly with just the D-pad and buttons.
+*   **Perfect for your schedule:** These games are also great because you can play them in 15-minute bursts before or after a shift.
+
+### Step 4: The Ultimate Time-Saver (Save States)
+Because your schedule is unpredictable, you might need to close your Surface suddenly. Don't rely on in-game save points! 
+*   Use Dolphin's **Save States**. Press **Shift + F1** to instantly freeze and save the game exactly where you are. 
+*   When you have free time again, press **F1** to instantly load right back to that exact second. 
+
+*A quick tip for the future:* When you have a few extra bucks to spare, consider picking up a cheap Bluetooth controller (like an Xbox controller). It connects instantly to your Surface and will make relaxing after a long, chaotic shift on your feet much easier than tapping a glass screen!

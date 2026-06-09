@@ -1,0 +1,158 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_low_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=30 out=622
+Latency:   13770 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+You can make a simple zombie survivor game in Scratch by building it in small parts. Since you work shifts, a good approach is to make one feature at a time whenever you have free time.
+
+Basic game idea:
+- Player moves around the screen.
+- Zombies chase the player.
+- Player can shoot zombies.
+- Survive as long as possible.
+- Score increases when zombies are defeated.
+
+1. Create the player
+
+Make a player sprite.
+
+Movement script:
+
+When green flag clicked
+- Go to x:0 y:0
+- Forever
+  - If key [W] pressed → change y by 5
+  - If key [S] pressed → change y by -5
+  - If key [A] pressed → change x by -5
+  - If key [D] pressed → change x by 5
+
+2. Create bullets
+
+Make a bullet sprite.
+
+Player script:
+
+When [space] key pressed
+- Create clone of [Bullet]
+
+Bullet script:
+
+When I start as clone
+- Go to Player
+- Point in direction of Player
+- Repeat until touching edge
+  - Move 10 steps
+  - If touching Zombie
+    - Delete clone
+- Delete clone
+
+3. Create zombies
+
+Make a zombie sprite.
+
+Spawn script:
+
+When green flag clicked
+- Forever
+  - Wait 2 seconds
+  - Create clone of myself
+
+Zombie clone script:
+
+When I start as clone
+- Go to random position near edge
+
+Forever
+- Point towards Player
+- Move 2 steps
+
+4. Damage the player
+
+Create variable:
+- Health
+
+When green flag clicked
+- Set Health to 100
+
+Zombie script:
+
+If touching Player
+- Change Health by -1
+
+Player script:
+
+If Health ≤ 0
+- Broadcast [Game Over]
+
+5. Destroy zombies
+
+Create variable:
+- Score
+
+Zombie script:
+
+If touching Bullet
+- Change Score by 1
+- Delete clone
+
+6. Add game over
+
+When I receive [Game Over]
+- Stop all
+
+You can also show:
+- "You survived!"
+- Final score
+
+7. Add improvements
+
+After the basic version works, add:
+- Faster zombies over time
+- Multiple zombie types
+- Ammo and reloading
+- Health packs
+- Waves of enemies
+- Larger scrolling map
+- Sound effects
+- Day/night cycle
+
+Simple progression system:
+- Every 30 seconds:
+  - Increase zombie speed
+  - Spawn zombies more often
+
+Example:
+- Wave 1: speed 2
+- Wave 2: speed 3
+- Wave 3: speed 4
+
+Project structure:
+- Variables:
+  - Health
+  - Score
+  - Wave
+  - ZombieSpeed
+- Sprites:
+  - Player
+  - Zombie
+  - Bullet
+  - HealthPack (optional)
+
+A good first milestone is:
+- Player movement
+- One zombie that follows the player
+- Bullets
+- Health and score
+
+Once those four pieces work, you already have a playable zombie survivor game.

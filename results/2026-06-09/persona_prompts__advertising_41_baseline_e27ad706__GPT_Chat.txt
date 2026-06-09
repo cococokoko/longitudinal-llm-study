@@ -1,0 +1,64 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_41_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=521
+Latency:   4112 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+If you're looking to improve your credit score as quickly as possible, focus on the factors that have the fastest impact:
+
+1. Lower your credit card balances
+- Credit utilization (how much of your available credit you're using) is a major factor.
+- Aim to keep each card below 30% of its limit, and below 10% if possible.
+- If you can make an extra payment before your statement closing date, the lower balance may be what gets reported to the credit bureaus.
+
+2. Make every payment on time
+- Payment history is the most important credit scoring factor.
+- Set up automatic payments or reminders to avoid missed payments.
+- If you're currently behind, bringing accounts current can help over time.
+
+3. Check your credit reports for errors
+- Obtain your reports from the major credit bureaus.
+- Look for:
+  - Incorrect late payments
+  - Accounts that aren't yours
+  - Incorrect balances
+- Disputing and correcting errors can sometimes lead to a relatively quick score improvement.
+
+4. Ask for a credit limit increase
+- If approved without a hard credit inquiry, a higher limit can reduce your utilization ratio.
+- Don't increase spending just because the limit is higher.
+
+5. Pay down revolving debt strategically
+- Focus on credit cards and lines of credit rather than installment loans if your goal is a quicker score improvement.
+- High revolving balances tend to have a stronger effect on utilization.
+
+6. Avoid applying for multiple new accounts
+- New applications can result in hard inquiries and reduce the average age of your accounts.
+- Only apply for new credit when necessary.
+
+7. Become an authorized user
+- If a trusted family member has a long-standing credit card with a low balance and strong payment history, being added as an authorized user may help your credit profile, depending on the lender and scoring model.
+
+8. Keep older accounts open
+- Closing older credit cards can reduce available credit and may increase utilization.
+- If there is no annual fee, keeping the account open is often beneficial.
+
+Typical timelines:
+- Lowering credit card balances: often reflected within 1–2 billing cycles.
+- Correcting reporting errors: usually 30–60 days.
+- Recovering from late payments or collections: several months to years, depending on severity.
+
+If you tell me:
+- Your current score range (e.g., 580, 650, 720),
+- Whether you have credit card debt,
+- Any late payments, collections, or charge-offs,
+
+I can suggest the actions most likely to improve your score in the next 30–90 days.

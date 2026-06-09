@@ -1,0 +1,57 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=27 out=958
+Latency:   7521 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+For a small business, data security doesn’t have to be overly complex or require a massive IT department. The most effective approach is to focus on high-impact, practical habits that protect your business, your employees, and your customers with minimal friction. 
+
+Here are the best practices for securing data in a small business, broken down into actionable steps:
+
+### 1. Secure the "Front Door" (Access Control)
+The easiest way for hackers to access your data is through weak or stolen credentials. 
+*   **Enforce Multi-Factor Authentication (MFA):** Turn on MFA (sometimes called two-step verification) for every single business account—especially email, payroll, and cloud storage. This single step blocks the vast majority of automated cyberattacks.
+*   **Use a Password Manager:** Encourage or provide employees with a password manager (like Bitwarden or 1Password). This ensures everyone uses strong, unique passwords for every account without having to memorize them.
+*   **The "Least Privilege" Rule:** Only give employees access to the specific files, software, and data they need to do their job. For example, a floor manager doesn't need access to HR files, and a delivery driver doesn't need access to the main accounting software.
+
+### 2. Protect the Physical Environment
+Data security isn't just digital; it’s physical. 
+*   **Lock Down Devices:** Ensure all computers, tablets, and handheld scanners automatically lock after a short period of inactivity (e.g., 3 to 5 minutes). 
+*   **Secure Physical Records:** Keep paper files, customer invoices, and HR documents in locked filing cabinets. 
+*   **Dispose of Data Safely:** Shred physical documents containing sensitive information, and ensure old hard drives, tablets, or phones are professionally wiped before being recycled or thrown away.
+
+### 3. Keep Software and Hardware Updated
+Cybercriminals exploit known bugs in software. When software companies find these bugs, they release updates to patch them.
+*   **Enable Automatic Updates:** Set operating systems (Windows, macOS, iOS, Android) and critical software to update automatically, preferably overnight so it doesn't disrupt the workday.
+*   **Don't Ignore Router Updates:** Small business Wi-Fi routers are common targets. Ensure your router’s firmware is updated and that you have changed the default admin password.
+
+### 4. Establish a Bulletproof Backup Routine
+If your business is hit by ransomware (where hackers lock your files and demand money) or experiences a hardware failure, a good backup is your safety net.
+*   **The 3-2-1 Backup Rule:** 
+    *   Keep **3** copies of your data (the live data and two backups).
+    *   Use **2** different types of media (e.g., a local external hard drive and cloud storage).
+    *   Keep **1** copy offsite (cloud storage handles this automatically).
+*   **Test Your Backups:** A backup is only good if it actually works. Test restoring a file from your backup once a month to ensure the system is running correctly.
+
+### 5. Secure Your Network
+*   **Separate Guest Wi-Fi:** If you offer Wi-Fi to customers, visitors, or vendors, set up a separate "Guest" network. Never let guests connect to the primary network where your business computers, point-of-sale (POS) systems, or inventory databases are connected.
+*   **Use a VPN for Remote Work:** If you or your managers access business systems from home or on the road, require the use of a Virtual Private Network (VPN) to encrypt the connection.
+
+### 6. Train Your Team (The Human Element)
+Most data breaches happen because of human error, usually through phishing emails (fake emails designed to steal passwords or install malware).
+*   **Keep Training Short and Practical:** You don't need hours of boring slideshows. Do quick, 5-minute huddles or send monthly tips on how to spot suspicious emails.
+*   **Create a "No-Blame" Culture:** Make sure employees know that if they accidentally click a suspicious link or download a weird file, they should report it immediately. Catching a mistake in the first 10 minutes is much easier to fix than discovering it days later.
+
+### Where to Start?
+If you are short on time, start with **Step 1 (MFA)** and **Step 4 (Backups)**. These two steps alone will protect your business from the vast majority of common digital threats.

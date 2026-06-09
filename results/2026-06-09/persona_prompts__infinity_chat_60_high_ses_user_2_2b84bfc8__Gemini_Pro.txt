@@ -1,0 +1,30 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_high_ses_user_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=26 out=1105
+Latency:   11784 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you are setting up a massive, room-sized chain of dominoes. There are bridges, ramps, and thousands of pieces. 
+
+If I ask you, "Will the very last red domino fall over?" you might want to find a quick math formula to give me the answer. 
+
+**Computational irreducibility** means that *there is no shortcut*. No matter how smart you are, or how well you understand the rules of gravity and dominoes, the only way to know for sure if that last red domino will fall is to flick the first one and watch the whole thing happen, step by step. 
+
+To put it in two categories:
+
+**Reducible (Has a shortcut):** If you drive 60 miles per hour for two hours, I don't have to sit in the car with you for two hours to know you traveled 120 miles. I can use a shortcut (math) to skip to the end.
+
+**Irreducible (No shortcut):** The weather, or our giant domino setup. The rules are simple, but the way they interact is so complex that you cannot skip to the end. You just have to watch it play out.
+
+**For a senior attorney:**
+It is exactly like a complex piece of litigation. Even if you know the law perfectly (the rules) and you know the facts of the complaint (the starting setup), there is no mathematical formula to predict the exact outcome of a jury trial on day one. Because of how the witnesses, the judge, the opposing counsel, and the evidence interact, you cannot skip to the verdict. You simply have to litigate the case step-by-step to find out how it ends.

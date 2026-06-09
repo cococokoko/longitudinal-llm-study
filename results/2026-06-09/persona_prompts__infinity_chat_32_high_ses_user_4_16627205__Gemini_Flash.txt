@@ -1,0 +1,141 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=23 out=1415
+Latency:   10733 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, you likely appreciate structured systems, logical workflows, and iterative testing. Scratch is an excellent, highly visual environment for rapid prototyping. While it uses drag-and-drop blocks, it supports complex logic like cloning, state machines, and coordinate geometry.
+
+Here is a step-by-step guide to building a top-down or side-scrolling zombie survival game on Scratch, structured like a research project.
+
+---
+
+### Phase 1: The "Clinical Trial" (Core Mechanics)
+Before adding graphics, you need a working prototype (a "Minimum Viable Product"). Use simple shapes (a blue square for the player, red circles for zombies, yellow dots for bullets).
+
+#### 1. Player Movement (Top-Down Perspective)
+Create a sprite named `Player`.
+*   **Logic:** The player should point toward the mouse pointer and move using the WASD keys.
+*   **Scratch Code:**
+    ```scratch
+    when green flag clicked
+    forever
+        point towards [mouse-pointer v]
+        if <key [w v] pressed?> then
+            change y by (4)
+        end
+        if <key [s v] pressed?> then
+            change y by (-4)
+        end
+        if <key [a v] pressed?> then
+            change x by (-4)
+        end
+        if <key [d v] pressed?> then
+            change x by (4)
+        end
+    end
+    ```
+
+#### 2. Shooting Mechanics (The "Antibody" Projectiles)
+Create a sprite named `Bullet`. It should remain hidden until the player shoots, at which point it will spawn a **clone**.
+*   **Scratch Code (Bullet Sprite):**
+    ```scratch
+    when green flag clicked
+    hide
+
+    when I receive [shoot v] // Triggered by Player clicking mouse
+    create clone of [myself v]
+
+    when I start as a clone
+    go to [Player v]
+    point towards [mouse-pointer v]
+    show
+    repeat until <touching [edge v]?>
+        move (10) steps
+    end
+    delete this clone
+    ```
+*   *In the Player Sprite, add:*
+    ```scratch
+    if <mouse down?> then
+        broadcast [shoot v]
+        wait (0.2) secs // Rate of fire
+    end
+    ```
+
+#### 3. Zombie Spawning (The "Pathogen" Clones)
+Create a sprite named `Zombie`. To simulate an outbreak, we will use cloning to generate multiple zombies from random edges of the screen.
+*   **Scratch Code (Zombie Sprite):**
+    ```scratch
+    when green flag clicked
+    hide
+    forever
+        wait (2) secs // Spawn rate
+        create clone of [myself v]
+    end
+
+    when I start as a clone
+    // Spawn at a random edge
+    go to x: (pick random (-240) to (240)) y: (180) 
+    show
+    forever
+        point towards [Player v]
+        move (1.5) steps // Zombies are slower than the player
+        
+        // Collision with Bullet
+        if <touching [Bullet v]?> then
+            change [Score v] by (1)
+            delete this clone
+        end
+        
+        // Collision with Player
+        if <touching [Player v]?> then
+            change [Health v] by (-10)
+            delete this clone // Or trigger Game Over
+        end
+    end
+    ```
+
+---
+
+### Phase 2: System Variables (The "Physiology")
+To make it a game, you need to track the state of the system. Create these variables (available for all sprites):
+
+1.  `Health` (Set to 100 at start. If $\le 0$, stop all scripts).
+2.  `Score` (Increments when a zombie is destroyed).
+3.  `Ammo` (Optional: limits shooting; replenished by picking up "ammo crates").
+4.  `Wave` (Increments over time, decreasing the zombie spawn `wait` time to increase difficulty).
+
+---
+
+### Phase 3: Advanced Mechanics (For the "PI" Level)
+Once the basics work, you can introduce more complex logic:
+
+*   **Pathfinding/Obstacles:** If you add walls (a sprite named `Obstacles`), you must program collision detection. If the player moves into a wall, they should immediately move backward by the same step value (e.g., `change x by (-4)`) to prevent clipping.
+*   **Zombie Variety (Phenotypes):** 
+    *   Create different costumes for the Zombie sprite (e.g., "Runner", "Tank").
+    *   When a clone starts, assign it a random costume.
+    *   Use a local variable (`for this sprite only`) called `Zombie_HP`. A "Tank" zombie might require 5 bullet hits to delete, while a "Runner" moves at speed `3` but dies in 1 hit.
+*   **Camera Scrolling:** Scratch's stage is small (480x360 pixels). To make a massive world, you must implement "scrolling." This involves keeping the player in the center of the screen and moving the background and zombies in the *opposite* direction of the player's movement using `Scroll X` and `Scroll Y` variables.
+
+---
+
+### Phase 4: Aesthetics & "Peer Review"
+1.  **Art Assets:** You can draw your own vector art in Scratch, or import free top-down game assets (from sites like Kenney.nl or OpenGameArt.org).
+2.  **Sound Effects:** Add a "splat" sound when zombies are hit and a "pew" sound for shooting.
+3.  **Share and Iterate:** Share the project link with your research group or family for "peer review." Observe where they struggle and adjust the variables (player speed, zombie health) to balance the gameplay.
+
+### Why this is a great exercise for a scientist:
+Programming in Scratch uses the exact same algorithmic thinking as writing data analysis pipelines in Python or R. You are managing inputs (keyboard/mouse), processing states (variables, loops, conditionals), and rendering outputs (graphics/sound). 
+
+*Tip: If you want to skip the visual blocks and write actual code that feels like Scratch, look into **Pygame** (Python) or **Phaser** (JavaScript) once you've mapped out your logic.*

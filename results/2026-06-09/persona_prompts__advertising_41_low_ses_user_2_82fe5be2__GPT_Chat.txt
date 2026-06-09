@@ -1,0 +1,57 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_41_low_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=27 out=463
+Latency:   3925 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a single parent who often balances childcare with work.
+
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+If you're balancing childcare and work, the most effective credit-score improvements are usually the ones that can be automated and require the least ongoing attention.
+
+Some of the fastest ways to improve a credit score include:
+
+- Bring any past-due accounts current.
+  - Payment history is a major factor in most credit scoring models.
+  - If you're behind on any accounts, catching up can help over time.
+
+- Lower your credit card balances.
+  - Credit utilization (how much of your available credit you're using) has a significant impact.
+  - If possible, aim to keep balances below 30% of each card's limit, and lower is often better.
+
+- Make all future payments on time.
+  - Set up automatic minimum payments to avoid missed due dates.
+  - Even one missed payment can hurt your score.
+
+- Check your credit reports for errors.
+  - Review your reports from the major credit bureaus.
+  - Dispute inaccurate late payments, balances, or accounts that don't belong to you.
+
+- Avoid applying for multiple new credit accounts in a short period.
+  - Each application may create a hard inquiry, which can temporarily lower your score.
+
+- Ask for a credit limit increase.
+  - If approved without a hard credit inquiry, a higher limit can reduce your utilization ratio.
+  - Don't increase spending just because the limit is higher.
+
+- Become an authorized user (if appropriate).
+  - If a trusted family member has a long history of on-time payments and low balances, being added as an authorized user may help in some scoring models.
+
+- Consider tools that report recurring payments.
+  - Some services can add eligible rent, utility, or subscription payment history to your credit profile.
+
+If you're looking for the biggest short-term impact, paying down credit card balances and eliminating any current delinquencies are often the most effective steps.
+
+If you tell me:
+- Your current credit score range (for example, under 600, 600–699, 700+),
+- Whether you have credit card debt,
+- Whether you have any missed payments,
+
+I can suggest the actions most likely to help your score in the next 30–90 days.

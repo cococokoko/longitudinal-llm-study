@@ -1,0 +1,23 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1074
+Latency:   11445 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you set up a giant, crazy maze of a million dominoes all over your living room. They go up ramps, under tables, and split into different paths. 
+
+Now, imagine I point to one specific blue domino at the very end and ask you: **"When we push the first domino, will this blue one fall over?"**
+
+Because the setup is so big and complicated, you can't just guess. You can't use a magic trick to skip to the end. There are absolutely no shortcuts. 
+
+The *only* way to know for sure if the blue domino will fall is to push the first one and watch every single domino fall, step by step, all the way to the end. 
+
+Grown-ups call this **computational irreducibility**. It’s just a really fancy way of saying: **There are no shortcuts. You have to watch the whole thing happen step-by-step to see how it ends!**

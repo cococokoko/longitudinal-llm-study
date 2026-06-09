@@ -1,0 +1,38 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=23 out=1209
+Latency:   14659 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, your most scarce resource is time. Because you are constantly pulled between clinical duties, grant writing, and research, your lab can easily suffer from the **"PI Bottleneck"**—where progress halts because your team is waiting on your approval, edits, or input. 
+
+Here is the most effective tip for your specific role: **Implement a "Tiered Autonomy and Mentorship" structure.**
+
+Here is how to execute it:
+
+**1. Establish "Zones of Autonomy"**
+Explicitly define what decisions your team can make without you, and what requires your direct approval. 
+*   *Green Zone (No approval needed):* Troubleshooting standard assays, ordering routine supplies under a certain budget, scheduling clinical research follow-ups.
+*   *Yellow Zone (Decide and inform):* Modifying a minor protocol step, submitting an abstract to a local conference. They make the call, but send you a quick update.
+*   *Red Zone (PI approval mandatory):* Changing a primary endpoint, spending over a specific dollar amount, submitting a manuscript, or altering an IRB protocol.
+
+**2. Create a Tiered Mentorship Model**
+You cannot be the primary day-to-day mentor for every undergraduate, medical student, or new tech. Pair junior members with senior members (postdocs, senior clinical research coordinators, or experienced PhD students). The rule should be: *“Ask your direct mentor first. If you both can’t solve it, bring it to me.”* This empowers your senior staff to develop leadership skills while protecting your time.
+
+**3. Use Structured, Asynchronous Updates**
+Because your clinical schedule can be unpredictable, rely on asynchronous communication. Have your team members (or sub-team leads) send a structured "Friday Update" email with three bullet points:
+*   What I accomplished this week.
+*   What I plan to do next week.
+*   *Where I am stuck and need your input.*
+
+**Why this works for you:** It keeps the research moving while you are on service or in the clinic, prevents you from micromanaging, and trains your senior team members to become independent investigators themselves.

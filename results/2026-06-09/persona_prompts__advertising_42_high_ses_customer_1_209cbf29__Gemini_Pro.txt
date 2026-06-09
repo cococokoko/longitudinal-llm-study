@@ -1,0 +1,45 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=26 out=1320
+Latency:   14831 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+Given your demanding schedule as a neurosurgeon—balancing long hours in the OR, irregular call shifts, and the need for peak cognitive and physical performance—the best apps for you are going to be highly data-driven, efficient, and adaptable to an unpredictable routine. 
+
+Here are the best fitness and nutrition apps tailored to a high-performance, time-scarce lifestyle:
+
+### 1. For Nutrition: MacroFactor
+* **Why it’s best for you:** Created by researchers and data scientists, MacroFactor uses a dynamic algorithm to adjust your macro targets based on your actual metabolism and weight trends. 
+* **The Surgeon Benefit:** It is "adherence neutral." If you are stuck in a 12-hour craniotomy and miss your meals, or eat hospital cafeteria food on call, the app doesn't use red numbers or guilt-trip you. It simply takes the data and adjusts your targets for the next week. It’s highly analytical and evidence-based.
+
+### 2. For Micronutrient Tracking: Cronometer
+* **Why it’s best for you:** If you want to look beyond macros and track your exact vitamin, mineral, and amino acid intake, Cronometer is the gold standard. 
+* **The Surgeon Benefit:** It pulls exclusively from verified databases (like the NCCDB and USDA). As a physician, you will appreciate the clinical accuracy of the data, ensuring you are fueling your brain and body optimally for long shifts.
+
+### 3. For Strength Training: Hevy or Strong
+* **Why they are best for you:** Both are clean, highly efficient workout loggers for strength training. 
+* **The Surgeon Benefit:** No fluff, no long videos to watch. You can build your routines, track your progressive overload, view charts of your 1RM, and get in and out of the hospital gym quickly. They also integrate seamlessly with Apple Watch, so you can leave your phone in your locker.
+
+### 4. For Recovery & Sleep: Whoop or Athlytic
+* **Why it’s best for you:** Fitness isn't just about training; it's about recovery, which is notoriously difficult during residency or as an attending on call. 
+* **The Surgeon Benefit:** 
+    * **Whoop (Requires Whoop strap):** Tracks HRV, resting heart rate, and sleep architecture to give you a daily "Recovery Score." It will tell you when your nervous system is fried from a brutal call night and you should rest, versus when you are primed to push hard in the gym.
+    * **Athlytic (Uses Apple Watch):** If you already wear an Apple Watch, this app turns your watch's health data into actionable recovery and exertion scores similar to Whoop, without the separate subscription.
+
+### 5. For Time-Crunched Cardio & Mobility: Peloton App
+* **Why it’s best for you:** You don't need the bike to use the app. It offers thousands of on-demand classes (yoga, mobility, HIIT, strength).
+* **The Surgeon Benefit:** When you get home at 8 PM and only have 20 minutes to decompress, you can pull up a quick, guided mobility routine to counteract the physical toll of standing hunched over an operating table all day. 
+
+**The Ideal Setup:**
+If you want the most analytical, low-friction stack, pair **MacroFactor** (for dynamic diet adjustments) with an **Apple Watch + Athlytic** (for passive recovery tracking) and **Hevy** (for quick gym logging). This gives you clinical-grade data without requiring hours of manual input.

@@ -1,0 +1,51 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=296
+Latency:   8621 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+During a pandemic, here are the safest travel approaches based on public health guidance:
+
+## Before Traveling
+- Check current transmission rates at your destination
+- Verify entry requirements and health protocols
+- Ensure vaccinations and boosters are current
+- Purchase travel insurance with health coverage
+- Consult your physician if you have risk factors
+
+## Transportation Options (Generally Ranked by Risk)
+- **Driving privately** - lowest exposure risk
+- **Flying** - HEPA filters reduce risk; choose direct flights
+- **Train** - ventilation varies; less crowded times preferred
+- **Buses** - higher risk due to ventilation limitations
+
+## During Travel
+- Wear high-quality masks (N95/KN95) in crowded settings
+- Practice hand hygiene consistently
+- Maintain distance where possible
+- Avoid peak travel times when feasible
+- Stay in well-ventilated spaces
+
+## Accommodation Considerations
+- Private rentals vs. hotels depending on contact levels
+- Verify cleaning protocols
+- Consider room service over communal dining
+
+## Practical Risk Management
+- Test before and after travel
+- Have a contingency plan if you test positive
+- Know local healthcare resources at your destination
+- Keep colleagues informed of your travel status
+
+Is there a specific type of travel or destination context you're considering? I can provide more targeted guidance.

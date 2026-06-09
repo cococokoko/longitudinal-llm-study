@@ -1,0 +1,93 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_33_high_ses_customer_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=24 out=1716
+Latency:   11983 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to make my own natural beauty products?
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, you are uniquely positioned to approach DIY beauty formulation with a level of precision, safety, and biochemical understanding that goes far beyond standard "kitchen chemistry." 
+
+Formulating your own skincare is essentially applied biochemistry and colloid science. Here is a guide to transitioning your scientific background into creating high-quality, safe, and effective natural beauty products.
+
+---
+
+### 1. The Formulation Framework: Moving Beyond "Recipes"
+In professional formulation, we do not use cups or spoons; everything is calculated in **weight percentages (wt%)** to ensure reproducibility, scale-up capability, and precise active dosing.
+
+A standard emulsion (cream or lotion) consists of three main phases:
+1. **Aqueous Phase (typically 60–80%):** Water, hydrosols, glycerin (humectant), aloe vera.
+2. **Anhydrous/Oil Phase (typically 15–25%):** Carrier oils, butters, oil-soluble antioxidants (Tocopherol), and emulsifiers.
+3. **Cool-Down Phase (typically 1–5%):** Heat-sensitive actives (peptides, vitamins), essential oils/fragrances, and preservatives. Added when the emulsion drops below 40°C.
+
+### 2. The Physicochemical Essentials
+To create stable, elegant products, you will need to manage several physical chemistry principles:
+
+*   **Emulsification (HLB System):** Water and oil do not mix. You will need emulsifying waxes (like Glyceryl Stearate, Cetearyl Alcohol, or Olivem 1000) which utilize the Hydrophilic-Lipophilic Balance (HLB) to stabilize the interface.
+*   **Rheology Modifiers:** To prevent phase separation (creaming or sedimentation) and improve sensory feel, use natural polymers like Xanthan Gum or Sclerotium Gum (usually at 0.2–0.5%) to network the water phase.
+*   **pH Optimization:** Skin barrier function relies on an acidic pH (typically 4.5–5.5). You will need a calibrated pH meter and solutions of Citric Acid (to lower pH) and L-Arginine or Sodium Hydroxide (to raise pH) to adjust your final formulations.
+
+### 3. The Non-Negotiable: Preservation
+As a scientist, you know that water plus organic matter equals a microbial culture medium. **Any formulation containing water (or that will come into contact with water, like a body scrub used in the shower) requires a broad-spectrum preservative.** 
+
+"Natural" does not mean preservative-free. Excellent natural-compliant, broad-spectrum options include:
+*   **Geogard ECT (Benzyl Alcohol, Salicylic Acid, Glycerin, Sorbic Acid):** Ecocert approved, effective in pH 3.0–6.0.
+*   **Leucidal Liquid (Leuconostoc/Radish Root Ferment Filtrate):** A milder, peptide-based natural preservative (often paired with AMTicide Coconut for enhanced antifungal coverage).
+
+*Note: Vitamin E and Rosemary Extract are antioxidants (they prevent lipid peroxidation); they are **not** preservatives and will not prevent bacterial or fungal growth.*
+
+### 4. Sourcing Medical- & Cosmetic-Grade Ingredients
+Avoid grocery store ingredients, which often lack the purity, standardization, and shelf-life required for stable formulation. Source from reputable cosmetic chemistry suppliers who provide **Certificates of Analysis (CoA)** and **Material Safety Data Sheets (MSDS)**.
+
+*   **Lotioncrafter** (Excellent for active ingredients, vitamins, and high-tech natural ingredients)
+*   **MakingCosmetics** (Great selection of emulsifiers, silicon-alternatives, and botanical extracts)
+*   **Formulator Sample Shop** (Excellent for bio-ferments and natural preservation systems)
+
+### 5. Equipment for Your "Home Lab"
+You likely already have access to, or familiarity with, the necessary equipment:
+*   **Digital Scale:** Accurate to 0.01g (essential for measuring actives and preservatives).
+*   **High-Shear Mixer:** A laboratory overhead stirrer is ideal, but a high-quality immersion blender (used in short bursts) works for creating stable emulsions.
+*   **Beakers:** Borosilicate glass beakers (100ml, 250ml, 500ml).
+*   **Water Bath:** To heat the oil and water phases to 70–75°C (required for emulsification).
+*   **pH Meter:** Pocket-sized, calibrated with buffer solutions.
+
+---
+
+### A Starter Formulation: Barrier-Support Facial Cream
+Here is a professional-grade, 100g batch formulation for a lightweight, barrier-supporting facial cream utilizing natural ingredients.
+
+| Phase | Ingredient | Function | Wt % | Weight (g) |
+| :--- | :--- | :--- | :--- | :--- |
+| **A (Water)** | Distilled Water | Solvent | 71.3% | 71.30 |
+| **A** | Vegetable Glycerin | Humectant | 3.0% | 3.00 |
+| **A** | Xanthan Gum | Rheology Modifier | 0.2% | 0.20 |
+| **B (Oil)** | Jojoba Oil (Simmondsia Chinensis) | Emollient (mimics sebum) | 10.0% | 10.00 |
+| **B** | Rosehip Seed Oil | Active lipid (Vitamin A/C rich) | 5.0% | 5.00 |
+| **B** | Olivem 1000 (Cetearyl Olivate, Sorbitan Olivate) | Natural Emulsifier | 5.0% | 5.00 |
+| **B** | Shea Butter | Occlusive/Barrier support | 3.0% | 3.00 |
+| **C (Cool Down)** | Niacinamide (Vitamin B3) | Active (Barrier/Brightening) | 1.5% | 1.50 |
+| **C** | Geogard ECT | Broad-spectrum Preservative | 1.0% | 1.00 |
+| **C** | Tocopherol (Vitamin E) | Antioxidant for lipids | 0.5% | 0.50 |
+
+#### Protocol:
+1. **Sanitize:** Sterilize all equipment, beakers, and utensils with 70% Isopropyl Alcohol.
+2. **Phase A:** Disperse the Xanthan Gum into the Glycerin to form a slurry (prevents clumping), then add to the distilled water. Heat to 75°C.
+3. **Phase B:** Combine Phase B ingredients in a separate beaker. Heat to 75°C (until the emulsifier and butter are fully melted).
+4. **Emulsify:** Slowly pour Phase B into Phase A while mixing with high shear (immersion blender) for 2–3 minutes until a uniform, milky emulsion forms.
+5. **Cool Down:** Switch to slow, manual stirring as the emulsion cools. Once the temperature drops below 40°C, add Phase C ingredients one by one, stirring thoroughly.
+6. **pH Adjust:** Test the pH. Adjust with a citric acid solution to bring it to approximately 5.0–5.5.
+7. **Package:** Transfer to an airless pump bottle to minimize oxidation and contamination during use.
+
+### Recommended Reading for the Scientist-Formulator
+If you want to dive deeper into the literature of cosmetic science, these resources are highly rigorous:
+*   **"Handbook of Cosmetic Science and Technology"** by André Barel, Marc Paye, and Howard Maibach.
+*   **SwiftCraftyMonkey (swiftcraftymonkey.blog):** An incredibly detailed, science-first blog run by a cosmetic chemist, focusing on the mechanics of formulation, HLB values, and preservative efficacy.

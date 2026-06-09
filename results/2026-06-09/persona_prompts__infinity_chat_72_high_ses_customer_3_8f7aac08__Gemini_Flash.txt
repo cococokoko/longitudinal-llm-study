@@ -1,0 +1,18 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_72_high_ses_customer_3
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=32 out=104
+Latency:   11382 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Briefly explain the potential uses of biofuels in 2-3 sentences.
+
+── Response ────────────────────────────────────────────────────────
+Biofuels serve as a drop-in replacement for liquid fossil fuels, offering a viable pathway to decarbonize hard-to-abate sectors such as aviation (via Sustainable Aviation Fuel), maritime shipping, and heavy-duty overland transport. Beyond transportation, they can be utilized in stationary power generation and co-generation systems to provide dispatchable, low-carbon electricity and industrial process heat. Furthermore, integrating biofuel production with Carbon Capture and Storage (BECCS) technologies presents a critical opportunity for achieving net-negative carbon emissions.

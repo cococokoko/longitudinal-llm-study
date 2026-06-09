@@ -1,0 +1,71 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=29 out=820
+Latency:   5055 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+To understand a **partial derivative**, it helps to think of a scenario where an outcome depends on more than one factor. 
+
+Since you work in a hospital, let’s use a clinical example that you likely see every day: **calculating a patient’s fluid balance**. 
+
+A patient’s net fluid balance ($B$) depends on two main variables:
+1. **Intake ($I$):** Fluids given via IV or taken orally (in milliliters, mL).
+2. **Output ($O$):** Fluids lost via urine, drains, etc. (in mL).
+
+Let's say a patient's net fluid balance is calculated by this simple formula:
+$$B(I, O) = I - O$$
+
+A **partial derivative** tells us how the final result (the fluid balance) changes when we change *only one* of those variables, while keeping the other one completely constant.
+
+---
+
+### The Numerical Example
+
+Let's look at a patient, Mr. Jones, at a specific moment in time:
+* **Current Intake ($I$)** = $1,500\text{ mL}$
+* **Current Output ($O$)** = $1,000\text{ mL}$
+
+His current fluid balance is:
+$$B = 1,500 - 1,000 = +500\text{ mL}$$
+
+Now, let's look at the two partial derivatives for this scenario.
+
+#### 1. Partial Derivative with respect to Intake: $\frac{\partial B}{\partial I}$
+This asks: *"If we increase Mr. Jones's IV intake slightly, but his urine output stays exactly the same, how does his fluid balance change?"*
+
+* Let's increase his intake by $1\text{ mL}$ (from $1,500$ to $1,501\text{ mL}$), while keeping his output locked at exactly $1,000\text{ mL}$.
+* New Balance = $1,501 - 1,000 = +501\text{ mL}$.
+* The balance increased by exactly $1\text{ mL}$.
+
+So, the partial derivative of Balance with respect to Intake is:
+$$\frac{\partial B}{\partial I} = +1$$
+*(For every $1\text{ mL}$ increase in intake, the balance goes up by $1\text{ mL}$, assuming output is constant).*
+
+#### 2. Partial Derivative with respect to Output: $\frac{\partial B}{\partial O}$
+This asks: *"If Mr. Jones's output increases slightly, but we keep his IV intake exactly the same, how does his fluid balance change?"*
+
+* Let's increase his output by $1\text{ mL}$ (from $1,000$ to $1,001\text{ mL}$), while keeping his intake locked at exactly $1,500\text{ mL}$.
+* New Balance = $1,500 - 1,001 = +499\text{ mL}$.
+* The balance decreased by $1\text{ mL}$ (which is a change of $-1$).
+
+So, the partial derivative of Balance with respect to Output is:
+$$\frac{\partial B}{\partial O} = -1$$
+*(For every $1\text{ mL}$ increase in output, the balance goes down by $1\text{ mL}$, assuming intake is constant).*
+
+---
+
+### Why is this "Partial"?
+In a real hospital shift, both intake and output are changing at the same time. However, to understand the math of how the system works, we have to isolate them. 
+
+By freezing one variable in place, we can calculate the **partial** effect of the other. That is the core concept of a partial derivative!

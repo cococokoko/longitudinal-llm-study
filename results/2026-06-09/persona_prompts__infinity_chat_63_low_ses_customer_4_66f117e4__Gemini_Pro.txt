@@ -1,0 +1,70 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=29 out=1625
+Latency:   14403 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+To explain a partial derivative, let’s use an example right from your day-to-day work as a patient care aide. 
+
+A **partial derivative** measures how a result changes when you change *just one* variable, while keeping all other variables completely frozen (constant).
+
+### The Scenario: Calories Burned on a Shift
+Imagine we want to calculate the total calories ($C$) you burn during a hospital shift. Let's say your calorie burn depends on two main variables:
+*   **$W$**: The hours you spend walking the ward.
+*   **$P$**: The number of patients you physically assist with transfers (from bed to chair, etc.).
+
+Let’s say a sports scientist observes your shifts and creates this formula for your total calories burned:
+**$C(W, P) = 100W + 50P + 5WP$**
+
+*(The $5WP$ part represents the extra exhaustion of doing heavy lifting on days when you are also on your feet a lot).*
+
+### Finding the Partial Derivatives
+
+**1. The Partial Derivative with respect to Walking ($W$)**
+Suppose we want to know: *"How many extra calories do you burn for every additional hour of walking, assuming the number of patients you transfer stays exactly the same?"*
+
+To find this, we take the partial derivative of $C$ with respect to $W$. We write this as $\frac{\partial C}{\partial W}$. 
+Because we are only looking at changes in walking, we treat $P$ (patients) as a fixed number (a constant).
+
+*   The derivative of $100W$ is $100$.
+*   The derivative of $50P$ is $0$ (since $P$ is treated as a constant, $50P$ doesn't change when $W$ changes).
+*   The derivative of $5WP$ is $5P$.
+
+So, **$\frac{\partial C}{\partial W} = 100 + 5P$**
+
+**Numerical Example:** 
+Let's say on a typical shift, you transfer **10 patients** ($P = 10$). 
+$\frac{\partial C}{\partial W} = 100 + 5(10) = 150$.
+**Meaning:** If you are already transferring 10 patients, walking for *one extra hour* will burn an additional **150 calories**.
+
+***
+
+**2. The Partial Derivative with respect to Patients ($P$)**
+Now suppose we want to know: *"How many extra calories do you burn for every extra patient you transfer, assuming your hours spent walking stays exactly the same?"*
+
+We take the partial derivative of $C$ with respect to $P$, written as $\frac{\partial C}{\partial P}$. This time, we treat $W$ (walking hours) as the constant.
+
+*   The derivative of $100W$ is $0$.
+*   The derivative of $50P$ is $50$.
+*   The derivative of $5WP$ is $5W$.
+
+So, **$\frac{\partial C}{\partial P} = 50 + 5W$**
+
+**Numerical Example:**
+Let's say on a typical shift, you spend **4 hours** walking ($W = 4$).
+$\frac{\partial C}{\partial P} = 50 + 5(4) = 70$.
+**Meaning:** If you are already walking for 4 hours, transferring *one extra patient* will burn an additional **70 calories**.
+
+### Summary
+In your job, your total fatigue or calorie burn is a mix of many tasks. A partial derivative simply isolates *one* of those tasks (like walking) to see exactly how it impacts the total, while pretending your other tasks (like lifting patients) didn't change at all.

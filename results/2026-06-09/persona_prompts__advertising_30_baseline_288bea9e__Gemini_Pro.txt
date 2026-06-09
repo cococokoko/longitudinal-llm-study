@@ -1,0 +1,57 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=1600
+Latency:   16363 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Starting to learn coding from scratch can feel overwhelming, but it is highly achievable if you follow a structured approach. Here is the best, most proven roadmap for absolute beginners:
+
+### 1. Figure out your "Why"
+Coding is a massive field. Knowing what you want to build will help you choose where to start. 
+*   **I want to build websites:** Start with HTML, CSS, and JavaScript.
+*   **I want to analyze data or build AI:** Start with Python.
+*   **I want to make mobile apps:** Start with Swift (for iOS) or Kotlin (for Android).
+*   **I want to make video games:** Start with C# (using the Unity engine).
+*   **I don’t know, I just want to learn the basics:** Start with **Python**. It reads almost like plain English and is very beginner-friendly.
+
+### 2. Use Free, Interactive Resources
+Do not pay for an expensive bootcamp right away. Start with free platforms where you can write code directly in your browser:
+*   **freeCodeCamp:** The best overall resource. It is 100% free, project-based, and covers everything from web development to Python.
+*   **Codecademy:** Great for absolute beginners. The free tier offers interactive, bite-sized lessons.
+*   **Harvard’s CS50 (on edX or YouTube):** A free, world-class introduction to computer science. It’s challenging but will teach you how to *think* like a programmer.
+*   **YouTube:** Channels like *Programming with Mosh*, *Traversy Media*, and *Bro Code* have excellent "Crash Courses for Beginners."
+
+### 3. Focus on the Fundamentals
+No matter what language you choose, you need to understand the core concepts of programming. Focus on learning:
+*   **Variables:** How to store data.
+*   **Data Types:** Text (strings), numbers (integers), etc.
+*   **Conditionals:** `If/Else` statements (e.g., *If* the user is logged in, show the dashboard; *Else*, show the login screen).
+*   **Loops:** How to repeat an action multiple times.
+*   **Functions:** How to group code into reusable blocks.
+
+### 4. Escape "Tutorial Hell" by Building Projects
+"Tutorial hell" is when you watch hours of coding videos but can't write code on your own. To avoid this, start building small projects as soon as possible. 
+*   *Beginner project ideas:* A calculator, a digital clock, a random password generator, a simple text-based game (like Rock, Paper, Scissors), or a personal portfolio website.
+
+### 5. Learn How to Search for Answers
+No programmer memorizes everything. A massive part of coding is knowing how to find solutions.
+*   Get comfortable Googling your error messages.
+*   Use **Stack Overflow** to see how others solved the same problem.
+*   Use **AI (like ChatGPT or Claude)** as a tutor. Don't ask it to write the code for you; ask it to *explain* concepts you don't understand or to help you find a bug in your code.
+
+### 6. Code a Little Bit Every Day
+Consistency is more important than intensity. Coding is like learning a spoken language—if you don't use it, you lose it. Practicing for **30 minutes a day** is much better than cramming for 5 hours on a Sunday.
+
+**Your Action Plan for Today:**
+1. Go to **freeCodeCamp.org**.
+2. Create a free account.
+3. Start the "Responsive Web Design" course (if you want to build websites) OR the "Scientific Computing with Python" course (if you want to learn Python).
+4. Complete the first 3 lessons.

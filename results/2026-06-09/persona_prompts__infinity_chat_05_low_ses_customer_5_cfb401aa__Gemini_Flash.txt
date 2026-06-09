@@ -1,0 +1,41 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=645
+Latency:   6237 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+One of the most impactful features for a smartwatch designed for senior citizens—especially those who are active, independent, but also rely on a network of family support—is a **"Family Care Circle" Smart Hub with Collaborative Task Delegation.**
+
+While many senior watches focus solely on emergency medical alerts, this feature focuses on **daily life, connection, and reducing the mental load** for both the senior and their primary family caregivers.
+
+Here is how the feature works:
+
+### Feature Name: **The Care Circle Hub**
+
+#### 1. The Senior’s Interface (On the Watch)
+The watch face features a dedicated, easy-to-read widget called "My Circle." 
+*   **Visual, Low-Stress Reminders:** Instead of clinical alarms, the watch uses gentle vibrations and friendly icons for daily routines (e.g., a teacup icon for morning tea, a pill bottle for medication, or a car icon for an upcoming doctor's appointment).
+*   **One-Touch "Check-In":** With a single tap on the watch screen, the senior can send a quick "I’m up and doing well!" or "Just finished lunch" notification to their family group chat. This gives them independence without feeling like they are being constantly monitored.
+*   **Voice-to-Task Request:** If the senior realizes they are running low on groceries or need a ride, they can tap the microphone and say, *"Can someone pick up milk?"* or *"I need a ride to the pharmacy on Thursday."*
+
+#### 2. The Family’s Interface (On the Companion App)
+This is where the feature supports the extended family members who manage the household responsibilities. The voice request from the senior’s watch is instantly sent to a shared family dashboard.
+*   **Collaborative Task Board:** The request (e.g., "Pick up milk") appears on a shared to-do list. 
+*   **"I’ve Got It" Claiming:** Any family member in the "Circle" (adult children, nieces, nephews, or spouses) can tap **"Claim Task."** Once claimed, the watch updates to show the senior: *"Sarah is picking up your milk today!"* 
+*   **Preventing Double-Work:** This prevents the common household issue where three different family members buy the same groceries or show up to drive the senior to the same appointment. It distributes the caregiving load across the entire extended family.
+
+#### Why this is a game-changer for busy families:
+*   **Preserves Dignity:** The senior feels in control of their schedule and can easily ask for help without feeling like a burden.
+*   **Reduces Caregiver Burnout:** For the family member managing multiple households, it automates the coordination. They don't have to send ten text messages to coordinate who is taking Grandpa to his appointment; the app handles the delegation.
+*   **Peace of Mind:** The gentle "Check-In" feature lets busy family members know their loved one is safe and active throughout the day without needing to interrupt them with constant phone calls.

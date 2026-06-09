@@ -1,0 +1,24 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_93_high_ses_customer_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=935
+Latency:   8787 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write 100-300 words on how stress affects the body and mind.
+
+── Response ────────────────────────────────────────────────────────
+Stress initiates a highly conserved physiological cascade that, while adaptive in acute settings, becomes profoundly maladaptive when chronic. The primary mediators of this response are the sympathetic nervous system (SNS) and the hypothalamic-pituitary-adrenal (HPA) axis. Acute stress triggers the release of catecholamines and glucocorticoids, optimizing the organism for immediate survival by increasing cardiovascular output and mobilizing metabolic substrates.
+
+However, chronic HPA axis hyperactivation leads to an elevated allostatic load, driving systemic pathology. Physiologically, sustained hypercortisolemia induces endothelial dysfunction, accelerating atherogenesis and increasing cardiovascular risk. It also disrupts immune homeostasis, shifting the balance toward a pro-inflammatory state while simultaneously suppressing adaptive cellular immunity, thereby increasing susceptibility to infections and exacerbating autoimmune conditions.
+
+Neurologically and psychologically, chronic stress profoundly alters brain architecture. Sustained glucocorticoid exposure induces dendritic atrophy in the hippocampus and prefrontal cortex, impairing memory consolidation, cognitive flexibility, and executive function. Conversely, it promotes hypertrophy within the amygdala, lowering the threshold for anxiety and emotional dysregulation. Clinically, this neuroplastic maladaptation manifests as cognitive fatigue, depressive disorders, and impaired decision-making.
+
+As a physician-scientist, you are likely acutely aware of how these mechanisms intersect with both patient outcomes and team dynamics. Chronic stress not only drives somatic disease but also degrades the cognitive bandwidth required for rigorous scientific inquiry, highlighting the necessity of mitigating allostatic load in both clinical populations and high-performing academic research environments.

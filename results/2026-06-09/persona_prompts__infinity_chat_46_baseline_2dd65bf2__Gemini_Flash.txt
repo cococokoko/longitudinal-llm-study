@@ -1,0 +1,67 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=615
+Latency:   3878 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+In graph theory, the term **"linear graph"** can refer to two different things depending on the context:
+
+1. **A Path Graph ($P_n$):** A graph where the vertices are connected in a single, straight line (no branches, no cycles). This is the most common informal meaning.
+2. **A Line Graph ($L(G)$):** A specific mathematical operation where the edges of one graph become the vertices of a new graph.
+
+Here are examples of both.
+
+---
+
+### Example 1: A Path Graph (The informal "linear" graph)
+A path graph of length $n$ (denoted as $P_n$) consists of a sequence of vertices connected by edges in a single line. 
+
+Let's look at **$P_4$** (a path graph with 4 vertices):
+
+* **Vertices (Nodes):** $\{A, B, C, D\}$
+* **Edges (Connections):** $\{(A, B), (B, C), (C, D)\}$
+
+**Visual Representation:**
+```text
+A —————— B —————— C —————— D
+```
+**Properties of this graph:**
+* It is **connected** (you can get from any vertex to any other vertex).
+* It has **no cycles** (you cannot start at a vertex and loop back to it without retracing your steps).
+* The "end" vertices ($A$ and $D$) have a degree of 1 (only one connection).
+* The "middle" vertices ($B$ and $C$) have a degree of 2.
+
+---
+
+### Example 2: A Line Graph (The formal mathematical definition)
+In formal graph theory, a **Line Graph** of a graph $G$ (written as $L(G)$) is a graph where:
+* Each vertex in $L(G)$ represents an edge in $G$.
+* Two vertices in $L(G)$ are connected if their corresponding edges in $G$ share a common vertex.
+
+**Let's construct one:**
+
+1. Start with a simple star graph **$G$**:
+```text
+      Y
+     / \
+    X   Z
+```
+* Vertices of $G$: $\{X, Y, Z\}$
+* Edges of $G$: $e_1 = (X, Y)$ and $e_2 = (Y, Z)$
+
+2. Now, create the Line Graph **$L(G)$**:
+* The vertices of $L(G)$ are the edges of $G$: $\{e_1, e_2\}$
+* Since $e_1$ and $e_2$ both share the vertex $Y$ in the original graph, we connect them with an edge in the new graph.
+
+**Visual Representation of $L(G)$:**
+```text
+e1 —————— e2
+```

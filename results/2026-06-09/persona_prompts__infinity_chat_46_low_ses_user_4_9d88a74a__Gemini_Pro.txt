@@ -1,0 +1,40 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_low_ses_user_4
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=25 out=1118
+Latency:   11916 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+First, thank you for your work as a patient care aide! Hospitals couldn't function without the hands-on care you provide. 
+
+In graph theory, a "linear graph" is more commonly called a **Path Graph**. It is a graph where all the points (called **vertices** or **nodes**) are connected in a single, straight sequence by lines (called **edges**), with no branches, loops, or intersections. 
+
+Here is an example tailored to your work at the hospital:
+
+### The Hospital Hallway Example
+Imagine you are doing your rounds to check patient vitals in a specific hallway. There are four patient rooms at the end of the hall: Room 101, Room 102, Room 103, and Room 104, in that exact order.
+
+If we turn this into a graph:
+*   **The Vertices (Nodes):** Each patient room is a dot on the graph. (Node A = 101, Node B = 102, Node C = 103, Node D = 104).
+*   **The Edges (Lines):** The physical hallway connecting one room to the very next room is the line between the dots.
+
+**The Graph looks like this:**
+(Room 101) —— (Room 102) —— (Room 103) —— (Room 104)
+
+### Why is this a Path (Linear) Graph?
+1.  **No branching:** You walk from 101 to 102 to 103 to 104. There are no side-hallways in this specific model.
+2.  **Degrees of connection:** In a linear graph, the "endpoints" (Room 101 and Room 104) only connect to *one* other room. The "middle points" (Room 102 and Room 103) connect to exactly *two* rooms (the one before it, and the one after it). 
+3.  **No cycles:** You don't walk in a circle. To get back to Room 101 from Room 104, you have to retrace your exact steps. 
+
+Another quick example from your shift could be a **linear workflow**: 
+*(Clock In)* —— *(Receive Handoff)* —— *(Check Vitals)* —— *(Chart Data)*. 
+Each task is a node, and the transition to the next task is the edge, forming a perfect linear graph!

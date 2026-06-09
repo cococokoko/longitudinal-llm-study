@@ -1,0 +1,31 @@
+Wave:      2026-06-09
+Dataset:   global_opinion_qa
+Item ID:   goqa_86074cdac3f0
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=213 out=83
+Latency:   2573 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How much peaceful do you think of on-going diplomacy and security in South Korea
+
+Options:
+A. 1 Not peaceful at all
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. 10 Very peaceful
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.05, "B": 0.10, "C": 0.15, "D": 0.20, "E": 0.20, "F": 0.15, "G": 0.10, "H": 0.03, "I": 0.01, "J": 0.01}

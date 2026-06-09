@@ -1,0 +1,37 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_high_ses_customer_2
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=591
+Latency:   7006 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+Subject: Catching up / Reconnecting 
+
+Dear [Referral Partner's Name],
+
+I hope this email finds you well and that you are having a productive quarter. 
+
+It has been a little while since we last connected, and I wanted to reach out to schedule a brief catch-up. I always value our conversations and the opportunity to discuss what we are both seeing in the market, as well as how our respective practices can continue to support one another's clients. 
+
+Would you be open to grabbing coffee or lunch sometime in the next couple of weeks? Alternatively, if your schedule is particularly tight right now, I would be more than happy to schedule a brief phone or video call. 
+
+Please let me know what your availability looks like, or feel free to have your assistant reach out to mine to coordinate a time that works best for you. 
+
+I look forward to reconnecting soon.
+
+Best regards,
+
+[Your Name]
+[Your Title/Partner]
+[Your Law Firm's Name]
+[Your Contact Information]

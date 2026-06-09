@@ -1,0 +1,84 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=47 out=546
+Latency:   5018 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+A strong STEM fair project that is affordable, relevant to Vietnam, and has real-world impact is:
+
+"Low-Cost Water Quality Monitoring System for Flood-Prone Areas"
+
+Why it relates to Vietnam:
+- Many regions of Vietnam experience flooding, especially in the Mekong Delta and central provinces.
+- Floods can contaminate drinking water with bacteria, sediment, and pollutants.
+- Safe water access is a major public health concern after floods.
+
+Project idea:
+Build a simple device that measures indicators of water quality and alerts users when water may be unsafe.
+
+Affordable version:
+- Arduino Nano or ESP32 microcontroller: $5–10
+- Turbidity sensor (measures water cloudiness): $3–8
+- Temperature sensor: $1–3
+- LEDs or buzzer for alerts: $1–2
+- Battery pack: $3–5
+- Recycled plastic container for housing
+
+Total cost:
+- Approximately $15–30 depending on local prices.
+
+Research question:
+"Can a low-cost sensor system provide useful warnings about potentially unsafe floodwater?"
+
+Experiments:
+- Test clean water, muddy water, and water mixed with common contaminants.
+- Compare sensor readings.
+- Determine thresholds for "safe" and "unsafe" water conditions.
+- Analyze accuracy and limitations.
+
+STEM components:
+- Science: Water contamination and environmental health.
+- Technology: Sensors and microcontrollers.
+- Engineering: Designing and building the device.
+- Mathematics: Data collection, graphing, and statistical analysis.
+
+Ways to make it stand out:
+- Add a phone notification feature using an ESP32.
+- Create a solar-powered version.
+- Design a waterproof housing using recycled materials.
+- Map water quality readings from different locations.
+
+Other Vietnam-focused STEM ideas:
+
+1. Rice Field Irrigation Optimizer
+- Build a soil moisture monitoring system.
+- Helps reduce water waste in rice farming.
+
+2. Air Pollution Monitoring Around Motorbike Traffic
+- Measure particulate matter near busy roads.
+- Analyze how pollution changes by location and time of day.
+
+3. Saltwater Intrusion Detector for the Mekong Delta
+- Use conductivity sensors to detect increasing salinity in water.
+- Relevant to climate change and agriculture.
+
+4. Affordable Solar Food Dryer
+- Design a dryer for fruits, fish, or vegetables.
+- Reduces spoilage and energy use.
+
+5. Plastic Waste Collection Robot Prototype
+- Small robot that detects and collects floating plastic from water.
+- Addresses river and ocean pollution.
+
+If your STEM fair is at the high school level, the saltwater intrusion detector for the Mekong Delta is especially impressive because it addresses one of Vietnam's most significant environmental and agricultural challenges while remaining affordable enough to build for under $40.

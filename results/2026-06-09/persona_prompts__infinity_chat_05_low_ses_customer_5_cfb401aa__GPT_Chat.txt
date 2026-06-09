@@ -1,0 +1,31 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=235
+Latency:   5121 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A useful smartwatch feature for senior citizens could be a "Smart Check-In & Assistance Hub."
+
+How it works:
+- The watch automatically checks for daily activity patterns (walking, sleep, medication acknowledgments, heart rate trends).
+- If something unusual is detected—such as a missed medication, prolonged inactivity, or a possible fall—the watch sends a gentle reminder to the wearer.
+- If the issue continues, it can notify selected family members or caregivers with a simple status update.
+- Seniors can also tap a single large on-screen button or use a voice command to request help, a ride, or a phone call.
+- Family members can view updates through a companion app without needing to constantly call and check in.
+
+Why it helps:
+- Supports independence while providing a safety net.
+- Reduces caregiver stress.
+- Keeps family members informed without being intrusive.
+- Uses large text, simple navigation, and voice interaction to remain accessible.

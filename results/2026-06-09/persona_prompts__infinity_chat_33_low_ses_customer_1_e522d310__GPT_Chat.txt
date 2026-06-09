@@ -1,0 +1,81 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=48 out=463
+Latency:   4085 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You can run Dolphin on a Microsoft Surface using only the touchpad and the Windows on-screen keyboard, but you'll need to map Wii controls to keyboard keys that are easy to access.
+
+Basic setup:
+
+1. Open Dolphin.
+2. Go to Controllers.
+3. Under "Wii Remotes," set Wii Remote 1 to "Emulated Wii Remote."
+4. Click Configure.
+
+Suggested touchpad/on-screen keyboard mapping:
+
+- D-Pad Up/Down/Left/Right → Arrow keys
+- A → Z
+- B → X
+- 1 → 1
+- 2 → 2
+- Plus (+) → Enter
+- Minus (-) → Backspace
+- Home → H
+
+Motion controls:
+
+For games that use Wii Remote pointing:
+
+- Point → Mouse
+  - Cursor Up/Down/Left/Right → Mouse movement
+- Use the Surface touchpad to move the pointer.
+
+For shaking:
+
+- Shake X → Q
+- Shake Y → W
+- Shake Z → E
+
+For tilting:
+
+- Tilt Left → A
+- Tilt Right → D
+- Tilt Forward → S
+- Tilt Backward → F
+
+Using the Windows on-screen keyboard:
+
+1. Press Win + Ctrl + O to open the On-Screen Keyboard.
+2. Keep it docked at the bottom or side of the screen.
+3. Tap keys on the on-screen keyboard while controlling the Wii pointer with the touchpad.
+
+For games requiring a Nunchuk:
+
+1. In the Wii Remote configuration window, set Extension to Nunchuk.
+2. Map:
+   - Stick → WASD
+   - C → C
+   - Z → V
+
+Potential issue:
+Many Wii games expect simultaneous movement and pointer control. With only a touchpad and on-screen keyboard, games that rely heavily on motion controls (for example, Skyward Sword or Metroid Prime 3) can be difficult to play. Simpler games such as New Super Mario Bros. Wii, Mario Kart Wii (with button controls), and many Virtual Console titles tend to work much better.
+
+If you tell me:
+- Your Surface model,
+- Whether you have a Type Cover attached,
+- And which Wii game you want to play,
+
+I can suggest a control layout specifically for that game.

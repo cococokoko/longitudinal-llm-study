@@ -1,0 +1,67 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=20 out=1188
+Latency:   9592 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+As a partner at a major firm, your time is highly leveraged, and your home is likely a secondary office where downtime or latency is a material risk to client delivery, pitches, and firm operations. 
+
+To optimize your home network for maximum reliability, speed, and security, you should approach it much like an enterprise IT infrastructure project. Here is a structured framework to diagnose and upgrade your home WiFi.
+
+---
+
+### Phase 1: The Infrastructure Audit (Quick Wins)
+Before investing in new hardware, optimize your current setup.
+
+*   **The "Single Point of Failure" Check:** Is your router sitting in a closet, behind a TV, or in the basement? WiFi signals degrade significantly through drywall, brick, and metal. Move your primary router to a central, elevated location.
+*   **Frequency Segmentation:** Most routers broadcast on two bands: 2.4 GHz (slow but long-range) and 5 GHz (fast but short-range). 
+    *   **Action:** Dedicate the **5 GHz band** (or 6 GHz if you have Wi-Fi 6E/7) exclusively to your work devices (laptop, tablet). Push smart home devices (thermostats, bulbs) to the 2.4 GHz band to prevent network congestion.
+*   **Channel Congestion:** If you live in a high-density area, your neighbors’ WiFi might be overlapping with yours. Use a free tool like *NetSpot* or *WiFi Analyzer* to find the least congested channel and manually set your router to it.
+
+---
+
+### Phase 2: The Hardware Upgrade (The Enterprise Approach)
+If your household has multiple users streaming, video conferencing, and using smart devices simultaneously, consumer-grade "all-in-one" routers will bottleneck. You need to upgrade your hardware architecture.
+
+#### Option A: The "Set and Forget" Premium Solution (Mesh WiFi)
+For homes over 2,000 sq. ft. or multi-story layouts, a **Mesh Network** is the standard. It uses a main router and multiple "nodes" placed around the house that act as a single, seamless network.
+*   **The Gold Standard:** **eero Pro 6E / eero Max 7** (Amazon) or **Netgear Orbi Quad-Band (RBKE963)**.
+*   **Why it works:** They offer "tri-band" or "quad-band" technology, meaning they have a dedicated wireless highway (backhaul) just for the routers to talk to each other, leaving the other bands completely free for your devices.
+*   **Pro-Tip:** If your home has Ethernet wiring in the walls, connect the mesh nodes via Ethernet (called "wired backhaul"). This yields near-zero latency.
+
+#### Option B: The Enterprise-Grade Solution (For Absolute Reliability)
+If you want the same level of security, customization, and reliability you have at the office, bypass consumer brands entirely.
+*   **The Standard:** **Ubiquiti UniFi** ecosystem.
+*   **Why it works:** It separates the router, the switch, and the Access Points (APs). You mount sleek, saucer-like APs on your ceilings (powered by Ethernet cables). It offers unmatched security, guest network isolation, and zero-handoff roaming as you walk around the house during a call. *Note: This requires professional installation/configuration (e.g., hiring a local AV/IT integrator).*
+
+---
+
+### Phase 3: Zero-Latency Protocol for Critical Work
+Wireless is inherently prone to interference. For high-stakes client presentations, board meetings, or partner calls, remove wireless from the equation.
+
+*   **Hardwire the Home Office:** Run a Cat6 or Cat6a Ethernet cable from your router directly to your desk. 
+*   **The "No-Drill" Alternative (MoCA):** If your home has coaxial (cable TV) outlets in your office and near your router, use **MoCA adapters** (Multimedia over Coax). These convert your existing TV cable lines into an ultra-fast, ultra-stable wired Ethernet connection. It is vastly superior to "Powerline" adapters.
+
+---
+
+### Phase 4: Bandwidth & ISP Management
+Your WiFi is only as fast as the pipe coming into the house.
+
+*   **Symmetrical Fiber:** If available in your area, switch from Cable (e.g., Comcast/Spectrum) to **Fiber** (e.g., AT&T Fiber, Verizon Fios). Cable offers fast download speeds but notoriously slow upload speeds (often capped at 35 Mbps), which causes video lag on Teams/Zoom. Fiber offers symmetrical speeds (e.g., 1,000 Mbps down *and* 1,000 Mbps up).
+*   **Quality of Service (QoS):** Enable QoS in your router’s settings. This allows you to prioritize traffic. You can set the router to always prioritize "Real-Time Interactive" traffic (Zoom, Teams, Webex) over entertainment traffic (Netflix, gaming) at the router level.
+
+### Summary of Action Items:
+1.  **Immediate:** Move your router to a central location; split your 2.4 GHz and 5 GHz bands.
+2.  **Next 48 Hours:** Order a premium Mesh System (e.g., **eero Pro 6E**) if you have dead zones.
+3.  **Long-term:** If building/renovating or demanding 99.99% uptime, hire an integrator to install a **Ubiquiti UniFi** system with wired ceiling access points and a dedicated fiber line.

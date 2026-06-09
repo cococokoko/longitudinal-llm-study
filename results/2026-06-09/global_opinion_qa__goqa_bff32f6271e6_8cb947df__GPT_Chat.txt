@@ -1,0 +1,30 @@
+Wave:      2026-06-09
+Dataset:   global_opinion_qa
+Item ID:   goqa_bff32f6271e6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=215 out=115
+Latency:   5680 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I'm going to describe various types of political systems and ask what you think about each as a way of governing this country. For each one, would you say it is a very good, fairly good, fairly bad or very bad way of governing this country?
+
+Having a strong leader who does not have to bother with parliament and elections
+
+Options:
+A. Very good
+B. Fairly good
+C. Fairly Bad
+D. Very bad
+E. Don't know
+F. No answer
+G. Other missing; Multiple answers Mail (EVS)
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.01, "B": 0.03, "C": 0.11, "D": 0.83, "E": 0.02, "F": 0.0, "G": 0.0}

@@ -1,0 +1,55 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=348
+Latency:   2792 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Example:
+
+Consider the function
+
+f(x, y) = x²y + 3xy
+
+Suppose we want the partial derivative with respect to x.
+
+Step 1: Treat y as a constant and differentiate with respect to x:
+
+∂f/∂x = 2xy + 3y
+
+Step 2: Evaluate at a specific point, say (x, y) = (2, 4):
+
+∂f/∂x(2,4) = 2(2)(4) + 3(4)
+            = 16 + 12
+            = 28
+
+Interpretation:
+- At the point (2,4), if y remains fixed at 4, then a small increase of x by 1 unit increases f by approximately 28 units.
+
+Similarly, the partial derivative with respect to y is:
+
+∂f/∂y = x² + 3x
+
+At (2,4):
+
+∂f/∂y(2,4) = 2² + 3(2)
+            = 4 + 6
+            = 10
+
+Interpretation:
+- At the point (2,4), if x remains fixed at 2, then a small increase of y by 1 unit increases f by approximately 10 units.
+
+Thus, the partial derivatives at (2,4) are:
+- ∂f/∂x = 28
+- ∂f/∂y = 10
+
+This shows how the function's rate of change depends on which variable is allowed to vary.

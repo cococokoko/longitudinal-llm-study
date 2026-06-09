@@ -1,0 +1,43 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_high_ses_customer_2
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=338
+Latency:   3091 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+Subject: Catching up / [Your Firm Name] & [Referral Partner's Firm Name]
+
+Dear [Referral Partner's First Name],
+
+I hope this email finds you well and that you are having a productive quarter. 
+
+It has been some time since we last connected, and I wanted to reach out to see how things are progressing at your firm. We continue to be incredibly grateful for the clients you have directed our way, and I would welcome the opportunity to hear about your current practice focus and discuss how we can continue to reciprocate and support your pipeline. 
+
+Are you available for a brief catch-up over lunch or coffee in the coming weeks? I am generally flexible, but have good availability on the following dates:
+
+*   **[Date, e.g., Tuesday, October 24th]** – [Time range, e.g., 12:00 PM – 2:00 PM]
+*   **[Date, e.g., Thursday, October 26th]** – [Time range, e.g., 8:30 AM – 10:30 AM]
+*   **[Date]** – [Time range]
+
+If another time or a virtual call works better for your schedule, please let me know and we can easily accommodate. 
+
+I look forward to reconnecting and hearing your updates.
+
+Warm regards,
+
+**[Your Name]**  
+Senior Attorney / Partner  
+[Your Firm Name]  
+[Your Phone Number]  
+[Your Email Address]  
+[Link to Website/Bio]

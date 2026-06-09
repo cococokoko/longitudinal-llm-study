@@ -1,0 +1,45 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=29 out=1397
+Latency:   19905 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon at a major teaching hospital, your intersection with software development is incredibly unique. You don't need to learn how to build standard web apps or e-commerce sites; your focus should be on technologies that enhance surgical precision, advance clinical research, and improve how you train the next generation of residents. 
+
+To remain at the cutting edge of neurosurgery and medical technology in the future, here are the specific areas of software development you should focus on:
+
+### 1. Artificial Intelligence & Computer Vision
+AI is already transforming neuro-oncology, vascular neurosurgery, and neuro-navigation. The ability to train models to detect micro-anomalies in MRIs or CT scans, or to predict patient outcomes based on massive datasets, is a superpower for a clinician-scientist.
+*   **What to learn:** **Python** is the absolute gold standard here. It is the primary language for medical data science and AI.
+*   **Specific tools:** Learn frameworks like **PyTorch** or **TensorFlow** for deep learning, and **OpenCV** for computer vision (image processing). 
+
+### 2. Augmented Reality (AR), Virtual Reality (VR), and 3D Visualization
+As an educator and a surgeon, spatial computing is your frontier. AR and VR are becoming standard for pre-operative planning (e.g., visualizing a complex AVM or skull base tumor in 3D before making an incision) and for safely training residents.
+*   **What to learn:** **C#** and **C++**. 
+*   **Specific tools:** The **Unity** or **Unreal Engine** platforms. These are game engines, but they are the exact software used to build medical VR simulations and AR overlays for surgical microscopes and headsets (like the Apple Vision Pro or HoloLens).
+
+### 3. Brain-Computer Interfaces (BCI) & Neuro-Robotics
+With companies like Neuralink and Synchron pushing the boundaries of neuro-prosthetics, the fusion of the human nervous system and hardware is the next great leap in neurosurgery. 
+*   **What to learn:** **C and C++** (for low-level hardware control and robotics) and **Python** (for signal processing).
+*   **Specific tools:** Familiarize yourself with digital signal processing (DSP) libraries to interpret EEG, ECoG, or single-neuron action potentials, translating brain activity into machine commands.
+
+### 4. Big Data & Health Informatics
+Working at a major teaching hospital means you have access to massive amounts of clinical data. Being able to query, clean, and analyze this data independently will dramatically accelerate your research and clinical trials.
+*   **What to learn:** **SQL** (for extracting data from electronic health records like Epic) and **Python/R** (for statistical analysis).
+*   **Specific tools:** Learn the basics of Cloud Computing (AWS or Azure), specifically focusing on how to handle HIPAA-compliant data environments.
+
+### Where should you start?
+**Start with Python.** It has the highest return on investment for a medical professional. It is relatively easy to learn, highly readable, and is the undisputed king of medical AI, data analysis, and research automation. 
+
+By mastering Python, you can start writing scripts to automate your research data analysis today, and eventually scale up to training machine learning models on neuroimaging tomorrow.

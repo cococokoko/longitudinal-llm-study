@@ -1,0 +1,64 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=1543
+Latency:   18420 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+Playing Wii games on a Microsoft Surface using only the touchpad and on-screen keyboard is a unique challenge, primarily because the original Wii relied heavily on motion controls and infrared pointing. However, with the right configuration in Dolphin Emulator, it is absolutely doable—especially for turn-based or slower-paced games.
+
+Here is a structured guide to optimizing your Surface for this setup.
+
+### Phase 1: Optimize the Windows On-Screen Keyboard (OSK)
+The default Windows touch keyboard is designed for typing, not gaming. You will need the "Standard" keyboard layout to ensure you have access to a full array of keys.
+
+1. Open **Windows Settings** > **Personalization** > **Taskbar**.
+2. Under Taskbar corner icons, turn on the **Touch keyboard**.
+3. Click the keyboard icon in your taskbar to open it.
+4. Click the **Settings gear** on the top left of the touch keyboard, select **Keyboard layout**, and choose **Traditional** (or "Standard"). This gives you a full PC keyboard layout, which is much easier to map in Dolphin.
+
+### Phase 2: Configure Dolphin Emulator
+You will need to map the Wii Remote (and Nunchuk, if required by the game) to your touchpad and OSK.
+
+1. Open **Dolphin Emulator**.
+2. Click on **Controllers** on the top menu.
+3. Under "Wii Remotes," set Wii Remote 1 to **Emulated Wii Remote**, then click **Configure**.
+
+### Phase 3: Mapping the Controls
+In the configuration window, you will map the physical inputs to the emulated Wii Remote. 
+
+**1. Basic Buttons (Map to the OSK):**
+*   Click the box next to `A`, `B`, `1`, `2`, `-`, and `+`, then tap the corresponding key on your on-screen keyboard. 
+*   *Recommendation:* Map `A` and `B` to easily accessible keys on the left side of the OSK (e.g., `Z` and `X`), and the D-Pad to `W, A, S, D`.
+
+**2. The IR Pointer (Map to the Touchpad):**
+Wii games use an on-screen cursor. You want your touchpad to control this.
+*   Go to the **Motion Simulation** tab.
+*   Under the **Point** section, right-click the `Up`, `Down`, `Left`, and `Right` boxes. 
+*   Map these to your mouse axes (Cursor Y-, Cursor Y+, Cursor X-, Cursor X+). Dolphin usually defaults to this if you select "Keyboard Mouse" from the Device dropdown at the top left.
+
+**3. Motion Controls (Shake/Tilt):**
+Many Wii games require you to "shake" the controller.
+*   Still in the **Motion Simulation** tab, look for the **Shake** section.
+*   Map the `X`, `Y`, and `Z` axes to a single, easily reachable key on your OSK (e.g., the `Spacebar`). Whenever the game asks you to shake the Wii Remote, you just tap the Spacebar.
+
+**4. The Nunchuk (If required):**
+*   Go to the **Extension** tab and select **Nunchuk**.
+*   Map the Nunchuk's analog stick to the arrow keys on your OSK, and the `C` and `Z` buttons to `Q` and `E`.
+
+### Phase 4: Gameplay Strategy & Limitations
+*   **Window Management:** Run Dolphin in **Windowed Mode** rather than Fullscreen. If you run it in Fullscreen, the Windows On-Screen Keyboard may be hidden behind the game.
+*   **Game Selection:** This setup is highly inefficient for action-heavy games (like *Super Mario Galaxy* or *Super Smash Bros*). I highly recommend sticking to RPGs, strategy games, or classic controller games (e.g., *Fire Emblem: Radiant Dawn*, *Paper Mario*, or *Xenoblade Chronicles*) where reaction time and simultaneous multi-touch inputs are not critical.
+
+**A Pragmatic Alternative:**
+Given the heavy travel and efficiency demands of consulting, if you plan to use Dolphin on flights or in hotels frequently, I highly recommend pairing a standard Bluetooth Xbox Wireless Controller to your Surface. It connects natively to Windows, takes up minimal space in a carry-on, and Dolphin will automatically map it perfectly to Wii and GameCube configurations, saving you significant setup time.

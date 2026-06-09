@@ -1,0 +1,71 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=423
+Latency:   8517 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+## Foundation Basics
+
+**Access Control**
+- Use strong, unique passwords (12+ characters)
+- Implement multi-factor authentication (MFA) on all accounts
+- Follow least-privilege principle - give employees only the access they need
+- Remove access immediately when employees leave
+
+**Software & Systems**
+- Keep all software and operating systems updated
+- Use reputable antivirus/anti-malware software
+- Enable automatic security patches
+- Avoid unsupported/end-of-life software
+
+## Data Protection
+
+**Backups**
+- Follow the **3-2-1 rule**: 3 copies, 2 different media types, 1 offsite
+- Test backups regularly to confirm they actually work
+- Automate backup processes
+
+**Encryption**
+- Encrypt sensitive data at rest and in transit
+- Use HTTPS for any web presence
+- Encrypt laptops and mobile devices
+
+## Network Security
+- Use a business-grade firewall
+- Separate guest WiFi from business networks
+- Consider a VPN for remote workers
+- Disable unused network ports and services
+
+## Human Factors (Often Overlooked)
+
+- Train employees to recognize phishing emails
+- Establish clear policies for handling sensitive data
+- Create an incident response plan *before* you need it
+- Vet third-party vendors who access your data
+
+## Practical Priorities
+
+| Priority | Action |
+|----------|--------|
+| Immediate | MFA everywhere |
+| Short-term | Backup system |
+| Ongoing | Employee training |
+| Regular | Security audits |
+
+## Common Mistakes to Avoid
+- Assuming you're too small to be targeted
+- Storing sensitive data you don't actually need
+- Skipping security to save money short-term
+- No written security policy
+
+Would you like more detail on any specific area?

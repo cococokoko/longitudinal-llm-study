@@ -1,0 +1,44 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=45 out=266
+Latency:   7240 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+## Analysis vs. Design
+
+**Analysis** answers *"What does the system need to do?"* — understanding requirements, constraints, and the problem domain.
+
+**Design** answers *"How will the system do it?"* — defining architecture, components, and implementation approach.
+
+---
+
+## Can You Design Without Analysis?
+
+**Technically yes, practically no.**
+
+Skipping analysis means you're designing a solution to a problem you haven't clearly defined. This leads to:
+
+- **Rework** — building the wrong thing correctly
+- **Scope creep** — undefined boundaries invite endless changes
+- **Misaligned stakeholders** — different people assume different outcomes
+
+In fast-moving environments, analysis and design often **overlap iteratively** (as in Agile), but even then, *some* analysis always precedes each design decision — the cycle just compresses.
+
+---
+
+## The Executive Reality
+
+The cost of fixing a design flaw discovered in **analysis** is a conversation. The same flaw discovered in **production** can cost orders of magnitude more. Investing in analysis is fundamentally a **risk management decision**.
+
+> *"A problem well-defined is a problem half-solved."* — Charles Kettering

@@ -1,0 +1,64 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=449
+Latency:   3837 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi usually involves a mix of better placement, reducing interference, and upgrading equipment if needed.
+
+Try these steps:
+
+- Place your router centrally
+  - Put it near the center of your home rather than at one end.
+  - Keep it elevated (on a shelf or table).
+  - Avoid placing it inside cabinets or behind large objects.
+
+- Reduce interference
+  - Keep the router away from microwaves, cordless phones, baby monitors, and Bluetooth-heavy devices.
+  - Avoid placing it next to metal objects or large appliances.
+
+- Use the right Wi‑Fi band
+  - 2.4 GHz: longer range, lower speeds, more interference.
+  - 5 GHz: faster speeds, shorter range.
+  - 6 GHz (Wi‑Fi 6E/7): fastest and least congested, but shorter range and requires compatible devices.
+
+- Optimize your Wi‑Fi channel
+  - In crowded areas, neighboring networks can cause congestion.
+  - Many routers can automatically select the best channel.
+  - A Wi‑Fi analyzer app can help identify less crowded channels.
+
+- Update firmware
+  - Install router firmware updates to improve performance, stability, and security.
+
+- Improve security
+  - Use WPA2 or WPA3 encryption.
+  - Remove unknown devices from your network.
+
+- Upgrade your router
+  - If your router is several years old, a newer Wi‑Fi 6 or Wi‑Fi 7 model may significantly improve performance.
+
+- Consider a mesh Wi‑Fi system
+  - For larger homes or areas with dead spots, mesh systems often provide better coverage than a single router.
+
+- Use wired connections when possible
+  - Connect stationary devices (gaming consoles, desktops, smart TVs) via Ethernet to reduce Wi‑Fi congestion.
+
+- Check your internet plan
+  - Sometimes the bottleneck is the internet connection itself rather than Wi‑Fi.
+  - Compare speeds near the router versus speeds promised by your ISP.
+
+If you tell me:
+- The size of your home/apartment
+- Router model
+- Internet speed from your provider
+- Whether the problem is slow speed, weak signal, or dropped connections
+
+I can give more specific recommendations.

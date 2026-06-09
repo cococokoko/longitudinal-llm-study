@@ -1,0 +1,152 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=31 out=763
+Latency:   15046 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a practical guide to building a solid zombie survivor game!
+
+---
+
+## Core Components You'll Need
+
+### 1. **Sprites to Create**
+- Player character
+- Zombie (enemy)
+- Bullet/projectile
+- Health bar or hearts
+- Game Over screen
+
+---
+
+## Basic Setup
+
+### Player Movement
+```
+when [green flag clicked]
+forever
+  if <key [w] pressed?> then
+    change y by (5)
+  end
+  if <key [s] pressed?> then
+    change y by (-5)
+  end
+  if <key [a] pressed?> then
+    change x by (-5)
+  end
+  if <key [d] pressed?> then
+    change x by (5)
+  end
+end
+```
+
+### Player Shooting
+```
+when [space v] key pressed
+  create clone of [Bullet v]
+```
+
+**In the Bullet sprite:**
+```
+when I start as a clone
+  point in direction (direction of [Player v])
+  forever
+    move (10) steps
+    if <touching [Zombie v]?> then
+      delete this clone
+    end
+    if <touching [edge v]?> then
+      delete this clone
+    end
+  end
+```
+
+---
+
+### Zombie Behavior
+```
+when [green flag clicked]
+forever
+  point towards [Player v]
+  move (2) steps
+  if <touching [Player v]?> then
+    change [Health v] by (-1)
+    wait (0.5) seconds
+  end
+end
+```
+
+---
+
+### Zombie Spawning
+```
+when [green flag clicked]
+forever
+  wait (3) seconds
+  create clone of [Zombie v]
+
+when I start as a clone
+  go to x: (pick random -240 to 240) y: (pick random -180 to 180)
+  show
+```
+
+---
+
+## Health System
+```
+when [green flag clicked]
+set [Health v] to (3)
+forever
+  if <(Health) < (1)> then
+    broadcast [Game Over v]
+  end
+end
+```
+
+---
+
+## Score System
+```
+// In Zombie sprite, when hit by bullet:
+when I receive [hit v]
+  change [Score v] by (10)
+  delete this clone
+```
+
+---
+
+## Tips to Make It Better
+
+| Feature | How to Add |
+|---|---|
+| **Waves** | Increase spawn rate every 30 seconds |
+| **Mouse aiming** | Use `point towards [mouse pointer]` |
+| **Sound effects** | Add sounds on shooting/zombie death |
+| **Difficulty scaling** | Increase zombie speed with score |
+| **Power-ups** | Add collectible sprites |
+
+---
+
+## Recommended Build Order
+1. ✅ Player movement first
+2. ✅ Add shooting
+3. ✅ Add one zombie that chases
+4. ✅ Add health system
+5. ✅ Add spawning/waves
+6. ✅ Polish with sounds and visuals
+
+---
+
+Would you like me to go deeper on any specific mechanic, like **wave systems**, **mouse aiming**, or **collision detection**?

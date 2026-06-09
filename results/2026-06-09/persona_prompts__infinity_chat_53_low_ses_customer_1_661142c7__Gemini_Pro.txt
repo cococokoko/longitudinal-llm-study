@@ -1,0 +1,22 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_53_low_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=650
+Latency:   8307 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a May the 4th joke.
+
+── Response ────────────────────────────────────────────────────────
+Why would Darth Vader make the absolute worst fast food manager?
+
+Because every time the new weekly schedule drops, he tells you: **"I am altering your shifts. Pray I don't alter them any further!"** 
+
+May the 4th be with you (and hopefully the Force brings you a predictable schedule this week)!

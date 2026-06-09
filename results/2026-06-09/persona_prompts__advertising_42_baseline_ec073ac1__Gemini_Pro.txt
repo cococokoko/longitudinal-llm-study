@@ -1,0 +1,46 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1799
+Latency:   18317 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The "best" app for tracking fitness and nutrition depends heavily on your specific goals—whether you want to lose weight, build muscle, track micronutrients, or train for a marathon. 
+
+Here is a breakdown of the best apps on the market, categorized by what they do best:
+
+### 1. Best for Nutrition & Calorie Tracking
+*   **MacroFactor:** Currently the favorite among fitness professionals and data nerds. It uses a dynamic algorithm that adjusts your calorie and macro targets based on your weekly weight trend and logged food. It is "adherence neutral," meaning it doesn't shame you if you go over your calories. *(Paid only, but highly effective).*
+*   **Cronometer:** The absolute best app for tracking **micronutrients** (vitamins and minerals), not just macros. It uses highly verified databases (like the USDA), meaning the food entries are incredibly accurate. *(Free version available; great for vegans, keto, or specific health diets).*
+*   **Lose It!:** A fantastic, user-friendly alternative to MyFitnessPal. It has a great interface, a massive food database, and is highly focused on weight loss. Its premium version is also generally cheaper than competitors. *(Free version available).*
+*   **MyFitnessPal:** The most famous app on the market. It has the largest user-generated food database in the world and integrates with almost every fitness tracker. However, they recently moved their barcode scanner behind a steep paywall, which has frustrated many users. *(Free version available).*
+
+### 2. Best for Strength Training & Gym Workouts
+*   **Hevy:** Currently the best app for tracking weightlifting. It has a clean, modern interface, allows you to build custom routines, tracks your personal records, and has a fun social feed where you can see friends' workouts. *(Free version available).*
+*   **Strong:** The classic, no-nonsense workout tracker. It is incredibly simple to use while you are resting between sets. It tracks your volume, 1-rep maxes, and history perfectly. *(Free version available).*
+*   **Fitbod:** Best for people who don't know what to do at the gym. You tell the app what equipment you have available, and its AI generates a custom workout for you based on your past workouts and muscle recovery. *(Paid).*
+
+### 3. Best for Cardio (Running, Cycling, Swimming)
+*   **Strava:** The undisputed king of cardio tracking. It tracks runs, bike rides, swims, and hikes via GPS. Its biggest draw is the social network aspect—you can give "kudos" to friends, compete on local leaderboards (segments), and map out new routes. *(Free version available).*
+*   **Runkeeper / Nike Run Club:** Both are excellent, user-friendly apps specifically for runners. Nike Run Club is particularly great because it is **100% free** and offers excellent guided audio runs for beginners and marathoners alike.
+
+### 4. Best for Guided Workouts (At-Home or Gym)
+*   **Nike Training Club (NTC):** One of the best fitness apps available because it is **completely free** (no premium paywalls). It offers hundreds of follow-along video workouts, including yoga, HIIT, bodyweight strength, and mobility.
+*   **Peloton:** You don't need the bike to use the app. It offers fantastic guided classes for strength, yoga, outdoor running, and HIIT, led by highly motivating instructors. *(Paid).*
+
+### 5. Best Holistic / Psychology-Based
+*   **Noom:** Best for people who struggle with their relationship with food. Rather than just counting calories, Noom uses daily psychology lessons to help you understand your eating habits, emotional triggers, and how to build long-term sustainable habits. *(Paid).*
+
+### Summary Recommendation:
+*   If you want the **most accurate diet coach**, get **MacroFactor**.
+*   If you want a **free, easy food tracker**, get **Lose It!** or **Cronometer**.
+*   If you **lift weights**, get **Hevy**.
+*   If you **run or cycle**, get **Strava**.
+*   If you want **free guided workouts**, get **Nike Training Club**.

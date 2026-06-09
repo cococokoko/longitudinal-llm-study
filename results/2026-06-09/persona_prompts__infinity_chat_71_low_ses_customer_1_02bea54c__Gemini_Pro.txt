@@ -1,0 +1,26 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_low_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=34 out=687
+Latency:   7870 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+An excellent example of an optimization technique used in machine learning is **Stochastic Gradient Descent (SGD)**. 
+
+To explain how it works, we can actually compare it to your day-to-day work in fast food, especially dealing with an unpredictable schedule and sudden rushes.
+
+Imagine you are trying to find the absolute fastest, most efficient way to prep burgers and manage the fry station. If you had a perfectly predictable schedule and knew exactly what every customer would order all day, you could plan your exact movements perfectly in advance (in machine learning, this is called standard "Gradient Descent"). 
+
+However, because your shifts are unpredictable and you never know when a massive bus of customers is going to pull up, you can't plan perfectly. Instead, you have to adapt on the fly. You look at the small batch of orders currently on the screen, figure out where you are falling behind, and make a quick adjustment to your workflow right then and there to get faster. 
+
+**Stochastic Gradient Descent** does exactly this for AI. Instead of looking at a massive, predictable dataset all at once to figure out how to improve, the algorithm looks at a small, random "batch" of data (like your current screen of orders), calculates its errors, and makes quick, continuous adjustments on the fly. It’s a highly efficient way to learn and adapt to chaotic, unpredictable information!

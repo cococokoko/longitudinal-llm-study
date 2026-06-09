@@ -1,0 +1,34 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=233
+Latency:   4336 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A valuable feature for a smartwatch designed specifically for senior citizens would be:
+
+• Proactive Well-Being Check-In with Escalation
+
+How it works:
+- The watch learns the user's normal daily activity patterns, movement, sleep, and heart-rate trends.
+- If it detects unusual inactivity, a possible fall, missed routines, or health indicators that differ significantly from the person's baseline, it initiates a simple check-in.
+- The watch displays a large, easy-to-read prompt such as, "Are you okay?" with one-tap responses.
+- If the user does not respond within a configurable time period, the watch automatically alerts designated family members, caregivers, or emergency contacts and shares the user's location.
+
+Why it is useful:
+- It provides support without requiring constant monitoring.
+- It can help identify emergencies more quickly than periodic manual check-ins.
+- It promotes independent living while giving families and caregivers greater peace of mind.
+- It adapts to the individual rather than relying solely on generic thresholds.
+
+To make the feature accessible, it could include large text, voice interaction, hearing-aid compatibility, and simple one-step actions instead of complex menus.

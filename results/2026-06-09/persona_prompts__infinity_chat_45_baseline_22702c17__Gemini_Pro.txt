@@ -1,0 +1,23 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_45_baseline
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=14 out=801
+Latency:   8114 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a sentence using a minimum of 2 R-colored vowels.
+
+── Response ────────────────────────────────────────────────────────
+Here is a sentence that uses several R-colored vowels:
+
+"The **far**m**er** woke up early to feed the b**ir**ds."
+
+**R-colored vowels used in this sentence:**
+*   f**ar**mer (/ɑr/ - "ar" sound)
+*   farm**er** (/ɚ/ - unstressed "er" sound)
+*   **ear**ly (/ɝ/ - stressed "er" sound)
+*   b**ir**ds (/ɝ/ - stressed "er" sound)

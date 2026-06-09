@@ -1,0 +1,74 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_17_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=16 out=535
+Latency:   4731 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make my home more energy efficient?
+
+── Response ────────────────────────────────────────────────────────
+Improving your home's energy efficiency can lower utility bills, increase comfort, and reduce environmental impact. Some of the most effective upgrades depend on your home's age, climate, and current condition, but here are common areas to focus on:
+
+- Improve insulation
+  - Add or upgrade attic insulation.
+  - Insulate walls, floors over unheated spaces, and crawl spaces if needed.
+  - Seal and insulate ducts that run through unconditioned areas.
+
+- Air seal leaks
+  - Caulk gaps around windows, doors, and exterior penetrations.
+  - Add weatherstripping to doors and operable windows.
+  - Seal leaks around plumbing, electrical outlets, and attic access points.
+
+- Upgrade heating and cooling systems
+  - Replace older furnaces, boilers, or air conditioners with high-efficiency models.
+  - Consider a heat pump for heating and cooling.
+  - Change air filters regularly and maintain equipment according to manufacturer recommendations.
+
+- Use a smart or programmable thermostat
+  - Adjust temperatures automatically when you're asleep or away.
+  - Optimize schedules to reduce unnecessary heating and cooling.
+
+- Improve window performance
+  - Install energy-efficient windows if existing ones are old or damaged.
+  - Use insulated curtains or cellular shades.
+  - Seal gaps around window frames.
+
+- Upgrade lighting
+  - Replace incandescent and halogen bulbs with LEDs.
+  - Use occupancy sensors or timers in appropriate areas.
+
+- Reduce water-heating energy use
+  - Lower the water heater temperature if appropriate and safe.
+  - Insulate hot-water pipes.
+  - Install low-flow showerheads and faucets.
+  - Consider a heat pump water heater.
+
+- Choose efficient appliances
+  - Replace aging appliances with high-efficiency models.
+  - Run dishwashers and washing machines with full loads.
+  - Use cold water for laundry when suitable.
+
+- Manage electronics and standby power
+  - Unplug devices not in use or use smart power strips.
+  - Enable energy-saving settings on computers and televisions.
+
+- Consider renewable energy
+  - Install rooftop solar panels if your roof, climate, and local incentives make it practical.
+  - Explore community solar programs if rooftop solar isn't feasible.
+
+- Get an energy audit
+  - A professional energy audit can identify the most cost-effective improvements for your specific home.
+  - Some utilities offer free or discounted audits.
+
+If you tell me:
+- Your country or region,
+- Whether you own or rent,
+- The type of home (house, apartment, townhouse),
+- And your biggest concern (high heating bills, cooling costs, drafts, etc.),
+
+I can suggest the upgrades likely to provide the best return on investment.

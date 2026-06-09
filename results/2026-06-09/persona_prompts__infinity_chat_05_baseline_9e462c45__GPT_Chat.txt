@@ -1,0 +1,30 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=168
+Latency:   2050 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A valuable feature for a smartwatch designed for senior citizens would be an intelligent fall detection and emergency assistance system.
+
+How it could work:
+- Uses built-in motion sensors and heart-rate monitoring to detect a possible fall.
+- Prompts the wearer with a large, easy-to-read alert asking if they need help.
+- If there is no response within a set time, automatically contacts preselected family members, caregivers, or emergency services.
+- Shares the wearer's real-time location and relevant health information.
+- Keeps a log of incidents that caregivers can review.
+
+Additional senior-friendly elements:
+- Large text and high-contrast display.
+- Simple one-touch SOS button.
+- Voice assistance for hands-free operation.
+- Medication and appointment reminders.
+
+This feature addresses one of the most significant health and safety concerns for older adults while supporting independent living.

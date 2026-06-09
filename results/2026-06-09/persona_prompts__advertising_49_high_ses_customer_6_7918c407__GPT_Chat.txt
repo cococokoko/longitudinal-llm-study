@@ -1,0 +1,69 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=499
+Latency:   4739 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi usually comes down to optimizing placement, reducing interference, and ensuring the equipment matches your needs. A practical approach:
+
+1. Optimize router placement
+- Place the router in a central location.
+- Keep it elevated (on a shelf rather than the floor).
+- Avoid placing it inside cabinets or behind large furniture.
+- Keep it away from microwaves, cordless phone bases, and other electronics.
+
+2. Use the right Wi‑Fi band
+- 5 GHz: Faster speeds, shorter range.
+- 2.4 GHz: Longer range, lower speeds, more interference.
+- 6 GHz (Wi‑Fi 6E/7 devices): Fastest and least congested, but shortest range.
+
+3. Update equipment and software
+- Install the latest router firmware.
+- Consider upgrading older routers (e.g., Wi‑Fi 5) to Wi‑Fi 6, 6E, or 7 if many devices are connected.
+
+4. Improve channel selection
+- In dense neighborhoods or apartment buildings, neighboring networks can cause congestion.
+- Many modern routers automatically select channels, but manually choosing a less crowded channel can help.
+
+5. Strengthen coverage
+- For larger homes, consider a mesh Wi‑Fi system rather than a single router.
+- If possible, connect mesh nodes via Ethernet backhaul for better performance.
+
+6. Use wired connections where practical
+- Connect stationary devices (TVs, gaming consoles, desktop PCs) via Ethernet.
+- This reduces Wi‑Fi congestion and improves reliability.
+
+7. Check your internet plan
+- Sometimes the issue is the broadband connection rather than Wi‑Fi.
+- Run a speed test next to the router and compare it with tests from distant rooms.
+
+8. Manage device load
+- Disconnect unused devices.
+- Enable Quality of Service (QoS) if your router supports it to prioritize video calls, conferencing, or streaming.
+
+9. Review security settings
+- Use WPA3 (or WPA2 if WPA3 is unavailable).
+- Avoid outdated security protocols that can reduce performance and security.
+
+10. Measure before and after
+- Use a Wi‑Fi analyzer app or your router’s diagnostics to identify weak-signal areas and verify improvements.
+
+If you tell me:
+- Home size (square footage or square meters)
+- Number of floors
+- Internet speed from your ISP
+- Current router model
+- Whether you're in a house or apartment
+
+I can recommend a specific setup and equipment strategy.

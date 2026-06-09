@@ -1,0 +1,65 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=467
+Latency:   7919 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## Setup
+
+Suppose your **hourly earnings** depend on two variables:
+
+- **x** = number of hours worked per week
+- **y** = hourly wage rate ($/hour)
+
+The total weekly pay function is:
+
+$$f(x, y) = x \cdot y + 0.5x^2 \cdot 0.1$$
+
+But let's use a cleaner, realistic example:
+
+$$f(x, y) = 3x^2 + 2xy + y^2$$
+
+---
+
+## Finding Partial Derivatives
+
+### ∂f/∂x (rate of change with respect to hours, holding wage constant)
+
+$$\frac{\partial f}{\partial x} = 6x + 2y$$
+
+### ∂f/∂y (rate of change with respect to wage, holding hours constant)
+
+$$\frac{\partial f}{\partial y} = 2x + 2y$$
+
+---
+
+## Numerical Evaluation
+
+Say you work **x = 36 hours/week** and your wage is **y = $18/hour**:
+
+| Partial Derivative | Calculation | Result |
+|---|---|---|
+| ∂f/∂x | 6(36) + 2(18) | **252** |
+| ∂f/∂y | 2(36) + 2(18) | **108** |
+
+---
+
+## Interpretation
+
+- **∂f/∂x = 252** → If you pick up **one extra hour** (holding wage fixed at $18), your output value increases by **252 units**
+- **∂f/∂y = 108** → If your **wage increases by $1** (holding hours fixed at 36), your output value increases by **108 units**
+
+> Each partial derivative isolates the effect of **one variable at a time** — exactly like asking *"what happens to my paycheck if only my hours change, but nothing else does?"*

@@ -1,0 +1,20 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=83
+Latency:   1282 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+One example of an optimization technique used in machine learning is Stochastic Gradient Descent (SGD).
+
+SGD iteratively updates model parameters using gradients computed from small batches (or individual examples) of training data, making it a widely used method for training neural networks and other machine learning models.

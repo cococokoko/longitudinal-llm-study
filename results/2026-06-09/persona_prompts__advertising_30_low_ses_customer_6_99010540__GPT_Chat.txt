@@ -1,0 +1,85 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_30_low_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=36 out=494
+Latency:   4609 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Starting from scratch, the most effective approach is to learn a little at a time and build small projects as you go. Since you work long hours in a warehouse, a plan that fits into short, consistent study sessions is likely to be more sustainable than trying to do marathon learning sessions.
+
+A practical path:
+
+1. Start with Python
+- Python is beginner-friendly and widely used.
+- It's useful for automation, data analysis, web development, and more.
+- Many learning resources assume no prior experience.
+
+2. Learn the fundamentals
+Focus on:
+- Variables
+- Data types (numbers, text, lists, etc.)
+- Conditional statements (if/else)
+- Loops
+- Functions
+- Basic file handling
+
+3. Use interactive resources
+Good beginner options:
+- freeCodeCamp
+- Harvard CS50 (free)
+- Python for Everybody (free online course)
+- Codecademy (some free content)
+
+4. Build tiny projects immediately
+Examples:
+- A calculator
+- A to-do list
+- A work-shift pay calculator
+- A program that tracks warehouse inventory counts
+- A simple text-based game
+
+Projects help concepts stick much better than tutorials alone.
+
+5. Learn basic problem-solving
+Practice on:
+- Exercism
+- HackerRank
+- LeetCode (easy problems only at first)
+
+Don't worry about speed. Focus on understanding how to break problems into steps.
+
+6. Get comfortable with tools
+Learn:
+- VS Code (popular code editor)
+- Git and GitHub (for saving and sharing code)
+- How to use a terminal/command line
+
+7. Create a consistent schedule
+For someone working long shifts, even:
+- 20–30 minutes on workdays
+- 1–2 hours on days off
+
+can produce steady progress if you stick with it for several months.
+
+A simple 3-month roadmap:
+- Month 1: Python basics and small exercises
+- Month 2: Functions, files, and beginner projects
+- Month 3: Git, GitHub, and one larger project
+
+After that, choose a direction:
+- Web development → HTML, CSS, JavaScript
+- Data analysis → Python, pandas, SQL
+- Automation → Python scripting
+- Software development → Python plus computer science fundamentals
+
+If your goal is eventually changing careers or increasing your earning potential, I can also suggest a coding path based on how much time you realistically have available each week.

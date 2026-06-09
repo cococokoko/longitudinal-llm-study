@@ -1,0 +1,58 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=27 out=1626
+Latency:   15764 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+To illustrate the concept of a partial derivative, let’s use an example highly relevant to your work in neurosurgery: **Cerebral Blood Flow (CBF)**. 
+
+A partial derivative measures how a multi-variable function changes when you change *one* specific variable while holding all the other variables completely constant.
+
+### The Scenario
+According to a simplified version of Poiseuille’s Law, the blood flow ($F$) through a cerebral blood vessel depends heavily on two variables:
+1. **$r$**: The radius of the blood vessel.
+2. **$P$**: The perfusion pressure gradient.
+
+Let’s define our flow function as:
+**$F(r, P) = 100 \cdot r^4 \cdot P$**
+*(Note: 100 is just a constant used here to simplify the fluid viscosity and vessel length).*
+
+Imagine a patient currently has a vessel radius of **$r = 2$ mm** and a perfusion pressure of **$P = 50$ mmHg**. 
+The current blood flow is:
+$F(2, 50) = 100 \cdot (2^4) \cdot 50 = 100 \cdot 16 \cdot 50 =$ **$80,000$ units of flow.**
+
+### 1. Partial Derivative with Respect to Radius ($r$)
+Suppose you want to know how much the blood flow will change if the vessel dilates (radius increases), assuming the **pressure remains exactly the same**. We take the partial derivative of $F$ with respect to $r$, written as $\frac{\partial F}{\partial r}$. 
+
+To do this, we treat $P$ as a constant number:
+$\frac{\partial F}{\partial r} = 4 \cdot 100 \cdot r^3 \cdot P = 400 \cdot r^3 \cdot P$
+
+Now, let's plug in the patient's current state ($r = 2$, $P = 50$):
+$\frac{\partial F}{\partial r} = 400 \cdot (2^3) \cdot 50 = 400 \cdot 8 \cdot 50 =$ **$160,000$**
+
+**What this means:** At this specific moment, for every 1 mm increase in the vessel's radius, the blood flow will increase at a rate of 160,000 units, *provided the pressure doesn't change*.
+
+### 2. Partial Derivative with Respect to Pressure ($P$)
+Now, suppose you want to know how the flow changes if you medically increase the patient's blood pressure, but the **vessel radius remains exactly the same**. We take the partial derivative of $F$ with respect to $P$, written as $\frac{\partial F}{\partial P}$.
+
+Here, we treat $r$ as a constant number:
+$\frac{\partial F}{\partial P} = 100 \cdot r^4 \cdot 1 = 100 \cdot r^4$
+
+Plugging in the patient's current radius ($r = 2$):
+$\frac{\partial F}{\partial P} = 100 \cdot (2^4) = 100 \cdot 16 =$ **$1,600$**
+
+**What this means:** At this specific moment, for every 1 mmHg increase in pressure, the blood flow increases at a rate of 1,600 units, *provided the vessel radius doesn't change*.
+
+### The Clinical Takeaway
+By using partial derivatives, we can mathematically isolate and compare the impact of different interventions. In this numerical example, $\frac{\partial F}{\partial r}$ (160,000) is vastly larger than $\frac{\partial F}{\partial P}$ (1,600). This perfectly mirrors the physiological reality you see in the OR and ICU: because flow is proportional to the fourth power of the radius, a tiny amount of vasodilation (or vasospasm) has a much more profound impact on cerebral blood flow than altering the patient's systemic blood pressure.

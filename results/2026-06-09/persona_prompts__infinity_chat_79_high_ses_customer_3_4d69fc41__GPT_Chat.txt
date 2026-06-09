@@ -1,0 +1,107 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=44 out=667
+Latency:   6939 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+A strong STEM fair project should be:
+- Scientifically rigorous
+- Affordable to build and test
+- Relevant to a real problem
+- Capable of generating original data
+
+One idea that fits all of these criteria and connects directly to challenges in Vietnam is:
+
+"Designing a Low-Cost System to Remove Microplastics from Water"
+
+Why it matters in Vietnam:
+- Vietnam has extensive river systems (Mekong, Red River, Saigon River) that face plastic pollution.
+- Microplastics are increasingly found in rivers, lakes, coastal waters, and seafood.
+- Water treatment can be expensive, especially in rural areas.
+- This topic connects environmental science, engineering, chemistry, and public health.
+
+Project question:
+"Which affordable filtration material removes the highest percentage of microplastics from water?"
+
+Materials (low cost):
+- Plastic bottles
+- Sand
+- Gravel
+- Activated charcoal (aquarium charcoal)
+- Cotton
+- Coffee filters
+- Magnets (optional)
+- Small plastic particles (made from ground plastic packaging or glitter substitutes)
+- Scale or microscope attachment for a smartphone (optional)
+
+Experimental design:
+1. Create water samples containing known amounts of microplastic particles.
+2. Build several filter designs:
+   - Sand only
+   - Sand + charcoal
+   - Cotton + sand
+   - Multi-layer filter
+3. Pass equal amounts of water through each filter.
+4. Measure:
+   - Number of particles remaining
+   - Water clarity
+   - Flow rate
+   - Cost per filter
+5. Compare efficiency and cost.
+
+Possible engineering extension:
+- Design a reusable filter cartridge.
+- Test whether magnetic iron-coated particles can help trap plastics.
+- Use 3D-printed filter housings if available.
+
+Data you can collect:
+- Filtration efficiency (% removal)
+- Cost effectiveness
+- Water flow speed
+- Durability after repeated use
+
+Why judges tend to like it:
+- Addresses a major environmental issue.
+- Produces quantitative data.
+- Includes engineering design and optimization.
+- Has direct relevance to Vietnam's waterways and coastal communities.
+
+Other Vietnam-focused STEM ideas that are also excellent:
+
+1. Flood Prediction Using Low-Cost Sensors
+- Vietnam experiences frequent flooding.
+- Build a model river basin and use ultrasonic sensors with Arduino.
+- Develop a simple flood-warning system.
+
+2. Solar-Powered Water Purification
+- Relevant for rural and coastal communities.
+- Compare solar disinfection methods.
+- Measure bacterial reduction or water quality indicators.
+
+3. Rice Husk Biochar for Water Treatment
+- Vietnam produces large amounts of rice husks.
+- Convert rice husks into biochar.
+- Test removal of dyes or pollutants from water.
+
+4. Mangrove-Inspired Coastal Protection Model
+- Study how mangrove density affects erosion.
+- Build wave tanks and compare shoreline loss.
+- Relevant to climate change and the Mekong Delta.
+
+5. Smart Irrigation for Rice Farming
+- Use soil moisture sensors and Arduino.
+- Compare water use against traditional irrigation.
+- Important because agriculture is a major sector in Vietnam.
+
+If your goal is to compete at a high level (regional, national, or international fairs), the rice husk biochar project is particularly promising because it combines local Vietnamese resources, sustainability, materials science, and environmental engineering in a way that can produce novel results.

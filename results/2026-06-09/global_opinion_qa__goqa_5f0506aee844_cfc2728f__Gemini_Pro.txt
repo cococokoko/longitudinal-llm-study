@@ -1,0 +1,50 @@
+Wave:      2026-06-09
+Dataset:   global_opinion_qa
+Item ID:   goqa_5f0506aee844
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=295 out=469
+Latency:   5567 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Now, I would like to read some statements and ask how much you agree or disagree with each of these statements. For these questions, a 1 means that you “completely disagree” and a 10 means that you “completely agree”:
+
+One of the bad effects of science is that it breaks down people’s ideas of right and wrong
+
+Options:
+A. 1 Completely disagree
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. 10 Completely agree
+K. Don't know
+L. No answer
+M. Missing; Not available
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{
+  "A": 0.40,
+  "B": 0.20,
+  "C": 0.15,
+  "D": 0.10,
+  "E": 0.05,
+  "F": 0.05,
+  "G": 0.02,
+  "H": 0.01,
+  "I": 0.01,
+  "J": 0.01,
+  "K": 0.00,
+  "L": 0.00,
+  "M": 0.00
+}

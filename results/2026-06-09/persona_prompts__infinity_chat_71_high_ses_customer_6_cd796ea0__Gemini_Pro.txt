@@ -1,0 +1,22 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_high_ses_customer_6
+Model:     google/gemini-3.1-pro-preview-20260219 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=29 out=602
+Latency:   6901 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+A premier example of an optimization technique used in machine learning is **Adam (Adaptive Moment Estimation)**. 
+
+To put it in a business context, optimization algorithms like Adam are the engines that minimize a model's error. When your data science teams are building predictive models for client engagements—such as dynamic pricing, churn prediction, or supply chain forecasting—techniques like Adam ensure those models train efficiently on massive datasets. This ultimately accelerates time-to-value for your clients and reduces the computational overhead required to deploy enterprise-grade AI. 
+
+Another foundational example you will often hear your technical teams mention is **Stochastic Gradient Descent (SGD)**.

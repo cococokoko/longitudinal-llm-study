@@ -1,0 +1,92 @@
+Wave:      2026-06-09
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1297
+Latency:   14548 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The "best" fitness and nutrition app depends heavily on your specific goals—whether you want to lose weight, build muscle, track macronutrients, or find guided workouts. 
+
+Here is a breakdown of the best apps for tracking fitness and nutrition in 2024, categorized by what they do best.
+
+---
+
+### 1. Best All-in-One Apps (Nutrition + Fitness)
+
+#### **MyFitnessPal**
+*The undisputed giant of calorie tracking.*
+* **Best for:** People who want a massive food database and seamless integration with wearable fitness trackers.
+* **Why it’s great:** It has a database of over 14 million foods, including restaurant items and a barcode scanner. It syncs with almost every fitness tracker (Apple Watch, Fitbit, Garmin) to import your burned calories.
+* **The Catch:** The free version has become very ad-heavy, and key features (like the barcode scanner in some regions and custom macro tracking) are now locked behind the Premium subscription.
+* **Cost:** Free basic version; Premium is $19.99/month or $79.99/year.
+
+#### **Lifesum**
+*The most aesthetically pleasing and user-friendly app.*
+* **Best for:** Those who find traditional calorie counters stressful and want a more holistic, design-forward approach.
+* **Why it’s great:** Lifesum focuses on clean eating and habit-building. It rates foods from A to F to help you understand their nutritional value and offers specialized diet plans (Keto, Mediterranean, High Protein).
+* **Cost:** Free basic version; Premium starts at $4.17/month (billed annually).
+
+---
+
+### 2. Best for Nutrition & Macro Tracking
+
+#### **MacroFactor**
+*The best app for serious science-based nutrition and weight goals.*
+* **Best for:** Bodybuilders, athletes, or anyone frustrated by weight loss plateaus.
+* **Why it’s great:** Created by fitness science experts, MacroFactor uses a proprietary algorithm to calculate your **Expenditure** (how many calories you actually burn daily) based on your food intake and weight changes. It is "adherence-neutral," meaning it doesn't shame you if you go over your calories; it just adjusts your plan.
+* **Cost:** No free version (7-day free trial); $11.99/month or $71.99/year.
+
+#### **Cronometer**
+*The best app for tracking micronutrients (vitamins and minerals).*
+* **Best for:** Vegans, vegetarians, people with nutrient deficiencies, or data nerds.
+* **Why it’s great:** Unlike MyFitnessPal, which relies heavily on user-submitted (and often inaccurate) data, Cronometer uses highly vetted databases. It tracks up to 82 micronutrients, making it the best for overall health, not just weight loss.
+* **Cost:** Free basic version (includes barcode scanner); Gold version is $8.99/month or $49.99/year.
+
+---
+
+### 3. Best for Workout & Fitness Tracking
+
+#### **Strong (or Hevy)**
+*The best apps for weightlifting and gym workouts.*
+* **Best for:** People who lift weights and want to track their progressive overload (reps, sets, weight).
+* **Why it’s great:** Both *Strong* and *Hevy* (which are very similar) are clean, fast, and don't waste your time. They allow you to log workouts quickly, see your history for each exercise while you lift, and feature built-in rest timers. Hevy has a slightly better social feature.
+* **Cost:** Free for up to 3 custom routines; Pro versions are around $4.99/month or $29.99/year.
+
+#### **Strava**
+*The best app for running, cycling, and outdoor activities.*
+* **Best for:** Runners, cyclists, swimmers, and hikers.
+* **Why it’s great:** Strava is essentially social media for athletes. It uses GPS to track your routes, pace, and elevation. The "Segments" feature allows you to compete against your own past times or other athletes who have run the same stretch of road.
+* **Cost:** Free basic version; Premium is $11.99/month or $79.99/year.
+
+---
+
+### 4. Best for Guided Workouts
+
+#### **Nike Training Club (NTC)**
+*The best free workout app.*
+* **Best for:** People who want high-quality, trainer-led workouts at home or in the gym without paying a subscription.
+* **Why it’s great:** Nike made this app **100% free** during the pandemic and kept it that way. It features hundreds of workouts ranging from yoga and bodyweight HIIT to strength training with dumbbells, led by world-class trainers.
+* **Cost:** 100% Free.
+
+#### **Peloton App**
+*The best paid guided workout app (no bike required).*
+* **Best for:** People who need high-energy music and motivational instructors to get through a workout.
+* **Why it’s great:** You do not need Peloton hardware to use the app. It offers incredible classes for running (outdoor audio-guided), strength training, yoga, Pilates, and cardio.
+* **Cost:** App One is $12.99/month; App+ is $24/month.
+
+---
+
+### Summary: Which should you choose?
+
+* **If you want to lose weight and track calories for free:** Use **Cronometer** or **MyFitnessPal** (free version).
+* **If you want a smart coach to tell you exactly how much to eat to lose weight/gain muscle:** Use **MacroFactor**.
+* **If you want to track your gym workouts (lifting):** Use **Hevy** or **Strong**.
+* **If you want free home workouts:** Use **Nike Training Club**.
+* **If you want to track runs/bike rides:** Use **Strava**.
