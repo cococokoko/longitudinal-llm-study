@@ -28,18 +28,12 @@ models:
       temperature: 0.0
       max_tokens: 1024
 
-  - model_id: "~google/gemini-pro-latest"
-    display_name: "Gemini Pro"
-    parameters:
-      temperature: 0.0
-      max_tokens: 5024
-      reasoning: {effort: "minimal"}
 
   - model_id: "~google/gemini-flash-latest"
     display_name: "Gemini Flash"
     parameters:
       temperature: 0.0
-      max_tokens: 5024
+      max_tokens: 2024
       reasoning: {effort: "minimal"}
 
 # ── Experiment models ─────────────────────────────────────────────────────────
@@ -65,15 +59,14 @@ experiment_models:
 #                    "fixed"   — same sample every wave (seed=42)
 # sample_n:          how many items to draw per wave
 datasets:
-  - name: global_opinion_qa
+  - name: wvs7
     type: local_json
-    path: globalopinionqa_wvs.json
+    path: wvs7.json
     prompt_field: prompt
     id_field: item_id
     max_prompt_length: 0
-    # All WVS questions sent every wave — sample_n: null means no limit.
     sampling_strategy: fixed
-    sample_n: null #no sampling cap
+    sample_n: null 
 
   - name: persona_prompts
     type: local_json
@@ -82,6 +75,5 @@ datasets:
     system_field: system         # null for baseline/user conditions; set for customer conditions
     id_field: item_id
     max_prompt_length: 0
-    # All 429 items sent every wave — sample_n: null means no limit.
     sampling_strategy: fixed
-    sample_n: null #no sampling cap
+    sample_n: null 

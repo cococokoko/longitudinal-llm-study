@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY *.py ./
 COPY config.yaml ./
-COPY globalopinionqa_wvs.json ./
+COPY wvs7.json ./
 COPY persona_prompts.json ./
 
 RUN mkdir -p /app/results /app/logs

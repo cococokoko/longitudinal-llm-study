@@ -496,7 +496,7 @@
 
         <!-- WVS table -->
         <div id="sub-wvs" style="display:none">
-          <p class="section-note">352 fixed World Values Survey questions sent every wave. Models respond with a JSON probability distribution over answer options (A, B, C…). The global distribution shows real human survey responses.</p>
+          <p class="section-note">282 World Values Survey Wave 7 questions sent every wave. Models respond with a JSON probability distribution over answer options (A, B, C…). The global distribution will be shown once distributions are added to the dataset.</p>
           <div class="table-wrap">
             <table class="data-table">
               <thead>
@@ -530,7 +530,7 @@
   <div class="type-bar">
     <div class="type-bar-inner">
       <span class="type-label">Measures:</span>
-      <button class="sub-btn active" data-analysis="versions">Model Versions</button>
+      <button class="sub-btn active" data-analysis="versions">Study Metrics</button>
       <button class="sub-btn" data-analysis="alignment">Value Alignment</button>
       <button class="sub-btn" data-analysis="lengths">Prompt Lengths</button>
       <button class="sub-btn" data-analysis="diversity">Output Diversity</button>
@@ -540,32 +540,63 @@
 
   <div class="main-wrap">
 
-    <!-- Model Versions -->
+    <!-- Study Metrics -->
     <div class="analysis-panel active" id="panel-versions">
       <p class="section-note">Exact model version strings returned by the API per wave. Count = successful (non-error) calls.</p>
       <div id="versions-wrap"></div>
+
+      <div class="chart-title" style="margin-top:28px">Mean Output Tokens per Response per Wave</div>
+      <div class="plotly-wrap" id="chart-output-tokens" style="height:300px;margin-bottom:24px"></div>
+
+      <div class="chart-title">Output Truncation Rate per Wave (finish_reason = length)</div>
+      <div class="plotly-wrap" id="chart-truncation" style="height:260px;margin-bottom:16px"></div>
+      <div id="truncation-table"></div>
     </div>
 
-    <!-- Value Alignment: 2 charts side by side -->
+    <!-- Value Alignment: WVS7 (current) + Legacy subtabs -->
     <div class="analysis-panel" id="panel-alignment">
       <p class="section-note">
         <strong>Wasserstein</strong> = earth mover's distance vs the WVS global distribution (0 = perfect match).
         <strong>Entropy</strong> = Shannon entropy of the model's distribution; gray dashed = WVS human entropy.
       </p>
-      <div class="chart-title">Wasserstein Distance — Mean ± 1 SD</div>
-      <div class="plotly-wrap" id="chart-ws" style="height:380px;margin-bottom:16px"></div>
-      <div class="chart-title">Shannon Entropy per Wave</div>
-      <div class="plotly-wrap" id="chart-ent" style="height:380px"></div>
+
+      <!-- Alignment dataset subtab bar -->
+      <div style="display:flex;gap:8px;margin-bottom:16px;align-items:center">
+        <span class="type-label" style="font-size:11px">Dataset:</span>
+        <button class="sub-btn active" data-align-src="wvs7">WVS7 (current)</button>
+        <button class="sub-btn" data-align-src="legacy">Legacy Archive (GlobalOpinionQA)</button>
+      </div>
+
+      <!-- WVS7 panel -->
+      <div id="align-wvs7">
+        <div id="align-wvs7-empty" style="display:none;text-align:center;padding:48px 0;color:var(--text-muted);font-size:13px">
+          No WVS7 alignment data yet — global distributions will be computed once added to wvs7.json.
+        </div>
+        <div id="align-wvs7-charts">
+          <div class="chart-title">Wasserstein Distance — Mean ± 1 SD</div>
+          <div class="plotly-wrap" id="chart-ws" style="height:380px;margin-bottom:16px"></div>
+          <div class="chart-title">Shannon Entropy per Wave</div>
+          <div class="plotly-wrap" id="chart-ent" style="height:380px"></div>
+        </div>
+      </div>
+
+      <!-- Legacy panel (hidden by default) -->
+      <div id="align-legacy" style="display:none">
+        <p class="section-note" style="background:#fef9ed;border-left-color:#f59e0b;margin-bottom:16px">
+          Historical data based on GlobalOpinionQA — archived from study start through dataset switch.
+        </p>
+        <div class="chart-title">Wasserstein Distance — Mean ± 1 SD (Legacy)</div>
+        <div class="plotly-wrap" id="chart-ws-legacy" style="height:380px;margin-bottom:16px"></div>
+        <div class="chart-title">Shannon Entropy per Wave (Legacy)</div>
+        <div class="plotly-wrap" id="chart-ent-legacy" style="height:380px"></div>
+      </div>
     </div>
 
     <!-- Prompt Lengths -->
     <div class="analysis-panel" id="panel-lengths">
       <p class="section-note">Total character count of each persona prompt (user text + system message when present).</p>
       <div class="chart-title">Prompt Length Distribution by Condition × Framing</div>
-      <div class="plotly-wrap" id="chart-lengths" style="height:360px;margin-bottom:24px"></div>
-      <div class="chart-title">Output Truncation Rate per Wave (finish_reason = length)</div>
-      <div class="plotly-wrap" id="chart-truncation" style="height:260px;margin-bottom:16px"></div>
-      <div id="truncation-table"></div>
+      <div class="plotly-wrap" id="chart-lengths" style="height:360px"></div>
     </div>
 
     <!-- Output Diversity -->
@@ -639,7 +670,7 @@ document.querySelectorAll('[data-nav]').forEach(el => {
 });
 
 // ── Plotly helpers ─────────────────────────────────────────────
-const CHART_IDS = ['chart-ws','chart-ent','chart-lengths','chart-4a','chart-4b-0','chart-4b-1','chart-4b-2','chart-4b-3'];
+const CHART_IDS = ['chart-ws','chart-ent','chart-ws-legacy','chart-ent-legacy','chart-output-tokens','chart-truncation','chart-lengths','chart-4a','chart-4b-0','chart-4b-1','chart-4b-2','chart-4b-3'];
 function resizeAll() {
   CHART_IDS.forEach(id => { const el = document.getElementById(id); if (el && el._fullLayout) Plotly.Plots.resize(el); });
 }
@@ -688,7 +719,8 @@ function renderVersions({ wave_versions, waves }) {
   document.getElementById('versions-wrap').innerHTML = html;
 }
 
-function renderWVSCharts(wvs_metrics) {
+function renderWVSCharts(wvs_metrics, suffix) {
+  const sfx = suffix || '';
   const mk = (yKey, errKey) => MAIN_MODELS.map(model => {
     const d = wvs_metrics.filter(r => r.model === model).sort((a,b) => a.wave < b.wave ? -1 : 1);
     return {
@@ -698,7 +730,7 @@ function renderWVSCharts(wvs_metrics) {
       line:{color:MODEL_CLR[model],width:2.5}, marker:{size:6,color:MODEL_CLR[model]},
     };
   });
-  Plotly.newPlot('chart-ws', mk('ws_mean','ws_std'),
+  Plotly.newPlot('chart-ws'+sfx, mk('ws_mean','ws_std'),
     baseLayout({ yaxis:{title:'Wasserstein Dist.',gridcolor:'#e8e8e1'} }), PCFG);
 
   const entTraces = MAIN_MODELS.map(model => {
@@ -709,7 +741,7 @@ function renderWVSCharts(wvs_metrics) {
   const ref = wvs_metrics.filter(r => r.model === MAIN_MODELS[0]).sort((a,b) => a.wave<b.wave?-1:1);
   if (ref.length) entTraces.push({ x:ref.map(r=>r.wave), y:ref.map(r=>r.entropy_global_mean),
     mode:'lines', name:'WVS human', line:{color:'#d1d5db',dash:'dash',width:1.5} });
-  Plotly.newPlot('chart-ent', entTraces,
+  Plotly.newPlot('chart-ent'+sfx, entTraces,
     baseLayout({ yaxis:{title:'Shannon Entropy (nats)',gridcolor:'#e8e8e1'} }), PCFG);
 }
 
@@ -729,6 +761,23 @@ function renderLengths(persona_lengths) {
       marker:{color:g.color,size:3,opacity:.7}, line:{color:g.color}, fillcolor:g.color+'44',
     })),
     baseLayout({ yaxis:{title:'Characters',gridcolor:'#e8e8e1'}, showlegend:false }), PCFG);
+}
+
+function renderOutputTokens(truncation_rates) {
+  if (!truncation_rates?.length) return;
+  const traces = MAIN_MODELS.map(model => {
+    const d = truncation_rates.filter(r => r.model === model && r.output_tokens_mean != null)
+                              .sort((a,b) => a.wave < b.wave ? -1 : 1);
+    if (!d.length) return null;
+    return {
+      x: d.map(r => r.wave),
+      y: d.map(r => r.output_tokens_mean),
+      mode: 'lines+markers', name: MODEL_LABELS[model],
+      line: {color: MODEL_CLR[model], width: 2.5}, marker: {size: 6, color: MODEL_CLR[model]},
+    };
+  }).filter(Boolean);
+  Plotly.newPlot('chart-output-tokens', traces,
+    baseLayout({ yaxis: {title: 'Mean output tokens', gridcolor: '#e8e8e1', rangemode: 'tozero'} }), PCFG);
 }
 
 function renderTruncation(truncation_rates) {
@@ -825,14 +874,15 @@ function renderWVS(q='') {
     const opts=item.options.map((o,i)=>
       `<span style="color:${DIST_PALETTE[i%DIST_PALETTE.length]}">${String.fromCharCode(65+i)}.</span> ${o}`
     ).join('<br>');
-    const bar=item.options.map((o,i)=>{
+    const hasDist = Array.isArray(item.global_distribution) && item.global_distribution.length > 0;
+    const bar = hasDist ? item.options.map((o,i)=>{
       const pct=Math.round((item.global_distribution[i]||0)*1000)/10;
       return `<div style="width:${pct}%;background:${DIST_PALETTE[i%DIST_PALETTE.length]}" title="${String.fromCharCode(65+i)}: ${pct}%"></div>`;
-    }).join('');
-    const leg=item.options.map((o,i)=>{
+    }).join('') : '';
+    const leg = hasDist ? item.options.map((o,i)=>{
       const pct=Math.round((item.global_distribution[i]||0)*1000)/10;
       return `<span style="color:${DIST_PALETTE[i%DIST_PALETTE.length]}">${String.fromCharCode(65+i)}:${pct}%</span>`;
-    }).join(' ');
+    }).join(' ') : '<span style="color:#9ca3af;font-size:10px">pending</span>';
     return `<tr>
       <td style="color:#9ca3af;font-size:11px">${n}</td>
       <td style="max-width:380px">${item.question.replace(/\n/g,'<br>')}</td>
@@ -931,7 +981,18 @@ document.querySelectorAll('[data-analysis]').forEach(btn=>{
     document.querySelectorAll('.analysis-panel').forEach(p=>p.classList.remove('active'));
     btn.classList.add('active');
     document.getElementById('panel-'+btn.dataset.analysis).classList.add('active');
-    // Let the grid finish computing column widths before Plotly measures the container
+    setTimeout(resizeAll, 0);
+  });
+});
+
+// ── Value Alignment dataset subtab switching ───────────────────
+document.querySelectorAll('[data-align-src]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-align-src]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const isLegacy = btn.dataset.alignSrc === 'legacy';
+    document.getElementById('align-wvs7').style.display   = isLegacy ? 'none' : '';
+    document.getElementById('align-legacy').style.display = isLegacy ? '' : 'none';
     setTimeout(resizeAll, 0);
   });
 });
@@ -979,8 +1040,19 @@ document.addEventListener('DOMContentLoaded',async()=>{
     document.getElementById('stat-persona').textContent=prompts.persona?.length??'—';
 
     renderVersions(metrics);
-    renderWVSCharts(metrics.wvs_metrics);
+
+    if (metrics.wvs_metrics?.length) {
+      renderWVSCharts(metrics.wvs_metrics, '');
+    } else {
+      document.getElementById('align-wvs7-charts').style.display = 'none';
+      document.getElementById('align-wvs7-empty').style.display  = 'block';
+    }
+    if (metrics.wvs_metrics_legacy?.length) {
+      renderWVSCharts(metrics.wvs_metrics_legacy, '-legacy');
+    }
+
     renderLengths(metrics.persona_lengths);
+    renderOutputTokens(metrics.truncation_rates);
     renderTruncation(metrics.truncation_rates);
 
     if (metrics.cosine_4a?.length) { renderCosine4a(metrics.cosine_4a); }

@@ -3,8 +3,8 @@
 export_prompts.py — Export all pipeline prompts to a structured Excel file.
 
 Tabs:
-  1. global_opinion_qa  — original question | final prompt sent
-  2. persona_prompts    — one row per query; baseline | high_ses | low_ses columns
+  1. wvs7            — original question | final prompt sent
+  2. persona_prompts — one row per query; baseline | high_ses | low_ses columns
 
 Usage:
   python export_prompts.py
@@ -110,8 +110,8 @@ def write_excel(goqa_df: pd.DataFrame, persona_df: pd.DataFrame, out: Path) -> N
 
     with pd.ExcelWriter(out, engine="openpyxl") as writer:
         # ── Tab 1 ──────────────────────────────────────────────────────────────
-        goqa_df.to_excel(writer, sheet_name="global_opinion_qa", index=False)
-        ws1 = writer.sheets["global_opinion_qa"]
+        goqa_df.to_excel(writer, sheet_name="wvs7", index=False)
+        ws1 = writer.sheets["wvs7"]
         _style_sheet(ws1, col_widths=[22, 10, 10, 10, 60, 80])
 
         # ── Tab 2 ──────────────────────────────────────────────────────────────
@@ -131,7 +131,7 @@ def write_excel(goqa_df: pd.DataFrame, persona_df: pd.DataFrame, out: Path) -> N
                     cell.fill = LOW_FILL
 
     print(f"Saved → {out}")
-    print(f"  global_opinion_qa : {len(goqa_df)} rows")
+    print(f"  wvs7              : {len(goqa_df)} rows")
     print(f"  persona_prompts   : {len(persona_df)} rows  ({len(persona_df) * 3} total prompts incl. 3 conditions)")
 
 
@@ -139,12 +139,12 @@ def write_excel(goqa_df: pd.DataFrame, persona_df: pd.DataFrame, out: Path) -> N
 
 def main() -> None:
     p = argparse.ArgumentParser()
-    p.add_argument("--goqa",    default="globalopinionqa_wvs.json")
+    p.add_argument("--wvs",    default="wvs7.json")
     p.add_argument("--persona", default="persona_prompts.json")
     p.add_argument("--out",     default="results/prompts_overview.xlsx")
     args = p.parse_args()
 
-    goqa_df    = build_goqa(Path(args.goqa))
+    goqa_df    = build_goqa(Path(args.wvs))
     persona_df = build_persona(Path(args.persona))
 
     write_excel(goqa_df, persona_df, Path(args.out))

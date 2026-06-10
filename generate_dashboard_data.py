@@ -17,11 +17,12 @@ from pathlib import Path
 import numpy as np
 from scipy.stats import wasserstein_distance as scipy_wasserstein
 
-DB       = Path("study.db")
-WVS_JSON = Path("globalopinionqa_wvs.json")
-OUT_DIR  = Path("docs/data")
-METRICS  = OUT_DIR / "metrics.json"
-PROMPTS  = OUT_DIR / "prompts.json"
+DB         = Path("study.db")
+WVS_JSON   = Path("wvs7.json")
+GOQA_JSON  = Path("globalopinionqa_wvs.json")
+OUT_DIR    = Path("docs/data")
+METRICS    = OUT_DIR / "metrics.json"
+PROMPTS    = OUT_DIR / "prompts.json"
 
 OPT_LETTERS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 MAIN_MODELS = ["Claude Sonnet", "Gemini Pro", "Gemini Flash", "GPT Chat"]   # DB display_name keys
@@ -84,8 +85,8 @@ def _parse_wvs(text: str | None) -> np.ndarray | None:
         return None
 
 
-def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
-    """Wasserstein distance and Shannon entropy per (wave, model) — dashboard: Value Alignment tab."""
+def _compute_wvs_metrics_for(conn, waves, wvs_meta, dataset_name: str) -> list[dict]:
+    """Shared Wasserstein/entropy computation for any WVS-format dataset."""
     if not waves:
         return []
     rows = _rows(conn, f"""
@@ -95,7 +96,7 @@ def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
         JOIN study_waves sw    ON sw.id = rr.wave_id
         JOIN model_configs mc  ON mc.id = rr.model_config_id
         JOIN dataset_items di  ON di.id = rr.item_id
-        WHERE di.dataset_name = 'global_opinion_qa'
+        WHERE di.dataset_name = '{dataset_name}'
           AND sw.name IN {_sql_in(waves)}
           AND mc.display_name IN {_sql_in(MAIN_MODELS)}
           AND rr.error IS NULL
@@ -107,7 +108,7 @@ def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
         if p is None:
             continue
         item = wvs_meta.get(r["item_id"])
-        if not item:
+        if not item or not item.get("global_distribution"):
             continue
         n = len(item["options"])
         gd = np.array(item["global_distribution"][:n], dtype=float)
@@ -146,6 +147,26 @@ def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
     ]
 
 
+WVS7_START = "2026-06-10"
+
+def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
+    """Wasserstein/entropy for wvs7 dataset — waves from 2026-06-10 onwards only."""
+    wvs7_waves = [w for w in waves if w >= WVS7_START]
+    return _compute_wvs_metrics_for(conn, wvs7_waves, wvs_meta, "wvs7")
+
+
+LEGACY_START = "2026-06-04"
+LEGACY_END   = "2026-06-08"
+
+def compute_wvs_metrics_legacy(conn, waves, goqa_meta) -> list[dict]:
+    """Wasserstein/entropy for global_opinion_qa — waves 2026-06-04 through 2026-06-08 only."""
+    legacy_waves = [
+        w for w in waves
+        if re.match(r"^\d{4}-\d{2}-\d{2}$", w) and LEGACY_START <= w <= LEGACY_END
+    ]
+    return _compute_wvs_metrics_for(conn, legacy_waves, goqa_meta, "global_opinion_qa")
+
+
 # ── Output truncation rates ───────────────────────────────────────────────────
 
 def compute_truncation_rates(conn, waves) -> list[dict]:
@@ -155,7 +176,9 @@ def compute_truncation_rates(conn, waves) -> list[dict]:
     return _rows(conn, f"""
         SELECT sw.name AS wave, mc.display_name AS model,
                COUNT(*) AS total,
-               SUM(CASE WHEN rr.finish_reason = 'length' THEN 1 ELSE 0 END) AS truncated
+               SUM(CASE WHEN rr.finish_reason = 'length' THEN 1 ELSE 0 END) AS truncated,
+               ROUND(AVG(rr.output_tokens), 1)  AS output_tokens_mean,
+               SUM(rr.output_tokens)             AS output_tokens_sum
         FROM response_records rr
         JOIN study_waves sw    ON sw.id = rr.wave_id
         JOIN model_configs mc  ON mc.id = rr.model_config_id
@@ -476,7 +499,11 @@ def main():
 
     wvs_meta = {item["item_id"]: item
                 for item in json.loads(WVS_JSON.read_text())}
-    print(f"Loaded {len(wvs_meta)} WVS items")
+    print(f"Loaded {len(wvs_meta)} WVS7 items")
+
+    goqa_meta = {item["item_id"]: item
+                 for item in json.loads(GOQA_JSON.read_text())}
+    print(f"Loaded {len(goqa_meta)} GlobalOpinionQA items (legacy)")
 
     existing: dict = {}
     if METRICS.exists():
@@ -488,8 +515,15 @@ def main():
     waves = get_waves(conn)
     print(f"Waves ({len(waves)}): {waves}")
 
-    print("WVS metrics…")
+    print("WVS7 metrics (current)…")
     wvs_metrics = compute_wvs_metrics(conn, waves, wvs_meta)
+
+    print("WVS legacy metrics (GlobalOpinionQA archive)…")
+    all_waves_for_legacy = [
+        r["name"] for r in _rows(conn, "SELECT name FROM study_waves ORDER BY name")
+        if re.match(r"^\d{4}-\d{2}-\d{2}$", r["name"])
+    ]
+    wvs_metrics_legacy = compute_wvs_metrics_legacy(conn, all_waves_for_legacy, goqa_meta)
 
     print("Wave versions…")
     wave_versions = compute_wave_versions(conn, waves)
@@ -526,14 +560,15 @@ def main():
             cosine_4b_ii = existing_4b
 
     metrics = {
-        "generated":        datetime.date.today().isoformat(),
-        "waves":            waves,
-        "wave_versions":    wave_versions,
-        "wvs_metrics":      wvs_metrics,
-        "truncation_rates": truncation_rates,
-        "persona_lengths":  persona_lengths,
-        "cosine_4a":      cosine_4a,
-        "cosine_4b_ii":   cosine_4b_ii,
+        "generated":           datetime.date.today().isoformat(),
+        "waves":               waves,
+        "wave_versions":       wave_versions,
+        "wvs_metrics":         wvs_metrics,
+        "wvs_metrics_legacy":  wvs_metrics_legacy,
+        "truncation_rates":    truncation_rates,
+        "persona_lengths":     persona_lengths,
+        "cosine_4a":           cosine_4a,
+        "cosine_4b_ii":        cosine_4b_ii,
     }
     METRICS.write_text(json.dumps(metrics, ensure_ascii=False, indent=2))
     print(f"Wrote {METRICS}")
