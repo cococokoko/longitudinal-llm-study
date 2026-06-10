@@ -1,0 +1,27 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q260
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=139 out=131
+Latency:   2090 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Respondent's sex:
+
+Options:
+A. Male
+B. Female
+C. Don't know
+D. No answer/refused
+E. Not applicable (filter)
+F. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.02, "B": 0.02, "C": 0.96, "D": 0.0, "E": 0.0, "F": 0.0}

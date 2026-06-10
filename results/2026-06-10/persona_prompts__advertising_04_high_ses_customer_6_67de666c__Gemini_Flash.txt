@@ -1,0 +1,65 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_04_high_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=20 out=963
+Latency:   7715 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Starting a small online business.
+
+── Response ────────────────────────────────────────────────────────
+Congratulations on taking the entrepreneurial leap. As a partner at a major consulting firm, you are undoubtedly familiar with market entry strategies, operating models, and scaling frameworks. However, transitioning from advising Fortune 500 clients to launching a lean, agile online business requires a shift in mindset—moving from **high-level strategy and governance** to **hands-on execution and rapid iteration**.
+
+To help you structure your launch efficiently, here is a high-level framework tailored for a sophisticated operator looking to build, validate, and scale a digital venture.
+
+---
+
+### Phase 1: Value Proposition & Market Validation
+In consulting, we look for "white space." In entrepreneurship, we look for **"hair-on-fire" problems**. 
+*   **The Lean Hypothesis:** Define your ICP (Ideal Customer Profile) and the exact pain point you are solving. 
+*   **De-risk Early:** Before building a complex platform, validate demand. Use landing page tests (e.g., Webflow/Unbounce with a waitlist), pre-sales, or smoke tests to gauge actual willingness to pay.
+*   **Unit Economics (LTV/CAC):** Model your unit economics early. In digital businesses, customer acquisition cost (CAC) inflation is the silent killer. Ensure your projected Lifetime Value (LTV) supports your acquisition strategy.
+
+### Phase 2: The "Minimum Viable Tech" Stack
+Avoid the temptation to over-engineer. Your goal is speed-to-market and data collection. Leverage the modern no-code/low-code ecosystem to keep fixed costs low:
+*   **E-Commerce/Digital Products:** Shopify (physical/digital goods) or Stripe/Lemon Squeezy (SaaS/subscriptions).
+*   **Front-End/CMS:** Framer or Webflow for high-end design control without custom development.
+*   **Operations & Automation:** Zapier or Make to connect your stack (e.g., CRM to email marketing).
+*   **Data & Analytics:** Google Analytics 4 + PostHog or Hotjar to track user behavior from day one.
+
+### Phase 3: Go-To-Market (GTM) & Distribution
+A great product with no distribution is a hobby. You need a repeatable acquisition engine.
+*   **Organic (The Long Game):** SEO and content marketing. If you are launching a B2B or high-ticket service, leverage your personal brand and thought leadership on LinkedIn.
+*   **Paid (The Fast Game):** Meta, Google, or TikTok ads. Treat paid spend as "buying data" to see where your funnel leaks.
+*   **Partnerships/Affiliates:** Leverage existing audiences. Who already has the attention of your target customer, but isn't a direct competitor?
+
+### Phase 4: Legal, Tax, and Governance
+As a partner, you know the importance of structural hygiene. 
+*   **Entity Formation:** Set up a single-member LLC (or C-Corp if you plan to raise venture capital) to isolate liability. 
+*   **IP Protection:** Ensure you own all trademarks, domain names, and code (especially if using contract developers).
+*   **Compliance:** Ensure GDPR/CCPA compliance for data collection, and set up automated sales tax collection (e.g., TaxJar or Stripe Tax).
+
+---
+
+### How to Leverage Your Consulting Skillset (and What to Unlearn)
+
+| What to Leverage | What to Unlearn |
+| :--- | :--- |
+| **Structured Problem Solving:** Breaking down complex operational bottlenecks. | **Analysis Paralysis:** In a startup, a B+ decision made today is better than an A+ decision made next month. |
+| **Data-Driven Decision Making:** Using cohorts and funnel metrics to optimize. | **Outsourcing Everything:** Early on, you need to do the unglamorous work (customer support, copywriting) to truly understand the business. |
+| **Process Optimization:** Building playbooks to delegate tasks as you scale. | **Heavy Governance:** Keep meetings, slide decks, and alignment sessions to an absolute minimum. |
+
+### Next Steps
+To help tailor this, **what is the nature of the business?** 
+*   Are you launching a **B2B SaaS/Productized Service** (leveraging your professional expertise)?
+*   An **E-commerce/D2C brand**?
+*   A **Content/Community-based platform**? 
+
+Let me know where you are in the ideation process, and we can drill down into the specific operating model or financial architecture.

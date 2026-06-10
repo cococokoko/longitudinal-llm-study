@@ -1,0 +1,210 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=31 out=1016
+Latency:   18027 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a straightforward guide to build a functional zombie survivor game!
+
+---
+
+## Basic Game Concept
+- Player moves and shoots zombies
+- Zombies chase the player
+- Score increases per kill
+- Game ends when zombies catch the player
+
+---
+
+## Step 1: Set Up Your Sprites
+
+**You'll need:**
+- Player sprite
+- Zombie sprite
+- Bullet sprite
+- (Optional) Health bar, score display
+
+---
+
+## Step 2: Player Movement
+
+Add this to your **Player sprite:**
+
+```
+when green flag clicked
+forever
+  if <key [w] pressed?> then
+    change y by (5)
+  end
+  if <key [s] pressed?> then
+    change y by (-5)
+  end
+  if <key [a] pressed?> then
+    change x by (-5)
+  end
+  if <key [d] pressed?> then
+    change x by (5)
+  end
+end
+```
+
+---
+
+## Step 3: Shooting Mechanic
+
+**Player sprite** - detect shooting:
+```
+when green flag clicked
+forever
+  if <key [space] pressed?> then
+    broadcast [shoot v]
+    wait (0.3) secs
+  end
+end
+```
+
+**Bullet sprite:**
+```
+when I receive [shoot v]
+go to [Player v]
+point in direction (direction of [Player v])
+show
+repeat until <touching [edge v]>
+  move (15) steps
+end
+hide
+```
+
+> **Tip:** Right-click the bullet sprite → "duplicate" to allow multiple bullets
+
+---
+
+## Step 4: Player Aiming at Mouse
+
+Make the player **face the mouse:**
+```
+when green flag clicked
+forever
+  point towards [mouse-pointer v]
+end
+```
+
+---
+
+## Step 5: Zombie Behavior
+
+**Zombie sprite:**
+```
+when green flag clicked
+set [speed v] to (2)
+forever
+  point towards [Player v]
+  move (speed) steps
+  if <touching [Player v]?> then
+    broadcast [game over v]
+  end
+end
+```
+
+**Zombie reacts to bullets:**
+```
+when green flag clicked
+forever
+  if <touching [Bullet v]?> then
+    change [score v] by (1)
+    hide
+    wait (2) secs  ← respawn delay
+    go to (random position)
+    show
+  end
+end
+```
+
+---
+
+## Step 6: Spawn Multiple Zombies
+
+- Right-click zombie sprite → **duplicate** (make 5-10 copies)
+- Give each a slightly different starting position
+- Or use **cloning:**
+
+```
+when green flag clicked
+repeat (10)
+  create clone of [myself v]
+  wait (1) secs
+end
+
+when I start as a clone
+go to (random position)
+show
+forever
+  point towards [Player v]
+  move (2) steps
+end
+```
+
+---
+
+## Step 7: Game Over Screen
+
+**Create a Game Over sprite/backdrop:**
+```
+when I receive [game over v]
+show
+stop [all v]
+```
+
+---
+
+## Step 8: Score & Difficulty
+
+```
+when green flag clicked
+set [score v] to (0)
+set [speed v] to (1)
+forever
+  if <(score) > (10)> then
+    set [speed v] to (3)
+  end
+  if <(score) > (25)> then
+    set [speed v] to (5)
+  end
+end
+```
+
+---
+
+## Quick Checklist
+
+| Feature | Done? |
+|---|---|
+| Player moves (WASD) | ☐ |
+| Player aims at mouse | ☐ |
+| Bullets fire on spacebar | ☐ |
+| Zombies chase player | ☐ |
+| Zombies die to bullets | ☐ |
+| Score increases | ☐ |
+| Game over works | ☐ |
+
+---
+
+## Pro Tips
+- Use **costumes** to animate walking
+- Add **sound effects** via the Sounds tab
+- Use a **dark backdrop** for atmosphere
+- Add a **health variable** instead of instant death
+
+Would you like me to go deeper on any specific mechanic?

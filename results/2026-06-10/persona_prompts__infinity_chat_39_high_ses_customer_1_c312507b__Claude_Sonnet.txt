@@ -1,0 +1,48 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=316
+Latency:   8474 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Great question. Given your background as a neurosurgeon, you have some genuinely valuable context that could shape which direction makes the most sense. Here's an honest breakdown:
+
+## Foundational Skills Worth Learning
+
+**Programming Basics**
+- Python is the most practical starting point - readable and widely applicable
+- Understanding data structures and logic matters more than memorizing syntax
+
+**Data & AI**
+- Machine learning fundamentals - especially relevant to medical imaging
+- How to critically evaluate AI tools rather than just use them
+- Statistics and data interpretation (you likely have strong foundations here)
+
+## Areas Particularly Relevant to Your Position
+
+- **Medical imaging AI** - CNNs, segmentation models used in neurosurgery
+- **Clinical decision support systems** - understanding their limitations
+- **Research tools** - R or Python for statistical analysis
+- **EHR data analysis** - extracting meaningful insights
+
+## Honest Advice
+
+**Your real advantage isn't becoming a developer** - it's being someone who can:
+- Identify what problems actually need solving clinically
+- Evaluate whether technical solutions are medically sound
+- Bridge communication between engineers and clinicians
+- Spot when AI tools are dangerously wrong
+
+**The most valuable people** in medical technology right now are those with deep domain expertise who understand enough software to collaborate effectively.
+
+What's your actual goal - research, clinical tools, entrepreneurship, or something else? That would sharpen the recommendation considerably.

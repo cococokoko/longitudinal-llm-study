@@ -1,0 +1,42 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q63
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=216 out=93
+Latency:   1178 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I'd like to ask you how much you trust people from various groups. Could you tell me for each whether you trust people from this group completely, somewhat, not very much or not at all?
+
+People of another nationality
+
+Options:
+A. Trust completely
+B. Trust somewhat
+C. Do not trust very much
+D. Do not trust at all
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{
+  "A": 0.15,
+  "B": 0.60,
+  "C": 0.18,
+  "D": 0.03,
+  "E": 0.03,
+  "F": 0.01,
+  "G": 0.0,
+  "H": 0.0
+}
+```

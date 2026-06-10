@@ -1,0 +1,209 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=1024
+Latency:   8144 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+A LAMP stack (Linux, Apache, MySQL/MariaDB, PHP) is a traditional and effective way to build an online forum. At a high level, you need:
+
+- User accounts (registration, login, password hashing)
+- Categories and discussion threads
+- Posts/replies
+- Permissions/moderation
+- Database storage
+- Basic security controls
+
+A simple architecture might look like:
+
+- Apache serves PHP pages.
+- PHP handles requests, authentication, validation, and database operations.
+- MySQL stores users, threads, and posts.
+
+Example database schema
+
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    user_id INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT NOT NULL,
+    user_id INT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+Connect PHP to MySQL
+
+```php
+<?php
+$pdo = new PDO(
+    "mysql:host=localhost;dbname=forum;charset=utf8mb4",
+    "forum_user",
+    "strong_password",
+    [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]
+);
+?>
+```
+
+User registration
+
+```php
+<?php
+$passwordHash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+$stmt = $pdo->prepare(
+    "INSERT INTO users (username, password_hash)
+     VALUES (?, ?)"
+);
+
+$stmt->execute([
+    $_POST['username'],
+    $passwordHash
+]);
+?>
+```
+
+User login
+
+```php
+<?php
+$stmt = $pdo->prepare(
+    "SELECT id, password_hash
+     FROM users
+     WHERE username = ?"
+);
+
+$stmt->execute([$_POST['username']]);
+$user = $stmt->fetch();
+
+if ($user && password_verify($_POST['password'], $user['password_hash'])) {
+    session_start();
+    $_SESSION['user_id'] = $user['id'];
+}
+?>
+```
+
+Create a thread
+
+```php
+<?php
+session_start();
+
+$stmt = $pdo->prepare(
+    "INSERT INTO threads (title, user_id)
+     VALUES (?, ?)"
+);
+
+$stmt->execute([
+    $_POST['title'],
+    $_SESSION['user_id']
+]);
+?>
+```
+
+Add a post
+
+```php
+<?php
+session_start();
+
+$stmt = $pdo->prepare(
+    "INSERT INTO posts (thread_id, user_id, content)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['thread_id'],
+    $_SESSION['user_id'],
+    $_POST['content']
+]);
+?>
+```
+
+Display a thread and its posts
+
+```php
+<?php
+$stmt = $pdo->prepare(
+    "SELECT p.content,
+            p.created_at,
+            u.username
+     FROM posts p
+     JOIN users u ON p.user_id = u.id
+     WHERE p.thread_id = ?
+     ORDER BY p.created_at"
+);
+
+$stmt->execute([$_GET['thread_id']]);
+
+foreach ($stmt as $post) {
+    echo "<h4>" . htmlspecialchars($post['username']) . "</h4>";
+    echo "<p>" . nl2br(htmlspecialchars($post['content'])) . "</p>";
+}
+?>
+```
+
+Security considerations
+
+- Use `password_hash()` and `password_verify()`.
+- Use prepared statements everywhere.
+- Escape output with `htmlspecialchars()` to prevent XSS.
+- Enable CSRF protection on forms.
+- Validate all user input.
+- Limit posting rates to reduce spam.
+- Use HTTPS.
+- Implement role-based permissions for moderators and administrators.
+
+Directory structure example
+
+```text
+/forum
+├── config/
+│   └── database.php
+├── public/
+│   ├── index.php
+│   ├── login.php
+│   ├── register.php
+│   ├── thread.php
+│   └── create_thread.php
+├── templates/
+│   ├── header.php
+│   └── footer.php
+└── uploads/
+```
+
+If your goal is a production forum rather than a learning project, it is often faster and safer to deploy established PHP forum software such as:
+- phpBB
+- Flarum
+- MyBB
+- XenForo (commercial)
+
+These provide authentication, moderation tools, spam protection, notifications, and security features that would otherwise

@@ -1,0 +1,77 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_06_high_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=20 out=1530
+Latency:   11901 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Mastering digital photography.
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon at a major teaching hospital, you are already intimately familiar with the intersection of high-end optics, spatial visualization, and the pursuit of technical perfection. Whether you are looking to capture intraoperative pathology through a microscope, document complex anatomy for publication, or find a creative, meditative outlet outside the OR, mastering digital photography shares a surprising amount of DNA with your daily practice.
+
+Here is a guide to mastering digital photography, framed through a lens that respects your existing cognitive and technical skill sets.
+
+---
+
+### 1. The "Anatomy" of the Camera: The Exposure Triangle
+Just as you must balance perfusion, intracranial pressure, and anesthesia during a procedure, a photographer must balance three variables to achieve perfect exposure. 
+
+*   **Aperture (The Iris):** Measured in f-stops (e.g., f/1.8, f/8, f/22). 
+    *   *The Mechanics:* Controls the physical opening of the lens diaphragm.
+    *   *The Clinical Parallel:* Think of this as your depth of field under the surgical microscope. A wide aperture (low f-number like f/1.8) isolates your subject with a beautifully blurred background (bokeh)—ideal for portraits or highlighting a specific anatomical structure. A narrow aperture (high f-number like f/11) keeps the entire scene in focus, crucial for landscapes or wide-angle clinical shots.
+*   **Shutter Speed (The Temporal Resolution):** Measured in fractions of a second.
+    *   *The Mechanics:* Controls how long the sensor is exposed to light.
+    *   *The Clinical Parallel:* This is your motion control. To freeze rapid motion (or compensate for hand tremor at high magnification), you need fast shutter speeds (1/500s or faster). To capture the flow of water (or show motion), you use slow shutter speeds, which require a tripod—much like stabilizing a retractor.
+*   **ISO (The Sensitivity/Gain):** 
+    *   *The Mechanics:* Measures the sensor’s sensitivity to light.
+    *   *The Clinical Parallel:* Think of this as turning up the gain on an ultrasound or MRI signal. A low ISO (100) yields the cleanest, highest-resolution image. A high ISO (6400+) allows you to shoot in low light but introduces "noise" (digital artifact/grain), much like signal-to-noise ratio degradation in rapid neuroimaging sequences.
+
+---
+
+### 2. The "Surgical Planning": Composition and Spatial Awareness
+Your daily work requires navigating complex 3D corridors using 2D screens (neuronavigation). Photographic composition relies on the same spatial translation.
+
+*   **The Rule of Thirds:** Divide your frame into a 3x3 grid. Place your points of interest (the patient’s eyes in a portrait, the pathology in a clinical shot, or a tree in a landscape) along these lines or at their intersections. This creates dynamic tension rather than static, dead-center compositions.
+*   **Leading Lines:** Use natural lines (roads, rivers, architectural beams, or even the edge of a craniotomy) to guide the viewer’s eye directly to the subject.
+*   **Visual Hierarchy:** Just as you prioritize critical neurovascular structures in your field of view, use light, contrast, and focus to tell the viewer's brain exactly what to look at first.
+
+---
+
+### 3. Specialized Application: Clinical & Intraoperative Photography
+If you are looking to master photography to document your cases, write papers, or teach residents, standard consumer techniques must be adapted:
+
+*   **Managing High-Contrast Environments:** The surgical field is notoriously difficult to photograph—highly reflective wet tissue, deep dark cavities, and bright surgical lights. 
+    *   *The Fix:* Shoot in **RAW format** (never JPEG). RAW files preserve all the uncompressed data from the sensor, allowing you to recover details in deep shadows (like a tumor bed) and tone down blown-out highlights (from wet dural edges) during post-processing.
+*   **Cross-Polarization:** To eliminate the harsh glare/reflections from wet tissue or CSF, use a circular polarizing filter (CPL) on your lens. 
+*   **Macro Photography:** For ex-vivo specimens or close-up pathology, a dedicated macro lens (typically 90mm to 105mm) is essential. It allows for a 1:1 reproduction ratio, capturing microscopic textures with absolute fidelity.
+
+---
+
+### 4. The "Post-Op": Digital Darkroom (Post-Processing)
+In neurosurgery, raw data from a scan is processed into a 3D tractography map. In photography, the capture is only half the battle; the "development" happens in software like Adobe Lightroom or Capture One.
+
+*   **Non-Destructive Editing:** Always preserve your original RAW file.
+*   **The Histogram:** This is your vital sign monitor. It is a graphical representation of the tonal distribution in your image. Ensure the graph doesn't spill over the far left (underexposed/clipped blacks) or the far right (overexposed/blown-out whites).
+*   **Color Accuracy (White Balance):** In clinical photography, accurate color representation is diagnostic. Use a grey card to calibrate your white balance so that the reds of the blood and the yellows of the fat are anatomically precise, not distorted by warm OR lighting.
+
+---
+
+### 5. Recommended Gear for the Analytical Mind
+You appreciate precision engineering. When selecting gear, look for systems that offer tactile feedback, exceptional optical quality, and reliability.
+
+*   **The Body (Mirrorless):** Mirrorless systems (like the **Sony Alpha series**, **Canon R series**, or **Nikon Z series**) offer real-time exposure previews in the electronic viewfinder. What you see is exactly what you get, shortening the learning curve.
+*   **The Glass (Lenses):** Prioritize "prime" lenses (fixed focal length, e.g., 50mm f/1.2 or 85mm f/1.4) over zoom lenses for your creative work. They force you to move your body to compose the shot, feature superior optical sharpness, and offer wider apertures for low-light performance.
+*   **The Tactile Experience:** If you want a camera that feels like a mechanical instrument (akin to high-end surgical tools), consider the **Fujifilm X-T series** or a **Leica**. They feature physical dials for ISO, shutter speed, and aperture, making the physics of photography highly tactile.
+
+### Next Steps to Mastery
+1.  **Switch to Manual Mode (M):** Take the camera off "Auto." Force yourself to manually balance the exposure triangle for one weekend. 
+2.  **Study Light:** Photography literally means "drawing with light." Notice how the quality of light changes from the "Golden Hour" (just after sunrise/before sunset) to the harsh, flat light of midday (similar to overhead OR lights).
+3.  **Analyze the Masters:** Just as you review surgical videos of master surgeons, study the work of master photographers (e.g., Ansel Adams for zone system/exposure, Henri Cartier-Bresson for timing).

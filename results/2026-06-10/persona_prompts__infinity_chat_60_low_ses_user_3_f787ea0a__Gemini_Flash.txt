@@ -1,0 +1,59 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_low_ses_user_3
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=25 out=577
+Latency:   4695 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+First of all, **congratulations on the new job!** Starting a new role is exciting, and it’s completely normal to feel a bit of pressure during probation. Take it one day at a time—you’ve got this!
+
+To help you relax and learn something cool, here is **computational irreducibility** explained like you are five years old.
+
+***
+
+### The Story of the Magic Coloring Book
+
+Imagine you have a magic coloring book. 
+
+On page 1, there is a picture of a tiny seed. 
+On page 2, the seed grows a tiny root.
+On page 3, it grows a little stem.
+
+There is a rule in this book: **To draw the next page, you must look at the page right before it and add one tiny detail.**
+
+Now, imagine I ask you: **"What will the plant look like on Page 1,000?"**
+
+#### The "Easy" Way (Computational Reducibility)
+In some books, there is a shortcut. You can use math to skip ahead. You might say, *"Oh, every page adds exactly one leaf. So on page 1,000, it will have 1,000 leaves!"* 
+
+You skipped all the pages in the middle and got the answer instantly. That is a **shortcut**.
+
+#### The "Hard" Way (Computational Irreducibility)
+But this magic book is different. The rules are weird. 
+* If a leaf touches a stem, it splits in two. 
+* If it gets too tall, it bends left. 
+* If it bends left, it grows a flower.
+
+Because the rules depend on every single tiny thing that happened before, **there is no shortcut.** 
+
+You cannot guess what Page 1,000 looks like. The *only* way to find out is to sit down and actually draw Page 4, then Page 5, then Page 6... all the way to Page 1,000. 
+
+**"Computational Irreducibility"** is just a big, fancy science word that means: **There are no shortcuts. To see what happens in the end, you just have to watch it happen step-by-step.**
+
+***
+
+### How this relates to your new job:
+Right now, you might want to know exactly how your job will look in six months, or if you will pass your probation perfectly. 
+
+But life is "computationally irreducible." There is no shortcut to the end of probation. You can't skip ahead. You just have to show up, do Page 1 today, Page 2 tomorrow, and watch the beautiful picture paint itself! 
+
+Good luck!

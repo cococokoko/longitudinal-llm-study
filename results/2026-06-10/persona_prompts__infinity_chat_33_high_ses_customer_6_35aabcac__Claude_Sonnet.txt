@@ -1,0 +1,57 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=49 out=340
+Latency:   16270 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface
+
+Here's a practical guide for your setup:
+
+## Installation
+
+1. **Download Dolphin** from [dolphin-emu.org](https://dolphin-emu.org) (get the stable release)
+2. Run the installer and follow standard setup steps
+3. Launch Dolphin from your Start menu
+
+## Touchpad Configuration
+
+**In Dolphin's controller settings:**
+- Go to **Controllers** → **Emulated Wii Remote**
+- Select **Emulated** from the dropdown
+- Map touchpad gestures/clicks to Wii Remote buttons
+
+**Practical touchpad mappings:**
+- Single tap → A button
+- Two-finger tap → B button
+- Edge swipe → D-pad directions
+
+## On-Screen Keyboard
+
+- Access via **taskbar system tray** → touch keyboard icon
+- Or **Settings → Accessibility → On-screen keyboard**
+- Pin it to stay visible while gaming
+
+## Honest Practical Advice
+
+I want to be straightforward with you - **this setup will be genuinely frustrating** for most games because:
+- Wii games rely heavily on motion controls
+- Touchpad precision is limited for gaming
+- On-screen keyboard interrupts gameplay
+
+**Better alternatives to consider:**
+- A **Bluetooth controller** (Xbox or PS5 controller works well)
+- A **Wiimote via Bluetooth** (most authentic experience)
+
+Would you like help configuring a specific controller instead?

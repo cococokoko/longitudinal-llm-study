@@ -1,0 +1,18 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_55_high_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=33 out=107
+Latency:   1709 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Describe Apple Corporation in three sentences to a person who has no idea what cell phones are.
+
+── Response ────────────────────────────────────────────────────────
+Apple Corporation is a global technology company that designs and builds highly sophisticated, hand-held electronic devices that act as portable, personal command centers for daily life. Much like the specialized instruments used to navigate and map the complex pathways of the human brain, these devices allow people to instantly access the world's collective knowledge, communicate across continents, and manage their schedules from anywhere. By seamlessly integrating advanced hardware with intuitive software, the company has created an interconnected digital ecosystem that has fundamentally rewired how modern society processes information and connects with one another.

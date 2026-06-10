@@ -1,0 +1,50 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35 out=379
+Latency:   4370 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on the disease, how it spreads, your personal risk factors, and current public health guidance. In general, risk can be reduced by combining multiple protective measures.
+
+Key considerations:
+
+- Assess whether travel is necessary. Delaying nonessential travel can reduce exposure risk during periods of high transmission.
+- Stay up to date with recommended vaccinations and boosters, if available for the disease in question.
+- Check current public health advisories and entry requirements for your destination.
+- Avoid traveling if you are sick or have symptoms consistent with the infectious disease.
+
+Lower-risk transportation options:
+- Private transportation (e.g., driving alone or with household members) is generally lower risk than crowded public transportation.
+- Outdoor travel environments are generally lower risk than indoor, poorly ventilated spaces.
+
+If using public transportation (planes, trains, buses):
+- Wear a well-fitting, high-quality mask when recommended or when transmission risk is elevated.
+- Choose less crowded travel times when possible.
+- Minimize time spent in crowded terminals and waiting areas.
+- Maintain distance from others where feasible.
+- Practice hand hygiene, especially after touching shared surfaces.
+
+Accommodation and activities:
+- Prefer lodging with good ventilation.
+- Choose outdoor activities when possible.
+- Avoid crowded indoor gatherings, especially during periods of high transmission.
+
+Additional precautions:
+- Consider testing before and after travel if recommended by public health authorities.
+- Be aware of local healthcare resources at your destination.
+- Monitor for symptoms after travel and follow applicable guidance if symptoms develop.
+
+For air travel specifically, modern commercial aircraft often use high-efficiency air filtration systems during flight, but close proximity to other passengers in airports, boarding areas, and on the aircraft can still contribute to risk.
+
+If you tell me which pandemic or infectious disease you're concerned about (for example, COVID-19, influenza, or another disease), I can provide more tailored guidance.

@@ -1,0 +1,59 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=333
+Latency:   15371 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens: **CareConnect Health Alert System**
+
+## Core Feature Overview
+A proactive health monitoring system that goes beyond basic tracking to provide meaningful safety and wellness support.
+
+---
+
+## Key Components
+
+### 🏥 Fall Detection with Context Awareness
+- Distinguishes between intentional sitting/lying down versus actual falls
+- Reduces false alarms that cause alert fatigue
+
+### 📞 Simplified Emergency Response
+- **One large, physical button** for emergency contact
+- Automatically calls pre-designated family members *and* emergency services
+- Shares real-time GPS location
+
+### 💊 Medication Reminders
+- Gentle haptic vibration with large, readable screen prompts
+- Logs confirmation when medication is acknowledged
+
+### 🫀 Passive Health Monitoring
+- Irregular heart rhythm detection
+- Blood pressure trends flagged for physician review
+
+---
+
+## Why This Makes Business Sense
+
+| Factor | Opportunity |
+|--------|-------------|
+| Market size | 54M+ Americans over 65 |
+| Caregiver demand | Families willing to pay premium for peace of mind |
+| Healthcare partnerships | Insurance reimbursement potential |
+
+---
+
+## Differentiator
+**Simplified UI with larger text, high contrast display, and minimal complexity** - most current smartwatches are designed for younger users and create frustration for seniors.
+
+Would you like me to explore the technical architecture or go-to-market strategy further?

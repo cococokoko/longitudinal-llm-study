@@ -1,0 +1,37 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=225
+Latency:   2643 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A valuable feature for a smartwatch designed specifically for senior citizens would be a "Proactive Well-Being Companion."
+
+How it works:
+- Continuously monitors key indicators such as heart rate, movement patterns, sleep quality, and walking stability.
+- Uses AI to detect meaningful changes over time rather than only responding to emergencies.
+- Alerts the wearer and designated family members or caregivers when it detects unusual patterns, such as:
+  - Reduced daily activity
+  - Increased instability while walking
+  - Signs of poor sleep over multiple nights
+  - Missed medication routines
+  - Potential health anomalies that merit attention
+
+Key design elements:
+- Large, high-contrast interface with simple voice interactions.
+- One-touch access to trusted contacts.
+- Personalized reminders for medications, hydration, appointments, and exercise.
+- Privacy controls that allow the wearer to choose what information is shared and with whom.
+
+Why it stands out:
+Most senior-focused wearables emphasize emergency response after a problem occurs. A proactive system could help identify emerging health concerns earlier, support independent living longer, and provide peace of mind to both seniors and their families.

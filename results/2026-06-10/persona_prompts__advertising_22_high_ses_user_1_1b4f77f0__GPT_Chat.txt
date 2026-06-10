@@ -1,0 +1,79 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=561
+Latency:   5151 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+For a neurosurgical team at a major teaching hospital, the best remote collaboration tools depend on whether you're coordinating clinical care, research, education, administration, or a combination of these. Security, compliance, and integration with hospital systems are usually the most important factors.
+
+Commonly recommended options:
+
+- Microsoft Teams
+  - Strong enterprise security and administrative controls
+  - Integrates with Microsoft 365 (Outlook, Word, Excel, SharePoint)
+  - Video meetings, chat, file sharing, channels, and task management
+  - Widely used in healthcare organizations
+
+- Zoom Workplace
+  - Reliable video conferencing
+  - Good for multidisciplinary conferences, tumor boards, and teaching sessions
+  - Webinar and large-meeting capabilities
+  - Verify your institution's security and compliance configuration
+
+- Slack
+  - Excellent for rapid communication and project coordination
+  - Channels for research groups, service lines, and committees
+  - Extensive integrations with other software
+  - More commonly used in research and administrative settings than direct clinical workflows
+
+- Google Workspace
+  - Strong real-time document collaboration
+  - Google Docs, Sheets, Drive, Meet
+  - Often favored by research groups and academic collaborations
+
+Project and task management:
+
+- Asana
+  - Structured project tracking
+  - Useful for quality-improvement initiatives, accreditation preparation, and research projects
+
+- Monday.com
+  - Flexible workflow management
+  - Good visual dashboards for departmental operations
+
+- Trello
+  - Simple Kanban-style boards
+  - Useful for smaller teams and straightforward projects
+
+Knowledge management and documentation:
+
+- Confluence
+  - Centralized documentation, protocols, meeting notes, and onboarding materials
+
+- Notion
+  - Combines notes, databases, wikis, and project tracking
+  - Popular among research and academic teams
+
+Healthcare-specific considerations:
+
+- If discussing patient information, ensure the platform is approved by your institution and configured to meet applicable privacy and security requirements.
+- Integration with the EHR (Epic, Cerner/Oracle Health, etc.) may be more valuable than standalone collaboration features.
+- Many hospitals standardize on Microsoft Teams because it balances communication, document management, security controls, and enterprise support.
+
+For a typical academic neurosurgery department, a common combination is:
+- Microsoft Teams for communication and meetings
+- SharePoint or OneDrive for document storage
+- Asana or Monday.com for projects
+- Confluence or Notion for departmental knowledge management
+
+If you describe your primary use case (clinical coordination, resident education, multicenter research, administrative leadership, or all of the above), I can narrow the recommendations further.

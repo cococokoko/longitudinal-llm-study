@@ -1,0 +1,220 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=10 out=2020
+Latency:   9715 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+Building an online forum using the **LAMP** stack (**L**inux, **A**pache, **M**ySQL, **P**HP) is a classic web development project. 
+
+Below is a step-by-step guide to building a functional, lightweight forum from scratch. We will cover the database design, the backend PHP logic, and the frontend HTML.
+
+---
+
+### Phase 1: Database Design (MySQL)
+A basic forum requires three main entities: **Users**, **Categories/Topics**, and **Replies**.
+
+Run the following SQL commands in your MySQL database (e.g., via phpMyAdmin or MySQL CLI) to create the tables:
+
+```sql
+CREATE DATABASE lamp_forum;
+USE lamp_forum;
+
+-- 1. Users Table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 2. Topics Table (The main forum threads)
+CREATE TABLE topics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    content TEXT NOT NULL,
+    user_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL
+);
+
+-- 3. Replies Table (Comments on threads)
+CREATE TABLE replies (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    content TEXT NOT NULL,
+    topic_id INT,
+    user_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (topic_id) REFERENCES topics(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL
+);
+```
+
+---
+
+### Phase 2: Project Structure
+Create a folder in your Apache web directory (usually `/var/www/html/forum/` on Linux or `htdocs/forum/` on XAMPP).
+
+Create the following files:
+```text
+forum/
+│
+├── db.php          # Database connection
+├── header.php      # Navigation and layout header
+├── index.php       # Homepage (list of topics)
+├── register.php    # User registration
+├── login.php       # User login
+├── logout.php      # User logout
+├── create_topic.php# Create a new thread
+└── view_topic.php  # View a thread and its replies
+```
+
+---
+
+### Phase 3: Writing the Code
+
+#### 1. Database Connection (`db.php`)
+This file connects PHP to your MySQL database using PDO (PHP Data Objects), which is secure and modern.
+
+```php
+<?php
+$host = 'localhost';
+$db   = 'lamp_forum';
+$user = 'root'; // Change to your MySQL username
+$pass = '';     // Change to your MySQL password
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+
+try {
+     $pdo = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+     throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
+
+// Start session for user login tracking
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+```
+
+#### 2. Header (`header.php`)
+This file will be included at the top of every page to provide navigation.
+
+```php
+<?php include 'db.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LAMP Forum</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f4f4f4; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        nav { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+        nav a { margin-right: 15px; text-decoration: none; color: #333; font-weight: bold; }
+        .post, .reply { border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; border-radius: 4px; }
+        .meta { font-size: 0.8em; color: #777; }
+        textarea, input[type="text"], input[type="email"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+        button { background: #007BFF; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 4px; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <a href="index.php">Home</a>
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <span>Welcome, <strong><?php echo htmlspecialchars($_SESSION['username']); ?></strong></span> | 
+            <a href="create_topic.php">New Topic</a> | 
+            <a href="logout.php">Logout</a>
+        <?php else: ?>
+            <a href="login.php">Login</a> | 
+            <a href="register.php">Register</a>
+        <?php endif; ?>
+    </nav>
+```
+
+#### 3. Registration (`register.php`)
+Allows new users to sign up. We use `password_hash` to securely store passwords.
+
+```php
+<?php include 'header.php'; ?>
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = trim($_POST['username']);
+    $email = trim($_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+    $stmt = $pdo->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+    try {
+        $stmt->execute([$username, $email, $password]);
+        echo "<p style='color:green;'>Registration successful! <a href='login.php'>Login here</a></p>";
+    } catch (PDOException $e) {
+        echo "<p style='color:red;'>Error: Username or Email already exists.</p>";
+    }
+}
+?>
+<h2>Register</h2>
+<form action="register.php" method="POST">
+    <input type="text" name="username" placeholder="Username" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>
+```
+
+#### 4. Login (`login.php`) and Logout (`logout.php`)
+**login.php:**
+```php
+<?php include 'header.php'; ?>
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = trim($_POST['username']);
+    $password = $_POST['password'];
+
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
+    $stmt->execute([$username]);
+    $user = $stmt->fetch();
+
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+        header("Location: index.php");
+        exit;
+    } else {
+        echo "<p style='color:red;'>Invalid username or password.</p>";
+    }
+}
+?>
+<h2>Login</h2>
+<form action="login.php" method="POST">
+    <input type="text" name="username" placeholder="Username" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Login</button>
+</form>
+</body>
+</html>
+```
+
+**logout.php:**
+```php
+<?php
+session_start();
+session

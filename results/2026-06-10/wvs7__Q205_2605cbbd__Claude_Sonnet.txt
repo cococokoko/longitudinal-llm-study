@@ -1,0 +1,32 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q205
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=227 out=75
+Latency:   2786 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: People learn what is going on in this country and the world from various sources. For the following source, please indicate whether you use it to obtain information daily, weekly, monthly, less than monthly or never:
+
+Email
+
+Options:
+A. Daily
+B. Weekly
+C. Monthly
+D. Less than monthly
+E. Never
+F. Don't know
+G. No answer/refused
+H. Not applicable (filter)
+I. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.55, "B": 0.20, "C": 0.08, "D": 0.05, "E": 0.08, "F": 0.02, "G": 0.01, "H": 0.005, "I": 0.005}

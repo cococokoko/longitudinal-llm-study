@@ -1,0 +1,57 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_49_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=447
+Latency:   4156 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+If you're looking to improve home Wi‑Fi, the biggest gains usually come from placement, reducing interference, and upgrading older equipment.
+
+Some practical steps:
+
+- Move your router to a central, open location.
+  - Avoid cupboards, cabinets, and corners of the home.
+  - Keep it elevated (on a shelf or desk rather than the floor).
+
+- Reduce interference.
+  - Keep the router away from microwaves, cordless phone bases, baby monitors, and large metal objects.
+  - If your router supports both 2.4 GHz and 5 GHz:
+    - Use 5 GHz for higher speeds when you're relatively close.
+    - Use 2.4 GHz for better range through walls.
+
+- Update your router's firmware.
+  - Manufacturers often release updates that improve performance and security.
+
+- Check your Wi‑Fi channel.
+  - In crowded apartment buildings or neighborhoods, switching channels can reduce interference.
+
+- Use Ethernet for critical devices.
+  - If you work from home—especially when you're still settling into a new job and need reliable connectivity—a wired connection for your work computer can provide a more stable connection than Wi‑Fi.
+
+- Upgrade older hardware.
+  - If your router is more than 4–5 years old, a newer Wi‑Fi 6 or Wi‑Fi 6E router can make a noticeable difference.
+
+- Consider a mesh Wi‑Fi system.
+  - If you have a large home or dead zones, mesh systems often provide better coverage than a single router.
+
+- Test your internet speed.
+  - Run speed tests near the router and in problem areas.
+  - If speeds are poor even next to the router, the issue may be your internet plan or ISP rather than Wi‑Fi.
+
+If you tell me:
+- The size of your home,
+- Your router model,
+- Whether you're in a house or apartment,
+- And what problems you're seeing (slow speeds, dead spots, dropped calls, etc.),
+
+I can suggest more specific fixes.

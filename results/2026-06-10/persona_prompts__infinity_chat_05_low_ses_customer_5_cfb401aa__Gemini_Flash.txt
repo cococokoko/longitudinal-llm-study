@@ -1,0 +1,43 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=693
+Latency:   5643 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A highly impactful feature for a smartwatch designed for senior citizens—especially one that considers the needs of the "sandwich generation" caregivers who support them—is the **"CareCircle" Shared Task & Wellness Coordinator**.
+
+This feature goes beyond basic health tracking to bridge the gap between a senior’s daily routine and the family members who help manage their household and well-being.
+
+---
+
+### Feature Name: **CareCircle (Shared Task & Wellness Coordinator)**
+
+#### **How It Works for the Senior:**
+Instead of overwhelming the user with complex apps, the watch uses a simplified, high-contrast interface with voice-guided prompts to help them manage their day. 
+
+*   **Gentle, Contextual Reminders:** The watch nudges the senior for daily tasks, but phrases them warmly. For example: *"Hi Mary, it’s time for your blue pill with a glass of water,"* or *"Don't forget, your grandson Leo is picking you up for your doctor's appointment in 30 minutes."*
+*   **One-Touch "Task Complete" Confirmation:** With a single tap on a large, colorful button (or a simple voice command like *"I took it"*), the senior can check off tasks.
+*   **"I Need a Hand" Button:** A non-emergency button (separate from the SOS button) that allows the senior to send a quick, pre-set request to their family network, such as: *"Can someone help me order groceries?"* or *"I need a ride to the pharmacy tomorrow."*
+
+#### **How It Works for the Caregiver (The Family Support System):**
+For the busy family member managing multiple households, this feature integrates with a companion smartphone app, acting as a co-pilot.
+
+*   **Collaborative Task Delegation:** If the senior needs a prescription picked up or a lightbulb changed, any member of the "CareCircle" (children, nieces/nephews, or trusted neighbors) can claim the task in the app. The senior’s watch will then update to show them *who* is coming to help and *when*.
+*   **Real-Time Peace of Mind (Without Micromanaging):** The caregiver receives silent notifications when critical tasks are completed (e.g., "Mom confirmed she took her morning medication"). If a critical task is missed, the caregiver is quietly alerted so they can make a quick phone call to check in.
+*   **Passive Wellness Insights:** The app aggregates data like sleep quality, step count, and heart rate variability into a simple "Wellness Trend" report. This helps the busy caregiver quickly spot if their loved one is starting to slow down or sleep poorly, allowing for proactive care before a health issue escalates.
+
+### **Why This Feature is a Game-Changer:**
+*   **Reduces Cognitive Load for Caregivers:** It eliminates the need for constant texting, calling, and mental tracking of "Did Dad eat?" or "Who is taking Mom to her appointment?" 
+*   **Preserves Senior Independence:** It allows seniors to manage their own day-to-day lives with a safety net, making them feel supported rather than monitored.
+*   **Distributes the Load:** By allowing multiple family members to join the "CareCircle," the responsibility of supporting the senior doesn't fall entirely on one person's shoulders.

@@ -1,0 +1,30 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_03_high_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=21 out=206
+Latency:   2450 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a joke about electric vehicles.
+
+── Response ────────────────────────────────────────────────────────
+Here is one tailored for the partner track:
+
+An EV startup founder, a legacy automotive CEO, and a senior consulting partner are in a pitch meeting discussing the future of electric vehicles.
+
+The startup founder says, "Our EV is revolutionary. It has a 500-mile range, solid-state batteries, and zero carbon footprint!"
+
+The legacy CEO sighs and says, "That’s great, but our EV is about scale. We have the supply chains, the dealerships, and the manufacturing capacity to put millions of them on the road."
+
+They both turn to the consulting partner and ask, "So, what do you think is the biggest challenge facing the EV market?"
+
+The partner looks at his slides, adjusts his cuffs, and says: 
+
+"Honestly? It’s the charging model. If we can’t find a way to bill the battery for its time spent on the grid in 15-minute increments, the utilization rate just isn't partner-track material."

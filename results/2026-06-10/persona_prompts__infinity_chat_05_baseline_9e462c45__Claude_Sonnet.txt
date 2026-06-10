@@ -1,0 +1,60 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=21 out=344
+Latency:   16135 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens
+
+## 🏥 "CareConnect" — Intelligent Fall Detection & Response System
+
+---
+
+### Core Functionality
+
+**Automatic Fall Detection with Smart Verification**
+- Detects sudden impacts and unusual movement patterns
+- Sends a **gentle vibration prompt** asking "Are you okay?" before alerting anyone
+- Gives the user **30 seconds to respond** to prevent false alarms
+- Escalates automatically if there's no response
+
+---
+
+### What Makes It Senior-Friendly
+
+| Feature | Benefit |
+|---|---|
+| Large, high-contrast display | Easy to read in any lighting |
+| Single-button emergency override | No confusion during stress |
+| Plain language notifications | No technical jargon |
+| Loud, clear audio alerts | Accommodates hearing difficulties |
+
+---
+
+### Response Escalation Chain
+1. **Notify** designated family members via app
+2. **Share GPS location** automatically
+3. **Connect to emergency services** if contacts are unreachable
+4. **Keep line open** for two-way communication
+
+---
+
+### Additional Thoughtful Details
+- **Long battery life** (5+ days) to reduce charging anxiety
+- **Medication reminders** with confirmation tracking
+- **Daily wellness check-ins** to establish normal baselines
+
+---
+
+### Why This Matters
+> Falls are the **leading cause of injury** among seniors — this feature prioritizes **dignity and independence** while providing genuine safety.
+
+Would you like me to expand on any specific aspect?

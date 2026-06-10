@@ -1,0 +1,28 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_93_high_ses_customer_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=421
+Latency:   14118 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write 100-300 words on how stress affects the body and mind.
+
+── Response ────────────────────────────────────────────────────────
+# The Effects of Stress on Body and Mind
+
+Stress triggers a cascade of physiological responses rooted in the hypothalamic-pituitary-adrenal (HPA) axis and sympathetic nervous system activation. When a perceived threat is detected, cortisol and catecholamines — primarily epinephrine and norepinephrine — are rapidly released, preparing the organism for fight-or-flight response.
+
+**Physiologically**, acute stress elevates heart rate, blood pressure, and glucose availability while temporarily suppressing non-essential functions including digestion, immune response, and reproductive processes. Chronic stress, however, sustains these disruptions pathologically. Prolonged cortisol elevation contributes to immunosuppression, cardiovascular remodeling, metabolic dysregulation, and accelerated cellular aging through telomere shortening — mechanisms your research group likely encounters across multiple disease contexts.
+
+**Neurologically**, chronic stress induces structural changes in key brain regions. The amygdala demonstrates hypertrophy and heightened reactivity, while the hippocampus — particularly vulnerable to glucocorticoid toxicity — shows measurable volume reduction, impairing memory consolidation and emotional regulation. Prefrontal cortical thinning further compromises executive function and stress modulation capacity.
+
+**Psychologically**, these neurobiological changes manifest as anxiety, cognitive impairment, mood dysregulation, and increased vulnerability to psychiatric disorders including major depression and PTSD. The bidirectional relationship between psychological perception and physiological response creates reinforcing feedback loops that can be difficult to interrupt clinically.
+
+Importantly, individual stress responses vary considerably based on genetic polymorphisms in glucocorticoid receptors, early life adversity, and social support networks — variables increasingly relevant to precision medicine approaches. Understanding these mechanisms not only informs patient care but also has direct implications for researcher wellbeing, given the well-documented stress burden within academic medicine.

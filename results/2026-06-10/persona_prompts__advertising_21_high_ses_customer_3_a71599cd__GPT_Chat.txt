@@ -1,0 +1,79 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_21_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=522
+Latency:   4393 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I start a vegetable garden in my backyard?
+
+── Response ────────────────────────────────────────────────────────
+Starting a backyard vegetable garden is easiest when you begin small and focus on a few reliable crops. A simple plan:
+
+1. Choose a location
+- Pick a spot that gets at least 6–8 hours of direct sunlight daily.
+- Make sure water is easily accessible.
+- Avoid areas where water pools after rain.
+
+2. Assess and prepare the soil
+- Most vegetables grow best in well-drained soil rich in organic matter.
+- Remove weeds and grass from the planting area.
+- Mix in compost or well-rotted manure to improve fertility and soil structure.
+- Consider a soil test through a local extension service or garden center to check pH and nutrient levels.
+
+3. Decide what to grow
+For beginners, productive and relatively forgiving choices include:
+- Tomatoes
+- Lettuce
+- Bush beans
+- Zucchini
+- Peppers
+- Radishes
+- Cucumbers
+- Herbs such as basil, parsley, and chives
+
+Choose vegetables you actually enjoy eating.
+
+4. Plan the garden layout
+- Start with a modest area, such as a few raised beds or a plot around 4 × 8 feet (1.2 × 2.4 m).
+- Place taller crops where they won't shade shorter ones.
+- Follow spacing recommendations on seed packets or plant labels.
+
+5. Plant at the right time
+- Check your local frost dates and growing season.
+- Cool-season crops (lettuce, peas, spinach) can often be planted earlier.
+- Warm-season crops (tomatoes, peppers, cucumbers) should generally be planted after the danger of frost has passed.
+
+6. Water consistently
+- Most vegetables need about 1 inch (2.5 cm) of water per week, though needs vary.
+- Water deeply rather than lightly and frequently.
+- Morning watering helps reduce disease problems.
+
+7. Mulch and manage weeds
+- Apply mulch such as straw, shredded leaves, or compost around plants.
+- Mulch helps retain moisture and suppress weeds.
+- Remove weeds regularly before they become established.
+
+8. Monitor for pests and diseases
+- Inspect plants weekly.
+- Remove damaged leaves when appropriate.
+- Encourage beneficial insects by growing flowers nearby.
+- Address problems early before they spread.
+
+9. Harvest regularly
+- Many vegetables produce more when harvested frequently.
+- Pick vegetables at their recommended maturity for the best flavor and texture.
+
+If you tell me:
+- Your location (or USDA hardiness zone),
+- The size of your backyard,
+- Whether you prefer raised beds or in-ground gardening,
+
+I can suggest a specific planting plan and crop schedule.

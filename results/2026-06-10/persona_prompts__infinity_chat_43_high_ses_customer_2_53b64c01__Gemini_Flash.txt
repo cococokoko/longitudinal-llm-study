@@ -1,0 +1,27 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_43_high_ses_customer_2
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=41 out=157
+Latency:   1640 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Paraphrase this: We're checking if the domain 'aspris.ae' is included in our scope.
+
+── Response ────────────────────────────────────────────────────────
+Here are a few ways to paraphrase this statement, tailored for a professional, legal, or formal business context:
+
+**Option 1: Formal & Direct (Best for standard professional correspondence)**
+> "We are currently verifying whether the domain 'aspris.ae' falls within our defined scope."
+
+**Option 2: Legalistic & Precise (Best for formal engagement letters or scope-of-work discussions)**
+> "We are in the process of confirming whether the 'aspris.ae' domain is encompassed within the scope of our engagement."
+
+**Option 3: Action-Oriented (Best for internal team updates or quick client emails)**
+> "We are reviewing our scope of work to determine if the 'aspris.ae' domain is included."

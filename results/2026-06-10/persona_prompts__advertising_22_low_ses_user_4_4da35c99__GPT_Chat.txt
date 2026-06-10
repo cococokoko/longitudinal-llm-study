@@ -1,0 +1,62 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=29 out=453
+Latency:   4481 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The best remote collaboration tools depend on what your team needs to do. For a hospital support team, scheduling, communication, documentation, and handoffs are often the most important areas.
+
+Some widely used options:
+
+- Team communication
+  - Microsoft Teams: Chat, video meetings, file sharing, and strong integration with Microsoft 365.
+  - Slack: Fast messaging, channels for different topics, and many third-party integrations.
+
+- Video meetings
+  - Zoom: Reliable video conferencing with screen sharing and recording.
+  - Microsoft Teams: Good if your organization already uses Microsoft products.
+  - Google Meet: Simple option for organizations using Google Workspace.
+
+- Project and task management
+  - Trello: Easy-to-use boards for tracking tasks and responsibilities.
+  - Asana: Good for managing projects, deadlines, and workflows.
+  - Monday.com: Flexible project tracking with customizable views.
+
+- Shared documents and files
+  - Microsoft 365 (Word, Excel, OneDrive, SharePoint): Strong collaboration and document control.
+  - Google Workspace (Docs, Sheets, Drive): Real-time editing and sharing.
+
+- Scheduling and shift coordination
+  - When I Work: Designed for shift-based teams.
+  - Deputy: Scheduling, time tracking, and workforce management.
+  - Microsoft Shifts: Integrated into Teams and useful for healthcare environments.
+
+- Knowledge sharing
+  - Confluence: Team documentation and procedures.
+  - Notion: Combines notes, documents, databases, and project tracking.
+
+For a healthcare-related team, it is important to ensure any tool used for patient-related information complies with applicable privacy and security requirements (such as HIPAA in the United States or equivalent regulations elsewhere).
+
+A practical setup for many shift-based teams is:
+- Microsoft Teams for communication
+- Microsoft Shifts or Deputy for scheduling
+- SharePoint/OneDrive or Google Drive for shared documents
+- Trello or Asana for task tracking
+
+If you tell me:
+- The size of your team
+- Whether you need shift scheduling
+- Whether patient information is involved
+- Your budget
+
+I can recommend a more specific tool stack.

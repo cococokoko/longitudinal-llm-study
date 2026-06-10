@@ -1,0 +1,47 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_high_ses_user_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=30 out=273
+Latency:   5441 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a tenured professor at a prestigious university.
+
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Linear Graph Example
+
+A **path graph** is a classic example of a linear graph in graph theory.
+
+### Example: P₄ (Path Graph with 4 vertices)
+
+```
+A --- B --- C --- D
+```
+
+### Properties:
+- **Vertices:** {A, B, C, D}
+- **Edges:** {AB, BC, CD}
+- Each vertex connects to at most **2 neighbors**
+- Forms a simple, straight-line structure
+- No cycles
+
+### Key Characteristics of Linear Graphs:
+| Property | Value |
+|----------|-------|
+| Vertices | n |
+| Edges | n - 1 |
+| Max degree | 2 |
+| Min degree | 1 (endpoints) |
+
+### Notes:
+- The **endpoints** (A and D) have degree **1**
+- The **interior vertices** (B and C) have degree **2**
+- A linear graph is essentially equivalent to a **path graph (Pₙ)**
+
+This is one of the simplest graph structures and serves as a foundational example in graph theory, relevant to topics such as **Hamiltonian paths**, **tree structures**, and **network topology**.

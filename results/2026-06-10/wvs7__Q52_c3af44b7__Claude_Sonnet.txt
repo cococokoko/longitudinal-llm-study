@@ -1,0 +1,31 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q52
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=195 out=67
+Latency:   2132 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: In the last 12 months, how often have you or your family:
+
+Felt unsafe from crime in your home
+
+Options:
+A. Often
+B. Sometimes
+C. Rarely
+D. Never
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.03, "B": 0.08, "C": 0.15, "D": 0.68, "E": 0.03, "F": 0.01, "G": 0.01, "H": 0.01}

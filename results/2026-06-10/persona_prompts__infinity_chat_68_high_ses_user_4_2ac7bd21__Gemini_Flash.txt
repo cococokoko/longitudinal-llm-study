@@ -1,0 +1,43 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=23 out=658
+Latency:   5063 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, you occupy a unique and highly demanding niche. You bridge the gap between the immediate, high-stakes world of clinical medicine and the long-term, iterative world of basic or translational research. 
+
+Because of this, your team likely consists of a highly diverse group of people: postdocs, PhD students, medical students, clinical research coordinators, and technicians. 
+
+Here is a high-yield tip tailored specifically to your role:
+
+### **Establish "Context-Switching" Transparency**
+
+The biggest friction point for teams led by physician-scientists is your **unpredictable availability and cognitive load**. One hour you are managing an ICU crisis or seeing patients in clinic; the next, you are reviewing a Western blot or editing a grant. Your team often doesn't know which "version" of you they are getting, or when you will be accessible.
+
+To manage this effectively, implement **Context-Switching Transparency**:
+
+#### 1. Use a "Traffic Light" Status System
+Make your current cognitive state visible to your lab. You can do this via a Slack status, a color-coded calendar, or a physical sign on your office door:
+*   **Red (Clinical/Crisis Mode):** "I am on service / in clinic. Do not contact me unless it is an absolute emergency. I will not be checking lab emails."
+*   **Yellow (Deep Work/Writing Mode):** "I am writing a grant/paper. I am physically here, but please only interrupt for urgent lab issues. Expect delayed email responses."
+*   **Green (PI/Mentor Mode):** "I am fully focused on the lab. My door is open for brainstorming, data review, and career chats."
+
+#### 2. Protect "Scientific Sanctuaries"
+When you are on clinical rotation, your research team can feel abandoned. When you are in the lab, your clinical duties can bleed in via pages and charts. 
+*   **The Fix:** Set aside at least one uncompromised block of time per week (e.g., Thursday mornings) that is a "Scientific Sanctuary." During this time, delegate clinical coverage if possible, close your electronic health record (EHR) software, and dedicate 100% of your cognitive energy to your research team. They will value 2 hours of your undivided attention far more than 10 hours of you being distracted by clinical pages.
+
+#### 3. Explicitly Teach the "Why"
+Your clinical background gives you an intuitive understanding of why a research question matters to patients. Your PhDs and postdocs, however, can easily get lost in the minutiae of pipetting and coding. 
+*   **The Action:** Regularly connect their benchwork to the bedside. Share anonymized, high-level stories of patients you saw that week whose struggles highlight the exact scientific questions your lab is trying to solve. This bridges the cultural gap between the clinical and scientific members of your team and provides immense motivation.
+
+**Why this works:** It reduces anxiety for your team. They no longer have to guess when to approach you, and it prevents you from feeling overwhelmed by the constant collision of your two professional worlds.

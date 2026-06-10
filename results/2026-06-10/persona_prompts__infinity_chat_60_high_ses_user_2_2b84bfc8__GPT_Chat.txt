@@ -1,0 +1,34 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=224
+Latency:   3423 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a line of dominoes.
+
+You want to know whether the very last domino will fall.
+
+For some things, you can look at the setup and immediately know the answer. That's like taking a shortcut.
+
+But sometimes the dominoes are arranged in such a complicated way that there is no shortcut. The only way to find out what happens to the last domino is to knock over the first one and watch every domino fall, one after another.
+
+Computational irreducibility is the idea that some processes are like that.
+
+Even if you have a very smart computer, it can't jump ahead and instantly know the result. It has to go through all the steps, just like everyone else.
+
+So, in "5-year-old" terms:
+
+- Some puzzles have shortcuts.
+- Some puzzles don't.
+- For those puzzles, the only way to know the ending is to play the whole game.
+- That's computational irreducibility.

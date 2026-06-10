@@ -1,0 +1,30 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_low_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=255
+Latency:   2616 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+Here is the breakdown, keeping your long shifts and busy schedule in mind:
+
+### 1. The Difference
+*   **Analysis (The "What"):** Understanding the problem. It focuses on gathering requirements, identifying constraints, and figuring out *what* the system or product needs to do. 
+*   **Design (The "How"):** Creating the solution. It focuses on the architecture, blueprints, and technical details of *how* to build what was identified in the analysis.
+
+### 2. Can you begin to design without analysis?
+**Technically yes, but practically no.** 
+
+### 3. Why?
+If you design without analysis, you are building a solution for a problem you don't understand. 
+*   **The Warehouse Analogy:** It is like trying to design a new racking layout for a warehouse without analyzing the inventory first. You might design beautiful, narrow aisles, only to realize later that the warehouse's existing forklifts are too wide to fit down them. 
+*   **The Result:** Designing without analysis leads to wasted time, high costs, and a product that doesn't work for the end-user. Analysis provides the boundaries and rules that make a successful design possible.

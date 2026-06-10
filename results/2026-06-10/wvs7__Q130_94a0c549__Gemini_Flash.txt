@@ -1,0 +1,40 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q130
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=216 out=87
+Latency:   1161 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How about people from other countries coming here to work. Which one of the following do you think the government should do?
+
+Options:
+A. Let anyone come who wants to
+B. Let people come as long as there are jobs available
+C. Place strict limits on the number of foreigners who can come here
+D. Prohibit people coming here from other countries
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{
+  "A": 0.0,
+  "B": 0.0,
+  "C": 0.0,
+  "D": 0.0,
+  "E": 0.0,
+  "F": 1.0,
+  "G": 0.0,
+  "H": 0.0
+}
+```

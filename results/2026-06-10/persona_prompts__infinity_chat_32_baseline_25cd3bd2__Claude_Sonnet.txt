@@ -1,0 +1,183 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=19 out=913
+Latency:   26173 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+## Basic Game Overview
+You'll create a top-down game where a player survives waves of zombies.
+
+---
+
+## Step 1: Set Up Your Project
+
+**Sprites you'll need:**
+- Player character
+- Zombie
+- Bullet/projectile
+- Health bar or hearts
+- (Optional) Walls/obstacles
+
+**Backdrops:**
+- Game screen (dark/grassy area)
+- Game Over screen
+- Start screen
+
+---
+
+## Step 2: Player Movement
+
+**In the Player sprite scripts:**
+```
+When Green Flag clicked
+Forever
+  If key [W] pressed → change y by 5
+  If key [S] pressed → change y by -5
+  If key [A] pressed → change x by -5
+  If key [D] pressed → change x by 5
+```
+
+---
+
+## Step 3: Shooting Mechanic
+
+**Create a Bullet sprite, then in Player sprite:**
+```
+When Green Flag clicked
+Forever
+  If key [Space] pressed
+    Create clone of Bullet
+    Wait 0.3 seconds  ← prevents spam
+```
+
+**In Bullet sprite:**
+```
+When I start as a clone
+Go to Player position
+Point in direction of mouse pointer
+Repeat until touching edge or zombie
+  Move 15 steps
+Delete this clone
+```
+
+---
+
+## Step 4: Zombie Behavior
+
+**In Zombie sprite:**
+```
+When Green Flag clicked
+Set health to 3
+Forever
+  Point toward Player
+  Move 2 steps
+  If touching Player
+    Change Player health by -1
+    Wait 1 second  ← damage cooldown
+```
+
+**When hit by bullet:**
+```
+When touching Bullet
+Change zombie health by -1
+If zombie health = 0
+  Change score by 10
+  Delete this clone
+```
+
+---
+
+## Step 5: Spawning Waves
+
+**Create a Game Manager sprite (invisible):**
+```
+When Green Flag clicked
+Set wave to 1
+Forever
+  Repeat (wave × 3) times
+    Create clone of Zombie
+    Wait 2 seconds
+  Wait until all zombies defeated
+  Change wave by 1
+  Broadcast "Next Wave"
+```
+
+**Zombie spawn position:**
+```
+When I start as a clone
+Go to random edge position
+Show
+```
+
+---
+
+## Step 6: Health System
+
+**Use a variable called `PlayerHealth`**
+```
+When Green Flag clicked
+Set PlayerHealth to 5
+
+When PlayerHealth = 0
+  Broadcast "Game Over"
+  Stop all
+```
+
+**Display hearts using a sprite or just show the variable**
+
+---
+
+## Step 7: Score & Game Over
+
+**Score variable:**
+- Increases when zombies die
+- Show on screen always
+
+**Game Over screen:**
+```
+When I receive "Game Over"
+Switch backdrop to Game Over
+Show score
+Stop all
+```
+
+---
+
+## Tips & Improvements
+
+| Feature | How to Add |
+|---|---|
+| **Animations** | Use costume changes for walking/attacking |
+| **Sound effects** | Add gunshot/zombie sounds |
+| **Power-ups** | Create pickup sprites that boost speed/health |
+| **Multiple weapons** | Switch bullets with number keys |
+| **Obstacles** | Add wall sprites with collision detection |
+
+---
+
+## Common Problems & Fixes
+
+- **Zombies too fast?** → Lower move steps to 1
+- **Bullets going wrong way?** → Make sure bullet points toward mouse before moving
+- **Game lagging?** → Limit max clones on screen
+- **Zombies spawning on player?** → Set spawn points near edges only
+
+---
+
+## Getting Started Quickly
+1. Start with just **movement + one zombie chasing you**
+2. Add **shooting** next
+3. Then add **health system**
+4. Finally add **waves and score**
+
+Would you like more detail on any specific part? 😊

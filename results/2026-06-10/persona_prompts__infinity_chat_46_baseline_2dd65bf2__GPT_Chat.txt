@@ -1,0 +1,49 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=276
+Latency:   8779 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+In graph theory, the term "linear graph" is sometimes used to mean a "line graph."
+
+Example:
+
+Start with a graph G that is a path of three edges:
+
+A — B — C — D
+
+The edges of G are:
+- e1 = AB
+- e2 = BC
+- e3 = CD
+
+The line graph L(G) is constructed by:
+- Making one vertex for each edge of G.
+- Connecting two vertices if their corresponding edges in G share an endpoint.
+
+So L(G) has vertices:
+- e1, e2, e3
+
+And edges:
+- e1—e2 (because AB and BC meet at B)
+- e2—e3 (because BC and CD meet at C)
+
+Thus the line graph L(G) is:
+
+e1 — e2 — e3
+
+which is itself a path on three vertices.
+
+If by "linear graph" you mean a graph that forms a simple line (a path graph), then an example is:
+
+v1 — v2 — v3 — v4 — v5
+
+This is the path graph P5.

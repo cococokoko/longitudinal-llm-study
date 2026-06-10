@@ -1,0 +1,28 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q93
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=188 out=82
+Latency:   1076 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Here is a question about international organizations. Many people don't know the answer, but if you do please tell me. Which of the following problems does the organization Amnesty International deal with?
+
+Options:
+A. Climate change
+B. Human rights
+C. Destruction of historic monuments
+D. Don't know
+E. No answer/refused
+F. Not applicable (filter)
+G. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A":0.001,"B":0.997,"C":0.001,"D":0.0005,"E":0.0002,"F":0.0002,"G":0.0001}

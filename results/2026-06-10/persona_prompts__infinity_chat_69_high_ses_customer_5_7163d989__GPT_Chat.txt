@@ -1,0 +1,29 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_high_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=46 out=192
+Latency:   2117 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+Analysis and design are related but distinct activities:
+
+- Analysis focuses on understanding the problem: goals, requirements, constraints, stakeholders, current state, and success criteria.
+- Design focuses on creating a solution: architecture, workflows, components, interfaces, processes, and trade-offs that address the analyzed problem.
+
+Can one begin to design without analysis?
+
+- Yes, design can begin with limited or preliminary analysis, especially in exploratory, innovative, or iterative environments.
+- However, designing without sufficient analysis increases the risk of solving the wrong problem, missing requirements, creating unnecessary complexity, or failing to meet business needs.
+- In practice, analysis and design often overlap and inform each other. Early design ideas can expose gaps in analysis, while additional analysis can refine the design.
+
+In short: analysis determines what problem needs to be solved; design determines how it will be solved. Some design can start before analysis is complete, but effective design depends on understanding the problem.

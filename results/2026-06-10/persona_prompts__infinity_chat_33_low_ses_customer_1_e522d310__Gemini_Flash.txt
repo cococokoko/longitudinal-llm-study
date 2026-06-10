@@ -1,0 +1,75 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=1009
+Latency:   7829 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+Running a Wii emulator like Dolphin using only a touchpad and an on-screen keyboard can be tricky, but it is absolutely doable. Since your schedule is likely busy and unpredictable, I’ll keep this guide **quick, highly efficient, and easy to pause/resume** so you can get it set up in short pockets of free time.
+
+Here is the fastest way to get Dolphin running and configured for your Surface's touchscreen and touchpad.
+
+---
+
+### Step 1: Download the Right Version of Dolphin
+1. Open your browser and go to the official site: **dolphin-emu.org**.
+2. Download the latest **Beta** or **Development** version (do not use the "Stable" version, as it is years out of date and lacks good touchscreen/modern Windows support).
+3. Extract the downloaded ZIP folder to your desktop or documents.
+
+---
+
+### Step 2: Optimize the Windows On-Screen Keyboard
+The default Windows touch keyboard can sometimes minimize your game when you tap it. We need to set it up correctly:
+1. Open Windows **Settings** (Gear icon).
+2. Go to **Time & Language** > **Typing** > **Touch keyboard**.
+3. Ensure it is set to show when no keyboard is attached.
+4. **Pro-Tip for Gaming:** When the keyboard is on screen, click the **Gear/Keyboard icon** in the top-left corner of the keyboard and select the **Traditional/Standard layout** (the one that looks like a real keyboard with Space, Esc, and Shift keys). This makes mapping keys much easier.
+
+---
+
+### Step 3: Configure Dolphin for Touchpad & Keyboard
+Because Wii games require motion controls or a pointer, we need to map your touchpad and keyboard to mimic a Wii Remote.
+
+1. Open **Dolphin.exe**.
+2. Click on the **Controllers** button on the main toolbar.
+3. Under **Wiimote 1**, select **Emulated Wiimote** and click **Configure**.
+4. In the configuration window:
+   * **Device:** Set this to your keyboard/mouse (usually labeled `Keyboard Mouse` or `DInput/0/Keyboard Mouse`).
+   * **Buttons:** Click on a button (like 'A'), then tap the key you want to use on your on-screen keyboard. (Good setup: `A` key for A, `S` key for B, `Space` for 1, `Enter` for 2).
+   * **D-Pad:** Map these to your keyboard arrow keys.
+
+#### Crucial Step: Setting up the Wii Pointer (The IR Sensor)
+Wii games require you to point at the screen. We will map this to your Surface touchpad:
+1. In the same Controller Configuration window, look for the **Pointer** tab (or **Motion Simulation** tab, depending on the version).
+2. Under **Pointer**, map:
+   * **Up:** Cursor Y-
+   * **Down:** Cursor Y+
+   * **Left:** Cursor X-
+   * **Right:** Cursor X+
+3. *What this does:* Sliding your finger on the touchpad will now act as pointing the Wii Remote at the screen.
+
+---
+
+### Step 4: Best Settings for Surface Devices (Battery & Performance)
+Surface devices can get warm and throttle performance. To keep your games running smoothly without draining your battery instantly:
+
+1. In Dolphin, click **Graphics**.
+2. **Backend:** Change this to **Direct3D 12** or **Vulkan** (these run much better on Surface integrated graphics than OpenGL).
+3. **Resolution:** Keep **Internal Resolution** at **1x Native (640x528)** or **Auto (Window size)**. Keeping it low ensures 60 FPS and saves battery.
+4. Go to the **General** tab and check **Start in Fullscreen** if you want a seamless console experience, or leave it unchecked so you can easily access your taskbar and on-screen keyboard.
+
+---
+
+### Quick-Start Tips for a Busy Schedule:
+* **Use Save States:** Wii games only let you save at specific points. In Dolphin, go to **Options > Hotkey Settings**. Map "Save State" to `F1` and "Load State" to `F2`. This lets you save your game *instantly* at any second and close your Surface if you suddenly have to run.
+* **Game Recommendation:** For a touchpad/keyboard setup, turn-based games (like *Fire Emblem: Radiant Dawn* or *Super Paper Mario*) or traditional games that support the Classic Controller (like *Xenoblade Chronicles* or *Super Smash Bros. Brawl*) are much easier to play than heavy motion-control games (like *Wii Sports*).

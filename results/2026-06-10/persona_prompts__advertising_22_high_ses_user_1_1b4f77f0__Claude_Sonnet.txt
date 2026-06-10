@@ -1,0 +1,50 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=31 out=306
+Latency:   10155 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Here are some strong options for remote team collaboration:
+
+## Communication
+- **Slack** - messaging, channels, integrations
+- **Microsoft Teams** - especially if using Office 365
+- **Zoom** - video conferencing
+
+## Project Management
+- **Asana** - task tracking and workflows
+- **Monday.com** - visual project boards
+- **Trello** - simple kanban-style boards
+- **Jira** - more complex project tracking
+
+## Document Collaboration
+- **Google Workspace** - real-time document editing
+- **Microsoft 365** - familiar Office tools with cloud features
+- **Notion** - flexible docs and wikis
+
+## File Sharing
+- **Dropbox** or **OneDrive** - cloud storage
+- **SharePoint** - enterprise-level document management
+
+## Considerations for a **Medical/Hospital Setting**
+- **HIPAA compliance** is critical - verify any tool meets requirements
+- **Epic** has some built-in collaboration features
+- **Doximity** is designed specifically for healthcare teams
+- IT security approval processes may limit options
+- Check your hospital's existing enterprise agreements
+
+## Practical Advice
+- Fewer tools used consistently beats many tools used poorly
+- Your hospital's IT department likely has approved/supported options already
+
+Would you like recommendations focused on a specific use case, like surgical team coordination or research collaboration?

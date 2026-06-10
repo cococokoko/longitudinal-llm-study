@@ -1,0 +1,35 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q176
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=308 out=115
+Latency:   2246 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How much do you agree or disagree with the statement that nowadays one often has trouble deciding which moral rules are the right ones to follow? 1 means "completely agree" and 10 means "completely disagree".
+
+Options:
+A. 1 - Completely agree
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. 10 - Completely disagree
+K. Don't know
+L. No answer/refused
+M. Not applicable (filter)
+N. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.08, "B": 0.10, "C": 0.12, "D": 0.12, "E": 0.15, "F": 0.13, "G": 0.12, "H": 0.08, "I": 0.05, "J": 0.03, "K": 0.01, "L": 0.01, "M": 0.00, "N": 0.00}

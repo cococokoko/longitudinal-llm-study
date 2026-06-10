@@ -1,0 +1,24 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_53_high_ses_customer_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35 out=40
+Latency:   1143 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a May the 4th joke.
+
+── Response ────────────────────────────────────────────────────────
+Here's a May the 4th joke:
+
+Why don't Jedi ever lose a case in court?
+
+Because they always find the strongest Force of precedent.
+
+May the Fourth be with you.

@@ -1,0 +1,51 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_49_low_ses_customer_3
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=22 out=914
+Latency:   6360 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving your home WiFi is a great way to ensure your setup is reliable, fast, and stress-free—especially when you need a stable connection for important daily tasks. 
+
+Here is a step-by-step guide to optimizing your home WiFi, ranging from quick, free tweaks to hardware upgrades.
+
+---
+
+### 1. Quick and Free Fixes (Do These First)
+
+*   **Reposition Your Router:** 
+    *   **Centralize it:** Place the router in a central location in your home rather than tucked away in a corner or closet.
+    *   **Elevate it:** Avoid putting it on the floor. Placing it on a shelf or table helps the signal travel further.
+    *   **Avoid obstacles:** Keep it away from thick concrete walls, metal objects, and large appliances (like microwaves), which can block or interfere with the signal.
+*   **Adjust the Antennas:** If your router has external antennas, point one vertically (straight up) and one horizontally (flat). This helps cover both horizontal and vertical planes in your home.
+*   **Reboot Regularly:** Just like a computer, routers can get bogged down with temporary data. A simple restart (unplugging for 30 seconds and plugging it back in) can clear the memory and improve performance.
+
+### 2. Optimize Your Settings
+
+*   **Choose the Right Frequency Band:** Most modern routers are "dual-band," meaning they offer both 2.4 GHz and 5 GHz networks.
+    *   **Use 5 GHz** for devices that need high speed and stability (like your work laptop, streaming devices, or gaming consoles). It is faster and has less interference, though it has a shorter range.
+    *   **Use 2.4 GHz** for smart home devices or devices that are far away from the router, as this band travels further and passes through walls better.
+*   **Change the Channel:** If you live in an apartment building or crowded neighborhood, your neighbors' WiFi can interfere with yours. You can log into your router’s admin panel and switch the channel (for 2.4 GHz, channels 1, 6, and 11 are best; for 5 GHz, look for less crowded channels). Many modern routers have an "auto" setting that does this for you when rebooted.
+*   **Secure Your Network:** Make sure your WiFi is password-protected (using WPA2 or WPA3 security). Uninvited guests using your network will drain your bandwidth.
+
+### 3. Hardware and Physical Upgrades
+
+*   **Use an Ethernet Cable (The Gold Standard):** For critical tasks where you absolutely cannot afford a drop in connection—such as video calls, uploading large files, or online presentations—**plug your computer directly into the router using an Ethernet cable**. This bypasses WiFi entirely, giving you the fastest, most stable, and most secure connection possible.
+*   **Upgrade to a Mesh WiFi System:** If you have a larger home or "dead zones" where the signal drops, a Mesh WiFi system (like Google Nest WiFi, Eero, or Netgear Orbi) is highly effective. It uses multiple nodes placed around your home to create a single, seamless, strong network.
+*   **Consider Powerline Adapters:** If you can't run a long Ethernet cable but need a wired connection in another room, a Powerline adapter uses your home's existing electrical wiring to send the internet signal from your router to your device.
+*   **Update Your Router:** If your router is more than 4–5 years old, it may not support modern speeds or the number of devices in your home. Upgrading to a router that supports **Wi-Fi 6 (802.11ax)** can drastically improve speed and handle multiple connected devices much better.
+
+### 4. Manage Your Bandwidth
+
+*   **Prioritize Devices (QoS):** Many routers have a Quality of Service (QoS) setting in their admin panel. This allows you to prioritize bandwidth for specific devices (like your work computer) so that other activities (like someone else streaming 4K video) don't interrupt your connection.
+*   **Limit Background Apps:** Close data-heavy apps, cloud syncing services (like OneDrive, Dropbox, or Google Drive), or automatic updates on your devices when you need maximum bandwidth.

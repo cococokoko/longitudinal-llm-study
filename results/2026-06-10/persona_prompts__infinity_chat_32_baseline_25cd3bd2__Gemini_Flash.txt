@@ -1,0 +1,146 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1226
+Latency:   7938 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+Making a zombie survival game on Scratch is a fantastic project! It teaches you about player movement, shooting mechanics, cloning (for the zombies), and variables (for health and score). 
+
+Here is a step-by-step guide to building a **Top-Down Zombie Shooter**, which is the easiest and most fun type of zombie game to make on Scratch.
+
+---
+
+### Step 1: Create Your Sprites
+You will need three main sprites. You can draw these yourself in Scratch's paint editor (looking down from above):
+
+1. **Player:** A circle (head) with two smaller circles (hands) holding a gun.
+2. **Bullet:** A small yellow rectangle or circle.
+3. **Zombie:** A green circle (head) with two hands reaching forward.
+
+---
+
+### Step 2: Player Movement & Aiming
+We want the player to move with the **WASD** keys and point toward the **mouse pointer**.
+
+**Code for the Player Sprite:**
+```scratch
+when green flag clicked
+set [Health v] to [100]
+go to x: (0) y: (0)
+forever
+    point towards (mouse-pointer v)
+    if <key [w v] pressed?> then
+        change y by (4)
+    end
+    if <key [s v] pressed?> then
+        change y by (-4)
+    end
+    if <key [d v] pressed?> then
+        change x by (4)
+    end
+    if <key [a v] pressed?> then
+        change x by (-4)
+    end
+    if <(Health) < [1]> then
+        say [GAME OVER!] for (2) seconds
+        stop [all v]
+    end
+end
+```
+
+---
+
+### Step 3: Shooting Bullets
+The bullet will hide until the player clicks. When clicked, it will create a clone of itself at the player's position and fly in the direction the player is facing.
+
+**Code for the Bullet Sprite:**
+```scratch
+when green flag clicked
+hide
+
+when green flag clicked // Separate loop to control firing rate
+forever
+    if <mouse down?> then
+        create clone of (myself v)
+        wait (0.2) seconds // Cooldown between shots
+    end
+end
+
+when I start as a clone
+go to (Player v)
+point in direction ([direction v] of (Player v))
+show
+repeat until <touching (edge v)?>
+    move (10) steps
+end
+delete this clone
+```
+
+---
+
+### Step 4: The Zombie AI (Cloning)
+Instead of making 50 different zombie sprites, we will make **one** zombie sprite and use **clones** to spawn them infinitely.
+
+**Code for the Zombie Sprite:**
+
+**Part A: Spawning the Zombies**
+```scratch
+when green flag clicked
+hide
+set [Score v] to [0]
+forever
+    wait (2) seconds // Spawns a zombie every 2 seconds
+    create clone of (myself v)
+end
+```
+
+**Part B: Zombie Behavior (Chase the Player)**
+```scratch
+when I start as a clone
+// Spawn at a random edge of the screen
+go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180)) 
+// (Optional: Add code to make sure they don't spawn right on top of the player)
+show
+forever
+    point towards (Player v)
+    move (1.5) steps // Zombies are slower than the player
+    
+    // If hit by a bullet
+    if <touching (Bullet v)?> then
+        change [Score v] by (1)
+        delete this clone
+    end
+    
+    // If touching the player
+    if <touching (Player v)?> then
+        change [Health v] by (-10)
+        wait (0.5) seconds // Damage cooldown so player doesn't die instantly
+    end
+end
+```
+
+---
+
+### Step 5: Polish and Add Features (To make it awesome!)
+
+Once you have the basic game working, you can add these features to make it a real game:
+
+1. **Add a Backdrop:** Paint a dark, creepy grass or concrete background.
+2. **Zombie Health:** Instead of dying in 1 hit, give zombies health. Create a variable called `Zombie Health` and set it to "this sprite only" (very important!). When hit by a bullet, change `Zombie Health` by -1. If it's less than 1, delete the clone.
+3. **Different Zombie Types:** 
+   * Create a fast, weak zombie (red color).
+   * Create a slow, giant boss zombie (big size, high health).
+4. **Weapon Upgrades:** Create a "Shotgun" power-up that spawns on the ground. When the player touches it, they shoot 3 bullets at different angles instead of 1.
+5. **Sound Effects:** Add a "pop" or "pew" sound when shooting, and a groan sound when zombies spawn.
+
+### Tips for Scratch:
+* **"For this sprite only" variables:** When making variables like "Zombie Health", make sure to check the box "For this sprite only". This ensures every individual zombie clone keeps track of its own health.
+* **Preventing Bullet Glitches:** If your bullets hit a zombie but don't disappear, add a `wait (0) seconds` block before `delete this clone` in the Bullet script, or have the Bullet detect the Zombie and delete itself.

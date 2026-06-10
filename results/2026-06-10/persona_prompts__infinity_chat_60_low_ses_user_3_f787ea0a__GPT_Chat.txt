@@ -1,0 +1,33 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_low_ses_user_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=28 out=273
+Latency:   3647 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a very long line of dominoes set up in a special pattern.
+
+You ask, "If I knock over the first domino, what will the 1,000th domino look like after everything happens?"
+
+For some things, you can use a shortcut. It's like knowing that if you have 2 cookies and get 2 more, you can quickly say you'll have 4 cookies without counting each one.
+
+But for other things, there is no shortcut.
+
+Computational irreducibility means that to find out what happens, you have to watch each domino fall, one after another. You can't skip ahead and magically know the answer faster.
+
+A simple way to think about it:
+
+- Some puzzles let you jump straight to the answer.
+- Some puzzles force you to do every step.
+- Computational irreducibility is when every step really matters, and there is no faster way to know the result than actually going through all the steps.
+
+Scientists use this idea to explain why some systems—like weather, growing plants, or certain computer programs—can be hard to predict. Even if the rules are simple, the only way to know exactly what will happen later may be to let the process run and see what happens.

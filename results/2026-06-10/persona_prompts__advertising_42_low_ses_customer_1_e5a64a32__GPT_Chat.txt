@@ -1,0 +1,68 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_42_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=436
+Latency:   5008 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on what you want to track and how much time you want to spend logging. Since you work full-time with an unpredictable schedule, apps that are quick to use and don't require a lot of manual data entry may be especially helpful.
+
+Fitness tracking:
+- Strava
+  - Great for running, walking, cycling, and other cardio.
+  - Strong social and motivation features.
+  - Works with many smartwatches.
+
+- Garmin Connect
+  - Excellent if you use a Garmin device.
+  - Detailed activity, sleep, recovery, and training metrics.
+
+- Fitbit
+  - Easy-to-understand activity, sleep, and health tracking.
+  - Good balance between simplicity and useful insights.
+
+- Apple Fitness / Apple Health
+  - Best for iPhone and Apple Watch users.
+  - Integrates data from many other health apps.
+
+- Google Fit
+  - Simple activity tracking for Android users.
+  - Syncs with many third-party apps.
+
+Nutrition tracking:
+- MacroFactor
+  - One of the most highly regarded nutrition apps.
+  - Adjusts calorie targets based on your actual weight changes.
+  - Strong for fat loss, muscle gain, or maintenance.
+
+- Cronometer
+  - Excellent nutrient tracking, including vitamins and minerals.
+  - Very accurate food database.
+  - Great if you care about overall nutrition quality.
+
+- MyFitnessPal
+  - Massive food database and barcode scanner.
+  - Easy to log meals quickly.
+  - Popular and beginner-friendly.
+
+- Lose It!
+  - Simple calorie tracking with a clean interface.
+  - Fast food logging and goal setting.
+
+Best all-around combinations:
+- Easy and quick: Fitbit + Lose It!
+- Most detailed: Garmin Connect + Cronometer
+- Best for weight-loss or body-composition goals: MacroFactor + your preferred fitness tracker
+- Apple users: Apple Health + MacroFactor or Cronometer
+
+If your goal is weight loss, muscle gain, general health, or training for a specific event, I can narrow the recommendations further.

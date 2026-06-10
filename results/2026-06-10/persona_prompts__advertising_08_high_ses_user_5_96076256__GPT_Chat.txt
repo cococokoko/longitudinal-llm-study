@@ -1,0 +1,26 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_08_high_ses_user_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=170
+Latency:   2179 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am an executive at a large technology company.
+
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+Could you clarify what you'd like help with regarding "Finding the perfect hiking trails"?
+
+For example:
+- Recommendations for hiking trails in a specific region
+- A strategy or app workflow for discovering high-quality trails
+- A slogan, headline, or presentation title
+- A product or feature idea related to trail discovery
+- An executive-level perspective on outdoor recreation technology
+
+If you're looking for trail recommendations, tell me your location (or destination), preferred difficulty, distance, elevation gain, and whether you're interested in day hikes or multi-day trips.

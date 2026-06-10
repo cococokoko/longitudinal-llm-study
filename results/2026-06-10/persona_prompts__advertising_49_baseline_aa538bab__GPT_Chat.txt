@@ -1,0 +1,61 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=475
+Latency:   4641 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi depends on what's causing the problem, but these are the most effective steps, roughly in order of impact:
+
+- Move the router to a central, open location.
+  - Keep it off the floor.
+  - Avoid placing it inside cabinets, behind TVs, or near large metal objects.
+  - Position it closer to where you use devices most often.
+
+- Reboot and update your equipment.
+  - Restart the router and modem.
+  - Install the latest firmware updates from the manufacturer.
+
+- Use the right Wi‑Fi band.
+  - 5 GHz (or 6 GHz, if available) offers higher speeds but shorter range.
+  - 2.4 GHz offers longer range but more interference and lower speeds.
+
+- Change Wi‑Fi channels.
+  - Nearby networks can cause congestion.
+  - For 2.4 GHz, channels 1, 6, or 11 are usually best.
+  - Many routers can automatically choose the least crowded channel.
+
+- Upgrade security and settings.
+  - Use WPA2 or WPA3 encryption.
+  - Ensure your router isn't using outdated legacy modes that slow the network.
+
+- Reduce interference.
+  - Keep the router away from microwaves, cordless phones, baby monitors, and Bluetooth-heavy devices when possible.
+
+- Add more coverage if needed.
+  - For larger homes, a mesh Wi‑Fi system often works better than a single router.
+  - A Wi‑Fi extender can help, but mesh systems generally provide a better experience.
+
+- Connect stationary devices with Ethernet.
+  - PCs, gaming consoles, smart TVs, and streaming boxes perform better on wired connections.
+  - This also frees wireless capacity for phones and tablets.
+
+- Upgrade older hardware.
+  - If your router is more than 5–7 years old, a newer Wi‑Fi 6 or Wi‑Fi 6E router may significantly improve performance.
+
+- Check your internet plan.
+  - If Wi‑Fi is working well but everything is still slow, your internet service itself may be the bottleneck.
+
+To narrow down the best solution, tell me:
+- The size of your home/apartment
+- Your router model
+- Whether the issue is slow speed, weak signal, dropped connections, or dead zones
+- How many devices are connected
+- Your internet speed plan (if known)

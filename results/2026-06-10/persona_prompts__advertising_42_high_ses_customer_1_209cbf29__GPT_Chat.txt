@@ -1,0 +1,87 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=37 out=563
+Latency:   5036 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on whether your priority is nutrition tracking, training performance, habit formation, or integration with wearables. Here are some of the strongest options as of 2026:
+
+Nutrition-focused
+- MacroFactor
+  - Excellent for calorie and macronutrient tracking.
+  - Uses your weight trend and food logs to estimate energy expenditure and adjust targets.
+  - Strong database and thoughtful analytics.
+  - Subscription required.
+  - Often favored by evidence-focused users.
+
+- Cronometer
+  - Tracks not only calories and macros but also vitamins, minerals, and other micronutrients.
+  - High-quality food database with good transparency.
+  - Particularly useful if you're monitoring specific nutrient intake.
+
+- MyFitnessPal
+  - Large food database and barcode scanning.
+  - Strong ecosystem and widespread adoption.
+  - Easy for beginners.
+  - Some advanced features require a premium subscription.
+
+Fitness and workout tracking
+- Strong
+  - Excellent strength-training log.
+  - Tracks sets, reps, weight, and progression.
+  - Simple and reliable for resistance training.
+
+- Hevy
+  - Similar to Strong but with a stronger social component.
+  - Clean interface and good exercise library.
+  - Popular among recreational and serious lifters.
+
+- Garmin Connect
+  - One of the best platforms if you use Garmin devices.
+  - Robust training load, recovery, sleep, and endurance metrics.
+  - Particularly useful for runners, cyclists, and triathletes.
+
+- Strava
+  - Strong community features for running and cycling.
+  - Excellent route tracking and performance analysis.
+  - Motivating if you enjoy social competition.
+
+Comprehensive health and fitness ecosystems
+- Apple Health + Apple Fitness
+  - Integrates data from many apps and devices.
+  - Good for users already in the Apple ecosystem.
+
+- WHOOP
+  - Focuses on recovery, strain, sleep, and readiness.
+  - Useful if optimizing training load and recovery is a priority.
+  - Requires a WHOOP membership.
+
+- Oura
+  - Excellent sleep and recovery tracking via a ring form factor.
+  - Less focused on exercise performance than Garmin or Strava.
+
+Best choices by goal
+- Weight loss: MacroFactor or MyFitnessPal
+- Detailed nutrition analysis: Cronometer
+- Strength training: Strong or Hevy
+- Running/cycling: Garmin Connect + Strava
+- Recovery and sleep optimization: Oura or WHOOP
+- All-around health tracking in the Apple ecosystem: Apple Health
+
+If you tell me:
+- iPhone or Android
+- Whether you use a smartwatch (Apple Watch, Garmin, etc.)
+- Your primary goal (fat loss, muscle gain, endurance, general health)
+
+I can narrow it down to the 2–3 best options for your situation.

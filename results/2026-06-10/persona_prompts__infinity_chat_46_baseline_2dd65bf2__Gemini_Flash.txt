@@ -1,0 +1,66 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=674
+Latency:   4149 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+In graph theory, the term **"linear graph"** can refer to two different concepts depending on the context:
+
+1. **A Path Graph ($P_n$):** A graph where the vertices are connected in a single, straight line (no branches, no cycles).
+2. **A Line Graph ($L(G)$):** A graph that represents the adjacencies between the edges of another graph $G$.
+
+Here are examples of both.
+
+---
+
+### Example 1: A Path Graph (The most common informal meaning)
+A path graph of length $n$ (denoted as $P_n$) is a graph whose vertices can be listed in the order $v_1, v_2, \dots, v_n$ such that the edges are $\{v_1, v_2\}, \{v_2, v_3\}, \dots, \{v_{n-1}, v_n\}$.
+
+#### **Visual Representation of $P_4$ (Path Graph with 4 vertices):**
+```text
+(A) --------- (B) --------- (C) --------- (D)
+```
+
+*   **Vertices (Nodes):** $V = \{A, B, C, D\}$
+*   **Edges (Connections):** $E = \{(A, B), (B, C), (C, D)\}$
+*   **Properties:** 
+    *   It has no cycles (loops).
+    *   The "end" vertices ($A$ and $D$) have a degree of 1 (connected to only one vertex).
+    *   The "internal" vertices ($B$ and $C$) have a degree of 2.
+
+---
+
+### Example 2: A Line Graph (The formal mathematical meaning)
+In formal graph theory, a **Line Graph** $L(G)$ is a graph where:
+*   Each vertex in $L(G)$ represents an **edge** in the original graph $G$.
+*   Two vertices in $L(G)$ are connected by an edge if their corresponding edges in $G$ share a common vertex.
+
+#### **How to construct one:**
+Let's start with a simple star graph $G$:
+```text
+Original Graph G:
+      (B)
+     /   \
+   (A)---(C)
+```
+*   **Edges of $G$:** $e_1 = (A,B)$, $e_2 = (B,C)$, $e_3 = (A,C)$
+
+To create the **Line Graph $L(G)$**:
+1.  Turn the edges of $G$ into the vertices of $L(G)$: $\{e_1, e_2, e_3\}$.
+2.  Connect them if they shared a corner in $G$. Since $e_1$, $e_2$, and $e_3$ all touch each other, they will all be connected.
+
+```text
+Line Graph L(G):
+      (e1)
+     /    \
+  (e2)----(e3)
+```
+In this specific case, the Line Graph of a triangle is also a triangle.

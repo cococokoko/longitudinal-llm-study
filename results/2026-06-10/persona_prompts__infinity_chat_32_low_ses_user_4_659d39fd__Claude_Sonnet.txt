@@ -1,0 +1,139 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_low_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=33 out=589
+Latency:   21297 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a straightforward guide to building a basic zombie survival game!
+
+---
+
+## Basic Concept
+- Player moves around avoiding/fighting zombies
+- Zombies chase the player
+- Survive as long as possible
+
+---
+
+## Step 1: Set Up Your Sprites
+
+- **Player sprite** - can be a simple character
+- **Zombie sprite** - will be cloned multiple times
+- **Bullet/weapon sprite** (optional)
+- **Background** - a simple arena or map
+
+---
+
+## Step 2: Player Movement Code
+
+On the **Player sprite:**
+```
+When Green Flag clicked
+forever
+  if key [W] pressed then
+    change y by 3
+  if key [S] pressed then
+    change y by -3
+  if key [A] pressed then
+    change x by -3
+  if key [D] pressed then
+    change x by 3
+```
+
+---
+
+## Step 3: Zombie AI (Chasing Player)
+
+On the **Zombie sprite:**
+```
+When Green Flag clicked
+create clone of myself
+
+When I start as a clone
+go to random position
+forever
+  point toward [Player]
+  move 2 steps
+```
+
+---
+
+## Step 4: Spawn More Zombies Over Time
+
+```
+When Green Flag clicked
+forever
+  wait 3 seconds
+  create clone of [Zombie]
+```
+
+---
+
+## Step 5: Health System
+
+Create a **variable** called `Health`
+
+```
+When Green Flag clicked
+set Health to 100
+
+(On Zombie sprite - when touching player)
+forever
+  if touching [Player] then
+    change Health by -1
+    wait 0.5 seconds
+```
+
+---
+
+## Step 6: Game Over Condition
+
+```
+When Green Flag clicked
+forever
+  if Health < 1 then
+    broadcast [Game Over]
+    stop all
+```
+
+---
+
+## Step 7: Score/Timer
+
+```
+Create variable: Score
+When Green Flag clicked
+forever
+  wait 1 second
+  change Score by 1
+```
+
+---
+
+## Optional Additions
+- **Shooting mechanic** - bullet clones that delete zombies
+- **Sound effects**
+- **Walls/obstacles** using color detection
+- **Different zombie speeds**
+- **Power-ups**
+
+---
+
+## Tips
+- Use **clones** for multiple zombies
+- Keep code in **separate scripts** for organization
+- Test frequently as you build each piece
+
+Would you like more detail on any specific part, like adding shooting mechanics?

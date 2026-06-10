@@ -1,0 +1,18 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_67_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=23 out=51
+Latency:   1327 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a Google ad with 2 sentences and a 30-character limit per sentence for mobile car detailing.
+
+── Response ────────────────────────────────────────────────────────
+Here is a Google ad tailored for mobile car detailing, with each sentence under the 30-character limit:
+
+**We detail your car at home.** (28 chars)
+**Book your mobile clean today!** (29 chars)

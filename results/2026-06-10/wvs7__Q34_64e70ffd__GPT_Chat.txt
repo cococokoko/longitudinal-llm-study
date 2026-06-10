@@ -1,0 +1,32 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q34
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=211 out=149
+Latency:   2546 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How would you feel about the following statements? Do you agree or disagree with them?
+
+When jobs are scarce, employers should give priority to people of this country over immigrants
+
+Options:
+A. Agree strongly
+B. Agree
+C. Neither agree nor disagree
+D. Disagree
+E. Disagree strongly
+F. Don't know
+G. No answer/refused
+H. Not applicable (filter)
+I. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.0, "C": 0.6, "D": 0.0, "E": 0.0, "F": 0.4, "G": 0.0, "H": 0.0, "I": 0.0}

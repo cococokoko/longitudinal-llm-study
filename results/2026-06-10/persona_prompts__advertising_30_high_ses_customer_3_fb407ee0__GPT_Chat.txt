@@ -1,0 +1,92 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=542
+Latency:   5920 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+If you're starting from scratch, the most effective approach is usually to focus on one language, build small projects immediately, and learn concepts as you need them rather than trying to master everything in advance.
+
+A practical path:
+
+1. Choose a beginner-friendly language
+- Python is often the best starting point.
+- It has simple syntax, a large ecosystem, and applications in data science, automation, AI, web development, and research.
+
+2. Learn the fundamentals
+Focus on:
+- Variables and data types
+- Conditionals (if/else)
+- Loops
+- Functions
+- Basic data structures (lists, dictionaries, sets)
+- Input/output
+- Reading and writing files
+
+Many free resources cover these topics:
+- Harvard CS50 (excellent introduction to computer science)
+- Python's official tutorial
+- freeCodeCamp
+- Automate the Boring Stuff with Python
+
+3. Write code every day
+Even 20–30 minutes daily is more effective than a long session once a week.
+
+Examples:
+- A calculator
+- A to-do list program
+- A simple text-based game
+- A script that organizes files on your computer
+
+4. Learn debugging early
+A significant part of programming is:
+- Reading error messages
+- Testing assumptions
+- Finding and fixing bugs
+
+Treat debugging as a core skill rather than an obstacle.
+
+5. Build projects that connect to your interests
+Since people learn fastest when working on meaningful problems, choose projects related to your domain.
+
+For example:
+- If you're a researcher: analyze datasets, automate literature searches, process text, or generate reports.
+- If you're interested in finance: build budgeting or investment-analysis tools.
+- If you're interested in web applications: create a personal website.
+
+6. Learn basic computer science concepts
+Once you're comfortable writing programs, study:
+- Algorithms
+- Data structures
+- Complexity (Big O notation)
+- Databases
+- Version control (Git)
+
+These concepts transfer across languages.
+
+7. Use AI as a tutor, not a substitute
+AI can:
+- Explain concepts
+- Review code
+- Suggest improvements
+- Help debug
+
+But try writing the first version yourself before asking for solutions. Active problem-solving develops skill much faster than reading answers.
+
+A simple 8-week roadmap:
+- Weeks 1–2: Python basics
+- Weeks 3–4: Functions, files, and simple projects
+- Weeks 5–6: Data structures and debugging
+- Weeks 7–8: Build a complete project of personal interest
+
+One question that would help narrow recommendations: Are you primarily interested in coding for research, data analysis, software development, web development, AI, or something else?

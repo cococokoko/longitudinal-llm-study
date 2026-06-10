@@ -1,0 +1,78 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_08_high_ses_user_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=17 out=1130
+Latency:   8136 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am an executive at a large technology company.
+
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+As a technology executive, your time is likely your most valuable and heavily guarded asset. When you look for a hiking trail, you aren’t just looking for "a walk in the woods." You are likely looking for a specific ROI (Return on Investment): **cognitive decompression, efficient physical exertion, high-quality solitude, or a seamless, friction-free experience.**
+
+To find the "perfect" trail, you should approach it the same way you approach product development or portfolio management: by defining your use case, leveraging the right tech stack, and optimizing for your constraints.
+
+Here is a framework to help you find and curate your perfect hiking trails.
+
+---
+
+### Phase 1: Define Your "Trail Use Case"
+Before looking at maps, identify what "job" this hike is doing for you today. 
+
+1. **The "Deep Work" / Solitude Hike:** 
+   * *Goal:* Cognitive decompression, strategic thinking, or creative problem-solving.
+   * *Criteria:* Low foot traffic, minimal technical difficulty (so your brain can wander, not focus on footing), and immersive nature (forest bathing).
+2. **The "High-Intensity" Workout:**
+   * *Goal:* Maximum physical output in a tight time window.
+   * *Criteria:* High elevation gain per mile, steep gradients, close proximity to your home/office to minimize transit time.
+3. **The "Off-the-Grid" Reset:**
+   * *Goal:* Complete digital detox.
+   * *Criteria:* Zero cellular service, wilderness areas, dramatic vistas that shift your perspective.
+4. **The "Networking / Walk-and-Talk" Hike:**
+   * *Goal:* Conducting a 1-on-1 meeting, hosting a candidate, or catching up with a peer.
+   * *Criteria:* Wide trails (side-by-side walking), moderate grade (so you can talk without gasping for air), easy parking, and a great coffee shop or casual lunch spot at the trailhead.
+
+---
+
+### Phase 2: Build Your Trail Tech Stack
+Don't rely on generic Google searches. Use specialized tools to filter for exactly what you need.
+
+* **For Discovery & Navigation: AllTrails+ (Premium)**
+   * *Why:* The premium version is essential. It allows you to download offline maps (crucial when you lose service) and filter by trail traffic (choose "lightly trafficked" for solitude), views, and elevation.
+* **For Real-Time Conditions: Gaia GPS or OnX Backcountry**
+   * *Why:* This is the enterprise-grade tool. It offers layered maps (topographic, satellite, public/private land boundaries, and recent wildfire activity). Excellent for scouting off-the-beaten-path routes.
+* **For Weather & Microclimates: Mountain Forecast or Windy**
+   * *Why:* Standard weather apps lie about mountains. Mountain Forecast gives you temperatures and wind speeds at the peak vs. the trailhead. Windy shows real-time wind and cloud cover models.
+* **For Crowdsourcing & Safety: Strava Heatmaps**
+   * *Why:* Toggle on the global heatmap to see where people *actually* run and hike. If you want solitude, find the gaps in the heatmap. 
+
+---
+
+### Phase 3: The Executive Search Protocol (How to Filter)
+When searching for trails in your area, apply these filters to save time and avoid "bad" hikes:
+
+* **The "Anti-Crowd" Ratio:** Look for trails with a high **Length-to-Popularity ratio**. A 10-mile trail with 50 reviews on AllTrails will be infinitely more peaceful than a 2-mile trail with 3,000 reviews.
+* **The "Time-to-Trail" Metric:** Factor in the drive. A 45-minute drive to a spectacular, empty trail is often a better investment than a 15-minute drive to a crowded city park where you have to fight for parking.
+* **The "Loop" Preference:** Always prioritize loops over "out-and-back" trails. Loops offer continuous novelty, which is better for keeping your brain engaged and stimulated.
+
+---
+
+### Phase 4: Curating Your Personal "Trail Portfolio"
+Just like managing a product portfolio, you should have a curated list of 3–5 "go-to" trails that you know intimately. 
+
+1. **The "90-Minute Window" Trail:** 15 mins away, steep, fast, gets the heart rate up, back at your desk in under two hours.
+2. **The "Sunday Morning" Trail:** 45 mins away, 6–8 miles, beautiful views, highly restorative.
+3. **The "Boardroom" Trail:** Wide, flat, scenic, perfect for walking meetings with founders, investors, or direct reports.
+4. **The "Wild Card" Trail:** A challenging, remote trail you save for long weekends when you need a total mental reset.
+
+### Next Step:
+If you'd like a personalized recommendation right now, tell me:
+1. **Where are you located** (or where are you traveling to)?
+2. **What is your primary goal** (Fitness, Solitude, Views, or a Walk-and-Talk)?
+3. **How much time** do you have?

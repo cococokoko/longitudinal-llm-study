@@ -1,0 +1,31 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q198
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=224 out=67
+Latency:   1715 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Do you think that your country's government should or should not have the right to do the following:
+
+Collect information about anyone living in this country without their knowledge
+
+Options:
+A. Definitely should have the right
+B. Probably should have the right
+C. Probably should not have the right
+D. Definitely should not have the right
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.04, "B": 0.08, "C": 0.28, "D": 0.55, "E": 0.04, "F": 0.01, "G": 0.0, "H": 0.0}

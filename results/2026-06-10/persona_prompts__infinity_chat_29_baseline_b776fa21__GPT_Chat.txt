@@ -1,0 +1,251 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=1024
+Latency:   6282 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+A LAMP forum (Linux, Apache, MySQL/MariaDB, PHP) is essentially a web application with user accounts, discussion categories, threads, and posts stored in a database.
+
+A basic roadmap:
+
+1. Set up the LAMP stack
+
+On Ubuntu:
+
+```bash
+sudo apt update
+sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql
+```
+
+Test PHP:
+
+```php
+<?php phpinfo(); ?>
+```
+
+Save as:
+
+```text
+/var/www/html/info.php
+```
+
+Visit:
+
+```text
+http://your-server/info.php
+```
+
+2. Design the database
+
+Example schema:
+
+```sql
+CREATE DATABASE forum_db;
+
+USE forum_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT NOT NULL,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT NOT NULL,
+    user_id INT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+3. Create a database connection
+
+`config/database.php`
+
+```php
+<?php
+
+$host = "localhost";
+$dbname = "forum_db";
+$user = "forum_user";
+$pass = "your_password";
+
+try {
+    $pdo = new PDO(
+        "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
+        $user,
+        $pass
+    );
+
+    $pdo->setAttribute(
+        PDO::ATTR_ERRMODE,
+        PDO::ERRMODE_EXCEPTION
+    );
+
+} catch(PDOException $e) {
+    die("Connection failed");
+}
+```
+
+4. Build user registration
+
+Example:
+
+```php
+<?php
+
+require "config/database.php";
+
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = password_hash(
+    $_POST['password'],
+    PASSWORD_DEFAULT
+);
+
+$stmt = $pdo->prepare(
+    "INSERT INTO users
+    (username,email,password_hash)
+    VALUES (?,?,?)"
+);
+
+$stmt->execute([
+    $username,
+    $email,
+    $password
+]);
+```
+
+5. Build login
+
+Verify password:
+
+```php
+$stmt = $pdo->prepare(
+    "SELECT * FROM users WHERE username=?"
+);
+
+$stmt->execute([$_POST['username']]);
+
+$user = $stmt->fetch();
+
+if (
+    $user &&
+    password_verify(
+        $_POST['password'],
+        $user['password_hash']
+    )
+) {
+    session_start();
+    $_SESSION['user_id'] = $user['id'];
+}
+```
+
+6. Display categories
+
+```php
+$stmt = $pdo->query(
+    "SELECT * FROM categories"
+);
+
+while ($row = $stmt->fetch()) {
+    echo "<a href='category.php?id={$row['id']}'>";
+    echo htmlspecialchars($row['name']);
+    echo "</a><br>";
+}
+```
+
+7. Create threads
+
+```php
+$stmt = $pdo->prepare(
+    "INSERT INTO threads
+    (category_id,user_id,title)
+    VALUES (?,?,?)"
+);
+
+$stmt->execute([
+    $_POST['category_id'],
+    $_SESSION['user_id'],
+    $_POST['title']
+]);
+```
+
+8. Create posts
+
+```php
+$stmt = $pdo->prepare(
+    "INSERT INTO posts
+    (thread_id,user_id,content)
+    VALUES (?,?,?)"
+);
+
+$stmt->execute([
+    $_POST['thread_id'],
+    $_SESSION['user_id'],
+    $_POST['content']
+]);
+```
+
+9. Display a thread
+
+```php
+$stmt = $pdo->prepare(
+    "SELECT p.content,
+            p.created_at,
+            u.username
+     FROM posts p
+     JOIN users u
+       ON p.user_id = u.id
+     WHERE p.thread_id = ?
+     ORDER BY p.created_at"
+);
+
+$stmt->execute([$_GET['thread_id']]);
+
+foreach ($stmt as $post) {
+    echo "<h4>" .
+         htmlspecialchars($post['username']) .
+         "</h4>";
+
+    echo "<p>" .
+         nl2br(htmlspecialchars($post['content'])) .
+         "</p>";
+}
+```
+
+10. Security essentials
+
+- Use prepared statements everywhere.
+- Hash passwords with `password_hash()`.
+- Verify passwords with `password_verify()`.
+- Escape output with `

@@ -1,0 +1,43 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_44_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=357
+Latency:   5844 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on the disease involved, how it spreads, local transmission levels, your health status, and public health guidance at the time. In general, risk is lowest when you minimize close contact with others and spend less time in crowded indoor spaces.
+
+Some lower-risk approaches:
+- Stay up to date with recommended vaccinations, if available.
+- Avoid travel when you are sick or have symptoms.
+- Choose destinations with lower levels of disease transmission when possible.
+- Travel by private vehicle rather than crowded public transportation if feasible.
+- Prefer outdoor activities and well-ventilated spaces.
+- Wear a well-fitting mask (such as a high-quality respirator, if recommended) in crowded indoor settings or during outbreaks.
+- Practice good hand hygiene, especially after touching high-contact surfaces.
+- Keep distance from others when public health guidance recommends it.
+- Consider traveling during less busy times to reduce crowding.
+
+For air travel:
+- Airports and planes can involve close contact with many people, especially during boarding and deplaning.
+- Wearing a high-quality mask in terminals and on flights can reduce risk during respiratory disease outbreaks.
+- Minimize time spent in crowded waiting areas when possible.
+
+For public transportation:
+- Choose less crowded routes or times.
+- Improve ventilation when possible (for example, opening windows on buses or trains if appropriate).
+- Follow any local public health recommendations.
+
+Because you work in a hospital setting, you may also want to be especially mindful of protecting vulnerable patients and coworkers after travel. Checking your employer's current policies and local public health guidance before and after a trip can be helpful.
+
+If you're asking about a specific pandemic or type of travel (flying, driving, international travel, cruises, etc.), I can provide more tailored advice.

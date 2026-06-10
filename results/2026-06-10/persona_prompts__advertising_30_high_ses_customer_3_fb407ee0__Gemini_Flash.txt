@@ -1,0 +1,68 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_customer_3
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=28 out=1140
+Latency:   7765 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+For someone accustomed to structured learning, rigorous inquiry, and the systematic acquisition of knowledge, the best way to learn coding from scratch is to treat it not merely as a vocational skill, but as a **new mode of literacy and problem-solving**. 
+
+As a scholar, you likely appreciate framework-first learning rather than rote memorization. Here is a structured, intellectually engaging roadmap designed to take you from absolute scratch to computational fluency.
+
+---
+
+### 1. Choose Your First "Language of Thought"
+Just as in academia, different languages serve different paradigms. For a beginner, there are two primary entry points depending on your ultimate goals:
+
+*   **Python (The Generalist & Scholar’s Choice):** Python is currently the *lingua franca* of data science, digital humanities, quantitative research, and artificial intelligence. Its syntax is clean, highly readable, and closely mirrors mathematical logic and English prose. 
+*   **JavaScript (The Builder’s Choice):** If your goal is to build interactive tools, web applications, or visual interfaces that live on the internet, JavaScript is the native language of the web browser.
+
+*Recommendation:* Start with **Python**. It offers the lowest cognitive load regarding syntax, allowing you to focus on core computational concepts.
+
+### 2. Master the "Grammar" (Core Concepts)
+Before writing complex programs, you must understand the foundational building blocks. These are universal across almost all programming languages:
+*   **Variables and Data Types:** How a computer stores information (integers, strings of text, booleans).
+*   **Control Flow (Logic):** How a program makes decisions (`if/then/else` statements).
+*   **Loops:** How a program handles repetitive tasks (`for` and `while` loops).
+*   **Functions:** The "paragraphs" of coding—reusable blocks of code designed to perform a single, specific task.
+*   **Data Structures:** How to organize data efficiently (lists, dictionaries, arrays).
+
+### 3. Select High-Quality, Structured Resources
+As a professor, you know that the quality of pedagogy matters. Avoid chaotic YouTube tutorials in the beginning. Instead, opt for structured, peer-reviewed, or highly-rated academic curricula:
+
+*   **The Academic Gold Standard:** **CS50: Introduction to Computer Science (Harvard University/edX)**. Taught by Professor David J. Malan, this is arguably the finest introductory course in the world. It is intellectually rigorous, conceptual, and free. It begins with C (to understand how computers work under the hood) and transitions to Python and SQL.
+*   **The Practical Textbook:** *Automate the Boring Stuff with Python* by Al Sweigart (available free online). This book is highly pragmatic, focusing on how to write scripts to solve real-world administrative tasks (e.g., parsing PDFs, organizing files, scraping websites).
+*   **Interactive Platforms:** **Exercism.org** or **Codecademy**. Exercism is particularly excellent because it is free, offers structured language tracks, and provides mentoring from real developers.
+
+### 4. Adopt the "Project-Based" Learning Paradigm
+In programming, passive consumption of information leads to the "illusion of competence." You must write code to learn code. 
+
+As soon as you learn the basics of loops and variables, apply them to a project. Ideally, tie this to your existing domain of expertise to keep motivation high. For example:
+*   **In the Humanities/Social Sciences:** Write a script to analyze the word frequency or sentiment of a corpus of historical texts.
+*   **In the Sciences:** Write a script to automate the cleaning and formatting of a messy Excel dataset.
+*   **In Administration:** Build a tool that automatically renames hundreds of files in a directory based on a specific naming convention.
+
+### 5. Learn the Tooling (The "Lab Equipment")
+Writing code is only part of the process; you also need to learn the environment in which developers work:
+*   **The IDE (Integrated Development Environment):** This is your digital notebook. **VS Code (Visual Studio Code)** is the industry standard. It is free, highly customizable, and supports almost every language.
+*   **Version Control (Git & GitHub):** Think of Git as "Track Changes" on steroids. It allows you to save versions of your code, experiment without fear of breaking your work, and collaborate with others.
+
+### 6. Embrace the "Debugging" Mindset
+In academia, a failed experiment or a rejected hypothesis is still data. In programming, **errors are not failures; they are feedback.** 
+
+You will spend 70% of your time "debugging" (fixing broken code). Learning how to read error messages, search for solutions on forums like Stack Overflow, and systematically isolate variables to find a bug is the core intellectual discipline of computer science.
+
+### A Suggested 3-Month Plan:
+*   **Month 1:** Complete the Python track on a platform like Exercism or the first few weeks of Harvard's CS50. Focus on syntax and basic logic.
+*   **Month 2:** Transition to VS Code on your local machine. Begin writing small, single-file scripts to automate minor tasks. Learn the basics of Git.
+*   **Month 3:** Define one medium-sized project relevant to your research or daily life and build it from scratch, using documentation and search engines to bridge the gaps in your knowledge.

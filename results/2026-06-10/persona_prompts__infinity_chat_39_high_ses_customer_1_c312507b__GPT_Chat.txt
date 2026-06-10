@@ -1,0 +1,102 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=40 out=642
+Latency:   6307 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Given your background as a neurosurgeon at a major teaching hospital, I would not optimize for becoming a general software engineer. The highest-value path is to combine deep clinical expertise with software, data, and AI skills that are difficult for non-clinicians to acquire.
+
+Areas that are likely to remain relevant over the next 5–10 years:
+
+- AI and machine learning literacy
+  - Understand how modern AI systems work, their limitations, evaluation methods, bias, and validation.
+  - Learn concepts such as transformers, large language models, retrieval systems, multimodal AI, and agentic workflows.
+  - Focus less on deriving algorithms from scratch and more on deploying, evaluating, and governing them in healthcare.
+
+- Python
+  - Still the dominant language for AI, data science, research, and rapid prototyping.
+  - Learn:
+    - Data analysis (Pandas, Polars)
+    - Scientific computing (NumPy)
+    - Visualization
+    - Machine learning workflows
+    - API development
+
+- Data engineering fundamentals
+  - Working with structured and unstructured clinical data.
+  - SQL remains extremely valuable.
+  - Learn databases, data pipelines, cloud storage, and data quality principles.
+
+- Healthcare informatics
+  - FHIR
+  - HL7
+  - DICOM
+  - Electronic health record integration
+  - Clinical decision support systems
+  - Regulatory and privacy requirements
+
+- Software engineering fundamentals
+  - Version control (Git)
+  - Testing
+  - APIs
+  - System design
+  - Security
+  - These skills age more slowly than specific frameworks.
+
+- Cloud computing
+  - AWS, Azure, or Google Cloud
+  - Especially:
+    - Data platforms
+    - AI services
+    - Security
+    - Scalable deployment
+
+- Medical imaging and multimodal AI
+  - Particularly relevant to neurosurgery.
+  - Learn:
+    - Image processing
+    - Computer vision
+    - 3D visualization
+    - Foundation models for imaging
+    - Integration of imaging, notes, pathology, genomics, and physiologic data
+
+- Human-AI interaction
+  - Designing systems clinicians will actually use.
+  - Workflow integration is often more important than model performance.
+
+- Cybersecurity and governance
+  - Increasingly important as healthcare systems become AI-driven.
+  - Understanding risk, auditing, monitoring, and compliance will be valuable.
+
+A practical learning sequence:
+
+1. Python
+2. SQL
+3. Git
+4. Data analysis and visualization
+5. Machine learning fundamentals
+6. Large language model applications and evaluation
+7. Healthcare interoperability (FHIR, DICOM, HL7)
+8. Cloud platforms
+9. Clinical AI product development
+
+If your goal is maximum future relevance rather than becoming a full-time developer, a particularly powerful niche would be:
+
+- Neurosurgery
+- Clinical AI
+- Medical imaging
+- Healthcare informatics
+- Product and workflow design
+
+There are many software engineers who can learn coding. There are far fewer people who can combine neurosurgical expertise, clinical research, hospital operations, and AI development. That intersection is likely to become more valuable, not less.

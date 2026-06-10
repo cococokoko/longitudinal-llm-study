@@ -1,0 +1,50 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_30_low_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=35 out=325
+Latency:   8154 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Great question! Here's a straightforward approach to get started:
+
+## Choose Your First Language
+- **Python** is widely recommended for beginners - readable and versatile
+- **JavaScript** is good if you're interested in web development
+- Pick one and stick with it initially
+
+## Start with Free Resources
+- **freeCodeCamp.org** - structured, project-based
+- **The Odin Project** - comprehensive web dev path
+- **CS50** (Harvard's free course) - solid fundamentals
+- **Codecademy** - interactive and beginner-friendly
+
+## Build Good Habits Early
+- Code **a little every day** rather than long occasional sessions
+- Actually type the code, don't just read it
+- Try to break and fix things on purpose
+- Keep notes on what you learn
+
+## Practical Tips
+- Start with small, simple projects
+- Google errors freely - everyone does this
+- Join communities like Reddit's r/learnprogramming
+- Don't try to learn everything at once
+
+## Realistic Expectations
+- Frustration is normal and part of the process
+- Progress feels slow at first, then accelerates
+- Most people can build basic things within a few months of consistent practice
+
+**Given your work schedule**, even 20-30 minutes daily on a phone app like **Mimo** or **Grasshopper** can build real momentum without requiring long sessions.
+
+What kind of things are you hoping to build or do with coding?

@@ -1,0 +1,132 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=20 out=681
+Latency:   5709 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to stay relevant over the next 5–10+ years, focus less on specific frameworks and more on durable skills that transfer across technology shifts.
+
+A useful way to think about it:
+
+1. Master computer science fundamentals
+These remain valuable regardless of trends.
+
+- Data structures and algorithms
+- Time and space complexity
+- Networking fundamentals (HTTP, TCP/IP, DNS)
+- Operating systems concepts
+- Databases (SQL and data modeling)
+- Distributed systems basics
+- Security fundamentals
+
+Why: Frameworks change every few years. Fundamental concepts often remain relevant for decades.
+
+2. Become strong at software engineering, not just coding
+Many developers can write code. Fewer can build and maintain systems.
+
+- System design
+- Software architecture
+- Testing strategies
+- Debugging
+- Code review
+- Performance optimization
+- Reliability and observability
+- Documentation
+
+Why: As AI generates more code, the ability to evaluate, structure, and maintain systems becomes increasingly important.
+
+3. Learn AI and machine learning literacy
+You do not necessarily need to become an ML researcher.
+
+Focus on:
+- How LLMs work at a high level
+- Prompt engineering
+- AI-assisted development workflows
+- Retrieval-augmented generation (RAG)
+- AI agents and tool use
+- Model evaluation
+- AI safety and security concerns
+
+Why: AI is becoming part of nearly every software stack.
+
+4. Develop cloud and infrastructure skills
+Modern software increasingly runs in distributed environments.
+
+Learn:
+- Cloud platforms (AWS, Azure, or Google Cloud)
+- Docker
+- Kubernetes basics
+- CI/CD pipelines
+- Infrastructure as code
+- Monitoring and logging
+
+Why: Infrastructure knowledge is becoming part of mainstream development.
+
+5. Learn how to work with data
+Data skills are useful across many domains.
+
+- SQL at an advanced level
+- Data pipelines
+- Data modeling
+- Analytics
+- Basic statistics
+- Data engineering concepts
+
+Why: Organizations run on data, and AI systems depend on it.
+
+6. Improve communication and business understanding
+This is often underestimated.
+
+- Writing clearly
+- Explaining technical ideas
+- Understanding user needs
+- Product thinking
+- Stakeholder communication
+- Project planning
+
+Why: The most valuable engineers solve business problems, not just technical problems.
+
+7. Build expertise in a domain
+General software skills are powerful, but domain expertise creates differentiation.
+
+Examples:
+- Healthcare
+- Finance
+- Cybersecurity
+- Robotics
+- Manufacturing
+- Scientific computing
+- Education technology
+
+Why: Deep domain knowledge is harder to automate than coding alone.
+
+Areas likely to have strong demand in the coming years:
+- AI engineering
+- Cybersecurity
+- Cloud infrastructure
+- Data engineering
+- Developer tools
+- Robotics and automation
+- Distributed systems
+- Privacy and compliance technology
+- Edge computing and IoT
+
+If I were starting today, I would prioritize:
+1. Programming fundamentals (Python, JavaScript, or Java)
+2. Data structures and algorithms
+3. Databases and SQL
+4. System design
+5. Cloud and Docker
+6. AI-assisted development and LLMs
+7. Building real projects
+8. Communication and product skills
+
+The developers who remain most valuable will likely be those who can combine technical depth, AI tools, system-level thinking, and an understanding of real-world business or domain problems.

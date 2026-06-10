@@ -1,0 +1,58 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_high_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=43 out=351
+Latency:   8378 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+# STEM Fair Project Ideas Related to Vietnam
+
+Here are some compelling options, then I'll detail the strongest one:
+
+---
+
+## 🏆 Top Recommendation: **Biochar Water Filtration from Agricultural Waste**
+
+### The Problem
+Vietnam is one of the world's largest rice producers, generating **massive amounts of rice husk waste**. Simultaneously, rural communities face **serious drinking water contamination** (arsenic, heavy metals, bacteria).
+
+### The Project
+**Convert rice husks into biochar filters** to remove contaminants from water samples.
+
+### What Students Do
+- Pyrolyze rice husks at controlled temperatures (simple kiln setup)
+- Test biochar's ability to remove:
+  - Turbidity
+  - Heavy metals (lead, arsenic)
+  - pH imbalance
+- Compare against commercial filters
+- Measure cost per liter of clean water
+
+### Why It's Excellent
+| Factor | Details |
+|--------|---------|
+| **Cost** | ~$20-50 total |
+| **Relevance** | Mekong Delta water crisis is urgent |
+| **Disciplines** | Chemistry, Environmental Science, Engineering |
+| **Originality** | Real publishable research potential |
+
+---
+
+## Other Strong Options
+- **Mangrove restoration modeling** (coastal erosion)
+- **Air quality sensors** for Hanoi/HCMC pollution mapping
+- **Dengue mosquito breeding prediction** using climate data
+
+---
+
+Would you like a **detailed experimental design** for any of these?

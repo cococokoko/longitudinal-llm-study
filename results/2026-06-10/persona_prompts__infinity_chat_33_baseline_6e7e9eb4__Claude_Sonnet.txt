@@ -1,0 +1,114 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=34 out=741
+Latency:   23958 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need
+- Microsoft Surface (any model)
+- Dolphin Emulator installed (from **dolphin-emu.org**)
+- Wii game files (ISO/WBFS format - must be from games you legally own)
+
+---
+
+## Step 1: Install Dolphin
+1. Go to **dolphin-emu.org/download**
+2. Download the latest stable or beta version
+3. Run the installer and follow the prompts
+
+---
+
+## Step 2: Configure Dolphin for Touch/Touchpad Use
+
+### Open Controller Settings
+- Launch Dolphin
+- Click **Controllers** in the top toolbar
+
+### For Wii Remote Emulation
+1. Under **Wiimotes**, set **Wiimote 1** to **Emulated Wiimote**
+2. Click **Configure**
+
+---
+
+## Step 3: Map Your Controls
+
+### Using the Touchpad
+In the Wiimote configuration window:
+
+| Wii Action | Touchpad Mapping |
+|---|---|
+| D-Pad | Arrow keys or WASD |
+| A Button | Left click |
+| B Button | Right click |
+| + / - | Keyboard keys |
+
+### Recommended Keyboard Mappings
+- You can assign any key by **clicking a button slot** then **pressing your desired key**
+
+---
+
+## Step 4: Enable the On-Screen Keyboard
+
+### Windows On-Screen Keyboard
+1. Go to **Settings → Accessibility → Keyboard**
+2. Toggle **On-Screen Keyboard** ON
+- Or press **Windows + Ctrl + O**
+
+### Keeping It Accessible
+- Resize and position the keyboard so it doesn't cover the game
+- Consider using **tablet mode** on your Surface
+
+---
+
+## Step 5: Touch Screen Tips
+
+### Enable Touch Input in Dolphin
+- Dolphin doesn't natively support touch as game input
+- However your **touchpad gestures** work as mouse input which maps to controls
+
+### Practical Setup
+- Use **one side of screen** for the game
+- Keep **on-screen keyboard** docked at the bottom
+- Use **two-finger scroll** on touchpad for certain actions
+
+---
+
+## Step 6: Performance Tips for Surface
+
+- Go to **Graphics Settings** in Dolphin
+- Set backend to **Direct3D 12** for better Surface performance
+- Lower internal resolution if needed (1x or 1.5x)
+- Enable **Dual Core** in Config → General
+
+---
+
+## Recommended Games for This Setup
+Games that work well with limited controls:
+- **Simple platformers**
+- **Turn-based games**
+- **Point-and-click style games**
+
+---
+
+## Troubleshooting
+
+| Problem | Solution |
+|---|---|
+| Low FPS | Lower resolution, close background apps |
+| Controls not responding | Re-map in controller settings |
+| On-screen keyboard disappears | Pin it using the taskbar |
+| Game won't load | Check file format (ISO/WBFS/RVZ) |
+
+---
+
+Would you like help with a **specific game's control mapping** or more detail on any of these steps?

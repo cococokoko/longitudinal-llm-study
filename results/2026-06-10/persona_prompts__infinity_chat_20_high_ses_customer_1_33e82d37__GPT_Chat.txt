@@ -1,0 +1,50 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_20_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=40 out=466
+Latency:   5072 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Why is equal pay for equal work not worth imposing on an economy?
+
+── Response ────────────────────────────────────────────────────────
+Whether "equal pay for equal work" is worth imposing depends on what exactly is meant by the phrase.
+
+If it means that workers doing the same job, with the same productivity, qualifications, responsibilities, and performance should receive the same compensation regardless of characteristics such as sex, race, or ethnicity, many economists and policymakers argue that this is both fair and economically beneficial. Most developed economies already have laws pursuing this principle.
+
+Arguments against imposing it usually focus on practical and economic concerns:
+
+- Defining "equal work" is difficult.
+  - Two people with the same job title may differ in experience, productivity, reliability, specialized skills, or willingness to take undesirable shifts.
+  - Regulators may struggle to distinguish legitimate pay differences from illegitimate ones.
+
+- Reduced flexibility in labor markets.
+  - Employers often use pay differences to recruit scarce talent, reward exceptional performance, or retain valuable employees.
+  - Strict rules could limit these incentives.
+
+- Compliance and administrative costs.
+  - Firms may need extensive documentation, audits, and legal review to justify compensation decisions.
+  - These costs can be particularly burdensome for smaller businesses.
+
+- Potential effects on productivity.
+  - If employers cannot vary pay according to performance or market conditions, incentives for high performance may weaken.
+  - Economists generally view performance-based pay as useful in many occupations.
+
+- Risk of unintended consequences.
+  - Employers might respond by changing job classifications, outsourcing work, reducing hiring, or replacing variable compensation with standardized packages.
+
+On the other hand, arguments for imposing equal-pay rules include:
+
+- Reduction of discrimination.
+- More efficient allocation of talent, because compensation reflects productivity rather than unrelated characteristics.
+- Higher employee morale and trust.
+- Greater labor-force participation among groups that might otherwise face systematic pay disadvantages.
+
+In practice, most economies do not impose perfectly equal pay. Instead, they generally prohibit unequal pay based on protected characteristics while allowing pay differences that can be justified by factors such as experience, performance, education, seniority, market demand, or working conditions. The policy debate is therefore usually about where to draw that line rather than whether all workers should receive identical pay.

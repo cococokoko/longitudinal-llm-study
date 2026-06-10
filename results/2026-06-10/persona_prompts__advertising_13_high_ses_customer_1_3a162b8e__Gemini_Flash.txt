@@ -1,0 +1,96 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_13_high_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=23 out=1540
+Latency:   10665 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Mastering the art of cooking steak.
+
+── Response ────────────────────────────────────────────────────────
+For someone accustomed to the high-stakes, millimeter-precision environment of a neurosurgical OR, mastering the steak is a highly satisfying pursuit. It is a process governed by thermodynamics, biochemistry, and precise tactile feedback. 
+
+Just as you would approach a complex cranial procedure, mastering the steak requires understanding the anatomy of the cut, controlling the micro-environment, and executing with deliberate, measured technique.
+
+Here is the clinical protocol for mastering the steak.
+
+---
+
+### Phase I: Pre-Operative Preparation (Anatomy & Selection)
+
+The outcome of your procedure is largely determined by your patient selection. 
+
+1. **The Cut (Anatomy):** 
+   * **Ribeye (Spinalis dorsi & Longissimus dorsi):** High intramuscular fat (marbling). The *spinalis* (the cap) is the most tender, flavorful muscle on the steer. This cut is forgiving due to its high lipid content.
+   * **New York Strip (Longissimus dorsi):** A single, uniform muscle. Lower fat content than a ribeye, offering a beefier flavor but requiring tighter temperature control to prevent drying.
+   * **Filet Mignon (Psoas major):** Extremely tender due to lack of weight-bearing stress, but virtually devoid of fat and intramuscular flavor. Requires external fat (butter basting) to shine.
+2. **Thickness:** Never work with a specimen under **1.5 inches (3.8 cm)**. Thin cuts cook to the center before you can establish a proper external crust, leading to overpenetration of heat.
+3. **Dry Brining (Osmotic Prep):** 
+   * **Protocol:** Salt the steak generously with kosher salt 12 to 24 hours before cooking. Place it on a wire rack uncovered in the refrigerator.
+   * **Mechanism:** Salt draws out moisture via osmosis. The salt dissolves in this moisture, creating a concentrated brine which then re-enters the muscle fibers via diffusion, seasoning the meat internally and breaking down tight protein structures. The refrigerator air dehydrates the surface, creating a dry exterior pellicle—essential for a rapid Maillard reaction.
+
+---
+
+### Phase II: The Surgical Instruments
+
+* **The Vessel:** Cast iron or carbon steel. You need high thermal mass. When a cold piece of meat hits the pan, you do not want the surface temperature of the pan to plummet.
+* **The Probe (The Monitor):** A high-speed digital instant-read thermometer (e.g., Thermapen). Visual and tactile cues are subjective; telemetry is objective.
+* **The Fat:** An oil with a high smoke point (avocado, grapeseed, or clarified butter/ghee). Avoid extra virgin olive oil or standard butter early on; their solids burn at low temperatures.
+
+---
+
+### Phase III: The Procedure (The Reverse Sear)
+
+For thick cuts ($\ge 1.5$ inches), the traditional "hot pan first" method creates a steep thermal gradient: a charred exterior, a band of overcooked grey meat, and a cold red center. 
+
+To achieve a uniform, edge-to-edge pink wall (minimal "grey band"), use the **Reverse Sear**—the culinary equivalent of a controlled, slow-infusion protocol.
+
+#### Step 1: The Low-Temperature Desiccation (The Bake)
+* Heat your oven (or smoker) to **225°F (107°C)**.
+* Insert a probe thermometer into the geometric center of the steak.
+* Place the steak on a wire rack. Bake until the internal temperature reaches **115°F (46°C)** for a target of Medium-Rare. 
+* *Note: The surface of the meat will look dry and unappealing. This is optimal; surface moisture is the enemy of a sear.*
+
+#### Step 2: The Intermission (Resting)
+* Remove the steak and let it rest on a cutting board for 10 minutes. 
+* *Why now?* This allows the internal pressure to equalize and the surface temperature to drop slightly, preventing the upcoming high-heat phase from overcooking the core.
+
+#### Step 3: The High-Heat Reconstruction (The Sear & Baste)
+* Heat your cast-iron skillet until it is just beginning to smoke (approx. **450°F–500°F / 230°C–260°C**). Add 1 tablespoon of high-smoke-point oil.
+* Lay the steak in the pan away from you to avoid oil displacement.
+* **The Maillard Reaction:** Sear for 60 seconds, then flip. 
+* **The Baste (Arrosé):** Immediately turn the heat down to medium. Add 3 tablespoons of unsalted butter, 2 crushed cloves of garlic, and a sprig of rosemary or thyme to the pan. 
+* Tilt the pan slightly and use a large spoon to continuously pool and ladle the hot, foaming butter over the top of the steak. This bathes the meat in convective heat, rendering any remaining surface fat and imparting a rich, nutty flavor.
+* Flip once more, basting the other side for 30–45 seconds.
+
+#### Step 4: Hemostasis (The Target Temps)
+Pull the steak when the internal temperature hits **130°F (54°C)**. Carryover cooking will bring it to its final destination of **135°F (57°C)** (Perfect Medium-Rare).
+
+* **Rare:** Pull at 120°F (Final: 125°F / 52°C)
+* **Medium-Rare:** Pull at 130°F (Final: 135°F / 57°C)
+* **Medium:** Pull at 140°F (Final: 145°F / 63°C)
+
+---
+
+### Phase IV: Post-Operative Care (The Cut)
+
+Because you utilized the Reverse Sear, the thermal gradient is low, meaning the muscle fibers did not contract violently at the end. You only need to rest the meat for 3 to 5 minutes.
+
+* **The Incision:** Identify the direction of the muscle fibers (the grain). Slice **perpendicular (against) the grain**. This mechanically shortens the muscle fibers, making each bite significantly more tender to chew.
+* **Final Dressing:** Finish with a coarse flake salt (like Maldon) to provide a clean, crunchy contrast to the rich, tender interior. 
+
+### Troubleshooting (Complications & Management)
+
+* **Complication: The "Grey Band" (Overpenetration of heat).**
+  * *Cause:* Pan wasn't hot enough (requiring the steak to sit in the pan too long to get a crust), or the steak was too wet when it hit the pan.
+  * *Correction:* Ensure absolute surface dryness pre-sear. Increase pan temperature; decrease sear time.
+* **Complication: Curling of the steak.**
+  * *Cause:* The exterior band of connective tissue (elastin/collagen) contracted faster than the muscle.
+  * *Correction:* Prior to cooking, make small, shallow relief incisions through the fat cap and silver skin at 1-inch intervals.

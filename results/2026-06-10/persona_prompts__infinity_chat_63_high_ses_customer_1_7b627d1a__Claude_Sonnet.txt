@@ -1,0 +1,65 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=469
+Latency:   15146 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## Setup
+
+Consider a patient's **intracranial pressure (ICP)** modeled as a function of two variables:
+
+$$P(V, R) = \frac{V^2}{R} + 3V$$
+
+where:
+- **V** = cerebrospinal fluid volume (mL)
+- **R** = compliance resistance (arbitrary units)
+
+---
+
+## Computing the Partial Derivatives
+
+### ∂P/∂V (holding R constant)
+
+$$\frac{\partial P}{\partial V} = \frac{2V}{R} + 3$$
+
+**At the point V = 4, R = 2:**
+
+$$\frac{\partial P}{\partial V} = \frac{2(4)}{2} + 3 = 4 + 3 = \boxed{7}$$
+
+> *Interpretation: If R is held fixed at 2, each additional 1 mL of CSF volume increases ICP by approximately **7 units**.*
+
+---
+
+### ∂P/∂R (holding V constant)
+
+$$\frac{\partial P}{\partial R} = -\frac{V^2}{R^2}$$
+
+**At the point V = 4, R = 2:**
+
+$$\frac{\partial P}{\partial R} = -\frac{16}{4} = \boxed{-4}$$
+
+> *Interpretation: If V is held fixed at 4 mL, each unit increase in compliance resistance **decreases** ICP by approximately **4 units**.*
+
+---
+
+## Key Insight
+
+| What changes | What's frozen | Effect on P |
+|---|---|---|
+| Volume V | Resistance R | +7 per unit V |
+| Resistance R | Volume V | −4 per unit R |
+
+The partial derivative isolates **one variable's contribution** while treating all others as constants — exactly like asking *"what happens to ICP if only this one factor changes?"*

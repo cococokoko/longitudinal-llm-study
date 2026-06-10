@@ -1,0 +1,30 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q284
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=206 out=61
+Latency:   1203 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Are you working for the government or public institution, for private business or industry, or for a private non-profit organization? If you do not work currently, characterize your major work in the past. Do you or did you work for:
+
+Options:
+A. Government or public institution
+B. Private business or industry
+C. Private non-profit organization
+D. Don't know
+E. No answer/refused
+F. Not applicable (filter)
+G. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 1.0, "G": 0.0}
+```

@@ -1,0 +1,35 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_high_ses_customer_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=158
+Latency:   1732 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+Subject: Catch-Up and Opportunity to Connect
+
+Hi [Referral Partner Name],
+
+I hope you're doing well. It has been a while since we last connected, and I wanted to reach out to see if you might be available for a catch-up in the coming weeks.
+
+I would welcome the opportunity to hear what has been keeping you busy, discuss any developments in your practice, and share a few updates from our side. It's always valuable to stay in touch and explore ways we can continue supporting one another and our clients.
+
+If you are available, I would be happy to meet in person or schedule a call at a time that is convenient for you.
+
+I look forward to catching up.
+
+Best regards,
+
+[Your Name]
+[Title]
+[Firm Name]
+[Contact Information]

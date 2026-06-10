@@ -1,0 +1,30 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q119
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=204 out=133
+Latency:   5501 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Can you tell me how strongly you agree or disagree with the following statement: "on the whole, women are less corrupt than men"?
+
+Options:
+A. Strongly agree
+B. Agree
+C. Disagree
+D. Strongly disagree
+E. Hard to say
+F. Don't know
+G. No answer/refused
+H. Not applicable (filter)
+I. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.02, "B": 0.18, "C": 0.18, "D": 0.02, "E": 0.58, "F": 0.02, "G": 0.0, "H": 0.0, "I": 0.0}

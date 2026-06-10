@@ -1,0 +1,38 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q108
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=374 out=115
+Latency:   2036 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Now I'd like you to tell me your views on various issues. How would you place your views on this scale? 1 means you agree completely with the statement on the left; 10 means you agree completely with the statement on the right; and if your views fall somewhere in between, you can choose any number in between.
+
+Left statement: Government should take more responsibility to ensure that everyone is provided for
+Right statement: People should take more responsibility to provide for themselves
+
+Options:
+A. 1 - Government should take more responsibility to ensure that everyone is provided for
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. 10 - People should take more responsibility to provide for themselves
+K. Don't know
+L. No answer/refused
+M. Not applicable (filter)
+N. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.05, "B": 0.07, "C": 0.10, "D": 0.12, "E": 0.18, "F": 0.15, "G": 0.13, "H": 0.10, "I": 0.06, "J": 0.04, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0}

@@ -1,0 +1,168 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=23 out=1553
+Latency:   9088 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, you likely appreciate structured systems, logical workflows, and iterative testing. Scratch is an excellent, highly visual environment that allows you to prototype game mechanics rapidly using event-driven, block-based programming. 
+
+Here is a comprehensive, step-by-step guide to building a 2D top-down zombie survival game on Scratch, structured like a research protocol.
+
+---
+
+### Phase 1: The "Clinical Trial" (Setup & Core Mechanics)
+
+To start, we need a top-down perspective (looking down on the player's head and shoulders). This makes 360-degree movement and aiming much easier to program.
+
+#### 1. The Player Sprite (The "Host")
+Create a sprite (either draw a simple circle with a gun/hands pointing right, or choose one from the library).
+*   **Movement Logic:** We want the player to move with the WASD keys and face the mouse pointer.
+*   **Scratch Code:**
+    ```scratch
+    when green flag clicked
+    forever
+        point towards [mouse-pointer v]
+        if <key [w v] pressed?> then
+            change y by (4)
+        end
+        if <key [s v] pressed?> then
+            change y by (-4)
+        end
+        if <key [d v] pressed?> then
+            change x by (4)
+        end
+        if <key [a v] pressed?> then
+            change x by (-4)
+        end
+    end
+    ```
+
+#### 2. The Projectile (The "Treatment")
+Create a small sprite (a yellow dot or line) for the bullet.
+*   **Logic:** The bullet should spawn at the player, point in the direction the player is facing, and travel forward until it hits the edge of the screen or a zombie. We use **Clones** to allow multiple bullets.
+*   **Scratch Code (On the Bullet Sprite):**
+    ```scratch
+    when green flag clicked
+    hide
+    forever
+        if <mouse down?> then
+            create clone of [myself v]
+            wait (0.2) secs // Rate of fire
+        end
+    end
+
+    when I start as a clone
+    go to [Player v]
+    point in direction ([direction v] of [Player v])
+    show
+    repeat until <<touching [edge v]?> or <touching [Zombie v]?>>
+        move (10) steps
+    end
+    delete this clone
+    ```
+
+---
+
+### Phase 2: The "Pathogen" (Zombie AI & Spawning)
+
+To simulate an outbreak, we need zombies that spawn at the edges of the screen and track the player.
+
+#### 1. The Zombie Sprite
+Create a zombie sprite facing to the right.
+*   **Logic:** We will use clones to spawn zombies at random intervals at the screen's boundaries, which then constantly move toward the player's coordinates.
+*   **Scratch Code (On the Zombie Sprite):**
+    ```scratch
+    when green flag clicked
+    hide
+    forever
+        wait (pick random (1) to (3)) secs // Spawn rate
+        create clone of [myself v]
+    end
+
+    when I start as a clone
+    // Spawn at a random edge
+    go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180))
+    // Ensure they don't spawn right on top of the player
+    if <(distance to [Player v]) < [100]> then
+        go to x: (240) y: (180) 
+    end
+    show
+    forever
+        point towards [Player v]
+        move (1.5) steps // Zombie speed (slower than player)
+        
+        // Collision with Bullet
+        if <touching [Bullet v]?> then
+            // Add to score/kill count here
+            change [Kills v] by (1)
+            delete this clone
+        end
+    end
+    ```
+
+---
+
+### Phase 3: "Homeostasis" (Variables & Game Loop)
+
+Now we must introduce variables to track the state of the game: `Health` (the player's viability) and `Kills` (the score).
+
+1.  Go to **Variables** and click "Make a Variable".
+    *   Create `Health` (for all sprites).
+    *   Create `Kills` (for all sprites).
+
+#### 1. Player Damage Logic
+Add this script to your **Player Sprite** to handle taking damage and the "Game Over" state.
+```scratch
+when green flag clicked
+set [Health v] to (100)
+set [Kills v] to (0)
+forever
+    if <touching [Zombie v]?> then
+        change [Health v] by (-10)
+        wait (0.5) secs // Immunity frames so health doesn't instantly drop to 0
+    end
+    if <(Health) < [1]> then
+        broadcast [Game Over v]
+        stop [all v]
+    end
+end
+```
+
+#### 2. Game Over Screen
+Create a new sprite that is a black screen with "GAME OVER" written in red.
+```scratch
+when green flag clicked
+hide
+
+when I receive [Game Over v]
+go to front layer
+show
+```
+
+---
+
+### Phase 4: "Advanced Pathology" (Polishing & Scaling)
+
+Once the basic loop works, you can apply your scientific mindset to "mutate" the game and make it more complex:
+
+1.  **Epidemiology (Waves):** 
+    Create a `Wave` variable. Every 10 kills, increase the `Wave` by 1, and use the `Wave` variable to decrease the zombie spawn wait time (e.g., `wait (3 / Wave) seconds`). This simulates an exponential growth curve of the infection.
+2.  **Antibiotic Resistance (Zombie Types):**
+    Create a "Fast Zombie" (low health, high speed) and a "Tank Zombie" (high health, slow speed). You can achieve this by creating a local variable `Zombie_HP` (for "this sprite only") and setting it to different values when clones spawn.
+3.  **Resource Scarcity (Ammo Mechanic):**
+    Introduce an `Ammo` variable. The player starts with 30 bullets. When `Ammo` = 0, they cannot shoot and must walk over a "Supply Crate" sprite that spawns randomly to reload.
+
+### How to Start Right Now:
+1. Go to [scratch.mit.edu](https://scratch.mit.edu/) and click **Create**.
+2. You don't need to draw complex art initially. Use a blue circle for the player, a green circle for the zombie, and a yellow circle for the bullet. 
+3. Copy the code blocks above. Scratch blocks are color-coded (e.g., Control is Orange, Sensing is Light Blue, Motion is Dark Blue), making them highly intuitive to find.

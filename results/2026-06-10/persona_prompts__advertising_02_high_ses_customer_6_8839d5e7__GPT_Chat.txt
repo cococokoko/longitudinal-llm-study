@@ -1,0 +1,57 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_02_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=445
+Latency:   3743 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+For dry skin, the goal is to protect and repair the skin barrier while minimizing irritation and water loss. A simple, consistent routine is often more effective than a complicated one.
+
+Morning:
+- Gentle cleanser (or just rinse with lukewarm water if your skin feels comfortable)
+  - Look for non-foaming, hydrating cleansers with ingredients like glycerin or ceramides.
+- Moisturizer
+  - Choose a cream rather than a lightweight lotion if your skin is very dry.
+  - Helpful ingredients: ceramides, glycerin, hyaluronic acid, squalane, shea butter.
+- Sunscreen (SPF 30+)
+  - Daily sunscreen is important even for dry skin.
+  - Many moisturizing sunscreens work well and can reduce the number of products you need.
+
+Evening:
+- Gentle cleanser
+  - Remove sunscreen and any makeup without harsh scrubbing.
+- Moisturizer
+  - Apply while skin is still slightly damp.
+- Optional: occlusive layer if very dry
+  - A thin layer of petrolatum-based ointment over moisturizer can help lock in hydration overnight.
+
+Helpful ingredients:
+- Ceramides: support the skin barrier.
+- Glycerin: attracts water into the skin.
+- Hyaluronic acid: hydrates; works best when followed by moisturizer.
+- Squalane: lightweight emollient.
+- Colloidal oatmeal: can soothe dryness and irritation.
+- Urea (low concentrations): hydrates and softens rough skin.
+
+Things to avoid or limit:
+- Hot showers.
+- Harsh exfoliants or frequent scrubs.
+- Alcohol-heavy products that leave skin feeling tight.
+- Over-cleansing (especially multiple times per day).
+
+Example simple routine:
+- Morning: hydrating cleanser → moisturizer → SPF 30+ sunscreen.
+- Evening: hydrating cleanser → rich moisturizer.
+- If still dry: add a petrolatum ointment as the final step at night.
+
+If you also have symptoms such as significant redness, itching, flaking, eczema, or sensitivity, the ideal routine may differ. In that case, sharing your age, skin sensitivity, climate, and budget can help narrow down specific product recommendations.

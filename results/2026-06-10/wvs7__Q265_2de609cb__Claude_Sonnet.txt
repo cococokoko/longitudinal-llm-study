@@ -1,0 +1,27 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q265
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=169 out=51
+Latency:   10874 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Is your father an immigrant to this country or not?
+
+Options:
+A. Born in this country
+B. Immigrant to this country (born outside this country)
+C. Don't know
+D. No answer/refused
+E. Not applicable (filter)
+F. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.7, "B": 0.15, "C": 0.05, "D": 0.03, "E": 0.05, "F": 0.02}

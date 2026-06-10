@@ -1,0 +1,30 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q44
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=211 out=136
+Latency:   1585 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I'm going to read out a list of various changes in our way of life that might take place in the near future. Please tell me for each one, if it were to happen, whether you think it would be a good thing, a bad thing, or don't you mind?
+
+More emphasis on the development of technology
+
+Options:
+A. Good
+B. Don't mind
+C. Bad
+D. Don't know
+E. No answer/refused
+F. Not applicable (filter)
+G. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.8, "B": 0.15, "C": 0.03, "D": 0.02, "E": 0.0, "F": 0.0, "G": 0.0}

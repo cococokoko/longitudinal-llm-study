@@ -1,0 +1,102 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1100
+Latency:   6050 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+To understand a partial derivative, it helps to think of a scenario where an outcome depends on **more than one variable**. 
+
+A **partial derivative** measures how the outcome changes when you vary *only one* of those variables, while keeping all the other variables completely constant.
+
+Here is a simple, real-world numerical example.
+
+---
+
+### The Scenario: The Area of a Rectangle
+The area ($A$) of a rectangle depends on two variables: its **length ($L$)** and its **width ($W$)**. 
+
+The formula is:
+$$A(L, W) = L \times W$$
+
+Let’s start with a specific rectangle where:
+*   **Length ($L$) = 10 cm**
+*   **Width ($W$) = 5 cm**
+
+At this starting point, the Area is:
+$$A = 10 \times 5 = 50\text{ cm}^2$$
+
+---
+
+### 1. Partial Derivative with respect to Length ($\frac{\partial A}{\partial L}$)
+
+This asks: **"If we keep the width ($W$) frozen at 5 cm, how fast does the area change if we slightly increase the length ($L$)?"**
+
+Mathematically, we treat $W$ as a constant number (5). 
+*   The formula becomes: $A = L \times 5$ (or $5L$).
+*   The derivative of $5L$ with respect to $L$ is simply **$5$**.
+
+So, the partial derivative is:
+$$\frac{\partial A}{\partial L} = W = 5$$
+
+#### The Numerical Proof:
+Let’s increase the length ($L$) by a tiny amount, say **$0.1\text{ cm}$** (from 10 to 10.1), while keeping the width ($W$) strictly at **$5\text{ cm}$**.
+
+*   New Length ($L$) = 10.1 cm
+*   New Width ($W$) = 5.0 cm
+*   New Area = $10.1 \times 5 = 50.5\text{ cm}^2$
+
+**The Change:**
+*   Change in Length ($\Delta L$) = $0.1\text{ cm}$
+*   Change in Area ($\Delta A$) = $50.5 - 50 = 0.5\text{ cm}^2$
+
+**The Rate of Change:**
+$$\frac{\text{Change in Area}}{\text{Change in Length}} = \frac{0.5}{0.1} = 5$$
+
+This matches our partial derivative of **5**. It means that at this specific size, for every 1 cm we add to the length, the area will increase by 5 $\text{cm}^2$.
+
+---
+
+### 2. Partial Derivative with respect to Width ($\frac{\partial A}{\partial W}$)
+
+Now we ask the opposite: **"If we keep the length ($L$) frozen at 10 cm, how fast does the area change if we slightly increase the width ($W$)?"**
+
+This time, we treat $L$ as a constant number (10).
+*   The formula becomes: $A = 10 \times W$ (or $10W$).
+*   The derivative of $10W$ with respect to $W$ is **$10$**.
+
+So, the partial derivative is:
+$$\frac{\partial A}{\partial W} = L = 10$$
+
+#### The Numerical Proof:
+Let’s increase the width ($W$) by **$0.1\text{ cm}$** (from 5 to 5.1), while keeping the length ($L$) strictly at **$10\text{ cm}$**.
+
+*   New Length ($L$) = 10.0 cm
+*   New Width ($W$) = 5.1 cm
+*   New Area = $10 \times 5.1 = 51.0\text{ cm}^2$
+
+**The Change:**
+*   Change in Width ($\Delta W$) = $0.1\text{ cm}$
+*   Change in Area ($\Delta A$) = $51 - 50 = 1.0\text{ cm}^2$
+
+**The Rate of Change:**
+$$\frac{\text{Change in Area}}{\text{Change in Width}} = \frac{1.0}{0.1} = 10$$
+
+This matches our partial derivative of **10**. It means that at this specific size, for every 1 cm we add to the width, the area will increase by 10 $\text{cm}^2$.
+
+---
+
+### Summary
+
+At the point $(L=10, W=5)$:
+*   $\frac{\partial A}{\partial L} = 5$ (Changing length has a moderate effect on area).
+*   $\frac{\partial A}{\partial W} = 10$ (Changing width has twice as much effect on area).
+
+By calculating **partial derivatives**, we can analyze the influence of each variable independently.

@@ -1,0 +1,36 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q283
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=464 out=123
+Latency:   2337 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: When you were 14, to which of the following occupational groups did your father belong?
+
+Options:
+A. Professional and technical (for example: doctor, teacher, engineer, artist, accountant, nurse)
+B. Higher administrative (for example: banker, executive in big business, high government official, union official)
+C. Clerical (for example: secretary, clerk, office manager, civil servant, bookkeeper)
+D. Sales (for example: sales manager, shop owner, shop assistant, insurance agent, buyer)
+E. Service (for example: restaurant owner, police officer, waitress, barber, caretaker)
+F. Skilled worker (for example: foreman, motor mechanic, printer, seamstress, tool and die maker, electrician)
+G. Semi-skilled worker (for example: bricklayer, bus driver, cannery worker, carpenter, sheet metal worker, baker)
+H. Unskilled worker (for example: laborer, porter, unskilled factory worker, cleaner)
+I. Farm worker (for example: farm laborer, tractor driver)
+J. Farm proprietor, farm manager
+K. Never had a job
+L. Don't know
+M. No answer/refused
+N. Not applicable (filter)
+O. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0, "O": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.35, "B": 0.10, "C": 0.08, "D": 0.07, "E": 0.05, "F": 0.12, "G": 0.08, "H": 0.04, "I": 0.03, "J": 0.03, "K": 0.01, "L": 0.02, "M": 0.01, "N": 0.005, "O": 0.005}

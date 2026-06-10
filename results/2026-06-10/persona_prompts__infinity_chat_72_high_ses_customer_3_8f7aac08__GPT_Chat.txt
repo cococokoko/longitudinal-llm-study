@@ -1,0 +1,18 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_72_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=42 out=64
+Latency:   1229 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Briefly explain the potential uses of biofuels in 2-3 sentences.
+
+── Response ────────────────────────────────────────────────────────
+Biofuels can be used as renewable alternatives to fossil fuels in transportation, including cars, trucks, ships, and aircraft, helping to reduce dependence on petroleum. They can also be used for electricity generation and heating, and some biofuels may contribute to lower net greenhouse gas emissions when produced sustainably.

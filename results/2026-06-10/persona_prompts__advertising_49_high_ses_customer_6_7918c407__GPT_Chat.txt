@@ -1,0 +1,70 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=498
+Latency:   4177 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi is usually a combination of better placement, reducing interference, and ensuring the equipment matches your needs.
+
+Start with the highest-impact steps:
+
+- Place the router centrally in the home rather than in a corner.
+- Elevate it (on a shelf or table) and keep it out in the open.
+- Avoid placing it near:
+  - Microwaves
+  - Cordless phone bases
+  - Large metal objects
+  - TVs and AV cabinets
+  - Thick concrete or brick walls
+
+Optimize your Wi‑Fi settings:
+
+- Use the 5 GHz or 6 GHz band when available for faster speeds and less interference.
+- Use 2.4 GHz for devices that are far from the router or need maximum range.
+- Ensure WPA2 or WPA3 security is enabled.
+- Update the router's firmware regularly.
+
+Check whether your router is the bottleneck:
+
+- If your router is more than 4–5 years old, a newer Wi‑Fi 6 or Wi‑Fi 6E router can provide significant improvements.
+- If you have gigabit internet, verify that your router supports those speeds.
+
+For larger homes:
+
+- Consider a mesh Wi‑Fi system (e.g., Eero, Google Nest WiFi, Asus ZenWiFi, Orbi).
+- Mesh systems generally outperform traditional range extenders because they create a unified network and manage roaming more effectively.
+
+Improve device connectivity:
+
+- Connect stationary, high-bandwidth devices (gaming consoles, desktop PCs, smart TVs) via Ethernet when possible.
+- Reduce the number of unnecessary connected devices.
+
+Diagnose before spending money:
+
+- Run speed tests near the router and in problem areas.
+- If speeds are poor even next to the router, the issue may be your internet service rather than Wi‑Fi coverage.
+- Use a Wi‑Fi analyzer app to identify congested channels in dense apartment buildings.
+
+A useful rule of thumb:
+- Small apartment: a modern single router is often enough.
+- Medium house (2,000–3,000 sq ft / 185–280 sq m): a high-quality router or 2-node mesh.
+- Large or multi-story house: a 3+ node mesh system, ideally with wired Ethernet backhaul between nodes.
+
+If you tell me:
+- Your home size/layout,
+- Your internet speed,
+- Router model,
+- And whether the issue is speed, coverage, or reliability,
+
+I can suggest a more specific setup.

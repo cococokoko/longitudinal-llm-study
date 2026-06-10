@@ -1,0 +1,30 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=219
+Latency:   3525 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A useful feature would be a "Daily Well-Being Check-In" system with automatic escalation.
+
+How it works:
+- The watch gently prompts the user at customizable times (for example, morning and evening) with a large, easy-to-read confirmation button.
+- If the user responds, the watch records that they are okay.
+- If there is no response within a set period, the watch automatically sends a notification to selected family members or caregivers.
+- The system can combine this with movement data, heart-rate trends, and fall detection to provide more context.
+- Family members receive simple updates through a companion app rather than needing to call repeatedly.
+
+Why it is useful:
+- Many seniors live independently and may not want constant monitoring.
+- It provides reassurance to extended family members and caregivers without being intrusive.
+- It can help identify potential problems quickly if a user becomes ill, falls, or is unable to respond.

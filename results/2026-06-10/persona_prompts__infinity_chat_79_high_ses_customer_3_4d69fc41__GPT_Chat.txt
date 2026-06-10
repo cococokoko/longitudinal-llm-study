@@ -1,0 +1,84 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=44 out=516
+Latency:   5546 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+A strong STEM fair project should be:
+- Relevant to a real problem
+- Scientifically testable
+- Affordable
+- Capable of generating original data
+
+One particularly strong idea for Vietnam is:
+
+"Low-Cost Biochar Water Filters for Rural Water Purification"
+
+Why it matters in Vietnam:
+- Many rural areas face challenges with water quality due to agricultural runoff, sediment, and contamination.
+- Flooding and climate change can worsen access to clean water.
+- Commercial filtration systems can be expensive.
+
+Research question:
+- How effective is biochar made from local agricultural waste (rice husks, coconut shells, or bamboo) at improving water quality?
+
+Background:
+- Vietnam is one of the world's largest rice producers, generating large quantities of rice husks.
+- When agricultural waste is heated with limited oxygen, it forms biochar, a porous material that can adsorb contaminants.
+
+Experimental design:
+1. Produce biochar from rice husks or coconut shells.
+2. Create several filter designs:
+   - Sand only
+   - Sand + charcoal
+   - Sand + rice-husk biochar
+   - Sand + coconut-shell biochar
+3. Prepare water samples containing:
+   - Mud/sediment
+   - Food coloring (to simulate dissolved pollutants)
+4. Pass water through each filter.
+5. Measure:
+   - Turbidity (clarity)
+   - pH
+   - Electrical conductivity (using an inexpensive meter)
+   - Filtration speed
+
+Data analysis:
+- Compare removal efficiency among filter types.
+- Determine which agricultural waste produces the most effective filter material.
+- Calculate cost per liter of filtered water.
+
+Estimated cost:
+- Agricultural waste: often free
+- Plastic bottles/PVC tubing: $5–10
+- pH strips: $5
+- Conductivity meter: $10–15
+- Total: roughly $20–30
+
+STEM fields involved:
+- Chemistry (adsorption and water quality)
+- Environmental science
+- Engineering (filter design)
+- Data analysis and statistics
+
+If you want an idea with even more "wow factor" for judges, consider:
+
+"AI-Assisted Flood Prediction for Mekong Delta Communities"
+
+- Use historical rainfall and river-level data.
+- Build a simple machine-learning model in Python.
+- Compare predictions from different algorithms.
+- Address one of Vietnam's most important climate challenges: flooding and saltwater intrusion in the Mekong Delta.
+
+This project can often reach regional or national competition levels because it combines environmental science, climate resilience, and artificial intelligence while directly addressing a major Vietnamese issue.

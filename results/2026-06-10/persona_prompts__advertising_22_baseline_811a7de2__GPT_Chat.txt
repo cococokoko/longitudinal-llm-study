@@ -1,0 +1,83 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=16 out=562
+Latency:   14900 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The best remote team collaboration tools depend on your team's size, workflow, and communication style. Here are some of the most widely used and effective options, organized by category:
+
+• Team Communication
+  - Slack: Popular for messaging, channels, integrations, and workflow automation.
+  - Microsoft Teams: Strong choice for organizations using Microsoft 365.
+  - Google Chat: Integrates well with Google Workspace.
+
+• Video Meetings
+  - Zoom: Reliable video conferencing with breakout rooms and webinar features.
+  - Microsoft Teams: Combines meetings, chat, and collaboration.
+  - Google Meet: Simple and effective for Google Workspace users.
+
+• Project Management
+  - Asana: Excellent for task tracking, project planning, and workflows.
+  - Monday.com: Flexible work management platform with customizable dashboards.
+  - ClickUp: Combines tasks, docs, goals, and collaboration in one platform.
+  - Trello: Easy-to-use Kanban boards for smaller teams and simpler projects.
+  - Jira: Preferred by many software development teams.
+
+• Document Collaboration
+  - Google Workspace (Docs, Sheets, Slides): Real-time collaborative editing.
+  - Microsoft 365 (Word, Excel, PowerPoint Online): Strong enterprise features.
+  - Notion: Combines documents, wikis, databases, and project tracking.
+  - Confluence: Team knowledge base, especially useful alongside Jira.
+
+• File Storage and Sharing
+  - Google Drive: Easy sharing and collaboration.
+  - OneDrive: Integrated with Microsoft 365.
+  - Dropbox: Strong file synchronization and sharing capabilities.
+
+• Whiteboarding and Brainstorming
+  - Miro: Popular virtual whiteboard with extensive templates.
+  - Mural: Designed for workshops and collaborative planning.
+  - FigJam: Collaborative whiteboarding from the Figma ecosystem.
+
+• Knowledge Management
+  - Notion: Flexible internal wiki and documentation platform.
+  - Confluence: Structured documentation for teams.
+  - Guru: Knowledge management with verification features.
+
+Recommended tool stacks:
+
+• Small startup
+  - Slack
+  - Notion
+  - Google Workspace
+  - Trello or ClickUp
+  - Zoom
+
+• Growing business
+  - Slack or Microsoft Teams
+  - Asana or Monday.com
+  - Google Workspace or Microsoft 365
+  - Miro
+
+• Enterprise organization
+  - Microsoft Teams
+  - Microsoft 365
+  - Jira + Confluence
+  - Miro
+
+• Software development team
+  - Slack
+  - Jira
+  - Confluence
+  - GitHub or GitLab
+  - Zoom or Teams
+
+If you tell me your team size, budget, and type of work (e.g., software development, marketing, consulting, education), I can recommend a more specific setup.

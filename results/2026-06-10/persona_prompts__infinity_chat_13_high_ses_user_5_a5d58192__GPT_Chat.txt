@@ -1,0 +1,28 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   infinity_chat_13_high_ses_user_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=33 out=230
+Latency:   3006 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am an executive at a large technology company.
+
+I have an apartment that costs about $100 a month. How do I survive?
+
+── Response ────────────────────────────────────────────────────────
+If you're an executive at a large technology company and your apartment costs only about $100 per month, then based on that single fact, housing is probably not the thing threatening your survival.
+
+To know whether you can "survive," the important questions are:
+
+- What is your monthly income?
+- What are your other expenses (food, transportation, healthcare, debt, family obligations, etc.)?
+- Do you have savings or assets?
+- Are you asking literally about finances, or is this a joke/riddle?
+
+If this is a literal financial question, share your approximate income and expenses and I can help work through a budget.
+
+If it's a riddle, the answer may simply be: because your rent is only $100 a month.

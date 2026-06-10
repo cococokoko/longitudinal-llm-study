@@ -1,0 +1,55 @@
+Wave:      2026-06-10
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=27 out=903
+Latency:   7642 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+For a small business, data security doesn’t have to be overly complex or require a massive IT department. When you’re already working long hours and managing a busy physical operation, the best security strategies are those that are **simple to set up, highly automated, and integrated seamlessly into your daily routine.**
+
+Here are the best practices for securing your business’s data without adding a heavy administrative burden to your workday:
+
+### 1. Secure the "Front Gate" (Access Control)
+Just like locking up a physical facility at the end of a shift, you need to control who has access to your digital assets.
+*   **Use a Password Manager:** Avoid reusing passwords or writing them down on paper. Tools like 1Password or Bitwarden generate and store strong, unique passwords for every account.
+*   **Enable Multi-Factor Authentication (MFA):** This is the single most effective step you can take. MFA requires a second verification (like a code sent to your phone or an authenticator app) to log in. Even if someone steals your password, they can’t get in without that second step.
+*   **The Principle of Least Privilege:** Only give employees access to the specific files, software, and data they need to do their job. A delivery driver or floor worker doesn't need access to the company’s master financial spreadsheets.
+
+### 2. Automate Your Backups (Set It and Forget It)
+Data loss can happen due to cyberattacks (like ransomware), hardware failure, or simple human error. 
+*   **Use the 3-2-1 Backup Rule:** Keep **three** copies of your data, on **two** different types of media (e.g., a local external hard drive and the cloud), with **one** copy stored offsite.
+*   **Automate It:** Use cloud services like Microsoft OneDrive, Google Workspace, or Backblaze to automatically back up your files in real-time. You shouldn't have to remember to do this at the end of a long, exhausting shift.
+
+### 3. Keep Software Updated Automatically
+Hackers constantly look for loopholes in outdated software. 
+*   Turn on **automatic updates** for all operating systems (Windows, macOS, iOS, Android), web browsers, and business software. 
+*   These updates often contain critical security patches that block newly discovered vulnerabilities.
+
+### 4. Secure Your Physical Devices
+In businesses with high foot traffic, physical security is data security.
+*   **Auto-Lock Screens:** Set all computers, tablets, and phones to automatically lock after 2 to 5 minutes of inactivity. 
+*   **Encrypt Devices:** Ensure that full-disk encryption (like BitLocker on Windows or FileVault on Mac) is enabled. If a laptop or tablet is lost or stolen, the data on it will be unreadable without the password.
+*   **Secure the Wi-Fi:** Never run your business operations on a public or unsecured Wi-Fi network. Set up a separate "Guest" Wi-Fi network for visitors so they cannot access your main business network.
+
+### 5. Train Your Team (The Human Firewall)
+Most data breaches start with a simple human mistake, usually through a phishing email or text.
+*   **Keep Training Short and Practical:** You don't need hours of classroom training. Give your team quick, 5-minute briefings on how to spot suspicious emails (e.g., urgent requests for money, mismatched email addresses, or unexpected attachments).
+*   **Establish a "No Blame" Culture:** If an employee clicks a bad link, they should feel safe reporting it immediately. The faster IT or management knows, the faster the threat can be contained.
+
+### 6. Have a Simple "Offboarding" Process
+When an employee leaves the company, their access must be revoked immediately. Create a quick checklist to ensure their email is deactivated, their passwords are changed, and any company-owned devices are returned and wiped.
+
+### Where to Start Today (The 15-Minute Win)
+If you only have a few minutes today to improve your security:
+1.  **Turn on MFA** on your primary business email and bank accounts.
+2.  **Check your backup status** to ensure your most important files are actually syncing to the cloud.

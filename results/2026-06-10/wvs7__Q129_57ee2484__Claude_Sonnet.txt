@@ -1,0 +1,32 @@
+Wave:      2026-06-10
+Dataset:   wvs7
+Item ID:   Q129
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=212 out=64
+Latency:   5887 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: From your point of view, what have been the effects of immigration on the development of this country? For each of the following statements about the effects of immigration, please tell me whether you agree or disagree with it:
+
+Leads to social conflict
+
+Options:
+A. Agree
+B. Hard to say
+C. Disagree
+D. Don't know
+E. No answer/refused
+F. Not applicable (filter)
+G. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.35, "B": 0.25, "C": 0.30, "D": 0.07, "E": 0.02, "F": 0.005, "G": 0.005}
+```
