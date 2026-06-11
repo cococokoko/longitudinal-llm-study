@@ -701,20 +701,43 @@ async function loadData() {
 function renderVersions({ wave_versions, waves }) {
   const byKey = {};
   for (const r of wave_versions) byKey[`${r.wave}||${r.model}`] = r;
+
+  // Group consecutive waves where NO model changed version or n_calls → one column per stable period
+  const groups = [];
+  let cur = { start: waves[0], end: waves[0], ref: waves[0] };
+  for (let i = 1; i < waves.length; i++) {
+    const w = waves[i], prev = waves[i - 1];
+    const changed = MAIN_MODELS.some(m => {
+      const a = byKey[`${w}||${m}`], b = byKey[`${prev}||${m}`];
+      return (a?.model_used ?? null) !== (b?.model_used ?? null) ||
+             (a?.n_calls   ?? null) !== (b?.n_calls   ?? null);
+    });
+    if (changed) { groups.push(cur); cur = { start: w, end: w, ref: w }; }
+    else           cur.end = w;
+  }
+  groups.push(cur);
+
+  // Header
   let html = `<div class="table-wrap"><table class="data-table"><thead><tr><th>Model</th>`;
-  for (const w of waves) html += `<th>${w}</th>`;
+  for (const g of groups) {
+    const label = g.start === g.end ? g.start : `${g.start} – ${g.end}`;
+    html += `<th>${label}</th>`;
+  }
   html += `</tr></thead><tbody>`;
+
+  // One row per model
   for (const model of MAIN_MODELS) {
     html += `<tr><td><strong>${MODEL_LABELS[model]}</strong></td>`;
-    for (const w of waves) {
-      const r = byKey[`${w}||${model}`];
+    for (const g of groups) {
+      const r = byKey[`${g.ref}||${model}`];
       if (!r) { html += `<td style="color:#9ca3af;text-align:center">—</td>`; continue; }
-      const short = (r.model_used||'—').split('/').pop().split(':')[0];
+      const short = (r.model_used || '—').split('/').pop().split(':')[0];
       html += `<td><span class="badge-teal" title="${r.model_used||''}">${short}</span>
                <div style="font-size:10px;color:#9ca3af;margin-top:3px">${r.n_calls} calls</div></td>`;
     }
     html += `</tr>`;
   }
+
   html += `</tbody></table></div>`;
   document.getElementById('versions-wrap').innerHTML = html;
 }

@@ -105,12 +105,12 @@ def build_persona(path: Path) -> pd.DataFrame:
 
 # ── Write Excel ───────────────────────────────────────────────────────────────
 
-def write_excel(goqa_df: pd.DataFrame, persona_df: pd.DataFrame, out: Path) -> None:
+def write_excel(wvs7_df: pd.DataFrame, persona_df: pd.DataFrame, out: Path) -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
 
     with pd.ExcelWriter(out, engine="openpyxl") as writer:
         # ── Tab 1 ──────────────────────────────────────────────────────────────
-        goqa_df.to_excel(writer, sheet_name="wvs7", index=False)
+        wvs7_df.to_excel(writer, sheet_name="wvs7", index=False)
         ws1 = writer.sheets["wvs7"]
         _style_sheet(ws1, col_widths=[22, 10, 10, 10, 60, 80])
 
@@ -131,7 +131,7 @@ def write_excel(goqa_df: pd.DataFrame, persona_df: pd.DataFrame, out: Path) -> N
                     cell.fill = LOW_FILL
 
     print(f"Saved → {out}")
-    print(f"  wvs7              : {len(goqa_df)} rows")
+    print(f"  wvs7              : {len(wvs7_df)} rows")
     print(f"  persona_prompts   : {len(persona_df)} rows  ({len(persona_df) * 3} total prompts incl. 3 conditions)")
 
 
@@ -144,10 +144,10 @@ def main() -> None:
     p.add_argument("--out",     default="results/prompts_overview.xlsx")
     args = p.parse_args()
 
-    goqa_df    = build_goqa(Path(args.wvs))
+    wvs7_df    = build_goqa(Path(args.wvs))
     persona_df = build_persona(Path(args.persona))
 
-    write_excel(goqa_df, persona_df, Path(args.out))
+    write_excel(wvs7_df, persona_df, Path(args.out))
 
 
 if __name__ == "__main__":
