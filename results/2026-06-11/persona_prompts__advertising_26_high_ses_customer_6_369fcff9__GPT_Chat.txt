@@ -1,0 +1,105 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=796
+Latency:   7839 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+For small businesses, effective data security is less about having enterprise-scale tools and more about implementing a disciplined set of controls that reduce the most common risks. The strongest security programs typically focus on people, processes, and technology together.
+
+Key best practices include:
+
+1. Establish a Security Baseline
+- Maintain an inventory of devices, applications, cloud services, and data.
+- Classify data by sensitivity (e.g., public, internal, confidential, regulated).
+- Define security policies for acceptable use, passwords, remote work, and data handling.
+
+2. Implement Strong Identity and Access Management
+- Require multi-factor authentication (MFA) for email, cloud applications, VPNs, and administrative accounts.
+- Enforce strong password policies or encourage password managers.
+- Apply the principle of least privilege: employees should have access only to the data and systems necessary for their roles.
+- Review user access regularly and immediately remove access for departing employees.
+
+3. Secure Endpoints
+- Keep operating systems, browsers, and applications updated through automated patching where possible.
+- Deploy endpoint protection (antivirus/EDR) on all company devices.
+- Encrypt laptops and mobile devices.
+- Enable remote wipe capabilities for company-managed mobile devices.
+
+4. Protect Email and Collaboration Platforms
+- Email remains the most common attack vector for small businesses.
+- Use phishing protection and spam filtering.
+- Configure email authentication standards such as SPF, DKIM, and DMARC.
+- Train employees to recognize phishing, business email compromise, and social engineering attacks.
+
+5. Secure Cloud Services
+- Review security settings for Microsoft 365, Google Workspace, CRM systems, and other SaaS applications.
+- Enable MFA and logging.
+- Restrict public sharing of files unless explicitly required.
+- Regularly audit third-party integrations and permissions.
+
+6. Maintain Reliable Backups
+- Follow the "3-2-1" backup principle:
+  - Three copies of data.
+  - Two different storage media.
+  - One copy stored offsite or offline.
+- Test restoration procedures regularly.
+- Protect backups from ransomware by isolating or making them immutable where possible.
+
+7. Encrypt Sensitive Data
+- Encrypt data at rest and in transit.
+- Use secure protocols such as HTTPS and modern VPN solutions.
+- Ensure cloud providers support encryption and key management controls.
+
+8. Train Employees Continuously
+- Provide regular security awareness training.
+- Conduct phishing simulations where appropriate.
+- Educate staff on reporting suspicious activity quickly.
+- Include cybersecurity practices in onboarding and offboarding processes.
+
+9. Develop an Incident Response Plan
+- Define roles, responsibilities, and escalation procedures.
+- Establish relationships with external IT, legal, cyber insurance, and forensic providers before an incident occurs.
+- Create a communication plan for customers, employees, and regulators if needed.
+- Run tabletop exercises periodically.
+
+10. Manage Vendors and Third Parties
+- Assess vendors that handle sensitive information.
+- Review contractual security obligations.
+- Verify compliance certifications when relevant (e.g., SOC 2, ISO 27001).
+- Limit vendor access to only what is necessary.
+
+11. Monitor and Log Critical Activity
+- Enable logging for key systems and cloud platforms.
+- Review alerts related to failed logins, privilege changes, and unusual access patterns.
+- Consider managed security services if internal resources are limited.
+
+12. Address Compliance Requirements
+Depending on the industry and geography, evaluate obligations related to:
+- GDPR
+- CCPA/CPRA
+- HIPAA
+- PCI DSS
+- Industry-specific regulations
+
+A practical priority roadmap for most small businesses would be:
+1. Enable MFA everywhere.
+2. Patch systems automatically.
+3. Deploy endpoint protection.
+4. Implement secure backups and test recovery.
+5. Train employees on phishing awareness.
+6. Enforce least-privilege access.
+7. Create an incident response plan.
+8. Improve monitoring and vendor oversight.
+
+These measures address the majority of security incidents that small businesses experience while remaining cost-effective and operationally manageable.

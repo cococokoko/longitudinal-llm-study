@@ -1,0 +1,62 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=39 out=401
+Latency:   5524 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Example:
+
+Suppose the temperature in a room is modeled by
+
+T(x, y) = 2x² + 3xy + y²
+
+where:
+- x is the east-west position,
+- y is the north-south position,
+- T is the temperature.
+
+Partial derivative with respect to x:
+
+Treat y as a constant and differentiate only with respect to x:
+
+∂T/∂x = 4x + 3y
+
+At the point (x, y) = (1, 2):
+
+∂T/∂x(1,2) = 4(1) + 3(2) = 10
+
+Interpretation:
+- If you move slightly in the x-direction while keeping y = 2 fixed, the temperature increases at approximately 10 units per unit increase in x.
+
+Partial derivative with respect to y:
+
+Treat x as a constant and differentiate only with respect to y:
+
+∂T/∂y = 3x + 2y
+
+At (1, 2):
+
+∂T/∂y(1,2) = 3(1) + 2(2) = 7
+
+Interpretation:
+- If you move slightly in the y-direction while keeping x = 1 fixed, the temperature increases at approximately 7 units per unit increase in y.
+
+Summary:
+- Function: T(x, y) = 2x² + 3xy + y²
+- ∂T/∂x = 4x + 3y, and at (1,2) it equals 10
+- ∂T/∂y = 3x + 2y, and at (1,2) it equals 7
+
+This shows that the rate of change can be different depending on which variable you vary while holding the others constant.

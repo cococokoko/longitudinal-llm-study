@@ -1,0 +1,34 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=184
+Latency:   2866 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+Subject: Catch-Up and Referral Partnership Discussion
+
+Hi [Referral Partner Name],
+
+I hope you're doing well.
+
+I wanted to reach out and see if you'd be available for a catch-up in the coming weeks. It would be great to reconnect, hear how things have been going on your end, and discuss any opportunities to continue supporting each other through referrals.
+
+My work schedule can vary from week to week, so I'm happy to work around a time that suits you. If you're interested, please let me know a few days and times that work, and I'll do my best to accommodate.
+
+Looking forward to catching up.
+
+Best regards,
+
+[Your Name]
+[Your Company]
+[Your Contact Information]

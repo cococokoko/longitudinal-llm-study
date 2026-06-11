@@ -1,0 +1,78 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=495
+Latency:   4808 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+The best way to learn coding from scratch is to combine three things:
+
+1. Pick one beginner-friendly language
+2. Learn the fundamentals through small lessons
+3. Build simple projects as early as possible
+
+A practical path:
+
+• Start with Python
+  - Python is widely used and has a beginner-friendly syntax.
+  - It's useful for automation, data analysis, web development, AI, and more.
+
+• Learn the core concepts
+  - Variables
+  - Data types (numbers, text, lists)
+  - Conditions (if/else)
+  - Loops
+  - Functions
+  - Basic file handling
+  - Simple debugging
+
+Good free resources:
+  - Python.org tutorials
+  - freeCodeCamp
+  - Harvard's CS50 (excellent introduction to computer science)
+  - Automate the Boring Stuff with Python
+
+• Practice every day
+  - Even 20–30 minutes daily is effective.
+  - Consistency matters more than occasional long sessions.
+
+• Build tiny projects
+  Examples:
+  - Calculator
+  - To-do list
+  - Number guessing game
+  - Expense tracker
+  - Simple text-based adventure game
+
+• Learn how to use tools
+  - Install VS Code (a popular code editor)
+  - Learn basic command-line usage
+  - Learn Git and GitHub for version control
+
+• Get comfortable with debugging
+  - Errors are a normal part of programming.
+  - Learning to read error messages is a key skill.
+
+• Gradually choose a direction
+  After the basics, explore:
+  - Web development: HTML, CSS, JavaScript
+  - Data science: Python, pandas, NumPy
+  - AI/Machine Learning: Python, machine learning libraries
+  - Mobile apps: Swift (iPhone) or Kotlin (Android)
+  - Game development: Unity (C#) or Godot
+
+A simple 8-week beginner plan:
+- Week 1–2: Python basics
+- Week 3–4: Functions, loops, and practice exercises
+- Week 5–6: Build 2–3 small projects
+- Week 7: Learn Git and GitHub
+- Week 8: Build a larger project and share it online
+
+If you tell me your age, experience level, and what interests you most (websites, apps, games, AI, data, etc.), I can suggest a more specific learning roadmap.

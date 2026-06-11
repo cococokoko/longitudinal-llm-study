@@ -1,0 +1,28 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=48 out=298
+Latency:   7966 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+Here's a draft paragraph for you:
+
+---
+
+**TOEFL vs. IELTS: Key Considerations for International Students**
+
+When advising international students on English proficiency testing, the choice between the TOEFL (Test of English as a Foreign Language) and IELTS (International English Language Testing System) often comes down to destination, learning style, and institutional requirements. The TOEFL iBT is predominantly favored by North American universities and emphasizes an integrated academic format, testing reading, listening, speaking, and writing through tasks that simulate university-level work. The IELTS, available in Academic and General Training versions, is more widely accepted globally — particularly in the UK, Australia, Canada, and New Zealand — and features a face-to-face speaking component that some candidates find more natural. Scoring systems differ meaningfully: TOEFL uses a 0–120 scale while IELTS uses a 1–9 band score, and students should verify the specific score thresholds required by their target institutions. Generally speaking, students comfortable with American English and computer-based testing tend to perform better on the TOEFL, while those who prefer conversational speaking assessments may find IELTS more accommodating.
+
+---
+
+Would you like me to adjust the tone, length, or focus of this paragraph for a specific audience or purpose?

@@ -1,0 +1,249 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=950
+Latency:   7426 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+If you're leading a research group and want to make a zombie survivor game in Scratch, you can build a surprisingly capable top-down survival game using sprites, clones, variables, and broadcasts. Here's a practical roadmap.
+
+Core game concept:
+- Player moves around a map.
+- Zombies spawn and chase the player.
+- Player shoots projectiles.
+- Zombies take damage and die.
+- Score increases for kills.
+- Health decreases when zombies touch the player.
+- Game ends when health reaches zero.
+
+1. Create the player
+
+Make a Player sprite.
+
+Variables:
+- Health
+- Score
+
+Movement script:
+
+When green flag clicked
+set Health to 100
+go to x:0 y:0
+forever
+  if key (W) pressed then change y by 5
+  if key (S) pressed then change y by -5
+  if key (A) pressed then change x by -5
+  if key (D) pressed then change x by 5
+end
+
+You can also point toward the mouse pointer:
+
+forever
+  point towards mouse-pointer
+end
+
+2. Create bullets
+
+Make a Bullet sprite.
+
+Player shooting:
+
+When space key pressed
+create clone of Bullet
+
+Bullet clone behavior:
+
+When I start as a clone
+go to Player
+point towards mouse-pointer
+show
+
+repeat until touching edge
+  move 15 steps
+end
+
+delete this clone
+
+3. Create zombies
+
+Make a Zombie sprite.
+
+Zombie spawning:
+
+When green flag clicked
+hide
+
+forever
+  wait 2 seconds
+  create clone of myself
+end
+
+Zombie clone setup:
+
+When I start as a clone
+show
+
+pick random spawn location:
+
+if pick random (1 to 4) = 1
+  go to x:-240 y:(random -180 to 180)
+
+(similar logic for other edges)
+
+Zombie chasing:
+
+forever
+  point towards Player
+  move 2 steps
+end
+
+4. Damage zombies
+
+Create a variable:
+- ZombieHealth (for this sprite only)
+
+Zombie clone:
+
+When I start as a clone
+set ZombieHealth to 3
+
+Collision with bullets:
+
+forever
+  if touching Bullet then
+    change ZombieHealth by -1
+  end
+
+  if ZombieHealth <= 0 then
+    change Score by 1
+    delete this clone
+  end
+end
+
+A cleaner implementation is to have bullets disappear when they hit.
+
+5. Damage the player
+
+Zombie attack:
+
+forever
+  if touching Player then
+    change Health by -1
+    wait 0.2 seconds
+  end
+end
+
+Game over:
+
+When green flag clicked
+forever
+  if Health <= 0 then
+    broadcast GameOver
+  end
+end
+
+GameOver broadcast:
+
+When I receive GameOver
+stop all
+
+You can display a "Game Over" sprite before stopping.
+
+6. Add waves
+
+Variables:
+- Wave
+- ZombiesToSpawn
+
+Example:
+
+set Wave to 1
+
+forever
+  spawn Wave × 3 zombies
+  wait until all zombies defeated
+  change Wave by 1
+end
+
+Increase zombie speed each wave:
+
+Speed = 1 + Wave × 0.2
+
+7. Add weapon upgrades
+
+Possible upgrades:
+- Faster fire rate
+- More bullet damage
+- Shotgun spread
+- Larger bullets
+- Faster movement
+
+Variables:
+- Damage
+- FireRate
+
+Example shotgun:
+
+Create 3 bullet clones:
+- one at direction -10°
+- one at direction 0°
+- one at direction +10°
+
+8. Add survival features
+
+Common mechanics:
+- Ammo pickups
+- Health packs
+- Barricades
+- Sprint meter
+- Experience points
+- Level-ups
+
+Variables:
+- XP
+- Level
+
+When XP reaches threshold:
+- Increase Level
+- Present upgrade choices
+
+9. Improve visuals
+
+Effects:
+- Blood splatter clones
+- Zombie death animation
+- Flash when player is hit
+- Sound effects
+- Background music
+
+10. Advanced features
+
+If you want something closer to commercial survivor games:
+- Hundreds of zombie clones
+- Procedural spawning
+- Auto-firing weapons
+- Boss zombies
+- Multiple maps
+- Inventory system
+- Save high scores in Scratch cloud variables (if appropriate)
+
+Recommended build order:
+1. Player movement
+2. Zombie chasing
+3. Shooting
+4. Zombie damage and death
+5. Health and game over
+6. Waves
+7. Upgrades
+8. Visual polish
+
+Scratch is especially good for a top-down "survive as long as possible" game, and a complete prototype can often be built in a few hours before adding more sophisticated systems.

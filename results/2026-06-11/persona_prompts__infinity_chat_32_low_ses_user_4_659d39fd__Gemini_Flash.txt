@@ -1,0 +1,158 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_low_ses_user_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=25 out=1272
+Latency:   7981 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+First of all, thank you for the work you do at the hospital! Working shifts can be exhausting, and coding is a fantastic, creative way to unwind. 
+
+Scratch is the perfect platform for this. Since you are likely busy, the best approach is to build a **Top-Down Zombie Shooter** (looking down from above). It is much easier to code than a 3D or side-scrolling game, but it is incredibly fun to play.
+
+Here is a step-by-step guide to building your first zombie survivor game on Scratch.
+
+---
+
+### Step 1: Create Your Sprites (Characters)
+You will need three main sprites. You can draw these using Scratch’s vector paint tool (draw them as circles with two smaller circles for hands/shoulders looking down):
+1. **Player:** A soldier or survivor holding a gun.
+2. **Zombie:** A green version of the player.
+3. **Bullet:** A small yellow rectangle or circle.
+
+---
+
+### Step 2: Code the Player (Movement & Aiming)
+We want the player to move with the **WASD** keys and aim toward the mouse pointer.
+
+Select your **Player** sprite and add this code:
+
+```scratch
+when green flag clicked
+go to x: (0) y: (0)
+forever
+    point towards [mouse-pointer v]
+    if <key [w v] pressed?> then
+        change y by (4)
+    end
+    if <key [s v] pressed?> then
+        change y by (-4)
+    end
+    if <key [d v] pressed?> then
+        change x by (4)
+    end
+    if <key [a v] pressed?> then
+        change x by (-4)
+    end
+end
+```
+
+---
+
+### Step 3: Code the Shooting (The Bullet)
+Instead of having one bullet, we will use **Clones** so the player can shoot rapidly.
+
+Select your **Bullet** sprite and add this code:
+
+```scratch
+when green flag clicked
+hide  // Hide the original bullet
+
+when green flag clicked  // Separate loop for shooting speed
+forever
+    if <<mouse down?> and <key [space v] pressed?>> then // or just mouse down
+        create clone of [myself v]
+        wait (0.2) seconds  // Controls firing rate
+    end
+end
+
+when I start as a clone
+go to [Player v]
+point towards [mouse-pointer v]
+show
+repeat until <touching [edge v]?>
+    move (15) steps
+end
+delete this clone
+```
+
+---
+
+### Step 4: Code the Zombies (Spawning & Chasing)
+We want zombies to spawn off-screen and walk toward the player. We will use clones for this too.
+
+Select your **Zombie** sprite and add this code:
+
+```scratch
+when green flag clicked
+hide
+forever
+    wait (2) seconds  // Spawns a zombie every 2 seconds
+    create clone of [myself v]
+end
+
+when I start as a clone
+// Spawn at a random edge of the screen
+go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180)) 
+show
+forever
+    point towards [Player v]
+    move (2) steps  // Zombie speed (slower than player)
+    
+    // If hit by a bullet
+    if <touching [Bullet v]?> then
+        change [Score v] by (1)  // (Create a Score variable first!)
+        delete this clone
+    end
+end
+```
+*(Note: To prevent zombies from spawning right on top of the player, you can adjust the spawn coordinates later, but this works for a start!)*
+
+---
+
+### Step 5: Add Health and Game Over
+Now we need a way to lose. 
+
+1. Go to **Variables** and click "Make a Variable". Name it `Health` (for all sprites).
+2. Go to **Variables** and make another one named `Score`.
+
+Add this to your **Player** sprite:
+
+```scratch
+when green flag clicked
+set [Health v] to (100)
+set [Score v] to (0)
+forever
+    if <touching [Zombie v]?> then
+        change [Health v] by (-10)
+        wait (0.5) seconds  // Invincibility frames so you don't die instantly
+    end
+    if <(Health) < [1]> then
+        say [Game Over!] for (2) seconds
+        stop [all v]
+    end
+end
+```
+
+---
+
+### Step 6: Polish and Customize (When you have downtime)
+Once you have the basic game working, you can add these features to make it really cool:
+* **Hospital Theme:** Since you work in a hospital, you could design the background to look like a hospital ward, make the player a doctor/nurse, and make the "bullets" look like syringes shooting vaccine doses to "cure" the zombies!
+* **Sound Effects:** Add a "pop" sound when shooting, and a "groan" sound when a zombie spawns.
+* **Different Zombie Types:** Create a fast zombie (low health) and a slow giant zombie (high health).
+
+### How to get started right now:
+1. Go to [scratch.mit.edu](https://scratch.mit.edu) (it's free).
+2. Click **Create**.
+3. You can build this on a laptop, tablet, or even your phone (though a computer is easiest).
+
+If you get stuck on a specific step or want to know how to add a specific feature (like reloading or a high score), just ask! Good luck, and enjoy your coding sessions after your shifts!

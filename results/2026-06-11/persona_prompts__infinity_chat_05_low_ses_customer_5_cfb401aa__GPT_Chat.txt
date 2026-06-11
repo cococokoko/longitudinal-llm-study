@@ -1,0 +1,33 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=247
+Latency:   2668 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A useful feature for a smartwatch designed specifically for senior citizens could be a "Family Circle Check-In" system.
+
+How it works:
+- The watch sends simple check-in prompts at customizable times (for example, morning, afternoon, and evening).
+- The user can respond with a single tap: "I'm okay," "Need assistance," or "Call me."
+- If no response is received within a set period, the watch automatically notifies designated family members or caregivers.
+- It can also share the user's last known location and basic activity status (such as whether they have been moving normally).
+- Voice support allows the user to respond without navigating menus.
+
+Why it helps:
+- Provides peace of mind for family members who help care for older relatives.
+- Encourages independence by avoiding constant monitoring.
+- Creates a simple, low-effort way for seniors to communicate their status.
+- Can be combined with fall detection and emergency calling for added safety.
+
+This feature focuses on both safety and maintaining the user's autonomy, which are often key priorities for senior citizens and their families.

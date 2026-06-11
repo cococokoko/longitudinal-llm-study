@@ -1,0 +1,73 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=470
+Latency:   38262 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+The best way to learn coding from scratch is to combine three things from the beginning:
+
+1. Learn one language well
+2. Build small projects immediately
+3. Practice consistently over time
+
+A practical path looks like this:
+
+- Start with Python.
+  - It has a relatively simple syntax.
+  - It's widely used in data science, research, automation, web development, and AI.
+  - The concepts you learn transfer to other languages.
+
+- Learn the core concepts:
+  - Variables and data types
+  - Conditional statements (if/else)
+  - Loops
+  - Functions
+  - Lists, dictionaries, and other data structures
+  - File input/output
+  - Basic debugging
+
+- Write code every day or several times a week.
+  - Even 20–30 minutes of active coding is more valuable than hours of passive reading or video watching.
+
+- Build small projects as soon as possible:
+  - A calculator
+  - A to-do list application
+  - A text-based game
+  - A script that organizes files on your computer
+  - A simple data-analysis project using a dataset that interests you
+
+- Learn how to debug.
+  - Most programming involves finding and fixing errors.
+  - Reading error messages and systematically testing assumptions is a critical skill.
+
+Some excellent beginner-friendly resources:
+
+- Harvard's CS50 (free)
+  - Strong introduction to computer science fundamentals.
+- Python for Everybody by Charles Severance (free)
+  - Widely used and accessible.
+- Automate the Boring Stuff with Python (free online)
+  - Focuses on practical tasks and automation.
+- freeCodeCamp
+  - Interactive exercises and projects.
+
+A common mistake is spending months consuming tutorials without building anything. After learning a concept, use it to create something, even if the project is very small.
+
+Since you're starting from scratch, it may also help to think about your goal:
+- Research and data analysis → Python
+- Web development → Python or JavaScript
+- Mobile apps → Swift (iOS) or Kotlin (Android)
+- General computer science foundation → Python plus a course like CS50
+
+If you tell me your field and what you'd like to do with coding (research, data analysis, websites, AI, automation, etc.), I can suggest a more tailored learning path.

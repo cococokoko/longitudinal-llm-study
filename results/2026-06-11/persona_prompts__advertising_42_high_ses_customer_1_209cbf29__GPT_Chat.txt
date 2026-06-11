@@ -1,0 +1,97 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=37 out=558
+Latency:   4507 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on what you want to track: calories, macros, workouts, recovery, weight loss, performance, or overall health. Here are some of the strongest options in 2026:
+
+For nutrition tracking
+
+• MacroFactor
+  - Excellent for calorie and macro tracking
+  - Uses your weight trends and food intake to estimate energy expenditure
+  - Strong analytics and minimal focus on streaks or gamification
+  - Paid subscription
+
+• Cronometer
+  - Best for detailed nutrient tracking
+  - Tracks vitamins, minerals, and micronutrients more comprehensively than most competitors
+  - Popular among athletes and people with specific dietary goals
+  - Free version is quite capable
+
+• MyFitnessPal
+  - Largest food database
+  - Easy barcode scanning and meal logging
+  - Strong community and integrations
+  - Some features require a subscription
+
+For workout tracking
+
+• Strong
+  - Excellent for strength training
+  - Easy logging of sets, reps, and progressive overload
+  - Clean interface
+
+• Hevy
+  - Similar to Strong but with more social features
+  - Good exercise library and progression tracking
+  - Popular among lifters
+
+• TrainingPeaks
+  - Best for endurance athletes (running, cycling, triathlon)
+  - Advanced performance metrics and coaching features
+
+For combining fitness and health data
+
+• Apple Health (iPhone)
+  - Aggregates data from many apps and devices
+  - Good central repository for health metrics
+
+• Google Health Connect (Android ecosystem)
+  - Syncs health and fitness data across apps
+
+• Garmin Connect
+  - Excellent if you use Garmin devices
+  - Strong training, recovery, sleep, and performance analytics
+
+For recovery and wearable-based insights
+
+• WHOOP
+  - Focuses on recovery, strain, sleep, and readiness
+  - Subscription-based
+
+• Oura
+  - Excellent sleep tracking and recovery insights
+  - Ring form factor is convenient for many users
+
+• Athlytic (Apple ecosystem)
+  - Uses Apple Watch data to estimate recovery and readiness
+  - Less expensive than some dedicated wearable subscriptions
+
+Recommended combinations
+
+• Most evidence-oriented nutrition tracking:
+  - MacroFactor + Apple Health/Garmin Connect
+
+• Detailed nutrition and micronutrients:
+  - Cronometer + wearable of your choice
+
+• Strength training focus:
+  - Hevy or Strong + MacroFactor
+
+• Endurance training focus:
+  - TrainingPeaks + Garmin Connect
+
+If your goal is weight loss, muscle gain, endurance performance, or general health monitoring, I can narrow the recommendations further.

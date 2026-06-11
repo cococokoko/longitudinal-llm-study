@@ -1,0 +1,49 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=403
+Latency:   3566 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi usually comes down to optimizing placement, reducing interference, and ensuring your equipment matches your needs.
+
+Start with the basics:
+- Place your router in a central, open location rather than in a closet, cabinet, or corner of the house.
+- Elevate it on a shelf or table rather than placing it on the floor.
+- Keep it away from large metal objects, thick concrete walls, microwaves, cordless phone bases, and other electronics that can cause interference.
+
+Optimize your wireless settings:
+- Use the 5 GHz or 6 GHz band (if available) for higher speeds and lower congestion.
+- Use 2.4 GHz for devices that are farther from the router or behind multiple walls.
+- Update your router's firmware regularly.
+- Choose less congested Wi‑Fi channels. Many routers can do this automatically.
+
+Upgrade equipment if needed:
+- If your router is more than 4–5 years old, a newer Wi‑Fi 6 or Wi‑Fi 6E router can provide significant improvements.
+- For larger homes, consider a mesh Wi‑Fi system rather than a traditional range extender. Mesh systems generally provide better coverage and roaming.
+
+Improve network design:
+- Connect high-bandwidth devices (gaming PCs, TVs, workstations) via Ethernet where possible.
+- If using mesh nodes, place them where they still receive a strong signal from the main router—not at the edge of coverage.
+- Avoid daisy-chaining multiple extenders, which can reduce performance.
+
+Check your internet connection:
+- Run a speed test while connected directly to the modem/router with Ethernet. This helps distinguish Wi‑Fi issues from ISP issues.
+- Ensure your internet plan matches your household's usage needs.
+
+For a more tailored recommendation, it would help to know:
+- Home size (square footage or square meters)
+- Number of floors
+- Current router model
+- Internet speed from your ISP
+- Whether the issue is coverage, speed, reliability, or all three.

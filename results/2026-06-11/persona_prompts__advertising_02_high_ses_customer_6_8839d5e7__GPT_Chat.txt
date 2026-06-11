@@ -1,0 +1,64 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_02_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=31 out=507
+Latency:   4170 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+For dry skin, the goal is to gently cleanse, restore the skin barrier, and lock in moisture. A simple, consistent routine is usually more effective than a complicated one.
+
+Morning:
+- Gentle cleanser (or just rinse with water if your skin feels comfortable)
+  - Look for a fragrance-free, non-foaming cleanser.
+  - Examples: CeraVe Hydrating Cleanser, La Roche-Posay Toleriane Hydrating Gentle Cleanser.
+- Moisturizer
+  - Choose one with ingredients such as ceramides, glycerin, hyaluronic acid, squalane, or shea butter.
+  - Examples: CeraVe Moisturizing Cream, Vanicream Moisturizing Cream, La Roche-Posay Lipikar Balm AP+M.
+- Sunscreen (SPF 30 or higher)
+  - Daily sunscreen is one of the most effective anti-aging and skin-protection measures.
+  - For dry skin, look for moisturizing formulas.
+
+Evening:
+- Gentle cleanser
+- Optional hydrating serum
+  - Ingredients like hyaluronic acid, glycerin, or panthenol can help increase hydration.
+- Moisturizer
+  - Apply generously while skin is slightly damp.
+- If your skin is very dry:
+  - Seal moisture with a thin layer of an occlusive product such as petrolatum (e.g., Vaseline) on the driest areas.
+
+Helpful ingredients:
+- Ceramides: support the skin barrier.
+- Glycerin: attracts water to the skin.
+- Hyaluronic acid: boosts hydration.
+- Squalane: lightweight moisturizing oil.
+- Urea (at lower concentrations): hydrates and softens skin.
+
+Things to avoid if you're prone to dryness:
+- Harsh scrubs and exfoliants.
+- Over-cleansing.
+- Very hot showers.
+- Products with high amounts of alcohol or strong fragrances.
+
+If you want anti-aging benefits:
+- Consider adding a retinoid gradually (1–3 nights per week initially), but pair it with a good moisturizer because retinoids can increase dryness.
+
+If your dryness is severe, persistent, accompanied by redness/itching, or doesn't improve with moisturization, it may be worth seeing a dermatologist to rule out conditions such as eczema, dermatitis, or psoriasis.
+
+If you tell me:
+- Your age,
+- Whether you're male or female,
+- Any acne, sensitivity, eczema, or rosacea,
+- Your budget,
+
+I can suggest a more tailored routine and specific products.

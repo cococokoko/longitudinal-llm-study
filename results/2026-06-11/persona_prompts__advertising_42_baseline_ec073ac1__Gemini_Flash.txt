@@ -1,0 +1,107 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1303
+Latency:   8530 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The "best" fitness and nutrition app depends heavily on your specific goals—whether you want to lose weight, build muscle, track macronutrients, or find guided workouts. 
+
+Here is a breakdown of the best apps on the market for 2024, categorized by their strengths.
+
+---
+
+### 1. Best Overall for Nutrition & Calorie Tracking: **MyFitnessPal**
+Despite some features moving behind a paywall in recent years, MyFitnessPal remains the industry giant due to its unmatched food database.
+
+*   **Best for:** General calorie counting, weight loss, and tracking macros.
+*   **Key Features:**
+    *   A database of over 14 million foods (including restaurant items and international foods).
+    *   Barcode scanner (requires premium subscription in some regions).
+    *   Connects with almost every major fitness tracker (Apple Watch, Fitbit, Garmin).
+*   **Pros:** Massive community, seamless integration with other apps.
+*   **Cons:** The free version has heavy ads; premium is relatively expensive ($19.99/month or $79.99/year).
+
+### 2. Best for Clean UI & Detailed Nutrition: **Cronometer**
+If you care about **micronutrients** (vitamins and minerals) and want highly accurate data, Cronometer is superior to MyFitnessPal.
+
+*   **Best for:** Keto/Paleo diets, athletes, and people tracking health markers (not just calories).
+*   **Key Features:**
+    *   Every food submission is vetted by staff for accuracy (no duplicate or incorrect user-generated entries).
+    *   Tracks up to 84 vitamins and minerals.
+    *   Free barcode scanner.
+*   **Pros:** Highly accurate data, excellent free version, great for tracking overall health.
+*   **Cons:** The database is smaller than MyFitnessPal (though still very large).
+
+### 3. Best for Weight Loss & Behavior Change: **Noom**
+Noom focuses on the psychology behind eating rather than just counting calories.
+
+*   **Best for:** Long-term weight loss and overcoming emotional eating.
+*   **Key Features:**
+    *   Daily 5-10 minute psychology lessons.
+    *   Color-coded food system (Green, Yellow, Orange) based on caloric density.
+    *   Access to a personal health coach and peer support groups.
+*   **Pros:** Focuses on building sustainable habits; highly structured.
+*   **Cons:** Expensive (subscription-only, usually around $40-$70/month); food logging interface is less advanced than competitors.
+
+---
+
+### 4. Best for All-in-One Fitness & Nutrition: **Lifesum**
+Lifesum is a beautifully designed Swedish app that focuses on holistic health, offering meal plans, recipes, and habit trackers.
+
+*   **Best for:** People who want an aesthetically pleasing, motivating app for diet and lifestyle.
+*   **Key Features:**
+    *   "Life Score" weekly feedback based on your habits.
+    *   Curated diet plans (e.g., Clean Eating, High Protein, Mediterranean).
+    *   Water, fruit, and vegetable trackers.
+*   **Pros:** Gorgeous user interface, highly motivating, great recipe library.
+*   **Cons:** Fitness tracking is basic (relies on syncing with other apps).
+
+### 5. Best for Smart Coaching & Metabolism: **MacroFactor**
+Created by fitness science experts (including Stronger by Science), MacroFactor uses a smart algorithm to adjust your targets based on your actual metabolism.
+
+*   **Best for:** Bodybuilders, athletes, and data-driven fitness enthusiasts.
+*   **Key Features:**
+    *   An "adherence-neutral" philosophy (no guilt trips or red numbers if you overeat).
+    *   Dynamic Expenditure tracker that calculates your actual daily calorie burn based on your weight trends and food intake.
+*   **Pros:** No shaming, incredibly fast food logger, scientifically backed.
+*   **Cons:** No free version (paid subscription only, though they offer a free trial).
+
+---
+
+### 6. Best for Guided Workouts: **Peloton App**
+You do not need a Peloton bike or treadmill to use this app. It offers one of the best libraries of coached workouts in the world.
+
+*   **Best for:** Home workouts, running, strength training, and yoga.
+*   **Key Features:**
+    *   Thousands of live and on-demand classes (strength, cardio, yoga, outdoor running, stretching).
+    *   World-class instructors and excellent music playlists.
+    *   "Programs" to help you progress over several weeks.
+*   **Pros:** High production value, highly motivating instructors, great variety.
+*   **Cons:** No nutrition tracking; requires a monthly subscription ($12.99 to $24/month).
+
+### 7. Best for Gym & Strength Training: **Strong** (or **Hevy**)
+If you lift weights and want to track your progress (sets, reps, weight), these apps are the gold standard.
+
+*   **Best for:** Weightlifters, powerlifters, and gym-goers.
+*   **Key Features:**
+    *   Clean, minimalist interface to log workouts quickly.
+    *   Built-in rest timers.
+    *   Graphs showing your volume and 1-rep max progress over time.
+*   **Pros:** Extremely easy to use while working out; Hevy has a great social feature to follow friends.
+*   **Cons:** No nutrition tracking; limited free version (allows you to save only a few routines).
+
+---
+
+### Summary Recommendation:
+*   **If you want to track calories/macros for free:** Go with **Cronometer**.
+*   **If you want to build muscle/strength:** Pair **Hevy** (for workouts) with **MacroFactor** (for nutrition).
+*   **If you want to lose weight and change your relationship with food:** Try **Noom**.
+*   **If you want guided home workouts:** Get the **Peloton App**.

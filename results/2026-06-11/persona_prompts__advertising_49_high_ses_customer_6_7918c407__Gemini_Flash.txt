@@ -1,0 +1,68 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=20 out=1109
+Latency:   9513 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+As a partner at a major firm, your time is highly leveraged, and your home is likely a critical secondary (or primary) workplace. A lagging connection during a client pitch or a dropped Zoom call during a critical negotiation is a high-stakes risk. 
+
+To optimize your home network for maximum reliability, speed, and security, here is a structured, high-ROI approach to upgrading your home WiFi.
+
+---
+
+### Phase 1: The "Quick Wins" (Zero-Cost Optimization)
+Before investing in new hardware, ensure your current setup is optimized.
+
+*   **Reposition the Router:** WiFi signals travel down and out. If your router is in a closet, on the floor, or tucked behind a TV, you are losing 30–50% of your signal strength. Move it to a central, elevated location.
+*   **Separate the Bands:** Ensure your router is broadcasting two distinct networks: a **2.4 GHz** band (slower, but longer range—use this for smart home devices) and a **5 GHz** band (faster, shorter range—use this exclusively for your work laptop and phone).
+*   **Audit Connected Devices:** A typical household has 20+ connected devices (smart TVs, tablets, kids' gaming consoles). Go into your router settings and prioritize your work laptop using **QoS (Quality of Service)** settings, which ensures your video calls get bandwidth priority over Netflix streaming in the next room.
+
+---
+
+### Phase 2: The Infrastructure Upgrade (The High-ROI Solution)
+If your home is larger than 1,500 square feet, or has multiple floors/dense walls, a single router will not suffice. You need to upgrade your hardware.
+
+#### Option A: The "Set It and Forget It" Solution (Mesh WiFi)
+Instead of one router trying to push a signal through walls, a Mesh system uses multiple "nodes" placed around your house to create a single, seamless blanket of coverage.
+*   **The Recommendation:** **Eero Pro 6E** or **Netgear Orbi Quad-Band WiFi 6E/7**.
+*   **Why:** They are incredibly easy to set up via a smartphone app, self-optimize in the background, and automatically hand your device off to the strongest node as you move around the house.
+*   **Pro-Tip:** Opt for a **tri-band** or **quad-band** system. This dedicated "backhaul" band allows the nodes to talk to each other without clogging the bandwidth you use for work.
+
+#### Option B: The Enterprise-Grade Solution (For Absolute Reliability)
+If you want the same level of reliability you experience at your firm’s headquarters, you want a hardwired Access Point (AP) system.
+*   **The Recommendation:** **Ubiquiti UniFi** system.
+*   **Why:** This requires running Ethernet cables through your walls to ceiling-mounted access points. It is the gold standard for security, customization, and zero-latency performance. 
+*   **Execution:** Do not DIY this. Hire a local low-voltage AV integrator to install and configure it.
+
+---
+
+### Phase 3: Hardwiring the Critical Path
+Wireless is inherently prone to interference. For your primary workspace, **wired is always superior to wireless.**
+
+*   **The Ethernet Backhaul:** If you install a Mesh system, try to connect the nodes to each other using physical Ethernet cables (if your home is wired for it). This increases throughput exponentially.
+*   **Desk Setup:** Run a single Ethernet cable from your closest mesh node or router directly into a USB-C hub on your desk. Connecting your laptop directly via Ethernet eliminates 99% of dropouts and latency issues during video calls.
+
+---
+
+### Phase 4: Future-Proofing & Security
+As a partner, you handle highly sensitive client data. Your home network is a potential vector for cyber threats.
+
+*   **Implement a Guest Network:** Put all IoT devices (smart fridges, baby monitors, smart TVs) and guests on a separate "Guest" network. If a smart lightbulb is hacked, your work laptop remains isolated and secure.
+*   **Upgrade to WiFi 6E or WiFi 7:** If buying new hardware, ensure it supports the **6 GHz band** (WiFi 6E or 7). This is a newly opened, completely uncongested wireless highway. It’s like driving on an empty HOV lane while everyone else is stuck in traffic on the 2.4 and 5 GHz bands.
+*   **Power Redundancy:** Plug your modem and main router into a small **UPS (Uninterruptible Power Supply)**. If your home loses power momentarily, your internet will stay live for 30–60 minutes, allowing you to gracefully exit a call or save your work.
+
+### Summary Action Plan
+1.  **Immediate:** Move your router to a central location and prioritize your work laptop via QoS.
+2.  **Next 48 Hours:** Order a **WiFi 6E/7 Mesh System** (e.g., Eero Pro 6E) if you experience dead zones.
+3.  **Next Week:** Have an AV professional run an Ethernet cable to your home office desk for a direct, hardwired connection.

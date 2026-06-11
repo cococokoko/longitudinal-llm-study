@@ -1,0 +1,53 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35 out=432
+Latency:   5320 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on how the disease spreads (airborne, droplets, close contact, etc.), but in general, risk can be reduced by limiting exposure to other people and poorly ventilated environments.
+
+A practical risk hierarchy is:
+
+1. Avoid or postpone nonessential travel
+- If transmission is high and travel is not necessary, staying local is typically the lowest-risk option.
+
+2. Use private transportation when possible
+- Driving alone or with members of your household generally reduces contact with others.
+- Minimize stops and choose less crowded locations when you do stop.
+
+3. Choose well-ventilated travel options
+- Good ventilation lowers the concentration of infectious particles in the air.
+- On planes, modern filtration systems can reduce risk while in flight, although boarding, deplaning, and airport time may still involve close contact.
+
+4. Reduce close-contact exposure
+- Avoid crowded terminals, stations, waiting areas, and queues when possible.
+- Travel during less busy times.
+- Maintain physical distance where practical.
+
+5. Follow public-health guidance
+- Stay current with recommended vaccinations or boosters for the disease in question.
+- Follow local requirements and advisories at your origin and destination.
+
+6. Use personal protective measures when appropriate
+- In respiratory pandemics, a well-fitting high-filtration mask (such as an N95, FFP2, or equivalent) can substantially reduce risk in crowded indoor settings.
+- Practice good hand hygiene, especially if the pathogen can spread through contaminated surfaces.
+
+7. Do not travel when sick
+- If you have symptoms, test positive, or have been advised to isolate, delaying travel helps protect others and may be required by local regulations.
+
+8. Consider lodging and meeting arrangements
+- Prefer accommodations with good ventilation.
+- Outdoor activities and meetings are generally lower risk than crowded indoor gatherings for airborne diseases.
+
+If you have a specific pandemic in mind (for example, COVID-19, influenza, or another outbreak), I can provide more tailored guidance.

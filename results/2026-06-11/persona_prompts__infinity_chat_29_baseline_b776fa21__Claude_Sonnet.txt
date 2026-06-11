@@ -1,0 +1,161 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=1024
+Latency:   10495 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+# Building an Online Forum with LAMP Stack
+
+## Prerequisites
+- Linux server
+- Apache web server
+- MySQL database
+- PHP (7.4+)
+
+---
+
+## 1. Database Setup (MySQL)
+
+```sql
+-- Create database
+CREATE DATABASE forum_db;
+USE forum_db;
+
+-- Users table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Categories table
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+-- Threads table
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT,
+    user_id INT,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+-- Posts table
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT,
+    user_id INT,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+---
+
+## 2. Project Structure
+
+```
+forum/
+├── config/
+│   └── database.php
+├── includes/
+│   ├── header.php
+│   └── footer.php
+├── index.php
+├── register.php
+├── login.php
+├── logout.php
+├── thread.php
+├── new_thread.php
+└── category.php
+```
+
+---
+
+## 3. Database Connection
+
+```php
+<?php
+// config/database.php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'your_username');
+define('DB_PASS', 'your_password');
+define('DB_NAME', 'forum_db');
+
+function getConnection() {
+    $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    
+    return $conn;
+}
+?>
+```
+
+---
+
+## 4. User Registration
+
+```php
+<?php
+// register.php
+session_start();
+require_once 'config/database.php';
+
+$error = '';
+$success = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username']);
+    $email    = trim($_POST['email']);
+    $password = $_POST['password'];
+    $confirm  = $_POST['confirm_password'];
+
+    // Basic validation
+    if (empty($username) || empty($email) || empty($password)) {
+        $error = "All fields are required.";
+    } elseif ($password !== $confirm) {
+        $error = "Passwords do not match.";
+    } elseif (strlen($password) < 8) {
+        $error = "Password must be at least 8 characters.";
+    } else {
+        $conn = getConnection();
+
+        // Check if username/email exists
+        $stmt = $conn->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
+        $stmt->bind_param("ss", $username, $email);
+        $stmt->execute();
+        $stmt->store_result();
+
+        if ($stmt->num_rows > 0) {
+            $error = "Username or email already exists.";
+        } else {
+            // Hash password and insert user
+            $hashed = password_hash($password, PASSWORD_BCRYPT);
+            $stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+            $stmt->bind_param("sss", $username, $email, $hashed);
+
+            if ($stmt->execute()) {
+                $success = "Registration successful! You can now log in.";
+            } else {
+                $error = "Registration failed

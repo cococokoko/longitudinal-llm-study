@@ -1,0 +1,25 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_high_ses_user_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=144
+Latency:   2048 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+One high-leverage management practice is to make expectations explicit and revisit them regularly.
+
+For a research group, that can mean:
+- Defining clear ownership for each project (who is responsible for what).
+- Agreeing on concrete milestones and timelines.
+- Establishing a predictable check-in cadence (e.g., weekly or biweekly).
+- Clarifying what success looks like for each person and project.
+
+Many team problems that appear to be performance or motivation issues are actually expectation mismatches. Clear expectations reduce confusion, improve accountability, and make feedback conversations much easier.

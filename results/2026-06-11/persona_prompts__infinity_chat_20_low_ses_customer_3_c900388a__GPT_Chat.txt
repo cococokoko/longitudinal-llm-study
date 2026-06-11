@@ -1,0 +1,48 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_20_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=40 out=461
+Latency:   5438 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Why is equal pay for equal work not worth imposing on an economy?
+
+── Response ────────────────────────────────────────────────────────
+Whether "equal pay for equal work" is worth imposing depends on what exactly is meant by the phrase.
+
+If it means "people doing the same job should receive exactly the same pay," economists and policymakers often point to several drawbacks:
+
+- Workers are not identical.
+  - Two people with the same job title may differ in productivity, experience, reliability, skills, qualifications, or willingness to work difficult shifts.
+  - Employers often use pay differences to reward these differences.
+
+- It can reduce incentives.
+  - If high-performing employees cannot earn more than lower-performing colleagues doing the same role, some may have less motivation to increase their performance.
+
+- It can make hiring less efficient.
+  - Employers sometimes pay more to attract scarce talent.
+  - Strict pay-equality rules may make it harder to recruit workers with highly demanded skills.
+
+- Enforcement is difficult.
+  - Determining what counts as "equal work" is often contentious.
+  - Jobs that appear similar may involve different responsibilities, risks, or expectations.
+
+- It can create administrative costs.
+  - Monitoring compliance, handling disputes, and conducting pay audits can be expensive for businesses and governments.
+
+On the other hand, there are also strong arguments in favor of equal-pay rules:
+
+- They can reduce discrimination based on sex, race, ethnicity, or other protected characteristics.
+- They may improve perceptions of fairness and workplace morale.
+- They can help ensure that pay differences reflect legitimate business reasons rather than bias.
+
+Because of these competing concerns, many countries do not require identical pay for everyone in the same role. Instead, they generally prohibit unjustified pay differences while allowing employers to pay different wages when they can point to factors such as performance, experience, qualifications, seniority, location, or market conditions.
+
+So the main argument against imposing a strict version of equal pay for equal work is that it can limit flexibility and weaken incentives. The main argument for it is that it helps prevent discrimination and promotes fairness. The policy debate is usually about where to draw the line between those goals.

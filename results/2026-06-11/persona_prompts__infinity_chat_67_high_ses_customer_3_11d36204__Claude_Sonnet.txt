@@ -1,0 +1,27 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_67_high_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=47 out=95
+Latency:   3262 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a Google ad with 2 sentences and a 30-character limit per sentence for mobile car detailing.
+
+── Response ────────────────────────────────────────────────────────
+Here are two Google ad options for mobile car detailing:
+
+**Option 1:**
+"We Come To You, Car Shines!" (28)
+"Book Your Detail Today!" (23)
+
+**Option 2:**
+"Pro Mobile Detailing Near You!" (30)
+"Spotless Results, We Drive To You" (needs trimming)
+"Spotless Results At Your Door!" (30)

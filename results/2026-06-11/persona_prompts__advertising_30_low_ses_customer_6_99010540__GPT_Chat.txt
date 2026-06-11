@@ -1,0 +1,88 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_30_low_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=36 out=495
+Latency:   4184 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Starting from scratch, the most effective approach is to focus on one language, build small projects early, and practice consistently rather than trying to learn everything at once.
+
+Since you work long hours in a warehouse, a plan that fits into short daily sessions is likely to be more sustainable than intensive study blocks.
+
+A practical path:
+
+1. Start with Python
+- Python is beginner-friendly and widely used.
+- It teaches core programming concepts without a lot of extra complexity.
+- It's useful for automation, data analysis, web development, and more.
+
+2. Learn the fundamentals
+Focus on:
+- Variables
+- Data types (numbers, text, lists)
+- Conditional statements (if/else)
+- Loops
+- Functions
+- Basic file handling
+
+Good free resources:
+- Harvard CS50 (free online)
+- Python for Everybody (free course)
+- freeCodeCamp
+- Codecademy (free tier available)
+
+3. Code regularly
+- Aim for 20–45 minutes most days.
+- Consistency matters more than long sessions.
+- Even 15–20 minutes before or after work can add up over months.
+
+4. Build simple projects early
+Examples:
+- A calculator
+- A to-do list app
+- A shift-hours tracker
+- A warehouse inventory tracker
+- A tool that calculates overtime pay
+
+Projects help concepts stick much better than tutorials alone.
+
+5. Learn basic computer science concepts
+After you're comfortable with Python:
+- Lists and dictionaries
+- Algorithms
+- Data structures
+- Problem-solving techniques
+
+6. Use coding challenges sparingly
+Sites like:
+- LeetCode
+- HackerRank
+- Codewars
+
+These can improve problem-solving skills, but don't spend all your time on them. Building projects is usually more valuable for beginners.
+
+7. Learn Git and GitHub
+Once you've completed a few projects:
+- Learn basic Git commands
+- Create a GitHub account
+- Upload your projects
+
+This helps you track progress and build a portfolio.
+
+A beginner schedule could look like:
+- Week 1–2: Python basics
+- Week 3–4: Functions and simple programs
+- Month 2: Build 2–3 small projects
+- Month 3: Learn Git/GitHub and create a larger project
+
+If your goal is a career change into software development, I can also suggest a structured 6–12 month roadmap based on how many hours per week you can realistically study.

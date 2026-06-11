@@ -1,0 +1,29 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q152
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=258 out=67
+Latency:   2169 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: People sometimes talk about what the aims of this country should be for the next ten years. Listed below are some of the goals which different people would give top priority. Would you please say which one of these you, yourself, consider the most important?
+
+Options:
+A. A high level of economic growth
+B. Making sure this country has strong defense forces
+C. Seeing that people have more say about how things are done at their jobs and in their communities
+D. Trying to make our cities and countryside more beautiful
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.30, "B": 0.15, "C": 0.40, "D": 0.08, "E": 0.04, "F": 0.02, "G": 0.005, "H": 0.005}

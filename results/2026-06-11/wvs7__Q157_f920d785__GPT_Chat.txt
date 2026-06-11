@@ -1,0 +1,29 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q157
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=191 out=142
+Latency:   2035 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: And what would be the next most important?
+
+Options:
+A. A stable economy
+B. Progress toward a less impersonal and more humane society
+C. Progress toward a society in which ideas count more than money
+D. The fight against crime
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.35, "B": 0.25, "C": 0.25, "D": 0.15, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}

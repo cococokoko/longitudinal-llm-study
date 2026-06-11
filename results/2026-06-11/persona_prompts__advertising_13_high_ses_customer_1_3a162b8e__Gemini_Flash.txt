@@ -1,0 +1,88 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_13_high_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=23 out=1461
+Latency:   9496 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Mastering the art of cooking steak.
+
+── Response ────────────────────────────────────────────────────────
+For a neurosurgeon, the appeal of mastering steak lies in the same domain as your day job: **precision, understanding the underlying biophysics, thermal dynamics, and executing a highly reproducible protocol.** 
+
+Cooking a steak is not an intuitive art; it is a controlled chemical reaction. Here is the definitive, scientifically grounded guide to mastering the steak, designed for a mind that appreciates anatomical structure and precise margins.
+
+---
+
+### Phase 1: The Anatomy of the Cut (Selecting the Specimen)
+Just as you select the surgical approach based on the pathology, you must choose your cut based on the desired outcome. You are dealing with skeletal muscle, adipose tissue, and collagen.
+
+*   **The Ribeye (Spinalis dorsi & Longissimus dorsi):** The gold standard. The *spinalis* (the cap) is highly marbled with intramuscular fat. This fat melts during cooking, lubricating the muscle fibers.
+*   **The Filet Mignon (Psoas major):** A non-weight-bearing muscle. It has minimal connective tissue and low fat, making it incredibly tender but lacking in deep flavor. It requires precise thermal control because it dries out rapidly.
+*   **The Strip (Longissimus dorsi):** A balance of tight grain and decent marbling. 
+
+**The Rule of Thickness:** Never buy a steak less than **1.5 to 2 inches (3.8 to 5 cm) thick**. Thin steaks do not allow for a thermal gradient; the interior will overcook before you can achieve a proper external sear.
+
+---
+
+### Phase 2: Pre-Operative Prep (The Dry Brine)
+Do not salt your steak right before it hits the pan. This is a critical error in osmotic pressure.
+
+1.  **The Protocol:** Heavily salt the steak with kosher salt (coarse NaCl) **12 to 24 hours before cooking**, and place it uncovered on a wire rack in the refrigerator.
+2.  **The Science:** 
+    *   *Minutes 1–10:* Salt draws moisture out of the meat via osmosis, creating a wet puddle on the surface.
+    *   *Minutes 10–30:* The salt dissolves in this moisture, creating a highly concentrated brine.
+    *   *Hour 1 onwards:* The brine breaks down the muscle proteins (specifically myosin), relaxing the sheath. The meat reabsorbs the seasoned liquid.
+    *   *The Result:* Deeply seasoned meat, tenderized protein structures, and a bone-dry surface. **A dry surface is mandatory for the Maillard reaction.** Water is the enemy of a sear; it boils at 100°C (212°F), whereas the Maillard reaction requires temperatures above 150°C (300°F).
+
+---
+
+### Phase 3: The Procedure (The Reverse Sear)
+For thick cuts, traditional pan-searing from raw creates a "gray band" of overcooked, dry meat beneath the crust. To achieve edge-to-edge pink perfection (uniform medium-rare), you must decouple the **cooking** phase from the **searing** phase. 
+
+This is the **Reverse Sear method**.
+
+#### Equipment Required:
+*   An accurate digital probe thermometer (e.g., Thermapen).
+*   A heavy cast-iron skillet or carbon steel pan (high thermal mass is required to prevent temperature drops when the meat hits the pan).
+*   Wire rack and baking sheet.
+*   High-smoke-point oil (avocado or beef tallow; do not use olive oil or butter for the initial sear, as they burn).
+
+#### Step 1: The Low-Temp Dehydration & Cook
+1.  Preheat your oven to **105°C (225°F)**.
+2.  Insert the probe thermometer into the geometric center of the steak.
+3.  Place the steak on the wire rack in the oven.
+4.  **The Target:** Remove the steak when the internal temperature reaches **46°C (115°F)** for a target of medium-rare. (The meat will look pale and unappetizing at this stage; this is normal).
+5.  **Rest:** Let it rest on a cutting board for 10 minutes. This allows the surface moisture to evaporate further and stops the internal cooking momentum.
+
+#### Step 2: The High-Thermal Sear & Arrosé (Basting)
+1.  Heat your cast-iron skillet until it is smoking hot (approx. **230°C–260°C / 450°F–500°F**). Add 1 tablespoon of high-smoke-point oil.
+2.  Lay the steak in the pan away from you to avoid oil splatter. 
+3.  Sear for **45 seconds**, then flip.
+4.  **The Arrosé (Butter Baste):** Immediately after the first flip, drop in 3 tablespoons of unsalted butter, a few smashed cloves of garlic, and a sprig of rosemary or thyme. 
+5.  Tilt the pan slightly and use a large spoon to continuously douse the top of the steak with the foaming butter. The butter acts as a heat-transfer medium, cooking the nooks and crannies of the steak, while the milk solids brown, adding a nutty, complex flavor profile.
+6.  Flip once more to ensure even browning. Total sear time should not exceed **2 minutes**.
+7.  **Final Target Internal Temp:** **54°C (130°F)** for Medium-Rare.
+
+---
+
+### Phase 4: Post-Op (The Rest and Cut)
+Because you used the Reverse Sear method, the thermal gradient is incredibly gentle. Unlike traditional high-heat cooking—where the muscle fibers contract violently and squeeze juices to the center—the reverse-seared steak requires minimal resting. A 5-minute rest is sufficient.
+
+#### The Incision:
+When slicing, identify the direction of the muscle fibers (the grain). **Always slice perpendicular to the grain.** 
+*   *The Rationale:* Slicing across the grain mechanically shortens the muscle fibers, meaning your teeth have to do a fraction of the work to break them down. It artificially increases the tenderness of the cut by a order of magnitude.
+
+### Summary of Critical Metrics
+*   **Dry Brine Time:** 12–24 hours.
+*   **Oven Temp:** 105°C (225°F).
+*   **Pull Temp (Oven):** 46°C (115°F).
+*   **Sear Temp:** >230°C (450°F).
+*   **Final Pull Temp (Post-Sear):** 54°C (130°F) for Medium-Rare.

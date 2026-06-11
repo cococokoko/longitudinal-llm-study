@@ -1,0 +1,31 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q19
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=168 out=53
+Latency:   1188 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: On this list are various groups of people. Could you please mention any that you would not like to have as neighbors?
+
+People of a different race
+
+Options:
+A. Mentioned
+B. Not mentioned
+C. Don't know
+D. No answer/refused
+E. Not applicable (filter)
+F. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.0, "B": 1.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+```

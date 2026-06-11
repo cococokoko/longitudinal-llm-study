@@ -1,0 +1,60 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=49 out=327
+Latency:   9666 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface
+
+Here's a practical guide for your setup:
+
+## Installation First
+
+1. Go to **dolphin-emu.org**
+2. Download the latest stable release (Windows x64)
+3. Run the installer - no admin rights typically needed
+
+## Touchpad Setup
+
+**Basic Navigation:**
+- Single tap = left click
+- Two-finger tap = right click
+- Two-finger scroll = navigate menus
+- Pinch = zoom (limited use in emulator)
+
+**In Dolphin Settings:**
+- Go to **Controllers** → configure your input scheme
+- Dolphin reads touchpad as a standard pointing device
+
+## On-Screen Keyboard
+
+- Access via **taskbar system tray** → touch keyboard icon
+- Or: **Settings → Accessibility → Keyboard**
+- Pin it to taskbar for quick access
+
+## Recommended Controller Configuration
+
+Honestly, **touchpad + on-screen keyboard alone will be frustrating** for most games. Consider:
+
+- **Keyboard mapping** through Dolphin's controller config
+- A **Bluetooth controller** (Xbox/PS controller pairs easily with Surface)
+- Surface **touch screen** directly if your model supports it
+
+## Performance Tips
+
+- Enable **GPU acceleration** in Dolphin settings
+- Close background apps
+- Check your Surface model - older ones may struggle with demanding Wii titles
+
+**What specific game are you trying to run?** That affects configuration recommendations significantly.

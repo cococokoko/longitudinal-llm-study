@@ -1,0 +1,23 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=21 out=94
+Latency:   1316 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+One example of an optimization technique used in machine learning is Gradient Descent.
+
+Gradient Descent works by iteratively adjusting a model's parameters in the direction that reduces a loss function, helping the model learn from data. Variants include:
+- Stochastic Gradient Descent (SGD)
+- Mini-batch Gradient Descent
+- Adam (Adaptive Moment Estimation)
+- RMSprop
+
+For example, many neural networks are trained using Adam or SGD.

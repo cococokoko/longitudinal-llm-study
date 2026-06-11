@@ -1,0 +1,29 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q271
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=192 out=109
+Latency:   1332 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Do you live with your parents or your parents in law?
+
+Options:
+A. No
+B. Yes, own parent(s)
+C. Yes, parent(s) in law
+D. Yes, both own parent(s) and parent(s) in law
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 1.0, "H": 0.0}

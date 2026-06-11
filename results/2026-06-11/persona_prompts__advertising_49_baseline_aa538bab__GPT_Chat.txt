@@ -1,0 +1,60 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=448
+Latency:   3954 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi depends on what's causing the problem, but these steps often make the biggest difference:
+
+• Place your router centrally
+  - Put it in an open area, away from walls, metal objects, and large appliances.
+  - Avoid placing it on the floor or inside cabinets.
+  - Elevate it on a shelf or desk.
+
+• Optimize the Wi‑Fi band
+  - Use 5 GHz or 6 GHz (if available) for higher speeds and less congestion.
+  - Use 2.4 GHz for longer range through walls.
+
+• Change the Wi‑Fi channel
+  - Nearby networks can interfere with yours.
+  - In your router settings, try less crowded channels:
+    - 2.4 GHz: usually channels 1, 6, or 11.
+    - 5 GHz: select a less congested channel if your router supports it.
+
+• Update firmware
+  - Install the latest router firmware for performance, stability, and security improvements.
+
+• Improve security
+  - Use WPA2 or WPA3 encryption.
+  - Remove unknown devices from your network.
+
+• Reduce interference
+  - Keep the router away from microwaves, cordless phones, baby monitors, and Bluetooth-heavy devices.
+
+• Upgrade hardware
+  - Older routers may struggle with many devices.
+  - Consider a Wi‑Fi 6 or Wi‑Fi 6E router if you have many connected devices.
+
+• Use a mesh system for large homes
+  - If some rooms have weak signals, a mesh Wi‑Fi system often works better than a traditional extender.
+
+• Connect critical devices with Ethernet
+  - For gaming, video calls, or streaming, a wired connection is usually more reliable than Wi‑Fi.
+
+• Check your internet plan
+  - Sometimes the Wi‑Fi is fine, but the internet connection itself is the bottleneck.
+  - Run speed tests near the router and compare them to your ISP's advertised speeds.
+
+To give more specific advice, tell me:
+• The size of your home/apartment
+• Your router model
+• Whether the issue is slow speeds, poor coverage, disconnects, or something else
+• How many devices are connected to the network.

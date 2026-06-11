@@ -1,0 +1,46 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=333
+Latency:   9336 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Great question. Given your background as a neurosurgeon, you have some genuinely valuable context that could shape which direction makes the most sense.
+
+## High-Value Areas to Consider
+
+### Foundational Skills Worth Building
+- **Python** - versatile, readable, dominant in medical/research contexts
+- **Basic statistics and data literacy** - you likely have this already
+- **Version control (Git)** - essential for any collaborative work
+
+### Areas With Strong Future Relevance
+- **Machine learning/AI fundamentals** - understanding how models work, not just using them
+- **Medical imaging and computer vision** - directly applicable to your field
+- **Clinical data analysis** - working with EHR data, outcomes research
+
+### Emerging Areas Specifically Relevant to Neurosurgery
+- **Surgical robotics software concepts**
+- **Brain-computer interfaces** - this field is accelerating rapidly
+- **Medical device software regulation** (FDA frameworks)
+
+## Honest Considerations
+
+- **Depth vs. breadth matters** - a surgeon who understands AI limitations is often more valuable than one who can code but lacks clinical judgment
+- **Collaboration skills** may matter more than coding - knowing enough to work effectively with engineers
+- **Your clinical expertise is the scarce resource**, not the coding
+
+## A Practical Starting Point
+Python + basic ML concepts would give you strong footing to evaluate, collaborate on, or contribute to neurosurgical technology.
+
+What's your primary goal - research, clinical tools, or something entrepreneurial?

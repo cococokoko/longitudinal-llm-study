@@ -1,0 +1,46 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_01_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=30 out=315
+Latency:   3211 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Learning to play the guitar.
+
+── Response ────────────────────────────────────────────────────────
+Great skill to pick up. A structured approach tends to work well:
+
+- Weeks 1–2:
+  - Learn how to hold the guitar and use a pick (or fingerstyle basics).
+  - Practice switching between a few common open chords: G, C, D, Em, Am.
+  - Spend 10–15 minutes daily on clean chord changes.
+
+- Weeks 3–6:
+  - Learn basic strumming patterns.
+  - Play along with simple songs that use 3–4 chords.
+  - Start using a metronome to build timing.
+
+- Months 2–3:
+  - Learn power chords and basic barre chords.
+  - Practice major and minor scales.
+  - Work on rhythm consistency and playing entire songs from start to finish.
+
+- Ongoing:
+  - Aim for 20–30 minutes of focused practice most days rather than occasional long sessions.
+  - Record yourself once a week to track progress.
+  - Learn songs you genuinely enjoy; motivation matters.
+
+A simple daily practice routine:
+- 5 min: warm-up exercises
+- 10 min: chord changes or technique
+- 10 min: rhythm/strumming practice
+- 10 min: work on a song
+
+Are you learning acoustic or electric guitar, and what kind of music would you like to play?

@@ -1,0 +1,76 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_high_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=44 out=460
+Latency:   4229 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+A strong STEM fair project connected to a real issue in Vietnam, while still being affordable and scientifically rigorous, is:
+
+"Low-Cost Water Quality Monitoring System for Rural Communities"
+
+Why it matters in Vietnam:
+- Many regions of Vietnam face water pollution from agriculture, aquaculture, industry, and urban runoff.
+- In parts of the Mekong Delta and Red River Delta, water quality directly affects health, farming, and fisheries.
+- Climate change and saltwater intrusion are creating additional water challenges.
+
+Project concept:
+Build a portable device that measures basic water-quality indicators and displays whether water is likely safe or potentially contaminated.
+
+What you could test:
+- pH level
+- Turbidity (cloudiness)
+- Temperature
+- Electrical conductivity (related to dissolved salts)
+
+Research question:
+"Can a low-cost sensor system accurately identify differences in water quality from various local water sources?"
+
+Materials (often under $40–$80 total):
+- Arduino Uno or ESP32 microcontroller
+- pH sensor
+- Turbidity sensor
+- Temperature sensor
+- Breadboard and wires
+- Battery pack
+- Simple display or smartphone connection
+- Water samples from different locations
+
+Experiments:
+- Compare tap water, pond water, river water, rainwater, and bottled water.
+- Measure changes after filtration.
+- Compare sensor readings with publicly available water-quality standards.
+
+STEM components:
+- Science: water chemistry and environmental science
+- Technology: sensors and data collection
+- Engineering: building the monitoring device
+- Mathematics: statistical analysis and graphing
+
+Ways to make it stand out:
+- Create a color-coded risk index.
+- Develop a phone app dashboard.
+- Map results using GPS locations.
+- Estimate how much commercial testing costs compared with your system.
+
+If you want something even more innovative and likely to impress judges at a higher-level competition, consider:
+
+"Solar-Powered Floating Sensor for Detecting Water Pollution in the Mekong Delta"
+
+The prototype would:
+- Float on water.
+- Collect environmental data automatically.
+- Run on a small solar panel.
+- Send data wirelessly.
+
+This project connects directly to environmental sustainability, climate resilience, and smart agriculture—three major challenges facing Vietnam—and can be built for a fraction of the cost of professional monitoring equipment while demonstrating advanced engineering skills.

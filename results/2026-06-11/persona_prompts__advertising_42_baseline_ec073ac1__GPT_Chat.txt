@@ -1,0 +1,85 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=540
+Latency:   5045 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best fitness and nutrition app depends on your goals, but these are some of the strongest options in 2025:
+
+For calorie and nutrition tracking:
+- MacroFactor
+  - Excellent for weight loss, maintenance, or muscle gain.
+  - Uses your weight trends and food logs to adjust calorie recommendations.
+  - Strong food database and analytics.
+  - Paid subscription.
+
+- Cronometer
+  - Best for detailed nutrition tracking.
+  - Tracks vitamins, minerals, and micronutrients in addition to calories and macros.
+  - Popular among athletes and people following specialized diets.
+  - Free version available; premium adds more features.
+
+- MyFitnessPal
+  - One of the largest food databases.
+  - Easy barcode scanning and meal logging.
+  - Good for beginners.
+  - Some features require a premium subscription.
+
+For workout tracking:
+- Strong
+  - Excellent strength-training log.
+  - Tracks sets, reps, weights, and progress over time.
+  - Simple and intuitive.
+
+- Hevy
+  - Similar to Strong but with social features.
+  - Growing rapidly among gym-goers.
+  - Good workout analytics and exercise library.
+
+- Fitbod
+  - Generates personalized workouts based on your goals, equipment, and recovery.
+  - Helpful if you don't want to build your own program.
+
+For running and endurance sports:
+- Strava
+  - Industry standard for runners and cyclists.
+  - Strong community features, route planning, and performance tracking.
+
+- Garmin Connect
+  - Excellent if you use a Garmin watch.
+  - Deep performance metrics, recovery data, and training plans.
+
+For overall health and activity:
+- Apple Health (iPhone)
+  - Integrates data from many fitness and nutrition apps.
+  - Good central dashboard for health metrics.
+
+- Google Fit / Fitbit
+  - Easy activity tracking and health monitoring.
+  - Fitbit offers strong sleep tracking and readiness metrics.
+
+For habit-building and coaching:
+- Noom
+  - Focuses on behavior change and weight management.
+  - More coaching-oriented than data-oriented.
+
+- Future
+  - Connects you with a human coach who creates personalized workout plans.
+  - Premium pricing.
+
+Recommended combinations:
+- Best overall for nutrition + fitness: MacroFactor + Hevy
+- Best for detailed nutrition: Cronometer + Strong
+- Best for runners: Strava + Garmin Connect
+- Best for beginners: MyFitnessPal + Fitbod
+- Best Apple ecosystem setup: Apple Health + MacroFactor + Strong
+
+If you tell me your goal (weight loss, muscle gain, marathon training, general health, etc.), I can narrow it down to the top 2–3 apps for your situation.

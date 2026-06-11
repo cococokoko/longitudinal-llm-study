@@ -1,0 +1,62 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=10 out=870
+Latency:   6168 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The "best" remote team collaboration tool depends entirely on your team’s size, workflow, and specific needs. To help you find the right fit, we have broken down the top tools into categories based on their primary function.
+
+---
+
+### 1. All-in-One Project Management (The "Where Work Happens" Tools)
+These tools keep projects organized, assign tasks, track deadlines, and reduce the need for status-update meetings.
+
+*   **Asana:** Best for general project management. It is highly visual, allowing you to view projects as lists, boards, timelines (Gantt charts), or calendars. It’s great for cross-functional teams.
+*   **Monday.com:** Best for customization. It is highly adaptable and excellent for workflows that require tracking budgets, CRM, or complex production pipelines.
+*   **Trello:** Best for simple, visual task tracking. It uses a Kanban board system (cards you drag from "To Do" to "Done"). Ideal for smaller teams or straightforward workflows.
+*   **ClickUp:** Best for feature-rich scaling. It brands itself as the "one app to replace them all," combining docs, tasks, goals, and chat. It has a steeper learning curve but is incredibly powerful.
+
+### 2. Daily Communication & Chat (The "Watercooler" Tools)
+These tools replace the quick desk-side chat and keep team members connected in real-time.
+
+*   **Slack:** The industry standard. It organizes conversations into channels, integrates with almost every other software, and supports quick audio "huddles" for fast syncs.
+*   **Microsoft Teams:** Best for enterprise and Office 365 users. If your company already uses Word, Excel, and SharePoint, Teams is the most seamless and secure choice for chat and video.
+
+### 3. Video Conferencing (The "Face-to-Face" Tools)
+For deep-dive meetings, presentations, and maintaining a human connection.
+
+*   **Zoom:** The gold standard for reliability. It handles large groups well, has great breakout room features, and rarely drops connections.
+*   **Google Meet:** Best for simplicity. It runs entirely in the browser (no app download required) and integrates perfectly with Google Calendar.
+*   **Loom:** Best for *asynchronous* video. Instead of scheduling a meeting, you can record your screen and camera to explain a concept, which teammates can watch on their own time.
+
+### 4. Document Collaboration & Knowledge Management (The "Brain" Tools)
+Where your team stores SOPs (Standard Operating Procedures), brainstorms, and co-writes documents.
+
+*   **Notion:** Best for internal wikis and knowledge hubs. It allows teams to build beautiful, interconnected databases, docs, and roadmaps in one place.
+*   **Google Workspace (Docs, Sheets, Slides):** Still the undisputed king of real-time, collaborative document editing.
+*   **Confluence:** Best for software development and technical teams (especially those already using Jira).
+
+### 5. Visual Collaboration & Brainstorming (The "Whiteboard" Tools)
+For design sprints, mind-mapping, and interactive workshops.
+
+*   **Miro:** An infinite digital whiteboard. It is incredible for brainstorming, mapping out user journeys, and running interactive remote workshops with sticky notes and voting.
+*   **Figma / FigJam:** Figma is the industry standard for collaborative UI/UX design. FigJam is their whiteboard tool, perfect for designers and product managers to sketch ideas together.
+
+---
+
+### How to Choose the Right Stack
+
+To avoid "tool fatigue" (having too many apps), aim for a **4-Tool Stack**:
+
+1.  **One Chat Tool:** (e.g., Slack) for quick daily chatter.
+2.  **One Project Manager:** (e.g., Asana or Monday) to track who is doing what.
+3.  **One Video Tool:** (e.g., Zoom or Loom) for meetings and quick explanations.
+4.  **One Knowledge Base:** (e.g., Notion or Google Drive) to store files and company info.

@@ -1,0 +1,78 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=758
+Latency:   4541 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+In graph theory, the term **"linear graph"** can refer to two different things depending on the context:
+
+1. **A Path Graph ($P_n$):** This is the most common informal use, representing a graph where vertices are connected in a single, straight line.
+2. **A Line Graph ($L(G)$):** This is a formal graph operation where the edges of one graph become the vertices of a new graph.
+
+Here are examples of both.
+
+---
+
+### Example 1: A Path Graph (The informal "linear" graph)
+A **Path Graph** (denoted as $P_n$, where $n$ is the number of vertices) is a graph whose vertices can be listed in the order $v_1, v_2, \dots, v_n$ such that the edges are $\{v_1, v_2\}, \{v_2, v_3\}, \dots, \{v_{n-1}, v_n\}$. It looks like a single, unbranching line.
+
+#### **Example: $P_4$ (Path Graph with 4 vertices)**
+*   **Vertices ($V$):** $\{A, B, C, D\}$
+*   **Edges ($E$):** $\{(A, B), (B, C), (C, D)\}$
+
+**Visual Representation:**
+```text
+A -------- B -------- C -------- D
+```
+*   **Properties:**
+    *   It has $n$ vertices and $n-1$ edges.
+    *   The "end" vertices ($A$ and $D$) have a degree of 1.
+    *   The "internal" vertices ($B$ and $C$) have a degree of 2.
+    *   There are no cycles or branches.
+
+---
+
+### Example 2: A Line Graph (The formal mathematical definition)
+In formal graph theory, a **Line Graph** of a graph $G$ (written as $L(G)$) is a graph where:
+*   Each vertex of $L(G)$ represents an edge of $G$.
+*   Two vertices in $L(G)$ are connected by an edge if and only if their corresponding edges in $G$ share a common vertex.
+
+#### **Example:**
+Let's start with a simple star graph $G$:
+*   **Vertices of $G$:** $\{1, 2, 3, 4\}$
+*   **Edges of $G$:** 
+    *   $e_1 = (1, 2)$
+    *   $e_2 = (1, 3)$
+    *   $e_3 = (1, 4)$
+
+*(In graph $G$, all three edges meet at vertex 1).*
+
+```text
+Graph G:
+   2
+   |
+   1 --- 3
+   |
+   4
+```
+
+To create the **Line Graph $L(G)$**:
+1.  The **vertices** of $L(G)$ are the edges of $G$: $\{e_1, e_2, e_3\}$.
+2.  We connect these vertices because $e_1, e_2,$ and $e_3$ all share the vertex $1$ in the original graph.
+
+**Visual Representation of $L(G)$:**
+```text
+     e1
+    /  \
+   /    \
+  e2 ---- e3
+```
+The resulting Line Graph $L(G)$ is a triangle (a complete graph $K_3$).

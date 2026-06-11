@@ -1,0 +1,120 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=20 out=642
+Latency:   7807 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to stay relevant over the next 5–15 years, focus less on specific frameworks and more on skills that remain valuable even as tools change.
+
+Priority areas:
+
+1. Computer Science Fundamentals
+- Data structures and algorithms
+- Time and space complexity
+- Networking basics (HTTP, TCP/IP, DNS)
+- Operating systems concepts
+- Databases (SQL and data modeling)
+- Distributed systems fundamentals
+
+Frameworks come and go, but these concepts underpin everything.
+
+2. AI and Machine Learning Literacy
+You don't necessarily need to become an ML researcher, but you should understand:
+- How modern AI systems work at a high level
+- LLMs, embeddings, vector databases, and RAG
+- AI agents and workflow automation
+- Model evaluation and limitations
+- AI-assisted software development
+
+Many software products will increasingly include AI capabilities.
+
+3. Building Systems, Not Just Writing Code
+Companies often value engineers who can:
+- Design architectures
+- Make trade-offs
+- Handle scalability and reliability
+- Debug complex production issues
+- Understand business requirements
+
+System design skills tend to become more valuable as careers progress.
+
+4. Cloud and Infrastructure
+Learn at least one major cloud platform:
+- AWS, Azure, or Google Cloud
+- Containers (Docker)
+- Kubernetes basics
+- CI/CD pipelines
+- Infrastructure as code
+
+Modern software is deeply tied to cloud infrastructure.
+
+5. Security
+Security knowledge is becoming essential rather than optional:
+- Authentication and authorization
+- Secure coding practices
+- Common vulnerabilities (OWASP)
+- Encryption fundamentals
+- Cloud security concepts
+
+Security mistakes are expensive and highly visible.
+
+6. Data Engineering
+Data continues to grow in importance:
+- SQL mastery
+- Data pipelines
+- ETL/ELT concepts
+- Streaming systems
+- Analytics and observability
+
+Many organizations struggle more with data than with application code.
+
+7. Human Skills
+These often become the biggest differentiator:
+- Clear written communication
+- Explaining technical concepts
+- Requirements gathering
+- Collaboration
+- Leadership and mentoring
+- Product thinking
+
+As AI automates portions of coding, communication and judgment become even more valuable.
+
+8. Learning How to Work With AI
+Developers increasingly need to:
+- Use AI coding assistants effectively
+- Review AI-generated code
+- Verify correctness and security
+- Break problems into tasks AI can help solve
+- Integrate AI into products
+
+The ability to direct and validate AI output may become as important as writing every line yourself.
+
+A practical roadmap:
+- Learn one programming language deeply (Python, Java, C#, Go, JavaScript/TypeScript, etc.)
+- Master databases and SQL
+- Learn web development fundamentals
+- Learn cloud basics and Docker
+- Study system design
+- Learn AI fundamentals and LLM application development
+- Build real projects
+- Develop communication and product skills
+
+If you're just starting today, a strong combination would be:
+- Python
+- SQL
+- Git
+- Web fundamentals
+- Cloud basics (AWS)
+- Docker
+- AI/LLM application development
+- System design
+
+That combination aligns well with where the industry appears to be heading while remaining grounded in durable engineering fundamentals.

@@ -1,0 +1,87 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=501
+Latency:   5317 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to stay relevant over the next 5–10 years, focus less on specific programming languages and more on durable skills that adapt as technology changes.
+
+Key areas to learn:
+
+• Programming fundamentals
+  - Data structures and algorithms
+  - Object-oriented and functional programming concepts
+  - Debugging and problem-solving
+  - Understanding how computers, networks, and operating systems work
+
+• AI and machine learning literacy
+  - How AI systems are built and used
+  - Working with APIs from AI providers
+  - Prompt engineering and AI-assisted development
+  - Understanding AI limitations, privacy, and security concerns
+  - You do not necessarily need to become a machine learning researcher, but you should know how to integrate AI into applications.
+
+• Cloud computing
+  - AWS, Azure, or Google Cloud
+  - Containers (Docker)
+  - Basic Kubernetes concepts
+  - Serverless architectures
+  - Infrastructure as code
+
+• Data skills
+  - SQL and databases
+  - Data modeling
+  - Data analysis fundamentals
+  - Working with large datasets
+
+• Cybersecurity
+  - Secure coding practices
+  - Authentication and authorization
+  - Common vulnerabilities
+  - Privacy and compliance considerations
+
+• Software engineering practices
+  - Git and version control
+  - Testing and automation
+  - CI/CD pipelines
+  - System design
+  - Documentation and collaboration
+
+• Communication and business understanding
+  - Requirements gathering
+  - Working with stakeholders
+  - Writing clearly
+  - Understanding the problem before building the solution
+
+For someone working shifts at a hospital as a patient care aide, there is also a potentially valuable niche: healthcare technology.
+
+Consider learning:
+• Healthcare software development
+• Electronic health record (EHR) systems
+• HL7 and FHIR healthcare data standards
+• Healthcare privacy regulations
+• Clinical workflow design
+
+Your firsthand experience in patient care gives you insight many software developers lack. Developers who understand both technology and healthcare workflows are often highly valuable because they can build solutions that actually fit how hospitals operate.
+
+A practical learning path could be:
+1. Learn Python and JavaScript.
+2. Learn Git and SQL.
+3. Build small web applications.
+4. Learn cloud fundamentals (AWS or Azure).
+5. Learn AI integration and APIs.
+6. Explore healthcare data standards such as FHIR.
+7. Build a healthcare-related portfolio project.
+
+That combination would position you well for general software development roles while also leveraging your healthcare background.

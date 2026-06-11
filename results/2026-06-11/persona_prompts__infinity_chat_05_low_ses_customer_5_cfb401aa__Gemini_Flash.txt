@@ -1,0 +1,48 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_customer_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=28 out=746
+Latency:   5486 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+For a senior citizen, a smartwatch shouldn't just be a gadget for the wearer; it should be a bridge of support for their entire family. 
+
+The best feature for a senior-focused smartwatch is the **"Family Care Circle" Hub with Delegated Task Sharing.**
+
+This feature is designed specifically to ease the mental load of the primary family caregiver (who is often balancing their own household, children, and career) while preserving the senior’s independence and dignity.
+
+Here is how the feature works:
+
+### 1. The "Care Circle" Dashboard (For the Caregiver)
+Instead of the senior having to manage complex notifications, a designated family member (the "Care Circle Administrator") manages the watch’s settings remotely via a smartphone app. 
+* **Shared Responsibility:** The administrator can invite other extended family members (siblings, adult grandchildren, or trusted neighbors) into the "Circle." 
+* **Task Delegation:** If the senior needs a ride to a doctor’s appointment or a grocery delivery, the administrator can post the task to the Circle. A family member can "claim" the task, and the watch will automatically update to show the senior *who* is coming to help them that day.
+
+### 2. "Gentle Nudge" Reminders (For the Senior)
+Instead of loud, stressful alarms, the watch uses soft haptic vibrations (gentle taps on the wrist) and clear, large-font visual cues for daily routines.
+* **Visual & Audio Prompts:** "Time for your blue pill with water" or "Granddaughter Maya is calling you in 10 minutes."
+* **Two-Way Confirmation:** The senior can tap "Done" or "Need Help." If they tap "Need Help" or don't respond to a critical reminder (like heart medication) within 30 minutes, the Care Circle is quietly notified so a family member can check in.
+
+### 3. Smart "Safe Zone" & Routine Monitoring
+Rather than invasive, constant GPS tracking which can feel patronizing, this feature uses **Routine-Based Geofencing**.
+* **Peace of Mind for the Family:** The watch learns the senior’s usual routine (e.g., "Tuesdays at the community center," "Daily morning walk in the park"). 
+* **Intelligent Alerts:** If the senior strays far from their usual route or hasn't returned home by their usual time, the watch gently asks the senior, "Are you lost?" If they tap "Yes" or don't respond, it instantly sends their exact location to the Care Circle and opens a voice call.
+
+### 4. One-Touch "Family Connect" (No Dialing Required)
+Seniors often struggle with small touchscreens. This feature replaces complex contact lists with a **"Family Photo Speed Dial."**
+* The watch face can be customized to show photos of their closest family members. 
+* Tapping a photo instantly starts a phone call or sends a pre-set voice message (e.g., "I'm home safe" or "Can you call me when you're free?").
+
+### Why this is a game-changer:
+* **For the Senior:** It doesn't feel like a "medical tracker." It feels like a stylish connection to their loved ones that helps them stay independent.
+* **For the Busy Caregiver:** It prevents caregiver burnout. By allowing the primary caregiver to easily delegate tasks (like picking up prescriptions or checking in) to other family members through the app, it distributes the responsibility of supporting their aging loved one.

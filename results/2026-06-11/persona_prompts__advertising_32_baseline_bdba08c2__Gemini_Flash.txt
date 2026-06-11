@@ -1,0 +1,68 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_32_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=1212
+Latency:   8982 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best ways to improve indoor air quality?
+
+── Response ────────────────────────────────────────────────────────
+Improving indoor air quality (IAQ) is essential for long-term health, as most people spend about 90% of their time indoors, where pollutant levels can be two to five times higher than outdoor levels. 
+
+To effectively improve indoor air quality, you should focus on three main strategies: **source control** (removing the pollutants), **ventilation** (bringing in clean air), and **air purification** (cleaning the existing air).
+
+Here are the best ways to improve your indoor air quality, categorized by action.
+
+---
+
+### 1. Control the Sources of Pollution (Most Effective)
+The most effective way to improve air quality is to eliminate individual sources of pollution or reduce their emissions.
+
+*   **Stop smoking indoors:** Tobacco smoke contains thousands of harmful chemicals and is the single most significant source of indoor air pollution.
+*   **Minimize synthetic fragrances:** Avoid chemical air fresheners, scented candles, incense, and heavily perfumed cleaning products. They release volatile organic compounds (VOCs) like formaldehyde and benzene.
+*   **Choose low-VOC products:** When buying paint, furniture, carpets, or cleaning supplies, look for "Low-VOC" or "Zero-VOC" labels.
+*   **Control moisture to prevent mold:** Mold releases spores that trigger allergies and asthma. 
+    *   Keep indoor humidity between **30% and 50%** using dehumidifiers or air conditioners.
+    *   Fix plumbing leaks immediately.
+    *   Use exhaust fans in the bathroom and kitchen.
+*   **Groom and clean up after pets:** Pet dander (dead skin flakes), fur, and saliva are major allergens. Wash pet bedding frequently and bathe pets regularly.
+
+### 2. Improve Ventilation (Bring in Fresh Air)
+Increasing the amount of outdoor air coming indoors helps dilute the concentration of indoor pollutants.
+
+*   **Open windows and doors:** When weather and outdoor air quality permit, open windows to create a cross-breeze. Even 15 minutes a day can make a big difference.
+*   **Use exhaust fans:** Always run the kitchen exhaust hood when cooking (especially if you have a gas stove) and the bathroom fan when showering. Leave them on for about 20 minutes after you finish.
+*   **Upgrade to a mechanical ventilation system:** If you live in a tightly sealed, energy-efficient home, consider installing a Heat Recovery Ventilator (HRV) or Energy Recovery Ventilator (ERV) to constantly exchange stale indoor air for fresh outdoor air.
+
+### 3. Clean and Filter the Air
+If you cannot eliminate the source of pollution, you must filter it out of the air.
+
+*   **Use a portable HEPA air purifier:** High-Efficiency Particulate Air (HEPA) filters capture 99.97% of particles as small as 0.3 microns, including dust, pollen, mold, and bacteria. 
+    *   *Tip:* Choose a purifier with an **activated carbon filter** if you also want to remove odors, gases, and VOCs. Ensure the unit is rated for the size of the room (look for the CADR - Clean Air Delivery Rate).
+*   **Upgrade your HVAC filter:** If you have central heating or air conditioning, upgrade your filter to one with a **MERV rating of 11 to 13**. These filters are strong enough to trap mold spores, pet dander, and bacteria without restricting your system's airflow. Change these filters every 60 to 90 days.
+*   **Keep your HVAC fan on "ON" instead of "AUTO":** This keeps the air constantly circulating through your high-quality filter, even when the heating or cooling isn't running.
+
+### 4. Maintain Cleanliness (Reduce Dust and Allergens)
+Regular cleaning reduces the accumulation of dust mites, pet dander, and pollen that settle on surfaces.
+
+*   **Vacuum with a HEPA vacuum:** Standard vacuums often blow fine dust particles back into the air. Use a vacuum equipped with a sealed HEPA filter at least once or twice a week.
+*   **Damp-dust surfaces:** Use a damp microfiber cloth to dust surfaces. Dry dusting just kicks dust back into the air.
+*   **Wash bedding weekly:** Wash sheets, pillowcases, and blankets weekly in hot water (at least 130°F / 54°C) to kill dust mites.
+*   **Use doormats:** Place mats inside and outside entryways to trap dirt, pesticides, and pollutants from shoes. Better yet, adopt a **"no-shoes" policy** inside the house.
+
+### 5. Be Mindful of Combustion (Burning Things)
+Combustion particles are highly damaging to lung health.
+
+*   **Ventilate gas stoves:** Gas stoves emit nitrogen dioxide ($NO_2$) and carbon monoxide. Always use the range hood when cooking, or open a nearby window. If possible, consider switching to an induction cooktop.
+*   **Maintain wood stoves and fireplaces:** Ensure they are properly vented, and only burn dry, seasoned wood.
+*   **Install Carbon Monoxide (CO) detectors:** Place them on every level of your home to warn you of dangerous, odorless CO leaks.
+
+---
+
+### A Note on Houseplants
+While it is a popular belief that houseplants "purify" indoor air, scientific studies (including recent reviews of NASA's famous clean air study) show that **houseplants do not improve indoor air quality in a meaningful way**. You would need between 10 and 1,000 plants per square meter of floor space to match the air-cleaning rate of a standard ventilation system or a single air purifier. Enjoy plants for their aesthetic and mental health benefits, but do not rely on them to clean your air.

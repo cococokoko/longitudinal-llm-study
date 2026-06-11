@@ -1,0 +1,56 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_49_low_ses_customer_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=33 out=425
+Latency:   4066 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+If you're relying on your home connection for work, especially during a new job, improving Wi‑Fi reliability can make a noticeable difference. A few of the most effective steps are:
+
+- Move the router to a central, open location.
+  - Avoid placing it inside cabinets, behind TVs, or near large metal objects.
+  - Higher shelves often work better than floor level.
+
+- Use the 5 GHz or 6 GHz band when available.
+  - These bands are usually faster and less congested than 2.4 GHz.
+  - The tradeoff is shorter range.
+
+- Update your router's firmware.
+  - Manufacturers often release updates that improve performance and security.
+
+- Check for interference.
+  - Microwaves, cordless phones, baby monitors, and neighboring Wi‑Fi networks can affect signal quality.
+
+- Optimize router settings.
+  - If your router supports it, try different Wi‑Fi channels.
+  - Enable modern standards such as Wi‑Fi 5, Wi‑Fi 6, or Wi‑Fi 6E if supported by your devices.
+
+- Use Ethernet for important devices.
+  - A wired connection is usually more stable and lower latency than Wi‑Fi.
+
+- Consider a mesh Wi‑Fi system.
+  - If you have a larger home or dead zones, mesh systems often provide better coverage than a single router.
+
+- Test your internet speed near and far from the router.
+  - If speeds are poor even when standing next to the router, the issue may be your internet service rather than Wi‑Fi coverage.
+
+- Restart networking equipment occasionally.
+  - Rebooting the modem and router can resolve temporary issues.
+
+If you tell me:
+- The size of your home/apartment,
+- Your internet speed plan,
+- Your router model,
+- And whether the problem is speed, coverage, or connection drops,
+
+I can give more specific recommendations.

@@ -1,0 +1,51 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_customer_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=296
+Latency:   7794 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+During a pandemic, here are the safest travel approaches based on public health guidance:
+
+## Before Traveling
+- Check current transmission rates at your destination
+- Verify entry requirements and health protocols
+- Ensure vaccinations are up to date
+- Purchase travel insurance with health coverage
+- Consult your physician if you have risk factors
+
+## Transportation Options (Generally Ranked by Risk)
+- **Driving privately** - lowest exposure risk
+- **Flying** - HEPA filters reduce risk; choose direct flights
+- **Train** - ventilation varies; less crowded times are better
+- **Buses/shared transport** - higher risk due to ventilation
+
+## During Travel
+- Wear high-quality masks (N95/KN95) in crowded settings
+- Practice hand hygiene frequently
+- Maintain distance where possible
+- Avoid touching face
+- Stay in well-ventilated spaces
+
+## Practical Considerations
+- Book flexible/refundable arrangements
+- Choose less crowded travel times
+- Consider outdoor destinations over dense urban areas
+- Have a contingency plan if you test positive
+
+## For Business Travel Specifically
+- Evaluate whether virtual meetings can substitute
+- Consider the risk-benefit of each trip
+- Know your firm's travel and quarantine policies
+
+Would you like more specific guidance for a particular type of travel or destination you're considering?

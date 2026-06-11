@@ -1,0 +1,169 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_high_ses_user_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=23 out=1459
+Latency:   9317 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a physician-scientist leading a research group.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+As a physician-scientist, you likely appreciate structured systems, logical workflows, and iterative testing. Scratch is an excellent, highly visual environment for prototyping game mechanics. Its event-driven, block-based architecture is perfect for translating complex logic into working code quickly.
+
+Here is a comprehensive, step-by-step guide to building a 2D top-down zombie survival game on Scratch, structured like a research protocol.
+
+---
+
+### Phase 1: The "Clinical Trial" (Setup & Assets)
+Before writing code, you need your experimental subjects (sprites). You can draw these in Scratch’s vector editor or import them.
+
+1.  **Player Sprite:** A top-down view of a human (a circle for the head, two smaller circles for hands/shoulders).
+2.  **Zombie Sprite:** Similar to the player, but colored green/decayed.
+3.  **Bullet Sprite:** A simple yellow rectangle or small circle.
+4.  **UI/Background:** A dark, gritty backdrop (the "petri dish").
+
+---
+
+### Phase 2: Player Kinematics (Movement & Aiming)
+We want the player to move with `WASD` and aim toward the mouse pointer.
+
+**Player Sprite Code:**
+*   **Aiming:**
+    ```scratch
+    when green flag clicked
+    forever
+        point towards [mouse-pointer v]
+    ```
+*   **Movement (using variables for smooth velocity, or simple steps):**
+    ```scratch
+    when green flag clicked
+    forever
+        if <key [w v] pressed?> then
+            change y by (4)
+        end
+        if <key [s v] pressed?> then
+            change y by (-4)
+        end
+        if <key [a v] pressed?> then
+            change x by (-4)
+        end
+        if <key [d v] pressed?> then
+            change x by (4)
+        end
+    ```
+
+---
+
+### Phase 3: Ballistics (Shooting Mechanics)
+To handle multiple bullets, we use Scratch’s **cloning engine**. The player spawns a clone, and the clone travels in the direction the player was facing.
+
+**Player Sprite Code (Trigger):**
+```scratch
+when green flag clicked
+forever
+    if <mouse down?> then
+        create clone of [Bullet v]
+        wait (0.2) secs // Rate of fire control
+    end
+```
+
+**Bullet Sprite Code (Trajectory):**
+*Set the bullet's initial position to the player, point it in the player's direction, and move it until it hits a wall or a zombie.*
+```scratch
+when I start as a clone
+go to [Player v]
+point in direction ([direction v] of [Player v])
+show
+repeat until <<touching [edge v]?> or <touching [Zombie v]?>>
+    move (15) steps
+end
+delete this clone
+```
+
+---
+
+### Phase 4: Epidemiology (Zombie AI & Spawning)
+To simulate an outbreak, we will use clones to generate waves of zombies that track the player's coordinates.
+
+**Zombie Sprite Code (The Spawner):**
+*Hide the original "patient zero" sprite and spawn clones at random intervals off-screen.*
+```scratch
+when green flag clicked
+hide
+forever
+    wait (pick random (1) to (3)) secs
+    create clone of [myself v]
+end
+```
+
+**Zombie Clone Behavior (Pathfinding & Pathology):**
+*Zombies spawn at the edges of the screen, point toward the player, and move slowly.*
+```scratch
+when I start as a clone
+go to x: (pick random (-240) to (240)) y: (pick random (-180) to (180)) // Ideally, spawn off-screen
+show
+forever
+    point towards [Player v]
+    move (1.5) steps // Zombie speed
+    if <touching [Bullet v]?> then
+        // Handle zombie death (see Phase 5)
+        delete this clone
+    end
+end
+```
+
+---
+
+### Phase 5: Systemic Variables (Health, Score, & State)
+Now we introduce quantitative metrics. Create three global variables (for all sprites):
+*   `Player Health` (Start at 100)
+*   `Score` (Start at 0)
+*   `Game Over` (Boolean: 0 for running, 1 for ended)
+
+**Player Damage Logic (in Player Sprite):**
+```scratch
+when green flag clicked
+set [Player Health v] to (100)
+forever
+    if <touching [Zombie v]?> then
+        change [Player Health v] by (-10)
+        wait (0.5) secs // Immunity frames / cooldown
+        if <(Player Health) < [1]> then
+            broadcast [Game Over v]
+            stop [all v]
+        end
+    end
+end
+```
+
+**Zombie Death Logic (Update the Zombie Clone code):**
+```scratch
+// Inside the Zombie clone's forever loop:
+if <touching [Bullet v]?> then
+    change [Score v] by (10)
+    delete this clone
+end
+```
+
+---
+
+### Phase 6: Advanced Features (For the Scientist)
+Once the basic loop is functional, you can introduce more complex variables to simulate biological/physical systems:
+
+1.  **Infection Rate (Difficulty Scaling):**
+    Create a variable `Spawn Rate`. As the `Score` increases, decrease `Spawn Rate` (e.g., `wait (3 / (Score * 0.1)) seconds`) to simulate an exponential growth curve of the outbreak.
+2.  **Weapon Spread (Stochasticity):**
+    Add a random offset to the bullet's direction to simulate recoil or inaccuracy:
+    `point in direction (([direction v] of [Player v]) + (pick random (-5) to (5)))`
+3.  **Zombie HP (Phenotypic Variation):**
+    Give zombies local variables (for "this sprite only") called `Zombie HP`. Some zombies can spawn larger and slower but with higher HP, requiring multiple bullet collisions before deletion.
+
+### Summary of the "Lab Notebook" (Debugging Tips)
+*   **The "Ghost" Bullet:** If bullets don't disappear when hitting zombies, ensure the zombie's deletion script has a tiny delay (`wait 0 secs`) to allow the bullet to register the touch before the zombie vanishes.
+*   **Clone Limit:** Scratch has a hard limit of 300 clones. If your game runs too long, old bullets or dead zombies must be deleted properly, or new ones won't spawn.

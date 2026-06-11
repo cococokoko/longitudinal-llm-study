@@ -1,0 +1,47 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_44_low_ses_customer_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=377
+Latency:   5863 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on how the disease spreads, how much transmission is occurring in the community, your personal risk factors, and public health guidance at the time. In general, lower-risk travel reduces close contact with people outside your household and limits time spent in crowded indoor spaces.
+
+Safer options:
+- Stay home or avoid nonessential travel when transmission is very high.
+- Travel by personal vehicle with members of your household rather than using crowded public transportation.
+- Choose outdoor destinations and activities when possible.
+- If staying overnight, consider accommodations that minimize contact with others, such as a private rental or hotel with contactless check-in.
+
+If you need to travel:
+- Stay up to date with recommended vaccinations for the disease involved.
+- Follow current public health guidance for masking, testing, and isolation.
+- Wear a well-fitting, high-quality mask in crowded indoor settings or where recommended.
+- Improve ventilation when possible (open windows, choose outdoor waiting areas, use well-ventilated spaces).
+- Wash or sanitize your hands regularly.
+- Avoid travel if you are sick or have symptoms consistent with the illness.
+- Consider testing before and after travel if recommended by health authorities.
+
+For air travel:
+- Airports and planes can involve close contact with many people.
+- Wearing a high-quality mask in airports and during flights can reduce risk.
+- Minimize time spent in crowded terminal areas when possible.
+
+For public transportation:
+- Use a mask if recommended or if transmission levels are high.
+- Avoid crowded vehicles when possible.
+- Practice hand hygiene after touching shared surfaces.
+
+Since you work shifts at a hospital as a patient care aide, you may also want to be especially mindful of protecting vulnerable patients and coworkers by following your facility's infection-control policies before and after travel.
+
+If you're asking about a specific pandemic or type of trip, I can give more tailored recommendations.

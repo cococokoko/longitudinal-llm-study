@@ -1,0 +1,32 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q35
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=230 out=75
+Latency:   4328 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How would you feel about the following statements? Do you agree or disagree with them?
+
+If a woman earns more money than her husband, it's almost certain to cause problems
+
+Options:
+A. Agree strongly
+B. Agree
+C. Neither agree nor disagree
+D. Disagree
+E. Disagree strongly
+F. Don't know
+G. No answer/refused
+H. Not applicable (filter)
+I. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.02, "B": 0.04, "C": 0.08, "D": 0.38, "E": 0.46, "F": 0.01, "G": 0.005, "H": 0.005, "I": 0.0}

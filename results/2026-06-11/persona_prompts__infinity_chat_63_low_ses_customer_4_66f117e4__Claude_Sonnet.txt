@@ -1,0 +1,74 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_customer_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=38 out=544
+Latency:   9281 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## Setup
+
+Suppose a hospital patient care aide's **weekly earnings** depend on two variables:
+
+- **h** = regular hours worked
+- **n** = number of night shift hours worked (which pay a bonus)
+
+The earnings function is:
+
+$$E(h, n) = 15h + 22n + 0.5n^2$$
+
+---
+
+## Calculating Partial Derivatives
+
+### ∂E/∂h (rate of change with respect to regular hours)
+
+$$\frac{\partial E}{\partial h} = 15$$
+
+*Treat **n** as a constant and differentiate with respect to **h**.*
+
+### ∂E/∂n (rate of change with respect to night hours)
+
+$$\frac{\partial E}{\partial n} = 22 + n$$
+
+*Treat **h** as a constant and differentiate with respect to **n**.*
+
+---
+
+## Numerical Illustration
+
+Suppose the aide works **h = 30** regular hours and **n = 10** night hours:
+
+| Partial Derivative | Calculation | Meaning |
+|---|---|---|
+| ∂E/∂h = 15 | $15 | Each extra regular hour adds **$15** |
+| ∂E/∂n = 22 + 10 = **32** | $32 | Each extra night hour adds **$32** |
+
+---
+
+## Verification
+
+At (h=30, n=10):
+$$E(30, 10) = 15(30) + 22(10) + 0.5(100) = 450 + 220 + 50 = \$720$$
+
+Add **one more night hour** (n=11):
+$$E(30, 11) = 450 + 22(11) + 0.5(121) = 450 + 242 + 60.5 = \$752.50$$
+
+**Difference = $752.50 − $720 = $32.50 ≈ $32** ✓
+
+---
+
+## Key Insight
+
+> A partial derivative measures how earnings change when **one variable changes**, while **holding all other variables fixed** — exactly like asking *"what do I earn for one more night shift, assuming my regular hours stay the same?"*

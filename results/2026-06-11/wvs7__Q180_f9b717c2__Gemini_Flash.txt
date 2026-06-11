@@ -1,0 +1,54 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q180
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=302 out=147
+Latency:   1574 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Please tell me for each of the following actions whether you think it can always be justified, never be justified, or something in between. 1 means "never justifiable" and 10 means "always justifiable".
+
+Cheating on taxes if you have a chance
+
+Options:
+A. 1 - Never justifiable
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. 10 - Always justifiable
+K. Don't know
+L. No answer/refused
+M. Not applicable (filter)
+N. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{
+  "A": 0.0,
+  "B": 0.0,
+  "C": 0.0,
+  "D": 0.0,
+  "E": 0.0,
+  "F": 0.0,
+  "G": 0.0,
+  "H": 0.0,
+  "I": 0.0,
+  "J": 0.0,
+  "K": 0.0,
+  "L": 1.0,
+  "M": 0.0,
+  "N": 0.0
+}
+```

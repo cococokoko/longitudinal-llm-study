@@ -1,0 +1,70 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=44 out=475
+Latency:   4675 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You can run Wii games in Dolphin on a Microsoft Surface using the touchpad as a pointer and the on-screen keyboard as button input, though the experience varies by game.
+
+Setup in Dolphin:
+
+1. Open Dolphin.
+2. Go to:
+   - Controllers
+   - Under "Wii Remotes," set Wii Remote 1 to "Emulated Wii Remote"
+   - Click "Configure"
+
+Map Wii Remote buttons to keyboard keys:
+
+Example layout that works reasonably well with the Windows on-screen keyboard:
+
+- A → Space
+- B (trigger) → Left Ctrl
+- 1 → 1
+- 2 → 2
+- Plus (+) → Enter
+- Minus (-) → Backspace
+- Home → H
+- D-Pad → Arrow keys
+
+Configure pointer (Wii IR):
+
+- In the "Motion Simulation" or "Point" section, bind:
+  - Cursor Up → Mouse Y-
+  - Cursor Down → Mouse Y+
+  - Cursor Left → Mouse X-
+  - Cursor Right → Mouse X+
+
+This allows the Surface touchpad to control the Wii pointer similarly to a mouse.
+
+Optional motion controls:
+
+For games that require shaking or tilting:
+
+- Map Shake X/Y/Z to convenient keys (for example, Q, W, E).
+- Map Tilt directions to additional keys if needed.
+
+Using the Windows on-screen keyboard:
+
+1. Press Win + Ctrl + O to open the on-screen keyboard.
+2. Keep it docked to one side of the screen.
+3. Tap keys on the on-screen keyboard while using the touchpad to aim or point.
+
+Surface-specific tips:
+
+- Enable "Tap to click" in Windows touchpad settings for easier pointer interaction.
+- If a game relies heavily on motion controls (Wii Sports, Skyward Sword, etc.), a real controller or Bluetooth Wii Remote is usually much easier.
+- Point-and-click-focused games (menus, light motion requirements, strategy games) tend to work best with touchpad + keyboard.
+
+If you tell me the specific Wii game you want to play, I can suggest a more practical button layout for that title.

@@ -1,0 +1,38 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q248
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=339 out=217
+Latency:   1823 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Many things are desirable, but not all of them are essential characteristics of democracy. Please tell me for the following thing how essential you think it is as a characteristic of democracy. Use this scale where 1 means "not at all an essential characteristic of democracy" and 10 means it definitely is "an essential characteristic of democracy".
+
+People obey their rulers.
+
+Options:
+A. 1 - Not an essential characteristic of democracy
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. 10 - An essential characteristic of democracy
+K. It is against democracy
+L. Don't know
+M. No answer/refused
+N. Not applicable (filter)
+O. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0, "O": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A":0.45,"B":0.2,"C":0.1,"D":0.05,"E":0.03,"F":0.02,"G":0.0,"H":0.0,"I":0.0,"J":0.0,"K":0.15,"L":0.0,"M":0.0,"N":0.0,"O":0.0}

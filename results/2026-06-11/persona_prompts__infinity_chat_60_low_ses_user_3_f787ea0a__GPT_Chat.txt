@@ -1,0 +1,45 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_low_ses_user_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=28 out=237
+Latency:   2429 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a row of toy blocks.
+
+There's a special rule:
+
+- Look at the blocks.
+- Change them in a certain way.
+- Then do it again.
+- And again.
+- And again.
+
+Now suppose you ask, "What will the blocks look like after 1,000 turns?"
+
+You might hope there's a magic shortcut that tells you the answer right away.
+
+Computational irreducibility means that for some systems, there is no shortcut.
+
+The only way to know what happens after 1,000 turns is to do turn 1, then turn 2, then turn 3, and keep going all the way to turn 1,000.
+
+It's like asking:
+- "What will a movie look like 10 minutes from now?"
+
+For some movies, you can't know by looking at the first frame. You have to watch the movie unfold.
+
+So, in simple terms:
+
+- Some things can be predicted with a quick calculation.
+- Other things are so complex that the fastest way to find out what happens is to let them happen.
+
+That's computational irreducibility. The process can't be "skipped ahead" by a clever shortcut.

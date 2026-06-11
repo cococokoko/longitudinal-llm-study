@@ -1,0 +1,51 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=31 out=305
+Latency:   8442 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+Here are some strong options for remote team collaboration:
+
+## Communication
+- **Slack** - messaging, channels, integrations
+- **Microsoft Teams** - especially if using Office 365
+- **Zoom** - video conferencing
+
+## Project Management
+- **Asana** - task tracking and workflows
+- **Monday.com** - visual project boards
+- **Trello** - simple kanban-style boards
+- **Jira** - more complex project tracking
+
+## Document Collaboration
+- **Google Workspace** - real-time document editing
+- **Microsoft 365** - familiar Office tools with cloud features
+- **Notion** - flexible docs and wikis
+
+## File Storage
+- **Google Drive**
+- **Dropbox**
+- **OneDrive**
+
+## Considerations Specific to Healthcare/Academic Settings
+- **HIPAA compliance** is critical - verify any tool meets requirements
+- **Epic** and similar systems have some collaboration features
+- Your hospital's **IT department** likely has approved platforms already
+- **Institutional security policies** may limit options
+
+## Practical Advice
+- Check what your institution already licenses (often Teams or Zoom)
+- Avoid using non-approved tools with patient data
+- Standardizing on fewer tools reduces friction
+
+Would you like recommendations tailored to a specific use case - like surgical team coordination, research collaboration, or resident education?

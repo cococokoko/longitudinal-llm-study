@@ -1,0 +1,44 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_20_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=35 out=339
+Latency:   5315 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Where can I find organic and sustainable clothing?
+
+── Response ────────────────────────────────────────────────────────
+You can find organic and sustainably made clothing from a mix of dedicated ethical brands, larger retailers with sustainability lines, and secondhand marketplaces.
+
+Some well-known brands that focus on organic materials and responsible production include:
+- Patagonia – organic cotton, recycled materials, repair programs.
+- Pact – organic cotton basics and everyday wear.
+- People Tree – Fair Trade and organic-certified clothing.
+- Thought – sustainable fabrics such as organic cotton, hemp, and bamboo-derived materials.
+- Kotn – focuses on responsibly sourced natural fibers.
+- tentree – plants trees with purchases and uses sustainable materials.
+- Eileen Fisher – strong sustainability and circular-fashion initiatives.
+- Outerknown – emphasizes organic, recycled, and regenerative materials.
+
+Online marketplaces and directories:
+- Good On You (goodonyou.eco) – rates brands on environmental impact, labor practices, and animal welfare.
+- DoneGood – marketplace featuring vetted ethical and sustainable brands.
+- EarthHero – carries a variety of sustainable apparel brands.
+
+For the most sustainable option, consider:
+- Buying secondhand through platforms such as ThredUp, Poshmark, Depop, Vestiaire Collective, or local consignment stores.
+- Choosing durable, timeless pieces that you will wear frequently.
+- Looking for certifications such as:
+  - GOTS (Global Organic Textile Standard)
+  - Fair Trade Certified
+  - OEKO-TEX Standard 100
+  - Bluesign
+
+If you tell me your country and whether you're looking for workwear, casual clothing, athletic wear, or luxury fashion, I can suggest more specific options.

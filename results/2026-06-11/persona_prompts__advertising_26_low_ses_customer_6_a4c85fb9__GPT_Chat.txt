@@ -1,0 +1,73 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_26_low_ses_customer_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=37 out=505
+Latency:   4528 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+For small businesses, effective data security is usually less about expensive tools and more about consistently applying good practices. Some of the most important measures include:
+
+• Use strong authentication
+  - Require strong, unique passwords for all accounts.
+  - Enable multi-factor authentication (MFA) wherever possible.
+  - Use a password manager to help employees manage credentials securely.
+
+• Keep software updated
+  - Regularly update operating systems, applications, and firmware.
+  - Enable automatic updates when practical.
+  - Remove or replace unsupported software.
+
+• Limit access to data
+  - Give employees access only to the information they need for their roles.
+  - Review permissions regularly.
+  - Remove access promptly when employees leave or change positions.
+
+• Back up critical data
+  - Follow the "3-2-1" backup principle: three copies of data, on two different types of media, with one copy stored offsite or in the cloud.
+  - Test backups periodically to ensure recovery works.
+
+• Train employees
+  - Educate staff about phishing, social engineering, and safe internet practices.
+  - Teach employees how to identify suspicious emails, links, and attachments.
+  - Provide refresher training regularly.
+
+• Secure devices and networks
+  - Use reputable antivirus or endpoint protection software.
+  - Encrypt laptops, smartphones, and other portable devices.
+  - Secure Wi-Fi with strong encryption and change default passwords on network equipment.
+
+• Protect sensitive data
+  - Encrypt sensitive information both in transit and at rest.
+  - Classify data based on sensitivity.
+  - Retain data only as long as necessary.
+
+• Develop an incident response plan
+  - Document procedures for handling security incidents.
+  - Identify who is responsible for responding.
+  - Practice the plan periodically.
+
+• Monitor systems
+  - Review logs and alerts for unusual activity.
+  - Use security tools appropriate for the business size and risk level.
+  - Investigate suspicious events promptly.
+
+• Work with trusted vendors
+  - Assess the security practices of service providers and cloud vendors.
+  - Use contracts that address data protection responsibilities.
+  - Review vendor access to your systems and data regularly.
+
+• Follow legal and industry requirements
+  - Understand applicable privacy, cybersecurity, and data protection regulations.
+  - Maintain required records and security controls.
+
+For many small businesses, the highest-impact steps are enabling MFA, keeping systems updated, training employees to spot phishing attempts, and maintaining reliable backups. These measures can significantly reduce the risk of common cyberattacks.

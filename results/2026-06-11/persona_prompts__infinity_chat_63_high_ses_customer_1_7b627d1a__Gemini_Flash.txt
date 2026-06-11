@@ -1,0 +1,91 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=27 out=1051
+Latency:   6452 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+To illustrate the concept of a partial derivative, let us use a clinical scenario that is highly intuitive: **cerebral perfusion pressure (CPP)**, which is determined by the relationship between mean arterial pressure (MAP) and intracranial pressure (ICP).
+
+Mathematically, we can model CPP as a function of two independent variables:
+$$CPP(M, I) = M - I$$
+
+Where:
+*   $M$ = Mean Arterial Pressure (MAP) in mmHg
+*   $I$ = Intracranial Pressure (ICP) in mmHg
+
+A partial derivative measures how a multivariable function changes when we vary *only one* variable while holding all other variables strictly constant.
+
+---
+
+### The Scenario
+Let us establish a baseline clinical state for a patient in the ICU:
+*   **Baseline MAP ($M_0$)** = $90\text{ mmHg}$
+*   **Baseline ICP ($I_0$)** = $15\text{ mmHg}$
+
+At this baseline, the cerebral perfusion pressure is:
+$$CPP(90, 15) = 90 - 15 = 75\text{ mmHg}$$
+
+---
+
+### 1. Partial Derivative with respect to MAP ($\frac{\partial CPP}{\partial M}$)
+Suppose we want to know how sensitive the patient's CPP is to changes in their blood pressure alone, assuming their intracranial compliance is stable and ICP does not budge.
+
+We take the partial derivative of $CPP$ with respect to $M$, treating $I$ as a constant:
+$$\frac{\partial CPP}{\partial M} = \frac{\partial}{\partial M} (M - I)$$
+
+Since $I$ is treated as a constant, its derivative is $0$. The derivative of $M$ with respect to itself is $1$:
+$$\frac{\partial CPP}{\partial M} = 1$$
+
+#### Numerical Interpretation:
+If we increase the MAP by a small increment, say $\Delta M = 5\text{ mmHg}$ (raising MAP from $90$ to $95\text{ mmHg}$), while holding ICP constant at $15\text{ mmHg}$:
+$$CPP(95, 15) = 95 - 15 = 80\text{ mmHg}$$
+
+The change in CPP is:
+$$\Delta CPP = 80 - 75 = +5\text{ mmHg}$$
+
+The ratio of change is:
+$$\frac{\Delta CPP}{\Delta M} = \frac{5}{5} = 1$$
+
+This matches our partial derivative of $1$. It tells us that for every $1\text{ mmHg}$ rise in MAP, CPP will rise by exactly $1\text{ mmHg}$, *provided ICP remains constant*.
+
+---
+
+### 2. Partial Derivative with respect to ICP ($\frac{\partial CPP}{\partial I}$)
+Now, suppose the patient's MAP is perfectly defended by vasopressors at $90\text{ mmHg}$, but we want to evaluate the impact of a sudden spike in ICP (e.g., due to a worsening hematoma or acute hydrocephalus).
+
+We take the partial derivative of $CPP$ with respect to $I$, treating $M$ as a constant:
+$$\frac{\partial CPP}{\partial I} = \frac{\partial}{\partial I} (M - I)$$
+
+Here, $M$ is treated as a constant (derivative is $0$), and the derivative of $-I$ with respect to $I$ is $-1$:
+$$\frac{\partial CPP}{\partial I} = -1$$
+
+#### Numerical Interpretation:
+If ICP rises by $\Delta I = 5\text{ mmHg}$ (from $15$ to $20\text{ mmHg}$) while MAP is held constant at $90\text{ mmHg}$:
+$$CPP(90, 20) = 90 - 20 = 70\text{ mmHg}$$
+
+The change in CPP is:
+$$\Delta CPP = 70 - 75 = -5\text{ mmHg}$$
+
+The ratio of change is:
+$$\frac{\Delta CPP}{\Delta I} = \frac{-5}{5} = -1$$
+
+This matches our partial derivative of $-1$. It mathematically demonstrates that any increase in ICP has a direct, 1:1 negative impact on perfusion pressure, assuming MAP is held constant.
+
+---
+
+### Summary
+In vector calculus, these two partial derivatives form the **gradient** of the function, $\nabla CPP$:
+$$\nabla CPP = \left[ \frac{\partial CPP}{\partial M}, \frac{\partial CPP}{\partial I} \right] = [1, -1]$$
+
+This vector tells you the direction of greatest change in perfusion pressure. In practice, it formalizes what you do instinctively at the bedside: isolating variables to determine whether to titrate pressors (changing $M$) or drain CSF/administer hyperosmolar therapy (changing $I$) to maintain adequate cerebral perfusion.

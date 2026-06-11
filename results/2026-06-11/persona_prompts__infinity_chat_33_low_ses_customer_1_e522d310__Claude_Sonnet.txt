@@ -1,0 +1,126 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=57 out=824
+Latency:   18556 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need
+- Microsoft Surface (with Windows)
+- Dolphin Emulator installed
+- Wii game ROMs (that you legally own)
+- Patience with touch controls
+
+---
+
+## Step 1: Download and Install Dolphin
+
+1. Go to **dolphin-emu.org** in your browser
+2. Tap **Download** and choose the latest stable version
+3. Tap the downloaded file to install it
+4. Follow the installation prompts
+
+---
+
+## Step 2: Basic Touchpad Navigation in Dolphin
+
+The touchpad works like a regular mouse:
+- **Single tap** = left click
+- **Two-finger tap** = right click
+- **Two-finger scroll** = scroll through menus
+- **Tap and drag** = select/move items
+
+---
+
+## Step 3: Configure Controls for Touch Use
+
+This is the most important part:
+
+1. Open Dolphin
+2. Tap **Controllers** at the top
+3. Tap **Configure** next to Wii Remote 1
+4. Choose **Emulated Wii Remote**
+
+### Mapping Keyboard Keys to Wii Buttons
+- Tap each button slot
+- Press the corresponding key you want to assign
+- Keep assignments **simple and memorable**
+
+**Suggested basic mapping:**
+| Wii Button | Keyboard Key |
+|------------|-------------|
+| A | Z |
+| B | X |
+| + (Start) | Enter |
+| - (Select) | Backspace |
+| Home | Escape |
+| D-Pad Up | Arrow Up |
+| D-Pad Down | Arrow Down |
+| D-Pad Left | Arrow Left |
+| D-Pad Right | Arrow Right |
+
+---
+
+## Step 4: Using the On-Screen Keyboard
+
+1. Tap the **keyboard icon** in the taskbar (bottom right)
+2. The touch keyboard will appear
+3. You can **resize and reposition** it by dragging
+
+### Tips for On-Screen Keyboard Gaming
+- Use **Split keyboard mode** (tap the keyboard icon options) for thumb typing style
+- Keep the keyboard **docked at the bottom** so it doesn't cover the game
+- Consider using **Sticky Keys** in Windows accessibility settings
+
+---
+
+## Step 5: Motion Controls (Wii Remote Tilt/Shake)
+
+Since you don't have a physical Wii remote:
+
+1. In Controller settings, find **Tilt** and **Shake** options
+2. Map these to **keyboard keys** as well
+3. Alternatively, tap **Motion Input** if your Surface has a gyroscope
+
+---
+
+## Step 6: Loading a Game
+
+1. Tap **Open** in Dolphin
+2. Navigate to your ROM file
+3. Tap the file to select it
+4. Tap **Open** to start
+
+---
+
+## Practical Tips for Touch Gaming
+
+- **Windowed mode** works better than fullscreen for touch
+- Tap **Graphics settings** and lower resolution if performance is slow
+- Use **Save States** frequently (File > Save State) since touch controls can be tricky
+- Some games work **much better** than others with keyboard controls
+
+---
+
+## If Performance Is Slow
+
+1. Tap **Graphics** in Dolphin toolbar
+2. Lower **Internal Resolution** to 1x
+3. Turn off **Anti-Aliasing**
+4. In **Config > General**, enable **Dual Core**
+
+---
+
+Would you like help with any specific game or a more detailed step on any part of this setup?

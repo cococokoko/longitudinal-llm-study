@@ -1,0 +1,140 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_low_ses_user_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=33 out=632
+Latency:   13930 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work shifts at a local hospital as a patient care aide.
+
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+Here's a breakdown of how to build it!
+
+## Basic Setup
+
+**Sprites you'll need:**
+- Player character
+- Zombie (enemy)
+- Bullets or weapons
+- Health bar
+- Background/map
+
+---
+
+## Core Game Elements
+
+### Player Movement
+```
+when [green flag clicked]
+forever
+  if <key [w] pressed?> then
+    change y by (5)
+  end
+  if <key [s] pressed?> then
+    change y by (-5)
+  end
+  if <key [a] pressed?> then
+    change x by (-5)
+  end
+  if <key [d] pressed?> then
+    change x by (5)
+  end
+end
+```
+
+### Zombie AI (on Zombie sprite)
+```
+when [green flag clicked]
+forever
+  point towards [Player v]
+  move (2) steps
+end
+```
+
+### Shooting
+```
+when [space v] key pressed
+  create clone of [Bullet v]
+```
+
+**On Bullet sprite:**
+```
+when I start as a clone
+point towards [mouse-pointer v]
+forever
+  move (10) steps
+  if <touching [Zombie v]?> then
+    broadcast [zombie hit v]
+    delete this clone
+  end
+end
+```
+
+---
+
+## Health System
+
+**Variables to create:**
+- `Player Health` (start at 100)
+- `Score`
+- `Wave Number`
+
+```
+when I receive [zombie hit v]
+change [Score v] by (10)
+```
+
+**Zombie damages player:**
+```
+if <touching [Player v]?> then
+  change [Player Health v] by (-10)
+  wait (1) seconds
+end
+```
+
+---
+
+## Wave System
+```
+when [green flag clicked]
+set [Wave Number v] to (1)
+forever
+  repeat (Wave Number)
+    create clone of [Zombie v]
+    wait (2) seconds
+  end
+  wait until <(zombies alive) = (0)>
+  change [Wave Number v] by (1)
+end
+```
+
+---
+
+## Tips to Make It Better
+
+| Feature | How |
+|---|---|
+| Zombie animations | Switch costumes in a loop |
+| Sound effects | Add sounds on hit/shoot |
+| Different weapons | Use costume switches |
+| Map walls | Use color touching detection |
+| Game over screen | Broadcast when health = 0 |
+
+---
+
+## Good Starting Point
+
+1. Start with **just movement**
+2. Add **one zombie** that follows
+3. Add **shooting**
+4. Then add health and waves
+
+Want me to go deeper on any specific part?

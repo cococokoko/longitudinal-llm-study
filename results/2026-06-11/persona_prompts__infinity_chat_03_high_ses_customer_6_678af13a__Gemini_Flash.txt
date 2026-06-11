@@ -1,0 +1,30 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_03_high_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=21 out=222
+Latency:   2304 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a joke about electric vehicles.
+
+── Response ────────────────────────────────────────────────────────
+Here is one tailored for the partner track:
+
+An EV startup founder, a legacy automotive CEO, and a senior consulting partner are riding in a self-driving electric vehicle when the brakes suddenly fail. The car is hurtling down a hill toward a concrete wall.
+
+The EV founder says, "Don't worry! We just need to push an over-the-air software update to the regenerative braking system. I'll code it now!"
+
+The legacy CEO says, "No, that's too risky! We need to initiate a global recall, form a safety committee, and negotiate a settlement with the wall!"
+
+They both turn to the consulting partner and ask, "What do you think we should do?"
+
+The partner adjusts their glasses, looks at the rapidly approaching wall, and says: 
+
+"Before we make a decision, let's first align on our key stakeholders, run a quick cost-benefit analysis on the impact, and—most importantly—can we agree to slide this crash into Q3 so it doesn't affect this quarter's utilization rates?"

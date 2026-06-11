@@ -1,0 +1,55 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=324
+Latency:   3429 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Example:
+
+Consider the function
+
+f(x, y) = x²y + 3xy
+
+Suppose we want the partial derivative with respect to x.
+
+1. Treat y as a constant.
+2. Differentiate with respect to x:
+
+∂f/∂x = 2xy + 3y
+
+Now evaluate it at the point (x, y) = (2, 4):
+
+∂f/∂x(2,4) = 2(2)(4) + 3(4)
+            = 16 + 12
+            = 28
+
+Interpretation:
+At the point (2,4), if x increases by a small amount while y remains fixed at 4, the function f increases at approximately 28 times that amount.
+
+For example, increasing x from 2 to 2.01 while keeping y = 4:
+
+f(2,4) = 2²·4 + 3·2·4 = 40
+
+f(2.01,4) = (2.01)²·4 + 3·2.01·4
+          ≈ 40.2804
+
+Actual change:
+40.2804 − 40 = 0.2804
+
+Partial derivative estimate:
+28 × 0.01 = 0.28
+
+The estimate (0.28) is very close to the actual change (0.2804), illustrating the meaning of the partial derivative.

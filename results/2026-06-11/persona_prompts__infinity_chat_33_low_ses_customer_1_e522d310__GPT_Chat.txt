@@ -1,0 +1,90 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=48 out=579
+Latency:   5843 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You can run Wii games in Dolphin using a Microsoft Surface touchpad and the Windows on-screen keyboard, but you'll need to configure Dolphin's controls first.
+
+1. Open Dolphin and configure a Wii Remote
+
+- In Dolphin, go to:
+  - Controllers
+  - Under "Wii Remotes," set "Wii Remote 1" to "Emulated Wii Remote"
+  - Click "Configure"
+
+2. Map the Wii pointer to the touchpad/mouse
+
+In the Emulated Wii Remote configuration:
+
+- Pointer → Up/Down/Left/Right:
+  - Use your mouse/touchpad movements if Dolphin offers cursor input.
+- Cursor position:
+  - Newer Dolphin versions can use the system mouse as the Wii pointer.
+- Enable relative mouse input if available for smoother aiming.
+
+For many games, simply moving the Surface touchpad will move the Wii pointer on screen.
+
+3. Use the Windows on-screen keyboard
+
+Open the Windows touch keyboard:
+
+- Press Win + Ctrl + O for the Accessibility on-screen keyboard
+- Or tap the keyboard icon on the taskbar
+
+Map Wii buttons to keyboard keys in Dolphin:
+
+Example layout:
+- A → Enter
+- B → Space
+- 1 → 1
+- 2 → 2
+- Plus (+) → =
+- Minus (-) → -
+- Home → H
+- D-Pad → Arrow keys
+
+You can then tap those keys on the on-screen keyboard.
+
+4. Configure motion controls
+
+Many Wii games require shaking, tilting, or swinging the Wii Remote.
+
+In the Emulated Wii Remote settings:
+
+- Shake X/Y/Z → assign keyboard keys
+  - Example: Q, W, E
+- Tilt → assign keys
+  - Example: I, J, K, L
+- Swing → assign keys
+  - Example: U, O
+
+These actions can be triggered by tapping the mapped keys on the on-screen keyboard.
+
+5. Make Dolphin easier to use on a touchscreen Surface
+
+- Enable "Touch Keyboard" to stay visible while gaming.
+- Run Dolphin in windowed mode if the keyboard covers important parts of the screen.
+- Increase Windows display scaling if Dolphin's menus are difficult to tap.
+
+Limitations:
+- Some Wii games are difficult to play with only a touchpad and on-screen keyboard because they rely heavily on motion controls.
+- Games that mainly use pointing and simple button presses (such as many menu-driven or slower-paced games) tend to work much better than games requiring constant motion gestures.
+
+If you tell me:
+- Your Surface model,
+- Your Dolphin version,
+- And the specific Wii game,
+
+I can suggest an exact control layout.

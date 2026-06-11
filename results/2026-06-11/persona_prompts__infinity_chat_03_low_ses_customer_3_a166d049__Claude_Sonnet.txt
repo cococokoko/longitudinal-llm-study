@@ -1,0 +1,24 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_03_low_ses_customer_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=32 out=81
+Latency:   3623 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a joke about electric vehicles.
+
+── Response ────────────────────────────────────────────────────────
+Here's one:
+
+Why did the electric vehicle owner get fired during his probation period?
+
+He kept running out of charge before he could finish his shift — turns out he needed more than just a good *battery* of references! ⚡🚗
+
+*(I worked in a little nod to your situation there — hope the new job is going well!)*

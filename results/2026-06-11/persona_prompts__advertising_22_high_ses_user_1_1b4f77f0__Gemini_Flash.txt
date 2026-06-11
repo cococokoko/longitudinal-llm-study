@@ -1,0 +1,65 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=22 out=1202
+Latency:   8107 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon at a major teaching hospital, your collaboration needs are uniquely complex. You operate in a high-stakes environment that requires absolute data security (HIPAA/GDPR compliance), real-time precision, integration with complex medical imaging (DICOM), and seamless communication across multidisciplinary teams (residents, fellows, neuroradiologists, oncologists, and nursing staff). 
+
+Generic tools like Slack or Zoom are often insufficient on their own. Here are the best remote team collaboration tools categorized by the specific clinical, educational, and administrative needs of a neurosurgical department.
+
+---
+
+### 1. Clinical Communication & Care Coordination (HIPAA-Compliant)
+In neurosurgery, communication must be instant, secure, and capable of handling urgent clinical updates (e.g., acute subdural hematoma in the ER).
+
+*   **Epic Haiku / Canto:** If your hospital uses Epic EHR, these mobile/tablet apps are the gold standard. They allow you to securely view patient charts, access active medication lists, review lab results, and even take clinical photos of wounds directly into the patient’s chart from your phone.
+*   **Microsoft Teams (Healthcare Edition):** Unlike the standard version, the healthcare-specific Teams is HIPAA-compliant. It allows for secure texting, shift handoffs, and integration with EHRs. You can create specific "channels" for different services (e.g., Spine, Vascular, Pediatrics) to keep resident sign-outs organized.
+*   **TigerConnect:** A dedicated clinical collaboration platform. It is widely used for secure text messaging, automated on-call scheduling integration, and rapid alerts for stroke or trauma teams. It ensures that critical imaging or lab alerts are delivered to the right on-call resident instantly.
+
+### 2. Remote Imaging Review & Case Planning (DICOM Viewers)
+Reviewing complex cranial and spinal pathology remotely with residents or colleagues requires high-fidelity, cloud-based DICOM viewers.
+
+*   **Ambra Health (by Intelerad):** A cloud-based PACS and image-sharing platform. It allows you to view, share, and collaborate on MRI, CT, and angiogram scans from any device (iPad, laptop) without needing a VPN. It is excellent for remote tumor boards or pre-op planning sessions with your fellows.
+*   **OsiriX MD / Horos:** While OsiriX is Mac-based, it remains a favorite for neurosurgeons. Using screen-sharing tools (like Zoom or Teams) combined with OsiriX allows you to conduct highly detailed, 3D-reconstructed pre-operative planning sessions remotely with your team.
+*   **Brainlab Elements (Viewer):** If your OR uses Brainlab for neuronavigation, they offer cloud-based viewer solutions that allow you to review planned trajectories, fiber tracking (DTI), and tumor segmentations remotely before stepping into the OR.
+
+### 3. Multidisciplinary Tumor Boards & Virtual Meetings
+Neurosurgical oncology and complex spine cases require input from radiation oncology, neuropathology, and neuroradiology.
+
+*   **Zoom for Healthcare:** Offers end-to-end encryption and HIPAA compliance (with a signed Business Associate Agreement/BAA). It is the most reliable platform for hosting large, multi-institutional tumor boards, allowing seamless screen-sharing of pathology slides and radiology scans.
+*   **Webex for Healthcare:** Cisco’s highly secure meeting platform, favored by many major academic medical centers due to its robust enterprise-grade security and integration with hospital hardware (like Cisco Webex Boards in conference rooms).
+
+### 4. Academic, Research & Residency Program Management
+Managing a residency program, clinical trials, and paper submissions requires robust project management and document collaboration.
+
+*   **Notion:** An exceptional tool for organizing a neurosurgery residency program. You can create a centralized "Wiki" for the department containing:
+    *   Surgical rotation schedules.
+    *   Standard Operating Procedures (SOPs) for the ICU.
+    *   A database of academic articles/reading lists for residents.
+    *   M&M (Morbidity and Mortality) log templates.
+*   **Miro:** A digital whiteboard tool. It is highly effective for mapping out clinical trial workflows, designing research protocols, or visually brainstorming complex department schedules.
+*   **Box for Healthcare:** Unlike standard Dropbox, Box offers a highly secure, HIPAA-compliant cloud storage solution. It is ideal for storing de-identified research databases, surgical videos for resident education, and draft manuscripts.
+
+### 5. Surgical Education & Remote Mentorship
+As a teaching hospital, educating the next generation of neurosurgeons is a priority.
+
+*   **Touch Surgery (by Medtronic):** A cognitive simulation platform. You can use this to assign virtual surgical steps to residents, allowing them to practice the decision-making process of a craniotomy or pedicle screw placement before entering the OR.
+*   **Proximie:** An augmented reality (AR) platform designed for the OR. It allows you to virtually "scrub in" to an assistant's or resident's OR from home. You can view the live feed of the microscope or endoscope, draw on the screen in real-time, and guide them verbally through a complex dissection.
+
+### Summary Recommendation for Your Department:
+To build the ultimate collaborative ecosystem for your neurosurgery department, consider this stack:
+1.  **Daily Communication & Sign-out:** Microsoft Teams (Healthcare) or Epic Haiku.
+2.  **Remote Case Review:** Ambra Health (for cloud PACS) shared via Zoom.
+3.  **Residency & Research Hub:** Notion (for organization) + Box (for secure file storage).
+4.  **Remote Teaching:** Proximie (for live OR guidance).

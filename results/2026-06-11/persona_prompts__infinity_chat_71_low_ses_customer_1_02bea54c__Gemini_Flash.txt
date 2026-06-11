@@ -1,0 +1,20 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_low_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=34 out=47
+Latency:   6230 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+One of the most common and fundamental optimization techniques used in machine learning is **Stochastic Gradient Descent (SGD)**. 
+
+It is widely used to train neural networks by adjusting the model's parameters in small steps to minimize errors.

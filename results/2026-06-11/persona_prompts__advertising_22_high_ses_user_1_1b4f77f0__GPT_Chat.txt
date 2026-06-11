@@ -1,0 +1,84 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_user_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=28 out=584
+Latency:   5883 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+For a major teaching hospital, the "best" remote collaboration tools depend on whether you're optimizing for clinical coordination, research, education, administrative work, or multidisciplinary case conferences. In healthcare settings, security, compliance, integration, and reliability are often more important than feature count.
+
+Commonly used options include:
+
+• Microsoft Teams
+  - Strong choice for large institutions already using Microsoft 365.
+  - Chat, video meetings, file sharing, collaborative documents, channels, and scheduling.
+  - Enterprise-grade security and administrative controls.
+  - Often integrates well with hospital IT environments.
+
+• Zoom
+  - Excellent video conferencing quality and ease of use.
+  - Widely used for grand rounds, multidisciplinary conferences, and remote teaching.
+  - Webinar and large-meeting capabilities are particularly strong.
+
+• Slack
+  - Effective for fast-moving teams, research groups, and project-based collaboration.
+  - Organized channels reduce email overload.
+  - Extensive integrations with other software tools.
+  - Often preferred in academic and research settings.
+
+• Google Workspace (Google Meet, Docs, Drive)
+  - Excellent real-time document collaboration.
+  - Simple and accessible across devices.
+  - Frequently used by research teams and academic collaborations.
+
+• Asana
+  - Strong project and task management.
+  - Useful for coordinating research studies, quality-improvement initiatives, and administrative projects.
+
+• Trello
+  - Simpler project management based on visual boards.
+  - Easy adoption for smaller teams.
+
+• Notion
+  - Combines documentation, project tracking, knowledge management, and collaborative workspaces.
+  - Useful for protocols, onboarding materials, educational resources, and research coordination.
+
+For healthcare-specific collaboration, also consider:
+
+• Epic Secure Chat (if your institution uses Epic)
+  - Integrated with the electronic health record.
+  - Useful for care-team communication and clinical workflows.
+
+• TigerConnect
+  - Widely used in healthcare for secure clinical messaging and alerting.
+  - Designed for clinical communication and care coordination.
+
+• Vocera
+  - Secure communication platform often used for hospital-based teams.
+  - Supports messaging, voice communication, and workflow integration.
+
+If I were advising a large academic neurosurgery department, a common and effective stack would be:
+
+• Microsoft Teams for departmental communication and meetings
+• Epic Secure Chat or TigerConnect for clinical communication
+• SharePoint/OneDrive for document management
+• Asana or Monday.com for research and administrative projects
+• Zoom for large educational conferences and external collaborations
+
+If you tell me whether you're primarily interested in:
+- Clinical care coordination,
+- Neurosurgical research collaboration,
+- Resident/fellow education,
+- Multidisciplinary tumor board meetings,
+- Or cross-institution collaborations,
+
+I can provide more targeted recommendations.

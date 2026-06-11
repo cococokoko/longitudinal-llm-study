@@ -1,0 +1,37 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_customer_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=36 out=272
+Latency:   2835 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A valuable feature for a smartwatch designed specifically for senior citizens would be a "Proactive Wellness Check-In" system.
+
+How it could work:
+- The watch learns the user's normal daily patterns, such as movement, sleep, heart rate, and activity levels.
+- If it detects unusual changes—such as significantly reduced movement, missed routines, abnormal heart rate patterns, or a potential fall—it initiates a simple check-in on the watch with large, easy-to-read prompts.
+- If the user does not respond within a configurable time, the watch can notify designated family members, caregivers, or healthcare providers.
+- The system could provide context in the alert (for example, "No movement detected since 9:00 AM" or "Possible fall detected at 2:15 PM").
+
+Why it stands out:
+- It goes beyond traditional emergency buttons by identifying potential issues before they become emergencies.
+- It supports independent living while providing reassurance to family members.
+- It reduces false alarms by combining multiple signals rather than relying on a single event.
+
+Key design considerations:
+- Large text and voice interaction.
+- Clear privacy controls and consent settings.
+- Adjustable sensitivity based on the user's health and lifestyle.
+- Long battery life to ensure continuous monitoring.
+
+This feature addresses one of the most important needs for many seniors: maintaining independence while staying safely connected to support networks.

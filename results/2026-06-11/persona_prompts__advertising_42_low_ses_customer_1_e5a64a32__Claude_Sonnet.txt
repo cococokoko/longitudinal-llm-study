@@ -1,0 +1,46 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_42_low_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: customer
+Tokens:    in=41 out=320
+Latency:   7861 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+Here are some popular and well-regarded options:
+
+## Fitness Tracking
+- **MyFitnessPal** - comprehensive calorie and exercise tracking
+- **Strava** - great for running and cycling
+- **Nike Training Club** - workout plans and guided sessions
+- **Fitbit app** - pairs with wearables but works standalone too
+- **Apple Fitness+** or **Google Fit** - good if you're in those ecosystems
+
+## Nutrition Focused
+- **Cronometer** - detailed micronutrient tracking
+- **Lose It!** - straightforward calorie counting
+- **Noom** - includes coaching and behavior focus
+
+## Combined/Flexible
+- **MyFitnessPal** covers both reasonably well
+- **Lifesum** - balances food and activity tracking
+
+## Practical Considerations for Your Situation
+Since you work unpredictable shifts, you might want apps that:
+- **Work offline** (in case you're busy mid-shift)
+- Have **quick logging features** for fast entries
+- Allow **flexible meal timing** rather than strict schedules
+- **MyFitnessPal and Cronometer** both handle irregular eating patterns well
+
+## Free vs Paid
+Most have solid free versions - I'd suggest starting free before committing to subscriptions.
+
+Would you like recommendations based on a specific goal, like weight management, building strength, or just general health?

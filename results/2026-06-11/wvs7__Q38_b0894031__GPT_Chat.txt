@@ -1,0 +1,32 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q38
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=208 out=131
+Latency:   1616 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: How would you feel about the following statements? Do you agree or disagree with them?
+
+Adult children have the duty to provide long-term care for their parents
+
+Options:
+A. Agree strongly
+B. Agree
+C. Neither agree nor disagree
+D. Disagree
+E. Disagree strongly
+F. Don't know
+G. No answer/refused
+H. Not applicable (filter)
+I. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 1.0, "G": 0.0, "H": 0.0, "I": 0.0}

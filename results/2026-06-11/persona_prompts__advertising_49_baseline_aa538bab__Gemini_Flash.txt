@@ -1,0 +1,77 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=6 out=1114
+Latency:   8037 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving your home WiFi doesn’t always require buying expensive new equipment. Often, simple adjustments to your router’s placement and settings can make a massive difference. 
+
+Here is a step-by-step guide to improving your home WiFi, ranked from easiest (free) to most advanced (paid).
+
+---
+
+### Phase 1: Optimize What You Have (Free)
+
+#### 1. Move Your Router to the Perfect Spot
+WiFi signals travel outward and downward, and they struggle to pass through solid objects.
+*   **Centralize it:** Place the router in the center of your home, not in a corner or closet.
+*   **Elevate it:** Put it on a table, shelf, or mount it on the wall. Avoid leaving it on the floor.
+*   **Avoid obstacles:** Keep it away from thick concrete walls, brick, metal objects, and large mirrors.
+*   **Avoid interference:** Keep it away from baby monitors, microwaves, cordless phones, and Bluetooth devices, which all use the same wireless frequencies.
+
+#### 2. Adjust the Antennas
+*   If your router has external antennas, **point one vertically (straight up) and one horizontally (flat).** WiFi signals broadcast best when the sending and receiving antennas are aligned on the same plane (some devices have vertical internal antennas, others horizontal).
+
+#### 3. Choose the Right Frequency Band (2.4 GHz vs. 5 GHz)
+Most modern routers are "dual-band," meaning they broadcast two different networks:
+*   **5 GHz (Fast but Short Range):** Use this for devices close to the router that need high speed (smart TVs, gaming consoles, work laptops).
+*   **2.4 GHz (Slower but Long Range):** Use this for devices far away, smart home tech (smart bulbs, plugs), and basic web browsing. It passes through walls much better than 5 GHz.
+
+#### 4. Change the WiFi Channel
+If you live in an apartment or crowded neighborhood, your neighbors' WiFi might be crowding your channel.
+*   Log into your router’s admin page (usually by typing `192.168.1.1` or `192.168.0.1` into a web browser).
+*   For **2.4 GHz**, change the channel to **1, 6, or 11** (these do not overlap).
+*   For **5 GHz**, choose a channel with the least congestion. Many modern routers have an "Auto" setting that does this for you if you reboot them.
+
+---
+
+### Phase 2: Software & Maintenance (Free)
+
+#### 5. Update Your Router’s Firmware
+Manufacturers regularly release software updates that patch security holes and improve performance.
+*   Log into your router’s admin page or use its companion app.
+*   Look for "Firmware Update" or "System Update" and run it.
+
+#### 6. Kick Off Unwanted Guests
+*   **Change your password:** If your WiFi is open or has an easy password, neighbors might be stealing your bandwidth. Use WPA2 or WPA3 encryption.
+*   **Set up a Guest Network:** Put visitors and smart home devices (which are easily hacked) on a separate guest network to free up bandwidth on your main network.
+
+#### 7. Use Quality of Service (QoS)
+If someone is gaming or streaming 4K video and lagging your work Zoom calls, turn on QoS in your router settings. This allows you to prioritize bandwidth to specific devices (like your work laptop).
+
+---
+
+### Phase 3: Hardware Upgrades (Paid)
+
+#### 8. Upgrade to a Mesh WiFi System (Best for Large Homes)
+If you have a home larger than 1,500 sq. ft. or multiple floors, a single router won't cut it. 
+*   **Mesh WiFi** (like Eero, Google Nest WiFi, or TP-Link Deco) uses multiple nodes placed around your house to create one seamless, high-speed network. It is far superior to cheap "WiFi extenders," which often cut your speed in half.
+
+#### 9. Use Powerline Adapters or MoCA
+If you can't run Ethernet cables through your walls, you can use your home's existing wiring:
+*   **Powerline Adapters:** Send internet signals through your home's electrical outlets.
+*   **MoCA Adapters (Best):** Send internet signals through your home's coaxial (cable TV) outlets. This is incredibly fast and stable, almost as good as Ethernet.
+
+#### 10. Buy a New Router
+If your router is more than 4–5 years old, it’s time for an upgrade. Look for a router that supports **Wi-Fi 6 (802.11ax)** or **Wi-Fi 6E/7**. These standards are designed to handle dozens of smart devices simultaneously without slowing down.
+
+#### 11. Use Ethernet for Stationary Devices
+The best way to improve your WiFi is to get devices *off* the WiFi. Connect stationary devices—like gaming consoles, desktop PCs, and smart TVs—directly to the router using an **Ethernet cable**. This frees up wireless bandwidth for your phones and laptops.

@@ -1,0 +1,23 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_68_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=107
+Latency:   1615 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me a tip for managing a team of coworkers.
+
+── Response ────────────────────────────────────────────────────────
+One practical tip: make expectations explicit and repeat them consistently.
+
+Many team issues come from people having different assumptions about priorities, deadlines, ownership, or quality standards. To reduce confusion:
+- Clearly define who is responsible for each task.
+- Set specific deadlines and desired outcomes.
+- Check in regularly, but focus on removing obstacles rather than micromanaging.
+- Summarize decisions and action items in writing so everyone has the same reference point.
+
+A team with clear expectations often needs less oversight and experiences fewer misunderstandings.

@@ -1,0 +1,29 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q131
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=189 out=67
+Latency:   3124 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Could you tell me how secure do you feel these days?
+
+Options:
+A. Very secure
+B. Quite secure
+C. Not very secure
+D. Not at all secure
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.15, "B": 0.40, "C": 0.25, "D": 0.08, "E": 0.07, "F": 0.02, "G": 0.02, "H": 0.01}

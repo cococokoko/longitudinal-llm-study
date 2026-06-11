@@ -1,0 +1,99 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_customer_6
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=1176
+Latency:   7531 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+Running Dolphin Emulator on a Microsoft Surface using only the touchpad and on-screen keyboard is highly doable, but it requires a specific setup to make it playable. Since you don't have a physical controller or mouse/keyboard attached, we need to map the Surface's inputs to mimic a Wii Remote (Wiimote) and Nunchuk.
+
+Here is a streamlined, step-by-step guide to getting this running efficiently.
+
+---
+
+### Step 1: Optimize Dolphin for Touch/On-Screen Input
+Before configuring controls, we need to ensure Dolphin runs in a windowed mode that allows you to access the Windows On-Screen Keyboard (OSK) easily.
+
+1. Open Dolphin.
+2. Go to **Graphics** (on the main toolbar).
+3. Under the **General** tab:
+   * **Backend**: Select **Direct3D 12** or **Vulkan** (these perform best on Surface Pro/Book hardware).
+   * Check **Start in Fullscreen** (keep this *unchecked* so you can access your taskbar and on-screen keyboard).
+
+---
+
+### Step 2: Enable the Advanced Windows On-Screen Keyboard
+The default Windows touch keyboard disappears when you click away. For gaming, you want the legacy **On-Screen Keyboard (OSK)**, which stays pinned on top of your screen.
+
+1. Press the Windows Search bar (or swipe up to access the taskbar).
+2. Type **"On-Screen Keyboard"** and open the desktop app.
+3. Click the **Options** key on the OSK (bottom right) and ensure **"Turn on numeric key pad"** is checked if you want more mapping options.
+4. Position this keyboard at the bottom of your screen and Dolphin at the top.
+
+---
+
+### Step 3: Configure Touchpad & Keyboard Controls in Dolphin
+Since you are using a touchpad, we will map the **Touchpad click/tap** to the Wii pointer (IR) and the **On-Screen Keyboard** to the buttons (A, B, D-Pad).
+
+1. In Dolphin, click **Controllers** on the main toolbar.
+2. Under **Wii Remotes**, set *Wii Remote 1* to **Emulated Wii Remote** and click **Configure**.
+3. In the configuration window:
+   * **Device**: Select **Keyboard/Mouse** (this tells Dolphin to accept inputs from your Surface touchpad and OSK).
+
+#### Recommended Mapping for Touchpad + OSK:
+
+* **Buttons (The OSK will trigger these):**
+  * **A Button**: Map to `Spacebar` or `A` on your keyboard.
+  * **B Button** (usually trigger): Map to `Left Shift` or `B`.
+  * **1 & 2 Buttons**: Map to `1` and `2`.
+  * **Minus / Plus**: Map to `-` and `=`.
+
+* **D-Pad (Movement/Menus):**
+  * Map to the standard Arrow Keys (`Up`, `Down`, `Left`, `Right`) on your OSK.
+
+* **Motion Simulation (Crucial for Wii):**
+  * **Point (The Wii Pointer)**: 
+    * Set **Up/Down/Left/Right** to `Cursor X+`, `Cursor X-`, `Cursor Y+`, `Cursor Y-`. 
+    * *This allows your Surface touchpad to act as the Wii pointer on the screen.*
+  * **Shake**: Map this to a single easily accessible key on your OSK (like `Z` or `X`) so you can simulate shaking the Wiimote with one tap.
+
+* **Extension (If the game requires a Nunchuk):**
+  * Go to the **Extension** tab at the top.
+  * Select **Nunchuk**.
+  * Map the Nunchuk Analog Stick to `W`, `A`, `S`, `D` on your keyboard.
+  * Map the **C** and **Z** buttons to `C` and `Z` on your keyboard.
+
+Click **Save** and name this profile "Surface_Touch".
+
+---
+
+### Step 4: Gameplay Strategy (How to actually play)
+Playing action-heavy games (like *Super Mario Galaxy* or *Metroid Prime*) with this setup is highly difficult due to the lack of multi-touch on the OSK. 
+
+**Best Games for this Setup:**
+* **Turn-based RPGs / Strategy**: *Fire Emblem: Radiant Dawn*, *Super Paper Mario*.
+* **Point-and-Click / Adventure**: *Zack & Wiki*, *Phoenix Wright*.
+* **Slow-paced games**: *Animal Crossing: City Folk*.
+
+**How to play:**
+1. Keep the Dolphin window in the top half of your Surface screen.
+2. Keep the OSK in the bottom half.
+3. Use your right hand/index finger on the touchpad to aim the Wii pointer.
+4. Use your left hand to tap the OSK keys (like Spacebar for 'A' or Arrow keys to move).
+
+---
+
+### Pro-Tip: The "Virtual Controller" Alternative (Highly Recommended)
+If using the Windows OSK is too clunky, there is a free, open-source tool designed specifically for Windows tablets called **GestureSign** or **VirtualGamepad**. 
+
+These tools put transparent, customizable game controller overlays directly on top of your Surface screen, allowing you to use actual touch-screen joysticks and buttons to control Dolphin, rather than relying on the rigid Windows keyboard.

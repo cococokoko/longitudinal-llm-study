@@ -1,0 +1,29 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=353
+Latency:   3005 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+Here is a draft for your paragraph, written from the perspective of an expert consultant. It balances professional authority with clear, actionable advice for students.
+
+***
+
+**Draft:**
+
+"As an international education consultant, I often advise students that choosing between the TOEFL and the IELTS is not a matter of which test is 'easier,' but rather which exam aligns best with your personal communication style and academic goals. The TOEFL (Test of English as a Foreign Language) is highly academic, entirely computer-based, and favors students who are comfortable speaking to a microphone and synthesizing information from multiple sources simultaneously. Conversely, the IELTS (International English Language Testing System) offers a more real-world, conversational approach, featuring a face-to-face speaking interview with a human examiner and a mix of question types, including short-answer and diagram labeling. While both exams are globally recognized, the TOEFL remains the traditional favorite for North American institutions, whereas the IELTS is widely preferred in the UK, Australia, and Canada. Ultimately, your decision should hinge on two factors: the specific requirements of your target universities, and whether you perform better interacting with a screen or a human being."
+
+***
+
+### Why this works:
+*   **Establishes Authority:** It immediately frames the advice from a consultant's perspective ("As an international education consultant, I often advise...").
+*   **Dispels Myths:** It addresses the common misconception that one test is inherently easier than the other.
+*   **Highlights Key Differences:** It clearly contrasts the delivery methods (computer-based vs. face-to-face) and geographic preferences (US vs. Commonwealth).
+*   **Actionable Conclusion:** It leaves the student with a clear framework for making their decision.

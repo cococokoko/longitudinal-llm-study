@@ -1,0 +1,22 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_93_high_ses_customer_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=34 out=286
+Latency:   2582 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write 100-300 words on how stress affects the body and mind.
+
+── Response ────────────────────────────────────────────────────────
+At the physiological level, the stress response is mediated by the rapid activation of the sympathetic-adrenal-medullary (SAM) axis, triggering catecholamine release, followed by the slower activation of the hypothalamic-pituitary-adrenal (HPA) axis, resulting in elevated systemic cortisol. While adaptive in acute scenarios, chronic disruption of these homeostatic pathways drives systemic pathophysiology. 
+
+In the body, sustained hypercortisolemia and sympathetic overdrive promote endothelial dysfunction, arterial stiffness, and hypertension, significantly elevating cardiovascular risk. Immunologically, chronic stress shifts the cytokine profile toward a pro-inflammatory state (elevating IL-6, TNF-alpha, and CRP), which impairs wound healing, compromises host defense, and exacerbates autoimmune pathologies. Additionally, altered insulin sensitivity and visceral adiposity contribute to metabolic syndrome.
+
+In the central nervous system, chronic stress induces profound neuroplastic remodeling. High levels of circulating glucocorticoids lead to dendritic atrophy and loss of dendritic spines in the prefrontal cortex and hippocampus—impairing executive function, working memory, and spatial learning. Conversely, the basolateral amygdala exhibits dendritic hypertrophy and hyper-reactivity, shifting the neural architecture toward a state of hypervigilance, emotional dysregulation, and heightened anxiety. Over time, this neuroendocrine strain depletes monoaminergic neurotransmitters and suppresses neurogenesis in the dentate gyrus, clinically manifesting as depressive phenotypes and cognitive decline.

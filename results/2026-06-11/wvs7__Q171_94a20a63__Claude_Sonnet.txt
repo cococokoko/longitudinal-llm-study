@@ -1,0 +1,32 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q171
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=243 out=91
+Latency:   2297 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Apart from weddings and funerals, about how often do you attend religious services these days?
+
+Options:
+A. More than once a week
+B. Once a week
+C. Once a month
+D. Only on special holy days
+E. Once a year
+F. Less often
+G. Never, practically never
+H. Don't know
+I. No answer/refused
+J. Not applicable (filter)
+K. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.02, "B": 0.05, "C": 0.05, "D": 0.08, "E": 0.05, "F": 0.10, "G": 0.60, "H": 0.02, "I": 0.01, "J": 0.01, "K": 0.01}

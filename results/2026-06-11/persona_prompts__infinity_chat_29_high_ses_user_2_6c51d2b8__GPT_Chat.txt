@@ -1,0 +1,195 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=29 out=926
+Latency:   8511 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+A traditional online forum is a very common fit for a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP). At a high level, you'll need:
+
+- User accounts and authentication
+- Categories/boards
+- Discussion threads/topics
+- Posts/replies
+- Moderation tools
+- Search functionality
+- Security protections
+
+A typical architecture might look like:
+
+- Linux server
+- Apache web server
+- PHP application layer
+- MySQL/MariaDB database
+
+Example database schema
+
+Users:
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+Forums:
+```sql
+CREATE TABLE forums (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+```
+
+Threads:
+```sql
+CREATE TABLE threads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    forum_id INT NOT NULL,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (forum_id) REFERENCES forums(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+Posts:
+```sql
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id INT NOT NULL,
+    user_id INT NOT NULL,
+    body TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+User registration example
+
+```php
+<?php
+
+$pdo = new PDO(
+    "mysql:host=localhost;dbname=forum;charset=utf8mb4",
+    "dbuser",
+    "dbpass",
+    [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]
+);
+
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+$hash = password_hash($password, PASSWORD_DEFAULT);
+
+$stmt = $pdo->prepare(
+    "INSERT INTO users (username, email, password_hash)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([$username, $email, $hash]);
+```
+
+User login example
+
+```php
+<?php
+
+$stmt = $pdo->prepare(
+    "SELECT id, password_hash
+     FROM users
+     WHERE username = ?"
+);
+
+$stmt->execute([$_POST['username']]);
+
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if ($user && password_verify($_POST['password'], $user['password_hash'])) {
+    session_start();
+    $_SESSION['user_id'] = $user['id'];
+}
+```
+
+Creating a thread
+
+```php
+<?php
+
+session_start();
+
+$stmt = $pdo->prepare(
+    "INSERT INTO threads (forum_id, user_id, title)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['forum_id'],
+    $_SESSION['user_id'],
+    $_POST['title']
+]);
+```
+
+Adding a post
+
+```php
+<?php
+
+$stmt = $pdo->prepare(
+    "INSERT INTO posts (thread_id, user_id, body)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['thread_id'],
+    $_SESSION['user_id'],
+    $_POST['body']
+]);
+```
+
+Displaying posts safely
+
+```php
+<?php foreach ($posts as $post): ?>
+    <div>
+        <?= htmlspecialchars($post['body'], ENT_QUOTES, 'UTF-8') ?>
+    </div>
+<?php endforeach; ?>
+```
+
+Important security considerations
+
+- Use prepared statements everywhere to prevent SQL injection.
+- Hash passwords with `password_hash()` and verify with `password_verify()`.
+- Escape user-generated content with `htmlspecialchars()` to reduce XSS risk.
+- Enable CSRF protection on forms.
+- Use HTTPS exclusively.
+- Validate and sanitize all user input.
+- Rate-limit login attempts.
+- Implement moderation and abuse-reporting features.
+- Store sessions securely and regenerate session IDs after login.
+
+If your goal is to launch a forum rather than build one from scratch, it is usually more efficient to deploy established forum software such as:
+- phpBB
+- Discourse (not LAMP by default)
+- MyBB
+- Flarum
+
+Building a production-grade forum from scratch is a substantial project; using an established platform is often faster, more secure, and easier to maintain.

@@ -1,0 +1,24 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_high_ses_customer_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=32 out=238
+Latency:   2529 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+Here is a draft tailored to your background, using a precise, analytical framework to compare the two examinations. 
+
+***
+
+**TOEFL vs. IELTS: A Comparative Diagnostic for International Candidates**
+
+When advising international students on academic English proficiency, the choice between TOEFL (Test of English as a Foreign Language) and IELTS (International English Language Testing System) is best approached by evaluating the candidate’s cognitive processing style and communication preferences. The **TOEFL** is a highly standardized, fully digitized assessment that requires a high level of integrated cognitive synthesis; candidates must routinely process complex auditory and written inputs simultaneously to produce a single spoken or written output, all delivered via a computer interface. Conversely, the **IELTS** offers a more modular, human-centric paradigm. Its speaking component is conducted via an in-person, interactive interview, and its tasks are more compartmentalized, testing discrete linguistic pathways rather than highly integrated multi-modal tasks. Ultimately, while both examinations are universally respected diagnostic tools for academic readiness, TOEFL favors candidates with strong digital stamina and integrated synthesis skills, whereas IELTS is optimal for those who thrive in interactive, conversational environments and prefer a linear, segmented testing structure.

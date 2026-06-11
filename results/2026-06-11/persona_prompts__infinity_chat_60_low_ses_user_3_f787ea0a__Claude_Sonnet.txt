@@ -1,0 +1,49 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_low_ses_user_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: user
+Tokens:    in=33 out=305
+Latency:   8077 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+# Computational Irreducibility (Like You're 5)
+
+## The Basic Idea
+
+Imagine you want to know **where a bouncy ball will be after 1000 bounces**.
+
+You have two choices:
+- **Figure out a shortcut** (a magic formula that jumps straight to the answer)
+- **Actually watch all 1000 bounces**
+
+For a bouncy ball, smart people found a shortcut. Easy!
+
+But **some things have NO shortcut.** To know what happens at step 1000, you genuinely have to go through steps 1, 2, 3... all the way to 1000.
+
+**That's computational irreducibility** - you can't skip ahead. The only way to get the answer is to actually run through every step.
+
+---
+
+## Why It Matters
+
+- It means **prediction has real limits** - not because we're not clever enough, but because shortcuts *literally don't exist*
+- Even a perfect supercomputer can't cheat
+- The universe itself might work this way, which means **some things are genuinely unpredictable** without just... waiting and watching
+
+---
+
+## The Honest Bit
+
+This idea comes mainly from Stephen Wolfram, and scientists debate exactly how broadly it applies.
+
+---
+
+*(Good luck with the probation period, by the way!)* 😄

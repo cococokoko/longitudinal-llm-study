@@ -1,0 +1,63 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_customer_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=38 out=480
+Latency:   8400 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## Setup
+
+Consider a function representing **intracranial pressure** (a familiar concept) modeled as:
+
+$$f(x, y) = 3x^2y + 2xy^3$$
+
+where **x = 2** and **y = 3**.
+
+---
+
+## Computing the Partial Derivatives
+
+### With Respect to x (holding y constant)
+
+$$\frac{\partial f}{\partial x} = 6xy + 2y^3$$
+
+**At (2, 3):**
+
+$$\frac{\partial f}{\partial x}\bigg|_{(2,3)} = 6(2)(3) + 2(3)^3 = 36 + 54 = \boxed{90}$$
+
+> **Interpretation:** If y stays fixed at 3, the function increases at a rate of **90 units per unit increase in x**.
+
+---
+
+### With Respect to y (holding x constant)
+
+$$\frac{\partial f}{\partial y} = 3x^2 + 6xy^2$$
+
+**At (2, 3):**
+
+$$\frac{\partial f}{\partial y}\bigg|_{(2,3)} = 3(2)^2 + 6(2)(3)^2 = 12 + 108 = \boxed{120}$$
+
+> **Interpretation:** If x stays fixed at 2, the function increases at a rate of **120 units per unit increase in y**.
+
+---
+
+## Key Insight
+
+| Derivative | Value | Meaning |
+|---|---|---|
+| ∂f/∂x | 90 | Rate of change in **x-direction only** |
+| ∂f/∂y | 120 | Rate of change in **y-direction only** |
+
+The partial derivative isolates **one variable's contribution** to change — analogous to asking *"how does outcome change if I alter only this one parameter?"* — much like isolating a single variable in a multivariate clinical scenario.

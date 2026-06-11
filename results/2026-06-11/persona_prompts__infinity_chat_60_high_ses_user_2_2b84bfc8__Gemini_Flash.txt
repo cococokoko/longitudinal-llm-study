@@ -1,0 +1,29 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_high_ses_user_2
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=26 out=259
+Latency:   2511 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+As a senior attorney, you are used to looking at a contract, applying your years of experience, and predicting exactly how a judge will rule on it without having to actually go through a five-year trial. You can "skip to the end" because you understand the rules.
+
+**Computational irreducibility** means there are some things in the universe where **you cannot skip to the end.** 
+
+Imagine a giant, winding marble run. 
+
+If I ask you, *"If I drop this marble at the top, where will it be in exactly 12 seconds?"* you might think you can use a smart math formula to calculate the answer instantly. 
+
+But with this marble run, the tracks are so complex, and the marble bounces in such tricky ways, that **there is no shortcut.** No computer program, no math formula, and no smart guess can tell you where the marble will be. 
+
+The *only* way to find out where the marble is at second 12 is to actually drop the marble, watch it roll, and count to 12. You have to live through every single second of the journey to see the result. 
+
+In short: **You cannot predict the future; you have to watch it play out.**

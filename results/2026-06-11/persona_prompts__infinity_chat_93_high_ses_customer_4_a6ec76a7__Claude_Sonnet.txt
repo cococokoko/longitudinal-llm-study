@@ -1,0 +1,28 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_93_high_ses_customer_4
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=39 out=408
+Latency:   8738 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write 100-300 words on how stress affects the body and mind.
+
+── Response ────────────────────────────────────────────────────────
+# The Effects of Stress on Body and Mind
+
+Stress triggers a cascade of physiological responses rooted in the hypothalamic-pituitary-adrenal (HPA) axis and sympathetic nervous system activation. When a perceived threat is encountered, cortisol and catecholamines — primarily epinephrine and norepinephrine — are rapidly released, preparing the organism for fight-or-flight response.
+
+**Physiologically**, acute stress elevates heart rate, blood pressure, and glucose availability while temporarily suppressing non-essential functions including digestion, immune activity, and reproductive processes. Chronic stress, however, sustains these disruptions pathologically. Prolonged cortisol elevation contributes to systemic inflammation, immunosuppression, cardiovascular remodeling, and metabolic dysregulation — mechanisms well-documented in conditions ranging from atherosclerosis to type 2 diabetes.
+
+**Neurologically**, chronic stress induces structural changes in the brain. Glucocorticoid excess promotes dendritic atrophy in the prefrontal cortex and hippocampus — regions governing executive function and memory consolidation — while simultaneously facilitating amygdala hyperreactivity. This neuroplastic remodeling underlies the cognitive impairments and heightened anxiety commonly observed in chronically stressed individuals.
+
+**Psychologically**, the downstream effects manifest as impaired attention, emotional dysregulation, and increased vulnerability to mood disorders. The bidirectional relationship between stress and conditions like major depressive disorder and PTSD reflects shared neuroendocrine and inflammatory pathways.
+
+Importantly, individual stress responses vary considerably based on genetic predisposition, early life experiences, and social support networks — factors increasingly examined through the lens of allostatic load theory. Understanding these mechanisms remains critical for developing targeted interventions that address stress-related pathology at both the biological and behavioral levels.

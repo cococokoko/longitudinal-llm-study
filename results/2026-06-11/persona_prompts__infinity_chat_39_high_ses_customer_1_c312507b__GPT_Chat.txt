@@ -1,0 +1,93 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_customer_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=40 out=606
+Latency:   5691 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+Given your background as a neurosurgeon at a major teaching hospital, the highest-value path is not necessarily becoming a general-purpose software engineer. The strongest long-term position is often at the intersection of deep domain expertise and technology.
+
+Areas likely to remain highly relevant over the next decade:
+
+- AI and machine learning fundamentals
+  - How modern models work (transformers, foundation models, multimodal AI)
+  - Model evaluation, bias, safety, and validation
+  - Clinical AI deployment and monitoring
+  - You do not need to become an AI researcher, but understanding the capabilities and limitations of AI will be increasingly important.
+
+- Data science and statistics
+  - Experimental design
+  - Causal inference
+  - Predictive modeling
+  - Clinical outcomes analysis
+  - Data quality and reproducibility
+
+- Python
+  - Still the dominant language for AI, data science, and scientific computing
+  - Useful libraries:
+    - Pandas
+    - NumPy
+    - Scikit-learn
+    - PyTorch
+    - Jupyter
+
+- Software engineering fundamentals
+  - Version control (Git)
+  - Testing
+  - APIs
+  - Databases
+  - System design
+  - These skills remain valuable even as AI generates more code.
+
+- Data engineering
+  - Moving, cleaning, validating, and organizing large datasets
+  - Healthcare increasingly depends on integrating imaging, clinical, genomic, and device data.
+
+- Cloud computing
+  - AWS, Azure, or Google Cloud
+  - Understanding deployment, storage, security, and scalable computing
+
+- Cybersecurity and privacy
+  - Particularly important in healthcare
+  - Identity management
+  - Data protection
+  - Regulatory considerations
+  - Secure system design
+
+- Medical imaging and computational neuroscience
+  - Computer vision
+  - Image segmentation
+  - Surgical navigation systems
+  - Brain-computer interfaces
+  - Digital biomarkers
+  - These areas align closely with neurosurgery and are likely to grow substantially.
+
+- Human-AI collaboration
+  - Designing workflows where clinicians and AI systems work together
+  - This may become more valuable than purely technical coding skills.
+
+Skills that may become less differentiated:
+- Basic coding alone
+- Building simple websites
+- Routine CRUD applications
+- Writing boilerplate code without understanding systems, data, or domain problems
+
+If your goal is maximum future relevance, a particularly strong roadmap would be:
+
+1. Learn Python well.
+2. Learn statistics and data science.
+3. Learn machine learning and modern AI.
+4. Learn software engineering fundamentals (Git, testing, APIs, databases).
+5. Apply those skills to clinical datasets, imaging, surgical robotics, or neuroscience research.
+
+The combination of neurosurgical expertise plus competence in AI and data systems is likely to be far rarer—and more valuable—than becoming a generic software developer.

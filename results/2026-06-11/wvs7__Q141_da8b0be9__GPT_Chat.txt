@@ -1,0 +1,29 @@
+Wave:      2026-06-11
+Dataset:   wvs7
+Item ID:   Q141
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=157 out=101
+Latency:   1731 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Which of the following things have you done for reasons of security?
+
+Carried a knife, gun or other weapon
+
+Options:
+A. Yes
+B. No
+C. Don't know
+D. No answer/refused
+E. Not applicable (filter)
+F. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 1.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}

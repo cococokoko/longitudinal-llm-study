@@ -1,0 +1,74 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_27_high_ses_customer_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: customer
+Tokens:    in=25 out=1190
+Latency:   8168 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+You know that the customer is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I reduce my carbon footprint with daily habits?
+
+── Response ────────────────────────────────────────────────────────
+As an executive in the technology sector, you are likely accustomed to optimizing complex systems, managing resources efficiently, and driving high-impact initiatives. Applying this same strategic, high-leverage mindset to your personal life can yield significant reductions in your carbon footprint with minimal friction. 
+
+Here is a curated guide to high-impact daily habits, categorized by their leverage points, designed to fit seamlessly into a demanding executive lifestyle.
+
+---
+
+### 1. High-Leverage Digital & Workplace Habits
+Given your industry, your digital footprint and professional influence are two of your strongest levers for environmental impact.
+
+*   **Optimize Your Digital Hygiene:** 
+    *   **The Habit:** Clean out your cloud storage and unsubscribe from unwanted newsletters. 
+    *   **The Impact:** Data centers account for about 1-1.5% of global electricity use. Keeping "dark data" (unused cloud backups, old emails, redundant files) active requires continuous power for cooling and servers. 
+    *   **The Executive Move:** Set a recurring 15-minute calendar block on Friday afternoons for "digital decluttering."
+*   **Default to "Eco-Mode" in the Cloud:**
+    *   **The Habit:** When provisioning personal or team development environments, select cloud regions with the lowest carbon intensity (e.g., AWS, Google Cloud, and Azure all now flag green regions).
+*   **Model "Green Meeting" Etiquette:**
+    *   **The Habit:** Turn off your camera during large, passive webinars or all-hands meetings where you are not presenting. 
+    *   **The Impact:** A study from Purdue University found that turning off video during virtual calls can reduce the carbon footprint of that meeting by up to 96%.
+
+### 2. Smart Home & Energy Automation
+As a tech leader, you can leverage automation to eliminate the cognitive load of energy conservation.
+
+*   **Automate Your Climate Control:**
+    *   **The Habit:** Use a smart thermostat (like Nest or Ecobee) to set "eco-temperatures" when you are asleep or away from home. 
+    *   **The Impact:** Heating and cooling make up over 50% of the average home’s energy use. A 7-10°F setback for 8 hours a day can reduce your heating/cooling footprint by 10% annually.
+*   **Transition to "Vampire Power" Killers:**
+    *   **The Habit:** Plug your home office setup (monitors, docks, chargers) into a smart power strip that automatically cuts power when devices are in standby mode.
+    *   **The Impact:** Standby power accounts for up to 10% of household electricity use.
+
+### 3. High-Efficiency Mobility
+Your commute and travel schedule are likely your largest sources of personal emissions. Optimizing these transitions yields the highest ROI.
+
+*   **The "One Less Drive" Rule:**
+    *   **The Habit:** Commit to consolidating errands or substituting one solo car trip per week with a walk, bike ride, or public transit. 
+    *   **The Impact:** If you drive an EV, this still saves tire-wear microplastics and grid energy. If you drive an ICE (Internal Combustion Engine) vehicle, eliminating just 10 miles of driving a week saves about 200 lbs of CO2 annually.
+*   **Optimize EV Charging (If applicable):**
+    *   **The Habit:** Set your EV to charge during off-peak hours (usually overnight). 
+    *   **The Impact:** This aligns your charging with times when the grid is less stressed and often relying on a higher percentage of renewable baseload energy (like wind).
+
+### 4. Precision Nutrition & Consumption
+Food production is responsible for roughly 26% of global greenhouse gas emissions. You don't need to go fully vegan to make a massive dent here.
+
+*   **The "Default to Plants" Lunch:**
+    *   **The Habit:** Make your working lunches strictly plant-based. 
+    *   **The Impact:** Eating a plant-based lunch just 5 days a week reduces your food-related carbon footprint by roughly 30%. It also prevents the "carb crash," keeping your cognitive performance high for afternoon meetings.
+*   **Zero-Waste Meal Planning:**
+    *   **The Habit:** Treat your refrigerator like a Just-In-Time (JIT) inventory system. Use an app like *T组织* or *SuperCook* to cook meals based on what is expiring first.
+    *   **The Impact:** Food waste in landfills produces methane, a greenhouse gas 25x more potent than CO2. Eliminating personal food waste is one of the single most effective individual climate actions.
+
+### 5. The Ultimate Executive Habit: "Carbon-Informed" Decision Making
+Just as you look at ROI or OKRs, start viewing daily purchases through a carbon lens.
+
+*   **The Habit:** Before making a purchase (especially next-day shipping items), ask: *“Is the convenience worth the carbon premium?”*
+    *   **The Impact:** Opting for "standard shipping" instead of "instant/next-day" allows logistics companies to optimize routes and fill trucks, reducing delivery emissions by up to 30%.
+
+### How to Start:
+Don't try to implement all of these at once. Treat this like an agile deployment: **pick one "micro-habit" this week** (e.g., plant-based lunches or digital decluttering), automate it or anchor it to an existing routine, and scale up once it becomes second nature.

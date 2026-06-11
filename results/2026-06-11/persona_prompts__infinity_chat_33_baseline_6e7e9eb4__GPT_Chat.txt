@@ -1,0 +1,91 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=26 out=559
+Latency:   5001 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You can run Dolphin on a Microsoft Surface using only the touchpad and the Windows on-screen keyboard, but you'll need to map Wii controls to keyboard keys and then use the on-screen keyboard to press them.
+
+Here's a practical setup:
+
+1. Open Dolphin
+- Launch Dolphin.
+- Select "Controllers" from the toolbar.
+
+2. Configure a Wii Remote
+- Under "Wii Remotes," set "Wii Remote 1" to "Emulated Wii Remote."
+- Click "Configure."
+
+3. Map Wii buttons to keyboard keys
+Assign commonly used keys such as:
+- A → Z
+- B → X
+- 1 → A
+- 2 → S
+- Plus (+) → Enter
+- Minus (-) → Backspace
+- Home → H
+
+You can choose any keys you prefer.
+
+4. Map movement
+In the "IR" and "Swing" sections, you have a few options:
+- For games that mainly use buttons, you may not need motion controls.
+- For pointer-based games, map:
+  - Up, Down, Left, Right to arrow keys.
+- For Nunchuk movement:
+  - Configure "Attachment" → "Nunchuk."
+  - Map the control stick to:
+    - Up → W
+    - Down → S
+    - Left → A
+    - Right → D
+
+5. Use the Windows On-Screen Keyboard
+Open it by:
+- Pressing Win + Ctrl + O, or
+- Searching for "On-Screen Keyboard" in the Start menu.
+
+The on-screen keyboard allows you to:
+- Tap Wii button inputs directly.
+- Hold modifier keys if needed.
+- Play touchscreen-friendly games without a physical keyboard.
+
+6. Use the Surface touchpad as a pointer
+For Wii games requiring pointing:
+- In Dolphin's Wii Remote configuration, bind IR directions to mouse movement if your Dolphin version supports mouse input.
+- Then move the cursor with the Surface touchpad.
+
+7. Enable Touch Keyboard While Gaming
+Windows 11:
+- Settings → Personalization → Taskbar.
+- Enable "Touch keyboard."
+- A keyboard icon will appear in the taskbar so you can open it during gameplay.
+
+Recommended game types
+Works well:
+- New Super Mario Bros. Wii
+- Kirby's Return to Dream Land
+- Classic Controller-compatible games
+- RPGs and turn-based games
+
+More difficult with only touchpad/keyboard:
+- Skyward Sword
+- Wii Sports
+- Metroid Prime 3
+- Games that depend heavily on motion gestures
+
+If you tell me:
+- Your Surface model,
+- Whether you're using Windows 10 or 11,
+- And the specific Wii game,
+
+I can suggest an exact Dolphin controller profile and motion-control setup for that game.

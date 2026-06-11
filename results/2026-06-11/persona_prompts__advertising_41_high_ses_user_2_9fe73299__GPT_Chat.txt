@@ -1,0 +1,63 @@
+Wave:      2026-06-11
+Dataset:   persona_prompts
+Item ID:   advertising_41_high_ses_user_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: user
+Tokens:    in=27 out=514
+Latency:   4722 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a senior attorney at a well-established law firm.
+
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to improve your credit score as quickly as possible, focus on the factors that can change within one or two reporting cycles:
+
+- Lower your credit utilization
+  - This is often the fastest way to see a meaningful increase.
+  - Pay down revolving credit card balances, especially cards that are above 30% utilization.
+  - For the strongest impact, aim for below 10% utilization on both individual cards and overall credit limits.
+
+- Make all payments on time
+  - Payment history is a major scoring factor.
+  - If you have any account that is currently past due, bringing it current can help prevent further damage.
+  - Set up automatic payments or reminders.
+
+- Check your credit reports for errors
+  - Obtain reports from the major credit bureaus.
+  - Dispute inaccuracies such as incorrect late payments, balances, or accounts that do not belong to you.
+  - Corrections can sometimes produce a significant score increase.
+
+- Ask for a credit limit increase
+  - If approved and your spending remains the same, your utilization ratio drops.
+  - Some issuers allow this without a hard inquiry; confirm before requesting.
+
+- Avoid applying for new credit unless necessary
+  - New applications can create hard inquiries and reduce the average age of your accounts.
+  - Multiple applications in a short period can suppress your score.
+
+- Keep older accounts open
+  - Closing accounts can reduce available credit and increase utilization.
+  - Longer account history generally helps.
+
+- Consider becoming an authorized user
+  - If a trusted family member has a long-established account with low utilization and excellent payment history, being added as an authorized user may help, depending on the scoring model and issuer reporting practices.
+
+- If you have collections
+  - Paying or settling collections may help under some scoring models, though the impact varies.
+  - Request written confirmation of any settlement agreement.
+
+Typical timelines:
+- Utilization changes: often reflected within 30–60 days after lenders report updated balances.
+- Error corrections: often 30–60 days, depending on the dispute process.
+- Payment history improvements: generally take longer and build over time.
+
+If you tell me:
+- Your approximate credit score range,
+- Whether the issue is high card balances, late payments, collections, or something else,
+- And whether you're seeking a mortgage, auto loan, or other financing,
+
+I can suggest the highest-impact steps for your situation.
