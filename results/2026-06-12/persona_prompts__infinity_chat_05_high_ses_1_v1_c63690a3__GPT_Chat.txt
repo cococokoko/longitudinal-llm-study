@@ -1,0 +1,28 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_1_v1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses_v1
+SES level: high  role: user
+Tokens:    in=30 out=233
+Latency:   2921 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+One valuable feature would be an "Adaptive Well-Being Check-In" system.
+
+How it works:
+- The watch learns the user's normal daily patterns (walking, sleep, heart rate, watch interactions, and routine activity times).
+- If it detects a meaningful deviation—such as unusually low activity, missed medication times, prolonged inactivity after a typical wake-up time, or signs of confusion in device use—it prompts the wearer with a simple check-in.
+- If the wearer does not respond after multiple attempts, the watch can notify a designated family member or caregiver and share relevant context.
+- The interface uses large text, voice interaction, and a single-tap response.
+
+Why it is useful:
+- It goes beyond traditional fall detection by identifying subtle changes that may precede illness, dehydration, medication issues, infection, or cognitive decline.
+- It supports independent living while providing reassurance to caregivers.
+- It reduces unnecessary alerts by adapting to each individual's baseline rather than relying solely on fixed thresholds.

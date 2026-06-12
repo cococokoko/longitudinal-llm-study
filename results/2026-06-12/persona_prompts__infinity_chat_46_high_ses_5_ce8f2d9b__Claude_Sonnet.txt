@@ -1,0 +1,47 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_high_ses_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=28 out=277
+Latency:   5997 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Example of a Linear Graph (Path Graph)
+
+A simple example of a **linear graph** (also called a **path graph**) is:
+
+**P₄** — a path with 4 vertices:
+
+```
+A — B — C — D
+```
+
+### Properties of this graph:
+| Property | Value |
+|----------|-------|
+| Vertices | A, B, C, D |
+| Edges | {A,B}, {B,C}, {C,D} |
+| Number of vertices | 4 |
+| Number of edges | 3 |
+
+### Key Characteristics:
+- **Each vertex** connects to at most **2 neighbors**
+- **End vertices** (A and D) have **degree 1**
+- **Interior vertices** (B and C) have **degree 2**
+- The graph forms a single straight chain with **no cycles**
+
+### Why it's called "linear":
+The vertices can be arranged in a **sequence**, where each vertex is adjacent only to the next one in the line — resembling a linear structure.
+
+---
+
+This type of graph commonly models things like **network chains**, **pipeline systems**, or **sequential workflows** — which are relevant in many technology infrastructure contexts.

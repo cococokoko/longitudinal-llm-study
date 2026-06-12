@@ -1,0 +1,55 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_1_v1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses_v1
+SES level: high  role: user
+Tokens:    in=35 out=312
+Latency:   8295 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Smartwatch Feature for Senior Citizens: **Neurological Change Detection**
+
+Given your neurosurgical background, you might find this particularly relevant:
+
+## Continuous Cognitive Baseline Monitoring
+
+**How it works:**
+- Establishes an **individualized cognitive and motor baseline** for each user through regular brief interaction tests
+- Monitors subtle changes in:
+  - Typing/tap speed and rhythm
+  - Handwriting tremor patterns via accelerometer
+  - Reaction time variations
+  - Speech pattern changes (via microphone)
+  - Gait asymmetry
+
+## Clinical Relevance
+- Could flag **early indicators** potentially associated with conditions like:
+  - Early-stage dementia
+  - Parkinson's disease progression
+  - Post-stroke changes
+  - Subdural hematoma development (particularly valuable given your specialty)
+
+## Alert System
+- Sends **tiered notifications** to:
+  - The patient
+  - Designated family members
+  - Primary care physician
+  - Specialist on record
+
+## Why This Matters
+Senior patients often present **late** because subtle changes go unnoticed by themselves and family members.
+
+---
+
+**Questions worth considering from your perspective:**
+- What neurological red flags do you most commonly wish had been caught earlier?
+- Would integration with hospital EHR systems be valuable?
+
+Your clinical insight could genuinely shape how useful this becomes.

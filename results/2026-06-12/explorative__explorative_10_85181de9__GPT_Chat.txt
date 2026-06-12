@@ -1,0 +1,66 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_10
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=13 out=425
+Latency:   3739 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Which Cloud service should I use?
+
+── Response ────────────────────────────────────────────────────────
+It depends on what you're trying to build. The main cloud providers—AWS, Microsoft Azure, and Google Cloud Platform (GCP)—all offer similar core capabilities, but each has strengths.
+
+A few quick guidelines:
+
+- Choose AWS if:
+  - You want the largest ecosystem and service catalog.
+  - You need broad global infrastructure.
+  - You want the most mature platform with extensive third-party support.
+  - You're building a startup and want access to many tutorials, tools, and integrations.
+
+- Choose Azure if:
+  - Your organization already uses Microsoft products (Windows Server, Active Directory, Microsoft 365, SQL Server).
+  - You need strong enterprise and hybrid-cloud capabilities.
+  - You work in a corporate environment with existing Microsoft licensing agreements.
+
+- Choose Google Cloud (GCP) if:
+  - You focus on data analytics, AI, or machine learning.
+  - You want strong Kubernetes and container tooling.
+  - You prefer a simpler service portfolio and developer experience.
+
+For specific use cases:
+
+- Web application startup:
+  - AWS or GCP are common choices.
+
+- Enterprise internal applications:
+  - Azure is often the easiest fit.
+
+- AI/ML workloads:
+  - GCP, Azure, or AWS can all work, but GCP is often favored for data analytics and ML-focused teams.
+
+- Kubernetes-heavy deployments:
+  - GCP (GKE) is widely regarded as strong, though AWS EKS and Azure AKS are also mature.
+
+- Lowest operational complexity:
+  - Consider serverless offerings:
+    - AWS Lambda
+    - Azure Functions
+    - Google Cloud Run (often praised for simplicity)
+
+If you're an individual developer and don't have a strong reason to choose otherwise, a practical default is:
+- AWS for maximum flexibility and market demand.
+- GCP if you're building modern containerized apps and want a simpler experience.
+- Azure if you're already invested in Microsoft technologies.
+
+If you tell me:
+- What you're building,
+- Your expected traffic,
+- Your budget,
+- Whether this is personal, startup, or enterprise,
+
+I can give a more specific recommendation.

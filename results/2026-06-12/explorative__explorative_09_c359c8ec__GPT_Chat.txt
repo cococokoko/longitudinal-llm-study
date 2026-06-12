@@ -1,0 +1,54 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_09
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=13 out=376
+Latency:   3350 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Which AI assistant should I use?
+
+── Response ────────────────────────────────────────────────────────
+The best AI assistant depends on what you want to do. Here's a practical breakdown:
+
+- ChatGPT (OpenAI)
+  - Strong for: writing, coding, brainstorming, research assistance, explanations, image understanding, and general-purpose conversations.
+  - Good choice if: you want a versatile assistant that performs well across many tasks.
+
+- Claude (Anthropic)
+  - Strong for: long documents, careful writing, summarization, and nuanced analysis.
+  - Good choice if: you frequently work with large amounts of text.
+
+- Gemini (Google)
+  - Strong for: integration with Google services, web-connected tasks, and multimodal capabilities.
+  - Good choice if: you are deeply invested in the Google ecosystem.
+
+- Microsoft Copilot
+  - Strong for: Microsoft 365 integration, workplace productivity, and enterprise workflows.
+  - Good choice if: you use Word, Excel, Outlook, and other Microsoft tools regularly.
+
+- Perplexity
+  - Strong for: web research, finding sources, and answering questions with citations.
+  - Good choice if: your priority is quickly gathering information from the web.
+
+- Specialized coding assistants (e.g., GitHub Copilot)
+  - Strong for: code completion, programming workflows, and IDE integration.
+  - Good choice if: software development is your primary use case.
+
+A useful rule is:
+- For general use: ChatGPT, Claude, or Gemini.
+- For research: Perplexity or a web-enabled AI.
+- For coding: ChatGPT or GitHub Copilot.
+- For office work: Microsoft Copilot.
+- For long-document analysis: Claude.
+
+If you tell me:
+- What you want to use it for,
+- Whether you need web access,
+- Whether coding is important,
+- And whether you're choosing a free or paid option,
+
+I can give a more specific recommendation.

@@ -1,0 +1,61 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_31_high_ses_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=33 out=441
+Latency:   3560 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the best investment if I invest 60,000 euros?
+
+── Response ────────────────────────────────────────────────────────
+There is no single "best" investment for €60,000 because the right choice depends on your goals, time horizon, risk tolerance, income needs, tax situation, and whether you may need access to the money.
+
+A useful framework:
+
+- If you need the money within 1–3 years:
+  - High-yield savings accounts
+  - Money market funds
+  - Short-term government bonds or bond funds
+  - Priority: preserving capital rather than maximizing returns
+
+- If your horizon is 5–10+ years:
+  - A diversified portfolio of low-cost global stock index funds or ETFs is often a strong option for long-term growth.
+  - Example:
+    - 80% (€48,000) in a global equity ETF/index fund
+    - 20% (€12,000) in a high-quality bond ETF or cash reserve
+  - Historically, diversified global equities have outperformed most asset classes over long periods, though returns are not guaranteed.
+
+- If you want lower volatility:
+  - 40–60% global stocks
+  - 40–60% bonds
+  - This generally reduces fluctuations but may also reduce expected returns.
+
+- If you already own a home and have high-interest debt:
+  - Paying off debt can provide a guaranteed return equal to the interest rate saved.
+  - This can be more attractive than investing.
+
+- If you are interested in real estate:
+  - €60,000 may serve as a down payment on a property, depending on location and financing.
+  - Real estate can provide rental income but involves concentration risk, maintenance, taxes, and illiquidity.
+
+A few things to avoid:
+- Concentrating the entire €60,000 in a single stock
+- Speculative cryptocurrencies as the majority of the portfolio
+- Investments you do not understand
+- High-fee products that erode returns
+
+If you tell me:
+- Your country
+- Your age
+- Your investment horizon (e.g., 3, 10, or 20 years)
+- Whether you need income or growth
+- Your comfort with risk (low, medium, high)
+
+I can suggest a more tailored allocation.

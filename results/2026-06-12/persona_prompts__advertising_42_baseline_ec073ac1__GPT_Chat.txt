@@ -1,0 +1,85 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_42_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=644
+Latency:   5206 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on what you want to track, your budget, and whether you care more about nutrition, workouts, or overall health. Here are some of the strongest options:
+
+For nutrition tracking:
+- MacroFactor (paid)
+  - Excellent for calorie and macro tracking.
+  - Uses your weight trends and food logs to estimate your actual energy expenditure.
+  - Strong data analysis and coaching features.
+  - Best for: weight loss, muscle gain, and data-driven nutrition.
+
+- Cronometer (free and paid)
+  - Tracks calories, macros, vitamins, minerals, and other nutrients in detail.
+  - Large verified food database.
+  - Best for: people focused on nutrition quality and micronutrients.
+
+- MyFitnessPal (free and paid)
+  - Huge food database and barcode scanner.
+  - Easy to use and widely supported by other apps.
+  - Best for: beginners and general calorie tracking.
+
+For fitness and workout tracking:
+- Strong (free and paid)
+  - Simple and effective strength training tracker.
+  - Tracks sets, reps, weights, and progress over time.
+  - Best for: gym-goers and weightlifters.
+
+- Hevy (free and paid)
+  - Modern strength-training app with social features.
+  - Easy workout logging and progress tracking.
+  - Best for: lifting and sharing progress with friends.
+
+- Fitbod (paid)
+  - Generates workouts based on your goals, equipment, and recovery.
+  - Best for: people who want workout guidance without hiring a coach.
+
+For running and endurance sports:
+- Strava (free and paid)
+  - Excellent for running, cycling, and outdoor activities.
+  - Strong community and route-planning features.
+  - Best for: runners and cyclists.
+
+- Garmin Connect (free with Garmin devices)
+  - Detailed performance, recovery, sleep, and training metrics.
+  - Best for: serious endurance athletes using Garmin devices.
+
+For all-around health tracking:
+- Apple Health (iPhone)
+  - Aggregates data from many apps and devices.
+  - Tracks activity, sleep, heart rate, and more.
+  - Best for: Apple users wanting one central dashboard.
+
+- Google Health Connect (Android)
+  - Lets health and fitness apps share data.
+  - Best for: Android users using multiple fitness apps.
+
+For habit and wellness tracking:
+- WHOOP (subscription + device)
+  - Focuses on recovery, strain, sleep, and readiness.
+  - Best for: people optimizing recovery and training load.
+
+- Oura (subscription + ring)
+  - Excellent sleep and recovery tracking.
+  - Best for: users who prefer a ring over a smartwatch.
+
+Recommended combinations:
+- Best overall for nutrition + fitness: MacroFactor + Strong or Hevy
+- Best free option: Cronometer + Hevy
+- Best for runners: Strava + Cronometer
+- Best Apple ecosystem setup: Apple Health + MacroFactor + Strong
+- Best data-focused setup: Garmin Connect + Cronometer + Strava
+
+If you tell me your goal (weight loss, muscle gain, general health, running, etc.), I can narrow it down to the top 2–3 options for your situation.

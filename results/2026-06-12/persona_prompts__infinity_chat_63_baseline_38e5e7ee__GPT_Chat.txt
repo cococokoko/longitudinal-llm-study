@@ -1,0 +1,69 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=18 out=525
+Latency:   3504 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+A partial derivative measures how a function changes with respect to one variable while keeping the other variables fixed.
+
+Example:
+
+Consider the function
+
+f(x, y) = x²y + 3xy
+
+Suppose we want the partial derivatives at the point (2, 1).
+
+1. Partial derivative with respect to x
+
+Treat y as a constant:
+
+∂f/∂x = 2xy + 3y
+
+Now substitute x = 2 and y = 1:
+
+∂f/∂x(2,1) = 2(2)(1) + 3(1) = 4 + 3 = 7
+
+Interpretation:
+If y stays fixed at 1, a small increase in x changes f at a rate of about 7 units per unit increase in x.
+
+2. Partial derivative with respect to y
+
+Treat x as a constant:
+
+∂f/∂y = x² + 3x
+
+Now substitute x = 2:
+
+∂f/∂y(2,1) = 2² + 3(2) = 4 + 6 = 10
+
+Interpretation:
+If x stays fixed at 2, a small increase in y changes f at a rate of about 10 units per unit increase in y.
+
+Numerical check:
+
+First compute the function value at (2,1):
+
+f(2,1) = (2²)(1) + 3(2)(1) = 4 + 6 = 10
+
+- Increase x from 2 to 2.01 while keeping y = 1:
+  f(2.01,1) = (2.01²)(1) + 3(2.01)(1) = 10.0701
+  Change in f = 0.0701
+
+  Rate of change ≈ 0.0701 / 0.01 = 7.01 ≈ 7
+
+- Increase y from 1 to 1.01 while keeping x = 2:
+  f(2,1.01) = (2²)(1.01) + 3(2)(1.01) = 10.10
+  Change in f = 0.10
+
+  Rate of change = 0.10 / 0.01 = 10
+
+These numerical rates agree with the partial derivatives ∂f/∂x = 7 and ∂f/∂y = 10 at the point (2,1).

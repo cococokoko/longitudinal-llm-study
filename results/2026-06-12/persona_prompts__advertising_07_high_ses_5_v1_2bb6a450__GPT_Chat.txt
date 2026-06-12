@@ -1,0 +1,74 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_07_high_ses_5_v1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses_v1
+SES level: high  role: user
+Tokens:    in=24 out=531
+Latency:   4970 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am an executive at a large technology company.
+
+Effective ways to reduce household energy use.
+
+── Response ────────────────────────────────────────────────────────
+Effective ways to reduce household energy use, roughly ordered by impact and cost-effectiveness:
+
+- Improve home insulation and air sealing
+  - Seal gaps around doors, windows, ducts, and attic penetrations.
+  - Add or upgrade attic and wall insulation.
+  - Reducing heating and cooling losses often produces some of the largest savings.
+
+- Optimize heating and cooling
+  - Use a programmable or smart thermostat.
+  - Set temperatures a few degrees lower in winter and higher in summer when practical.
+  - Replace old HVAC equipment with high-efficiency heat pumps when systems reach end of life.
+  - Regularly replace or clean air filters.
+
+- Upgrade water heating
+  - Install a heat pump water heater if feasible.
+  - Lower water heater temperature to a safe, efficient setting.
+  - Insulate hot water pipes and the water heater tank (if appropriate for the model).
+
+- Switch to efficient lighting
+  - Replace incandescent and halogen bulbs with LEDs.
+  - Use occupancy sensors or timers in less-frequently used spaces.
+
+- Reduce appliance energy consumption
+  - Choose ENERGY STAR or equivalent high-efficiency appliances.
+  - Run dishwashers and washing machines with full loads.
+  - Wash clothes in cold water when suitable.
+  - Air-dry clothing when practical.
+
+- Manage standby power
+  - Unplug infrequently used electronics.
+  - Use smart power strips to eliminate "phantom" energy consumption from devices in standby mode.
+
+- Improve window performance
+  - Install energy-efficient windows during renovations.
+  - Use weatherstripping, cellular shades, curtains, or window films to reduce heat transfer.
+
+- Use fans strategically
+  - Ceiling fans can improve comfort and reduce air-conditioning demand.
+  - Turn fans off when rooms are unoccupied; fans cool people, not spaces.
+
+- Reduce hot water use
+  - Install low-flow showerheads and faucet aerators.
+  - Fix leaking faucets promptly.
+
+- Monitor energy consumption
+  - Review utility usage data regularly.
+  - Use smart meters, home energy monitors, or utility dashboards to identify high-consumption patterns.
+
+- Consider electrification and renewable energy
+  - Replace fossil-fuel equipment with efficient electric alternatives over time.
+  - Install rooftop solar if economics and site conditions are favorable.
+
+For many households, the biggest long-term savings come from:
+1. Air sealing and insulation.
+2. High-efficiency heat pumps for heating and cooling.
+3. Heat pump water heaters.
+4. LED lighting.
+5. Smart thermostat optimization.

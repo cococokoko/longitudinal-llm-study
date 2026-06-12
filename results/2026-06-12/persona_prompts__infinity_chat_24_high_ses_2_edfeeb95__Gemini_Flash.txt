@@ -1,0 +1,39 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_24_high_ses_2
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=26 out=263
+Latency:   2429 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write an email to organize a catch-up with a referral partner.
+
+── Response ────────────────────────────────────────────────────────
+Subject: Catching up / Firm updates
+
+Dear [Referral Partner's First Name],
+
+I hope this email finds you well and that you’ve had a productive start to the quarter. 
+
+It has been a while since we last connected, and I wanted to reach out to see how things are progressing at [Partner's Firm Name]. We have recently seen some interesting shifts in [mention a specific practice area, e.g., corporate transactions / regulatory compliance / real estate litigation], and I would value your perspective on what you are currently seeing in the market. 
+
+I would love to buy you lunch or grab a coffee to catch up, hear about your current initiatives, and discuss how we can continue to mutually support our clients. 
+
+Are you available for a brief catch-up sometime next week? I am generally free on [Day of week] and [Day of week] after [Time], but I can easily accommodate your schedule. 
+
+Let me know what works best for you, or have your assistant coordinate directly with mine. 
+
+Warm regards,
+
+**[Your Name]**  
+Senior Attorney  
+[Your Law Firm's Name]  
+[Your Phone Number]  
+[Your Email Address]  
+[Link to Firm Website]

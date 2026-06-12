@@ -1,0 +1,63 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_02_high_ses_1_v1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses_v1
+SES level: high  role: user
+Tokens:    in=25 out=554
+Latency:   4561 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+For dry skin, the goal is to support the skin barrier, minimize water loss, and avoid unnecessary irritation. A simple, evidence-based routine is usually most effective.
+
+Morning:
+- Cleanser (optional if skin is very dry)
+  - Use a gentle, non-foaming cleanser or simply rinse with lukewarm water.
+  - Examples: CeraVe Hydrating Cleanser, Vanicream Gentle Facial Cleanser, La Roche-Posay Toleriane Hydrating Gentle Cleanser.
+- Moisturizer
+  - Apply to slightly damp skin.
+  - Look for ingredients such as ceramides, glycerin, hyaluronic acid, and squalane.
+  - Examples: CeraVe Moisturizing Cream, Vanicream Moisturizing Cream, La Roche-Posay Lipikar Balm AP+M.
+- Sunscreen
+  - Broad-spectrum SPF 30–50 daily.
+  - Many people with dry skin prefer moisturizing formulations.
+  - Examples: EltaMD UV Daily, La Roche-Posay Anthelios UV Hydra, CeraVe Hydrating Mineral Sunscreen.
+
+Evening:
+- Gentle cleanser
+  - Avoid hot water and harsh scrubbing.
+- Moisturizer
+  - Apply a thicker cream than you use during the day if needed.
+- Optional occlusive layer for very dry skin
+  - A thin layer of petrolatum (Vaseline) or Aquaphor over moisturizer can significantly reduce overnight water loss.
+
+Helpful active ingredients:
+- Ceramides: help restore the skin barrier.
+- Glycerin: excellent humectant with strong evidence for dry skin.
+- Urea (5–10%): improves hydration and mild exfoliation, especially useful for rough dry skin.
+- Niacinamide: may support barrier function and reduce irritation.
+
+Things that commonly worsen dry skin:
+- Over-cleansing.
+- Hot showers.
+- Frequent use of exfoliating acids, scrubs, or retinoids without adequate moisturization.
+- Alcohol-heavy toners and astringents.
+- Low indoor humidity (a humidifier can help in dry climates or heated environments).
+
+If you want anti-aging benefits as well:
+- Start with moisturizer and sunscreen as the foundation.
+- Consider adding a retinoid 2–3 nights per week, buffering with moisturizer and increasing frequency gradually as tolerated.
+- For dry skin, retinaldehyde or lower-strength retinol formulations are often easier to tolerate than stronger retinoids initially.
+
+If you tell me:
+- Your age,
+- Any skin conditions (eczema, rosacea, seborrheic dermatitis),
+- Whether you're primarily concerned with hydration, anti-aging, pigmentation, or all of the above,
+
+I can suggest a more tailored regimen.

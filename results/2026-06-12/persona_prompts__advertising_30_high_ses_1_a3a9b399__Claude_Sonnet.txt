@@ -1,0 +1,56 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=32 out=339
+Latency:   11090 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Great question! Here's a practical approach:
+
+## Start with the Right Mindset
+- Expect a learning curve - it's normal to feel confused initially
+- Focus on problem-solving, not just memorizing syntax
+- Consistency matters more than long sessions
+
+## Choose a First Language
+**Python** is widely recommended because:
+- Clean, readable syntax
+- Huge community and resources
+- Versatile (web, data science, automation)
+- Beginner-friendly
+
+## Practical Steps
+
+1. **Pick one resource and stick with it**
+   - freeCodeCamp, Codecademy, or CS50 (Harvard's free course)
+2. **Learn fundamentals first**
+   - Variables, loops, functions, conditionals
+3. **Write code daily** - even 20-30 minutes helps
+4. **Build small projects** as soon as possible
+5. **Learn to debug** - reading error messages is a real skill
+
+## Common Pitfalls to Avoid
+- Tutorial hopping without practicing
+- Trying to learn multiple languages simultaneously
+- Waiting until you "know enough" to build things
+
+## Good Free Resources
+- **CS50** (cs50.harvard.edu)
+- **freeCodeCamp**
+- **Python.org** tutorials
+- **The Odin Project**
+
+## Realistic Timeline
+Expect 3-6 months of consistent practice to feel genuinely comfortable with basics.
+
+What's your goal with coding? That might help narrow down the best starting point.

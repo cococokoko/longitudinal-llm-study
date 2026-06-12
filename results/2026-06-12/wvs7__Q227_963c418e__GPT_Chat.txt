@@ -1,0 +1,31 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q227
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=187 out=256
+Latency:   2418 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: In your view, how often do the following things occur in this country's elections?
+
+Voters are bribed
+
+Options:
+A. Very often
+B. Fairly often
+C. Not often
+D. Not at all often
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.03, "B": 0.05, "C": 0.04, "D": 0.03, "E": 0.8, "F": 0.02, "G": 0.01, "H": 0.02}

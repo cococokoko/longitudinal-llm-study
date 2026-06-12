@@ -1,0 +1,37 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_44_low_ses_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=31 out=328
+Latency:   3505 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on the specific disease and how it spreads, but these general principles reduce risk:
+
+- Follow current public health guidance from trusted sources (such as your local health authority or the WHO), since recommendations can change as conditions evolve.
+- Avoid traveling if you are sick, have symptoms, or have recently been exposed to someone with the illness.
+- Stay up to date on recommended vaccinations or preventive medications, if available.
+- Choose lower-risk transportation when possible:
+  - Traveling alone or with members of your household is generally lower risk than crowded public transportation.
+  - If using public transportation, try to travel during less crowded times.
+- Improve ventilation:
+  - Open windows when feasible in cars, buses, or trains.
+  - Spend less time in poorly ventilated indoor spaces.
+- Wear a well-fitting mask when recommended by public health guidance, especially in crowded indoor settings.
+- Practice good hand hygiene:
+  - Wash hands regularly with soap and water.
+  - Use hand sanitizer when handwashing is not available.
+- Maintain physical distance from others when practical.
+- Consider the risks at both your destination and during the journey, including crowd levels, local disease activity, and healthcare access.
+- Check entry requirements, testing rules, or quarantine requirements before traveling.
+
+In general, outdoor activities, well-ventilated environments, and avoiding crowded indoor settings tend to reduce transmission risk for many respiratory illnesses. If you tell me which pandemic or disease you're concerned about, I can give more specific guidance.

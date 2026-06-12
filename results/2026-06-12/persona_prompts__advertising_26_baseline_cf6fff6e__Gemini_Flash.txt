@@ -1,0 +1,69 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_26_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1216
+Latency:   7919 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+For small businesses, data security is no longer optional. Cybercriminals increasingly target small businesses because they often have weaker defenses than large corporations. 
+
+A robust data security strategy does not require a massive IT budget. Instead, it relies on **strong policies, employee habits, and basic technical safeguards**. 
+
+Here are the best practices for data security in small businesses, categorized for easy implementation.
+
+---
+
+### 1. Secure Your Access (Identity & Access Management)
+The easiest way for hackers to enter your system is through weak or stolen credentials.
+*   **Implement Multi-Factor Authentication (MFA):** Enable MFA on *everything*—email, cloud storage, financial software, and social media. MFA blocks over 99% of account compromise attacks.
+*   **Use a Business Password Manager:** Employees should not write passwords on sticky notes or reuse them across accounts. Use tools like 1Password, Bitwarden, or Dashlane to generate and store strong, unique passwords.
+*   **Apply the "Principle of Least Privilege":** Employees should only have access to the specific data and systems required to do their jobs. A marketing assistant does not need access to HR files or financial accounts.
+
+### 2. Protect Your Devices and Network
+Your hardware and network are the gateways to your business data.
+*   **Keep Software Updated (Patching):** Set all operating systems (Windows, macOS, iOS, Android) and software (browsers, Adobe, Office) to update automatically. Security updates patch vulnerabilities that hackers actively exploit.
+*   **Secure Your Wi-Fi:** Never use a public or unsecured Wi-Fi network for business. Secure your office Wi-Fi with a strong password, hide the network SSID, and set up a separate "Guest" network for visitors so they cannot access your main business network.
+*   **Use Firewalls and Antivirus:** Ensure the built-in firewalls on your routers and computers are turned on. Install reputable antivirus/anti-malware software (like Microsoft Defender, Bitdefender, or Malwarebytes) on all business devices.
+*   **Require VPNs for Remote Work:** If employees work from home or coffee shops, require them to use a Virtual Private Network (VPN) to encrypt their internet connection.
+
+### 3. Establish a Bulletproof Backup Strategy
+If you are hit by ransomware (where hackers lock your files and demand money), a good backup is your only lifeline.
+*   **Follow the 3-2-1 Backup Rule:**
+    *   Keep **3** copies of your data (1 primary, 2 backups).
+    *   Use **2** different types of media (e.g., local external hard drive and cloud storage).
+    *   Keep **1** copy offsite/in the cloud (isolated from your local network).
+*   **Test Your Backups:** A backup is only useful if it actually works. Test restoring data from your backups at least once every quarter.
+
+### 4. Train Your Employees (The Human Firewall)
+Human error is the leading cause of data breaches. Your employees are your first line of defense.
+*   **Conduct Phishing Training:** Teach employees how to spot suspicious emails. Look out for urgent language, mismatched email addresses, generic greetings, and unexpected attachments or links.
+*   **Establish a "No Blame" Culture:** Encourage employees to report mistakes immediately. If an employee clicks a bad link, they should feel safe reporting it to IT immediately rather than hiding it out of fear.
+*   **Create a Clean Desk Policy:** Sensitive documents (tax forms, customer lists, passwords) should not be left lying on desks. Lock physical documents in filing cabinets.
+
+### 5. Secure Customer and Payment Data
+If you handle customer credit cards or personal information, you have a legal and ethical obligation to protect it.
+*   **Use PCI-Compliant Payment Processors:** Do not store credit card numbers on your own computers or on paper. Use trusted, PCI-DSS compliant third-party processors like Stripe, Square, or PayPal.
+*   **Encrypt Sensitive Data:** Ensure that sensitive data is encrypted both "at rest" (stored on laptops or cloud drives) and "in transit" (sent over the internet). Use tools like BitLocker (Windows) or FileVault (Mac) to encrypt laptop hard drives in case they are lost or stolen.
+
+### 6. Have a Plan for Offboarding and Lost Devices
+*   **Immediate Offboarding:** When an employee leaves the company, immediately revoke their access to all business accounts, email, and cloud storage. 
+*   **Mobile Device Management (MDM):** Use MDM software (like Microsoft Intune or Apple Business Manager) that allows you to remotely wipe business data from a laptop or smartphone if it is lost or stolen.
+
+### 7. Create an Incident Response Plan
+Do not wait for a cyberattack to figure out what to do. Write down a simple, step-by-step plan:
+*   Who needs to be notified? (IT provider, legal counsel, insurance company).
+*   How will you isolate infected computers? (Disconnect them from the Wi-Fi immediately).
+*   How will you communicate with customers if their data is breached? (Many states/countries have legal timelines for notifying customers of a breach).
+
+### Where to Start? (The 30-Day Action Plan)
+If this feels overwhelming, do not try to do it all in one day. Start with these three high-impact steps this week:
+1.  **Turn on MFA** on your business email (Google Workspace or Microsoft 365).
+2.  **Buy a password manager** for your team.
+3.  **Set up an automatic cloud backup** (like Backblaze or Acronis) for all business computers.

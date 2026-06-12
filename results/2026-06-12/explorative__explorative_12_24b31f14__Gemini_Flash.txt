@@ -1,0 +1,47 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_12
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=7 out=558
+Latency:   4254 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What messaging tool should I use?
+
+── Response ────────────────────────────────────────────────────────
+To give you the best recommendation, it helps to know who you are messaging and what you are using it for. 
+
+Here is a breakdown of the best messaging tools categorized by how they are most commonly used:
+
+---
+
+### 1. For Personal Use (Friends & Family)
+*   **WhatsApp:** The global standard. It is free, works on almost any phone (iOS and Android), supports high-quality media sharing, and has end-to-end encryption.
+*   **iMessage:** Best if you and your social circle are strictly Apple users. It is seamless, built-in, and supports high-quality media.
+*   **Signal:** The gold standard for **privacy**. It collects virtually no data about you, is open-source, and has top-tier encryption.
+*   **Telegram:** Best for large groups, communities, and sending massive files. It has great stickers and bots, though chats are not end-to-end encrypted by default (you have to start a "Secret Chat").
+
+### 2. For Work & Professional Collaboration
+*   **Slack:** The industry standard for tech, creative, and corporate teams. Excellent for organizing conversations into channels and integrating with other tools (Google Drive, Zoom, Trello).
+*   **Microsoft Teams:** Best if your company already uses Microsoft 365. It integrates perfectly with Word, Excel, and Outlook, and has excellent video conferencing.
+*   **Google Chat:** Best for businesses built on Google Workspace (Gmail, Docs, Drive). It is simple and built right into Gmail.
+
+### 3. For Gaming & Communities
+*   **Discord:** The undisputed king for gamers and online communities. It offers excellent, low-latency voice channels, text forums, and screen-sharing capabilities.
+
+### 4. For Casual/Social Media Messaging
+*   **Instagram Direct / Messenger (Meta):** Best if you already spend a lot of time on these platforms. Good for casual chatting and sharing memes, but not ideal for privacy or professional use.
+
+---
+
+### Which one should you choose?
+
+*   If you want **privacy**: Use **Signal**.
+*   If you want to **talk to anyone globally**: Use **WhatsApp**.
+*   If you want to **coordinate a business team**: Use **Slack** or **Teams**.
+*   If you want to **hang out while playing games**: Use **Discord**.
+
+**What are you looking to do?** If you let me know your specific needs (e.g., "I need to talk to clients," "I want to share photos with family," or "I want something highly secure"), I can give you a more tailored recommendation!

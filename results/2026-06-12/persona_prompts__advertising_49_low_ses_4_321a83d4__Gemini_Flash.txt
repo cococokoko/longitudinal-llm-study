@@ -1,0 +1,68 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_49_low_ses_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=18 out=877
+Latency:   6124 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+works shifts at a local hospital as a patient care aide.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Working long shifts at the hospital, I know how precious your downtime is. When you finally get home, the last thing you want to deal with is a buffering screen or a dropped video call. 
+
+Improving your home WiFi doesn't always require buying expensive new gear. Here is a step-by-step guide to getting a faster, more reliable connection, starting with the easiest free tweaks.
+
+---
+
+### Phase 1: Quick & Free Fixes (Do these first)
+
+#### 1. Move your router to the "active zone"
+Routers send signals downward and outward. If your router is tucked in a closet, on the floor, or behind the TV, its signal is being blocked.
+*   **Elevate it:** Put it on a shelf or table.
+*   **Center it:** Place it as close to the center of your home as possible.
+*   **Avoid metal and water:** Keep it away from kitchens (microwaves ruin WiFi signals), large mirrors, and fish tanks.
+
+#### 2. Adjust the antennas
+If your router has external antennas, don't point them all straight up. 
+*   If you have two, position **one vertically and one horizontally**. Device antennas inside your phone or laptop are oriented differently; this ensures you catch them both ways.
+
+#### 3. Switch your "Band" (2.4 GHz vs. 5 GHz)
+Most modern routers broadcast two different networks (often named "HomeNetwork" and "HomeNetwork_5G"). 
+*   **Use 5 GHz** for devices close to the router that need speed (TVs, laptops, gaming consoles). It is much faster but doesn't travel as far through walls.
+*   **Use 2.4 GHz** for devices far away or smart home tech. It is slower but has a much longer range.
+
+#### 4. Kick off "vampire" devices
+If you have old phones, tablets, or smart plugs you don't use anymore connected to your WiFi, they are eating up bandwidth. Log into your router's app or settings page and disconnect devices you don't recognize or use.
+
+---
+
+### Phase 2: Software & Settings Tweaks
+
+#### 1. Do a reboot schedule
+Just like a tired brain after a 12-hour shift, routers get bogged down with digital clutter. Unplugging your router for 30 seconds and plugging it back in clears its memory. Many modern router apps let you schedule an automatic reboot once a week at 3:00 AM.
+
+#### 2. Change the channel
+If you live in an apartment complex, your neighbors' WiFi might be crowding your "channel." 
+*   Download a free **WiFi Analyzer app** on your phone to see which channels are crowded.
+*   Log into your router settings (the website address is usually printed on a sticker on the bottom of your router) and switch your channel from "Auto" to a less crowded one (usually channels 1, 6, or 11 for 2.4 GHz).
+
+---
+
+### Phase 3: Hardware Upgrades (If you're ready to spend a little)
+
+#### 1. Use an Ethernet cable for stationary devices
+If you stream movies on a smart TV or game on a console, connect them directly to the router using a cheap **Cat6 Ethernet cable**. This frees up the "airwaves" for your phone and tablet.
+
+#### 2. Upgrade to a Mesh WiFi System (Best for larger homes)
+If you have "dead zones" in your bedroom or backyard, a single router won't cut it. Instead of cheap "range extenders" (which often slow down your speed), look into a **Mesh WiFi system** (like Eero, Google Nest, or TP-Link Deco). 
+*   These use multiple small pods placed around your house that work together to create one giant, seamless blanket of WiFi.
+
+#### 3. Call your ISP (Internet Service Provider)
+If your router is more than 4 or 5 years old, call your internet provider. They will often upgrade your modem/router combo to the newest model for free if you ask.

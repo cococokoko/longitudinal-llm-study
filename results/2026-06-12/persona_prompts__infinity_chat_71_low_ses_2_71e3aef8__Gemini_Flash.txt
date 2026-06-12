@@ -1,0 +1,22 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_low_ses_2
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=26 out=116
+Latency:   1318 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a single parent who often balances childcare with work.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+One common optimization technique used in machine learning is **Gradient Descent** (specifically **Stochastic Gradient Descent** or **SGD**). 
+
+It’s the algorithm used to minimize the error in a model, essentially helping the computer "learn" by making gradual, step-by-step adjustments until it finds the best possible results. 
+
+*(As a quick analogy: it's a lot like trying to find your way down a foggy hill to the playground at the bottom by just feeling which way slopes downward under your feet, taking one careful step at a time!)*

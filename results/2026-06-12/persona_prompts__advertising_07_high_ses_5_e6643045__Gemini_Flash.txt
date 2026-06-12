@@ -1,0 +1,63 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_07_high_ses_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=17 out=1192
+Latency:   8994 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Effective ways to reduce household energy use.
+
+── Response ────────────────────────────────────────────────────────
+As an executive in the technology sector, I tend to look at household energy consumption through the lens of **efficiency, optimization, data, and return on investment (ROI)**. 
+
+To significantly reduce your household energy footprint, you should approach your home the same way we approach a modern data center or enterprise operation: by identifying the biggest resource drains, automating efficiency, and upgrading legacy infrastructure.
+
+Here is a strategic framework for reducing household energy use, categorized by effort, impact, and technological maturity.
+
+---
+
+### Phase 1: The "Quick Wins" (Low Cost, High ROI)
+*Just like optimizing software code before buying more servers, these are operational adjustments that cost very little but yield immediate results.*
+
+*   **Audit Your Baseline (The "Data" Phase):** You cannot manage what you do not measure. Use a home energy monitor (like Sense or Emporia) or simply log into your utility provider’s portal to download your hourly usage data. Identify your "vampire load"—the energy consumed when you are asleep or away.
+*   **Kill Vampire Power:** Standby power accounts for up to 10% of an average home's energy use. Use smart power strips for entertainment centers and home offices that cut power to peripherals (monitors, printers, game consoles) when the main device (PC or TV) is turned off.
+*   **Optimize the HVAC Schedule:** Heating and cooling make up over 50% of the average home’s energy bill. Lower your thermostat by 7–10 degrees Fahrenheit for 8 hours a day (while sleeping or at work) to save up to 10% a year.
+*   **Calibrate Your Water Heater:** Water heating is typically the second-largest energy expense (around 18%). Most manufacturers set water heaters to 140°F (60°C) by default. Lowering this to 120°F (49°C) reduces standby heat loss and prevents scalding, with zero impact on comfort.
+
+### Phase 2: Automation & Smart Home Integration (Medium Cost, High Impact)
+*In business, we automate repetitive tasks to eliminate human error. In the home, we use automation to eliminate human forgetfulness.*
+
+*   **Deploy Smart Thermostats:** Devices like the Nest Learning Thermostat or Ecobee use machine learning to understand your daily routine and adjust temperatures accordingly. They also utilize geofencing to detect when the house is empty and enter "eco-mode."
+*   **Transition to 100% LED Lighting:** If you haven't already, replace every incandescent and halogen bulb with LEDs. LEDs use 75% less energy and last 25 times longer. Integrate them with smart switches or bulbs to automate "lights out" schedules or motion-sensing in hallways and closets.
+*   **Smart Irrigation:** If you have a yard, outdoor water pumps use significant energy. A smart sprinkler controller (like Rachio) uses local weather data to ensure you never water the lawn during or right after a rainstorm.
+
+### Phase 3: Infrastructure Upgrades (High Cost, Long-term ROI)
+*This is capital expenditure (CapEx) that pays dividends over time by drastically lowering operational expenditure (OpEx).*
+
+*   **Seal the "Envelope" (Insulation & Air Sealing):** Before buying a bigger, more efficient HVAC, fix the leaks. Drafty windows, poorly insulated attics, and unsealed exterior doors are like running an air conditioner with the windows open. A professional energy audit with a blower-door test will pinpoint exactly where your home is losing conditioned air.
+*   **Upgrade to Heat Pump Technology:** 
+    *   **HVAC:** Traditional furnaces and air conditioners are inefficient compared to modern air-source heat pumps. Heat pumps *transfer* heat rather than creating it, making them up to 3-4x more efficient than standard electrical heating.
+    *   **Water Heaters:** Hybrid heat pump water heaters are incredibly efficient, often paying for themselves in energy savings within 2 to 3 years.
+*   **Invest in Energy Star Appliances:** When appliances (refrigerators, dishwashers, washing machines) reach the end of their lifecycle, replace them with Energy Star-certified models. A modern Energy Star fridge uses less energy than a 60-watt incandescent lightbulb.
+
+### Phase 4: Behavioral & Operational Shifts
+*Culture eats strategy for breakfast. Technology only works if the users adopt efficient habits.*
+
+*   **Shift Demand (Time-of-Use Rates):** Many utility companies charge more for electricity during "peak hours" (usually 4 PM to 9 PM). Run your dishwasher, dryer, and EV charger during off-peak hours (late night or early morning). Many modern appliances have "delay start" buttons specifically for this.
+*   **Cold Water Washing:** About 75% to 90% of the energy your washing machine uses goes toward heating the water. Modern detergents are chemically formulated to work just as effectively in cold water. 
+*   **Air Dry When Possible:** The clothes dryer is one of the most energy-intensive appliances in the home. Air-drying clothes on a rack or clothesline costs zero energy and extends the lifespan of your clothing.
+
+### The Executive Summary
+If you want to start today, do these three things:
+1.  **Install a smart thermostat.**
+2.  **Lower your water heater to 120°F.**
+3.  **Switch to cold-water laundry.**
+
+These three zero-to-low-cost steps alone can reduce your monthly energy bill by 15% to 20% with almost no friction.

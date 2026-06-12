@@ -1,0 +1,28 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q173
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=181 out=59
+Latency:   3244 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Independently of whether you attend religious services or not, would you say you are:
+
+Options:
+A. A religious person
+B. Not a religious person
+C. An atheist
+D. Don't know
+E. No answer/refused
+F. Not applicable (filter)
+G. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.1, "B": 0.3, "C": 0.55, "D": 0.03, "E": 0.01, "F": 0.005, "G": 0.005}

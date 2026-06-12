@@ -1,0 +1,69 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_32_high_ses_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=30 out=531
+Latency:   4986 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best ways to improve indoor air quality?
+
+── Response ────────────────────────────────────────────────────────
+Improving indoor air quality is usually most effective when you address the main sources of pollutants, increase ventilation, and filter the air.
+
+Some of the most impactful steps are:
+
+- Improve ventilation
+  - Open windows and doors when outdoor air quality is good.
+  - Use exhaust fans in bathrooms and kitchens.
+  - Make sure HVAC systems bring in adequate outdoor air if they are designed to do so.
+
+- Use high-quality air filtration
+  - Install a high-efficiency HVAC filter that your system can handle (often MERV 13 or higher, if compatible).
+  - Replace filters on the recommended schedule.
+  - Consider portable air purifiers with HEPA filters for bedrooms and frequently used rooms.
+
+- Control moisture and humidity
+  - Keep indoor humidity between about 30% and 50%.
+  - Fix leaks promptly.
+  - Use dehumidifiers in damp areas.
+  - Prevent mold growth by drying wet materials quickly.
+
+- Reduce indoor pollution sources
+  - Avoid smoking or vaping indoors.
+  - Limit the use of candles, incense, and wood-burning fireplaces.
+  - Choose low-VOC paints, adhesives, and furnishings when possible.
+  - Store solvents, fuels, and chemicals outside living spaces.
+
+- Improve kitchen air quality
+  - Use a vented range hood when cooking, especially with gas stoves.
+  - Run the fan during and after cooking.
+  - Cooking can be a major source of indoor particulate pollution.
+
+- Clean effectively
+  - Vacuum regularly using a vacuum with a HEPA filter.
+  - Dust with damp cloths to avoid redistributing particles.
+  - Wash bedding regularly to reduce dust mites and allergens.
+
+- Manage allergens
+  - Keep pets groomed and clean.
+  - Use allergen-proof mattress and pillow covers if allergies are a concern.
+  - Reduce clutter that collects dust.
+
+- Monitor air quality
+  - Consider an indoor air quality monitor that measures particles (PM2.5), carbon dioxide (CO₂), humidity, and sometimes volatile organic compounds (VOCs).
+  - Test for radon if you live in an area where it is a concern; radon is a significant indoor air hazard in some regions.
+
+For many homes, the highest-return combination is:
+1. A properly maintained HVAC system with a good filter.
+2. A HEPA air purifier in the rooms where people spend the most time.
+3. Good kitchen and bathroom ventilation.
+4. Humidity control and moisture prevention.
+
+If you tell me whether you're concerned about allergies, wildfire smoke, mold, pet dander, cooking fumes, or something else, I can suggest more targeted solutions.

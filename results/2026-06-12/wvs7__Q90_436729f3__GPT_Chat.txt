@@ -1,0 +1,35 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q90
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=310 out=253
+Latency:   2876 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Nowadays there's a lot of talk about international organizations. People sometimes say that international organizations should prioritize improving people's lives, even if this may imply that decisions are not made democratically. What do you think should international organizations prioritize, being effective or being democratic? If your views are somewhat mixed, choose the appropriate number in between.
+
+Options:
+A. 1 - Being effective
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. 10 - Being democratic
+K. Don't know
+L. No answer/refused
+M. Not applicable (filter)
+N. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A":0.03,"B":0.04,"C":0.05,"D":0.08,"E":0.12,"F":0.15,"G":0.18,"H":0.14,"I":0.10,"J":0.06,"K":0.05,"L":0.0,"M":0.0,"N":0.0}

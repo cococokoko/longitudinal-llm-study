@@ -1,0 +1,58 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_12
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=13 out=396
+Latency:   3386 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What messaging tool should I use?
+
+── Response ────────────────────────────────────────────────────────
+It depends on who you're messaging, what level of privacy you need, and which devices you use. Here are some common choices:
+
+- Signal
+  - Best for: Privacy and security
+  - Pros: End-to-end encryption by default, open source, strong reputation for privacy, supports groups, voice, and video calls
+  - Cons: Smaller user base than some alternatives
+
+- WhatsApp
+  - Best for: Reaching lots of people internationally
+  - Pros: Extremely popular, end-to-end encryption by default, easy group chats, voice/video calls
+  - Cons: Owned by Meta, which some users prefer to avoid for privacy reasons
+
+- Telegram
+  - Best for: Large communities and feature-rich messaging
+  - Pros: Large groups and channels, cloud-based access across devices, many features
+  - Cons: Regular chats are not end-to-end encrypted by default
+
+- iMessage
+  - Best for: Apple users
+  - Pros: Seamless integration across Apple devices, end-to-end encryption between Apple users
+  - Cons: Limited if you communicate with Android users
+
+- Microsoft Teams
+  - Best for: Workplace collaboration
+  - Pros: Deep integration with Microsoft 365, meetings, file sharing
+  - Cons: Can feel heavy for casual messaging
+
+- Slack
+  - Best for: Team communication
+  - Pros: Strong integrations, channels, search, workflows
+  - Cons: Free plan has limitations
+
+- Discord
+  - Best for: Communities, gaming, and ongoing group discussions
+  - Pros: Voice channels, community features, flexible organization
+  - Cons: Not primarily focused on private messaging
+
+If you tell me:
+- Personal or work use?
+- iPhone, Android, Windows, Mac, or mixed devices?
+- How important is privacy?
+- Mostly one-on-one chats, group chats, or large communities?
+
+I can recommend the best option for your situation.

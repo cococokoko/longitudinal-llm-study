@@ -1,0 +1,80 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_06_high_ses_6_v1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses_v1
+SES level: high  role: user
+Tokens:    in=16 out=1346
+Latency:   8412 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a partner at a major consulting firm.
+
+Mastering digital photography.
+
+── Response ────────────────────────────────────────────────────────
+As a partner at a major consulting firm, your time is your most valuable asset. You are likely used to structured frameworks, steep learning curves, and data-driven decision-making. 
+
+To master digital photography efficiently, you shouldn't approach it as a casual hobbyist. Instead, treat it like a **new practice area**. 
+
+Here is a structured, executive-level framework to help you master digital photography, optimized for a demanding schedule.
+
+---
+
+### Phase 1: The "Tech Stack" (Equipment & Setup)
+Do not get bogged down in "Gear Acquisition Syndrome" (GAS). Apply the Pareto Principle (80/20 rule): 80% of your results will come from 20% of your gear.
+
+*   **The Camera Body:** You need a tool that doesn't get in your way. A mid-to-high-end mirrorless camera (Sony A7 IV, Canon EOS R6 II, or Fujifilm X-T5) offers excellent autofocus and manual controls.
+*   **The Lens (The "Leverage" Point):** Do not buy a cheap zoom lens. Buy one high-quality **"Prime" lens** (a fixed focal length, like a 35mm or 50mm f/1.8 or f/1.4). Prime lenses force you to move your feet, teach you composition faster, and perform beautifully in low light.
+*   **The Software:** Subscribe to Adobe Lightroom Classic. It is the industry standard for organization and post-processing.
+
+---
+
+### Phase 2: The Core Framework (The "Exposure Triangle")
+In consulting, you balance Scope, Time, and Budget. In photography, you balance **Light** using three variables. Mastering this "triangle" is non-negotiable.
+
+1.  **Aperture (f-stop):** Controls the depth of field (blurry background vs. everything in focus). 
+    *   *Mental model:* Low f-number (e.g., f/1.8) = blurry background (great for portraits). High f-number (e.g., f/8) = sharp background (great for landscapes).
+2.  **Shutter Speed:** Controls how long the sensor is exposed to light.
+    *   *Mental model:* Fast (e.g., 1/1000s) freezes motion. Slow (e.g., 1/15s) creates motion blur (requires a tripod).
+3.  **ISO:** The sensor's sensitivity to light.
+    *   *Mental model:* Keep this as low as possible (ISO 100) for clean images. Raise it only when it’s dark, accepting that it introduces "noise" (grain).
+
+**Your Action Item:** Switch your camera from "Auto" to **"Aperture Priority" (A or Av) mode**. This allows you to control the depth of field while the camera handles the shutter speed. It is the mode used by 80% of professional documentary photographers.
+
+---
+
+### Phase 3: The "MECE" Approach to Composition
+Mutually Exclusive, Collectively Exhaustive. When looking through the viewfinder, structure your frame using these three rules:
+
+*   **The Rule of Thirds:** Divide your frame into a 3x3 grid. Place your subject on the intersections of these lines, not dead center.
+*   **Leading Lines:** Use natural lines (roads, hallways, shadows) to draw the viewer’s eye directly to your subject.
+*   **Subtraction:** Beginners try to put everything in the frame. Masters subtract clutter. If an element doesn't support the "story" of the photo, crop it out or move your body to remove it.
+
+---
+
+### Phase 4: The "Data Pipeline" (Workflow & Editing)
+Taking the photo is only 50% of the process. The other 50% is the digital darkroom.
+
+1.  **Shoot in RAW, not JPEG:** RAW files capture all the data your sensor can record. JPEGs are compressed and pre-processed by the camera. RAW gives you the "raw data" to manipulate later.
+2.  **The Lightroom Workflow:**
+    *   **Import & Crate:** Import your photos and use the "Flag" system (P for Pick, X for Reject) to quickly cull your shoot.
+    *   **The Basic Panel:** Adjust Exposure (brightness), Contrast, Highlights (tame bright skies), and Shadows (bring back detail in dark areas).
+    *   **Color Grading:** Use the "Dehaze" and "Clarity" sliders sparingly to add punch, and adjust White Balance to make the image feel warm or cool.
+
+---
+
+### Phase 5: The "Agile" Learning Plan (How to practice with 60+ hour work weeks)
+
+You do not have time for 4-hour weekend workshops. Instead, integrate photography into your daily routine.
+
+*   **The "One Camera, One Lens, One Month" Challenge:** For 30 days, carry your camera everywhere. Keep the same lens on it. Take 5 photos a day. This builds muscle memory so the camera becomes an extension of your hand.
+*   **The Business Trip Audit:** As a partner, you likely travel. Use the "Golden Hour" (the hour after sunrise or before sunset) in whatever city you are in. Walk the streets for 45 minutes before your first client dinner.
+*   **Analyze the Competition:** Find 3 photographers whose work you admire (e.g., Henri Cartier-Bresson for street, Ansel Adams for landscape, or Annie Leibovitz for portraits). Deconstruct their images. Where is the light coming from? What is the depth of field? Why does this image work?
+
+### Recommended Reading/Viewing for the Analytical Mind:
+*   **Book:** *The Photographer’s Eye* by Michael Freeman (Excellent breakdown of composition and design principles).
+*   **YouTube:** *Pat Kay* (His "Visual Design" series is highly structured and appeals to analytical thinkers) or *Sean Tucker* (for the philosophy and ethics of photography).
+
+**Next Step:** Acquire your gear, set it to Aperture Priority, and shoot exclusively in RAW. Treat your first 1,000 photos as "disposable data" meant purely for calibration.

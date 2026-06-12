@@ -1,0 +1,32 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q201
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=217 out=112
+Latency:   1470 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: People learn what is going on in this country and the world from various sources. For the following source, please indicate whether you use it to obtain information daily, weekly, monthly, less than monthly or never:
+
+Daily newspaper
+
+Options:
+A. Daily
+B. Weekly
+C. Monthly
+D. Less than monthly
+E. Never
+F. Don't know
+G. No answer/refused
+H. Not applicable (filter)
+I. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 1.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0}

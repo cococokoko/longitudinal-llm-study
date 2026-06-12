@@ -1,0 +1,72 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_04_high_ses_2
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=18 out=1230
+Latency:   7550 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Starting a small online business.
+
+── Response ────────────────────────────────────────────────────────
+Congratulations on taking this step. Starting an online business is an exciting venture, but from a legal standpoint, setting up the proper foundation now will save you significant time, money, and liability exposure down the road. 
+
+As a senior attorney, I advise my clients to approach a new business through a structured, risk-mitigating framework. Here is your legal and operational roadmap for launching your online business.
+
+---
+
+### Phase 1: Entity Selection and Formation
+Do not operate as a sole proprietorship if you can avoid it. Operating under your own name exposes your personal assets (your home, savings, car) to business liabilities and lawsuits.
+
+*   **The LLC (Limited Liability Company):** For 95% of small online businesses, an LLC is the ideal structure. It provides the "corporate shield" protecting your personal assets, offers pass-through taxation (meaning business profits flow directly to your personal tax return, avoiding double taxation), and requires minimal administrative upkeep.
+*   **The C-Corporation:** Only choose this if you plan to seek venture capital or institutional investment immediately.
+*   **Where to File:** Generally, file in your home state. While Delaware and Wyoming are popular for tax/privacy reasons, registering there as an out-of-state entity usually requires you to pay double registration fees (both in Delaware and your home state where you actually operate).
+
+### Phase 2: Tax and Regulatory Compliance
+Once your entity is formed, you must establish its identity with the government.
+
+*   **EIN (Employer Identification Number):** Think of this as a Social Security Number for your business. You can get one for free from the IRS website in about ten minutes. You will need this to open a bank account.
+*   **Business Licenses:** Even though you are online, your local municipality or state may require a general business license or a "Home Occupation Permit" if you are running the business from your house.
+*   **Sales Tax (The *Wayfair* Decision):** This is the biggest trap for online retailers. Following a landmark Supreme Court ruling, you may be required to collect and remit sales tax in states where you do not have a physical presence, provided you meet certain sales thresholds (known as "economic nexus"). I highly recommend using automated sales tax software (like Avalara or TaxJar) integrated into your e-commerce platform.
+
+### Phase 3: Financial Separation
+This is where many new entrepreneurs fail, thereby "piercing the corporate veil" and destroying their liability protection.
+
+*   **Open a Dedicated Business Bank Account:** *Never* mix personal and business funds. Every dollar coming in and going out of your business must flow through this dedicated account. 
+*   **Get a Business Credit Card:** Use this exclusively for business expenses (hosting, inventory, marketing).
+
+### Phase 4: Website Legal Infrastructure
+Your website is your storefront, and it must comply with federal and international laws. You need three core documents, which should be linked in your website's footer:
+
+1.  **Privacy Policy:** This is legally required if you collect *any* personal data (including email addresses for newsletters or cookies for analytics). If you sell to customers in California (CCPA) or Europe (GDPR), your privacy policy must meet strict regulatory standards.
+2.  **Terms of Service (ToS) / Terms and Conditions:** This is the contract between you and your website visitors. It governs payment terms, shipping policies, return/refund policies, intellectual property ownership, and—crucially—**limitation of liability** and **governing law/arbitration clauses** (which prevent customers from suing you in distant jurisdictions).
+3.  **ADA Compliance:** Ensure your website is accessible to individuals with disabilities (WCAG standards). Website accessibility lawsuits are currently a major target for predatory litigation.
+
+### Phase 5: Intellectual Property (IP) Protection
+Before you spend money on branding, ensure you actually own it.
+
+*   **Trademark Search:** Do not just search domain availability. Search the USPTO (U.S. Patent and Trademark Office) database to ensure your business name, logo, or slogan doesn't infringe on an existing trademark. 
+*   **Domain and Social Handles:** Secure your domain name (.com is still king) and all major social media handles, even if you don't plan to use them immediately.
+*   **Copyrights:** Ensure you own the rights to your website design, product photos, and copy. If you hire a freelancer (e.g., via Upwork or Fiverr) to design your logo or website, you *must* have a signed agreement stating that the work is a "work made for hire" and that all IP rights transfer to you.
+
+### Phase 6: Contracts and Agreements
+If you are working with partners, suppliers, or contractors, get it in writing.
+
+*   **Operating Agreement:** If you have co-founders, you need an Operating Agreement immediately. It dictates who owns what, how decisions are made, how profits are distributed, and what happens if one partner wants to leave. (Do not skip this; "handshake deals" among friends are the #1 source of business litigation).
+*   **Independent Contractor Agreements:** If you hire virtual assistants, copywriters, or developers, use clear contracts defining deliverables, payment, and IP ownership.
+
+---
+
+### Your Immediate Next Steps:
+1.  **Choose a name** and run a preliminary trademark search.
+2.  **File your LLC** with your state’s Secretary of State.
+3.  **Apply for your EIN** on IRS.gov.
+4.  **Open a business bank account.**
+
+*Disclaimer: While I am an attorney, I am not **your** attorney. This information is for educational purposes and does not constitute formal legal advice. I strongly recommend consulting with a local business attorney and a CPA to tailor these steps to your specific industry and location.*

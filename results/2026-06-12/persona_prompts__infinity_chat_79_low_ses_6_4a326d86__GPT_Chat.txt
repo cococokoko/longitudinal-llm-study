@@ -1,0 +1,91 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_79_low_ses_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=39 out=518
+Latency:   4931 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+Can you give me an incredible STEM fair idea that is affordable and relate to issues in Vietnam?
+
+── Response ────────────────────────────────────────────────────────
+A strong STEM fair project should be:
+- Relevant to a real problem
+- Affordable to build
+- Testable with data
+- Impressive enough to stand out
+
+One excellent idea related to Vietnam is:
+
+"Low-Cost Flood Warning System for Rural Communities"
+
+Why it matters:
+- Vietnam experiences frequent flooding, especially in the Mekong Delta and central provinces.
+- Floods damage homes, crops, and infrastructure.
+- Many rural areas cannot afford expensive monitoring systems.
+
+Project concept:
+Build a small flood-detection device that measures rising water levels and sends an alert.
+
+Materials (low cost):
+- Arduino Uno or compatible microcontroller
+- Ultrasonic distance sensor or water level sensor
+- Buzzer and LED
+- Breadboard and wires
+- Small container or tank for testing
+- Optional: GSM module or Wi-Fi module for phone alerts
+
+How it works:
+1. The sensor measures the water level.
+2. When water reaches a danger threshold, the system activates a buzzer and flashing light.
+3. Advanced version: sends a text message or phone notification.
+
+Experiments you can conduct:
+- Compare sensor accuracy at different water levels.
+- Test different warning thresholds.
+- Measure response time.
+- Investigate how sensor placement affects reliability.
+
+Data you can collect:
+- Water level (cm)
+- Detection accuracy (%)
+- Alert response time (seconds)
+- False alarm rate
+
+Engineering component:
+- Design a waterproof housing using recycled plastic materials.
+- Test durability under simulated rain conditions.
+
+Estimated cost:
+- Basic version: $15–30 USD
+- Advanced version: $30–50 USD
+
+Other Vietnam-related STEM ideas:
+
+1. Solar-Powered Water Purifier
+- Addresses clean drinking water challenges in some rural areas.
+- Compare purification effectiveness with and without solar heating.
+
+2. Rice Husk Water Filtration System
+- Uses rice husks, an abundant agricultural byproduct in Vietnam.
+- Test removal of dirt, color, or impurities from water.
+
+3. Smart Irrigation for Rice Farming
+- Soil moisture sensor controls watering.
+- Investigate water savings compared with traditional irrigation.
+
+4. Air Quality Monitoring Near Traffic Areas
+- Measure particulate matter or gases near busy roads.
+- Analyze pollution patterns throughout the day.
+
+5. Floating Garden for Flood-Prone Areas
+- Build miniature floating planting platforms.
+- Test plant growth and stability under simulated flood conditions.
+
+Among these, the low-cost flood warning system is often the strongest STEM fair choice because it combines engineering, programming, environmental science, data analysis, and a major issue affecting many regions of Vietnam.

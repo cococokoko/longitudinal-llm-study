@@ -1,0 +1,20 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_52_low_ses_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=37 out=37
+Latency:   8806 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a sentence where the last word is 'apple'.
+
+── Response ────────────────────────────────────────────────────────
+Here is a sentence where the last word is 'apple':
+
+"After searching through the entire fruit basket, she finally found the perfect, shiny red apple."

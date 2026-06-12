@@ -1,0 +1,68 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_07_high_ses_5_v1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses_v1
+SES level: high  role: user
+Tokens:    in=19 out=1191
+Latency:   7793 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am an executive at a large technology company.
+
+Effective ways to reduce household energy use.
+
+── Response ────────────────────────────────────────────────────────
+As a technology executive, you likely appreciate solutions that offer a high **ROI (Return on Investment)**, leverage **automation and data**, and optimize systems for maximum efficiency with minimal friction. 
+
+Here is a strategic, high-impact framework to reduce your household energy use, categorized by immediate wins, technological leverage, and structural investments.
+
+---
+
+### Phase 1: The "Low-Hanging Fruit" (High ROI, Low Effort)
+*These are operational quick-wins that require minimal time but yield immediate baseline reductions.*
+
+*   **The LED Transition (100% Penetration):** If you haven’t already, replace every bulb in your home with LEDs. LEDs use 75–80% less energy than incandescents and last 25 times longer. 
+*   **Optimize the Water Heater:** Water heating accounts for about 18% of a home’s energy use. Lower your water heater’s temperature from the factory standard of 140°F (60°C) to **120°F (49°C)**. This is safe, plenty hot, and prevents standby heat loss.
+*   **Eliminate "Phantom Loads" (Vampire Power):** Electronics in standby mode account for up to 10% of a home's energy use. Use smart power strips for your home entertainment systems and home office setups that cut power to peripherals (monitors, printers, game consoles) when the main device is off.
+
+---
+
+### Phase 2: Leverage Automation & IoT (The Tech Exec Approach)
+*As a tech leader, you know that human behavior is hard to change, but system defaults are powerful. Automate your energy savings.*
+
+*   **Smart Thermostats with Geofencing:** Install devices like the Nest Learning Thermostat or Ecobee. Use geofencing so the system automatically enters "Eco Mode" when your phone leaves the house radius. 
+    *   *The Rule of Thumb:* Every 1°F you turn the thermostat down in winter (or up in summer) for an 8-hour period saves about 1% on your energy bill.
+*   **Home Energy Monitoring (HEM) Systems:** Install a system like **Sense** or **Emporia Vue** in your electrical panel. These use machine learning to identify the "electrical signature" of your appliances. You will get real-time data on your phone showing exactly how much energy your fridge, HVAC, or dryer is using, allowing you to make data-driven decisions.
+*   **Smart Lighting & Motion Sensors:** Use smart switches (like Lutron Caséta) integrated with Apple HomeKit, Google Home, or Alexa. Set automations to turn off lights in unoccupied rooms, or dim lights to 80% by default (the human eye barely notices the difference, but it saves 20% energy).
+
+---
+
+### Phase 3: Thermodynamic Efficiency (The Envelope)
+*No matter how smart your thermostat is, it won't help if your home is leaking conditioned air. This is about optimizing the "hardware" of your house.*
+
+*   **The Energy Audit (Data Collection):** Before spending thousands on new windows, hire a professional to do a **Blower Door Test** and thermal imaging. This will pinpoint exactly where air is leaking.
+*   **Air Sealing and Insulation (Highest ROI):** This is the most cost-effective structural upgrade. Sealing leaks around windows, doors, and plumbing penetrations, combined with upgrading attic insulation (aim for R-49 to R-60), can reduce heating and cooling costs by up to 15%.
+*   **Window Films:** If replacing windows is too disruptive, high-spec spectrally selective window films can block up to 60% of solar heat gain in the summer without blocking natural light.
+
+---
+
+### Phase 4: Capital Expenditures & Infrastructure (Long-Term Assets)
+*If you are looking to future-proof your home and maximize asset value, consider these capital investments.*
+
+*   **Heat Pump Technology (HVAC & Water):** 
+    *   **HVAC:** Modern air-source heat pumps are up to 3-4x more efficient than standard gas furnaces or baseboard heaters because they *move* heat rather than *create* it.
+    *   **Hybrid Heat Pump Water Heaters:** These pull heat from the surrounding air to heat your water, using up to 70% less electricity than standard electric water heaters.
+*   **Solar + Battery Storage (Microgrid):** 
+    *   Installing solar panels paired with a home battery (like a Tesla Powerwall or Enphase 5P) allows you to engage in **peak-shaving**. You can store energy when solar production is high (or grid rates are low) and discharge it during peak pricing hours (usually 4 PM–9 PM).
+*   **EV Smart Charging:** If you drive an EV, use a smart charger (like ChargePoint or Wallbox) scheduled to charge only during "super off-peak" utility hours (usually overnight).
+
+---
+
+### Executive Summary: Your Action Plan
+
+1.  **Week 1:** Order a Home Energy Monitor (e.g., Sense) to establish your baseline data. Lower your water heater to 120°F.
+2.  **Month 1:** Schedule a professional home energy audit. Install smart thermostats.
+3.  **Quarter 1:** Execute on air sealing and attic insulation based on audit data.
+4.  **Year 1:** Evaluate the transition to heat pumps as your current HVAC/water heater near end-of-life.

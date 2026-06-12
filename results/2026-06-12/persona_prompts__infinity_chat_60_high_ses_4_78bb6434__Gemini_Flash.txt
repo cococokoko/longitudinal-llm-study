@@ -1,0 +1,28 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_high_ses_4
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=22 out=220
+Latency:   2889 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you want to know what happens at the very end of a movie. 
+
+Usually, you can just skip ahead to the last scene, or ask a friend who has already seen it to tell you the ending. That is a **shortcut**.
+
+But imagine a movie that is a giant, magical puzzle. The only way to know how it ends is to watch every single second of it, without skipping. If you try to skip even one second, the puzzle breaks, and you'll never find out what happens. 
+
+**Computational irreducibility** is just a big, fancy science word for that kind of puzzle. 
+
+It means that for some things in nature—like the weather, or how a snowflake grows—there are **no shortcuts**. You can't use a supercomputer to skip to the end and predict exactly what will happen tomorrow. The only way to find out what happens is to watch it play out, step by step, in real-time. 
+
+To know the future of that puzzle, you just have to wait and watch it happen!

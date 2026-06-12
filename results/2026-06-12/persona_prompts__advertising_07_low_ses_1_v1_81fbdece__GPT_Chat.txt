@@ -1,0 +1,69 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_07_low_ses_1_v1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses_v1
+SES level: low  role: user
+Tokens:    in=28 out=502
+Latency:   4502 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I work full-time in a fast food job with an unpredictable schedule.
+
+Effective ways to reduce household energy use.
+
+── Response ────────────────────────────────────────────────────────
+With a full-time job and an unpredictable schedule, the most effective energy-saving strategies are usually the ones that work automatically and don't require daily attention.
+
+Here are some high-impact options:
+
+• Use a programmable or smart thermostat
+  - Automatically reduce heating or cooling when you're away.
+  - Even modest temperature adjustments can noticeably lower energy use.
+  - Smart thermostats are especially useful if your schedule changes often because many can be controlled from your phone.
+
+• Switch to LED bulbs
+  - LEDs use much less electricity than incandescent bulbs and last far longer.
+  - Prioritize lights you use most often, such as kitchen, bathroom, and living room fixtures.
+
+• Eliminate standby power use
+  - TVs, game consoles, chargers, and other electronics can draw power even when not actively used.
+  - Plug multiple devices into a power strip and switch it off when leaving home.
+
+• Wash clothes with cold water when possible
+  - Water heating is a significant energy expense.
+  - Modern detergents generally work well in cold water.
+
+• Run full loads
+  - Use the dishwasher and washing machine only when reasonably full.
+  - This reduces the energy and water used per item cleaned.
+
+• Adjust water heater settings
+  - Lowering the temperature slightly can reduce energy consumption while still providing comfortable hot water.
+  - Check the manufacturer's recommendations before changing settings.
+
+• Seal drafts
+  - Weatherstripping around doors and caulking around windows can reduce heating and cooling losses.
+  - This is often a relatively inexpensive improvement.
+
+• Use curtains and blinds strategically
+  - Close them during hot sunny periods to reduce cooling needs.
+  - Open them during cooler seasons to take advantage of natural warmth and light.
+
+• Replace HVAC filters regularly
+  - Clean filters help heating and cooling systems operate more efficiently.
+  - Set a phone reminder so you don't have to remember during busy work periods.
+
+• Reduce dryer use
+  - Air-dry some clothing items when practical.
+  - Clean the dryer's lint filter after each load to improve efficiency.
+
+If you're renting and can't make major upgrades, the biggest low-effort wins are usually:
+1. Smart thermostat (if allowed).
+2. LED bulbs.
+3. Power strips for electronics.
+4. Cold-water laundry.
+5. Sealing drafts with removable weatherstripping.
+
+If you tell me whether you rent or own, and whether your biggest bill is electricity, gas, or both, I can suggest the highest-return changes for your situation.

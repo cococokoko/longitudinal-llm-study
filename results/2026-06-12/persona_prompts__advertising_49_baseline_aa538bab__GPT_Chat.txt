@@ -1,0 +1,61 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_49_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=452
+Latency:   3824 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+Improving home Wi‑Fi depends on what's causing the problem, but these steps usually have the biggest impact:
+
+- Place the router centrally
+  - Put it in an open area, not inside a cabinet.
+  - Elevate it on a shelf or table.
+  - Keep it away from large metal objects, TVs, microwaves, and cordless phone bases.
+
+- Use the 5 GHz or 6 GHz band when available
+  - 5 GHz and 6 GHz offer higher speeds and less interference than 2.4 GHz.
+  - 2.4 GHz reaches farther but is often more crowded.
+
+- Update router firmware
+  - Manufacturers regularly release updates that improve performance, security, and stability.
+
+- Optimize Wi‑Fi channels
+  - In crowded neighborhoods or apartments, neighboring networks can interfere.
+  - Use your router's automatic channel selection or a Wi‑Fi analyzer app to identify less congested channels.
+
+- Upgrade older equipment
+  - If your router is several years old, a newer Wi‑Fi 6 or Wi‑Fi 6E router can provide better coverage and performance.
+  - Ensure your devices also support newer Wi‑Fi standards where possible.
+
+- Use a mesh system for larger homes
+  - Mesh Wi‑Fi systems are often more effective than traditional range extenders.
+  - Place mesh nodes where they still receive a strong signal from the main unit.
+
+- Connect stationary devices with Ethernet
+  - PCs, game consoles, TVs, and streaming boxes perform best on wired connections.
+  - This also reduces wireless congestion.
+
+- Reduce interference
+  - Move Wi‑Fi equipment away from Bluetooth devices, baby monitors, wireless cameras, and microwave ovens when possible.
+
+- Check your internet plan
+  - Sometimes the issue is the internet connection itself rather than Wi‑Fi.
+  - Run a speed test near the router and compare it to the speed you're paying for.
+
+- Restart equipment occasionally
+  - Rebooting the modem and router can resolve temporary issues.
+
+If you tell me:
+- The size of your home/apartment
+- Your router model
+- Whether the problem is speed, range, or reliability
+- How many devices are connected
+
+I can give more specific recommendations.

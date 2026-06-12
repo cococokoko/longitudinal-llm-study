@@ -1,0 +1,74 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=45 out=401
+Latency:   9452 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## Step 1: Download and Install Dolphin
+
+- Go to **dolphin-emu.org**
+- Download the **Windows x64** version
+- Run the installer (tap the .exe file)
+
+---
+
+## Step 2: Setting Up Touch-Friendly Navigation
+
+### Enable the On-Screen Keyboard
+- **Settings → Ease of Access → Keyboard**
+- Toggle **On-Screen Keyboard** to On
+- Or press **Windows key + Ctrl + O**
+
+### Pin the Taskbar Keyboard Button
+- Right-click taskbar → **Show touch keyboard button**
+
+---
+
+## Step 3: Configure Dolphin Controls for Touch/Touchpad
+
+1. Open Dolphin
+2. Go to **Controllers** at the top
+3. Select **Emulated Wii Remote**
+4. Click **Configure**
+
+### Recommended Touchpad Mappings
+| Wii Button | Touchpad/Keyboard Action |
+|------------|--------------------------|
+| A Button | Left Click |
+| B Button | Right Click |
+| D-Pad | Arrow Keys |
+| Home | H Key |
+| + / - | + / - Keys |
+
+---
+
+## Step 4: Enable Touchscreen Support in Dolphin
+
+- Go to **Graphics Settings**
+- Consider lowering resolution for better performance
+
+---
+
+## Step 5: Tips for Surface Users
+
+- **Use tablet mode** for easier touch navigation
+- **Pinch to zoom** works in some menus
+- Keep **on-screen keyboard floating** so it doesn't block the game
+- Consider a **Bluetooth controller** for better gameplay
+
+---
+
+Would you like help with a **specific game** or more detailed controller mapping?

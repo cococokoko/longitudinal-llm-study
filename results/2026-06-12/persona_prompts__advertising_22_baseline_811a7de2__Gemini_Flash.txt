@@ -1,0 +1,84 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_22_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=10 out=1258
+Latency:   8330 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+To choose the best remote team collaboration tools, it helps to categorize them by the specific problem they solve. A great remote tech stack usually consists of one tool from each of the following categories: **Communication, Project Management, Document Collaboration, and Brainstorming.**
+
+Here is a breakdown of the best tools for remote team collaboration in 2024, categorized by their primary use case.
+
+---
+
+### 1. Daily Communication & Chat (The "Virtual Office")
+These tools replace the "watercooler" and quick desk stop-bys.
+
+*   **Slack:** The industry standard for text-based communication. It organized conversations into channels, integrates with almost every other software, and allows for quick audio "huddles."
+    *   *Best for:* Fast-paced teams who need organized, searchable chat.
+*   **Microsoft Teams:** The go-to for enterprises. It combines chat, video conferencing, and file sharing, and is deeply integrated with the Microsoft 365 ecosystem.
+    *   *Best for:* Companies already using Word, Excel, and Outlook.
+*   **Discord:** Originally for gamers, many tech and creative startups use Discord for its superior, always-on voice channels where team members can "drop in" and talk.
+    *   *Best for:* Small, highly collaborative tech/creative teams.
+
+### 2. Video Conferencing (Face-to-Face Meetings)
+For when text isn't enough and you need to see each other.
+
+*   **Zoom:** Still the king of video conferencing due to its reliability, high video quality, and ease of use for external clients.
+    *   *Best for:* Large meetings, webinars, and external client calls.
+*   **Google Meet:** Web-based, incredibly fast to launch, and free with Google Workspace. No software downloads required.
+    *   *Best for:* Quick internal meetings and Google Workspace users.
+*   **Gather:** A unique "virtual office" tool where you control a 2D avatar in a retro-style office. To talk to someone, you simply walk your avatar up to theirs.
+    *   *Best for:* Teams missing the physical office vibe and spontaneous interactions.
+
+### 3. Project & Task Management (Who is doing what?)
+These tools keep projects on track and ensure everyone knows their responsibilities without micromanagement.
+
+*   **Asana:** Highly visual and user-friendly. It allows you to view projects as lists, boards (Kanban), timelines (Gantt charts), or calendars.
+    *   *Best for:* Marketing, HR, and general business teams.
+*   **Trello:** A simple, card-based Kanban board. Extremely intuitive and great for tracking tasks through stages (e.g., To Do, In Progress, Done).
+    *   *Best for:* Small teams or individuals who want a simple, visual workflow.
+*   **Monday.com:** Highly customizable and great for complex workflows. It offers robust automation (e.g., "When status changes to 'Done', notify the manager").
+    *   *Best for:* Medium-to-large teams needing customized workflows and data tracking.
+*   **Jira:** The gold standard for software development teams. It is built specifically for agile project management, bug tracking, and sprints.
+    *   *Best for:* Software engineers and product managers.
+
+### 4. Knowledge Management & Document Collaboration (The "Source of Truth")
+Where your team stores processes, meeting notes, and collaborative documents.
+
+*   **Notion:** An all-in-one workspace. It acts as a wiki, document creator, and lightweight project manager. It is highly customizable using "blocks."
+    *   *Best for:* Creating a company "Wiki" or knowledge base.
+*   **Google Workspace (Docs, Sheets, Slides):** The undisputed champion of real-time document collaboration. Multiple people can type in the same document simultaneously without lag.
+    *   *Best for:* Real-time co-writing and data analysis.
+*   **Confluence:** Atlassian’s wiki tool. It integrates perfectly with Jira, making it easy to link project tasks to technical documentation.
+    *   *Best for:* Technical teams and product developers.
+
+### 5. Brainstorming & Visual Collaboration (The Whiteboard)
+For mapping out ideas, user journeys, and wireframes.
+
+*   **Miro:** A massive digital whiteboard. It allows teams to brainstorm using digital sticky notes, mind maps, and pre-built templates.
+    *   *Best for:* Design thinking, brainstorming sessions, and agile planning.
+*   **Figma / FigJam:** Figma is the industry standard for UI/UX design. FigJam is their whiteboard tool, which is excellent for designers and product teams to collaborate in real-time.
+    *   *Best for:* Product designers and developers.
+
+### 6. Asynchronous Communication (Reducing Meeting Fatigue)
+Tools that allow you to communicate deeply without needing to be online at the same time.
+
+*   **Loom:** Allows you to record your screen, camera, and voice simultaneously and instantly share the link.
+    *   *Best for:* Giving feedback, explaining complex ideas, or doing product demos without scheduling a meeting.
+*   **Yac / Threads:** Voice-first asynchronous tools that allow you to send voice messages and structured updates, reducing the need for live stand-up meetings.
+
+---
+
+### How to Choose Your Stack:
+
+*   **The "All-in-One" Budget Stack:** Google Workspace (Docs/Meet) + Trello + Slack. (Cheap, easy to set up, covers all bases).
+*   **The Enterprise Stack:** Microsoft Teams + SharePoint + Monday.com. (Highly secure, deeply integrated).
+*   **The Modern Startup Stack:** Slack + Notion + Linear (for dev) or Asana (for business) + Loom + Miro. (Fast, flexible, and highly collaborative).

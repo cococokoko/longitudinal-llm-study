@@ -1,0 +1,28 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_low_ses_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=41 out=308
+Latency:   9284 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+# TOEFL vs. IELTS: Expert Consultant Overview
+
+Here is a draft paragraph:
+
+---
+
+**When advising international students on English proficiency testing, the choice between TOEFL and IELTS often comes down to destination, learning style, and institutional requirements.** The TOEFL iBT (Internet-Based Test) is predominantly preferred by universities in the **United States and Canada**, featuring an entirely computer-based format that emphasizes academic English through reading, listening, speaking, and writing sections. The IELTS, offered in both **Academic and General Training** versions, is more widely accepted across **UK, Australian, and European institutions**, and notably includes a face-to-face speaking component with a human examiner rather than a microphone. From a practical standpoint, students who are stronger in **typed responses and independent task formats** may perform better on the TOEFL, while those who prefer **conversational interaction and handwritten responses** often find IELTS more comfortable. It is worth noting that **most major universities now accept both exams**, so students should research specific score requirements at their target institutions before committing to one test. Ultimately, I recommend students take **practice tests for both** to identify which format aligns best with their strengths before investing time and resources in preparation.
+
+---
+
+Would you like me to **adjust the tone, length, or focus** of this paragraph?

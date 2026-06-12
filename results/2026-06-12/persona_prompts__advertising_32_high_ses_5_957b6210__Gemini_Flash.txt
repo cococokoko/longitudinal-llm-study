@@ -1,0 +1,59 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_32_high_ses_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=20 out=940
+Latency:   6936 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best ways to improve indoor air quality?
+
+── Response ────────────────────────────────────────────────────────
+Improving indoor air quality (IAQ) is one of the most overlooked levers for boosting cognitive performance, reducing absenteeism, and enhancing overall well-being. In the corporate world, we look at this through the lens of ROI: better air quality directly correlates with higher productivity and fewer sick days. At home, it’s about protecting your family's long-term health.
+
+To tackle this effectively, I recommend a three-tiered strategic framework: **Source Control**, **Ventilation**, and **Filtration**. 
+
+Here is how to execute this strategy.
+
+---
+
+### Phase 1: Source Control (Eliminate the Pollutants)
+The most cost-effective way to clean the air is to stop polluting it in the first place. 
+
+*   **Transition away from gas stoves:** Gas stoves emit nitrogen dioxide ($NO_2$), carbon monoxide, and formaldehyde. If you can’t switch to induction, *always* run your range hood (vented outside) when cooking, or open a window.
+*   **Audit your household products:** Eliminate synthetic fragrances, air fresheners, aerosol sprays, and harsh chemical cleaners. These release Volatile Organic Compounds (VOCs). Opt for fragrance-free or green-certified products.
+*   **Control humidity:** Keep indoor humidity between 30% and 50%. Anything higher promotes mold growth and dust mites. Use dehumidifiers in damp areas like basements.
+*   **Implement a "no-shoes" policy:** Up to 80% of the dust, pesticides, and lead in indoor air is tracked in on the bottoms of shoes. 
+
+### Phase 2: Ventilation (Dilute the Pollutants)
+If you can't eliminate a pollutant, you must dilute it with fresh outdoor air.
+
+*   **Open windows strategically:** Even 10–15 minutes of cross-ventilation a day can drastically lower CO2 and VOC levels. (Avoid this during high-pollen seasons or high-traffic hours if you live near a highway).
+*   **Use mechanical ventilation:** Ensure your bathroom and kitchen exhaust fans vent *outdoors*, not just back into the room. Run them for 20 minutes after showering or cooking.
+*   **Upgrade your HVAC settings:** Most thermostats are set to "Auto," meaning the fan only runs when heating or cooling. Switch the fan setting to "On" to keep air continuously moving through your system's filter, especially when hosting guests.
+
+### Phase 3: Filtration (Capture the Pollutants)
+When you can't ventilate (e.g., during wildfire season or extreme winter), you must clean the air mechanically.
+
+*   **Upgrade your HVAC filter:** Move from cheap fiberglass filters to a **MERV 13** (Minimum Efficiency Reporting Value) filter. MERV 13 is the sweet spot—it is efficient enough to capture virus carriers, bacteria, and smoke particles without restricting your HVAC system's airflow. Change these every 60 to 90 days.
+*   **Deploy portable HEPA purifiers:** For high-traffic rooms or bedrooms, use standalone air purifiers with True HEPA filters. 
+    *   *Executive Tip:* Look at the **CADR (Clean Air Delivery Rate)** rather than the marketing claims. Ensure the CADR matches or exceeds the square footage of the room. Avoid purifiers that generate ozone or use "ionizers," which can create harmful secondary pollutants.
+*   **Vacuum with a HEPA filter:** Standard vacuums often kick fine dust back into the air. Use a vacuum equipped with a sealed HEPA filtration system.
+
+---
+
+### The "Smart" Approach: Monitor and Automate
+As the saying goes, *"You can't manage what you don't measure."* 
+
+I highly recommend investing in a consumer-grade **indoor air quality monitor** (brands like Airthings, Awair, or Temtop). Look for one that measures:
+1.  **PM2.5** (Fine particulate matter)
+2.  **VOCs** (Chemical gases)
+3.  **CO2** (Carbon dioxide—high levels cause drowsiness and poor decision-making)
+
+By monitoring these metrics, you can automate your response. For example, if you see CO2 levels spiking above 1,000 ppm during a meeting or while sleeping, you know it’s time to crack a window. If PM2.5 spikes, it's time to turn your air purifiers to high.

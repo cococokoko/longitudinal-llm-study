@@ -1,0 +1,25 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_low_ses_3_v1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses_v1
+SES level: low  role: user
+Tokens:    in=30 out=179
+Latency:   2178 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I recently started a new job and am still on probation.
+
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A useful feature for a smartwatch designed specifically for senior citizens would be:
+
+- Intelligent Safety Check-In System
+  - The watch learns the user's normal daily activity patterns.
+  - If it detects something unusual (for example, no movement for an extended period, a possible fall, or a missed medication routine), it first prompts the user to confirm they are okay.
+  - If there is no response, it automatically notifies pre-selected family members or caregivers with the user's location and relevant information.
+  - The system minimizes false alarms by combining movement, heart-rate, and location data.
+
+This feature promotes independence while providing an extra layer of safety and reassurance for both seniors and their families.

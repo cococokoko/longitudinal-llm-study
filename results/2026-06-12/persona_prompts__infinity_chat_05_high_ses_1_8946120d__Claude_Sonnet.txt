@@ -1,0 +1,50 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=34 out=300
+Latency:   8331 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+# Fall Detection with Automatic Emergency Response
+
+## Feature Overview
+An enhanced fall detection system that goes beyond basic accelerometer detection to provide comprehensive emergency response.
+
+## Key Components
+
+### Detection
+- **Multi-sensor analysis** combining accelerometer, gyroscope, and heart rate data to distinguish genuine falls from normal movements
+- **Reduced false alarms** compared to standard fall detection
+
+### Response Protocol
+1. **Immediate alert** with vibration and audio prompt
+2. **30-second confirmation window** allowing the user to cancel if uninjured
+3. **Automatic emergency contact notification** if no response
+4. **GPS location sharing** with family members and emergency services
+5. **Two-way audio** enabling direct communication through the watch
+
+### Medical Context Feature
+- Transmits a **brief medical summary** (blood type, medications, conditions) to responders
+- Particularly valuable for users with **cognitive decline** who may struggle to communicate
+
+## Why This Matters
+- Falls are the **leading cause of injury** among adults over 65
+- Response time is critical, especially for seniors living alone
+- Reduces anxiety for both seniors and their families
+
+## Design Considerations
+- Large, simple interface for confirmation/cancel
+- Long battery life to ensure 24/7 coverage
+- Comfortable enough for **overnight wear**
+
+Would you like me to expand on any specific aspect?

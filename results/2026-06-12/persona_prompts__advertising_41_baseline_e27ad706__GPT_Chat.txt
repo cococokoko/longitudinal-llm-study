@@ -1,0 +1,58 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_41_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=15 out=485
+Latency:   4844 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+If you're trying to improve your credit score as quickly as possible, focus on the factors that can change within a month or two:
+
+1. Lower your credit card balances
+- Credit utilization (how much of your available credit you're using) has a major impact on many credit scores.
+- Aim to keep utilization below 30% of your credit limit, and below 10% if possible.
+- Example: If your card has a $5,000 limit, try to keep the reported balance under $500 for the strongest effect.
+
+2. Make all payments on time
+- Payment history is typically the largest scoring factor.
+- Set up automatic payments or reminders to avoid missing due dates.
+- If you've missed a payment recently but it's not yet 30 days late, paying immediately may help prevent further damage.
+
+3. Check your credit reports for errors
+- Review your reports from the major credit bureaus.
+- Dispute inaccurate late payments, balances, collections, or accounts that don't belong to you.
+- Correcting errors can sometimes produce a significant score increase.
+
+4. Pay down revolving debt before statement closing dates
+- Card issuers generally report balances to credit bureaus around the statement date.
+- Paying balances down before they are reported can lower utilization quickly.
+
+5. Ask for a credit limit increase
+- If approved without a hard credit inquiry, a higher limit can lower your utilization ratio.
+- Avoid increasing spending after receiving the higher limit.
+
+6. Become an authorized user (if appropriate)
+- Being added to a family member's or partner's well-managed credit card account may help, depending on the issuer and scoring model.
+- The account should have a long history, low utilization, and no missed payments.
+
+7. Avoid applying for multiple new credit accounts
+- New applications can generate hard inquiries and lower the average age of your accounts.
+- Only apply for credit if there's a clear benefit.
+
+Things that usually do not improve scores quickly:
+- Closing old credit cards (often hurts utilization and account age).
+- Paying off installment loans alone (the effect is often smaller than people expect).
+- Opening several new accounts in hopes of boosting available credit.
+
+If you tell me:
+- Your current score range,
+- Whether the issue is high balances, missed payments, collections, or limited credit history,
+- And roughly how soon you need the score improved,
+
+I can suggest the fastest strategies for your specific situation.

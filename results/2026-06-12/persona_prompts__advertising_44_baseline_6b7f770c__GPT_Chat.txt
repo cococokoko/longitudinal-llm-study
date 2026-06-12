@@ -1,0 +1,39 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_44_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=380
+Latency:   4983 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on the disease involved, how it spreads, and current public health guidance. In general, risk can be reduced by combining multiple precautions:
+
+- Stay informed about current recommendations from public health authorities and your destination's requirements.
+- Avoid traveling if you are sick, have symptoms, or have recently been exposed to an infectious disease.
+- Stay up to date with recommended vaccinations and preventive medications, if available.
+- Choose less crowded travel options when possible.
+- Improve ventilation:
+  - Prefer outdoor settings when feasible.
+  - Open windows in vehicles when practical.
+  - Be aware that modern aircraft often use high-efficiency air filtration systems, though close contact with others can still pose risk.
+- Wear a well-fitting, high-quality mask when recommended or when traveling in crowded indoor environments.
+- Wash your hands regularly with soap and water or use hand sanitizer when handwashing is unavailable.
+- Avoid touching your face with unwashed hands.
+- Maintain physical distance from others when feasible.
+- Consider testing before and after travel if testing is recommended for the disease in question.
+- Follow local public health rules regarding isolation, quarantine, or screening requirements.
+- Carry supplies you may need, such as masks, hand sanitizer, medications, and tests if appropriate.
+
+Different modes of travel carry different risks:
+- Private vehicle: Often allows greater control over exposure, especially when traveling only with household members.
+- Train or bus: Risk varies with crowding, trip duration, ventilation, and masking practices.
+- Air travel: Airports and boarding areas can be crowded; risk depends on factors such as duration, proximity to others, and preventive measures in place.
+- Cruise ships: Historically associated with rapid spread of some infectious diseases because of close-contact settings and shared spaces.
+
+Because guidance can change as a pandemic evolves, checking the latest recommendations from trusted public health sources before departure is important.

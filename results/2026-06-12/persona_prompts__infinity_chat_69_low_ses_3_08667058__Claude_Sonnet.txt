@@ -1,0 +1,46 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_low_ses_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=43 out=247
+Latency:   6291 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+## Analysis vs Design
+
+**Analysis** = Understanding **what** the system must do (requirements, problem domain, current state)
+
+**Design** = Deciding **how** the system will do it (architecture, components, solutions)
+
+| Analysis | Design |
+|----------|--------|
+| Problem-focused | Solution-focused |
+| "What is needed?" | "How to build it?" |
+| Logical view | Physical/technical view |
+
+---
+
+## Can You Design Without Analysis?
+
+**Technically yes, practically no.**
+
+**Why not:**
+- Without understanding requirements, you risk building the **wrong thing**
+- Design decisions lack justification or context
+- Leads to costly **rework** when misunderstood requirements surface later
+- You cannot measure whether the design actually **solves the problem**
+
+**However**, in practice:
+- They often **overlap iteratively** (especially in Agile)
+- Some design thinking during analysis can **clarify requirements**
+
+**Bottom line:** Skipping analysis is a leading cause of project failure — you cannot design an effective solution to a problem you don't fully understand.

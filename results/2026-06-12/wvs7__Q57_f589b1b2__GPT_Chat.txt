@@ -1,0 +1,27 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q57
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=167 out=122
+Latency:   1592 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Generally speaking, would you say that most people can be trusted or that you need to be very careful in dealing with people?
+
+Options:
+A. Most people can be trusted
+B. Need to be very careful
+C. Don't know
+D. No answer/refused
+E. Not applicable (filter)
+F. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.0, "C": 1.0, "D": 0.0, "E": 0.0, "F": 0.0}

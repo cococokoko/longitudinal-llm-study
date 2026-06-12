@@ -1,0 +1,73 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_30_low_ses_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=24 out=1118
+Latency:   8394 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+When you are managing a busy household and supporting an extended family, your most valuable asset is **time**. You don’t need to spend hours a day studying to learn to code; instead, you need a highly efficient, flexible, and practical approach that fits into the cracks of a busy life.
+
+Here is a step-by-step, realistic guide to learning to code from scratch, designed for someone with a demanding schedule.
+
+---
+
+### Step 1: Choose One Clear, Practical Goal
+Don't try to learn "everything." Pick a specific path based on what you want to achieve, which will keep you motivated.
+
+*   **Option A: Web Development (Highly Recommended).** You learn to build websites and web apps. It is the most flexible, has the most job opportunities, and offers the fastest feedback loop (you see what you build instantly).
+    *   *What to learn:* HTML, CSS, and JavaScript.
+*   **Option B: Data & Automation (Great for office work/efficiency).** If you want to automate boring tasks, organize massive spreadsheets, or analyze data.
+    *   *What to learn:* Python.
+
+### Step 2: Use "Micro-Learning" Platforms
+When you have a busy household, you might not have a solid 3-hour block to study. You need platforms that let you learn in 15-to-30-minute increments.
+
+*   **For absolute beginners (Interactive & Free):**
+    *   **freeCodeCamp.org:** Completely free, web-based (no setup required), and highly structured. You write code directly in your browser. It saves your progress, so you can do 10 minutes at a time.
+    *   **Scrimba:** Excellent for web development. It features interactive screencasts where you can pause the video and edit the instructor's code directly.
+*   **For learning on your phone (during wait times):**
+    *   **Mimo** or **Sololearn:** These are like Duolingo but for coding. Use them to learn concepts while waiting in line, during a commute, or in quiet moments.
+
+### Step 3: Set Up a "Micro-Habit" Schedule
+Consistency beats intensity. You will learn more by coding for **20 minutes every day** than for 3 hours only on Sundays.
+
+*   **Find your pocket of time:** This might be 30 minutes before the household wakes up, during a lunch break, or right after dinner when things settle down.
+*   **Protect this time:** Let your family know this is your "focus time."
+*   **Aim for 3 to 5 hours a week.** That is completely enough to make steady, real progress over a few months.
+
+### Step 4: Build Projects, Don't Just Watch Videos
+The biggest trap for beginners is "tutorial hell"—watching endless videos without actually writing code. You only learn to code by coding.
+
+*   As soon as you learn the basics of HTML/CSS, try to build a simple page about a hobby, a recipe list, or a chore chart for your family.
+*   If you learn Python, write a simple script to calculate a budget or rename a folder of family photos.
+*   **Embrace errors:** Debugging (fixing broken code) is 80% of a programmer's job. When your code breaks, it doesn't mean you are bad at it; it means you are doing the actual work.
+
+### Step 5: Leverage AI as Your Personal Tutor
+As a self-learner, you don't have a teacher standing over your shoulder. Use tools like ChatGPT or Claude as your 24/7 tutor.
+
+*   **If you get stuck on an error:** Paste your code and the error message into the AI and ask: *"Explain why this error is happening and how to fix it like I am a beginner."*
+*   **If a concept is confusing:** Ask: *"Explain the concept of 'loops' in JavaScript using an analogy about household chores."*
+
+---
+
+### A Realistic 3-Month Roadmap (Web Development Track)
+
+*   **Month 1: The Skeleton (HTML & CSS).** Learn how to put text and images on a page (HTML) and how to make it look pretty with colors and layouts (CSS).
+    *   *Goal:* Build a simple, static personal resume website.
+*   **Month 2: The Brains (JavaScript Basics).** Learn how to make your website *do* things (buttons that click, forms that submit, dark/light mode toggles).
+    *   *Goal:* Build a simple digital clock or a basic calculator.
+*   **Month 3: Putting it Together.** Build a slightly larger project from scratch.
+    *   *Goal:* Build a **"Family Chore Tracker"** or a **"Shared Grocery List"** app. Building something that actually helps your household will make the learning process incredibly rewarding.
+
+### Your Next Step Today:
+Don't overthink it. Go to **freeCodeCamp.org**, sign up for a free account, and complete the first 3 lessons of the **Responsive Web Design** certification. It will take you 15 minutes, and you will have officially started your coding journey!

@@ -1,0 +1,30 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q104
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=194 out=88
+Latency:   1342 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Now I am going to read off a list of voluntary organizations. For each organization, could you tell me whether you are an active member, an inactive member or not a member of that type of organization?
+
+Women's group
+
+Options:
+A. Active member
+B. Inactive member
+C. Don't belong
+D. Don't know
+E. No answer/refused
+F. Not applicable (filter)
+G. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.0, "C": 1.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}

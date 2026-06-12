@@ -1,0 +1,15 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_52_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=11 out=15
+Latency:   1425 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a sentence where the last word is 'apple'.
+
+── Response ────────────────────────────────────────────────────────
+After searching the entire orchard, she finally found the perfect red **apple**.

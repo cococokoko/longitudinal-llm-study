@@ -1,0 +1,37 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q288
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=306 out=117
+Latency:   1240 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Imagine an income scale on which 1 indicates the lowest income group and 10 the highest income group in your country. We would like to know in what group your household is. Please specify the appropriate number, counting all wages, salaries, pensions and other incomes that come in.
+
+Options:
+A. 1 - Lowest group
+B. 2
+C. 3
+D. 4
+E. 5
+F. 6
+G. 7
+H. 8
+I. 9
+J. 10 - Highest group
+K. Don't know
+L. No answer/refused
+M. Not applicable (filter)
+N. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0, "N": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 1.0, "N": 0.0}
+```

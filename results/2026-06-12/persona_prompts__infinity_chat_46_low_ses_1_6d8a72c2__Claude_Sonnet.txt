@@ -1,0 +1,45 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_46_low_ses_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=36 out=254
+Latency:   5433 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+works full-time in a fast food job with an unpredictable schedule.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give an example of a linear graph in graph theory.
+
+── Response ────────────────────────────────────────────────────────
+## Example of a Linear Graph (Path Graph)
+
+A simple example of a **linear graph** (also called a **path graph**) is:
+
+```
+P₄: A — B — C — D
+```
+
+### Properties of this graph:
+| Property | Value |
+|----------|-------|
+| **Vertices** | A, B, C, D (4 vertices) |
+| **Edges** | AB, BC, CD (3 edges) |
+| **Degree sequence** | 1, 2, 2, 1 |
+
+### Key Characteristics:
+- **Endpoints** (A and D) have degree **1**
+- **Interior vertices** (B and C) have degree **2**
+- Each vertex connects to the **next in sequence**
+- No cycles or branches
+
+### General Form:
+A path graph **Pₙ** has:
+- **n** vertices
+- **n − 1** edges
+- Exactly **two vertices of degree 1** (the endpoints)
+
+This is one of the most fundamental structures in graph theory, representing a simple chain of connected nodes.

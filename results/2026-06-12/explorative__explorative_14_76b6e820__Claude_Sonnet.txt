@@ -1,0 +1,92 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_14
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=16 out=530
+Latency:   10820 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I run applications without local infrastructure?
+
+── Response ────────────────────────────────────────────────────────
+# Running Applications Without Local Infrastructure
+
+Here are the main approaches, organized by use case:
+
+## Cloud Platforms (Most Common)
+
+### Platform as a Service (PaaS)
+| Platform | Best For | Free Tier |
+|----------|----------|-----------|
+| **Heroku** | Quick deployments | Limited |
+| **Railway** | Modern apps | Yes |
+| **Render** | Web services | Yes |
+| **Fly.io** | Containerized apps | Yes |
+
+### Infrastructure as a Service (IaaS)
+- **AWS EC2** - Virtual machines
+- **Google Compute Engine** - VMs with Google infrastructure
+- **Azure Virtual Machines** - Microsoft cloud VMs
+- **DigitalOcean Droplets** - Simple, affordable VMs
+
+---
+
+## Serverless / Function-Based
+
+```
+AWS Lambda → runs code on demand
+Google Cloud Functions → event-driven execution
+Vercel → frontend + serverless functions
+Netlify → JAMstack + functions
+Cloudflare Workers → edge computing
+```
+
+**Best for:** APIs, event-driven tasks, variable traffic
+
+---
+
+## Container-Based
+
+```bash
+# Deploy a container without managing servers
+docker push your-image
+
+# Platforms that run containers directly:
+# - Google Cloud Run
+# - AWS App Runner
+# - Azure Container Apps
+```
+
+---
+
+## Managed Databases (No Server Setup)
+
+- **PlanetScale** - MySQL
+- **Supabase** - PostgreSQL
+- **MongoDB Atlas** - NoSQL
+- **Firebase** - Realtime database
+- **Neon** - Serverless PostgreSQL
+
+---
+
+## Quick Start Recommendation
+
+**For most applications:**
+1. **App hosting** → Railway or Render (simplest)
+2. **Database** → Supabase or PlanetScale
+3. **File storage** → AWS S3 or Cloudflare R2
+4. **Domain/CDN** → Cloudflare
+
+---
+
+## Key Considerations
+
+- **Cost** - Serverless can be cheaper at low scale
+- **Vendor lock-in** - Containers give more portability
+- **Latency** - Edge platforms reduce latency globally
+- **Compliance** - Check data residency requirements
+
+Would you like details on any specific platform or use case?

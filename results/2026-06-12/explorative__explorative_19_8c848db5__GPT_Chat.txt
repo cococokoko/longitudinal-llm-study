@@ -1,0 +1,49 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_19
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=11 out=338
+Latency:   3309 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Top 5 Cloud providers
+
+── Response ────────────────────────────────────────────────────────
+The "top" cloud providers can be ranked in different ways (market share, services, enterprise adoption, innovation), but the most commonly recognized top 5 public cloud providers are:
+
+1. Amazon Web Services (AWS)
+   - Largest cloud provider by market share
+   - Extensive portfolio of compute, storage, databases, AI/ML, analytics, and networking services
+   - Strong global infrastructure and ecosystem
+
+2. Microsoft Azure
+   - Strong integration with Microsoft products (Windows Server, Active Directory, Microsoft 365)
+   - Popular with enterprises and hybrid cloud deployments
+   - Broad AI, data, and developer services
+
+3. Google Cloud Platform (GCP)
+   - Known for strengths in data analytics, Kubernetes, AI, and machine learning
+   - Offers services such as BigQuery, Vertex AI, and Google Kubernetes Engine (GKE)
+   - Strong global network infrastructure
+
+4. Oracle Cloud Infrastructure (OCI)
+   - Strong focus on enterprise workloads and databases
+   - Popular among organizations running Oracle applications
+   - Competitive pricing and high-performance infrastructure
+
+5. IBM Cloud
+   - Focuses on hybrid cloud, enterprise solutions, and regulated industries
+   - Strong integration with Red Hat OpenShift
+   - Emphasis on security, compliance, and AI offerings
+
+Honorable mentions:
+- Alibaba Cloud (dominant in China and Asia-Pacific markets)
+- Salesforce (leading SaaS platform)
+- DigitalOcean (popular among startups and developers)
+- Tencent Cloud
+- Huawei Cloud
+
+If you're choosing a cloud provider, AWS, Azure, and Google Cloud are generally considered the "big three" and are the most common choices for new cloud deployments.

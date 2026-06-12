@@ -1,0 +1,34 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q289
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=261 out=107
+Latency:   1882 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Do you belong to a religion or religious denomination? If yes, which one?
+
+Options:
+A. No: do not belong to a denomination
+B. Roman Catholic
+C. Protestant
+D. Orthodox (Russian/Greek/etc.)
+E. Jew
+F. Muslim
+G. Hindu
+H. Buddhist
+I. Other
+J. Don't know
+K. No answer/refused
+L. Not applicable (filter)
+M. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0, "I": 0.0, "J": 0.0, "K": 0.0, "L": 0.0, "M": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.85, "B": 0.02, "C": 0.02, "D": 0.01, "E": 0.01, "F": 0.01, "G": 0.01, "H": 0.01, "I": 0.03, "J": 0.02, "K": 0.01, "L": 0.0, "M": 0.0}

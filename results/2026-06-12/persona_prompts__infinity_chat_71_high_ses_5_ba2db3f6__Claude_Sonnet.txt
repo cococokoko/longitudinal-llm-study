@@ -1,0 +1,18 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_71_high_ses_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=33 out=41
+Latency:   3465 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Provide an example of the name of an optimization technique used in machine learning.
+
+── Response ────────────────────────────────────────────────────────
+A common example is **Gradient Descent**, an optimization technique used to minimize a loss function by iteratively adjusting model parameters in the direction of the steepest decrease in error.

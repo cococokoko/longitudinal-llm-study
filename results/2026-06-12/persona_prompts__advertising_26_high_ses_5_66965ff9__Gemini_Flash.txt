@@ -1,0 +1,68 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=21 out=1064
+Latency:   8184 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+As an executive at a technology company, I often see small businesses operate under the misconception that they are "too small" to be targeted by cybercriminals. In reality, bad actors view small businesses as soft targets—they often have valuable data but lack the enterprise-grade security budgets of Fortune 500 companies. 
+
+In the tech sector, we look at security not just as an IT problem, but as a **risk management and business continuity strategy**. 
+
+Here is the pragmatic, high-impact framework I recommend for small businesses to secure their data without needing a massive budget.
+
+---
+
+### 1. Establish a "Culture of Security" (The Human Firewall)
+Technology is only as strong as the people using it. Over 80% of data breaches involve a human element (phishing, weak passwords, social engineering).
+*   **Implement Continuous Training:** Do not do a once-a-year slide deck presentation. Use modern, bite-sized security awareness training (like KnowBe4 or Infosec) that includes simulated phishing campaigns.
+*   **Establish a "No-Blame" Culture:** If an employee clicks a suspicious link, they must feel safe reporting it immediately. Early detection reduces damage exponentially.
+
+### 2. Implement "Zero Trust" Fundamentals
+In modern security, we no longer assume everything inside the office network is safe. We adopt a "never trust, always verify" posture.
+*   **Multi-Factor Authentication (MFA):** This is non-negotiable. Enabling MFA on email, financial accounts, and cloud storage blocks 99.9% of automated cyberattacks. 
+*   **Password Managers:** Ban the sticky note. Mandate the use of business password managers (like 1Password or Bitwarden) to generate and store strong, unique passwords.
+*   **Principle of Least Privilege (PoLP):** Employees should only have access to the specific data required to do their jobs. A marketing intern does not need access to HR files or master financial spreadsheets.
+
+### 3. Secure Your Infrastructure and Endpoints
+With remote and hybrid work, the "office perimeter" has disappeared. You must secure the devices themselves.
+*   **Deploy EDR (Endpoint Detection and Response):** Traditional antivirus is obsolete. You need EDR software (like SentinelOne, CrowdStrike, or Microsoft Defender for Business) that uses AI to detect anomalous behavior on laptops and phones.
+*   **Automate Patch Management:** Unpatched software is an open door. Set all operating systems (Windows, macOS) and critical software (browsers, Office suites) to auto-update.
+*   **Secure Wi-Fi:** Never use default router passwords. Set up a separate "Guest" network for visitors and IoT devices (smart TVs, printers) so they cannot access your primary business network.
+
+### 4. Protect Your Data Assets
+If the worst happens, your data protection strategy determines whether your business survives.
+*   **The 3-2-1 Backup Rule:** 
+    *   Keep **3** copies of your data (one primary, two backups).
+    *   On **2** different types of media (e.g., local drive and cloud).
+    *   With **1** copy stored offsite/in the cloud.
+*   **Immutable Backups:** Ensure your cloud backups are "immutable" (cannot be deleted or altered for a set period). This is your ultimate insurance policy against ransomware.
+*   **Encryption:** Ensure all laptops have hard drive encryption enabled (BitLocker for Windows, FileVault for Mac). If a laptop is left in a coffee shop, the data remains safe.
+
+### 5. Manage Third-Party Risk
+Small businesses rely heavily on SaaS (Software-as-a-Service) vendors. Your security is only as good as theirs.
+*   **Vetting Vendors:** Before using a new tool, ask for their security certifications (like SOC 2 Type II). 
+*   **Standardize on Trusted Platforms:** It is safer to use established cloud ecosystems (like Google Workspace or Microsoft 365) which have multi-billion dollar security budgets, rather than fragmented, niche tools.
+
+### 6. Create an Incident Response Plan
+Do not wait for a crisis to figure out what to do. Write down a simple, 2-page plan that answers:
+*   Who is in charge if we suspect a breach?
+*   How do we isolate infected systems? (e.g., disconnect from Wi-Fi immediately).
+*   Who are our external partners to call? (IT provider, legal counsel, insurance broker).
+*   Do we have **Cyber Liability Insurance**? (If not, get it. It is essential for small business survival post-breach).
+
+### Executive Summary for Action:
+If you can only do three things this week, do these:
+1.  **Turn on MFA** on every single business account.
+2.  **Deploy a password manager** company-wide.
+3.  **Verify your backups** actually work by running a restoration test.

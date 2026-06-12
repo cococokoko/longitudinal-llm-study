@@ -1,0 +1,18 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_76_high_ses_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=38 out=17
+Latency:   2347 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Generate a one-liner title for 'Elephant' and 'sticker'.
+
+── Response ────────────────────────────────────────────────────────
+"Elephant-Sized Fun: Stick It Everywhere!"

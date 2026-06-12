@@ -1,0 +1,28 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_64_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=383
+Latency:   3546 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me draft a paragraph as an expert consultant explaining TOEFL vs IELTS for international students.
+
+── Response ────────────────────────────────────────────────────────
+Here is a draft for your paragraph, written from the perspective of an expert consultant. It is designed to be authoritative, clear, and highly actionable for international students.
+
+***
+
+**Subject: Navigating the Choice Between TOEFL and IELTS**
+
+"As an international education consultant, one of the most pivotal decisions I guide students through is choosing between the TOEFL and the IELTS. While both exams are globally respected benchmarks of English proficiency, they cater to fundamentally different test-taking styles. The **TOEFL** (Test of English as a Foreign Language) is highly academic, entirely computer-based, and favors students who are comfortable speaking to a microphone and synthesizing information from multiple sources simultaneously. Conversely, the **IELTS** (International English Language Testing System) offers a more real-world, communicative approach, featuring a face-to-face speaking interview with a human examiner and a mix of question types—such as short-answer and diagram labeling—that many students find more intuitive than TOEFL’s heavy reliance on multiple-choice. Ultimately, neither test is inherently 'easier'; rather, the right choice depends on your target universities' preferences, your comfort level with computer-delivered versus face-to-face testing, and whether your strengths lie in structured academic synthesis (TOEFL) or practical, interactive communication (IELTS)."
+
+***
+
+### Why this works (from a consulting standpoint):
+*   **Establishes Authority:** It immediately frames the advice as professional guidance rather than just a list of facts.
+*   **Highlights Key Differences:** It contrasts the *nature* of the tests (computer-based/academic vs. human-interactive/practical) rather than just listing the sections.
+*   **Empowers the Student:** It shifts the mindset from "which test is easier" to "which test aligns with my personal strengths," which is the hallmark of good consulting.

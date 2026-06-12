@@ -1,0 +1,85 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=13 out=1083
+Latency:   7899 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+Starting to learn coding from scratch can feel overwhelming because of the sheer number of languages, tools, and opinions out there. However, if you follow a structured path, it becomes highly manageable and incredibly rewarding.
+
+Here is the step-by-step, best-practice roadmap to starting from absolute zero.
+
+---
+
+### Step 1: Define Your "Why" (Choose Your Path)
+Before writing a single line of code, decide what you want to build. This will dictate which programming language you should learn first.
+
+*   **If you want to build websites (Front-End):** You will learn how to make things look good on a screen.
+    *   *Path:* HTML, CSS, and JavaScript.
+*   **If you want to build apps, games, or analyze data (General Purpose):**
+    *   *Path:* Python. (Highly recommended for absolute beginners because its syntax reads like English).
+*   **If you want to build iOS/Android Apps:**
+    *   *Path:* Swift (for Apple) or Kotlin (for Android).
+
+*Recommendation:* If you aren't sure, **start with Python**. It is the most beginner-friendly language and is used in AI, data science, and web development.
+
+---
+
+### Step 2: Start with Free, Interactive Platforms
+Do not buy expensive bootcamps or textbooks yet. Start with free, hands-on platforms where you can write code directly in your browser.
+
+*   **freeCodeCamp (Highly Recommended):** 100% free, project-based curriculum. It takes you from absolute beginner to job-ready.
+*   **Scrimba:** Great for web development. You can literally pause the video tutorial and edit the instructor's code inside the video player.
+*   **Harvard’s CS50 (on edX):** A free, world-class introduction to computer science. It is challenging but teaches you *how computers think*.
+*   **Codecademy:** Offers a great, highly structured free tier to learn the basic syntax of almost any language.
+
+---
+
+### Step 3: Learn the "Core Concepts" (Not just syntax)
+No matter which language you choose, they all share the same foundational building blocks. Focus on understanding these concepts deeply:
+*   **Variables:** How computers store data (like a box with a label).
+*   **Data Types:** Numbers, text (strings), and booleans (true/false).
+*   **Conditionals:** "If/Else" statements (e.g., *If* the user is logged in, show the homepage; *else*, show the login page).
+*   **Loops:** Running a piece of code multiple times automatically.
+*   **Functions:** Reusable blocks of code that perform a specific task.
+
+---
+
+### Step 4: Transition to a Local Environment
+Once you understand the basics, stop coding in your browser and set up your own computer like a professional.
+1.  **Download a Text Editor:** Download **Visual Studio Code (VS Code)**. It is free, industry-standard, and highly customizable.
+2.  **Learn the Command Line (Terminal):** Learn how to navigate your computer’s folders using text commands instead of clicking with a mouse.
+
+---
+
+### Step 5: Build "Micro-Projects" (The most important step)
+You cannot learn to code just by watching videos or reading. You must **build things**. As soon as you learn the basics, build tiny projects without following a tutorial step-by-step.
+
+*   *Project 1:* A calculator.
+*   *Project 2:* A "To-Do List" app.
+*   *Project 3:* A simple "Guess the Number" game.
+*   *Project 4:* A personal portfolio website.
+
+**Rule of thumb:** Spend 30% of your time learning/watching, and 70% of your time actually building and breaking things.
+
+---
+
+### Step 6: Learn How to Search for Help
+Professional developers do not memorize everything. In fact, 50% of a developer's job is knowing how to search for answers.
+*   When your code breaks (and it will), copy and paste the error message into **Google** or **ChatGPT**.
+*   Read **Stack Overflow** threads.
+*   Use AI (like ChatGPT) as a **tutor, not a crutch**. Ask: *"Why is this code not working?"* or *"Explain this concept to me like I am 10 years old,"* rather than just asking it to write the code for you.
+
+---
+
+### Golden Rules for Beginners:
+1.  **Consistency over intensity:** Coding for 30 minutes every day is 10x better than coding for 5 hours only on Sundays.
+2.  **Embrace frustration:** Getting "stuck" is not a sign that you are bad at coding; it is the actual process of learning.
+3.  **Don't try to learn everything:** Focus on *one* language and get good at it before trying to learn a second one.

@@ -1,0 +1,93 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=32 out=491
+Latency:   5436 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+If you're starting from zero, the most effective approach is to focus on building things early rather than spending months studying theory.
+
+A practical path:
+
+1. Pick one beginner-friendly language
+- Python is usually the best choice for beginners.
+- It's readable, widely used, and works for automation, data science, AI, web development, and more.
+
+2. Learn the fundamentals
+Focus on:
+- Variables
+- Data types (numbers, text, lists, dictionaries)
+- Conditionals (if/else)
+- Loops
+- Functions
+- Basic file handling
+
+Don't worry about advanced topics yet.
+
+3. Practice every day
+Even 20–30 minutes daily is better than occasional long sessions.
+Consistency matters more than intensity.
+
+4. Build tiny projects immediately
+Examples:
+- Calculator
+- To-do list
+- Number guessing game
+- Expense tracker
+- Simple text-based adventure game
+
+Projects reveal what you actually understand.
+
+5. Learn to use debugging tools
+A major part of programming is finding and fixing mistakes.
+Get comfortable with:
+- Reading error messages
+- Using print statements or a debugger
+- Searching for solutions online
+
+6. Use high-quality beginner resources
+Some good options:
+- Harvard CS50 (free)
+- freeCodeCamp
+- Python's official tutorial
+- Automate the Boring Stuff with Python (free online)
+- Codecademy or similar interactive platforms
+
+7. Learn basic computer science concepts
+After you've built a few projects, study:
+- How the internet works
+- Algorithms
+- Data structures
+- Version control (Git)
+
+These concepts become much easier once you've written code.
+
+8. Create a larger project
+Once you're comfortable, build something useful to you:
+- Personal website
+- Budget app
+- Workout tracker
+- Study planner
+- Simple game
+
+A project you care about will teach more than dozens of tutorials.
+
+Common mistake to avoid:
+- Don't jump between multiple languages and courses. Pick one language, one beginner course, and finish it before exploring alternatives.
+
+A simple 3-month beginner plan:
+- Month 1: Learn Python basics.
+- Month 2: Complete 3–5 small projects.
+- Month 3: Build one larger project and learn Git.
+
+If you tell me your age, background, and what interests you (websites, apps, games, AI, data analysis, automation, etc.), I can suggest a more tailored learning path.

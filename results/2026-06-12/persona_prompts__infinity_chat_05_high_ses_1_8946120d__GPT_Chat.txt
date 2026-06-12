@@ -1,0 +1,29 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_05_high_ses_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=33 out=190
+Latency:   2357 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Suggest a feature for a smartwatch designed specifically for senior citizens.
+
+── Response ────────────────────────────────────────────────────────
+A valuable feature would be an "Adaptive Safety Check-In" system.
+
+How it works:
+- The watch learns the user's normal daily activity patterns (walking, sleep, heart rate, and routine movement).
+- If it detects something unusual—such as a possible fall, prolonged inactivity, missed medication times, or signs of distress—it gently prompts the wearer to confirm they are okay.
+- If there is no response within a set period, the watch can automatically notify designated family members, caregivers, or emergency services and share the wearer's location.
+
+Why it is useful:
+- Provides safety monitoring without requiring constant supervision.
+- Reduces false alarms by considering the user's normal habits.
+- Supports independent living while offering reassurance to family and caregivers.
+- Combines health monitoring, fall detection, and emergency communication in a single easy-to-use feature.

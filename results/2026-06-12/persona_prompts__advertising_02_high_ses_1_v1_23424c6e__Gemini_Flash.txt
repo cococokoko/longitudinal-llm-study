@@ -1,0 +1,78 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_02_high_ses_1_v1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses_v1
+SES level: high  role: user
+Tokens:    in=19 out=1249
+Latency:   7549 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+I am a neurosurgeon at a major teaching hospital.
+
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+As a neurosurgeon, your days are likely defined by long hours in climate-controlled operating rooms, frequent surgical scrubbing, and the physical stress of high-stakes procedures. These factors—especially the dry, sterile air of the OR and the harsh surfactants in hospital soaps—severely compromise the skin’s epidermal barrier, leading to transepidermal water loss (TEWL), micro-fissures, and chronic dryness.
+
+To fit into a demanding surgical schedule, a skincare routine must be **highly efficient, clinically effective, and focused on barrier repair.** 
+
+Here is a dermatologist-recommended, science-based routine tailored for dry skin, optimized for a busy physician.
+
+---
+
+### The Core Strategy: Barrier Repair & Humectants
+Dry skin lacks both **water** (hydration) and **lipids** (moisture). Your routine should focus on:
+1. **Humectants** (to bind water to the skin): Hyaluronic acid, glycerin, urea.
+2. **Emollients/Occlusives** (to trap moisture and repair the barrier): Ceramides, squalane, cholesterol, and fatty acids.
+
+---
+
+### Morning Routine (AM): Protect & Hydrate
+*Goal: Prepare the skin for the dry OR environment and protect against environmental stressors.*
+
+1. **Cleanse: Splash with Lukewarm Water (or a Gentle Non-Foaming Cleanser)**
+   * *Why:* Unless you have oily skin, you do not need to wash with soap in the morning. Stripping the skin first thing will exacerbate daytime dryness. If you prefer a cleanser, use a hydrating, non-foaming formula (e.g., *CeraVe Hydrating Cleanser* or *La Roche-Posay Toleriane Hydrating Gentle Cleanser*).
+2. **Hydrate: Hyaluronic Acid or Beta-Glucan Serum (Apply to Damp Skin)**
+   * *Why:* Humectants draw moisture into the stratum corneum. Applying this to damp skin maximizes absorption.
+   * *Product suggestion:* *The Ordinary Hyaluronic Acid 2% + B5* or *Vichy Minéral 89*.
+3. **Moisturize: Ceramide-Rich Cream**
+   * *Why:* Ceramides make up ~50% of the skin barrier. Replacing them is crucial for preventing TEWL during long surgeries.
+   * *Product suggestion:* *CeraVe Moisturizing Cream* or *SkinCeuticals Triple Lipid Restore 2:4:2*.
+4. **Protect: Broad-Spectrum SPF 30+ (Hydrating Formula)**
+   * *Why:* Even if you spend your day indoors under fluorescent lights, UVA rays penetrate windows, and blue light from surgical monitors can contribute to oxidative stress. Choose a moisturizing sunscreen.
+   * *Product suggestion:* *EltaMD UV Daily* (contains hyaluronic acid) or *La Roche-Posay Anthelios Mineral Gentle Lotion*.
+
+---
+
+### Evening Routine (PM): Repair & Recover
+*Goal: Undo the damage of the day, deeply hydrate, and promote cellular turnover.*
+
+1. **Cleanse: Gentle, Hydrating Cleanser**
+   * *Why:* To remove sweat, sebum, and any residue from surgical masks/shields without stripping the skin.
+   * *Product suggestion:* *Cetaphil Gentle Skin Cleanser* or *Vanicream Gentle Facial Cleanser*.
+2. **Treat: Retinol or Bakuchiol (2–3 times a week)**
+   * *Why:* Retinoids promote cell turnover and collagen production. However, they can be drying. Start slow (twice a week) and layer it *over* your moisturizer (the "sandwich method") if your skin is highly sensitive.
+   * *Product suggestion:* *La Roche-Posay Retinol B3 Serum* or *CeraVe Resurfacing Retinol Serum*.
+3. **Moisturize: Rich Barrier Cream**
+   * *Why:* Nighttime is when the skin undergoes its natural repair cycle. Use a thicker, lipid-rich cream.
+   * *Product suggestion:* *Avene Cicalfate+ Restorative Protective Cream* or *La Roche-Posay Cicaplast Baume B5+* (excellent for soothing mask irritation/chafing).
+4. **Optional "Slugging" (On non-retinol nights)**
+   * *Why:* If your skin is severely dry or flaking, apply a thin layer of an occlusive ointment (like *Vaseline* or *Aquaphor*) over your moisturizer before bed. This creates a physical barrier that stops water loss completely overnight.
+
+---
+
+### The "Surgeon’s Special": Hand Care
+As a surgeon, your hands are your livelihood, but surgical scrubs (chlorhexidine gluconate/Avagard) are incredibly drying. 
+
+* **Post-Scrub Recovery:** Keep a medical-grade hand cream in your locker or desk. Apply it immediately after washing your hands (when they are still slightly damp). Look for creams containing **urea** (a keratolytic and humectant) or **dimethicone** (a skin protectant).
+* **Recommended:** *Eucerin Roughness Relief Cream* (with urea) or *Neutrogena Norwegian Formula Hand Cream*.
+* **Overnight Treatment:** Apply a thick layer of *Aquaphor* to your hands before bed and wear cotton gloves to sleep.
+
+---
+
+### Quick Tips for the OR Lifestyle
+* **Hydrate from within:** It’s easy to forget to drink water during a 12-hour case. Keep a hydration schedule pre- and post-op.
+* **Humidifier:** Place a cool-mist humidifier in your office and your bedroom to counteract dry hospital air and home heating/AC.
+* **Avoid Hot Water:** After a long, stressful case, a hot shower is tempting, but hot water strips the skin of its natural oils. Stick to lukewarm water.

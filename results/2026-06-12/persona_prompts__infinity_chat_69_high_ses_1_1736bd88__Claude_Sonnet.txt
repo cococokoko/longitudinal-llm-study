@@ -1,0 +1,45 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_high_ses_1
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=43 out=214
+Latency:   5677 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+## Analysis vs. Design
+
+**Analysis** = understanding *what* the problem is (requirements, constraints, current state)
+
+**Design** = determining *how* to solve it (structure, architecture, solution approach)
+
+---
+
+## Can You Design Without Analysis?
+
+**Technically yes. Practically, no — not well.**
+
+Without analysis you are essentially **guessing at the problem** while building a solution. This leads to:
+
+- Solving the **wrong problem**
+- Missing critical constraints
+- Costly rework
+- Solutions that don't fit the actual need
+
+---
+
+## The Core Principle
+
+> **A solution is only as good as the understanding of the problem it addresses.**
+
+Some iterative methodologies deliberately compress or interleave analysis and design — but they don't *eliminate* analysis; they distribute it. Even a rough sketch on a napkin implies some prior understanding of the problem.
+
+**Skipping analysis doesn't save time — it borrows it at high interest.**

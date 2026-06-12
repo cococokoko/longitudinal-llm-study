@@ -1,0 +1,63 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_20
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=5 out=1003
+Latency:   7120 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Top 5 messaging tools
+
+── Response ────────────────────────────────────────────────────────
+Because "messaging tools" can mean different things depending on your needs, the top tools are best categorized by how they are used: **for team collaboration (work)**, **for personal use (privacy/chat)**, and **for customer support (business-to-consumer)**. 
+
+Here are the top 5 messaging tools across these categories, based on popularity, features, and security.
+
+---
+
+### 1. Slack (Best for Workplace Collaboration)
+Slack is the gold standard for professional team communication. It organizes conversations into "channels" (by project, topic, or team) and integrates with almost every major work tool (Google Drive, Zoom, Jira, Salesforce).
+*   **Key Features:** Channels, direct messaging, "Huddles" (quick audio/video chats), canvas documents, and powerful search history.
+*   **Best For:** Businesses, remote teams, and project management.
+*   **Pros:** Thousands of app integrations; highly customizable.
+*   **Cons:** Can become overwhelming with notifications; the free plan limits message history to 90 days.
+
+### 2. WhatsApp (Best for Global Personal Communication)
+With over 2 billion active users, WhatsApp is the most popular messaging app in the world. It uses your phone number to connect you with contacts globally for free over Wi-Fi or cellular data.
+*   **Key Features:** End-to-end encryption, voice/video calls (up to 32 people), group chats, WhatsApp Web/Desktop, and "Communities" for organizing multiple groups.
+*   **Best For:** Everyday personal chatting, international calling, and small business-to-customer communication (via WhatsApp Business).
+*   **Pros:** Ubiquitous (almost everyone has it); completely free; simple interface.
+*   **Cons:** Owned by Meta (raises data privacy concerns for some); requires a phone number to sign up.
+
+### 3. Microsoft Teams (Best for Enterprise & Office 365 Users)
+Teams is Microsoft’s answer to Slack. It is deeply integrated into the Microsoft 365 ecosystem, making it the default choice for large corporations, schools, and government organizations.
+*   **Key Features:** Chat channels, industry-leading video conferencing, real-time co-authoring of Office documents (Word, Excel, PowerPoint), and breakout rooms.
+*   **Best For:** Large enterprises and organizations already using Microsoft Office.
+*   **Pros:** Seamless integration with Word/Excel; excellent security compliance; high-quality video meetings.
+*   **Cons:** Can feel bloated and slow; steeper learning curve than Slack.
+
+### 4. Signal (Best for Privacy and Security)
+If privacy is your main concern, Signal is the undisputed leader. It is a non-profit, open-source app recommended by cybersecurity experts, journalists, and privacy advocates (like Edward Snowden).
+*   **Key Features:** State-of-the-art end-to-end encryption, disappearing messages, screen-security (blocks screenshots), and "sealed sender" technology (Signal doesn't even know who is messaging whom).
+*   **Best For:** Anyone prioritizing maximum privacy and data security.
+*   **Pros:** No ads, no trackers, and no data harvesting; completely free.
+*   **Cons:** Smaller user base (you have to convince your friends to download it); fewer "fun" features compared to WhatsApp or Telegram.
+
+### 5. Telegram (Best for Large Communities & Feature Richness)
+Telegram is a cloud-based messaging app known for its speed, massive group capacities, and rich feature set. It acts as a hybrid between a messaging app and a social media network.
+*   **Key Features:** Groups of up to 200,000 members, "Channels" for broadcasting to unlimited audiences, massive file sharing (up to 2GB per file), and highly customizable bots.
+*   **Best For:** Large online communities, crypto/tech groups, and sharing large media files.
+*   **Pros:** Incredibly fast; cloud-based (doesn't take up phone storage); highly customizable.
+*   **Cons:** Chats are *not* end-to-end encrypted by default (you must manually start a "Secret Chat"); moderation issues in public channels.
+
+---
+
+### Summary: Which one should you choose?
+*   Choose **Slack** if you want to organize a professional project or business.
+*   Choose **Microsoft Teams** if your company already pays for Microsoft 365.
+*   Choose **WhatsApp** to talk to friends and family worldwide.
+*   Choose **Signal** if you want your conversations to be 100% private.
+*   Choose **Telegram** if you want to build a large community or share large files.

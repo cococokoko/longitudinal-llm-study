@@ -1,0 +1,101 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=20 out=1252
+Latency:   8422 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+Running the Dolphin Emulator (for Wii games) on a Microsoft Surface using only the touchpad and the on-screen keyboard is entirely possible, but it requires a specific setup. 
+
+Because Wii games originally used motion controls (the Wii Remote and Nunchuk), you have to map those motion controls to your touchpad and keyboard.
+
+Here is a step-by-step guide to setting up Dolphin, configuring your controls, and optimizing your Surface for the best experience.
+
+---
+
+### Step 1: Optimize your Surface On-Screen Keyboard
+The default Windows touch keyboard is too simple for gaming. You need the **Traditional (Full) Keyboard layout**, which includes keys like Shift, Ctrl, Alt, and the Arrow keys.
+
+1. Open Windows **Settings** > **Time & Language** > **Typing**.
+2. Click on **Touch keyboard**.
+3. Turn on **"Show the traditional keyboard layout when no keyboard is attached"** (or set the keyboard layout to "Traditional" when you open it).
+4. *Tip:* You can also dock the keyboard to the bottom of the screen or make it transparent so you can see the game behind it.
+
+---
+
+### Step 2: Configure Dolphin's Wii Controller Settings
+Since you are playing Wii games, you need to emulate a Wii Remote (Wiimote) using your keyboard and touchpad.
+
+1. Open Dolphin and click on **Controllers** in the top toolbar.
+2. Under **Wii Remotes**, set **Wii Remote 1** to **Emulated Wii Remote**.
+3. Click **Configure** next to it. A new window will open.
+
+#### Recommended Control Mapping:
+In the configuration window, set your controls like this to make them reachable on a touch screen:
+
+*   **Device:** Select `Keyboard/0/Keyboard Mouse` (this allows both your keyboard and touchpad to work).
+*   **Buttons (The Wii Remote face buttons):**
+    *   **A:** `Spacebar` or `Left Click` (This is your main action button).
+    *   **B:** `Right Click` or `Shift` (Usually the trigger button).
+    *   **1:** `1`
+    *   **2:** `2`
+    *   **- / +:** `Q` / `E`
+    *   **Home:** `H`
+*   **D-Pad (The directional pad on the Wii Remote):**
+    *   Map these to your keyboard **Arrow Keys** (Up, Down, Left, Right).
+
+#### Emulating the Nunchuk (Crucial for games like *Mario Galaxy* or *Zelda*):
+1. In the same configuration window, look for the **Extension** dropdown menu.
+2. Select **Nunchuk**.
+3. Click the **Extension** tab at the top of the window.
+4. Map the Nunchuk controls:
+    *   **Stick (Movement):** Map Up, Down, Left, Right to **W, A, S, D** on your keyboard.
+    *   **C Button:** `C`
+    *   **Z Button:** `Z`
+
+---
+
+### Step 3: Emulating Wii Motion Controls (Pointing and Shaking)
+Many Wii games require you to point at the screen or shake the controller.
+
+#### 1. Pointing (The Wii Pointer)
+You want your touchpad to act as the Wii pointer.
+1. In the controller configuration window, go to the **Motion Simulation** tab.
+2. Under **Point**, map the directions:
+    *   **Up:** `Cursor Y-` (Slide finger up on touchpad)
+    *   **Down:** `Cursor Y+` (Slide finger down)
+    *   **Left:** `Cursor X-` (Slide finger left)
+    *   **Right:** `Cursor X+` (Slide finger right)
+*Now, moving your finger on the touchpad will move the Wii pointer on screen.*
+
+#### 2. Shaking (e.g., spinning in *Super Mario Galaxy* or shaking the Wii Remote)
+1. In the **Motion Simulation** tab, look for **Shake**.
+2. Map **X**, **Y**, and **Z** all to the **`F` key** (or any key easily reachable on your on-screen keyboard).
+3. Now, whenever a game asks you to shake the Wii Remote, you just have to tap the `F` key.
+
+---
+
+### Step 4: Surface Performance Tips for Dolphin
+Surface devices (especially fanless models like the Surface Pro i5/Surface Go) can get hot and throttle performance. Use these settings in Dolphin for a smooth framerate:
+
+1. Go to **Graphics** in Dolphin.
+2. **Backend:** Change this to **Direct3D 12** or **Vulkan** (these work best with Intel/AMD integrated graphics on Surface devices).
+3. **Adapter:** Ensure your Intel Iris Xe or AMD Radeon graphics are selected.
+4. Go to the **Enhancements** tab:
+    *   Set **Internal Resolution** to **1x Native (640x528)** or **Auto (Window Size)**. Do not go higher than 720p, or the Surface will lag.
+    *   Turn **Anti-Aliasing** to **None**.
+    *   Turn **Anisotropic Filtering** to **1x**.
+
+---
+
+### Pro-Tip: Use a Virtual Controller App (Highly Recommended)
+Using the Windows default on-screen keyboard can be clunky because it blocks half the screen. 
+
+If you find it too difficult, download a free tool called **VirtualGamepad** or **GestureSign**. These tools allow you to draw transparent, custom game buttons directly on your Surface screen (like a mobile game), which map directly to keyboard keys. This keeps your game full-screen while giving you touch buttons to tap.

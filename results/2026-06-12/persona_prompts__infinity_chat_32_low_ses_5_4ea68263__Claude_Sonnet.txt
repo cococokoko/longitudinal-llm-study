@@ -1,0 +1,136 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_32_low_ses_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=30 out=663
+Latency:   14207 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I make a zombie survivor game on Scratch?
+
+── Response ────────────────────────────────────────────────────────
+# Making a Zombie Survivor Game on Scratch
+
+## Basic Setup
+
+### Sprites You'll Need
+- **Player character**
+- **Zombie sprite**
+- **Bullet/projectile**
+- **Background** (top-down view works well)
+
+---
+
+## Step-by-Step Guide
+
+### 1. Player Movement
+Add this to your **Player sprite**:
+
+```
+when green flag clicked
+forever
+  if <key [w] pressed> then
+    change y by (5)
+  end
+  if <key [s] pressed> then
+    change y by (-5)
+  end
+  if <key [a] pressed> then
+    change x by (-5)
+  end
+  if <key [d] pressed> then
+    change x by (5)
+  end
+end
+```
+
+### 2. Player Shooting
+```
+when [space] key pressed
+create clone of [Bullet]
+
+-- On Bullet sprite:
+when I start as a clone
+point in direction (player direction)
+repeat until <touching edge?>
+  move (10) steps
+  if <touching [Zombie]> then
+    broadcast [hit zombie]
+    delete this clone
+  end
+end
+delete this clone
+```
+
+### 3. Zombie AI
+```
+when green flag clicked
+forever
+  point towards [Player]
+  move (2) steps
+  if <touching [Player]> then
+    broadcast [player hit]
+  end
+end
+```
+
+### 4. Spawning Multiple Zombies
+```
+when green flag clicked
+forever
+  wait (2) seconds
+  create clone of [Zombie]
+
+when I start as a clone
+go to (random position)
+-- then run zombie AI
+```
+
+### 5. Health System
+```
+-- Create a variable called "Health"
+when green flag clicked
+set [Health] to (3)
+
+when I receive [player hit]
+change [Health] by (-1)
+if <(Health) = (0)> then
+  broadcast [game over]
+end
+```
+
+### 6. Score System
+```
+-- Create a variable called "Score"
+when I receive [hit zombie]
+change [Score] by (10)
+delete this clone
+```
+
+---
+
+## Extra Features to Add
+
+| Feature | How |
+|---|---|
+| **Wave system** | Increase zombie speed/spawn rate over time |
+| **Different weapons** | Change bullet speed or spread |
+| **Power-ups** | New sprites that restore health |
+| **Sound effects** | Add sounds to shooting and hits |
+| **Game over screen** | New backdrop when health reaches 0 |
+
+---
+
+## Tips
+- Use **clones** for zombies and bullets
+- Keep variables for **health, score, and wave number**
+- Test frequently as you build
+- Start simple and add features one at a time
+
+Would you like more detail on any specific part?

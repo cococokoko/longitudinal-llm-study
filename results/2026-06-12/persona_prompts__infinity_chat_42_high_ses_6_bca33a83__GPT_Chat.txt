@@ -1,0 +1,18 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_42_high_ses_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=44 out=73
+Latency:   1363 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a title with the prefix 'best', as a one-liner, using only strings, less than 100 characters.
+
+── Response ────────────────────────────────────────────────────────
+best consulting strategies for sustainable business growth

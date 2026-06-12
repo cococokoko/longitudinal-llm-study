@@ -1,0 +1,51 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_41_low_ses_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=31 out=385
+Latency:   4025 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I improve my credit score quickly?
+
+── Response ────────────────────────────────────────────────────────
+If you're looking to improve your credit score as quickly as possible, focus on the factors that can change from month to month:
+
+- Lower your credit utilization:
+  - If you have credit cards, try to keep balances below 30% of each card's limit, and ideally below 10%.
+  - Paying down existing balances is often one of the fastest ways to see improvement.
+
+- Make every payment on time:
+  - Payment history is a major factor in most credit scoring models.
+  - Set up automatic payments or reminders to avoid missing due dates.
+
+- Check your credit report for errors:
+  - Review your credit reports and dispute any inaccurate late payments, accounts, or balances.
+  - Correcting errors can sometimes result in a meaningful score increase.
+
+- Avoid applying for multiple new credit accounts:
+  - Each application may result in a hard inquiry, which can temporarily lower your score.
+  - Only apply for new credit if you genuinely need it.
+
+- Ask for a credit limit increase:
+  - If approved without a hard credit check, a higher limit can reduce your utilization ratio.
+  - Continue spending at the same level rather than increasing spending.
+
+- Keep older accounts open:
+  - The length of your credit history can affect your score.
+  - Avoid closing long-standing accounts unless there's a strong reason.
+
+Since you've recently started a new job and are still on probation, it's worth noting that employment status generally doesn't directly affect your credit score. However, lenders may consider your employment history and income when evaluating applications for loans or credit.
+
+If you tell me:
+- Which country you're in,
+- Your current credit score (roughly),
+- Whether you have credit cards, loans, or missed payments,
+
+I can suggest the fastest strategies most relevant to your situation.

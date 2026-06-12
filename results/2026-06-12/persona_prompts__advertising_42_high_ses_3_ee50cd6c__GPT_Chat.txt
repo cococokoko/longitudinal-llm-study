@@ -1,0 +1,88 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_42_high_ses_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=31 out=547
+Latency:   4326 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on what you're trying to track and how much detail you want. Here are some of the strongest options:
+
+For nutrition tracking:
+- MacroFactor
+  - Excellent for calorie and macro tracking.
+  - Uses your weight trends and food intake to estimate your energy expenditure.
+  - Strong analytics and minimal focus on calorie guilt.
+  - Paid subscription.
+
+- Cronometer
+  - One of the most accurate food databases.
+  - Tracks vitamins, minerals, and other micronutrients in detail.
+  - Popular with athletes and people following specific diets.
+  - Free version available; premium adds more features.
+
+- MyFitnessPal
+  - Massive food database and barcode scanner.
+  - Easy to use and widely supported by other fitness apps.
+  - Some features require a premium subscription.
+
+- Lose It!
+  - User-friendly calorie and weight-loss tracking.
+  - Good balance of simplicity and features.
+
+For fitness and workout tracking:
+- Strong
+  - Great for strength training.
+  - Tracks sets, reps, weight, and progress over time.
+  - Clean interface and easy workout logging.
+
+- Hevy
+  - Popular alternative to Strong.
+  - Includes social features and workout sharing.
+  - Excellent for gym-based resistance training.
+
+- Fitbod
+  - Generates workout recommendations based on your equipment, goals, and recovery.
+  - Useful if you want guidance rather than just logging.
+
+- Garmin Connect
+  - Excellent if you use a Garmin watch.
+  - Tracks workouts, heart rate, sleep, training load, and recovery metrics.
+
+For running and endurance sports:
+- Strava
+  - Industry standard for runners and cyclists.
+  - Strong social and route-planning features.
+  - Integrates with many devices and services.
+
+- TrainingPeaks
+  - Advanced planning and analysis.
+  - Widely used by serious endurance athletes and coaches.
+
+For all-around health tracking:
+- Apple Health (iPhone)
+  - Aggregates data from many apps and devices.
+  - Good central hub for health metrics.
+
+- Google Health Connect (Android)
+  - Allows health and fitness apps to share data securely.
+  - Useful as a central integration layer.
+
+Best choices by goal:
+- Weight loss: MacroFactor or Lose It!
+- Building muscle: MacroFactor + Hevy (or Strong)
+- Detailed nutrition analysis: Cronometer
+- Running/cycling: Strava
+- General health tracking: Apple Health or Google Health Connect alongside a fitness app
+- Garmin watch users: Garmin Connect
+
+If you tell me your primary goal (weight loss, muscle gain, marathon training, general health, etc.) and whether you use iPhone or Android, I can narrow it down further.

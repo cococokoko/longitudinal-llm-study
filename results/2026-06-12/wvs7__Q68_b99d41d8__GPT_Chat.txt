@@ -1,0 +1,31 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q68
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=218 out=141
+Latency:   1996 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: I am going to name a number of organizations. For each one, could you tell me how much confidence you have in them: is it a great deal of confidence, quite a lot of confidence, not very much confidence or none at all?
+
+Labor unions
+
+Options:
+A. A great deal
+B. Quite a lot
+C. Not very much
+D. None at all
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 1.0, "F": 0.0, "G": 0.0, "H": 0.0}

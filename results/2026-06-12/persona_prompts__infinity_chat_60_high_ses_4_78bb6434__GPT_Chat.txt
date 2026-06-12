@@ -1,0 +1,37 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_60_high_ses_4
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=31 out=226
+Latency:   2529 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a physician-scientist leading a research group.
+
+── Prompt ──────────────────────────────────────────────────────────
+Explain computational irreducibility like I'm 5.
+
+── Response ────────────────────────────────────────────────────────
+Imagine you have a very long line of dominoes set up in a special pattern.
+
+You ask, "If I knock over the first domino, what will the millionth domino be doing?"
+
+Sometimes that's easy. For example, if every domino just knocks over the next one, you can quickly figure it out.
+
+But some domino setups are so complicated that there isn't a shortcut. The only way to know what the millionth domino is doing is to start at the beginning and watch each domino fall, one after another, until you get there.
+
+That's the idea of computational irreducibility:
+
+- Some systems follow simple rules.
+- But even if the rules are simple, the results can become very complicated.
+- For certain systems, there is no faster way to know what happens later.
+- You have to let the process run step by step.
+
+A simple way to say it is:
+
+"Some things can only be understood by watching them happen."
+
+It's like asking what a story's last page says. For some stories, you can't skip ahead by using a clever trick—you have to read the story as it unfolds.

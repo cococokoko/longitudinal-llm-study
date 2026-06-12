@@ -1,0 +1,18 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_70_high_ses_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=37 out=48
+Latency:   1133 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Output a hard question to humanity (super concise and short), independent of theme.
+
+── Response ────────────────────────────────────────────────────────
+What should humanity maximize?

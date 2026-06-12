@@ -1,0 +1,98 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_30_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=17 out=505
+Latency:   4776 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+If you're starting from zero, the best approach is to focus on building things early rather than spending months only studying theory.
+
+A simple roadmap:
+
+1. Choose one beginner-friendly language
+- Python is often the easiest place to start.
+- It's used in automation, data analysis, AI, web development, and more.
+- Avoid trying to learn multiple languages at once.
+
+2. Learn the fundamentals
+Focus on:
+- Variables
+- Data types (numbers, text, lists)
+- Conditions (if/else)
+- Loops
+- Functions
+- Basic input/output
+- Simple debugging
+
+Good free resources:
+- Harvard's CS50 (excellent introduction to computer science)
+- Python's official tutorial
+- freeCodeCamp
+- Codecademy (free sections)
+
+3. Practice every day
+Even 20–30 minutes daily is better than a long session once a week.
+
+Try small exercises:
+- Number guessing game
+- Calculator
+- To-do list program
+- Unit converter
+- Password generator
+
+4. Learn to use tools developers use
+As you get comfortable:
+- Install VS Code
+- Learn basic command-line usage
+- Learn Git and GitHub for version control
+
+5. Build projects
+Projects teach far more than tutorials.
+
+Beginner project ideas:
+- Expense tracker
+- Weather app
+- Habit tracker
+- Flashcard app
+- Personal website
+
+6. Learn how to find answers
+A major coding skill is researching:
+- Read documentation
+- Search error messages
+- Ask clear questions in communities
+- Use AI tools to explain concepts, but verify what you learn
+
+7. Pick a direction after the basics
+Different goals require different skills:
+
+- Web development:
+  - HTML, CSS, JavaScript
+  - Then React or another framework
+
+- Data science / AI:
+  - Python
+  - NumPy, pandas, matplotlib
+  - Machine learning basics
+
+- Mobile apps:
+  - Swift (iPhone)
+  - Kotlin (Android)
+  - Or Flutter for both
+
+- Automation:
+  - Python scripting
+
+A beginner-friendly 3-month plan:
+- Month 1: Python basics and small exercises
+- Month 2: Functions, files, simple projects
+- Month 3: Git/GitHub and one larger project you can showcase
+
+If you tell me your age, experience level, and what you want to build (websites, apps, games, AI, automation, etc.), I can suggest a more personalized learning path.

@@ -1,0 +1,236 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_low_ses_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=31 out=1024
+Latency:   6199 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+To build an online forum using a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP), you can start with a simple architecture and then expand features over time.
+
+Core components
+
+- Frontend: HTML, CSS, JavaScript
+- Backend: PHP
+- Database: MySQL or MariaDB
+- Web server: Apache
+
+Basic forum features
+
+- User registration and login
+- Create categories/boards
+- Create topics/threads
+- Post replies
+- User profiles
+- Search
+- Moderation tools
+
+Example database schema
+
+Users:
+
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+Categories:
+
+```sql
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+```
+
+Topics:
+
+```sql
+CREATE TABLE topics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT NOT NULL,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+Posts:
+
+```sql
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    topic_id INT NOT NULL,
+    user_id INT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (topic_id) REFERENCES topics(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+Database connection (PDO)
+
+```php
+<?php
+$pdo = new PDO(
+    "mysql:host=localhost;dbname=forum;charset=utf8mb4",
+    "dbuser",
+    "dbpassword",
+    [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]
+);
+?>
+```
+
+User registration
+
+```php
+<?php
+$passwordHash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+$stmt = $pdo->prepare(
+    "INSERT INTO users (username, email, password_hash)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['username'],
+    $_POST['email'],
+    $passwordHash
+]);
+?>
+```
+
+User login
+
+```php
+<?php
+$stmt = $pdo->prepare(
+    "SELECT id, password_hash
+     FROM users
+     WHERE username = ?"
+);
+
+$stmt->execute([$_POST['username']]);
+
+$user = $stmt->fetch();
+
+if ($user && password_verify($_POST['password'], $user['password_hash'])) {
+    session_start();
+    $_SESSION['user_id'] = $user['id'];
+}
+?>
+```
+
+Create a topic
+
+```php
+<?php
+session_start();
+
+$stmt = $pdo->prepare(
+    "INSERT INTO topics (category_id, user_id, title)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['category_id'],
+    $_SESSION['user_id'],
+    $_POST['title']
+]);
+?>
+```
+
+Create a post
+
+```php
+<?php
+session_start();
+
+$stmt = $pdo->prepare(
+    "INSERT INTO posts (topic_id, user_id, content)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['topic_id'],
+    $_SESSION['user_id'],
+    $_POST['content']
+]);
+?>
+```
+
+Display topics
+
+```php
+<?php
+$stmt = $pdo->query(
+    "SELECT t.id, t.title, u.username
+     FROM topics t
+     JOIN users u ON t.user_id = u.id
+     ORDER BY t.created_at DESC"
+);
+
+while ($row = $stmt->fetch()) {
+    echo "<a href='topic.php?id={$row['id']}'>";
+    echo htmlspecialchars($row['title']);
+    echo "</a> by ";
+    echo htmlspecialchars($row['username']);
+    echo "<br>";
+}
+?>
+```
+
+Important security practices
+
+- Use prepared statements everywhere.
+- Store passwords with `password_hash()`.
+- Verify passwords with `password_verify()`.
+- Escape output using `htmlspecialchars()`.
+- Protect forms with CSRF tokens.
+- Validate and sanitize all user input.
+- Use HTTPS.
+- Implement rate limiting for login and posting.
+
+Suggested project structure
+
+```text
+forum/
+├── config/
+│   └── database.php
+├── public/
+│   ├── index.php
+│   ├── login.php
+│   ├── register.php
+│   ├── topic.php
+│   └── category.php
+├── src/
+│   ├── User.php
+│   ├── Topic.php
+│   └── Post.php
+├── templates/
+│   ├── header.php
+│   └── footer.php
+└── uploads/
+```
+
+For a production-quality forum,

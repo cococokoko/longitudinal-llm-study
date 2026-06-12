@@ -1,0 +1,71 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_30_high_ses_1
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=23 out=1010
+Latency:   7839 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+What's the best way to start learning coding from scratch?
+
+── Response ────────────────────────────────────────────────────────
+In my line of work as a neurosurgeon, we often tackle incredibly complex, high-stakes problems by breaking them down into microscopic, manageable steps. Learning to code from scratch requires the exact same approach. You don't start by performing a complex resection; you start by learning how to hold the scalpel. 
+
+Here is a highly structured, step-by-step guide to learning how to code from scratch, designed to maximize your efficiency and prevent cognitive overload.
+
+---
+
+### Step 1: Choose Your "Surgical Instrument" (Your First Language)
+Do not try to learn multiple languages at once. Focus on one. For a beginner, I highly recommend **Python**. 
+
+*   **Why Python?** It has a clean, highly readable syntax that reads almost like English. It allows you to learn the *logic* of programming without getting bogged down by overly complex syntax rules.
+*   **Alternative (Web Development):** If your goal is specifically to build websites, start with **HTML, CSS, and JavaScript**. 
+
+### Step 2: Master the Anatomy (The Fundamentals)
+Before you can build anything, you must understand the basic building blocks of code. Spend your first few weeks mastering these concepts:
+*   **Variables:** How the computer stores data (like a patient's chart).
+*   **Data Types:** Integers, strings (text), and booleans (true/false).
+*   **Conditionals (If/Else statements):** Decision-making logic (e.g., *If* blood pressure is low, *then* administer fluids, *else* monitor).
+*   **Loops (For/While):** How to repeat actions efficiently.
+*   **Functions:** Reusable blocks of code designed to do a specific job.
+
+### Step 3: Use High-Yield, Interactive Resources
+Do not just read books or watch passive videos. Coding is a motor skill; you must build muscle memory. Use platforms that force you to write code immediately:
+*   **For Interactive Learning:** 
+    *   **freeCodeCamp.org** (100% free, highly structured, and project-based).
+    *   **Codecademy** (Great interactive interface for absolute beginners).
+*   **For Video Learners:** 
+    *   **Harvard’s CS50x (Introduction to Computer Science):** Available free on edX. This is the gold standard for understanding *how* computers actually think.
+*   **For Practice:** 
+    *   **Replit:** An online coding environment where you can practice without having to set up complex software on your computer yet.
+
+### Step 4: Shift from "Studying" to "Operating" (Build Projects)
+In medicine, we have a saying: *"See one, do one, teach one."* In coding, you must transition from watching tutorials to building your own projects as soon as possible. This is where the real learning happens.
+
+Start with tiny, text-based projects:
+1.  **A Calculator:** Teaches you variables and basic math operations.
+2.  **A "Guess the Number" Game:** Teaches you loops and conditionals.
+3.  **A To-Do List App:** Teaches you how to store, add, and delete data.
+
+*Rule of thumb:* If you get stuck, do not copy-paste the answer. Diagnose the error, read the documentation, and write the solution yourself.
+
+### Step 5: Learn to Debug (The Art of Troubleshooting)
+In surgery, when something unexpected happens, we don't panic; we systematically troubleshoot. In coding, your program *will* break. 
+*   **Embrace errors:** Error messages are not failures; they are diagnostic tools telling you exactly where the "pathology" is.
+*   **Learn to Google:** 99% of the problems you face have been solved by someone else. Learn to search for your error messages on **Stack Overflow**.
+
+### Step 6: Establish a Daily Routine
+Consistency beats intensity. You will learn far more by coding for **30 minutes every single day** than by binge-coding for 5 hours only on Sundays. Your brain needs sleep to consolidate these new neural pathways.
+
+### Summary Checklist to Start Today:
+1.  Go to **freeCodeCamp.org** or sign up for **Harvard's CS50** on edX.
+2.  Commit to **30 minutes a day** for the next 30 days.
+3.  Write your very first line of code today (even if it's just printing `"Hello, World!"` to the screen). 
+
+Approach this with patience. Just like mastering surgery, mastering code takes time, but the cognitive reward of building something from nothing is immensely satisfying. Good luck.

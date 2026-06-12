@@ -1,0 +1,31 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q113
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=223 out=67
+Latency:   1612 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Among the following groups of people, how many do you believe are involved in corruption? Tell me for each group if you believe it is none of them, few of them, most of them or all of them.
+
+State authorities
+
+Options:
+A. None of them
+B. Few of them
+C. Most of them
+D. All of them
+E. Don't know
+F. No answer/refused
+G. Not applicable (filter)
+H. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0, "H": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.03, "B": 0.25, "C": 0.45, "D": 0.12, "E": 0.10, "F": 0.03, "G": 0.01, "H": 0.01}

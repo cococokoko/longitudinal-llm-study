@@ -1,0 +1,67 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=28 out=507
+Latency:   4862 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+If your home Wi‑Fi is slow, unreliable, or has dead zones, these steps usually provide the biggest improvements:
+
+- Place the router centrally
+  - Put it in an open area, not inside a cabinet.
+  - Elevate it on a shelf or table.
+  - Keep it away from large metal objects, thick walls, microwaves, and cordless phone bases.
+
+- Use the right Wi‑Fi band
+  - 5 GHz (or 6 GHz if available) offers higher speeds but shorter range.
+  - 2.4 GHz provides better range but is often more congested.
+  - If your router supports band steering, enable it.
+
+- Update router firmware
+  - Manufacturers regularly release updates that improve performance, stability, and security.
+
+- Change Wi‑Fi channels
+  - In crowded neighborhoods, neighboring networks can cause interference.
+  - Use a Wi‑Fi analyzer app to identify less congested channels, especially on 2.4 GHz.
+
+- Upgrade security settings
+  - Use WPA3 if supported (or WPA2‑AES if not).
+  - Avoid older standards like WEP or WPA.
+
+- Reduce network congestion
+  - Disconnect devices you no longer use.
+  - Schedule large downloads during off-hours if possible.
+  - Enable Quality of Service (QoS) features if your router supports them.
+
+- Upgrade old equipment
+  - If your router is more than 5–7 years old, a newer Wi‑Fi 6 or Wi‑Fi 6E router can provide significant improvements.
+  - Make sure your devices also support newer Wi‑Fi standards.
+
+- Consider a mesh Wi‑Fi system
+  - For large homes or homes with multiple floors, mesh systems often provide better coverage than a single router.
+
+- Use wired connections where possible
+  - Connect stationary devices such as desktop PCs, gaming consoles, or streaming boxes via Ethernet for maximum performance.
+
+- Check your internet plan
+  - Sometimes the bottleneck is the internet connection itself rather than the Wi‑Fi network.
+  - Run a speed test near the router and compare it to the speeds you're paying for.
+
+If you tell me:
+- Home size (square footage or square meters)
+- Number of floors
+- Router model
+- Internet speed plan
+- Where you're experiencing problems (slow speeds, dead zones, disconnects, etc.)
+
+I can suggest more specific improvements.

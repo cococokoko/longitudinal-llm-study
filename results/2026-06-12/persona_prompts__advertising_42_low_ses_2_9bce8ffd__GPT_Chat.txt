@@ -1,0 +1,79 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_42_low_ses_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=32 out=493
+Latency:   5105 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a single parent who often balances childcare with work.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best apps for tracking fitness and nutrition?
+
+── Response ────────────────────────────────────────────────────────
+The best app depends on whether you want workout tracking, nutrition tracking, or an all-in-one solution. If you're balancing work and childcare, apps with quick logging and good automation can save time.
+
+Fitness + Nutrition (all-in-one)
+- MyFitnessPal
+  - Large food database
+  - Calorie and macro tracking
+  - Integrates with many fitness devices and apps
+  - Good if nutrition is your main focus
+
+- Cronometer
+  - Tracks calories, macros, and micronutrients in detail
+  - Accurate food database
+  - Useful if you care about nutrient quality, not just calories
+
+- Fitbit
+  - Activity, sleep, heart rate, and food logging
+  - Works best with a Fitbit device but can be used without one
+  - Strong health overview in a single app
+
+Workout Tracking
+- Strong
+  - Excellent for strength training
+  - Easy workout logging and progress tracking
+  - Clean interface with minimal setup
+
+- Hevy
+  - Popular strength-training tracker
+  - Visual progress charts
+  - Includes a social component if you enjoy sharing workouts
+
+- Nike Training Club
+  - Free guided workouts
+  - Wide range of workout lengths, including short sessions
+  - Helpful if you need flexible workouts around a busy schedule
+
+Running and Cardio
+- Strava
+  - Tracks running, cycling, and other activities
+  - Strong community features
+  - Excellent performance tracking
+
+- Runna
+  - Personalized running plans
+  - Good for training toward specific race goals
+
+Health and Habit Tracking
+- Apple Health (iPhone)
+  - Central hub for health and fitness data
+  - Integrates with many apps
+
+- Google Fit (Android)
+  - Simple activity tracking
+  - Works with numerous fitness apps and wearables
+
+If your goal is:
+- Weight loss: MyFitnessPal or Cronometer
+- Strength training: Strong or Hevy
+- Running: Strava or Runna
+- Overall health tracking: Fitbit, Apple Health, or Google Fit
+- Short, flexible workouts: Nike Training Club
+
+If you tell me your device (iPhone or Android), whether you use a smartwatch, and your main goal (weight loss, muscle gain, general health, etc.), I can narrow it down to one or two recommendations.

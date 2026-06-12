@@ -1,0 +1,57 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_22_low_ses_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=32 out=454
+Latency:   4064 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The best remote collaboration tools depend on how your team works, but a strong setup usually covers communication, meetings, project management, documentation, and file sharing.
+
+Some widely used options:
+
+- Team chat
+  - Slack: Strong integrations, channels, and search.
+  - Microsoft Teams: Good if your company uses Microsoft 365.
+  - Google Chat: Works well in Google Workspace environments.
+
+- Video meetings
+  - Zoom: Reliable and feature-rich.
+  - Google Meet: Simple and integrated with Google Workspace.
+  - Microsoft Teams: Combines meetings and chat in one platform.
+
+- Project and task management
+  - Asana: Great for tracking projects and responsibilities.
+  - Jira: Popular for software development teams.
+  - Trello: Simple visual boards for task management.
+  - Monday.com: Flexible workflows and reporting.
+
+- Documentation and knowledge sharing
+  - Notion: Combines notes, wikis, databases, and project tracking.
+  - Confluence: Common in larger organizations and technical teams.
+  - Google Docs: Easy real-time collaboration.
+
+- File storage and sharing
+  - Google Drive: Excellent for collaborative editing.
+  - OneDrive/SharePoint: Strong Microsoft ecosystem integration.
+  - Dropbox: Simple file sharing and syncing.
+
+- Whiteboarding and brainstorming
+  - Miro: Excellent for workshops, planning, and visual collaboration.
+  - FigJam: Popular with design and product teams.
+
+Since you've recently started a new job and are still on probation, tools that help you stay visible and organized can be especially useful. If your company allows personal productivity tools, consider:
+- Notion or OneNote for keeping onboarding notes.
+- Todoist or Microsoft To Do for tracking tasks and follow-ups.
+- A calendar tool with reminders to stay on top of meetings and deadlines.
+
+If you tell me your role (e.g., software engineering, marketing, sales, operations, etc.) and whether your company uses Google Workspace or Microsoft 365, I can recommend a more specific tool stack.

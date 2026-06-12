@@ -1,0 +1,62 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_22_high_ses_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=31 out=431
+Latency:   4072 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best tools for remote team collaboration?
+
+── Response ────────────────────────────────────────────────────────
+The best remote collaboration tools depend on your team's size, workflow, and communication style. A strong setup usually combines several types of tools:
+
+- Communication
+  - Slack: Popular for team chat, channels, integrations, and quick collaboration.
+  - Microsoft Teams: Strong choice for organizations using Microsoft 365.
+  - Google Chat: Works well within the Google Workspace ecosystem.
+
+- Video Meetings
+  - Zoom: Widely used, reliable, and feature-rich.
+  - Microsoft Teams: Combines meetings, chat, and file collaboration.
+  - Google Meet: Simple and effective for Google Workspace users.
+
+- Project Management
+  - Asana: Excellent for task tracking and project planning.
+  - Monday.com: Flexible workflows and visual project management.
+  - Trello: Easy-to-use Kanban boards for smaller teams.
+  - ClickUp: Comprehensive platform combining tasks, docs, goals, and more.
+
+- Document Collaboration
+  - Google Workspace (Docs, Sheets, Slides): Real-time collaboration and sharing.
+  - Microsoft 365 (Word, Excel, PowerPoint): Strong editing and enterprise features.
+  - Notion: Combines documentation, knowledge management, and project tracking.
+
+- File Storage and Sharing
+  - Google Drive
+  - Microsoft OneDrive
+  - Dropbox
+
+- Whiteboarding and Brainstorming
+  - Miro: Highly regarded for virtual workshops and brainstorming.
+  - Mural: Strong collaboration and facilitation features.
+  - FigJam: Popular among design and product teams.
+
+- Knowledge Management
+  - Notion
+  - Confluence
+  - Guru
+
+Recommended combinations:
+- Small startup: Slack + Notion + Google Workspace + Zoom
+- Mid-sized business: Microsoft Teams + Microsoft 365 + Asana
+- Product/design team: Slack + ClickUp + Figma/FigJam + Google Workspace
+- Enterprise organization: Microsoft Teams + Microsoft 365 + Confluence + Jira
+
+If you tell me your team size, industry, and budget, I can recommend a more tailored tool stack.

@@ -1,0 +1,30 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q215
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=217 out=59
+Latency:   1599 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: What about these forms of political action and social activism that people can take? Please tell me for each of them if you have done any of these things, whether you might do it or would never under any circumstances do it:
+
+Encouraging others to take action about political issues
+
+Options:
+A. Have done
+B. Might do
+C. Would never do
+D. Don't know
+E. No answer/refused
+F. Not applicable (filter)
+G. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0, "G": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+{"A": 0.35, "B": 0.45, "C": 0.08, "D": 0.07, "E": 0.03, "F": 0.01, "G": 0.01}

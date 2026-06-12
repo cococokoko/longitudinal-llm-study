@@ -1,0 +1,165 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=29 out=1024
+Latency:   12787 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+# Building an Online Forum with LAMP Stack
+
+Here's a structured guide to building a forum using **Linux, Apache, MySQL, and PHP**.
+
+---
+
+## 1. Environment Setup
+
+```bash
+# Install LAMP on Ubuntu/Debian
+sudo apt update
+sudo apt install apache2 mysql-server php php-mysql libapache2-mod-php
+sudo systemctl start apache2
+sudo systemctl start mysql
+```
+
+---
+
+## 2. Database Design
+
+```sql
+-- Create database
+CREATE DATABASE forum_db;
+USE forum_db;
+
+-- Users table
+CREATE TABLE users (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    username    VARCHAR(50)  UNIQUE NOT NULL,
+    email       VARCHAR(100) UNIQUE NOT NULL,
+    password    VARCHAR(255) NOT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Categories table
+CREATE TABLE categories (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    name        VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+-- Threads table
+CREATE TABLE threads (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT NOT NULL,
+    user_id     INT NOT NULL,
+    title       VARCHAR(255) NOT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id),
+    FOREIGN KEY (user_id)     REFERENCES users(id)
+);
+
+-- Posts table
+CREATE TABLE posts (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    thread_id   INT NOT NULL,
+    user_id     INT NOT NULL,
+    body        TEXT NOT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (thread_id) REFERENCES threads(id),
+    FOREIGN KEY (user_id)   REFERENCES users(id)
+);
+```
+
+---
+
+## 3. Project File Structure
+
+```
+/var/www/html/forum/
+├── config/
+│   └── db.php
+├── includes/
+│   ├── header.php
+│   └── footer.php
+├── auth/
+│   ├── register.php
+│   └── login.php
+├── index.php          # Category listing
+├── threads.php        # Thread listing
+├── post.php           # Individual thread/posts
+└── new_thread.php     # Create thread form
+```
+
+---
+
+## 4. Database Connection
+
+```php
+<?php
+// config/db.php
+define('DB_HOST', 'localhost');
+define('DB_USER', 'forum_user');
+define('DB_PASS', 'your_password');
+define('DB_NAME', 'forum_db');
+
+function getConnection() {
+    $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    return $conn;
+}
+?>
+```
+
+---
+
+## 5. User Registration & Login
+
+```php
+<?php
+// auth/register.php
+require '../config/db.php';
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username']);
+    $email    = trim($_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+    $conn = getConnection();
+    $stmt = $conn->prepare(
+        "INSERT INTO users (username, email, password) VALUES (?, ?, ?)"
+    );
+    $stmt->bind_param("sss", $username, $email, $password);
+
+    if ($stmt->execute()) {
+        header("Location: login.php");
+        exit;
+    } else {
+        $error = "Registration failed. Username or email may already exist.";
+    }
+    $stmt->close();
+    $conn->close();
+}
+?>
+
+<!-- Registration Form -->
+<form method="POST">
+    <input type="text"     name="username" placeholder="Username"  required>
+    <input type="email"    name="email"    placeholder="Email"     required>
+    <input type="password" name="password" placeholder="Password"  required>
+    <button type="submit">Register</button>
+</form>
+```
+
+```php

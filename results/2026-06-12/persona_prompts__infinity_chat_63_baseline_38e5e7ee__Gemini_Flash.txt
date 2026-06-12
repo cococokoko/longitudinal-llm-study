@@ -1,0 +1,99 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=1250
+Latency:   6352 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+To understand a partial derivative, it helps to think of a scenario where an outcome depends on **more than one variable**. 
+
+A **partial derivative** measures how the outcome changes when you vary *only one* of those variables, while keeping all the other variables completely constant.
+
+Here is a simple, real-world numerical example.
+
+---
+
+### The Scenario: Pricing a Pizza
+Let’s say the cost of making a pizza ($C$, in dollars) depends on two variables:
+1. $x$ = the **diameter** of the pizza (in inches)
+2. $y$ = the number of **toppings**
+
+Based on ingredients and labor, the pizzeria uses this mathematical formula (function) to calculate the cost:
+
+$$C(x, y) = 0.5x^2 + 2y$$
+
+*   The $0.5x^2$ part means the cost of the dough and cheese grows quadratically as the pizza gets wider.
+*   The $2y$ part means each topping costs exactly $2.00.
+
+---
+
+### The Baseline Pizza
+Let’s start with a baseline pizza: a **10-inch pizza** ($x = 10$) with **3 toppings** ($y = 3$).
+
+Using our formula, the cost of this baseline pizza is:
+$$C(10, 3) = 0.5(10)^2 + 2(3)$$
+$$C(10, 3) = 0.5(100) + 6 = \$56$$
+
+---
+
+### 1. Partial Derivative with respect to Toppings ($\frac{\partial C}{\partial y}$)
+
+Now, we want to know: **How does the cost change if we add more toppings, but keep the size of the pizza exactly the same (10 inches)?**
+
+In calculus, this is the partial derivative of Cost ($C$) with respect to Toppings ($y$), written as:
+$$\frac{\partial C}{\partial y}$$
+
+**The Calculus Way:**
+To find this, we treat $x$ as a constant number (like 10) and take the derivative with respect to $y$:
+$$\frac{\partial C}{\partial y} = \frac{\partial}{\partial y}(0.5x^2 + 2y) = 0 + 2 = 2$$
+
+**The Numerical Proof:**
+Let's increase the toppings from $3$ to $4$, keeping the size at $10$ inches:
+*   $C(10, 4) = 0.5(10)^2 + 2(4) = 50 + 8 = \$58$
+
+The cost went from $\$56$ to $\$58$. 
+*   **Change in cost:** $\$58 - \$56 = \$2$ per topping.
+*   This matches our partial derivative of **$2$**.
+
+---
+
+### 2. Partial Derivative with respect to Size ($\frac{\partial C}{\partial x}$)
+
+Now, we want to know: **How does the cost change if we make the pizza slightly larger, but keep the number of toppings exactly the same (3 toppings)?**
+
+This is the partial derivative of Cost ($C$) with respect to Size ($x$), written as:
+$$\frac{\partial C}{\partial x}$$
+
+**The Calculus Way:**
+To find this, we treat $y$ as a constant (like 3) and take the derivative with respect to $x$:
+$$\frac{\partial C}{\partial x} = \frac{\partial}{\partial x}(0.5x^2 + 2y) = 2(0.5)x + 0 = x$$
+
+Since our baseline pizza has a diameter of $x = 10$, the partial derivative at this specific size is:
+$$\frac{\partial C}{\partial x} = 10$$
+*(This means at a 10-inch size, the cost is increasing at a rate of **$10 per inch**).*
+
+**The Numerical Proof:**
+Let's increase the size slightly from $10$ inches to $10.1$ inches, keeping the toppings at $3$:
+*   $C(10.1, 3) = 0.5(10.1)^2 + 2(3)$
+*   $C(10.1, 3) = 0.5(102.01) + 6$
+*   $C(10.1, 3) = 51.005 + 6 = \$57.005$
+
+Let's look at the rate of change:
+*   **Change in cost:** $\$57.005 - \$56.00 = \$1.005$
+*   **Change in size:** $10.1 - 10 = 0.1$ inch
+*   **Rate of change:** $\frac{\text{Change in Cost}}{\text{Change in Size}} = \frac{1.005}{0.1} = \$10.05$ per inch.
+
+As the change in size gets closer and closer to zero (e.g., $10.001$ inches), this rate gets closer and closer to exactly **$10**, which is the exact value of our partial derivative.
+
+---
+
+### Summary
+*   $\frac{\partial C}{\partial y} = 2$: If you add toppings but keep the size constant, cost increases by **$2 per topping**.
+*   $\frac{\partial C}{\partial x} = 10$: If you increase the size but keep the toppings constant, cost increases at a rate of **$10 per inch** (at the 10-inch mark).

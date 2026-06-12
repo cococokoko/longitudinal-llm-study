@@ -1,0 +1,106 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_baseline
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=34 out=689
+Latency:   17051 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface with Touch Controls
+
+## What You'll Need
+- Microsoft Surface (any model)
+- Dolphin Emulator installed
+- Wii game ROMs (that you legally own)
+
+---
+
+## Step 1: Install Dolphin Emulator
+
+1. Go to **dolphin-emu.org**
+2. Click **Download** → choose the latest stable version
+3. Run the installer
+4. Launch Dolphin
+
+---
+
+## Step 2: Configure Touchpad Controls
+
+### Open Controller Settings
+1. In Dolphin, click **Controllers** at the top
+2. Under **Wii Remote 1**, select **Emulated Wii Remote**
+3. Click **Configure**
+
+### Map Touchpad Gestures
+In the button mapping window you can assign:
+
+| Wii Button | Suggested Touchpad Input |
+|------------|--------------------------|
+| A Button | Left Click |
+| B Button | Right Click |
+| D-Pad | Keyboard Arrow Keys |
+| Home | Keyboard H |
+| + / - | Keyboard + / - |
+
+---
+
+## Step 3: Enable On-Screen Keyboard
+
+### Windows On-Screen Keyboard
+1. Go to **Settings → Accessibility → Keyboard**
+2. Toggle **On-Screen Keyboard** ON
+3. Or press **Windows + Ctrl + O**
+
+### Keep It Accessible
+- Resize and dock it to the **bottom of the screen**
+- Use **touch to press keys** you mapped in Dolphin
+
+---
+
+## Step 4: Enable Touch Input in Dolphin
+
+1. Go to **Options → Graphics Settings**
+2. Make sure your display settings are correct for your Surface resolution
+3. Consider enabling **Fullscreen** for better touch accuracy
+
+---
+
+## Step 5: Motion Controls (Wiimote Tilt/Shake)
+
+Since you don't have a real Wiimote:
+1. In Controller Config, find **Shake** and **Tilt** options
+2. Map these to **keyboard keys** you can tap on the on-screen keyboard
+3. Common mappings:
+   - Shake A = **Z key**
+   - Tilt Forward = **T key**
+
+---
+
+## Tips for Better Experience
+
+- **Touch Keyboard App** (from Microsoft Store) may work better than the built-in OSK
+- Consider **AntiMicro** or **JoyToKey** to convert touch gestures to inputs
+- A **Bluetooth controller** (like Xbox controller) will give a much better experience
+- Use **tablet mode** in Windows for easier touch navigation
+- Lower game resolution if performance is slow
+
+---
+
+## Recommended Alternative
+
+For the best experience on Surface, pair a **Xbox Wireless Controller** via Bluetooth:
+1. Hold Xbox button to power on
+2. Hold pairing button on controller top
+3. Go to Windows Bluetooth settings and connect
+
+Dolphin will automatically detect it.
+
+---
+
+Would you like help with any specific step or game configuration?

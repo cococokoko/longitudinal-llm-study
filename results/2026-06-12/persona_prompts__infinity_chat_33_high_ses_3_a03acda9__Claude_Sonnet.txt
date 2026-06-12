@@ -1,0 +1,70 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_high_ses_3
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=45 out=390
+Latency:   9276 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+# Running Dolphin Emulator on Microsoft Surface
+
+Here's a guide to set up and use Dolphin with your Surface's touchpad and on-screen keyboard.
+
+---
+
+## Step 1: Download and Install Dolphin
+
+1. Go to **dolphin-emu.org**
+2. Click **Download** → choose the latest stable version
+3. Run the installer and follow the prompts
+
+---
+
+## Step 2: Enable the On-Screen Keyboard
+
+- **Swipe up from taskbar** or search **"On-Screen Keyboard"** in Start
+- Pin it to your taskbar for easy access
+- Alternatively use **Windows + Ctrl + O** to toggle it
+
+---
+
+## Step 3: Configure Touchpad Controls in Dolphin
+
+1. Open Dolphin
+2. Go to **Controllers** (top menu)
+3. Select **Emulated Wii Remote**
+4. Click **Configure**
+
+### Recommended Touchpad Mappings:
+| Wii Button | Surface Input |
+|------------|--------------|
+| A Button | Left Click |
+| B Button | Right Click |
+| D-Pad | Arrow Keys (OSK) |
+| Home | On-Screen Keyboard |
+
+---
+
+## Step 4: Enable Mouse as Wii Remote
+
+1. In Controller settings
+2. Set **Wii Remote 1** to **Emulated Wii Remote**
+3. Under **Point**, map to **Cursor** using mouse input
+
+---
+
+## Tips
+- **Two-finger scroll** can simulate motion controls
+- Consider a **Bluetooth controller** for better gameplay
+- Enable **tablet mode** for easier touchscreen use
+
+Would you like help with specific game configurations?

@@ -1,0 +1,57 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_26_high_ses_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=29 out=331
+Latency:   7565 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the best practices for data security in small businesses?
+
+── Response ────────────────────────────────────────────────────────
+# Data Security Best Practices for Small Businesses
+
+Great question. Small businesses are actually frequent targets precisely because security is often weaker. Here are the most impactful practices:
+
+## Foundation Essentials
+- **Strong password policies** - minimum 12 characters, unique passwords per account
+- **Multi-factor authentication (MFA)** on all critical systems
+- **Regular software updates** and patch management
+- **Encrypted storage** for sensitive data
+
+## Access Control
+- Apply **least privilege principles** - employees access only what they need
+- Remove access immediately when employees leave
+- Separate admin accounts from daily-use accounts
+
+## Data Management
+- **Regular backups** following the 3-2-1 rule (3 copies, 2 media types, 1 offsite)
+- Test backup restoration periodically
+- Classify data by sensitivity level
+- Have a clear data retention and deletion policy
+
+## Network Security
+- Separate guest WiFi from business networks
+- Use a business-grade firewall
+- Consider VPN for remote workers
+
+## Human Element (Often Overlooked)
+- **Employee training** on phishing recognition
+- Clear incident reporting procedures
+- Written security policies
+
+## Practical Starting Points
+- Conduct a simple risk assessment
+- Consider cyber liability insurance
+- Use reputable cloud providers rather than managing everything yourself
+
+## Worth Noting
+Security doesn't require huge budgets - consistency and basics done well matter more than expensive tools.
+
+What specific areas are most relevant to your situation?

@@ -1,0 +1,36 @@
+Wave:      2026-06-12
+Dataset:   wvs7
+Item ID:   Q260
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=141 out=67
+Latency:   1005 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Question: Respondent's sex:
+
+Options:
+A. Male
+B. Female
+C. Don't know
+D. No answer/refused
+E. Not applicable (filter)
+F. Missing; Not applicable for other reasons
+
+Estimate the probability you would assign to each answer option, reflecting your own view. Probabilities must sum to 1.0.
+Respond ONLY in JSON format — no explanation, no other text:
+{"A": 0.0, "B": 0.0, "C": 0.0, "D": 0.0, "E": 0.0, "F": 0.0}
+
+── Response ────────────────────────────────────────────────────────
+```json
+{
+  "A": 0.0,
+  "B": 0.0,
+  "C": 0.0,
+  "D": 0.0,
+  "E": 0.0,
+  "F": 1.0
+}
+```

@@ -1,0 +1,48 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_02_high_ses_1
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=28 out=375
+Latency:   4678 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a neurosurgeon at a major teaching hospital.
+
+── Prompt ──────────────────────────────────────────────────────────
+Best skin routine for dry skin.
+
+── Response ────────────────────────────────────────────────────────
+For dry skin, the goal is to gently cleanse, replenish moisture, and protect the skin barrier.
+
+Morning:
+- Cleanser: Use a gentle, fragrance-free hydrating cleanser (or rinse with water if cleansing makes your skin feel tight).
+- Moisturizer: Apply a rich moisturizer containing ingredients such as ceramides, glycerin, hyaluronic acid, squalane, or petrolatum.
+- Sunscreen: Use a broad-spectrum SPF 30 or higher every day. Many moisturizing sunscreens work well for dry skin.
+
+Evening:
+- Cleanser: Use the same gentle cleanser to remove dirt, sunscreen, and makeup.
+- Moisturizer: Apply a thicker moisturizer or cream while the skin is still slightly damp.
+- Optional: If your skin is very dry, apply a thin layer of an occlusive product (such as petrolatum-based ointment) over particularly dry areas.
+
+Helpful ingredients:
+- Ceramides: Help repair the skin barrier.
+- Glycerin: Draws water into the skin.
+- Hyaluronic acid: Helps retain moisture.
+- Urea (lower concentrations): Can improve hydration.
+- Squalane: Lightweight moisturizing oil.
+- Petrolatum: Excellent for preventing water loss.
+
+Things to avoid:
+- Harsh soaps and foaming cleansers that leave skin feeling tight.
+- Excessive exfoliation (scrubs, frequent acids, or retinoids without proper moisturizing).
+- Very hot showers or washing with hot water.
+- Fragranced products if your skin is sensitive.
+
+Example simple routine:
+- Morning: Hydrating cleanser → moisturizer → SPF 30+
+- Night: Hydrating cleanser → rich moisturizer
+
+If your dry skin is accompanied by significant redness, itching, cracking, or a rash, conditions such as eczema, dermatitis, or psoriasis may be contributing, and evaluation by a dermatologist could be helpful.

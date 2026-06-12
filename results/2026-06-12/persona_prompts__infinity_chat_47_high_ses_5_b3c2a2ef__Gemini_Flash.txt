@@ -1,0 +1,26 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_47_high_ses_5
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=22 out=160
+Latency:   1855 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me a trivia question about blue birds and its corresponding answer.
+
+── Response ────────────────────────────────────────────────────────
+Here is a trivia question about bluebirds, perfect for a quick brain-teaser or a team-building icebreaker:
+
+**Question:** 
+Unlike many other brightly colored birds, bluebirds do not actually have any blue pigment in their feathers. What scientific phenomenon causes them to appear blue to our eyes?
+
+**Answer:** 
+**Structural coloration (or light scattering / the Tyndall effect).** 
+
+*Executive Context:* Much like how we perceive the sky as blue, a bluebird's feathers contain microscopic structures that absorb longer wavelengths of light (like red and yellow) and scatter the shorter, blue wavelengths. If you were to crush a bluebird feather, the resulting powder would actually look brown or grey because the physical structure that scatters the light would be destroyed!

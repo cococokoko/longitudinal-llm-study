@@ -1,0 +1,32 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_69_low_ses_3
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=33 out=266
+Latency:   2442 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+What is the difference between analysis and design? Can one begin to design without analysis? Why? Be concise.
+
+── Response ────────────────────────────────────────────────────────
+Here is a concise breakdown of the differences, relationship, and dependency between analysis and design:
+
+### 1. The Difference
+*   **Analysis (The "What"):** Focuses on understanding the problem, gathering requirements, and defining *what* the system needs to do. It is about investigation and discovery.
+*   **Design (The "How"):** Focuses on the solution, architecture, and defining *how* the system will be built to meet those requirements. It is about planning and creation.
+
+### 2. Can you begin to design without analysis?
+**Technically yes, but practically no.** 
+
+While you *can* physically start coding or drawing blueprints immediately, you cannot create a *successful* design without some level of analysis. 
+
+### 3. Why?
+*   **Lack of Direction:** Without analysis, you do not know what problem you are trying to solve. You risk designing the wrong product perfectly.
+*   **Wasted Resources:** Designing without analysis leads to constant backtracking, scope creep, and costly redesigns when overlooked requirements inevitably surface later. 
+*   **Foundation:** Analysis provides the constraints, rules, and goals that dictate design choices. You cannot plan *how* to build something until you know *what* you are building.

@@ -1,0 +1,82 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_19
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=5 out=1073
+Latency:   7692 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Top 5 Cloud providers
+
+── Response ────────────────────────────────────────────────────────
+The global cloud computing market is dominated by a few massive technology companies, often referred to as "hyperscalers." 
+
+Based on market share, global infrastructure, and the breadth of services offered, here are the **top 5 cloud providers** in the world today:
+
+---
+
+### 1. Amazon Web Services (AWS)
+* **Market Share:** ~31% (The undisputed global leader)
+* **Best For:** Startups, enterprises, and developers looking for the most mature, feature-rich, and widely supported platform.
+
+AWS was the pioneer of modern cloud computing, launching in 2006. Because it had a massive head start, it has the largest global infrastructure and the most extensive catalog of services (over 200 fully featured services ranging from basic compute to advanced AI).
+
+* **Key Strengths:** 
+  * **Vast Ecosystem:** Almost every third-party software integrates seamlessly with AWS.
+  * **Massive Scale:** Unmatched global reach with data centers in almost every region.
+  * **Deep Functionality:** Offers highly specialized tools for niche industries (e.g., aerospace, robotics).
+
+### 2. Microsoft Azure
+* **Market Share:** ~25% (The fastest-growing enterprise competitor)
+* **Best For:** Established enterprises, hybrid cloud deployments, and organizations already heavily reliant on Microsoft software (Windows, Office 365, Active Directory).
+
+Azure is AWS’s closest competitor. Microsoft has successfully leveraged its massive footprint in the corporate world to transition traditional businesses to the cloud. It is highly regarded for its hybrid cloud capabilities, allowing companies to easily bridge their on-premise servers with the cloud.
+
+* **Key Strengths:**
+  * **Enterprise Integration:** Seamless integration with Windows Server, SQL Server, and Active Directory.
+  * **Hybrid Cloud:** Industry-leading hybrid solutions (like Azure Arc).
+  * **Cost Savings:** Significant discounts for companies that already own Microsoft software licenses.
+
+### 3. Google Cloud Platform (GCP)
+* **Market Share:** ~11%
+* **Best For:** Data analytics, machine learning, artificial intelligence, and containerized applications (Kubernetes).
+
+Google Cloud is known for its deep technical expertise. Since Google built its own infrastructure to handle billions of search queries and YouTube videos, GCP is exceptionally good at handling massive data loads and complex networking. Google also invented Kubernetes, making GCP the premier destination for container-based applications.
+
+* **Key Strengths:**
+  * **AI and Machine Learning:** Industry-leading AI tools (including Google Gemini integration and Vertex AI).
+  * **Data Analytics:** Tools like BigQuery offer incredibly fast, serverless data warehousing.
+  * **Developer-Friendly:** Known for having a clean, intuitive console and excellent documentation.
+
+### 4. Alibaba Cloud
+* **Market Share:** ~4% (Dominant in Asia-Pacific)
+* **Best For:** Businesses looking to expand into China and the wider Asia-Pacific (APAC) region.
+
+Alibaba Cloud is the largest cloud provider in China and the dominant player in Asia. It operates similarly to AWS but is tailored to comply with Chinese cybersecurity laws and regulations. If a Western company wants to establish a digital presence in China, Alibaba Cloud is usually the go-to provider.
+
+* **Key Strengths:**
+  * **APAC Dominance:** Unrivaled network of data centers inside mainland China and Southeast Asia.
+  * **E-commerce & Retail Tech:** Built on the infrastructure that powers Alibaba’s massive e-commerce empire, making it highly optimized for retail databases.
+
+### 5. Oracle Cloud Infrastructure (OCI)
+* **Market Share:** ~2% (But growing rapidly in the AI sector)
+* **Best For:** High-performance computing (HPC), large-scale databases, and cost-effective AI model training.
+
+While Oracle was late to the cloud market, it has made a massive comeback with its "Generation 2" cloud infrastructure. OCI was built from the ground up to handle heavy enterprise database workloads. Recently, Oracle has become a major player in the AI boom because it offers highly efficient, high-speed networking that is ideal for training Large Language Models (LLMs).
+
+* **Key Strengths:**
+  * **Database Performance:** The absolute best cloud environment for running Oracle Databases.
+  * **Aggressive Pricing:** Often significantly cheaper than AWS and Azure for bandwidth and compute.
+  * **AI Partnerships:** Strong partnerships with NVIDIA, making it a preferred choice for AI startups.
+
+---
+
+### Summary: Which one should you choose?
+* Choose **AWS** if you want the safest, most widely used platform with the most third-party support.
+* Choose **Azure** if your business is already a "Microsoft shop" and uses Windows/Office.
+* Choose **Google Cloud** if your focus is on cutting-edge AI, machine learning, and big data.
+* Choose **Alibaba Cloud** if you are doing business in China or Southeast Asia.
+* Choose **Oracle Cloud** if you run heavy Oracle databases or need cheap, high-performance computing for AI.

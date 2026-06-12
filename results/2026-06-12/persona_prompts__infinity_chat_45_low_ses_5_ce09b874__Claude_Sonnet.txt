@@ -1,0 +1,27 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_45_low_ses_5
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=34 out=116
+Latency:   2460 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+supports extended family members and manages many household responsibilities.
+
+── Prompt ──────────────────────────────────────────────────────────
+Create a sentence using a minimum of 2 R-colored vowels.
+
+── Response ────────────────────────────────────────────────────────
+Here is a sentence using R-colored vowels:
+
+"The farmer worked hard near the border of the forest."
+
+This sentence contains several R-colored vowels:
+- **farm**er (the "ar" in farm and the "er" in farmer)
+- **work**ed (the "or" sound)
+- **near** (the "ear" sound)
+- **bor**der (the "or" and "er" sounds)
+- fo**r**est (the "or" sound)

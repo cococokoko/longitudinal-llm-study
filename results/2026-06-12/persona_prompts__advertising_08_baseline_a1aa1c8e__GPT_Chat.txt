@@ -1,0 +1,31 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_08_baseline
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=12 out=162
+Latency:   2273 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Finding the perfect hiking trails.
+
+── Response ────────────────────────────────────────────────────────
+I'd be happy to help you find great hiking trails. A few details will help narrow it down:
+
+- Where are you looking to hike? (country, state/province, city, or national park)
+- How difficult do you want the hike to be? (easy, moderate, strenuous)
+- Preferred distance or hiking time?
+- Are you looking for specific features, such as:
+  - Mountain views
+  - Waterfalls
+  - Lakes or rivers
+  - Forests
+  - Wildlife viewing
+  - Wildflowers
+  - Coastal scenery
+- Will you be hiking solo, with children, or with a group?
+- What time of year are you planning to go?
+
+Once I have your location and preferences, I can suggest trails that fit what you're looking for.

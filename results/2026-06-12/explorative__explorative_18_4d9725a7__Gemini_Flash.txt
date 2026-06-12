@@ -1,0 +1,86 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_18
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=5 out=1048
+Latency:   6801 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Top 5 Cloud services
+
+── Response ────────────────────────────────────────────────────────
+Because the "top" cloud services can vary depending on whether you mean **infrastructure (IaaS)**, **software (SaaS)**, or **storage**, the industry standard is to look at the dominant **Cloud Infrastructure (IaaS/PaaS) Providers**. These are the platforms that power the modern internet, Netflix, government databases, and global enterprises.
+
+Here are the **Top 5 Cloud Services** in the world today, ranked by market share, capability, and industry adoption:
+
+---
+
+### 1. Amazon Web Services (AWS)
+* **Market Share:** ~31% (The undisputed market leader)
+* **Best For:** Startups, large enterprises, and developers looking for the most comprehensive suite of tools.
+
+AWS was the pioneer of cloud computing in 2006 and remains the largest. It offers over 200 fully-featured services from data centers globally. If a cloud service exists, AWS likely invented it or has the most mature version of it.
+
+* **Key Services:** Amazon EC2 (virtual servers), Amazon S3 (storage), Amazon RDS (databases).
+* **Pros:** Unmatched variety of services, massive global infrastructure, largest community and talent pool.
+* **Cons:** Complex pricing structure; can be overwhelming for beginners.
+
+---
+
+### 2. Microsoft Azure
+* **Market Share:** ~25% (The fastest-growing enterprise competitor)
+* **Best For:** Established enterprises, hybrid cloud setups, and businesses already using Microsoft software (Windows, Office 365, Active Directory).
+
+Azure is Microsoft’s cloud platform. It is the preferred choice for Fortune 500 companies because it integrates seamlessly with existing Microsoft products. Azure is also a leader in "hybrid cloud" (combining on-premise servers with the cloud).
+
+* **Key Services:** Azure Virtual Machines, Azure SQL Database, Azure Cosmos DB.
+* **Pros:** Seamless integration with Windows/Microsoft environments, excellent hybrid cloud capabilities, strong enterprise support.
+* **Cons:** Documentation can sometimes be confusing; portal interface can be slow.
+
+---
+
+### 3. Google Cloud Platform (GCP)
+* **Market Share:** ~11%
+* **Best For:** Data analytics, Machine Learning (ML), Artificial Intelligence (AI), and containerized applications (Kubernetes).
+
+Google Cloud is built on the same infrastructure that powers Google Search and YouTube. While smaller than AWS and Azure, GCP is highly respected for its industry-leading data analytics, AI/ML tools (like TensorFlow), and Kubernetes (which Google originally invented).
+
+* **Key Services:** Google Compute Engine, BigQuery (data warehouse), Google Kubernetes Engine (GKE).
+* **Pros:** Best-in-class data analytics and AI tools, developer-friendly, highly cost-effective billing (sustained-use discounts).
+* **Cons:** Fewer global data centers and services compared to AWS and Azure.
+
+---
+
+### 4. Alibaba Cloud
+* **Market Share:** ~4% (Dominant in Asia-Pacific)
+* **Best For:** Businesses operating in China and the APAC region, e-commerce, and retail.
+
+Alibaba Cloud is the largest cloud provider in China and Asia. It powers Alibaba’s massive e-commerce ecosystem. If your business needs to expand into China or comply with Chinese cybersecurity laws, Alibaba Cloud is the go-to choice.
+
+* **Key Services:** Elastic Compute Service (ECS), ApsaraDB (database), Object Storage Service (OSS).
+* **Pros:** Unrivaled infrastructure in China and Asia, excellent for e-commerce scaling.
+* **Cons:** Limited presence and adoption in Western markets (US/Europe).
+
+---
+
+### 5. Oracle Cloud Infrastructure (OCI)
+* **Market Share:** ~2-3% (But growing rapidly)
+* **Best For:** Heavy database workloads, enterprise ERP systems, and high-performance computing (HPC) at a lower cost.
+
+Oracle Cloud has made a massive comeback in recent years. It was built from the ground up as a "Gen 2" cloud, specifically designed to run heavy enterprise databases and AI workloads (they are a major partner of Nvidia for AI training). 
+
+* **Key Services:** Oracle Autonomous Database, OCI Compute, Exadata Cloud Service.
+* **Pros:** Highly competitive, predictable pricing; unmatched performance for Oracle databases; strong AI partnership with Nvidia.
+* **Cons:** Smaller ecosystem of third-party integrations compared to the "Big Three" (AWS, Azure, GCP).
+
+---
+
+### Summary: Which one should you choose?
+* Choose **AWS** if you want the most mature, widely-used platform with the most features.
+* Choose **Azure** if your business is already built on Microsoft software.
+* Choose **Google Cloud** if your focus is on Big Data, AI, or Kubernetes.
+* Choose **Alibaba** if you are targeting the Asian market.
+* Choose **Oracle** if you run heavy databases or need high-performance computing on a budget.

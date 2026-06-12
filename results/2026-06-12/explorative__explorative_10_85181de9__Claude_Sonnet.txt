@@ -1,0 +1,51 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_10
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=14 out=335
+Latency:   7134 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Which Cloud service should I use?
+
+── Response ────────────────────────────────────────────────────────
+# Choosing the Right Cloud Service
+
+To give you the best recommendation, I need a bit more context! But here's a helpful overview:
+
+---
+
+## Major Cloud Providers
+
+| Provider | Best For |
+|----------|----------|
+| **AWS** (Amazon) | Widest service range, enterprise scale |
+| **Google Cloud** | AI/ML, data analytics, Kubernetes |
+| **Microsoft Azure** | Microsoft/Windows ecosystems, hybrid cloud |
+| **Cloudflare** | Edge computing, CDN, security |
+| **DigitalOcean** | Simplicity, developer-friendly, budget |
+
+---
+
+## By Use Case
+
+- **Hosting a website** → Netlify, Vercel, AWS S3
+- **Running a server/app** → AWS EC2, DigitalOcean, Azure
+- **Databases** → AWS RDS, PlanetScale, Supabase
+- **AI/ML workloads** → Google Cloud, AWS SageMaker
+- **File storage** → AWS S3, Google Cloud Storage
+- **Serverless functions** → AWS Lambda, Cloudflare Workers
+
+---
+
+## To Help You Better, Tell Me:
+
+1. **What are you building?**
+2. **What's your budget?**
+3. **What's your technical experience level?**
+4. **Do you have existing tech preferences?**
+
+The "best" cloud service **depends entirely on your needs!** 😊

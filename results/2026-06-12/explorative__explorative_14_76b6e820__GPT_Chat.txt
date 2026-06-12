@@ -1,0 +1,59 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_14
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=15 out=469
+Latency:   3862 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How can I run applications without local infrastructure?
+
+── Response ────────────────────────────────────────────────────────
+You can run applications without managing your own local infrastructure by using cloud-based execution environments. The main options are:
+
+- Platform as a Service (PaaS)
+  - You deploy your code, and the provider manages servers, operating systems, scaling, and much of the infrastructure.
+  - Examples: Heroku, Render, Railway, Google App Engine, Azure App Service.
+  - Best for web applications and APIs.
+
+- Serverless Functions (Functions as a Service)
+  - You upload individual functions that run only when triggered by events or requests.
+  - Examples: AWS Lambda, Azure Functions, Google Cloud Functions, Cloudflare Workers.
+  - Best for event-driven workloads, APIs, automation, and lightweight services.
+
+- Container-Based Managed Services
+  - Package your application as a container, and the cloud provider runs and scales it.
+  - Examples: Google Cloud Run, AWS App Runner, Azure Container Apps.
+  - Best when you need more control than serverless but don't want to manage servers.
+
+- Managed Kubernetes
+  - Cloud providers operate much of the Kubernetes control plane for you.
+  - Examples: Amazon EKS, Google GKE, Azure AKS.
+  - Best for complex microservice architectures.
+
+- Backend as a Service (BaaS)
+  - Use hosted authentication, databases, storage, and APIs without building the backend yourself.
+  - Examples: Firebase, Supabase, Appwrite Cloud.
+  - Best for mobile and web applications that need common backend features.
+
+- Software as a Service (SaaS) Platforms
+  - Instead of hosting an application, use a ready-made service.
+  - Examples: Salesforce, Shopify, Notion, GitHub.
+  - Best when your goal can be met by existing software.
+
+Example workflow:
+1. Store your code in GitHub.
+2. Connect the repository to a service such as Render, Railway, or Cloud Run.
+3. Push changes to GitHub.
+4. The platform automatically builds, deploys, and hosts your application.
+5. Users access it through a public URL.
+
+If you tell me:
+- What kind of application you're running (web app, API, batch job, AI model, desktop app, etc.),
+- Your expected traffic,
+- Your budget,
+
+I can recommend the most suitable infrastructure-free approach.

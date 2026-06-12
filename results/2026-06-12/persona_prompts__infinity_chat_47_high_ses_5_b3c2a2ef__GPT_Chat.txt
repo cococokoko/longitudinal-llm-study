@@ -1,0 +1,20 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_47_high_ses_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=32 out=54
+Latency:   1344 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give me a trivia question about blue birds and its corresponding answer.
+
+── Response ────────────────────────────────────────────────────────
+Question: Which North American blue bird is known for its bright blue feathers and reddish-orange chest, and is often seen perched on fence posts?
+
+Answer: The Eastern Bluebird.

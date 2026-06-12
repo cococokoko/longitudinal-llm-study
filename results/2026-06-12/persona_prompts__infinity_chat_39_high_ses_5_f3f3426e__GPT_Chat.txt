@@ -1,0 +1,116 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_high_ses_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=33 out=639
+Latency:   6584 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+The technologies will change, but the skills that stay valuable tend to be the ones that help you adapt quickly and build reliable systems. If you're thinking about long-term relevance, I would prioritize the following areas:
+
+1. Strong computer science fundamentals
+- Data structures and algorithms
+- Networking basics (HTTP, TCP/IP, DNS)
+- Operating systems concepts
+- Databases and data modeling
+- Concurrency and distributed systems
+
+Frameworks come and go, but these concepts remain useful across decades.
+
+2. AI and machine learning literacy
+You don't necessarily need to become an ML researcher, but you should understand:
+- How modern AI systems work at a high level
+- Prompt engineering and AI-assisted development
+- Model limitations, evaluation, and reliability
+- Retrieval-augmented generation (RAG)
+- AI application architecture and integration
+
+Developers who can effectively use and build with AI tools will likely have an advantage.
+
+3. Software architecture and system design
+As careers progress, designing systems becomes more important than writing individual functions.
+- Scalable architectures
+- Microservices and their tradeoffs
+- Event-driven systems
+- API design
+- Performance and reliability engineering
+
+4. Cloud and infrastructure
+Most modern software runs in cloud environments.
+- AWS, Azure, or Google Cloud
+- Containers (Docker)
+- Kubernetes fundamentals
+- Infrastructure as Code
+- CI/CD pipelines
+
+You don't need to be a dedicated DevOps engineer, but understanding deployment and operations is increasingly valuable.
+
+5. Security
+Security knowledge is becoming essential rather than optional.
+- Authentication and authorization
+- Secure coding practices
+- Encryption fundamentals
+- Common vulnerabilities (OWASP Top 10)
+- Supply chain security
+
+6. Data engineering
+Organizations are generating more data than ever.
+- SQL and database optimization
+- Data pipelines
+- Data warehousing
+- Analytics fundamentals
+- Streaming systems
+
+7. Communication and collaboration
+This is often underestimated.
+- Writing clear technical documents
+- Explaining complex ideas simply
+- Working across teams
+- Product thinking
+- Understanding business goals
+
+Senior engineers are frequently distinguished by communication skills as much as technical ability.
+
+8. Learn how to learn
+The most future-proof skill is adaptability.
+- Read technical documentation efficiently
+- Evaluate new technologies critically
+- Build side projects with unfamiliar tools
+- Stay current without chasing every trend
+
+A practical roadmap:
+- Early career:
+  - One programming language deeply (e.g., Python, Java, Go, TypeScript)
+  - CS fundamentals
+  - Databases
+  - Git
+  - Web development basics
+
+- Mid-level:
+  - System design
+  - Cloud platforms
+  - Testing and reliability
+  - Security fundamentals
+  - AI-assisted development
+
+- Long-term:
+  - Architecture
+  - Leadership and communication
+  - Business understanding
+  - AI systems and automation
+
+If I had to pick only three areas for the next decade, they would be:
+- Computer science and system design fundamentals
+- AI literacy and AI-powered software development
+- Communication and product/business understanding
+
+Those three combine technical depth, adaptability, and the ability to create value regardless of which specific technologies become popular.

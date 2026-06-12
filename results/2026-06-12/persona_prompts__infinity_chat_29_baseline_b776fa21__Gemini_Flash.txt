@@ -1,0 +1,252 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_baseline
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: baseline
+SES level: nan  role: nan
+Tokens:    in=10 out=2020
+Latency:   9573 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+Building an online forum using the **LAMP stack** (Linux, Apache, MySQL, PHP) is a classic and highly educational web development project. 
+
+Below is a step-by-step guide to building a basic, functional forum from scratch.
+
+---
+
+### Phase 1: Setting Up Your LAMP Environment
+Before coding, you need a running LAMP stack.
+*   **Linux:** Your operating system (Ubuntu is highly recommended).
+*   **Apache:** The web server.
+*   **MySQL:** The database.
+*   **PHP:** The server-side scripting language.
+
+**Local Development Setup:**
+*   **Windows:** Install [XAMPP](https://www.apachefriends.org/) or [WampServer](https://www.wampserver.com/).
+*   **Mac:** Install [MAMP](https://www.mamp.info/) or use Homebrew.
+*   **Linux (Ubuntu):** Run `sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql`.
+
+---
+
+### Phase 2: Designing the Database (MySQL)
+A basic forum needs three main tables: **Users**, **Categories** (or sub-forums), and **Topics/Posts**.
+
+Open your MySQL console (or phpMyAdmin) and run the following SQL:
+
+```sql
+CREATE DATABASE lamp_forum;
+USE lamp_forum;
+
+-- 1. Users Table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 2. Categories Table
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT
+);
+
+-- 3. Topics Table (Threads)
+CREATE TABLE topics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    category_id INT,
+    user_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- 4. Posts Table (Replies)
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    content TEXT NOT NULL,
+    topic_id INT,
+    user_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (topic_id) REFERENCES topics(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Insert some sample categories
+INSERT INTO categories (name, description) VALUES 
+('General Discussion', 'Talk about anything here!'),
+('PHP Development', 'Questions and answers about PHP.'),
+('MySQL Help', 'Database design and query optimization.');
+```
+
+---
+
+### Phase 3: Writing the PHP Code
+
+Create a folder named `forum` in your web server's root directory (e.g., `/var/www/html/forum` or `C:/xampp/htdocs/forum`).
+
+#### 1. Database Connection (`db.php`)
+This file connects PHP to your MySQL database using **PDO** (PHP Data Objects), which is secure and modern.
+
+```php
+<?php
+$host = 'localhost';
+$db   = 'lamp_forum';
+$user = 'root'; // Change to your DB username
+$pass = '';     // Change to your DB password
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+$options = [
+    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    PDO::ATTR_EMULATE_PREPARES   => false,
+];
+
+try {
+     $pdo = new PDO($dsn, $user, $pass, $options);
+} catch (\PDOException $e) {
+     throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
+?>
+```
+
+#### 2. User Registration (`register.php`)
+Users need to register to post. We use `password_hash()` to securely store passwords.
+
+```php
+<?php
+require 'db.php';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+    $stmt = $pdo->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+    try {
+        $stmt->execute([$username, $email, $password]);
+        header("Location: login.php");
+        exit;
+    } catch (PDOException $e) {
+        $error = "Username or Email already exists.";
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
+<head><title>Register</title></head>
+<body>
+    <h2>Register</h2>
+    <?php if(isset($error)) echo "<p style='color:red'>$error</p>"; ?>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <input type="password" name="password" placeholder="Password" required><br><br>
+        <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.php">Login here</a>.</p>
+</body>
+</html>
+```
+
+#### 3. User Login (`login.php`)
+This authenticates users and starts a PHP session.
+
+```php
+<?php
+require 'db.php';
+session_start();
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
+    $stmt->execute([$username]);
+    $user = $stmt->fetch();
+
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+        header("Location: index.php");
+        exit;
+    } else {
+        $error = "Invalid username or password.";
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body>
+    <h2>Login</h2>
+    <?php if(isset($error)) echo "<p style='color:red'>$error</p>"; ?>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username" required><br><br>
+        <input type="password" name="password" placeholder="Password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
+```
+
+#### 4. Homepage (`index.php`)
+This page displays the forum categories.
+
+```php
+<?php
+require 'db.php';
+session_start();
+
+$stmt = $pdo->query("SELECT * FROM categories");
+$categories = $stmt->fetchAll();
+?>
+<!DOCTYPE html>
+<html>
+<head><title>LAMP Forum</title></head>
+<body>
+    <header>
+        <h1>Welcome to the LAMP Forum</h1>
+        <?php if (isset($_SESSION['username'])): ?>
+            <p>Hello, <?php echo htmlspecialchars($_SESSION['username']); ?>! | <a href="logout.php">Logout</a></p>
+        <?php else: ?>
+            <p><a href="login.php">Login</a> or <a href="register.php">Register</a></p>
+        <?php endif; ?>
+    </header>
+    <hr>
+    <h2>Categories</h2>
+    <ul>
+        <?php foreach ($categories as $cat): ?>
+            <li>
+                <h3><a href="category.php?id=<?php echo $cat['id']; ?>"><?php echo htmlspecialchars($cat['name']); ?></a></h3>
+                <p><?php echo htmlspecialchars($cat['description']); ?></p>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</body>
+</html>
+```
+
+#### 5. Category Page (`category.php`)
+Displays all topics inside a specific category and allows logged-in users to create a new topic.
+
+```php
+<?php
+require 'db.php';
+session_start();
+
+$cat_id = $_GET['id'];
+
+// Fetch Category Info
+$stmt = $pdo->prepare("SELECT * FROM categories WHERE id = ?");
+$stmt->execute([$cat_id]);
+$category = $stmt->fetch();
+
+// Handle New Topic

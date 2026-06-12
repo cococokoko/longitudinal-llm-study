@@ -1,0 +1,87 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_39_low_ses_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=35 out=529
+Latency:   4660 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a single parent who often balances childcare with work.
+
+── Prompt ──────────────────────────────────────────────────────────
+What should I learn in software development to be relevant in the future?
+
+── Response ────────────────────────────────────────────────────────
+If your goal is to stay relevant over the next 5–10 years, focus less on specific frameworks and more on skills that remain valuable even as tools change.
+
+Key areas to learn:
+
+• Computer science fundamentals
+  - Data structures and algorithms
+  - Networking basics
+  - Operating systems concepts
+  - Databases and data modeling
+  - Security fundamentals
+  - These concepts outlast any particular technology trend.
+
+• AI-assisted development
+  - Learn how to use AI coding tools effectively.
+  - Understand prompt design, code review, and verification.
+  - Learn the basics of machine learning, LLMs, embeddings, retrieval systems, and AI application architecture.
+  - Even developers who don't specialize in AI will likely work alongside AI systems.
+
+• Cloud and distributed systems
+  - AWS, Azure, or Google Cloud
+  - Containers (Docker)
+  - Kubernetes concepts
+  - APIs and microservices
+  - Scalability, reliability, and observability
+
+• Software architecture
+  - Designing maintainable systems
+  - Event-driven architectures
+  - Domain-driven design
+  - System design and trade-off analysis
+  - As coding becomes more automated, architecture and decision-making become more valuable.
+
+• Data skills
+  - SQL
+  - Data pipelines
+  - Analytics fundamentals
+  - Data governance and privacy
+  - Understanding data remains important across industries.
+
+• Cybersecurity
+  - Secure coding practices
+  - Authentication and authorization
+  - Threat modeling
+  - Privacy regulations
+  - Security expertise continues to be in high demand.
+
+• Communication and product thinking
+  - Requirements gathering
+  - Writing technical documentation
+  - Explaining technical decisions
+  - Understanding business goals
+  - These skills are often what distinguish senior engineers from junior ones.
+
+If you're balancing childcare and work, a practical learning path might be:
+
+1. Strengthen fundamentals (3–6 months).
+2. Learn cloud basics and Docker (2–3 months).
+3. Build AI-powered applications using modern APIs (2–3 months).
+4. Study system design and architecture continuously.
+5. Create a portfolio of real projects that solve practical problems.
+
+A strong future-proof combination would be:
+- One programming language deeply (Python, JavaScript/TypeScript, Java, Go, or C#)
+- Cloud fundamentals
+- AI application development
+- System design
+- Security basics
+- Strong communication skills
+
+The developers most likely to remain valuable are not necessarily those who know the most tools, but those who can understand problems, design solutions, work effectively with AI, and adapt as technology changes.

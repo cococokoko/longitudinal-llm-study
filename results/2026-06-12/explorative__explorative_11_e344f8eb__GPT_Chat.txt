@@ -1,0 +1,104 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_11
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=13 out=703
+Latency:   6085 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Which Cloud provider should I use?
+
+── Response ────────────────────────────────────────────────────────
+The best cloud provider depends on what you're optimizing for. Here's a practical breakdown:
+
+• Amazon Web Services (AWS)
+  - Best for: Broadest service catalog, enterprise workloads, maximum flexibility.
+  - Strengths:
+    - Largest ecosystem and market share.
+    - Extensive global infrastructure.
+    - Strong support for complex architectures.
+  - Downsides:
+    - Can be complex to learn and manage.
+    - Pricing can be difficult to predict.
+  - Choose AWS if:
+    - You need many specialized services.
+    - You're building at large scale.
+    - You want the widest range of third-party integrations.
+
+• Microsoft Azure
+  - Best for: Organizations heavily invested in Microsoft technologies.
+  - Strengths:
+    - Excellent integration with Windows Server, Active Directory, Microsoft 365, and .NET.
+    - Strong enterprise and hybrid-cloud capabilities.
+  - Downsides:
+    - Some services can feel less polished than AWS equivalents.
+    - Documentation quality can vary.
+  - Choose Azure if:
+    - Your company already uses Microsoft products extensively.
+    - You need hybrid on-premises and cloud integration.
+
+• Google Cloud Platform (GCP)
+  - Best for: Data analytics, AI/ML, and developer simplicity.
+  - Strengths:
+    - Strong data and AI offerings (BigQuery, Vertex AI).
+    - Often simpler networking and infrastructure experience.
+    - Good Kubernetes support (Google created Kubernetes).
+  - Downsides:
+    - Smaller ecosystem than AWS.
+    - Fewer enterprise-focused services in some areas.
+  - Choose GCP if:
+    - Analytics and machine learning are central to your project.
+    - You want a developer-friendly platform.
+
+• Cloudflare
+  - Best for: Edge computing, APIs, global applications, and startups.
+  - Strengths:
+    - Excellent global network.
+    - Simple serverless and edge platform.
+    - Competitive pricing.
+  - Downsides:
+    - Not a full replacement for AWS/Azure/GCP for every workload.
+  - Choose Cloudflare if:
+    - You're building APIs, web apps, or edge-native services.
+
+• DigitalOcean
+  - Best for: Small businesses, startups, personal projects.
+  - Strengths:
+    - Easy to use.
+    - Predictable pricing.
+    - Good developer experience.
+  - Downsides:
+    - Fewer advanced services.
+    - Less suitable for highly regulated or massive-scale environments.
+  - Choose DigitalOcean if:
+    - Simplicity matters more than access to every possible cloud service.
+
+• Oracle Cloud Infrastructure (OCI)
+  - Best for: Oracle databases and cost-sensitive compute workloads.
+  - Strengths:
+    - Competitive pricing.
+    - Strong database offerings.
+  - Downsides:
+    - Smaller ecosystem and community.
+  - Choose OCI if:
+    - You're running Oracle workloads or optimizing cloud costs.
+
+Quick recommendations:
+• Solo developer or startup → DigitalOcean, Cloudflare, or GCP.
+• SaaS startup expecting rapid growth → AWS or GCP.
+• Enterprise using Microsoft products → Azure.
+• AI and analytics-focused company → GCP.
+• Large enterprise with diverse requirements → AWS.
+• Cost-conscious infrastructure-heavy workloads → OCI.
+
+If you tell me:
+- Your application type (web app, SaaS, AI, mobile backend, etc.)
+- Team size
+- Expected traffic
+- Budget
+- Whether you're already using Microsoft, Google, or AWS tools
+
+I can give a more specific recommendation.

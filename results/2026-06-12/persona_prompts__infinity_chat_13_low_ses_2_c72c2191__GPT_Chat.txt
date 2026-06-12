@@ -1,0 +1,48 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_13_low_ses_2
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=38 out=312
+Latency:   3425 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a single parent who often balances childcare with work.
+
+── Prompt ──────────────────────────────────────────────────────────
+I have an apartment that costs about $100 a month. How do I survive?
+
+── Response ────────────────────────────────────────────────────────
+If your apartment really costs only about $100 per month, housing is taking up a very small part of your budget compared with most people. Whether you can "survive" depends on your income and your other expenses.
+
+A simple way to evaluate it:
+
+- Add up your monthly income (wages, benefits, child support, assistance programs, etc.).
+- List your monthly expenses:
+  - Rent/housing: $100
+  - Utilities
+  - Food
+  - Transportation
+  - Childcare
+  - Phone/internet
+  - Healthcare
+  - Debt payments
+  - Other essentials
+- Compare the total expenses with your income.
+
+If you're a single parent balancing work and childcare, childcare, food, and transportation are often the biggest costs after housing. It may also be worth checking whether you're eligible for programs such as:
+- Food assistance
+- Childcare subsidies
+- Healthcare assistance
+- Utility assistance
+- Tax credits for parents
+
+If you meant that you only have about $100 per month available after paying for your apartment, that's a very different situation. In that case, tell me:
+- Your country or state/province
+- Your monthly income
+- Number of children
+- Major expenses
+
+and I can help you build a realistic survival budget.

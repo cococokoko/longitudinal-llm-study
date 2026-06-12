@@ -1,0 +1,99 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_low_ses_3
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=23 out=1079
+Latency:   5976 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+recently started a new job and is still on probation.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+Congratulations on the new job! Navigating the probation period can be a busy time, so let’s keep this explanation highly practical, intuitive, and easy to digest.
+
+To understand a **partial derivative**, think of it as measuring how a change in **just one specific factor** affects your overall result, while keeping all other factors completely constant.
+
+Here is a real-world numerical example using a scenario you might relate to right now: **calculating your monthly take-home pay.**
+
+---
+
+### The Scenario: Your Take-Home Pay
+
+Let’s say your monthly take-home pay ($P$) depends on two variables:
+1. $H$: The number of **hours** you work per month.
+2. $R$: Your hourly **rate** of pay.
+
+To make it realistic, let's assume you also pay a flat tax/benefit deduction of $500. 
+
+The formula for your take-home pay is:
+$$P(H, R) = (H \times R) - 500$$
+
+Currently, your baseline situation is:
+*   You work **$H = 160$ hours** per month.
+*   Your rate is **$R = \$30$ per hour**.
+
+Your current take-home pay is:
+$$P = (160 \times 30) - 500 = \$4,300$$
+
+---
+
+### 1. The Partial Derivative with respect to Hours ($\frac{\partial P}{\partial H}$)
+
+This asks: **"If my hourly rate stays exactly the same, how much does my pay change for every additional hour I work?"**
+
+To find this, we treat the rate ($R$) as a constant ($30$) and the deduction ($500$) as a constant. 
+
+*   **Mathematical Calculation:**
+    If we take the derivative of $P = (H \times R) - 500$ with respect to $H$ (treating $R$ as a constant number):
+    $$\frac{\partial P}{\partial H} = R$$
+    Since $R = 30$, then:
+    $$\frac{\partial P}{\partial H} = 30$$
+
+*   **Numerical Proof:**
+    Let’s increase your hours by just **1 hour** (from 160 to 161), keeping your rate strictly at \$30.
+    $$New\ Pay = (161 \times 30) - 500 = \$4,330$$
+    The change in pay is:
+    $$\$4,330 - \$4,300 = \$30$$
+    
+    **The partial derivative is $30$.** It tells you that at this moment, for every 1-unit increase in hours, your pay increases by \$30.
+
+---
+
+### 2. The Partial Derivative with respect to Rate ($\frac{\partial P}{\partial R}$)
+
+Now, let's look at the other side. Once you pass your probation, you might get a raise. 
+
+This asks: **"If my hours stay exactly the same (160 hours), how much does my pay change for every \$1 increase in my hourly rate?"**
+
+To find this, we treat the hours ($H$) as a constant ($160$).
+
+*   **Mathematical Calculation:**
+    If we take the derivative of $P = (H \times R) - 500$ with respect to $R$ (treating $H$ as a constant number):
+    $$\frac{\partial P}{\partial R} = H$$
+    Since $H = 160$, then:
+    $$\frac{\partial P}{\partial R} = 160$$
+
+*   **Numerical Proof:**
+    Let’s increase your hourly rate by **\$1** (from \$30 to \$31), keeping your hours strictly at 160.
+    $$New\ Pay = (160 \times 31) - 500 = \$4,460$$
+    The change in pay is:
+    $$\$4,460 - \$4,300 = \$160$$
+
+    **The partial derivative is $160$.** It tells you that at this moment, a \$1 increase in your hourly rate increases your monthly pay by \$160.
+
+---
+
+### Summary
+
+In calculus, we write these "rates of change" using the curly $\partial$ symbol:
+
+*   $\frac{\partial P}{\partial H} = 30$ (How sensitive your pay is to **hours**).
+*   $\frac{\partial P}{\partial R} = 160$ (How sensitive your pay is to your **rate**).
+
+By isolating one variable at a time, partial derivatives allow you to see exactly which lever has the biggest impact on your final result. (In this case, getting a raise has a much larger impact on your monthly income than working one extra hour!)

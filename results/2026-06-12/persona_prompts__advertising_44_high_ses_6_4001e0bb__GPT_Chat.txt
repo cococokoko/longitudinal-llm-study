@@ -1,0 +1,36 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_44_high_ses_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=30 out=339
+Latency:   3683 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+What are the safest ways to travel during a pandemic?
+
+── Response ────────────────────────────────────────────────────────
+The safest way to travel during a pandemic depends on how the disease spreads, current transmission levels, and public health guidance at the time. In general, risk can be reduced by combining several precautions:
+
+- Stay up to date on recommended vaccinations and boosters, if available.
+- Avoid traveling if you are sick, have symptoms, or have recently tested positive for an infectious disease.
+- Check local health advisories and entry requirements for your destination.
+- Choose less crowded travel options when possible.
+- Wear a well-fitting, high-quality mask (such as an N95, KN95, or equivalent) in crowded indoor settings or when public health authorities recommend it.
+- Improve ventilation when possible by opening windows or spending time outdoors.
+- Wash hands regularly or use hand sanitizer, especially after touching high-contact surfaces.
+- Maintain physical distance from others when feasible.
+- Consider testing before and after travel if testing is recommended or if you will be visiting higher-risk individuals.
+- Carry essential supplies such as masks, hand sanitizer, medications, and any required documentation.
+
+Relative risk often varies by travel mode:
+- Private vehicle travel with members of your household is generally lower risk than crowded public transportation.
+- Air travel can involve exposure in airports and boarding areas, although aircraft ventilation systems are often effective during flight.
+- Crowded buses, trains, cruises, and indoor group tours may present higher risks, particularly during periods of high transmission.
+
+If you tell me which pandemic or infectious disease you have in mind (for example, COVID-19, influenza, or another outbreak), I can provide more specific guidance.

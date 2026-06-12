@@ -1,0 +1,80 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   advertising_49_high_ses_2
+Model:     google/gemini-3.5-flash-20260519 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=18 out=1196
+Latency:   7841 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a senior attorney at a well-established law firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+How to improve home WiFi?
+
+── Response ────────────────────────────────────────────────────────
+As a senior attorney, I often advise clients that before embarking on a complex course of action, one must first conduct a thorough "fact-finding" mission to diagnose the root cause of the issue. Improving your home Wi-Fi is no different. It requires a systematic approach—moving from zero-cost logistical adjustments to targeted capital investments. 
+
+Here is a structured, step-by-step protocol to optimize your home network.
+
+---
+
+### Phase I: Preliminary Discovery & Zero-Cost Adjustments
+Before purchasing new hardware, optimize your existing infrastructure. 
+
+1. **The "Physical Location" Rule (The Golden Rule of Wi-Fi)**
+   * **The Issue:** Wi-Fi signals are electromagnetic waves that degrade when passing through solid objects (brick, concrete, metal, and heavy wood).
+   * **The Remedy:** Elevate your router. Do not hide it in a closet, behind a TV, or on the floor. Place it in a central, open location in your home. Think of it like a lightbulb—you want the light to cast as broadly as possible.
+
+2. **Optimize Antenna Orientation**
+   * If your router has external antennas, do not point them all in the same direction. Position them perpendicularly—one vertically (to broadcast signal horizontally through walls) and one horizontally (to broadcast signal vertically between floors).
+
+3. **Frequency Band Allocation (2.4 GHz vs. 5 GHz)**
+   * Modern routers broadcast on two main bands. You must segregate your devices appropriately:
+     * **2.4 GHz Band:** Has longer range and penetrates walls better, but is slower and highly congested (baby monitors, microwaves, and Bluetooth use this). *Assign smart home devices and smart plugs here.*
+     * **5 GHz Band:** Much faster with lower latency, but has shorter range and poor wall penetration. *Assign your work laptops, gaming consoles, and streaming devices here.*
+
+4. **Perform a Channel Audit**
+   * Just like radio stations, Wi-Fi operates on channels. If your neighbors are on the same channel, you will experience interference.
+   * **The Remedy:** Use a free analyzer app (like *NetSpot* or *Wi-Fi Analyzer*) to see which channels are crowded. Log into your router’s admin portal (usually via an IP address like `192.168.1.1`) and manually switch your 2.4 GHz band to channel 1, 6, or 11 (the only non-overlapping channels), or select the least congested 5 GHz channel.
+
+---
+
+### Phase II: Software & Maintenance Protocols
+Just as you would update your operating system, your network hardware requires routine maintenance.
+
+1. **Update the Firmware**
+   * Router manufacturers regularly release firmware updates to patch security vulnerabilities and improve routing efficiency. Log into your router’s admin console and check for updates.
+
+2. **Implement Quality of Service (QoS)**
+   * If multiple users are competing for bandwidth (e.g., someone is downloading large files while you are on a critical Zoom call), enable QoS in your router settings. This allows you to prioritize traffic to specific devices (like your work laptop) over others.
+
+3. **The "Reboot" Protocol**
+   * Routers are essentially small computers. Over time, their memory clogs. Setting your router to automatically reboot once a week (many have this setting built-in) can preemptively resolve latency issues.
+
+---
+
+### Phase III: Hardware Upgrades (Capital Expenditure)
+If physical adjustments and software optimization yield insufficient results, you must upgrade your hardware.
+
+1. **The "Hardwire" Solution (Ethernet)**
+   * **The Verdict:** No Wi-Fi signal will ever be as fast, stable, or secure as a physical wire. 
+   * **The Remedy:** For stationary, high-bandwidth devices (desktop computers, gaming consoles, smart TVs), run a Cat6 Ethernet cable directly from the router. If running cables through walls is impractical, consider **Powerline Adapters**, which send internet signals through your home’s existing electrical wiring.
+
+2. **Upgrade to a Mesh Wi-Fi System**
+   * **The Issue:** Traditional "range extenders" or "repeaters" create a second network, halving your bandwidth and forcing your devices to manually switch networks as you move.
+   * **The Remedy:** If you live in a home larger than 1,500 square feet, invest in a **Mesh Wi-Fi System** (e.g., Eero, Google Nest Wi-Fi, or Netgear Orbi). Mesh systems use multiple nodes that work in unison to create a single, seamless network throughout the entire property.
+
+3. **Transition to Wi-Fi 6 or Wi-Fi 6E**
+   * If your router is more than 4–5 years old, it likely utilizes older wireless standards (Wi-Fi 5 / 802.11ac). Upgrading to a **Wi-Fi 6 (802.11ax)** or **Wi-Fi 6E** router will drastically improve how your network handles multiple devices simultaneously, reducing congestion.
+
+---
+
+### Summary Checklist for Immediate Action:
+* [ ] **Move the router** to a central, elevated location.
+* [ ] **Connect work devices** to the 5 GHz band; smart home devices to 2.4 GHz.
+* [ ] **Log into the router portal** to update firmware and check for channel interference.
+* [ ] **Hardwire** your primary work computer via Ethernet if possible.
+* [ ] **Evaluate** if your home's square footage warrants a Mesh Wi-Fi upgrade.

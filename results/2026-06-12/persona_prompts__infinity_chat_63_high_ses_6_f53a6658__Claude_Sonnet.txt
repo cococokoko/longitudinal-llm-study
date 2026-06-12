@@ -1,0 +1,74 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_63_high_ses_6
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=30 out=596
+Latency:   10679 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a partner at a major consulting firm.
+
+── Prompt ──────────────────────────────────────────────────────────
+Give a numerical example to illustrate the concept of partial derivative.
+
+── Response ────────────────────────────────────────────────────────
+# Partial Derivatives: A Numerical Example
+
+## The Function
+
+Consider a simple **revenue function** for a business:
+
+$$f(x, y) = 3x^2 + 2xy + y^2$$
+
+where:
+- **x** = units of Product A sold
+- **y** = units of Product B sold
+
+---
+
+## Computing the Partial Derivatives
+
+### Partial Derivative with respect to x
+*"How does revenue change as we sell more of Product A, holding Product B constant?"*
+
+$$\frac{\partial f}{\partial x} = 6x + 2y$$
+
+### Partial Derivative with respect to y
+*"How does revenue change as we sell more of Product B, holding Product A constant?"*
+
+$$\frac{\partial f}{\partial y} = 2x + 2y$$
+
+---
+
+## Numerical Illustration
+
+**Suppose x = 4 and y = 3**
+
+| Calculation | Value |
+|---|---|
+| f(4, 3) = 3(16) + 2(4)(3) + 9 | **= 81** |
+| ∂f/∂x at (4,3) = 6(4) + 2(3) | **= 30** |
+| ∂f/∂y at (4,3) = 2(4) + 2(3) | **= 14** |
+
+---
+
+## Verification (Intuitive Check)
+
+**Increase x by a small amount (Δx = 0.01), hold y = 3 fixed:**
+
+$$f(4.01, 3) = 3(4.01)^2 + 2(4.01)(3) + 9 = 81.3003$$
+
+$$\frac{\Delta f}{\Delta x} = \frac{81.3003 - 81}{0.01} ≈ \textbf{30.03} \approx 30 ✓$$
+
+---
+
+## Key Insight
+
+> **∂f/∂x = 30** means: selling **one more unit of Product A** (while keeping Product B sales fixed at 3) increases revenue by approximately **30 units**
+
+> **∂f/∂y = 14** means: selling **one more unit of Product B** (while keeping Product A sales fixed at 4) increases revenue by approximately **14 units**
+
+This tells management that **at this operating point**, expanding Product A sales is **more than twice as impactful** as expanding Product B sales.

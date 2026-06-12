@@ -1,0 +1,18 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_52_high_ses_5
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=30 out=66
+Latency:   1184 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is an executive at a large technology company.
+
+── Prompt ──────────────────────────────────────────────────────────
+Write a sentence where the last word is 'apple'.
+
+── Response ────────────────────────────────────────────────────────
+On the kitchen counter sat a ripe apple

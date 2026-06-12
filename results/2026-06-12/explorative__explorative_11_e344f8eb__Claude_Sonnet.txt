@@ -1,0 +1,53 @@
+Wave:      2026-06-12
+Dataset:   explorative
+Item ID:   explorative_11
+Model:     anthropic/claude-4.6-sonnet-20260217 (openrouter)
+Condition: nan
+SES level: nan  role: nan
+Tokens:    in=14 out=331
+Latency:   8504 ms
+Error:     none
+
+── Prompt ──────────────────────────────────────────────────────────
+Which Cloud provider should I use?
+
+── Response ────────────────────────────────────────────────────────
+# Choosing a Cloud Provider
+
+The best choice depends on your specific needs. Here's a quick breakdown:
+
+## The Big 3
+
+| Provider | Best For |
+|----------|----------|
+| **AWS** (Amazon) | Widest service selection, largest ecosystem |
+| **Azure** (Microsoft) | Microsoft/Windows shops, enterprise, hybrid cloud |
+| **Google Cloud (GCP)** | Data analytics, ML/AI, Kubernetes |
+
+## Key Decision Factors
+
+### Choose **AWS** if you:
+- Want the most mature, feature-rich platform
+- Need the largest global infrastructure
+- Want the biggest community/talent pool
+
+### Choose **Azure** if you:
+- Already use Microsoft 365, Active Directory, or .NET
+- Need strong hybrid cloud capabilities
+- Work in enterprise or government sectors
+
+### Choose **GCP** if you:
+- Focus on **data analytics** (BigQuery)
+- Need strong **AI/ML** tools
+- Use Kubernetes heavily (Google invented it)
+
+## Other Options to Consider
+- **DigitalOcean** - Simple, affordable, developer-friendly
+- **Cloudflare** - Edge computing, CDN
+- **Vercel/Netlify** - Frontend/JAMstack apps
+- **Linode/Vultr** - Budget-friendly VPS
+
+## My Recommendation
+> Tell me more about your use case and I can give a more specific suggestion!
+
+What are you trying to build or accomplish?

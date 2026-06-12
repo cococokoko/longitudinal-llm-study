@@ -1,0 +1,238 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_29_high_ses_3
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: high_ses
+SES level: high  role: system
+Tokens:    in=31 out=1024
+Latency:   6311 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+is a tenured professor at a prestigious university.
+
+── Prompt ──────────────────────────────────────────────────────────
+How do I code an online forum using LAMP?
+
+── Response ────────────────────────────────────────────────────────
+Building an online forum with a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP) involves designing the database, creating the PHP application, and handling user authentication, posts, and discussions.
+
+A typical forum structure includes:
+
+- Users
+- Categories
+- Forums (subsections)
+- Topics (threads)
+- Posts (replies)
+
+1. Set up the LAMP environment
+
+On Ubuntu:
+
+```bash
+sudo apt update
+sudo apt install apache2 mysql-server php php-mysql
+```
+
+Verify:
+
+```bash
+php -v
+mysql --version
+apache2 -v
+```
+
+2. Create the database
+
+```sql
+CREATE DATABASE forum_db;
+USE forum_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE categories (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE forums (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    FOREIGN KEY (category_id) REFERENCES categories(id)
+);
+
+CREATE TABLE topics (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    forum_id INT NOT NULL,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (forum_id) REFERENCES forums(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    topic_id INT NOT NULL,
+    user_id INT NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (topic_id) REFERENCES topics(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+3. Create a database connection
+
+`config.php`
+
+```php
+<?php
+$host = "localhost";
+$dbname = "forum_db";
+$user = "forum_user";
+$pass = "password";
+
+$pdo = new PDO(
+    "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
+    $user,
+    $pass,
+    [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]
+);
+?>
+```
+
+4. User registration
+
+```php
+<?php
+require 'config.php';
+
+$username = $_POST['username'];
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+$stmt = $pdo->prepare(
+    "INSERT INTO users (username, password_hash)
+     VALUES (?, ?)"
+);
+
+$stmt->execute([$username, $password]);
+?>
+```
+
+5. User login
+
+```php
+<?php
+session_start();
+require 'config.php';
+
+$stmt = $pdo->prepare(
+    "SELECT * FROM users WHERE username = ?"
+);
+$stmt->execute([$_POST['username']]);
+
+$user = $stmt->fetch();
+
+if ($user && password_verify($_POST['password'], $user['password_hash'])) {
+    $_SESSION['user_id'] = $user['id'];
+    echo "Logged in";
+} else {
+    echo "Invalid credentials";
+}
+?>
+```
+
+6. Create a topic
+
+```php
+<?php
+session_start();
+require 'config.php';
+
+$stmt = $pdo->prepare(
+    "INSERT INTO topics (forum_id, user_id, title)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['forum_id'],
+    $_SESSION['user_id'],
+    $_POST['title']
+]);
+?>
+```
+
+7. Add a post
+
+```php
+<?php
+session_start();
+require 'config.php';
+
+$stmt = $pdo->prepare(
+    "INSERT INTO posts (topic_id, user_id, content)
+     VALUES (?, ?, ?)"
+);
+
+$stmt->execute([
+    $_POST['topic_id'],
+    $_SESSION['user_id'],
+    $_POST['content']
+]);
+?>
+```
+
+8. Display topics
+
+```php
+<?php
+require 'config.php';
+
+$stmt = $pdo->query(
+    "SELECT topics.id,
+            topics.title,
+            users.username
+     FROM topics
+     JOIN users ON topics.user_id = users.id
+     ORDER BY topics.created_at DESC"
+);
+
+while ($row = $stmt->fetch()) {
+    echo "<a href='topic.php?id={$row['id']}'>";
+    echo htmlspecialchars($row['title']);
+    echo "</a> by ";
+    echo htmlspecialchars($row['username']);
+    echo "<br>";
+}
+?>
+```
+
+9. Display posts in a topic
+
+```php
+<?php
+require 'config.php';
+
+$stmt = $pdo->prepare(
+    "SELECT posts.content,
+            users.username,
+            posts.created_at
+     FROM posts
+     JOIN users ON posts.user_id = users.id
+     WHERE topic_id = ?
+     ORDER BY posts.created_at"
+);
+
+$stmt->execute([$_GET['id']]);
+
+while ($post = $stmt->fetch()) {
+    echo "<h4>" . htmlspecialchars($post['username

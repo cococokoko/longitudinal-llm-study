@@ -1,0 +1,83 @@
+Wave:      2026-06-12
+Dataset:   persona_prompts
+Item ID:   infinity_chat_33_low_ses_6
+Model:     openai/gpt-chat-latest-20260505 (openrouter)
+Condition: low_ses
+SES level: low  role: system
+Tokens:    in=40 out=547
+Latency:   4449 ms
+Error:     none
+
+── System message ──────────────────────────────────────────────────
+works in a warehouse position that requires long hours.
+
+── Prompt ──────────────────────────────────────────────────────────
+Help me use my Microsoft Surface touchpad and on-screen keyboard to run Dolphin Emulator for the Wii.
+
+── Response ────────────────────────────────────────────────────────
+You can run Dolphin Emulator on a Microsoft Surface using only the touchpad and the Windows on-screen keyboard, though some Wii games will be easier than others.
+
+1. Open the Windows On-Screen Keyboard
+- Press Win + Ctrl + O to toggle the on-screen keyboard.
+- Or go to Settings > Accessibility > Keyboard > On-Screen Keyboard.
+
+2. Configure Dolphin Controls
+- Open Dolphin.
+- Select Controllers.
+
+For GameCube games:
+- Under "GameCube Controllers," set Port 1 to "Standard Controller."
+- Click Configure.
+
+For Wii games:
+- Under "Emulated Wii Remote," click Configure.
+
+3. Map Inputs to the Keyboard
+In the controller configuration window:
+- Click each button field.
+- Press a key on the on-screen keyboard to assign it.
+
+Example Wii Remote layout:
+- A → Space
+- B → Left Shift
+- 1 → 1
+- 2 → 2
+- Plus → Enter
+- Minus → Backspace
+- D-Pad → Arrow Keys
+
+4. Use the Touchpad as the Wii Pointer
+For Wii Remote emulation:
+- In the Wii Remote configuration screen, locate the Pointer section.
+- Bind:
+  - Up → Cursor Y-
+  - Down → Cursor Y+
+  - Left → Cursor X-
+  - Right → Cursor X+
+
+Dolphin can use the Surface touchpad/mouse cursor to aim at the screen, which works well for menu navigation and games that use pointing.
+
+5. Configure Motion Controls (Optional)
+Many Wii games require shaking or tilting.
+
+In the Wii Remote configuration:
+- Map Shake X/Y/Z to keyboard keys.
+- Map Tilt directions to keyboard keys.
+
+Example:
+- Shake X → Q
+- Shake Y → W
+- Shake Z → E
+
+This lets you trigger motion actions from the on-screen keyboard.
+
+6. Improve Touchpad Usability
+- Set Windows touchpad sensitivity to Medium or High:
+  - Settings > Bluetooth & devices > Touchpad.
+- Enable tap-to-click if it is not already enabled.
+
+Limitations
+- Games that rely heavily on Wii motion controls (Wii Sports, Skyward Sword, etc.) can be awkward with only a touchpad and on-screen keyboard.
+- Games that primarily use buttons and pointing (such as many menu-driven titles, RPGs, and some platformers) are usually much easier to play.
+
+If you tell me the specific Wii game you want to play, I can suggest a practical control layout for the Surface touchpad and on-screen keyboard.
