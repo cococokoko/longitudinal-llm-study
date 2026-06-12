@@ -1,12 +1,12 @@
-name: Daily pipeline run
+name: Weekly pipeline run
 
 on:
   schedule:
-    - cron: "0 5 * * *"   # 5:00 UTC --> 07:00 CEST / 06:00 CET
+    - cron: "0 5 * * 5"   # Friday 05:00 UTC — 07:00 CEST / 6:00 CET
   workflow_dispatch:
 
 concurrency:
-  group: daily-run
+  group: weekly-run
   cancel-in-progress: false
 
 jobs:
@@ -29,14 +29,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run pipeline
+      - name: Run weekly pipeline (Gemini Pro)
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: python pipeline.py run
+        run: python pipeline.py run --weekly
 
       - name: Generate dashboard data
         run: python generate_dashboard_data.py
-        continue-on-error: true   
+        continue-on-error: true
 
       - name: Commit results
         run: |
@@ -44,9 +44,9 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add study.db results/ docs/
           git diff --cached --quiet && echo "Nothing to commit" || \
-            git commit -m "chore: daily run $(date -u +%Y-%m-%d)" && git push
+            git commit -m "chore: weekly run $(date -u +%Y-%m-%d)" && git push
 
-      - name: Send daily summary email
+      - name: Send weekly summary email
         if: always()
         env:
           OPENROUTER_API_KEY:  ${{ secrets.OPENROUTER_API_KEY }}

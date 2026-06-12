@@ -67,10 +67,13 @@ def seed_models(
     conn,
     cfg: dict,
     experiment: bool = False,
+    weekly: bool = False,
     temperature_override: float | None = None,
 ) -> None:
     if experiment:
         models = [dict(em, provider=em.get("provider", "openrouter")) for em in cfg.get("experiment_models", [])]
+    elif weekly:
+        models = list(cfg.get("weekly_models", []))
     else:
         models = list(cfg.get("models", []))
 
@@ -135,7 +138,8 @@ def seed_wave_items(conn, wave_id: str, cfg: dict, seed: int) -> int:
 
 def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
     openrouter_key = os.environ.get("OPENROUTER_API_KEY")
-    experiment_only    = getattr(args, "experiment", False)
+    experiment_only = getattr(args, "experiment", False)
+    weekly_only     = getattr(args, "weekly", False)
 
     if not openrouter_key:
         console.print("[red]OPENROUTER_API_KEY not set in .env or environment.[/]")
@@ -145,12 +149,12 @@ def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
     conn    = open_db(db_path)
 
     temperature_override = getattr(args, "temperature", None)
-    seed_models(conn, cfg, experiment=experiment_only, temperature_override=temperature_override)
+    seed_models(conn, cfg, experiment=experiment_only, weekly=weekly_only, temperature_override=temperature_override)
 
     today    = datetime.date.today().isoformat()
     wave_tag = getattr(args, "wave_tag", None)
     wave_name = f"{today}_{wave_tag}" if wave_tag else today
-    wave_id = get_or_create_wave(conn, name=wave_name, description="daily run")
+    wave_id = get_or_create_wave(conn, name=wave_name, description="weekly run" if weekly_only else "daily run")
     console.print(f"Running wave: [bold]{wave_name}[/]")
 
     # Use today's date as sampling seed so each wave gets a fresh sample
@@ -235,6 +239,10 @@ def build_parser() -> argparse.ArgumentParser:
     run_p.add_argument(
         "--experiment", action="store_true",
         help="Use experiment_models instead of main models",
+    )
+    run_p.add_argument(
+        "--weekly", action="store_true",
+        help="Use weekly_models instead of main models (runs Fridays via CI).",
     )
     run_p.add_argument(
         "--wave-tag", dest="wave_tag", default=None, metavar="TAG",

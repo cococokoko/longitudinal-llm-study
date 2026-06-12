@@ -19,22 +19,31 @@ models:
     display_name: "GPT Chat"
     parameters:
       temperature: 0.0
-      max_tokens: 1024
+      max_tokens: 2000
 
 
   - model_id: "~anthropic/claude-sonnet-latest"
     display_name: "Claude Sonnet"
     parameters:
       temperature: 0.0
-      max_tokens: 1024
+      max_tokens: 2000
 
 
   - model_id: "~google/gemini-flash-latest"
     display_name: "Gemini Flash"
     parameters:
       temperature: 0.0
-      max_tokens: 2024
+      max_tokens: 2000
       reasoning: {effort: "minimal"}
+
+# ── Weekly models (Fridays only) ──────────────────────────────────────────────
+
+weekly_models:
+  - model_id: "~google/gemini-pro-latest"
+    display_name: "Gemini Pro"
+    parameters:
+      temperature: 0.0
+      max_tokens: 2000
 
 # ── Experiment models ─────────────────────────────────────────────────────────
 
