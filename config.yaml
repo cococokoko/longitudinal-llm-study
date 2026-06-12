@@ -76,4 +76,13 @@ datasets:
     id_field: item_id
     max_prompt_length: 0
     sampling_strategy: fixed
-    sample_n: null 
+    sample_n: null
+
+  - name: explorative
+    type: local_json
+    path: explorative.json
+    prompt_field: prompt
+    id_field: item_id
+    max_prompt_length: 0
+    sampling_strategy: fixed
+    sample_n: null

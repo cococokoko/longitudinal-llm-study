@@ -483,7 +483,25 @@ def export_prompts(conn, wvs_meta) -> dict:
         {"query_key": k, **v}
         for k, v in sorted(by_q.items(), key=_sort_key)
     ]
-    return {"wvs": wvs_items, "persona": persona_items}
+
+    exp_rows = _rows(conn, """
+        SELECT di.item_id, di.prompt_text, di.metadata
+        FROM dataset_items di
+        WHERE di.dataset_name = 'explorative'
+        ORDER BY CAST(json_extract(di.metadata, '$.query_id') AS INTEGER)
+    """)
+    explorative_items = []
+    for r in exp_rows:
+        meta = json.loads(r["metadata"])
+        explorative_items.append({
+            "item_id":  r["item_id"],
+            "prompt":   r["prompt_text"],
+            "query_id": meta.get("query_id"),
+            "topic":    meta.get("topic"),
+            "format":   meta.get("format"),
+        })
+
+    return {"wvs": wvs_items, "persona": persona_items, "explorative": explorative_items}
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -574,7 +592,8 @@ def main():
     prompts = export_prompts(conn, wvs_meta)
     PROMPTS.write_text(json.dumps(prompts, ensure_ascii=False, indent=2))
     print(f"Wrote {PROMPTS}  "
-          f"({len(prompts['wvs'])} WVS items, {len(prompts['persona'])} persona queries)")
+          f"({len(prompts['wvs'])} WVS items, {len(prompts['persona'])} persona queries, "
+          f"{len(prompts['explorative'])} explorative prompts)")
 
     print("Done.")
 

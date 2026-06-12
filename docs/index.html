@@ -86,7 +86,7 @@
 
     /* ── Stats ─────────────────────────────────────────── */
     .stats-grid {
-      display: grid; grid-template-columns: repeat(4,1fr); gap: 16px;
+      display: grid; grid-template-columns: repeat(5,1fr); gap: 16px;
     }
     .stat-box {
       border: 1px solid var(--border-dark); border-radius: 12px;
@@ -370,7 +370,7 @@
     @media (max-width: 1024px) {
       .two-col { grid-template-columns: 1fr; }
       .sidebar { position: static; max-height: none; }
-      .stats-grid { grid-template-columns: repeat(2,1fr); }
+      .stats-grid { grid-template-columns: repeat(3,1fr); }
       .chart-row.cols-2, .chart-row.cols-3 { grid-template-columns: 1fr; }
     }
     @media (max-width: 600px) {
@@ -456,6 +456,10 @@
           <span class="stat-value" id="stat-persona">—</span>
           <span class="stat-label">Open-ended Prompts</span>
         </div>
+        <div class="stat-box" id="card-explorative" title="Click to browse explorative prompts">
+          <span class="stat-value" id="stat-explorative">—</span>
+          <span class="stat-label">Explorative Prompts</span>
+        </div>
       </div>
     </div>
   </section>
@@ -488,6 +492,7 @@
       <span class="type-label">Type of prompt:</span>
       <button class="sub-btn active" data-prompt="openended">Open-ended Prompts</button>
       <button class="sub-btn" data-prompt="wvs">WVS Questions</button>
+      <button class="sub-btn" data-prompt="explorative">Explorative Prompts</button>
     </div>
   </div>
 
@@ -537,6 +542,28 @@
               </div>
             </div>
           </div>
+
+          <div id="explorative-format-section" style="display:none">
+            <p class="fl-label">Format</p>
+            <div class="fl-stack">
+              <button class="fl-btn active" data-efmt="all">All</button>
+              <button class="fl-btn" data-efmt="best">Best</button>
+              <button class="fl-btn" data-efmt="recommendation">Recommendation</button>
+              <button class="fl-btn" data-efmt="top_n">Top N</button>
+              <button class="fl-btn" data-efmt="how_to">How To</button>
+              <button class="fl-btn" data-efmt="creative">Creative</button>
+            </div>
+          </div>
+
+          <div id="explorative-pager" style="display:none">
+            <div class="page-row">
+              <span>Showing <span id="explorative-range">—</span> of <span id="explorative-total">—</span></span>
+              <div class="page-btns">
+                <button class="page-btn" id="explorative-prev">‹</button>
+                <button class="page-btn" id="explorative-next">›</button>
+              </div>
+            </div>
+          </div>
         </div>
       </aside>
 
@@ -567,6 +594,29 @@
                 </tr>
               </thead>
               <tbody id="wvs-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Explorative prompts -->
+        <div id="sub-explorative" style="display:none">
+          <p class="section-note">
+            23 short, commercially-relevant queries sent without persona framing.
+            Designed to detect product placement and brand bias in model responses —
+            spanning <strong>best / recommendation / top-N / how-to / creative</strong> formats
+            across smartphones, AI assistants, cloud services, and messaging tools.
+          </p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th style="width:36px">#</th>
+                  <th style="width:110px">Topic</th>
+                  <th style="width:120px">Format</th>
+                  <th>Prompt</th>
+                </tr>
+              </thead>
+              <tbody id="explorative-tbody"></tbody>
             </table>
           </div>
         </div>
@@ -709,6 +759,8 @@ const MODEL_CLR = { 'Claude Sonnet':'#e07b54', 'Gemini Pro':'#40ABC9', 'Gemini F
 const MODEL_LABELS = { 'Claude Sonnet':'Claude Sonnet', 'Gemini Pro':'Gemini Pro', 'Gemini Flash':'Gemini Flash', 'GPT Chat':'GPT Chat' };
 const MAIN_MODELS  = ['Claude Sonnet','Gemini Pro','Gemini Flash','GPT Chat'];
 const DIST_PALETTE = ['#40ABC9','#34A853','#e07b54','#9b59b6','#e74c3c','#1abc9c','#e67e22','#2c3e50'];
+const EXP_FORMAT_CLR = { best:'#fef3c7', recommendation:'var(--teal-tag)', top_n:'#f3e8ff', how_to:'#d1fae5', creative:'#ffe4e6' };
+const EXP_FORMAT_LABEL = { best:'Best', recommendation:'Recommendation', top_n:'Top N', how_to:'How To', creative:'Creative' };
 
 // ── Hash routing ───────────────────────────────────────────────
 function navigate() {
@@ -1039,6 +1091,32 @@ function renderPersonaRows(q='') {
   }).join('');
 }
 
+// ── Explorative prompt table ───────────────────────────────────
+let _explorativeAll=[], _explorativeFiltered=[], _explorativePage=0, _explorativeFmt='all';
+const EXPLORATIVE_PP=25;
+
+function renderExplorative(q='') {
+  _explorativeFiltered = _explorativeAll.filter(d=>
+    (_explorativeFmt==='all' || d.format===_explorativeFmt) &&
+    (!q || d.prompt.toLowerCase().includes(q))
+  );
+  const total=_explorativeFiltered.length, start=_explorativePage*EXPLORATIVE_PP;
+  document.getElementById('explorative-total').textContent=total;
+  document.getElementById('explorative-range').textContent=total?`${start+1}–${Math.min(start+EXPLORATIVE_PP,total)}`:'0';
+  const topicFmt = t => t ? t.replace(/_/g,' ') : '—';
+  document.getElementById('explorative-tbody').innerHTML = _explorativeFiltered.slice(start,start+EXPLORATIVE_PP).map((item,j)=>{
+    const n=start+j+1;
+    const fmtClr = EXP_FORMAT_CLR[item.format] || 'var(--gray-tag)';
+    const fmtLbl = EXP_FORMAT_LABEL[item.format] || item.format;
+    return `<tr>
+      <td style="color:#9ca3af;font-size:11px">${n}</td>
+      <td style="font-size:12px">${esc(topicFmt(item.topic))}</td>
+      <td><span class="tag" style="background:${fmtClr};color:#374151">${esc(fmtLbl)}</span></td>
+      <td style="font-weight:500">${esc(item.prompt)}</td>
+    </tr>`;
+  }).join('');
+}
+
 // ── Type of prompt switching (Overview page) ───────────────────
 let _activePromptType='openended';
 document.querySelectorAll('[data-prompt]').forEach(btn=>{
@@ -1047,12 +1125,17 @@ document.querySelectorAll('[data-prompt]').forEach(btn=>{
     btn.classList.add('active');
     _activePromptType=btn.dataset.prompt;
     const isOpen=_activePromptType==='openended';
+    const isWvs=_activePromptType==='wvs';
+    const isExp=_activePromptType==='explorative';
     document.getElementById('sub-openended').style.display=isOpen?'':'none';
-    document.getElementById('sub-wvs').style.display=isOpen?'none':'';
+    document.getElementById('sub-wvs').style.display=isWvs?'':'none';
+    document.getElementById('sub-explorative').style.display=isExp?'':'none';
     document.getElementById('src-section').style.display=isOpen?'':'none';
     document.getElementById('persona-pager').style.display=isOpen?'':'none';
-    document.getElementById('wvs-pager').style.display=isOpen?'none':'';
-    document.getElementById('prompt-search').placeholder=isOpen?'Search prompts…':'Search questions…';
+    document.getElementById('wvs-pager').style.display=isWvs?'':'none';
+    document.getElementById('explorative-format-section').style.display=isExp?'':'none';
+    document.getElementById('explorative-pager').style.display=isExp?'':'none';
+    document.getElementById('prompt-search').placeholder=isWvs?'Search questions…':'Search prompts…';
   });
 });
 
@@ -1080,10 +1163,22 @@ document.querySelectorAll('[data-align-src]').forEach(btn=>{
 });
 window.addEventListener('resize', ()=>{ if(document.querySelector('#page-analysis.active')) resizeAll(); });
 
+// ── Explorative format filter ──────────────────────────────────
+document.querySelectorAll('[data-efmt]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('[data-efmt]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    _explorativeFmt=btn.dataset.efmt;
+    _explorativePage=0;
+    renderExplorative(document.getElementById('prompt-search').value.toLowerCase());
+  });
+});
+
 // ── Shared search ──────────────────────────────────────────────
 document.getElementById('prompt-search').addEventListener('input',function(){
   const q=this.value.toLowerCase();
   if (_activePromptType==='openended'){_personaPage=0;renderPersonaRows(q);}
+  else if (_activePromptType==='explorative'){_explorativePage=0;renderExplorative(q);}
   else {_wvsPage=0;renderWVS(q);}
 });
 
@@ -1104,6 +1199,8 @@ document.getElementById('persona-prev').addEventListener('click',()=>{if(_person
 document.getElementById('persona-next').addEventListener('click',()=>{if((_personaPage+1)*PERSONA_PP<_personaFiltered.length){_personaPage++;renderPersonaRows(q());}});
 document.getElementById('wvs-prev').addEventListener('click',()=>{if(_wvsPage>0){_wvsPage--;renderWVS(q());}});
 document.getElementById('wvs-next').addEventListener('click',()=>{if((_wvsPage+1)*WVS_PP<_wvsFiltered.length){_wvsPage++;renderWVS(q());}});
+document.getElementById('explorative-prev').addEventListener('click',()=>{if(_explorativePage>0){_explorativePage--;renderExplorative(q());}});
+document.getElementById('explorative-next').addEventListener('click',()=>{if((_explorativePage+1)*EXPLORATIVE_PP<_explorativeFiltered.length){_explorativePage++;renderExplorative(q());}});
 
 // ── Escape util ────────────────────────────────────────────────
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
@@ -1197,6 +1294,11 @@ function initStatCards(metrics) {
     document.querySelector('[data-prompt="openended"]').click();
     document.getElementById('sub-openended').scrollIntoView({ behavior:'smooth', block:'start' });
   });
+  document.getElementById('card-explorative').addEventListener('click', () => {
+    closeAllPanels();
+    document.querySelector('[data-prompt="explorative"]').click();
+    document.getElementById('sub-explorative').scrollIntoView({ behavior:'smooth', block:'start' });
+  });
   document.getElementById('wave-detail-close').addEventListener('click', closeAllPanels);
   document.getElementById('models-detail-close').addEventListener('click', closeAllPanels);
 }
@@ -1213,6 +1315,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
     document.getElementById('stat-waves').textContent=metrics.waves?.length??'—';
     document.getElementById('stat-wvs').textContent=prompts.wvs?.length??'—';
     document.getElementById('stat-persona').textContent=prompts.persona?.length??'—';
+    document.getElementById('stat-explorative').textContent=prompts.explorative?.length??'—';
 
     initStatCards(metrics);
     renderVersions(metrics);
@@ -1239,8 +1342,10 @@ document.addEventListener('DOMContentLoaded',async()=>{
 
     _wvsAll=prompts.wvs;
     _personaAll=prompts.persona;
+    _explorativeAll=prompts.explorative||[];
     renderWVS();
     renderPersonaRows();
+    renderExplorative();
 
   } catch(err) {
     console.error(err);
