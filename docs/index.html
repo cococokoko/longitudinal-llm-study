@@ -92,9 +92,46 @@
       border: 1px solid var(--border-dark); border-radius: 12px;
       height: 80px; display: flex; flex-direction: column;
       align-items: center; justify-content: center; background: transparent;
+      cursor: pointer; transition: box-shadow .15s, border-color .15s;
     }
+    .stat-box:hover { box-shadow: 0 2px 10px rgba(0,0,0,.1); border-color: var(--teal); }
+    .stat-box.active { border-color: var(--teal); background: rgba(64,171,201,.06); }
     .stat-value { font-size: 1.7rem; font-weight: 700; color: var(--coral-stat); line-height: 1; }
     .stat-label { font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 5px; }
+
+    /* ── Wave detail panel ─────────────────────────────── */
+    .wave-detail-panel {
+      max-width: 1300px; margin: 0 auto; padding: 0 24px;
+      display: none;
+    }
+    .wave-detail-panel.open { display: block; padding-bottom: 20px; }
+    .wave-detail-inner {
+      border: 1px solid var(--border-dark); border-radius: 12px;
+      overflow: hidden; background: var(--surface);
+    }
+    .wave-detail-header {
+      padding: 12px 18px; border-bottom: 1px solid var(--border-gray);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .wave-detail-title { font-weight: 700; font-size: .95rem; }
+    .wave-detail-close {
+      background: none; border: none; cursor: pointer; font-size: 1.1rem;
+      color: var(--text-muted); line-height: 1; padding: 2px 6px; border-radius: 4px;
+    }
+    .wave-detail-close:hover { background: #f3f4f6; color: var(--text); }
+    .wave-rows { max-height: 380px; overflow-y: auto; }
+    .wave-row {
+      display: grid; padding: 10px 18px;
+      border-bottom: 1px solid #f3f4f6; align-items: center;
+      font-size: 13px;
+    }
+    .wave-row:last-child { border-bottom: none; }
+    .wave-row.header { background: #f9f9f4; font-size: 10.5px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .4px; color: var(--text-light);
+      position: sticky; top: 0; z-index: 1; border-bottom: 1px solid var(--border-gray); }
+    .wave-date { font-weight: 600; color: #111; }
+    .wave-cell { color: var(--text-gray); font-size: 12px; }
+    .wave-cell .ver { font-size: 10px; color: var(--text-light); margin-top: 1px; }
 
     /* ── Type / sub-tab bar ────────────────────────────── */
     .type-bar {
@@ -401,27 +438,49 @@
   <section class="hero">
     <div class="hero-inner">
       <h1 class="hero-title">STUDY OVERVIEW</h1>
-      <p class="hero-desc">Explore the prompts and experimental design used across waves.</p>
+      <p class="hero-desc">Explore the prompts and experimental design used across waves. Click a card for details.</p>
       <div class="stats-grid">
-        <div class="stat-box">
+        <div class="stat-box" id="card-waves" title="Click to see per-wave response counts">
           <span class="stat-value" id="stat-waves">—</span>
           <span class="stat-label">Waves Collected</span>
         </div>
-        <div class="stat-box">
+        <div class="stat-box" id="card-models" title="Click to see model details">
           <span class="stat-value">3</span>
           <span class="stat-label">Models Tracked</span>
         </div>
-        <div class="stat-box">
+        <div class="stat-box" id="card-wvs" title="Click to browse WVS questions">
           <span class="stat-value" id="stat-wvs">—</span>
           <span class="stat-label">WVS Questions</span>
         </div>
-        <div class="stat-box">
+        <div class="stat-box" id="card-persona" title="Click to browse open-ended prompts">
           <span class="stat-value" id="stat-persona">—</span>
           <span class="stat-label">Open-ended Prompts</span>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Wave detail panel (shown when "Waves Collected" card is clicked) -->
+  <div class="wave-detail-panel" id="wave-detail-panel">
+    <div class="wave-detail-inner">
+      <div class="wave-detail-header">
+        <span class="wave-detail-title">Responses per Wave</span>
+        <button class="wave-detail-close" id="wave-detail-close" title="Close">✕</button>
+      </div>
+      <div class="wave-rows" id="wave-rows"></div>
+    </div>
+  </div>
+
+  <!-- Models detail panel (shown when "Models Tracked" card is clicked) -->
+  <div class="wave-detail-panel" id="models-detail-panel">
+    <div class="wave-detail-inner">
+      <div class="wave-detail-header">
+        <span class="wave-detail-title">Models Tracked</span>
+        <button class="wave-detail-close" id="models-detail-close" title="Close">✕</button>
+      </div>
+      <div class="wave-rows" id="models-rows"></div>
+    </div>
+  </div>
 
   <!-- Type of prompt bar -->
   <div class="type-bar">
@@ -1049,6 +1108,99 @@ document.getElementById('wvs-next').addEventListener('click',()=>{if((_wvsPage+1
 // ── Escape util ────────────────────────────────────────────────
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 
+// ── Stat card clicks ───────────────────────────────────────────
+function closeAllPanels() {
+  document.querySelectorAll('.wave-detail-panel').forEach(p => p.classList.remove('open'));
+  document.querySelectorAll('.stat-box').forEach(b => b.classList.remove('active'));
+}
+
+function renderWaveRows(truncation_rates, wave_versions, waves) {
+  const byKey = {};
+  for (const r of (wave_versions||[])) byKey[`${r.wave}||${r.model}`] = r;
+  const totals = {};
+  for (const r of (truncation_rates||[])) {
+    if (!totals[r.wave]) totals[r.wave] = {};
+    totals[r.wave][r.model] = r;
+  }
+  const models = MAIN_MODELS.filter(m => waves.some(w => totals[w]?.[m]));
+  const colW = `grid-template-columns: 110px ${models.map(()=>'1fr').join(' ')}`;
+  let html = `<div class="wave-row header" style="${colW}">
+    <div>Date</div>${models.map(m=>`<div>${MODEL_LABELS[m]}</div>`).join('')}
+  </div>`;
+  for (const w of [...waves].reverse()) {
+    const cells = models.map(m => {
+      const t = totals[w]?.[m];
+      const v = byKey[`${w}||${m}`];
+      if (!t) return `<div class="wave-cell">—</div>`;
+      const ver = (v?.model_used||'').split('/').pop().split(':')[0];
+      return `<div class="wave-cell">
+        <strong>${t.total}</strong> calls
+        ${t.output_tokens_mean != null ? `· <span style="color:var(--text-light)">${t.output_tokens_mean} tok</span>` : ''}
+        ${ver ? `<div class="ver">${ver}</div>` : ''}
+      </div>`;
+    }).join('');
+    html += `<div class="wave-row" style="${colW}"><div class="wave-date">${w}</div>${cells}</div>`;
+  }
+  document.getElementById('wave-rows').innerHTML = html;
+}
+
+function renderModelsRows(wave_versions, waves) {
+  const latest = {};
+  for (const r of (wave_versions||[])) {
+    if (!latest[r.model] || r.wave > latest[r.model].wave) latest[r.model] = r;
+  }
+  const colW = 'grid-template-columns: 140px 1fr 80px';
+  let html = `<div class="wave-row header" style="${colW}">
+    <div>Model</div><div>Latest Version</div><div>Calls</div>
+  </div>`;
+  for (const m of MAIN_MODELS) {
+    const r = latest[m];
+    html += `<div class="wave-row" style="${colW}">
+      <div class="wave-date">${MODEL_LABELS[m]}</div>
+      <div class="wave-cell">${r ? `<span class="badge-teal">${(r.model_used||'—').split('/').pop()}</span>` : '—'}</div>
+      <div class="wave-cell">${r ? r.n_calls : '—'}</div>
+    </div>`;
+  }
+  document.getElementById('models-rows').innerHTML = html;
+}
+
+function initStatCards(metrics) {
+  document.getElementById('card-waves').addEventListener('click', () => {
+    const panel = document.getElementById('wave-detail-panel');
+    const wasOpen = panel.classList.contains('open');
+    closeAllPanels();
+    if (!wasOpen) {
+      renderWaveRows(metrics.truncation_rates, metrics.wave_versions, metrics.waves||[]);
+      panel.classList.add('open');
+      document.getElementById('card-waves').classList.add('active');
+      panel.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    }
+  });
+  document.getElementById('card-models').addEventListener('click', () => {
+    const panel = document.getElementById('models-detail-panel');
+    const wasOpen = panel.classList.contains('open');
+    closeAllPanels();
+    if (!wasOpen) {
+      renderModelsRows(metrics.wave_versions, metrics.waves||[]);
+      panel.classList.add('open');
+      document.getElementById('card-models').classList.add('active');
+      panel.scrollIntoView({ behavior:'smooth', block:'nearest' });
+    }
+  });
+  document.getElementById('card-wvs').addEventListener('click', () => {
+    closeAllPanels();
+    document.querySelector('[data-prompt="wvs"]').click();
+    document.getElementById('sub-wvs').scrollIntoView({ behavior:'smooth', block:'start' });
+  });
+  document.getElementById('card-persona').addEventListener('click', () => {
+    closeAllPanels();
+    document.querySelector('[data-prompt="openended"]').click();
+    document.getElementById('sub-openended').scrollIntoView({ behavior:'smooth', block:'start' });
+  });
+  document.getElementById('wave-detail-close').addEventListener('click', closeAllPanels);
+  document.getElementById('models-detail-close').addEventListener('click', closeAllPanels);
+}
+
 // ── Boot ───────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded',async()=>{
   navigate(); // show correct page on load
@@ -1062,6 +1214,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
     document.getElementById('stat-wvs').textContent=prompts.wvs?.length??'—';
     document.getElementById('stat-persona').textContent=prompts.persona?.length??'—';
 
+    initStatCards(metrics);
     renderVersions(metrics);
 
     if (metrics.wvs_metrics?.length) {
