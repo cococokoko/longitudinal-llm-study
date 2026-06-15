@@ -20,6 +20,13 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
 
+      - name: Download study DB artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: study-db
+          path: .
+        continue-on-error: true   # no artifact on first run
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -29,22 +36,41 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Reconstruct DB from JSONL if artifact unavailable
+        run: |
+          if [ ! -s study.db ] && [ -f results/responses.jsonl ]; then
+            echo "Artifact unavailable — reconstructing DB from committed JSONL..."
+            python pipeline.py reconstruct
+          fi
+
       - name: Run pipeline
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python pipeline.py run
 
+      - name: Export results to JSONL
+        run: python pipeline.py export --format jsonl --out results/
+
       - name: Generate dashboard data
         run: python generate_dashboard_data.py
-        continue-on-error: true   
+        continue-on-error: true
 
       - name: Commit results
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add study.db results/ docs/
+          git add results/ docs/
           git diff --cached --quiet && echo "Nothing to commit" || \
             git commit -m "chore: daily run $(date -u +%Y-%m-%d)" && git push
+
+      - name: Upload study DB artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: study-db
+          path: study.db
+          overwrite: true
+          retention-days: 400
 
       - name: Send daily summary email
         if: always()

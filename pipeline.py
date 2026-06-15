@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import datetime
+import json
 import os
 import sys
 from pathlib import Path
@@ -224,6 +225,91 @@ def cmd_report(args: argparse.Namespace, cfg: dict) -> None:
     conn.close()
 
 
+# ── Reconstruct ───────────────────────────────────────────────────────────────
+
+def cmd_reconstruct(args: argparse.Namespace, cfg: dict) -> None:
+    """Rebuild study.db from a JSONL export (fallback when artifact is unavailable)."""
+    source = Path(getattr(args, "source", "results/responses.jsonl"))
+    if not source.exists():
+        console.print(f"[red]File not found: {source}[/]")
+        sys.exit(1)
+
+    conn = open_db(cfg["study"]["db_path"])
+    waves_seen: set[str] = set()
+    items_seen: set[str] = set()
+    models_seen: set[str] = set()
+    n = 0
+
+    with source.open() as fh:
+        for line in fh:
+            line = line.strip()
+            if not line:
+                continue
+            rec = json.loads(line)
+
+            wave_id = rec["wave_id"]
+            if wave_id not in waves_seen:
+                conn.execute(
+                    "INSERT OR IGNORE INTO study_waves (id, name, description, created_at, metadata) VALUES (?,?,?,?,?)",
+                    (wave_id, rec["wave_name"], "", rec["created_at"], "{}"),
+                )
+                waves_seen.add(wave_id)
+
+            item_id = rec["item_id"]
+            if item_id not in items_seen:
+                metadata = {
+                    k: rec[k] for k in
+                    ["condition", "ses_level", "persona_role", "persona_index",
+                     "persona_text", "query_source", "query_id"]
+                    if rec.get(k) is not None
+                }
+                conn.execute(
+                    """INSERT OR IGNORE INTO dataset_items
+                           (id, dataset_name, item_id, prompt_text, system_text, metadata, created_at)
+                           VALUES (?,?,?,?,?,?,?)""",
+                    (item_id, rec["dataset_name"], rec["source_item_id"],
+                     rec["prompt_text"], rec.get("system_text"),
+                     json.dumps(metadata), rec["created_at"]),
+                )
+                items_seen.add(item_id)
+
+            model_config_id = rec["model_config_id"]
+            if model_config_id not in models_seen:
+                call_params = json.loads(rec.get("call_params") or "{}")
+                params = {k: call_params[k] for k in ["temperature", "max_tokens", "top_p"] if k in call_params}
+                conn.execute(
+                    """INSERT OR IGNORE INTO model_configs
+                           (id, model_id, display_name, provider, parameters, active)
+                           VALUES (?,?,?,?,?,1)""",
+                    (model_config_id, rec["model_id"], rec["model_display_name"],
+                     rec["provider"], json.dumps(params)),
+                )
+                models_seen.add(model_config_id)
+
+            conn.execute(
+                "INSERT OR IGNORE INTO wave_items (wave_id, item_id) VALUES (?,?)",
+                (wave_id, item_id),
+            )
+
+            conn.execute(
+                """INSERT OR IGNORE INTO response_records
+                       (id, wave_id, item_id, model_config_id, model_used, call_params,
+                        response_text, input_tokens, output_tokens, finish_reason, latency_ms,
+                        cost_usd, reasoning_text, reasoning_tokens, raw_response, error, created_at)
+                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                (rec["id"], wave_id, item_id, model_config_id, rec.get("model_used"),
+                 rec.get("call_params"), rec.get("response_text"), rec.get("input_tokens"),
+                 rec.get("output_tokens"), rec.get("finish_reason"), rec.get("latency_ms"),
+                 rec.get("cost_usd"), rec.get("reasoning_text"), rec.get("reasoning_tokens"),
+                 rec.get("raw_response"), rec.get("error"), rec["created_at"]),
+            )
+            n += 1
+
+    conn.commit()
+    conn.close()
+    console.print(f"[green]Reconstructed DB from {n} records in {source}.[/]")
+
+
 # ── Argument parser ───────────────────────────────────────────────────────────
 
 def build_parser() -> argparse.ArgumentParser:
@@ -260,6 +346,12 @@ def build_parser() -> argparse.ArgumentParser:
 
     sub.add_parser("report", help="Print statistical summary")
 
+    recon_p = sub.add_parser("reconstruct", help="Rebuild study.db from a JSONL export")
+    recon_p.add_argument(
+        "--from", dest="source", default="results/responses.jsonl", metavar="PATH",
+        help="Path to the JSONL file to reconstruct from (default: results/responses.jsonl)",
+    )
+
     return p
 
 
@@ -270,7 +362,7 @@ def main() -> None:
     args   = parser.parse_args()
     cfg    = load_config(args.config)
 
-    dispatch = {"run": cmd_run, "export": cmd_export, "report": cmd_report}
+    dispatch = {"run": cmd_run, "export": cmd_export, "report": cmd_report, "reconstruct": cmd_reconstruct}
     dispatch[args.command](args, cfg)
 
 
