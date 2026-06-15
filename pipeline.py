@@ -189,22 +189,36 @@ def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
 
 def cmd_export(args: argparse.Namespace, cfg: dict) -> None:
     conn = open_db(cfg["study"]["db_path"])
-    rows = fetch_responses(conn)
+    wave_name = getattr(args, "wave", None)
+    fmt       = getattr(args, "format", "csv")
+
+    if wave_name:
+        row = conn.execute("SELECT id FROM study_waves WHERE name = ?", (wave_name,)).fetchone()
+        if not row:
+            console.print(f"[red]Wave '{wave_name}' not found in DB.[/]")
+            conn.close()
+            sys.exit(1)
+        rows = fetch_responses(conn, row["id"])
+        out  = Path(getattr(args, "out", "results/waves"))
+        out.mkdir(parents=True, exist_ok=True)
+        default_stem = wave_name
+    else:
+        rows = fetch_responses(conn)
+        out  = Path(getattr(args, "out", "."))
+        out.mkdir(parents=True, exist_ok=True)
+        default_stem = "responses"
+
     if not rows:
         console.print("[yellow]No responses found.[/]")
         conn.close()
         return
 
-    df  = responses_to_df(rows)
-    out = Path(getattr(args, "out", "."))
-    out.mkdir(parents=True, exist_ok=True)
-    fmt = getattr(args, "format", "csv")
-
+    df = responses_to_df(rows)
     dispatch = {
-        "csv":     lambda: export_csv(df, out / "responses.csv"),
-        "json":    lambda: export_json(df, out / "responses.json"),
-        "jsonl":   lambda: export_jsonl(df, out / "responses.jsonl"),
-        "parquet": lambda: export_parquet(df, out / "responses.parquet"),
+        "csv":     lambda: export_csv(df, out / f"{default_stem}.csv"),
+        "json":    lambda: export_json(df, out / f"{default_stem}.json"),
+        "jsonl":   lambda: export_jsonl(df, out / f"{default_stem}.jsonl"),
+        "parquet": lambda: export_parquet(df, out / f"{default_stem}.parquet"),
     }
     fn = dispatch.get(fmt)
     if fn is None:
@@ -229,9 +243,14 @@ def cmd_report(args: argparse.Namespace, cfg: dict) -> None:
 
 def cmd_reconstruct(args: argparse.Namespace, cfg: dict) -> None:
     """Rebuild study.db from a JSONL export (fallback when artifact is unavailable)."""
-    source = Path(getattr(args, "source", "results/responses.jsonl"))
+    source = Path(getattr(args, "source", "results/waves"))
     if not source.exists():
-        console.print(f"[red]File not found: {source}[/]")
+        console.print(f"[red]Path not found: {source}[/]")
+        sys.exit(1)
+
+    files = sorted(source.glob("*.jsonl")) if source.is_dir() else [source]
+    if not files:
+        console.print(f"[yellow]No .jsonl files found in {source}[/]")
         sys.exit(1)
 
     conn = open_db(cfg["study"]["db_path"])
@@ -240,74 +259,76 @@ def cmd_reconstruct(args: argparse.Namespace, cfg: dict) -> None:
     models_seen: set[str] = set()
     n = 0
 
-    with source.open() as fh:
-        for line in fh:
-            line = line.strip()
-            if not line:
-                continue
-            rec = json.loads(line)
+    for fpath in files:
+        console.print(f"[dim]  Reading {fpath.name}…[/]")
+        with fpath.open() as fh:
+            for line in fh:
+                line = line.strip()
+                if not line:
+                    continue
+                rec = json.loads(line)
 
-            wave_id = rec["wave_id"]
-            if wave_id not in waves_seen:
+                wave_id = rec["wave_id"]
+                if wave_id not in waves_seen:
+                    conn.execute(
+                        "INSERT OR IGNORE INTO study_waves (id, name, description, created_at, metadata) VALUES (?,?,?,?,?)",
+                        (wave_id, rec["wave_name"], "", rec["created_at"], "{}"),
+                    )
+                    waves_seen.add(wave_id)
+
+                item_id = rec["item_id"]
+                if item_id not in items_seen:
+                    metadata = {
+                        k: rec[k] for k in
+                        ["condition", "ses_level", "persona_role", "persona_index",
+                         "persona_text", "query_source", "query_id"]
+                        if rec.get(k) is not None
+                    }
+                    conn.execute(
+                        """INSERT OR IGNORE INTO dataset_items
+                               (id, dataset_name, item_id, prompt_text, system_text, metadata, created_at)
+                               VALUES (?,?,?,?,?,?,?)""",
+                        (item_id, rec["dataset_name"], rec["source_item_id"],
+                         rec["prompt_text"], rec.get("system_text"),
+                         json.dumps(metadata), rec["created_at"]),
+                    )
+                    items_seen.add(item_id)
+
+                model_config_id = rec["model_config_id"]
+                if model_config_id not in models_seen:
+                    call_params = json.loads(rec.get("call_params") or "{}")
+                    params = {k: call_params[k] for k in ["temperature", "max_tokens", "top_p"] if k in call_params}
+                    conn.execute(
+                        """INSERT OR IGNORE INTO model_configs
+                               (id, model_id, display_name, provider, parameters, active)
+                               VALUES (?,?,?,?,?,1)""",
+                        (model_config_id, rec["model_id"], rec["model_display_name"],
+                         rec["provider"], json.dumps(params)),
+                    )
+                    models_seen.add(model_config_id)
+
                 conn.execute(
-                    "INSERT OR IGNORE INTO study_waves (id, name, description, created_at, metadata) VALUES (?,?,?,?,?)",
-                    (wave_id, rec["wave_name"], "", rec["created_at"], "{}"),
+                    "INSERT OR IGNORE INTO wave_items (wave_id, item_id) VALUES (?,?)",
+                    (wave_id, item_id),
                 )
-                waves_seen.add(wave_id)
 
-            item_id = rec["item_id"]
-            if item_id not in items_seen:
-                metadata = {
-                    k: rec[k] for k in
-                    ["condition", "ses_level", "persona_role", "persona_index",
-                     "persona_text", "query_source", "query_id"]
-                    if rec.get(k) is not None
-                }
                 conn.execute(
-                    """INSERT OR IGNORE INTO dataset_items
-                           (id, dataset_name, item_id, prompt_text, system_text, metadata, created_at)
-                           VALUES (?,?,?,?,?,?,?)""",
-                    (item_id, rec["dataset_name"], rec["source_item_id"],
-                     rec["prompt_text"], rec.get("system_text"),
-                     json.dumps(metadata), rec["created_at"]),
+                    """INSERT OR IGNORE INTO response_records
+                           (id, wave_id, item_id, model_config_id, model_used, call_params,
+                            response_text, input_tokens, output_tokens, finish_reason, latency_ms,
+                            cost_usd, reasoning_text, reasoning_tokens, raw_response, error, created_at)
+                           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                    (rec["id"], wave_id, item_id, model_config_id, rec.get("model_used"),
+                     rec.get("call_params"), rec.get("response_text"), rec.get("input_tokens"),
+                     rec.get("output_tokens"), rec.get("finish_reason"), rec.get("latency_ms"),
+                     rec.get("cost_usd"), rec.get("reasoning_text"), rec.get("reasoning_tokens"),
+                     rec.get("raw_response"), rec.get("error"), rec["created_at"]),
                 )
-                items_seen.add(item_id)
-
-            model_config_id = rec["model_config_id"]
-            if model_config_id not in models_seen:
-                call_params = json.loads(rec.get("call_params") or "{}")
-                params = {k: call_params[k] for k in ["temperature", "max_tokens", "top_p"] if k in call_params}
-                conn.execute(
-                    """INSERT OR IGNORE INTO model_configs
-                           (id, model_id, display_name, provider, parameters, active)
-                           VALUES (?,?,?,?,?,1)""",
-                    (model_config_id, rec["model_id"], rec["model_display_name"],
-                     rec["provider"], json.dumps(params)),
-                )
-                models_seen.add(model_config_id)
-
-            conn.execute(
-                "INSERT OR IGNORE INTO wave_items (wave_id, item_id) VALUES (?,?)",
-                (wave_id, item_id),
-            )
-
-            conn.execute(
-                """INSERT OR IGNORE INTO response_records
-                       (id, wave_id, item_id, model_config_id, model_used, call_params,
-                        response_text, input_tokens, output_tokens, finish_reason, latency_ms,
-                        cost_usd, reasoning_text, reasoning_tokens, raw_response, error, created_at)
-                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
-                (rec["id"], wave_id, item_id, model_config_id, rec.get("model_used"),
-                 rec.get("call_params"), rec.get("response_text"), rec.get("input_tokens"),
-                 rec.get("output_tokens"), rec.get("finish_reason"), rec.get("latency_ms"),
-                 rec.get("cost_usd"), rec.get("reasoning_text"), rec.get("reasoning_tokens"),
-                 rec.get("raw_response"), rec.get("error"), rec["created_at"]),
-            )
-            n += 1
+                n += 1
 
     conn.commit()
     conn.close()
-    console.print(f"[green]Reconstructed DB from {n} records in {source}.[/]")
+    console.print(f"[green]Reconstructed DB from {n} records across {len(files)} file(s).[/]")
 
 
 # ── Argument parser ───────────────────────────────────────────────────────────
@@ -342,14 +363,18 @@ def build_parser() -> argparse.ArgumentParser:
 
     pe = sub.add_parser("export", help="Export responses to file")
     pe.add_argument("--format", default="csv", choices=["csv", "json", "jsonl", "parquet"])
-    pe.add_argument("--out", default="results/")
+    pe.add_argument("--out", default=None)
+    pe.add_argument(
+        "--wave", default=None, metavar="YYYY-MM-DD",
+        help="Export only this wave to results/waves/YYYY-MM-DD.jsonl (per-wave backup).",
+    )
 
     sub.add_parser("report", help="Print statistical summary")
 
-    recon_p = sub.add_parser("reconstruct", help="Rebuild study.db from a JSONL export")
+    recon_p = sub.add_parser("reconstruct", help="Rebuild study.db from per-wave JSONL files")
     recon_p.add_argument(
-        "--from", dest="source", default="results/responses.jsonl", metavar="PATH",
-        help="Path to the JSONL file to reconstruct from (default: results/responses.jsonl)",
+        "--from", dest="source", default="results/waves", metavar="PATH",
+        help="Directory of per-wave .jsonl files, or a single .jsonl file (default: results/waves/)",
     )
 
     return p

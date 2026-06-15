@@ -38,8 +38,8 @@ jobs:
 
       - name: Reconstruct DB from JSONL if artifact unavailable
         run: |
-          if [ ! -s study.db ] && [ -f results/responses.jsonl ]; then
-            echo "Artifact unavailable — reconstructing DB from committed JSONL..."
+          if [ ! -s study.db ] && [ -d results/waves ] && [ "$(ls -A results/waves/*.jsonl 2>/dev/null)" ]; then
+            echo "Artifact unavailable — reconstructing DB from committed JSONL files..."
             python pipeline.py reconstruct
           fi
 
@@ -48,8 +48,8 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python pipeline.py run --weekly
 
-      - name: Export results to JSONL
-        run: python pipeline.py export --format jsonl --out results/
+      - name: Export today's wave to JSONL
+        run: python pipeline.py export --format jsonl --wave $(date -u +%Y-%m-%d)
 
       - name: Generate dashboard data
         run: python generate_dashboard_data.py
