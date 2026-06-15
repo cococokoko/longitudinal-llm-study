@@ -20,13 +20,6 @@ jobs:
         with:
           token: ${{ secrets.GH_PAT }}
 
-      - name: Download study DB artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: study-db
-          path: .
-        continue-on-error: true   # no artifact on first run
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -36,10 +29,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Reconstruct DB from JSONL if artifact unavailable
+      - name: Reconstruct DB from committed JSONL
         run: |
-          if [ ! -s study.db ] && [ -d results/waves ] && [ "$(ls -A results/waves/*.jsonl 2>/dev/null)" ]; then
-            echo "Artifact unavailable — reconstructing DB from committed JSONL files..."
+          if [ -d results/waves ] && [ "$(ls -A results/waves/*.jsonl 2>/dev/null)" ]; then
+            echo "Reconstructing DB from committed JSONL files..."
             python pipeline.py reconstruct
           fi
 

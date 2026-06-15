@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-12",
+  "generated": "2026-06-15",
   "waves": [
     "2026-06-04",
     "2026-06-05",
@@ -9,7 +9,8 @@
     "2026-06-09",
     "2026-06-10",
     "2026-06-11",
-    "2026-06-12"
+    "2026-06-12",
+    "2026-06-15"
   ],
   "wave_versions": [
     {
@@ -185,6 +186,24 @@
       "model": "Gemini Flash",
       "model_used": "google/gemini-3.5-flash-20260519",
       "n_calls": 772
+    },
+    {
+      "wave": "2026-06-15",
+      "model": "Claude Sonnet",
+      "model_used": "anthropic/claude-4.6-sonnet-20260217",
+      "n_calls": 772
+    },
+    {
+      "wave": "2026-06-15",
+      "model": "GPT Chat",
+      "model_used": "openai/gpt-chat-latest-20260505",
+      "n_calls": 772
+    },
+    {
+      "wave": "2026-06-15",
+      "model": "Gemini Flash",
+      "model_used": "google/gemini-3.5-flash-20260519",
+      "n_calls": 772
     }
   ],
   "wvs_metrics": [
@@ -268,6 +287,33 @@
       "entropy_mean": 0.4366,
       "entropy_global_mean": 1.9516,
       "n": 280
+    },
+    {
+      "wave": "2026-06-15",
+      "model": "Claude Sonnet",
+      "ws_mean": 0.985,
+      "ws_std": 1.1917,
+      "entropy_mean": 1.2639,
+      "entropy_global_mean": 1.9516,
+      "n": 280
+    },
+    {
+      "wave": "2026-06-15",
+      "model": "GPT Chat",
+      "ws_mean": 2.5321,
+      "ws_std": 1.9594,
+      "entropy_mean": 0.4634,
+      "entropy_global_mean": 1.9516,
+      "n": 280
+    },
+    {
+      "wave": "2026-06-15",
+      "model": "Gemini Flash",
+      "ws_mean": 2.652,
+      "ws_std": 2.3975,
+      "entropy_mean": 0.4162,
+      "entropy_global_mean": 1.9515,
+      "n": 279
     }
   ],
   "wvs_metrics_legacy": [
@@ -648,6 +694,30 @@
       "truncated": 4,
       "output_tokens_mean": 547.5,
       "output_tokens_sum": 422688
+    },
+    {
+      "wave": "2026-06-15",
+      "model": "Claude Sonnet",
+      "total": 772,
+      "truncated": 6,
+      "output_tokens_mean": 228.8,
+      "output_tokens_sum": 176666
+    },
+    {
+      "wave": "2026-06-15",
+      "model": "GPT Chat",
+      "total": 772,
+      "truncated": 0,
+      "output_tokens_mean": 276.3,
+      "output_tokens_sum": 213321
+    },
+    {
+      "wave": "2026-06-15",
+      "model": "Gemini Flash",
+      "total": 772,
+      "truncated": 4,
+      "output_tokens_mean": 543.5,
+      "output_tokens_sum": 419603
     }
   ],
   "persona_lengths": [

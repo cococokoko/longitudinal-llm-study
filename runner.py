@@ -147,12 +147,14 @@ async def _run_job(
             )
 
         status = "[red]ERR[/]" if result.error else "[green]OK[/]"
+        detail = result.error or json.dumps(result.raw)
         progress.advance(task_id)
         progress.print(
             f"  {status} {model['display_name']:30s} | "
             f"{item['dataset_name']:15s} | "
             f"{item['item_id'][:35]:35s} | "
-            f"{result.latency_ms:>5}ms"
+            f"{result.latency_ms:>5}ms | "
+            f"{detail}"
         )
 
 

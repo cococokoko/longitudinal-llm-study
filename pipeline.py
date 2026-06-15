@@ -199,12 +199,12 @@ def cmd_export(args: argparse.Namespace, cfg: dict) -> None:
             conn.close()
             sys.exit(1)
         rows = fetch_responses(conn, row["id"])
-        out  = Path(getattr(args, "out", "results/waves"))
+        out  = Path(args.out or "results/waves")
         out.mkdir(parents=True, exist_ok=True)
         default_stem = wave_name
     else:
         rows = fetch_responses(conn)
-        out  = Path(getattr(args, "out", "."))
+        out  = Path(args.out or ".")
         out.mkdir(parents=True, exist_ok=True)
         default_stem = "responses"
 
