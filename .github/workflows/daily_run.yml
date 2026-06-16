@@ -63,7 +63,7 @@ jobs:
           name: study-db
           path: study.db
           overwrite: true
-          retention-days: 400
+          retention-days: 90
 
       - name: Send daily summary email
         if: always()

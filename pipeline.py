@@ -93,13 +93,21 @@ def seed_models(
         params = dict(m.get("parameters", {}))
         if temperature_override is not None:
             params["temperature"] = temperature_override
-        upsert_model(
+        mid = upsert_model(
             conn,
             model_id=m["model_id"],
             display_name=m.get("display_name"),
             provider=m.get("provider", "openrouter"),
             parameters=params,
         )
+        # Defensively collapse any other rows that share this model_id (e.g. a
+        # stale duplicate from a past race or DB reconstruct) so pending_jobs()
+        # never cross-joins prompts against the same underlying model twice.
+        conn.execute(
+            "UPDATE model_configs SET active = 0 WHERE model_id = ? AND id != ?",
+            (m["model_id"], mid),
+        )
+        conn.commit()
 
     note = f" (temperature={temperature_override})" if temperature_override is not None else ""
     console.print(f"[dim]Seeded {len(models)} model(s){note}.[/]")
@@ -257,6 +265,7 @@ def cmd_reconstruct(args: argparse.Namespace, cfg: dict) -> None:
     waves_seen: set[str] = set()
     items_seen: set[str] = set()
     models_seen: set[str] = set()
+    latest_config_by_model_id: dict[str, str] = {}
     n = 0
 
     for fpath in files:
@@ -306,6 +315,9 @@ def cmd_reconstruct(args: argparse.Namespace, cfg: dict) -> None:
                          rec["provider"], json.dumps(params)),
                     )
                     models_seen.add(model_config_id)
+                # Files are read in chronological order, so the last config id seen
+                # for a given model_id is the canonical one to keep active.
+                latest_config_by_model_id[rec["model_id"]] = model_config_id
 
                 conn.execute(
                     "INSERT OR IGNORE INTO wave_items (wave_id, item_id) VALUES (?,?)",
@@ -325,6 +337,16 @@ def cmd_reconstruct(args: argparse.Namespace, cfg: dict) -> None:
                      rec.get("raw_response"), rec.get("error"), rec["created_at"]),
                 )
                 n += 1
+
+    # Collapse duplicate model_config rows for the same model_id (e.g. left over
+    # from a past race condition) down to the most recently-seen one per model_id,
+    # so pending_jobs() doesn't cross-join prompts against the same model twice.
+    for model_id, latest_id in latest_config_by_model_id.items():
+        conn.execute(
+            "UPDATE model_configs SET active = 0 WHERE model_id = ? AND id != ?",
+            (model_id, latest_id),
+        )
+        conn.execute("UPDATE model_configs SET active = 1 WHERE id = ?", (latest_id,))
 
     conn.commit()
     conn.close()
