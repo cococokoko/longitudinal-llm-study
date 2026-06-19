@@ -70,7 +70,10 @@ def seed_models(
     experiment: bool = False,
     weekly: bool = False,
     temperature_override: float | None = None,
-) -> None:
+) -> list[str]:
+    """Upsert the models for the requested mode and return their canonical
+    model_config ids — the list the run should use, independent of the `active`
+    flag in the db (which gets rebuilt wholesale by `reconstruct` each run)."""
     if experiment:
         models = [dict(em, provider=em.get("provider", "openrouter")) for em in cfg.get("experiment_models", [])]
     elif weekly:
@@ -89,6 +92,7 @@ def seed_models(
         )
         conn.commit()
 
+    model_ids: list[str] = []
     for m in models:
         params = dict(m.get("parameters", {}))
         if temperature_override is not None:
@@ -100,9 +104,10 @@ def seed_models(
             provider=m.get("provider", "openrouter"),
             parameters=params,
         )
+        model_ids.append(mid)
         # Defensively collapse any other rows that share this model_id (e.g. a
-        # stale duplicate from a past race or DB reconstruct) so pending_jobs()
-        # never cross-joins prompts against the same underlying model twice.
+        # stale duplicate from a past race or DB reconstruct) so nothing else
+        # that still reads the `active` flag picks them up.
         conn.execute(
             "UPDATE model_configs SET active = 0 WHERE model_id = ? AND id != ?",
             (m["model_id"], mid),
@@ -111,6 +116,7 @@ def seed_models(
 
     note = f" (temperature={temperature_override})" if temperature_override is not None else ""
     console.print(f"[dim]Seeded {len(models)} model(s){note}.[/]")
+    return model_ids
 
 
 # ── Dataset seeding ───────────────────────────────────────────────────────────
@@ -158,7 +164,7 @@ def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
     conn    = open_db(db_path)
 
     temperature_override = getattr(args, "temperature", None)
-    seed_models(conn, cfg, experiment=experiment_only, weekly=weekly_only, temperature_override=temperature_override)
+    model_ids = seed_models(conn, cfg, experiment=experiment_only, weekly=weekly_only, temperature_override=temperature_override)
 
     today    = datetime.date.today().isoformat()
     wave_tag = getattr(args, "wave_tag", None)
@@ -179,6 +185,7 @@ def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
         run_wave(
             conn,
             wave_id,
+            model_ids=model_ids,
             openrouter_api_key=openrouter_key,
             concurrency=study.get("concurrency", 5),
             requests_per_second=study.get("requests_per_second", 3.0),

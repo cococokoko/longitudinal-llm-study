@@ -164,6 +164,7 @@ async def run_wave(
     conn: sqlite3.Connection,
     wave_id: str,
     *,
+    model_ids: list[str] | None = None,
     openrouter_api_key: str | None = None,
     concurrency: int = 5,
     requests_per_second: float = 3.0,
@@ -173,9 +174,13 @@ async def run_wave(
     """
     Run all pending (item × model) pairs for wave_id.
 
+    model_ids, when given, pins the run to exactly those model_config rows —
+    the ids config.yaml resolved to — instead of whatever the db's `active`
+    flag currently says.
+
     Returns {"completed": N, "errors": N}.
     """
-    jobs_raw = pending_jobs(conn, wave_id)
+    jobs_raw = pending_jobs(conn, wave_id, model_ids=model_ids)
     if not jobs_raw:
         console.print("[yellow]No pending jobs for this wave — all done.[/]")
         return {"completed": 0, "errors": 0}

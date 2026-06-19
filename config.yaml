@@ -33,7 +33,7 @@ models:
     display_name: "Gemini Flash"
     parameters:
       temperature: 0.0
-      max_tokens: 1000
+      max_tokens: 2000
       reasoning: {effort: "minimal"}
 
 # ── Weekly models (Fridays only) ──────────────────────────────────────────────
@@ -43,7 +43,7 @@ weekly_models:
     display_name: "Gemini Pro"
     parameters:
       temperature: 0.0s
-      max_tokens: 1000
+      max_tokens: 2000
 
 # ── Experiment models ─────────────────────────────────────────────────────────
 

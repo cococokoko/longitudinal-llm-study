@@ -249,11 +249,22 @@ def list_models(conn: sqlite3.Connection, active_only: bool = True) -> list[sqli
 # ── Response Records ──────────────────────────────────────────────────────────
 
 def pending_jobs(
-    conn: sqlite3.Connection, wave_id: str
+    conn: sqlite3.Connection, wave_id: str, model_ids: list[str] | None = None
 ) -> list[tuple[sqlite3.Row, sqlite3.Row]]:
-    """Return (item_row, model_row) pairs not yet successfully completed for wave_id."""
-    items  = list_wave_items(conn, wave_id)
-    models = list_models(conn)
+    """Return (item_row, model_row) pairs not yet successfully completed for wave_id.
+
+    If model_ids is given, run exactly those model_config rows regardless of
+    their `active` flag — the caller (config.yaml) is the source of truth for
+    which models should run, not db state that gets rebuilt by `reconstruct`.
+    """
+    items = list_wave_items(conn, wave_id)
+    if model_ids:
+        models = [
+            conn.execute("SELECT * FROM model_configs WHERE id = ?", (mid,)).fetchone()
+            for mid in model_ids
+        ]
+    else:
+        models = list_models(conn)
     done = {
         (r["item_id"], r["model_config_id"])
         for r in conn.execute(
