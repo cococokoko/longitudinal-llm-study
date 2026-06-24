@@ -10,7 +10,8 @@ datasets>=2.18      # HuggingFace dataset loader
 
 # ── Data preparation scripts ──────────────────────────────────────────────────
 openpyxl>=3.1               # export_prompts.py → Excel output
-sentence-transformers>=2.0  # select_*.py → embedding-based sampling
+torch>=2.4                  # required by transformers >= 4.52 (sentence-transformers dep)
+sentence-transformers>=2.0  # generate_dashboard_data.py cosine similarity + select_*.py
 scikit-learn>=1.3           # select_*.py → KMeans, cosine_similarity
 
 # ── Notebooks ─────────────────────────────────────────────────────────────────

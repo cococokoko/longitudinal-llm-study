@@ -966,7 +966,7 @@ function renderCosine4a(cosine_4a) {
   Plotly.newPlot('chart-4a',
     MAIN_MODELS.map(model => {
       const d = cosine_4a.filter(r=>r.model===model).sort((a,b)=>a.wave<b.wave?-1:1);
-      return { x:d.map(r=>r.wave.slice(5)), y:d.map(r=>r.sim_mean),
+      return { x:d.map(r=>r.wave), y:d.map(r=>r.sim_mean),
                error_y:{type:'data',array:d.map(r=>r.sim_std),visible:true,thickness:1.5,width:4,color:MODEL_CLR[model]+'99'},
                mode:'lines+markers', name:MODEL_LABELS[model],
                line:{color:MODEL_CLR[model],width:2.5}, marker:{size:6,color:MODEL_CLR[model]} };

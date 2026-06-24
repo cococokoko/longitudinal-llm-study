@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 generate_dashboard_data.py
-Refresh docs/data/metrics.json and docs/data/prompts.json from study.db.
+Refresh docs/data/metrics.json and docs/data/prompts.json from results/waves/*.jsonl.
 Run after pipeline.py run. Cosine similarity sections are incremental —
 only new waves are embedded; existing results are preserved.
 """
@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import json
 import re
-import sqlite3
 import datetime
 from collections import defaultdict
 from pathlib import Path
@@ -17,15 +16,16 @@ from pathlib import Path
 import numpy as np
 from scipy.stats import wasserstein_distance as scipy_wasserstein
 
-DB         = Path("study.db")
+WAVES_DIR  = Path("results/waves")
 WVS_JSON   = Path("wvs7.json")
 GOQA_JSON  = Path("globalopinionqa_wvs.json")
+EXP_JSON   = Path("explorative.json")
 OUT_DIR    = Path("docs/data")
 METRICS    = OUT_DIR / "metrics.json"
 PROMPTS    = OUT_DIR / "prompts.json"
 
 OPT_LETTERS = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-MAIN_MODELS = ["Claude Sonnet", "Gemini Pro", "Gemini Flash", "GPT Chat"]   # DB display_name keys
+MAIN_MODELS = ["Claude Sonnet", "Gemini Pro", "Gemini Flash", "GPT Chat"]
 
 MODEL_LABELS = {
     "Claude Sonnet": "Claude Sonnet",
@@ -36,32 +36,52 @@ MODEL_LABELS = {
 
 STUDY_START = "2026-06-04"
 
-# Cosine similarity requires at least this many waves.
 MIN_WAVES_FOR_COSINE = 2
 
-
-# ── DB helpers ────────────────────────────────────────────────────────────────
-
-def _rows(conn: sqlite3.Connection, sql: str, params=()) -> list[dict]:
-    return [dict(r) for r in conn.execute(sql, params).fetchall()]
+CURRENT_CONDITIONS   = {"baseline", "high_ses", "low_ses"}
+CURRENT_PERSONA_ROLES = {None, "system", "user"}
 
 
-def _sql_in(items) -> str:
-    return "(" + ",".join(f"'{x}'" for x in items) + ")"
+# ── Data loading ──────────────────────────────────────────────────────────────
+
+def load_all_rows() -> list[dict]:
+    """Load every response row from results/waves/*.jsonl."""
+    rows: list[dict] = []
+    for fp in sorted(WAVES_DIR.glob("*.jsonl")):
+        with open(fp) as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    rows.append(json.loads(line))
+    return rows
 
 
-def get_waves(conn: sqlite3.Connection) -> list[str]:
-    rows = _rows(conn, "SELECT name FROM study_waves ORDER BY name")
-    return [
-        r["name"] for r in rows
-        if re.match(r"^\d{4}-\d{2}-\d{2}$", r["name"]) and r["name"] >= STUDY_START
-    ]
+def get_waves(rows: list[dict]) -> list[str]:
+    """Sorted wave names from loaded rows, filtered to study window."""
+    names = {r["wave_name"] for r in rows if re.match(r"^\d{4}-\d{2}-\d{2}$", r.get("wave_name", ""))}
+    return sorted(w for w in names if w >= STUDY_START)
+
+
+def _active(r: dict) -> bool:
+    """True when the row is a current-format, non-errored response for a main model."""
+    return (
+        r.get("error") is None
+        and r.get("model_display_name") in MAIN_MODELS
+    )
+
+
+def _current_persona(r: dict) -> bool:
+    """True for persona_prompts rows that belong to the current study conditions."""
+    return (
+        r.get("dataset_name") == "persona_prompts"
+        and r.get("condition") in CURRENT_CONDITIONS
+        and r.get("persona_role") in CURRENT_PERSONA_ROLES
+    )
 
 
 # ── Value Alignment (WVS) ────────────────────────────────────────────────────
 
 def _parse_wvs(text: str | None) -> np.ndarray | None:
-    """Parse a model's JSON probability response over WVS option letters."""
     if not text:
         return None
     text = text.strip()
@@ -82,29 +102,25 @@ def _parse_wvs(text: str | None) -> np.ndarray | None:
         return None
 
 
-def _compute_wvs_metrics_for(conn, waves, wvs_meta, dataset_name: str) -> list[dict]:
-    """Shared Wasserstein/entropy computation for any WVS-format dataset."""
+def _compute_wvs_metrics_for(
+    rows: list[dict], waves: list[str], wvs_meta: dict, dataset_name: str
+) -> list[dict]:
     if not waves:
         return []
-    rows = _rows(conn, f"""
-        SELECT sw.name AS wave, mc.display_name AS model,
-               di.item_id, rr.response_text
-        FROM response_records rr
-        JOIN study_waves sw    ON sw.id = rr.wave_id
-        JOIN model_configs mc  ON mc.id = rr.model_config_id
-        JOIN dataset_items di  ON di.id = rr.item_id
-        WHERE di.dataset_name = '{dataset_name}'
-          AND sw.name IN {_sql_in(waves)}
-          AND mc.display_name IN {_sql_in(MAIN_MODELS)}
-          AND rr.error IS NULL
-    """)
+    wave_set = set(waves)
+    subset = [
+        r for r in rows
+        if _active(r)
+        and r.get("dataset_name") == dataset_name
+        and r.get("wave_name") in wave_set
+    ]
 
     acc: dict = defaultdict(lambda: defaultdict(list))
-    for r in rows:
+    for r in subset:
         p = _parse_wvs(r["response_text"])
         if p is None:
             continue
-        item = wvs_meta.get(r["item_id"])
+        item = wvs_meta.get(r["source_item_id"])
         if not item or not item.get("global_distribution"):
             continue
         n = len(item["options"])
@@ -117,7 +133,7 @@ def _compute_wvs_metrics_for(conn, waves, wvs_meta, dataset_name: str) -> list[d
         ps = p.sum()
         if ps <= 0 or not np.isfinite(ps):
             continue
-        p = p / ps  # re-normalise after padding
+        p = p / ps
 
         ws    = float(scipy_wasserstein(
             np.arange(n, dtype=float), np.arange(n, dtype=float),
@@ -126,7 +142,7 @@ def _compute_wvs_metrics_for(conn, waves, wvs_meta, dataset_name: str) -> list[d
         ent   = float(-np.sum(p * np.log(p + 1e-12)))
         ent_g = float(item.get("entropy") or -np.sum(gd * np.log(gd + 1e-12)))
 
-        key = (r["wave"], r["model"])
+        key = (r["wave_name"], r["model_display_name"])
         acc[key]["ws"].append(ws)
         acc[key]["ent"].append(ent)
         acc[key]["ent_g"].append(ent_g)
@@ -146,91 +162,96 @@ def _compute_wvs_metrics_for(conn, waves, wvs_meta, dataset_name: str) -> list[d
 
 WVS7_START = "2026-06-10"
 
-def compute_wvs_metrics(conn, waves, wvs_meta) -> list[dict]:
-    """Wasserstein/entropy for wvs7 dataset — waves from 2026-06-10 onwards only."""
+def compute_wvs_metrics(rows: list[dict], waves: list[str], wvs_meta: dict) -> list[dict]:
     wvs7_waves = [w for w in waves if w >= WVS7_START]
-    return _compute_wvs_metrics_for(conn, wvs7_waves, wvs_meta, "wvs7")
+    return _compute_wvs_metrics_for(rows, wvs7_waves, wvs_meta, "wvs7")
 
 
 LEGACY_START = "2026-06-04"
 LEGACY_END   = "2026-06-08"
 
-def compute_wvs_metrics_legacy(conn, waves, goqa_meta) -> list[dict]:
-    """Wasserstein/entropy for global_opinion_qa — waves 2026-06-04 through 2026-06-08 only."""
+def compute_wvs_metrics_legacy(rows: list[dict], waves: list[str], goqa_meta: dict) -> list[dict]:
     legacy_waves = [
         w for w in waves
         if re.match(r"^\d{4}-\d{2}-\d{2}$", w) and LEGACY_START <= w <= LEGACY_END
     ]
-    return _compute_wvs_metrics_for(conn, legacy_waves, goqa_meta, "global_opinion_qa")
+    return _compute_wvs_metrics_for(rows, legacy_waves, goqa_meta, "global_opinion_qa")
 
 
 # ── Output truncation rates ───────────────────────────────────────────────────
 
-def compute_truncation_rates(conn, waves) -> list[dict]:
-    """Per (wave, model): calls and finish_reason=length count."""
+def compute_truncation_rates(rows: list[dict], waves: list[str]) -> list[dict]:
     if not waves:
         return []
-    return _rows(conn, f"""
-        SELECT sw.name AS wave, mc.display_name AS model,
-               COUNT(*) AS total,
-               SUM(CASE WHEN rr.finish_reason = 'length' THEN 1 ELSE 0 END) AS truncated,
-               ROUND(AVG(rr.output_tokens), 1)  AS output_tokens_mean,
-               SUM(rr.output_tokens)             AS output_tokens_sum
-        FROM response_records rr
-        JOIN study_waves sw    ON sw.id = rr.wave_id
-        JOIN model_configs mc  ON mc.id = rr.model_config_id
-        WHERE sw.name IN {_sql_in(waves)}
-          AND mc.display_name IN {_sql_in(MAIN_MODELS)}
-          AND rr.error IS NULL
-        GROUP BY sw.name, mc.display_name
-        ORDER BY sw.name, mc.display_name
-    """)
+    wave_set = set(waves)
+    subset = [r for r in rows if _active(r) and r.get("wave_name") in wave_set]
+
+    acc: dict = defaultdict(lambda: {"total": 0, "truncated": 0, "tokens": []})
+    for r in subset:
+        key = (r["wave_name"], r["model_display_name"])
+        acc[key]["total"] += 1
+        if r.get("finish_reason") == "length":
+            acc[key]["truncated"] += 1
+        if r.get("output_tokens") is not None:
+            acc[key]["tokens"].append(r["output_tokens"])
+
+    return [
+        {
+            "wave":               wave,
+            "model":              model,
+            "total":              v["total"],
+            "truncated":          v["truncated"],
+            "output_tokens_mean": round(float(np.mean(v["tokens"])), 1) if v["tokens"] else None,
+            "output_tokens_sum":  int(sum(v["tokens"])) if v["tokens"] else 0,
+        }
+        for (wave, model), v in sorted(acc.items())
+    ]
 
 
 # ── Model versions per wave ───────────────────────────────────────────────────
 
-def compute_wave_versions(conn, waves) -> list[dict]:
+def compute_wave_versions(rows: list[dict], waves: list[str]) -> list[dict]:
     if not waves:
         return []
-    return _rows(conn, f"""
-        SELECT sw.name AS wave, mc.display_name AS model,
-               rr.model_used, COUNT(*) AS n_calls
-        FROM response_records rr
-        JOIN study_waves sw   ON sw.id = rr.wave_id
-        JOIN model_configs mc ON mc.id = rr.model_config_id
-        WHERE sw.name IN {_sql_in(waves)}
-          AND mc.display_name IN {_sql_in(MAIN_MODELS)}
-          AND rr.error IS NULL
-        GROUP BY sw.name, mc.display_name, rr.model_used
-        ORDER BY sw.name, mc.display_name
-    """)
+    wave_set = set(waves)
+    subset = [r for r in rows if _active(r) and r.get("wave_name") in wave_set]
+
+    acc: dict = defaultdict(int)
+    for r in subset:
+        key = (r["wave_name"], r["model_display_name"], r.get("model_used", ""))
+        acc[key] += 1
+
+    return [
+        {"wave": wave, "model": model, "model_used": model_used, "n_calls": n}
+        for (wave, model, model_used), n in sorted(acc.items())
+    ]
 
 
 # ── Persona prompt lengths ────────────────────────────────────────────────────
 
-def compute_persona_lengths(conn) -> list[dict]:
-    """Character length of each persona prompt (user text + system text)."""
-    rows = _rows(conn, """
-        SELECT di.prompt_text, di.system_text,
-               json_extract(di.metadata, '$.ses_level')    AS ses_level,
-               json_extract(di.metadata, '$.query_source') AS query_source
-        FROM dataset_items di
-        WHERE di.dataset_name = 'persona_prompts'
-    """)
+def compute_persona_lengths(rows: list[dict]) -> list[dict]:
+    """Character length of each unique persona prompt (user text + system text)."""
+    seen: set[str] = set()
     result = []
     for r in rows:
+        if not _current_persona(r):
+            continue
+        sid = r.get("source_item_id", "")
+        if sid in seen:
+            continue
+        seen.add(sid)
         framing = ("system_msg"
-                   if (r["system_text"] and str(r["system_text"]).strip())
+                   if (r.get("system_text") and str(r["system_text"]).strip())
                    else "inline_prompt")
-        total = len(r["prompt_text"] or "")
-        if r["system_text"]:
+        total = len(r.get("prompt_text") or "")
+        if r.get("system_text"):
             total += len(r["system_text"])
-        ses = r["ses_level"]
+        ses = r.get("ses_level")
         result.append({
             "condition":    "baseline" if ses is None else
                             ("high_ses" if ses == "high" else "low_ses"),
             "framing":      framing,
-            "query_source": r["query_source"],
+            "query_source": r.get("query_source"),
             "prompt_len":   total,
         })
     return result
@@ -259,43 +280,37 @@ def _cosine(a: np.ndarray, b: np.ndarray) -> float:
 
 # ── Output Diversity: similarity to time-averaged mean ───────────────────────
 
-def compute_cosine_4a(conn, waves, _existing) -> list[dict]:
+def compute_cosine_4a(rows: list[dict], waves: list[str], _existing) -> list[dict]:
     """
     Per-wave cosine similarity of baseline persona responses to the time-averaged
-    mean embedding across all waves, per model and item_id.
+    mean embedding across all waves, per model and source_item_id.
     Always recomputed from scratch so the mean stays current as waves accumulate.
     """
     if len(waves) < MIN_WAVES_FOR_COSINE:
         print(f"  4a: skipping — need {MIN_WAVES_FOR_COSINE}+ waves, have {len(waves)}")
         return []
 
-    rows = _rows(conn, f"""
-        SELECT sw.name AS wave, mc.display_name AS model,
-               di.item_id, rr.response_text
-        FROM response_records rr
-        JOIN study_waves sw    ON sw.id = rr.wave_id
-        JOIN model_configs mc  ON mc.id = rr.model_config_id
-        JOIN dataset_items di  ON di.id = rr.item_id
-        WHERE di.dataset_name = 'persona_prompts'
-          AND sw.name IN {_sql_in(waves)}
-          AND mc.display_name IN {_sql_in(MAIN_MODELS)}
-          AND json_extract(di.metadata, '$.condition') = 'baseline'
-          AND rr.error IS NULL
-    """)
-    if not rows:
+    wave_set = set(waves)
+    subset = [
+        r for r in rows
+        if _active(r)
+        and _current_persona(r)
+        and r.get("wave_name") in wave_set
+        and r.get("condition") == "baseline"
+    ]
+    if not subset:
         print("  4a: no baseline responses found")
         return []
 
-    print(f"  4a: embedding {len(rows)} baseline responses…")
+    print(f"  4a: embedding {len(subset)} baseline responses…")
     embs = _get_embedder().encode(
-        [r["response_text"] or "" for r in rows],
+        [r["response_text"] or "" for r in subset],
         batch_size=64, show_progress_bar=False, convert_to_numpy=True,
     )
     idx: dict[tuple, np.ndarray] = {}
-    for i, r in enumerate(rows):
-        idx[(r["wave"], r["model"], r["item_id"])] = embs[i]
+    for i, r in enumerate(subset):
+        idx[(r["wave_name"], r["model_display_name"], r["source_item_id"])] = embs[i]
 
-    # Build time-averaged mean embedding per (model, item_id) across all waves
     mean_emb: dict[tuple, np.ndarray] = {}
     for model in MAIN_MODELS:
         item_ids = {k[2] for k in idx if k[1] == model}
@@ -304,7 +319,6 @@ def compute_cosine_4a(conn, waves, _existing) -> list[dict]:
             if vecs:
                 mean_emb[(model, iid)] = np.mean(vecs, axis=0)
 
-    # For each wave, compute cosine similarity of each response to its mean
     results = []
     for wave in waves:
         for model in MAIN_MODELS:
@@ -330,7 +344,7 @@ def compute_cosine_4a(conn, waves, _existing) -> list[dict]:
 
 # ── Steering Sensitivity: framing × SES gap to baseline ─────────────────────
 
-def compute_cosine_4b_ii(conn, waves, existing) -> list[dict]:
+def compute_cosine_4b_ii(rows: list[dict], waves: list[str], existing: list[dict]) -> list[dict]:
     """
     Per wave, per model: mean cosine similarity between SES-framed responses
     and the matched baseline response (same query_id), split by framing channel
@@ -339,8 +353,7 @@ def compute_cosine_4b_ii(conn, waves, existing) -> list[dict]:
     if len(waves) < MIN_WAVES_FOR_COSINE:
         print(f"  4b-ii: skipping — need {MIN_WAVES_FOR_COSINE}+ waves, have {len(waves)}")
         return []
-    existing_keys = {(r["wave"], r["model"], r["framing"], r["ses"])
-                     for r in existing}
+    existing_keys = {(r["wave"], r["model"], r["framing"], r["ses"]) for r in existing}
     new_waves = [w for w in waves
                  if any((w, m, f, s) not in existing_keys
                         for m in MAIN_MODELS
@@ -350,46 +363,38 @@ def compute_cosine_4b_ii(conn, waves, existing) -> list[dict]:
         print("  4b-ii: up to date")
         return []
 
-    rows = _rows(conn, f"""
-        SELECT sw.name AS wave, mc.display_name AS model,
-               di.item_id, di.system_text, rr.response_text,
-               json_extract(di.metadata, '$.ses_level') AS ses_level,
-               json_extract(di.metadata, '$.query_id')  AS query_id
-        FROM response_records rr
-        JOIN study_waves sw    ON sw.id = rr.wave_id
-        JOIN model_configs mc  ON mc.id = rr.model_config_id
-        JOIN dataset_items di  ON di.id = rr.item_id
-        WHERE di.dataset_name = 'persona_prompts'
-          AND sw.name IN {_sql_in(new_waves)}
-          AND mc.display_name IN {_sql_in(MAIN_MODELS)}
-          AND rr.error IS NULL
-    """)
-    if not rows:
+    wave_set = set(new_waves)
+    subset = [
+        r for r in rows
+        if _active(r)
+        and _current_persona(r)
+        and r.get("wave_name") in wave_set
+    ]
+    if not subset:
         return []
 
-    for r in rows:
-        r["framing"] = ("system_msg"
-                        if (r["system_text"] and str(r["system_text"]).strip())
-                        else "inline_prompt")
+    for r in subset:
+        r["_framing"] = ("system_msg"
+                         if (r.get("system_text") and str(r["system_text"]).strip())
+                         else "inline_prompt")
 
-    print(f"  4b-ii: embedding {len(rows)} persona responses…")
+    print(f"  4b-ii: embedding {len(subset)} persona responses…")
     embs = _get_embedder().encode(
-        [r["response_text"] or "" for r in rows],
+        [r["response_text"] or "" for r in subset],
         batch_size=64, show_progress_bar=False, convert_to_numpy=True,
     )
 
-    # Index separately: baseline by (wave, model, qid), SES by (wave, model, framing, ses, qid)
     base_idx: dict[tuple, list] = defaultdict(list)
     ses_idx:  dict[tuple, list] = defaultdict(list)
-    for i, r in enumerate(rows):
-        wave  = r["wave"]
-        model = r["model"]
+    for i, r in enumerate(subset):
+        wave  = r["wave_name"]
+        model = r["model_display_name"]
         qid   = str(r.get("query_id") or "")
         ses   = r.get("ses_level")
         if ses is None:
             base_idx[(wave, model, qid)].append(embs[i])
         else:
-            ses_idx[(wave, model, r["framing"], ses, qid)].append(embs[i])
+            ses_idx[(wave, model, r["_framing"], ses, qid)].append(embs[i])
 
     results = []
     for wave in new_waves:
@@ -424,7 +429,7 @@ def compute_cosine_4b_ii(conn, waves, existing) -> list[dict]:
 
 # ── Static prompts export ─────────────────────────────────────────────────────
 
-def export_prompts(conn, wvs_meta) -> dict:
+def export_prompts(rows: list[dict], wvs_meta: dict, explorative_meta: list[dict]) -> dict:
     wvs_items = [
         {
             "item_id":  item_id,
@@ -435,34 +440,32 @@ def export_prompts(conn, wvs_meta) -> dict:
         for item_id, item in wvs_meta.items()
     ]
 
-    rows = _rows(conn, """
-        SELECT di.item_id, di.prompt_text, di.system_text, di.metadata
-        FROM dataset_items di
-        WHERE di.dataset_name = 'persona_prompts'
-        ORDER BY json_extract(di.metadata, '$.query_source'),
-                 CAST(json_extract(di.metadata, '$.query_id') AS INTEGER),
-                 json_extract(di.metadata, '$.ses_level'),
-                 json_extract(di.metadata, '$.condition')
-    """)
-
+    # Derive unique persona prompts from rows (current format only).
+    # Deduplicate by source_item_id; group by (query_source, query_id).
+    seen: set[str] = set()
     by_q: dict = defaultdict(lambda: {"high_ses": [], "low_ses": []})
-    for r in rows:
-        meta = json.loads(r["metadata"])
-        src  = meta.get("query_source", "")
-        qid  = meta.get("query_id")
-        ses  = meta.get("ses_level")
-        key  = f"{src}_{qid}"
+    for r in sorted(rows, key=lambda x: x.get("wave_name", "")):
+        if not _current_persona(r):
+            continue
+        sid = r.get("source_item_id", "")
+        if sid in seen:
+            continue
+        seen.add(sid)
+        src = r.get("query_source", "")
+        qid = r.get("query_id")
+        ses = r.get("ses_level")
+        key = f"{src}_{qid}"
         framing = ("system_msg"
-                   if (r["system_text"] and str(r["system_text"]).strip())
+                   if (r.get("system_text") and str(r["system_text"]).strip())
                    else "inline_prompt")
         entry = {
-            "item_id":     r["item_id"],
-            "prompt_text": r["prompt_text"],
-            "system_text": r["system_text"],
-            "persona_role": meta.get("persona_role"),
-            "persona_text": meta.get("persona_text"),
+            "item_id":     sid,
+            "prompt_text": r.get("prompt_text"),
+            "system_text": r.get("system_text"),
+            "persona_role": r.get("persona_role"),
+            "persona_text": r.get("persona_text"),
             "framing":     framing,
-            "condition":   meta.get("condition"),
+            "condition":   r.get("condition"),
         }
         by_q[key]["query_id"]     = qid
         by_q[key]["query_source"] = src
@@ -477,29 +480,33 @@ def export_prompts(conn, wvs_meta) -> dict:
         v = kv[1]
         src = v.get("query_source", "")
         qid = v.get("query_id") or 0
-        return (src, int(qid) if str(qid).isdigit() else 0)
+        return (src, int(qid) if str(qid).isdigit() else float(qid or 0))
 
     persona_items = [
         {"query_key": k, **v}
         for k, v in sorted(by_q.items(), key=_sort_key)
     ]
 
-    exp_rows = _rows(conn, """
-        SELECT di.item_id, di.prompt_text, di.metadata
-        FROM dataset_items di
-        WHERE di.dataset_name = 'explorative'
-        ORDER BY CAST(json_extract(di.metadata, '$.query_id') AS INTEGER)
-    """)
+    # Build explorative catalog from source JSON (preserves topic/format fields).
+    exp_by_id = {e["item_id"]: e for e in explorative_meta}
+    seen_exp: set[str] = set()
     explorative_items = []
-    for r in exp_rows:
-        meta = json.loads(r["metadata"])
+    for r in sorted(rows, key=lambda x: (x.get("query_id") or 0)):
+        if r.get("dataset_name") != "explorative":
+            continue
+        sid = r.get("source_item_id", "")
+        if sid in seen_exp:
+            continue
+        seen_exp.add(sid)
+        meta = exp_by_id.get(sid, {})
         explorative_items.append({
-            "item_id":  r["item_id"],
-            "prompt":   r["prompt_text"],
-            "query_id": meta.get("query_id"),
+            "item_id":  sid,
+            "prompt":   r.get("prompt_text"),
+            "query_id": r.get("query_id"),
             "topic":    meta.get("topic"),
             "format":   meta.get("format"),
         })
+    explorative_items.sort(key=lambda x: x.get("query_id") or 0)
 
     return {"wvs": wvs_items, "persona": persona_items, "explorative": explorative_items}
 
@@ -509,9 +516,6 @@ def export_prompts(conn, wvs_meta) -> dict:
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    conn = sqlite3.connect(str(DB), check_same_thread=False)
-    conn.row_factory = sqlite3.Row
-
     wvs_meta = {item["item_id"]: item
                 for item in json.loads(WVS_JSON.read_text())}
     print(f"Loaded {len(wvs_meta)} WVS7 items")
@@ -520,6 +524,13 @@ def main():
                  for item in json.loads(GOQA_JSON.read_text())}
     print(f"Loaded {len(goqa_meta)} GlobalOpinionQA items (legacy)")
 
+    explorative_meta = json.loads(EXP_JSON.read_text())
+    print(f"Loaded {len(explorative_meta)} explorative items")
+
+    print("Loading JSONL wave files…")
+    rows = load_all_rows()
+    print(f"  {len(rows)} rows loaded")
+
     existing: dict = {}
     if METRICS.exists():
         try:
@@ -527,41 +538,39 @@ def main():
         except Exception as e:
             print(f"  Could not read existing metrics ({e}), starting fresh")
 
-    waves = get_waves(conn)
+    waves = get_waves(rows)
     print(f"Waves ({len(waves)}): {waves}")
 
     print("WVS7 metrics (current)…")
-    wvs_metrics = compute_wvs_metrics(conn, waves, wvs_meta)
+    wvs_metrics = compute_wvs_metrics(rows, waves, wvs_meta)
 
     print("WVS legacy metrics (GlobalOpinionQA archive)…")
-    all_waves_for_legacy = [
-        r["name"] for r in _rows(conn, "SELECT name FROM study_waves ORDER BY name")
-        if re.match(r"^\d{4}-\d{2}-\d{2}$", r["name"])
-    ]
-    wvs_metrics_legacy = compute_wvs_metrics_legacy(conn, all_waves_for_legacy, goqa_meta)
+    all_waves = sorted({
+        r["wave_name"] for r in rows
+        if re.match(r"^\d{4}-\d{2}-\d{2}$", r.get("wave_name", ""))
+    })
+    wvs_metrics_legacy = compute_wvs_metrics_legacy(rows, all_waves, goqa_meta)
 
     print("Wave versions…")
-    wave_versions = compute_wave_versions(conn, waves)
+    wave_versions = compute_wave_versions(rows, waves)
 
     print("Truncation rates…")
-    truncation_rates = compute_truncation_rates(conn, waves)
+    truncation_rates = compute_truncation_rates(rows, waves)
 
     print("Persona prompt lengths…")
-    persona_lengths = compute_persona_lengths(conn)
+    persona_lengths = compute_persona_lengths(rows)
 
-    # Discard any entries outside the study window; also clear both arrays if
-    # we haven't yet collected enough waves — enforces a clean start.
     if len(waves) < MIN_WAVES_FOR_COSINE:
         print(f"  Cosine tabs: clearing — need {MIN_WAVES_FOR_COSINE}+ waves, have {len(waves)}")
-        cosine_4a     = []
-        cosine_4b_ii  = []
+        cosine_4a    = []
+        cosine_4b_ii = []
     else:
         existing_4b = [r for r in existing.get("cosine_4b_ii", [])
                        if r.get("wave", "") >= STUDY_START]
 
         print("Cosine 4a — Output Diversity (time-averaged mean)…")
         try:
-            cosine_4a = compute_cosine_4a(conn, waves, [])
+            cosine_4a = compute_cosine_4a(rows, waves, [])
         except Exception as e:
             print(f"  4a failed: {e} — keeping existing data")
             cosine_4a = [r for r in existing.get("cosine_4a", [])
@@ -569,27 +578,27 @@ def main():
 
         print("Cosine 4b-ii — Steering Sensitivity (incremental)…")
         try:
-            cosine_4b_ii = existing_4b + compute_cosine_4b_ii(conn, waves, existing_4b)
+            cosine_4b_ii = existing_4b + compute_cosine_4b_ii(rows, waves, existing_4b)
         except Exception as e:
             print(f"  4b-ii failed: {e} — keeping existing data")
             cosine_4b_ii = existing_4b
 
     metrics = {
-        "generated":           datetime.date.today().isoformat(),
-        "waves":               waves,
-        "wave_versions":       wave_versions,
-        "wvs_metrics":         wvs_metrics,
-        "wvs_metrics_legacy":  wvs_metrics_legacy,
-        "truncation_rates":    truncation_rates,
-        "persona_lengths":     persona_lengths,
-        "cosine_4a":           cosine_4a,
-        "cosine_4b_ii":        cosine_4b_ii,
+        "generated":          datetime.date.today().isoformat(),
+        "waves":              waves,
+        "wave_versions":      wave_versions,
+        "wvs_metrics":        wvs_metrics,
+        "wvs_metrics_legacy": wvs_metrics_legacy,
+        "truncation_rates":   truncation_rates,
+        "persona_lengths":    persona_lengths,
+        "cosine_4a":          cosine_4a,
+        "cosine_4b_ii":       cosine_4b_ii,
     }
     METRICS.write_text(json.dumps(metrics, ensure_ascii=False, indent=2))
     print(f"Wrote {METRICS}")
 
     print("Prompts export…")
-    prompts = export_prompts(conn, wvs_meta)
+    prompts = export_prompts(rows, wvs_meta, explorative_meta)
     PROMPTS.write_text(json.dumps(prompts, ensure_ascii=False, indent=2))
     print(f"Wrote {PROMPTS}  "
           f"({len(prompts['wvs'])} WVS items, {len(prompts['persona'])} persona queries, "
