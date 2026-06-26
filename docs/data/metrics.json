@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-25",
+  "generated": "2026-06-26",
   "waves": [
     "2026-06-04",
     "2026-06-05",
@@ -20,7 +20,8 @@
     "2026-06-22",
     "2026-06-23",
     "2026-06-24",
-    "2026-06-25"
+    "2026-06-25",
+    "2026-06-26"
   ],
   "wave_versions": [
     {
@@ -397,6 +398,24 @@
     },
     {
       "wave": "2026-06-25",
+      "model": "Gemini Flash",
+      "model_used": "google/gemini-3.5-flash-20260519",
+      "n_calls": 772
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Claude Sonnet",
+      "model_used": "anthropic/claude-4.6-sonnet-20260217",
+      "n_calls": 772
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "GPT Chat",
+      "model_used": "openai/gpt-chat-latest-20260505",
+      "n_calls": 772
+    },
+    {
+      "wave": "2026-06-26",
       "model": "Gemini Flash",
       "model_used": "google/gemini-3.5-flash-20260519",
       "n_calls": 772
@@ -787,6 +806,33 @@
       "ws_mean": 2.6469,
       "ws_std": 2.3839,
       "entropy_mean": 0.4183,
+      "entropy_global_mean": 1.9516,
+      "n": 280
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Claude Sonnet",
+      "ws_mean": 0.9755,
+      "ws_std": 1.1452,
+      "entropy_mean": 1.2766,
+      "entropy_global_mean": 1.9516,
+      "n": 280
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "GPT Chat",
+      "ws_mean": 2.4666,
+      "ws_std": 1.8842,
+      "entropy_mean": 0.3986,
+      "entropy_global_mean": 1.9516,
+      "n": 280
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Gemini Flash",
+      "ws_mean": 2.6668,
+      "ws_std": 2.3708,
+      "entropy_mean": 0.4149,
       "entropy_global_mean": 1.9516,
       "n": 280
     }
@@ -1441,6 +1487,30 @@
       "truncated": 3,
       "output_tokens_mean": 543.1,
       "output_tokens_sum": 419287
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Claude Sonnet",
+      "total": 772,
+      "truncated": 15,
+      "output_tokens_mean": 218.2,
+      "output_tokens_sum": 168458
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "GPT Chat",
+      "total": 772,
+      "truncated": 8,
+      "output_tokens_mean": 256.0,
+      "output_tokens_sum": 197636
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Gemini Flash",
+      "total": 772,
+      "truncated": 3,
+      "output_tokens_mean": 546.9,
+      "output_tokens_sum": 422229
     }
   ],
   "persona_lengths": [
@@ -4995,8 +5065,8 @@
     {
       "wave": "2026-06-04",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9588,
-      "sim_std": 0.0323,
+      "sim_mean": 0.9587,
+      "sim_std": 0.0319,
       "n": 143
     },
     {
@@ -5009,15 +5079,15 @@
     {
       "wave": "2026-06-04",
       "model": "GPT Chat",
-      "sim_mean": 0.9472,
-      "sim_std": 0.0499,
+      "sim_mean": 0.9464,
+      "sim_std": 0.0504,
       "n": 143
     },
     {
       "wave": "2026-06-05",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9547,
-      "sim_std": 0.0355,
+      "sim_mean": 0.9544,
+      "sim_std": 0.0359,
       "n": 143
     },
     {
@@ -5030,15 +5100,15 @@
     {
       "wave": "2026-06-05",
       "model": "GPT Chat",
-      "sim_mean": 0.9484,
-      "sim_std": 0.0458,
+      "sim_mean": 0.9478,
+      "sim_std": 0.0465,
       "n": 143
     },
     {
       "wave": "2026-06-06",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9582,
-      "sim_std": 0.032,
+      "sim_mean": 0.9577,
+      "sim_std": 0.0328,
       "n": 143
     },
     {
@@ -5051,15 +5121,15 @@
     {
       "wave": "2026-06-06",
       "model": "GPT Chat",
-      "sim_mean": 0.9428,
-      "sim_std": 0.0567,
+      "sim_mean": 0.9424,
+      "sim_std": 0.0564,
       "n": 143
     },
     {
       "wave": "2026-06-07",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9551,
-      "sim_std": 0.0334,
+      "sim_mean": 0.9546,
+      "sim_std": 0.0336,
       "n": 143
     },
     {
@@ -5072,15 +5142,15 @@
     {
       "wave": "2026-06-07",
       "model": "GPT Chat",
-      "sim_mean": 0.9432,
-      "sim_std": 0.0599,
+      "sim_mean": 0.9424,
+      "sim_std": 0.0605,
       "n": 143
     },
     {
       "wave": "2026-06-08",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9549,
-      "sim_std": 0.0399,
+      "sim_mean": 0.9548,
+      "sim_std": 0.0391,
       "n": 143
     },
     {
@@ -5093,22 +5163,22 @@
     {
       "wave": "2026-06-08",
       "model": "Gemini Flash",
-      "sim_mean": 0.8832,
-      "sim_std": 0.1199,
+      "sim_mean": 0.8819,
+      "sim_std": 0.1209,
       "n": 143
     },
     {
       "wave": "2026-06-08",
       "model": "GPT Chat",
-      "sim_mean": 0.9456,
-      "sim_std": 0.0473,
+      "sim_mean": 0.9447,
+      "sim_std": 0.0484,
       "n": 143
     },
     {
       "wave": "2026-06-09",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9554,
-      "sim_std": 0.0346,
+      "sim_mean": 0.9551,
+      "sim_std": 0.035,
       "n": 143
     },
     {
@@ -5121,168 +5191,168 @@
     {
       "wave": "2026-06-09",
       "model": "Gemini Flash",
-      "sim_mean": 0.9479,
-      "sim_std": 0.0497,
+      "sim_mean": 0.9466,
+      "sim_std": 0.0509,
       "n": 143
     },
     {
       "wave": "2026-06-09",
       "model": "GPT Chat",
-      "sim_mean": 0.9491,
-      "sim_std": 0.0496,
+      "sim_mean": 0.9487,
+      "sim_std": 0.0487,
       "n": 143
     },
     {
       "wave": "2026-06-10",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9542,
-      "sim_std": 0.0412,
+      "sim_mean": 0.9538,
+      "sim_std": 0.0418,
       "n": 143
     },
     {
       "wave": "2026-06-10",
       "model": "Gemini Flash",
-      "sim_mean": 0.9511,
-      "sim_std": 0.0414,
+      "sim_mean": 0.9495,
+      "sim_std": 0.0425,
       "n": 143
     },
     {
       "wave": "2026-06-10",
       "model": "GPT Chat",
-      "sim_mean": 0.9428,
-      "sim_std": 0.0574,
+      "sim_mean": 0.9424,
+      "sim_std": 0.057,
       "n": 143
     },
     {
       "wave": "2026-06-11",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9534,
-      "sim_std": 0.0388,
+      "sim_mean": 0.9536,
+      "sim_std": 0.037,
       "n": 143
     },
     {
       "wave": "2026-06-11",
       "model": "Gemini Flash",
-      "sim_mean": 0.9502,
-      "sim_std": 0.044,
+      "sim_mean": 0.949,
+      "sim_std": 0.0446,
       "n": 143
     },
     {
       "wave": "2026-06-11",
       "model": "GPT Chat",
-      "sim_mean": 0.9433,
+      "sim_mean": 0.943,
+      "sim_std": 0.0598,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-12",
+      "model": "Claude Sonnet",
+      "sim_mean": 0.9564,
+      "sim_std": 0.0346,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-12",
+      "model": "Gemini Flash",
+      "sim_mean": 0.9598,
+      "sim_std": 0.0338,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-12",
+      "model": "GPT Chat",
+      "sim_mean": 0.9447,
       "sim_std": 0.0611,
       "n": 143
     },
     {
-      "wave": "2026-06-12",
-      "model": "Claude Sonnet",
-      "sim_mean": 0.9559,
-      "sim_std": 0.037,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-12",
-      "model": "Gemini Flash",
-      "sim_mean": 0.9601,
-      "sim_std": 0.0336,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-12",
-      "model": "GPT Chat",
-      "sim_mean": 0.9454,
-      "sim_std": 0.0603,
-      "n": 143
-    },
-    {
       "wave": "2026-06-15",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9572,
-      "sim_std": 0.0386,
+      "sim_mean": 0.9569,
+      "sim_std": 0.0389,
       "n": 143
     },
     {
       "wave": "2026-06-15",
       "model": "Gemini Flash",
-      "sim_mean": 0.9612,
-      "sim_std": 0.034,
+      "sim_mean": 0.9605,
+      "sim_std": 0.0348,
       "n": 143
     },
     {
       "wave": "2026-06-15",
       "model": "GPT Chat",
-      "sim_mean": 0.9473,
-      "sim_std": 0.0508,
+      "sim_mean": 0.9466,
+      "sim_std": 0.0511,
       "n": 143
     },
     {
       "wave": "2026-06-16",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9503,
-      "sim_std": 0.0439,
+      "sim_mean": 0.9504,
+      "sim_std": 0.0437,
       "n": 143
     },
     {
       "wave": "2026-06-16",
       "model": "Gemini Flash",
-      "sim_mean": 0.8737,
-      "sim_std": 0.1258,
+      "sim_mean": 0.8723,
+      "sim_std": 0.1269,
       "n": 143
     },
     {
       "wave": "2026-06-16",
       "model": "GPT Chat",
-      "sim_mean": 0.9441,
-      "sim_std": 0.056,
+      "sim_mean": 0.9436,
+      "sim_std": 0.0557,
       "n": 143
     },
     {
       "wave": "2026-06-17",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9571,
-      "sim_std": 0.037,
+      "sim_mean": 0.9573,
+      "sim_std": 0.0366,
       "n": 143
     },
     {
       "wave": "2026-06-17",
       "model": "Gemini Flash",
-      "sim_mean": 0.9641,
-      "sim_std": 0.0379,
+      "sim_mean": 0.965,
+      "sim_std": 0.0366,
       "n": 143
     },
     {
       "wave": "2026-06-17",
       "model": "GPT Chat",
-      "sim_mean": 0.9457,
-      "sim_std": 0.0502,
+      "sim_mean": 0.9451,
+      "sim_std": 0.0507,
       "n": 143
     },
     {
       "wave": "2026-06-18",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9565,
-      "sim_std": 0.0345,
+      "sim_mean": 0.9564,
+      "sim_std": 0.035,
       "n": 143
     },
     {
       "wave": "2026-06-18",
       "model": "Gemini Flash",
-      "sim_mean": 0.9534,
-      "sim_std": 0.0489,
+      "sim_mean": 0.9533,
+      "sim_std": 0.05,
       "n": 143
     },
     {
       "wave": "2026-06-18",
       "model": "GPT Chat",
-      "sim_mean": 0.9445,
-      "sim_std": 0.0579,
+      "sim_mean": 0.9443,
+      "sim_std": 0.0566,
       "n": 143
     },
     {
       "wave": "2026-06-19",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9527,
+      "sim_mean": 0.9524,
       "sim_std": 0.0388,
       "n": 143
     },
@@ -5296,141 +5366,162 @@
     {
       "wave": "2026-06-19",
       "model": "Gemini Flash",
-      "sim_mean": 0.9629,
-      "sim_std": 0.0425,
+      "sim_mean": 0.9634,
+      "sim_std": 0.0427,
       "n": 143
     },
     {
       "wave": "2026-06-19",
       "model": "GPT Chat",
-      "sim_mean": 0.9458,
-      "sim_std": 0.0523,
+      "sim_mean": 0.9452,
+      "sim_std": 0.0528,
       "n": 143
     },
     {
       "wave": "2026-06-20",
       "model": "Claude Sonnet",
-      "sim_mean": 0.9577,
-      "sim_std": 0.0308,
+      "sim_mean": 0.9576,
+      "sim_std": 0.0306,
       "n": 143
     },
     {
       "wave": "2026-06-20",
       "model": "Gemini Flash",
-      "sim_mean": 0.9666,
-      "sim_std": 0.0355,
+      "sim_mean": 0.9676,
+      "sim_std": 0.0361,
       "n": 143
     },
     {
       "wave": "2026-06-20",
       "model": "GPT Chat",
-      "sim_mean": 0.9454,
-      "sim_std": 0.065,
+      "sim_mean": 0.9449,
+      "sim_std": 0.0646,
       "n": 143
     },
     {
       "wave": "2026-06-21",
+      "model": "Claude Sonnet",
+      "sim_mean": 0.9558,
+      "sim_std": 0.0367,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-21",
+      "model": "Gemini Flash",
+      "sim_mean": 0.9697,
+      "sim_std": 0.0225,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-21",
+      "model": "GPT Chat",
+      "sim_mean": 0.9444,
+      "sim_std": 0.0572,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-22",
+      "model": "Claude Sonnet",
+      "sim_mean": 0.9468,
+      "sim_std": 0.0604,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-22",
+      "model": "Gemini Flash",
+      "sim_mean": 0.966,
+      "sim_std": 0.0338,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-22",
+      "model": "GPT Chat",
+      "sim_mean": 0.9426,
+      "sim_std": 0.0612,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-23",
       "model": "Claude Sonnet",
       "sim_mean": 0.956,
-      "sim_std": 0.0372,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-21",
-      "model": "Gemini Flash",
-      "sim_mean": 0.9685,
-      "sim_std": 0.0232,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-21",
-      "model": "GPT Chat",
-      "sim_mean": 0.945,
-      "sim_std": 0.0564,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-22",
-      "model": "Claude Sonnet",
-      "sim_mean": 0.9471,
-      "sim_std": 0.0601,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-22",
-      "model": "Gemini Flash",
-      "sim_mean": 0.9655,
-      "sim_std": 0.0335,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-22",
-      "model": "GPT Chat",
-      "sim_mean": 0.9427,
-      "sim_std": 0.0635,
+      "sim_std": 0.0323,
       "n": 143
     },
     {
       "wave": "2026-06-23",
+      "model": "Gemini Flash",
+      "sim_mean": 0.9628,
+      "sim_std": 0.0393,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-23",
+      "model": "GPT Chat",
+      "sim_mean": 0.943,
+      "sim_std": 0.06,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-24",
+      "model": "Claude Sonnet",
+      "sim_mean": 0.9531,
+      "sim_std": 0.0381,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-24",
+      "model": "Gemini Flash",
+      "sim_mean": 0.9566,
+      "sim_std": 0.0574,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-24",
+      "model": "GPT Chat",
+      "sim_mean": 0.9146,
+      "sim_std": 0.0916,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-25",
       "model": "Claude Sonnet",
       "sim_mean": 0.9562,
-      "sim_std": 0.0314,
+      "sim_std": 0.0324,
       "n": 143
     },
     {
-      "wave": "2026-06-23",
+      "wave": "2026-06-25",
       "model": "Gemini Flash",
-      "sim_mean": 0.9624,
+      "sim_mean": 0.9681,
+      "sim_std": 0.0245,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-25",
+      "model": "GPT Chat",
+      "sim_mean": 0.9133,
+      "sim_std": 0.0791,
+      "n": 143
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Claude Sonnet",
+      "sim_mean": 0.956,
       "sim_std": 0.0382,
       "n": 143
     },
     {
-      "wave": "2026-06-23",
-      "model": "GPT Chat",
-      "sim_mean": 0.9432,
-      "sim_std": 0.0608,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-24",
-      "model": "Claude Sonnet",
-      "sim_mean": 0.9529,
-      "sim_std": 0.0388,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-24",
+      "wave": "2026-06-26",
       "model": "Gemini Flash",
-      "sim_mean": 0.9563,
-      "sim_std": 0.0567,
+      "sim_mean": 0.9664,
+      "sim_std": 0.03,
       "n": 143
     },
     {
-      "wave": "2026-06-24",
+      "wave": "2026-06-26",
       "model": "GPT Chat",
-      "sim_mean": 0.9126,
-      "sim_std": 0.0936,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-25",
-      "model": "Claude Sonnet",
-      "sim_mean": 0.9563,
-      "sim_std": 0.0318,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-25",
-      "model": "Gemini Flash",
-      "sim_mean": 0.9674,
-      "sim_std": 0.0247,
-      "n": 143
-    },
-    {
-      "wave": "2026-06-25",
-      "model": "GPT Chat",
-      "sim_mean": 0.9107,
-      "sim_std": 0.0805,
+      "sim_mean": 0.9095,
+      "sim_std": 0.0804,
       "n": 143
     }
   ],
@@ -7647,6 +7738,60 @@
       "ses": "low",
       "sim_mean": 0.5417,
       "sim_std": 0.3947,
+      "n": 243
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Claude Sonnet",
+      "framing": "system_msg",
+      "ses": "high",
+      "sim_mean": 0.5446,
+      "sim_std": 0.3849,
+      "n": 243
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Claude Sonnet",
+      "framing": "system_msg",
+      "ses": "low",
+      "sim_mean": 0.5449,
+      "sim_std": 0.3834,
+      "n": 243
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Gemini Flash",
+      "framing": "system_msg",
+      "ses": "high",
+      "sim_mean": 0.4508,
+      "sim_std": 0.3431,
+      "n": 243
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "Gemini Flash",
+      "framing": "system_msg",
+      "ses": "low",
+      "sim_mean": 0.4478,
+      "sim_std": 0.3436,
+      "n": 243
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "GPT Chat",
+      "framing": "system_msg",
+      "ses": "high",
+      "sim_mean": 0.5457,
+      "sim_std": 0.404,
+      "n": 243
+    },
+    {
+      "wave": "2026-06-26",
+      "model": "GPT Chat",
+      "framing": "system_msg",
+      "ses": "low",
+      "sim_mean": 0.5435,
+      "sim_std": 0.3951,
       "n": 243
     }
   ]
