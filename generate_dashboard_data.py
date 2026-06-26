@@ -38,7 +38,7 @@ STUDY_START = "2026-06-04"
 
 MIN_WAVES_FOR_COSINE = 2
 
-CURRENT_CONDITIONS   = {"baseline", "high_ses", "low_ses"}
+CURRENT_CONDITIONS   = {"baseline", "high_ses", "low_ses", "high_ses_v1", "low_ses_v1"}
 CURRENT_PERSONA_ROLES = {None, "system", "user"}
 
 
