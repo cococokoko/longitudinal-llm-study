@@ -168,7 +168,12 @@ def cmd_run(args: argparse.Namespace, cfg: dict) -> None:
 
     today    = datetime.date.today().isoformat()
     wave_tag = getattr(args, "wave_tag", None)
-    wave_name = f"{today}_{wave_tag}" if wave_tag else today
+    if wave_tag:
+        wave_name = f"{today}_{wave_tag}"
+    elif weekly_only:
+        wave_name = f"{today}_weekly"
+    else:
+        wave_name = today
     wave_id = get_or_create_wave(conn, name=wave_name, description="weekly run" if weekly_only else "daily run")
     console.print(f"Running wave: [bold]{wave_name}[/]")
 

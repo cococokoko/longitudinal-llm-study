@@ -49,7 +49,7 @@ jobs:
         run: python pipeline.py run --weekly
 
       - name: Export today's wave to JSONL
-        run: python pipeline.py export --format jsonl --wave $(date -u +%Y-%m-%d)
+        run: python pipeline.py export --format jsonl --wave $(date -u +%Y-%m-%d)_weekly
 
       - name: Generate dashboard data
         run: python generate_dashboard_data.py
