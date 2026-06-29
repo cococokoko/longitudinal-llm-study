@@ -52,7 +52,11 @@ def load_all_rows() -> list[dict]:
             for line in f:
                 line = line.strip()
                 if line:
-                    rows.append(json.loads(line))
+                    row = json.loads(line)
+                    wn = row.get("wave_name", "")
+                    if wn.endswith("_weekly"):
+                        row["wave_name"] = wn[: -len("_weekly")]
+                    rows.append(row)
     return rows
 
 
