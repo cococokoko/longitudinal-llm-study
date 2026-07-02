@@ -292,6 +292,8 @@
     }
     .data-table tbody tr:last-child td { border-bottom: none; }
     .data-table tbody tr:hover td { background: var(--surface); }
+    .versions-scroll { max-height: 420px; overflow-y: auto; }
+    .versions-scroll thead th { position: sticky; top: 0; z-index: 1; }
     .dist-bar { display: flex; height: 8px; border-radius: 3px; overflow: hidden; width: 180px; }
     .dist-bar div { height: 100%; }
     .dist-legend { font-size: 10px; color: var(--text-light); margin-top: 3px; }
@@ -829,7 +831,7 @@ function renderVersions({ wave_versions, waves }) {
   groups.push(cur);
 
   // Header
-  let html = `<div class="table-wrap"><table class="data-table"><thead><tr><th>Model</th>`;
+  let html = `<div class="table-wrap versions-scroll"><table class="data-table"><thead><tr><th>Model</th>`;
   for (const g of groups) {
     const label = g.start === g.end ? g.start : `${g.start} – ${g.end}`;
     html += `<th>${label}</th>`;
