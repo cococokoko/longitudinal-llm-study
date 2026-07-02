@@ -292,8 +292,12 @@
     }
     .data-table tbody tr:last-child td { border-bottom: none; }
     .data-table tbody tr:hover td { background: var(--surface); }
-    .versions-scroll { max-height: 420px; overflow-y: auto; }
-    .versions-scroll thead th { position: sticky; top: 0; z-index: 1; }
+    .versions-scroll { overflow-x: auto; }
+    .versions-scroll table { width: max-content; min-width: 100%; }
+    .versions-scroll th, .versions-scroll td { white-space: nowrap; }
+    .versions-scroll thead th:first-child, .versions-scroll tbody td:first-child {
+      position: sticky; left: 0; background: var(--surface); z-index: 1;
+    }
     .dist-bar { display: flex; height: 8px; border-radius: 3px; overflow: hidden; width: 180px; }
     .dist-bar div { height: 100%; }
     .dist-legend { font-size: 10px; color: var(--text-light); margin-top: 3px; }
